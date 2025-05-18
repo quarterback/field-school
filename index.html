@@ -2,33 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mobile Responsiveness Check -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Strategic Weather Field School</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#004534',
-                        secondary: '#D4FF62',
-                        background: '#FAFFEF',
-                        foreground: '#004534',
-                        tertiary: '#EDEDFF',
+                        primary: '#1B512D',    // Deep forest green
+                        secondary: '#F0C987',  // Golden yellow
+                        background: '#F8F7F1', // Cream white
+                        foreground: '#0D2818', // Very dark green
+                        tertiary: '#89B0AE',   // Sage green
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['YWFT Mail Sans Light', 'system-ui', 'sans-serif'],
+                        heading: ['YWFT Ultramagnetic Expanded', 'system-ui', 'sans-serif'],
                     },
                 }
             }
         }
     </script>
     <style>
+        /* Custom Font Definitions */
+        @font-face {
+            font-family: 'YWFT Ultramagnetic Expanded';
+            src: url('fonts/ywft-ultramagnetic-expanded-demo.woff2') format('woff2'),
+                 url('fonts/ywft-ultramagnetic-expanded-demo.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'YWFT Mail Sans Light';
+            src: url('fonts/ywft-mail-sans-light-demo.woff2') format('woff2'),
+                 url('fonts/ywft-mail-sans-light-demo.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+        
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'YWFT Mail Sans Light', system-ui, sans-serif;
             background-color: theme('colors.background');
             color: theme('colors.foreground');
+            font-weight: 300;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'YWFT Ultramagnetic Expanded', system-ui, sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
         }
         
         .hero-title {
@@ -56,9 +85,27 @@
             to { opacity: 1; }
         }
         
+        /* Mobile Optimizations */
+        .mobile-menu-container {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .mobile-menu-container.open {
+            transform: translateX(0);
+        }
+        
         @media (max-width: 768px) {
             .hide-mobile {
                 display: none;
+            }
+            
+            h1, h2 {
+                word-break: break-word;
+            }
+            
+            .hero-title {
+                font-size: calc(2rem + 2vw);
             }
         }
         
@@ -71,37 +118,59 @@
 </head>
 <body>
     <!-- Header/Navigation -->
-    <header class="sticky top-0 z-50 px-6 py-4">
+    <header class="sticky top-0 z-50 px-3 sm:px-6 py-4">
         <div class="max-w-6xl mx-auto">
-            <div class="flex items-center justify-between bg-primary text-white px-6 py-3 rounded-full">
+            <div class="flex items-center justify-between bg-primary text-white px-4 sm:px-6 py-3 rounded-full">
                 <div class="flex items-center">
-                    <h1 class="text-2xl font-bold">Strategic<span class="text-secondary">Weather Field School</span></h1>
+                    <h1 class="text-xl sm:text-2xl font-bold">Strategic<span class="text-secondary">Weather</span></h1>
                 </div>
                 <div class="hidden md:block">
                     <a href="#contact" class="bg-secondary hover:bg-opacity-90 text-primary font-semibold py-2 px-4 rounded-md transition duration-300">
                         Get Updates
                     </a>
                 </div>
+                <button class="block md:hidden text-white" id="mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
             </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu-container fixed inset-0 bg-primary bg-opacity-95 text-white z-50 flex flex-col justify-center items-center md:hidden" id="mobile-menu">
+            <button class="absolute top-5 right-5 text-white" id="close-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <nav class="flex flex-col items-center space-y-6 text-center">
+                <a href="#about" class="text-2xl font-bold">About</a>
+                <a href="#practice" class="text-2xl font-bold">What You'll Practice</a>
+                <a href="#format" class="text-2xl font-bold">Format</a>
+                <a href="#contact" class="bg-secondary text-primary font-semibold py-3 px-8 rounded-md mt-4 text-xl">
+                    Get Updates
+                </a>
+            </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-primary text-white py-16 md:py-24">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-end">
+    <section class="bg-primary text-white py-12 md:py-24">
+        <div class="max-w-6xl mx-auto px-4 md:px-6">
+            <div class="flex flex-col md:flex-row md:items-end">
                 <div class="md:w-2/3 mb-8 md:mb-0">
-                    <h1 class="hero-title text-4xl md:text-6xl font-bold mb-6">
+                    <h1 class="hero-title text-4xl md:text-6xl font-bold mb-6 font-heading">
                         A Field School for System-Level Practitioners
                     </h1>
-                    <p class="text-xl md:text-2xl max-w-2xl mb-8">
+                    <p class="text-lg md:text-2xl max-w-2xl mb-8">
                         A short-format, high-leverage learning program for people who work inside complexity.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="#contact" class="bg-secondary hover:bg-opacity-90 text-primary font-semibold py-3 px-6 rounded-md transition duration-300">
+                        <a href="#contact" class="bg-secondary hover:bg-opacity-90 text-primary font-semibold py-3 px-6 rounded-md transition duration-300 w-full sm:w-auto text-center">
                             Join the Waitlist
                         </a>
-                        <a href="#format" class="border-2 border-white hover:bg-white hover:text-primary font-semibold py-3 px-6 rounded-md transition duration-300">
+                        <a href="#format" class="border-2 border-white hover:bg-white hover:text-primary font-semibold py-3 px-6 rounded-md transition duration-300 w-full sm:w-auto text-center">
                             Learn More
                         </a>
                     </div>
@@ -114,11 +183,11 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 md:py-24">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8">A cohort-based space for systems-level practitioners</h2>
+    <section id="about" class="py-12 md:py-24">
+        <div class="max-w-6xl mx-auto px-4 md:px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 font-heading">A cohort-based space for systems-level practitioners</h2>
             
-            <div class="flex flex-col md:flex-row gap-12">
+            <div class="flex flex-col md:flex-row gap-8 md:gap-12">
                 <div class="md:w-1/2">
                     <p class="text-lg mb-6">
                         Strategic Weather is a 1.5-day field school for people doing high-stakes, real-world work—across design, operations, policy, technology, infrastructure, and more. This is not a training for one profession. It's a learning environment for people who work at the seams—where systems meet delivery, and decisions have consequence.
@@ -130,8 +199,8 @@
                         This isn't a lecture series. It's a working cohort. You'll bring your own context, challenges, and expertise. We'll provide structure, pattern recognition, and space to level up your thinking. You'll leave with tools, language, and applied strategies you can use immediately—and teach forward.
                     </p>
                 </div>
-                <div class="md:w-1/2 bg-tertiary p-8 rounded-2xl">
-                    <h3 class="text-2xl font-bold mb-6">Why call it Strategic Weather?</h3>
+                <div class="md:w-1/2 bg-tertiary p-6 md:p-8 rounded-2xl">
+                    <h3 class="text-xl md:text-2xl font-bold mb-6 font-heading">Why call it Strategic Weather?</h3>
                     <p class="text-lg">
                         Because conditions matter. You can't control everything. But you can learn to read the room—organizationally, politically, structurally—and act accordingly. This program gives you a way to practice that awareness in a setting built for people like you: system-sensitive, consequence-aware, and trying to make things work under pressure.
                     </p>
@@ -141,19 +210,57 @@
     </section>
 
     <!-- For Who Section -->
-    <section class="py-16 md:py-24 bg-tertiary">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">This program is for people who:</h2>
+    <section class="py-12 md:py-24 bg-tertiary">
+        <div class="max-w-6xl mx-auto px-4 md:px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center font-heading">This program is for people who:</h2>
             
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-md animate-fadeIn">
+            <div class="grid md:grid-cols-2 gap-4 md:gap-8">
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md animate-fadeIn">
                     <div class="flex items-start gap-4">
-                        <div class="bg-secondary p-2 rounded-full">
+                        <div class="bg-secondary p-2 rounded-full flex-shrink-0">
                             <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                         </div>
-                        <p class="text-lg">Build, operate, or repair critical systems or services</p>
+                        <p class="text-base md:text-lg">Build, operate, or repair critical systems or services</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md animate-fadeIn animate-delay-200">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-secondary p-2 rounded-full flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <p class="text-base md:text-lg">Work across boundaries—between teams, tools, or layers of responsibility</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md animate-fadeIn animate-delay-400">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-secondary p-2 rounded-full flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <p class="text-base md:text-lg">Lead in conditions that don't stay stable</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md animate-fadeIn animate-delay-600">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-secondary p-2 rounded-full flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <p class="text-base md:text-lg">Want to sharpen how they think, act, and teach inside institutional systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>d, operate, or repair critical systems or services</p>
                     </div>
                 </div>
                 
@@ -196,7 +303,7 @@
     <!-- You'll Practice Section -->
     <section id="practice" class="py-16 md:py-24">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">You'll practice:</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center font-heading">You'll practice:</h2>
             
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-primary text-white p-8 rounded-2xl animate-fadeIn">
@@ -225,7 +332,7 @@
     <!-- Format Section -->
     <section id="format" class="py-16 md:py-24 bg-tertiary">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">The Format:</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center font-heading">The Format:</h2>
             
             <div class="space-y-8 max-w-3xl mx-auto">
                 <div class="flex items-start gap-6 animate-fadeIn">
@@ -258,7 +365,7 @@
     <!-- Takeaways Section -->
     <section class="py-16 md:py-24">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">You'll leave with:</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center font-heading">You'll leave with:</h2>
             
             <div class="bg-white shadow-lg rounded-2xl p-8">
                 <div class="grid md:grid-cols-2 gap-6">
@@ -317,7 +424,7 @@
     <!-- Contact Section -->
     <section id="contact" class="py-16 md:py-24 bg-primary text-white">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Stay Updated</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 font-heading">Stay Updated</h2>
             <p class="text-xl max-w-2xl mx-auto mb-10">
                 We're still developing our curriculum and program dates. Leave your email to be notified when applications open for our first cohort.
             </p>
@@ -354,6 +461,31 @@
                 el.classList.add('opacity-0', 'transition', 'duration-1000');
                 observer.observe(el);
             });
+            
+            // Mobile menu functionality
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const closeMenuButton = document.getElementById('close-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu && closeMenuButton) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.add('open');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling
+                });
+                
+                closeMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.remove('open');
+                    document.body.style.overflow = ''; // Re-enable scrolling
+                });
+                
+                // Close menu when clicking on a link
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.remove('open');
+                        document.body.style.overflow = '';
+                    });
+                });
+            }
         });
     </script>
 </body>
