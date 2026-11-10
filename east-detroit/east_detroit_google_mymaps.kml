@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>East Detroit Colorado (fictional)</name>
+<description>Fictional classroom municipal boundary and proposed land uses. Not legal boundaries.</description>
+<Placemark><name>City and County of East Detroit</name><description>Approximate classroom boundary modeled on the actual CASP planning-area extent, not legal county or municipal lines.</description>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>-104.612,39.828,0 -104.458,39.828,0 -104.458,39.738,0 -104.612,39.738,0 -104.612,39.828,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark><name>Civic core</name><description>Downtown housing, public buildings, retail; conceptual 4–8 stories.</description>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>-104.583,39.78,0 -104.549,39.78,0 -104.549,39.758,0 -104.583,39.758,0 -104.583,39.78,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark><name>Watkins gateway</name><description>Highway access and fictional regional transit hub; 3–6 stories.</description>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>-104.607,39.761,0 -104.579,39.761,0 -104.579,39.741,0 -104.607,39.741,0 -104.607,39.761,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark><name>South neighborhoods</name><description>Residential upzoning with schools and parks; 2–5 stories.</description>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>-104.548,39.777,0 -104.511,39.777,0 -104.511,39.748,0 -104.548,39.748,0 -104.548,39.777,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark><name>East works</name><description>Industrial, logistics, training, clean manufacturing; no assumed existing entitlements.</description>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>-104.509,39.78,0 -104.463,39.78,0 -104.463,39.742,0 -104.509,39.742,0 -104.509,39.78,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark><name>Airfield protection</name><description>Protects existing Colorado Air and Space Port; residential development excluded.</description>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>-104.574,39.812,0 -104.486,39.812,0 -104.486,39.782,0 -104.574,39.782,0 -104.574,39.812,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark><name>North commons</name><description>Agriculture, drainage protection, and parks; conceptual designation.</description>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>-104.608,39.824,0 -104.578,39.824,0 -104.578,39.787,0 -104.608,39.787,0 -104.608,39.824,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark><name>Innovation field</name><description>Aeronautics and research employment with strict airport compatibility review.</description>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>-104.485,39.82,0 -104.464,39.82,0 -104.464,39.789,0 -104.485,39.789,0 -104.485,39.82,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark><name>East Detroit Civic Square</name><description>Fictional city center</description>
+<Point><coordinates>-104.565,39.768,0</coordinates></Point>
+</Placemark>
+<Placemark><name>Colorado Air and Space Port</name><description>Real airport, Watkins, ZIP 80137</description>
+<Point><coordinates>-104.538,39.7842,0</coordinates></Point>
+</Placemark>
+<Placemark><name>Watkins gateway</name><description>Fictional gateway near I-70</description>
+<Point><coordinates>-104.595,39.75,0</coordinates></Point>
+</Placemark>
+</Document></kml>
