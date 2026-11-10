@@ -1,0 +1,577 @@
+{
+  "type": "FeatureCollection",
+  "name": "East Detroit 2030 provisional boundary and neighborhood SEEDS",
+  "metadata": {
+    "version": "3.0",
+    "date": "2026-11-10",
+    "scenario": "fictional",
+    "disclaimer": "Illustrative study boundary, not surveyed or an actual legal jurisdiction. Neighborhood points require GIS refinement and classroom approval.",
+    "sources": [
+      "https://adamscountyco.gov/wp-content/uploads/2025/08/space-port-subarea-plan.pdf",
+      "https://data.colorado.gov/Government/DRCOG-Municipal-Boundaries/xufp-56dv"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED-BOUNDARY-DRAFT",
+        "name": "East Detroit 2030 study boundary",
+        "status": "conceptual_unsurveyed",
+        "notice": "Not legal lines; verify DRCOG, FAA, municipal parcels and geography before publication",
+        "area_sq_mi_approx": 115.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.628,
+              39.742
+            ],
+            [
+              -104.457,
+              39.742
+            ],
+            [
+              -104.457,
+              39.754
+            ],
+            [
+              -104.408,
+              39.754
+            ],
+            [
+              -104.408,
+              39.82
+            ],
+            [
+              -104.39,
+              39.82
+            ],
+            [
+              -104.39,
+              39.865
+            ],
+            [
+              -104.435,
+              39.865
+            ],
+            [
+              -104.435,
+              39.897
+            ],
+            [
+              -104.593,
+              39.897
+            ],
+            [
+              -104.593,
+              39.876
+            ],
+            [
+              -104.627,
+              39.876
+            ],
+            [
+              -104.627,
+              39.831
+            ],
+            [
+              -104.613,
+              39.831
+            ],
+            [
+              -104.613,
+              39.755
+            ],
+            [
+              -104.628,
+              39.742
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED01",
+        "name": "Old Watkins",
+        "district": "South / Historic",
+        "population_2030_fictional": 10158,
+        "occupied_households_2030_fictional": 4180,
+        "group_quarters_2030_fictional": 0,
+        "median_household_income_2024_dollars_fictional": 103200,
+        "renter_households_pct_fictional": 38,
+        "renter_cost_burden_pct_fictional": 35,
+        "local_issue": "Legacy village, small businesses, agricultural families, aging owners and renters",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.596,
+          39.75
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED02",
+        "name": "Watkins Junction",
+        "district": "South / Historic",
+        "population_2030_fictional": 20908,
+        "occupied_households_2030_fictional": 8604,
+        "group_quarters_2030_fictional": 0,
+        "median_household_income_2024_dollars_fictional": 71600,
+        "renter_households_pct_fictional": 66,
+        "renter_cost_burden_pct_fictional": 52,
+        "local_issue": "Rail-adjacent mixed housing, service workers and newly arrived families",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.579,
+          39.767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED03",
+        "name": "Colfax East",
+        "district": "South / Historic",
+        "population_2030_fictional": 18289,
+        "occupied_households_2030_fictional": 7526,
+        "group_quarters_2030_fictional": 0,
+        "median_household_income_2024_dollars_fictional": 58900,
+        "renter_households_pct_fictional": 73,
+        "renter_cost_burden_pct_fictional": 61,
+        "local_issue": "Older commercial corridor, lower-cost apartments and frequent moves",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.549,
+          39.758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED04",
+        "name": "South Yards",
+        "district": "South / Historic",
+        "population_2030_fictional": 12271,
+        "occupied_households_2030_fictional": 5050,
+        "group_quarters_2030_fictional": 0,
+        "median_household_income_2024_dollars_fictional": 62100,
+        "renter_households_pct_fictional": 77,
+        "renter_cost_burden_pct_fictional": 58,
+        "local_issue": "Industrial jobs, truck access, worksite housing and pollution concerns",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.472,
+          39.775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED05",
+        "name": "Civic Square",
+        "district": "Central / Downtown",
+        "population_2030_fictional": 26418,
+        "occupied_households_2030_fictional": 10505,
+        "group_quarters_2030_fictional": 890,
+        "median_household_income_2024_dollars_fictional": 92400,
+        "renter_households_pct_fictional": 62,
+        "renter_cost_burden_pct_fictional": 46,
+        "local_issue": "Civic center, mixed-income midrise homes and public-service demand",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.566,
+          39.804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED06",
+        "name": "Central Station",
+        "district": "Central / Downtown",
+        "population_2030_fictional": 28405,
+        "occupied_households_2030_fictional": 11311,
+        "group_quarters_2030_fictional": 920,
+        "median_household_income_2024_dollars_fictional": 89700,
+        "renter_households_pct_fictional": 75,
+        "renter_cost_burden_pct_fictional": 55,
+        "local_issue": "Major transfer station, dense rental housing and night economy",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.583,
+          39.81
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED07",
+        "name": "Foundry Quarter",
+        "district": "Central / Downtown",
+        "population_2030_fictional": 25070,
+        "occupied_households_2030_fictional": 10177,
+        "group_quarters_2030_fictional": 340,
+        "median_household_income_2024_dollars_fictional": 74500,
+        "renter_households_pct_fictional": 71,
+        "renter_cost_burden_pct_fictional": 54,
+        "local_issue": "Converted production sites, offices and relatively affordable family flats",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.54,
+          39.816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED08",
+        "name": "Eastbank",
+        "district": "Central / Downtown",
+        "population_2030_fictional": 21115,
+        "occupied_households_2030_fictional": 8615,
+        "group_quarters_2030_fictional": 180,
+        "median_household_income_2024_dollars_fictional": 119300,
+        "renter_households_pct_fictional": 47,
+        "renter_cost_burden_pct_fictional": 37,
+        "local_issue": "Riverside greenways, apartments, growing professional population",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.506,
+          39.822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED09",
+        "name": "Inboden",
+        "district": "West / Residential",
+        "population_2030_fictional": 15507,
+        "occupied_households_2030_fictional": 6381,
+        "group_quarters_2030_fictional": 0,
+        "median_household_income_2024_dollars_fictional": 126400,
+        "renter_households_pct_fictional": 33,
+        "renter_cost_burden_pct_fictional": 28,
+        "local_issue": "Older subdivided homes, ownership concentration and school access",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.605,
+          39.845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED10",
+        "name": "Quail Run",
+        "district": "West / Residential",
+        "population_2030_fictional": 15651,
+        "occupied_households_2030_fictional": 6441,
+        "group_quarters_2030_fictional": 0,
+        "median_household_income_2024_dollars_fictional": 95600,
+        "renter_households_pct_fictional": 46,
+        "renter_cost_burden_pct_fictional": 40,
+        "local_issue": "Townhomes, duplexes and childcare shortages",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.578,
+          39.86
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED11",
+        "name": "West Commons",
+        "district": "West / Residential",
+        "population_2030_fictional": 22520,
+        "occupied_households_2030_fictional": 9267,
+        "group_quarters_2030_fictional": 0,
+        "median_household_income_2024_dollars_fictional": 84700,
+        "renter_households_pct_fictional": 52,
+        "renter_cost_burden_pct_fictional": 45,
+        "local_issue": "Family apartments, multifamily infill and school crowding",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.544,
+          39.869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED12",
+        "name": "Cavanaugh",
+        "district": "West / Residential",
+        "population_2030_fictional": 16726,
+        "occupied_households_2030_fictional": 6883,
+        "group_quarters_2030_fictional": 0,
+        "median_household_income_2024_dollars_fictional": 78100,
+        "renter_households_pct_fictional": 60,
+        "renter_cost_burden_pct_fictional": 52,
+        "local_issue": "Transit-adjacent apartments and wage-dependent households",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.531,
+          39.851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED13",
+        "name": "Manila",
+        "district": "East / Growth",
+        "population_2030_fictional": 24790,
+        "occupied_households_2030_fictional": 10058,
+        "group_quarters_2030_fictional": 350,
+        "median_household_income_2024_dollars_fictional": 112600,
+        "renter_households_pct_fictional": 39,
+        "renter_cost_burden_pct_fictional": 35,
+        "local_issue": "Large mixed-use blocks, newer homes and rapid infrastructure demands",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.493,
+          39.832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED14",
+        "name": "Schumaker",
+        "district": "East / Growth",
+        "population_2030_fictional": 17407,
+        "occupied_households_2030_fictional": 7163,
+        "group_quarters_2030_fictional": 0,
+        "median_household_income_2024_dollars_fictional": 97700,
+        "renter_households_pct_fictional": 45,
+        "renter_cost_burden_pct_fictional": 43,
+        "local_issue": "Working households near advanced logistics and long commutes",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.454,
+          39.84
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED15",
+        "name": "Harback",
+        "district": "East / Growth",
+        "population_2030_fictional": 11442,
+        "occupied_households_2030_fictional": 4709,
+        "group_quarters_2030_fictional": 0,
+        "median_household_income_2024_dollars_fictional": 86500,
+        "renter_households_pct_fictional": 53,
+        "renter_cost_burden_pct_fictional": 49,
+        "local_issue": "Small fringe settlements, wells, septic conversion and annexation disputes",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.415,
+          39.837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED16",
+        "name": "Prairie Crossing",
+        "district": "North / Expansion",
+        "population_2030_fictional": 22663,
+        "occupied_households_2030_fictional": 9162,
+        "group_quarters_2030_fictional": 400,
+        "median_household_income_2024_dollars_fictional": 107900,
+        "renter_households_pct_fictional": 43,
+        "renter_cost_burden_pct_fictional": 36,
+        "local_issue": "New housing, high school enrollment and transit expansion debates",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.516,
+          39.878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED17",
+        "name": "Northfield",
+        "district": "North / Expansion",
+        "population_2030_fictional": 21787,
+        "occupied_households_2030_fictional": 8834,
+        "group_quarters_2030_fictional": 320,
+        "median_household_income_2024_dollars_fictional": 134800,
+        "renter_households_pct_fictional": 29,
+        "renter_cost_burden_pct_fictional": 30,
+        "local_issue": "New ownership-focused development with uneven nearby service access",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.555,
+          39.882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED18",
+        "name": "Box Elder",
+        "district": "North / Expansion",
+        "population_2030_fictional": 18676,
+        "occupied_households_2030_fictional": 7686,
+        "group_quarters_2030_fictional": 0,
+        "median_household_income_2024_dollars_fictional": 66800,
+        "renter_households_pct_fictional": 69,
+        "renter_cost_burden_pct_fictional": 58,
+        "local_issue": "Flood-prone drainage crossings, renters and seasonal workers",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.466,
+          39.869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED19",
+        "name": "Portside",
+        "district": "North / Expansion",
+        "population_2030_fictional": 13690,
+        "occupied_households_2030_fictional": 5460,
+        "group_quarters_2030_fictional": 423,
+        "median_household_income_2024_dollars_fictional": 76700,
+        "renter_households_pct_fictional": 62,
+        "renter_cost_burden_pct_fictional": 55,
+        "local_issue": "Employment district edges, shift work and airport-related noise",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.427,
+          39.859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ED20",
+        "name": "High Prairie",
+        "district": "North / Expansion",
+        "population_2030_fictional": 18924,
+        "occupied_households_2030_fictional": 7788,
+        "group_quarters_2030_fictional": 0,
+        "median_household_income_2024_dollars_fictional": 151200,
+        "renter_households_pct_fictional": 26,
+        "renter_cost_burden_pct_fictional": 25,
+        "local_issue": "High-income new housing, large lots and infrastructure contributions",
+        "status": "provisional_neighborhood_label_point",
+        "instruction": "For the mapping agent: this is a label seed, not a neighborhood polygon. Snap to road rights of way and exclude airports/approach surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.482,
+          39.883
+        ]
+      }
+    }
+  ]
+}
