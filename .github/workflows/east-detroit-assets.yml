@@ -1,0 +1,37 @@
+name: Build East Detroit map downloads
+
+on:
+  push:
+    paths:
+      - "east-detroit/**"
+      - ".github/workflows/east-detroit-assets.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-map-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install renderer
+        run: python -m pip install Pillow==11.3.0
+      - name: Render PNG and package ZIP
+        run: python east-detroit/render_assets.py
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add east-detroit/east_detroit_concept_map.png east-detroit/east_detroit_map_package.zip
+          if ! git diff --cached --quiet; then
+            git commit -m "Build East Detroit concept PNG and download ZIP [skip ci]"
+            git push
+          fi
