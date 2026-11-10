@@ -1,0 +1,390 @@
+{
+  "type": "FeatureCollection",
+  "name": "East Detroit Colorado - fictional zoning scenario",
+  "properties": {
+    "fictional": true,
+    "note": "All new boundaries, districts, and city labels are fictional; base street anchors are approximate. Do not use for legal, property, navigation or permitting decisions."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "City and County of East Detroit",
+        "category": "Fictional city-county boundary",
+        "description": "Approximate classroom boundary modeled on the actual CASP planning-area extent, not legal county or municipal lines.",
+        "stroke": "#d24c47",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#d24c47",
+        "fill-opacity": 0.38,
+        "source": "Adams County CASP Subarea Plan (2021), Fig 1-2",
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.612,
+              39.828
+            ],
+            [
+              -104.458,
+              39.828
+            ],
+            [
+              -104.458,
+              39.738
+            ],
+            [
+              -104.612,
+              39.738
+            ],
+            [
+              -104.612,
+              39.828
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Civic core",
+        "category": "Mixed-use center",
+        "description": "Downtown housing, public buildings, retail; conceptual 4–8 stories.",
+        "stroke": "#dd8d5a",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#dd8d5a",
+        "fill-opacity": 0.38,
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.583,
+              39.78
+            ],
+            [
+              -104.549,
+              39.78
+            ],
+            [
+              -104.549,
+              39.758
+            ],
+            [
+              -104.583,
+              39.758
+            ],
+            [
+              -104.583,
+              39.78
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Watkins gateway",
+        "category": "Transit village",
+        "description": "Highway access and fictional regional transit hub; 3–6 stories.",
+        "stroke": "#dfb560",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#dfb560",
+        "fill-opacity": 0.38,
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.607,
+              39.761
+            ],
+            [
+              -104.579,
+              39.761
+            ],
+            [
+              -104.579,
+              39.741
+            ],
+            [
+              -104.607,
+              39.741
+            ],
+            [
+              -104.607,
+              39.761
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "South neighborhoods",
+        "category": "Housing expansion",
+        "description": "Residential upzoning with schools and parks; 2–5 stories.",
+        "stroke": "#91b9c2",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#91b9c2",
+        "fill-opacity": 0.38,
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.548,
+              39.777
+            ],
+            [
+              -104.511,
+              39.777
+            ],
+            [
+              -104.511,
+              39.748
+            ],
+            [
+              -104.548,
+              39.748
+            ],
+            [
+              -104.548,
+              39.777
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East works",
+        "category": "Employment district",
+        "description": "Industrial, logistics, training, clean manufacturing; no assumed existing entitlements.",
+        "stroke": "#b29ac9",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#b29ac9",
+        "fill-opacity": 0.38,
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.509,
+              39.78
+            ],
+            [
+              -104.463,
+              39.78
+            ],
+            [
+              -104.463,
+              39.742
+            ],
+            [
+              -104.509,
+              39.742
+            ],
+            [
+              -104.509,
+              39.78
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Airfield protection",
+        "category": "Aviation reserve",
+        "description": "Protects existing Colorado Air and Space Port; residential development excluded.",
+        "stroke": "#8c9299",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#8c9299",
+        "fill-opacity": 0.38,
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.574,
+              39.812
+            ],
+            [
+              -104.486,
+              39.812
+            ],
+            [
+              -104.486,
+              39.782
+            ],
+            [
+              -104.574,
+              39.782
+            ],
+            [
+              -104.574,
+              39.812
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "North commons",
+        "category": "Conservation and agriculture",
+        "description": "Agriculture, drainage protection, and parks; conceptual designation.",
+        "stroke": "#86ae84",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#86ae84",
+        "fill-opacity": 0.38,
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.608,
+              39.824
+            ],
+            [
+              -104.578,
+              39.824
+            ],
+            [
+              -104.578,
+              39.787
+            ],
+            [
+              -104.608,
+              39.787
+            ],
+            [
+              -104.608,
+              39.824
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Innovation field",
+        "category": "Innovation / research",
+        "description": "Aeronautics and research employment with strict airport compatibility review.",
+        "stroke": "#84b1a2",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#84b1a2",
+        "fill-opacity": 0.38,
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.485,
+              39.82
+            ],
+            [
+              -104.464,
+              39.82
+            ],
+            [
+              -104.464,
+              39.789
+            ],
+            [
+              -104.485,
+              39.789
+            ],
+            [
+              -104.485,
+              39.82
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East Detroit Civic Square",
+        "category": "Point",
+        "description": "Fictional city center",
+        "marker-color": "#222b32",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.565,
+          39.768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Colorado Air and Space Port",
+        "category": "Point",
+        "description": "Real airport, Watkins, ZIP 80137",
+        "marker-color": "#222b32",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.538,
+          39.7842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Watkins gateway",
+        "category": "Point",
+        "description": "Fictional gateway near I-70",
+        "marker-color": "#222b32",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.595,
+          39.75
+        ]
+      }
+    }
+  ]
+}
