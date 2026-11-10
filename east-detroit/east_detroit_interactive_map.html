@@ -1,0 +1,403 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>East Detroit, Colorado | Fictional city and county</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>html,body{margin:0;height:100%;font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#21282c}header{display:flex;justify-content:space-between;align-items:center;gap:18px;background:#fff;padding:13px 20px;box-shadow:0 1px 6px #0002;position:relative;z-index:500}h1{margin:0;font-size:22px;letter-spacing:-.6px}small{font-size:12px;color:#61717a}#map{height:calc(100vh - 84px);min-height:440px}aside{position:absolute;z-index:499;bottom:25px;left:16px;width:min(290px,calc(100vw - 56px));padding:15px 17px;border-radius:10px;background:#fffffff2;box-shadow:0 3px 25px #0003}.legend{display:flex;gap:9px;align-items:center;padding:3px 0;font-size:12px}.swatch{display:inline-block;width:11px;height:11px;border:1px solid #0002}.leaflet-control-layers{font-size:13px}.note{font-size:12px;color:#47565e;line-height:1.5;margin:10px 0 0}</style></head><body>
+<header><div><h1>East Detroit <small>Colorado · fictional city-county</small></h1><small>Planning exercise · Approximate study footprint · 2026</small></div><small>Boundaries and zoning are invented</small></header><div id="map"></div><aside><strong>Proposed land-use zones</strong><div id="legend"></div><p class="note">Based on the real CASP planning area. Airport remains real. Switch to Satellite imagery at top right. Basemap requires internet; overlays do not.</p></aside>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>
+const data={
+  "type": "FeatureCollection",
+  "name": "East Detroit Colorado - fictional zoning scenario",
+  "properties": {
+    "fictional": true,
+    "note": "All new boundaries, districts, and city labels are fictional; base street anchors are approximate. Do not use for legal, property, navigation or permitting decisions."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "City and County of East Detroit",
+        "category": "Fictional city-county boundary",
+        "description": "Approximate classroom boundary modeled on the actual CASP planning-area extent, not legal county or municipal lines.",
+        "stroke": "#d24c47",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#d24c47",
+        "fill-opacity": 0.38,
+        "source": "Adams County CASP Subarea Plan (2021), Fig 1-2",
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.612,
+              39.828
+            ],
+            [
+              -104.458,
+              39.828
+            ],
+            [
+              -104.458,
+              39.738
+            ],
+            [
+              -104.612,
+              39.738
+            ],
+            [
+              -104.612,
+              39.828
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Civic core",
+        "category": "Mixed-use center",
+        "description": "Downtown housing, public buildings, retail; conceptual 4\u20138 stories.",
+        "stroke": "#dd8d5a",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#dd8d5a",
+        "fill-opacity": 0.38,
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.583,
+              39.78
+            ],
+            [
+              -104.549,
+              39.78
+            ],
+            [
+              -104.549,
+              39.758
+            ],
+            [
+              -104.583,
+              39.758
+            ],
+            [
+              -104.583,
+              39.78
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Watkins gateway",
+        "category": "Transit village",
+        "description": "Highway access and fictional regional transit hub; 3\u20136 stories.",
+        "stroke": "#dfb560",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#dfb560",
+        "fill-opacity": 0.38,
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.607,
+              39.761
+            ],
+            [
+              -104.579,
+              39.761
+            ],
+            [
+              -104.579,
+              39.741
+            ],
+            [
+              -104.607,
+              39.741
+            ],
+            [
+              -104.607,
+              39.761
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "South neighborhoods",
+        "category": "Housing expansion",
+        "description": "Residential upzoning with schools and parks; 2\u20135 stories.",
+        "stroke": "#91b9c2",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#91b9c2",
+        "fill-opacity": 0.38,
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.548,
+              39.777
+            ],
+            [
+              -104.511,
+              39.777
+            ],
+            [
+              -104.511,
+              39.748
+            ],
+            [
+              -104.548,
+              39.748
+            ],
+            [
+              -104.548,
+              39.777
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East works",
+        "category": "Employment district",
+        "description": "Industrial, logistics, training, clean manufacturing; no assumed existing entitlements.",
+        "stroke": "#b29ac9",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#b29ac9",
+        "fill-opacity": 0.38,
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.509,
+              39.78
+            ],
+            [
+              -104.463,
+              39.78
+            ],
+            [
+              -104.463,
+              39.742
+            ],
+            [
+              -104.509,
+              39.742
+            ],
+            [
+              -104.509,
+              39.78
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Airfield protection",
+        "category": "Aviation reserve",
+        "description": "Protects existing Colorado Air and Space Port; residential development excluded.",
+        "stroke": "#8c9299",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#8c9299",
+        "fill-opacity": 0.38,
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.574,
+              39.812
+            ],
+            [
+              -104.486,
+              39.812
+            ],
+            [
+              -104.486,
+              39.782
+            ],
+            [
+              -104.574,
+              39.782
+            ],
+            [
+              -104.574,
+              39.812
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "North commons",
+        "category": "Conservation and agriculture",
+        "description": "Agriculture, drainage protection, and parks; conceptual designation.",
+        "stroke": "#86ae84",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#86ae84",
+        "fill-opacity": 0.38,
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.608,
+              39.824
+            ],
+            [
+              -104.578,
+              39.824
+            ],
+            [
+              -104.578,
+              39.787
+            ],
+            [
+              -104.608,
+              39.787
+            ],
+            [
+              -104.608,
+              39.824
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Innovation field",
+        "category": "Innovation / research",
+        "description": "Aeronautics and research employment with strict airport compatibility review.",
+        "stroke": "#84b1a2",
+        "stroke-width": 3,
+        "stroke-opacity": 0.95,
+        "fill": "#84b1a2",
+        "fill-opacity": 0.38,
+        "fictional": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.485,
+              39.82
+            ],
+            [
+              -104.464,
+              39.82
+            ],
+            [
+              -104.464,
+              39.789
+            ],
+            [
+              -104.485,
+              39.789
+            ],
+            [
+              -104.485,
+              39.82
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East Detroit Civic Square",
+        "category": "Point",
+        "description": "Fictional city center",
+        "marker-color": "#222b32",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.565,
+          39.768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Colorado Air and Space Port",
+        "category": "Point",
+        "description": "Real airport, Watkins, ZIP 80137",
+        "marker-color": "#222b32",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.538,
+          39.7842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Watkins gateway",
+        "category": "Point",
+        "description": "Fictional gateway near I-70",
+        "marker-color": "#222b32",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.595,
+          39.75
+        ]
+      }
+    }
+  ]
+};
+const osm=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19});
+const sat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{attribution:'Imagery © Esri and imagery contributors',maxZoom:19});
+const map=L.map('map',{layers:[sat],zoomControl:true}).setView([39.787,-104.535],11);
+const featureLayer=L.geoJSON(data,{style:function(f){const p=f.properties;return{color:p.stroke||'#222',weight:p.category==='Fictional city-county boundary'?5:2,fillColor:p.fill||'#fff',fillOpacity:p.category==='Fictional city-county boundary'?0.02:0.34,dashArray:p.category==='Fictional city-county boundary'?'10 6':null}},pointToLayer:(f,latlng)=>L.circleMarker(latlng,{radius:6,color:'#fff',weight:2,fillColor:'#29343a',fillOpacity:1}),onEachFeature:(f,l)=>l.bindPopup('<b>'+f.properties.name+'</b><br>'+f.properties.description)}).addTo(map);
+const overlay={'Fictional city boundary and proposed zoning':featureLayer};L.control.layers({'Satellite':sat,'Streets':osm},overlay,{collapsed:false}).addTo(map);
+map.fitBounds([[39.731,-104.628],[39.836,-104.443]]);
+const legend=document.querySelector('#legend');data.features.filter(f=>f.geometry.type==='Polygon'&&f.properties.category!=='Fictional city-county boundary').forEach(f=>{const row=document.createElement('div');row.className='legend';row.innerHTML='<span class="swatch" style="background:'+f.properties.fill+'"></span><span>'+f.properties.name+'</span>';legend.appendChild(row)});
+</script></body></html>
