@@ -8,17 +8,15 @@ lang: en-US
 
 # How to sign up
 
-1. Read the **Directory of Departments and Agencies** and choose one entry.
-2. Write your name next to it. **One person per entry.**
-3. If your first choice is taken, choose another. There are 27 entries and fewer students.
+1. Choose one entry from the **Directory of Departments and Agencies**: a department, an outside agency or a resident group.
+2. Write your name next to it. One person per entry.
+3. If it is taken, choose another. There are 27 entries and fewer students.
 
-**The instructor plays every entry left blank.** Unclaimed entries still answer requests, set conditions and refuse, as a student owner would.
-
-You can claim an outside agency or a resident group instead of a city-county department.
+The instructor plays every blank entry, answering requests, setting conditions and refusing as a student owner would.
 
 # City-county departments
 
-These must take part in the spec.
+These must take part.
 
 | ID | Department | Student | If blank |
 |------|-----------------------------|------------------------------|-----------|
@@ -42,7 +40,7 @@ These must take part in the spec.
 
 # Outside agencies
 
-Independent bodies that may join, join on conditions, or refuse. A-01 to A-08 always have an owner. A-09 takes part only if a student claims it.
+Independent bodies that may join, set conditions or refuse. A-01 to A-08 always have an owner; A-09 takes part only if claimed.
 
 | ID | Agency | Student | If blank |
 |------|-----------------------------|------------------------------|-----------|

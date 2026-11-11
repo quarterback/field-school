@@ -1,0 +1,182 @@
+[
+ {
+  "before": "The real evidence comes in four kinds:",
+  "after": "Real evidence comes in four kinds:",
+  "kind": "line-edit",
+  "reason": "Cuts connective or explanatory prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "claims that have not been decided. An investigation",
+  "after": "undecided claims. An investigation",
+  "kind": "line-edit",
+  "reason": "Cuts connective or explanatory prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "They show a city department setting investment goals apart from a voucher authority's daily work. [[D3]](#D3)",
+  "after": "[[D3]](#D3)",
+  "kind": "overexplaining",
+  "reason": "Interpretation adds no evidence."
+ },
+ {
+  "before": "## Detroit Housing and Revitalization Department: a city department",
+  "after": "## Detroit HRD: a city department",
+  "kind": "structure",
+  "reason": "Shorter heading."
+ },
+ {
+  "before": "## Detroit Housing Commission: a separate, federally accountable authority",
+  "after": "## Detroit Housing Commission: separate and federally accountable",
+  "kind": "structure",
+  "reason": "Shorter heading."
+ },
+ {
+  "before": "HUD announced a plan to return DHC to local control. The plan required sustainable",
+  "after": "HUD announced a plan to return DHC to local control, requiring sustainable",
+  "kind": "line-edit",
+  "reason": "Cuts connective or explanatory prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "So an authority can be locally governed and federally accountable at once. The city can influence appointments and policy; HUD can impose program rules and step in when the agency fails.\n\n",
+  "after": "",
+  "kind": "redundancy",
+  "reason": "Restates the heading and the bullets above."
+ },
+ {
+  "before": "partly for lack of staff to do the required work.",
+  "after": "partly for lack of staff.",
+  "kind": "line-edit",
+  "reason": "Cuts connective or explanatory prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "A shared digital form alone cannot fix unstaffed queues, wrong payment calculations, inspections, landlord distrust or underfunded properties. Staffing,",
+  "after": "A shared digital form alone cannot fix unstaffed queues, wrong payments, inspections, landlord distrust or underfunded properties. Staffing,",
+  "kind": "line-edit",
+  "reason": "Cuts connective or explanatory prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "## Board, jurisdiction and accountability",
+  "after": "## Board and accountability",
+  "kind": "structure",
+  "reason": "Shorter heading."
+ },
+ {
+  "before": "Portland's own Housing Bureau finances affordable housing, supports preservation and runs local housing policies. So Portland is a second real case of a city bureau beside a separate authority. East Detroit combines this pattern with Detroit's split between HRD and DHC.",
+  "after": "Portland's own Housing Bureau finances affordable housing, supports preservation and runs local housing policies. Like Detroit's HRD and DHC, Portland pairs a city bureau with a separate authority, the pattern East Detroit follows.",
+  "kind": "line-edit",
+  "reason": "Cuts connective or explanatory prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "## A documented operating and financial crisis",
+  "after": "## An operating and financial crisis",
+  "kind": "structure",
+  "reason": "Shorter heading."
+ },
+ {
+  "before": "| Who owns each handoff, management contracts, how long units are actually leasable |",
+  "after": "| Handoff ownership, management contracts, real time to lease |",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "| The difference between an accusation, preliminary grounds and a formal finding |",
+  "after": "| Accusation vs. preliminary grounds vs. formal finding |",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "| Forecasting, dependence on federal funds, shifting costs to tenants, and who has authority to change benefits |",
+  "after": "| Forecasting, federal-fund dependence, cost shifts to tenants, who may change benefits |",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "Intense unmet need can coexist with vacant apartments, slow leasing, high operating costs, a strained budget and serious tenant complaints about living conditions. No single figure shows the cause. Vacant units include ones needing work, ones with different affordability restrictions, and ones whose rents may not compete with some market offers. Ask which operating, financial, legal or market conditions cause each delay or vacancy.\n\nAn authority with public representation and formal controls can still fail at oversight. MTW flexibility cannot replace",
+  "after": "Unmet need can coexist with vacancies, slow leasing, high costs, a strained budget and tenant complaints about living conditions. No single figure shows the cause: vacant units include ones needing work, with different affordability restrictions, or with rents that may not compete with some market offers. Ask what causes each delay or vacancy.\n\nPublic representation and formal controls do not prevent oversight failures. MTW flexibility cannot replace",
+  "kind": "line-edit",
+  "reason": "Cuts connective or explanatory prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "| HRD: policy, investment, production, preservation, homelessness services [[D1]](#D1) | Housing Bureau: housing finance, local protections [[H3]](#H3) | EDHD, a city-county department that must take part |",
+  "after": "| HRD: policy, investment, production, preservation, homelessness [[D1]](#D1) | Housing Bureau: finance, local protections [[H3]](#H3) | EDHD; must take part |",
+  "kind": "line-edit",
+  "reason": "Shorter cells."
+ },
+ {
+  "before": "| DHC: own federally accountable programs; five-member board appointed by the mayor [[D6]](#D6) | Home Forward: independent public corporation; nine commissioners from several jurisdictions [[H1]](#H1) [[H2]](#H2) | EDRHA, an independent regional authority |",
+  "after": "| DHC: federally accountable; five-member board appointed by the mayor [[D6]](#D6) | Home Forward: independent public corporation; nine commissioners, several jurisdictions [[H1]](#H1) [[H2]](#H2) | EDRHA, independent and regional |",
+  "kind": "line-edit",
+  "reason": "Shorter cells."
+ },
+ {
+  "before": "| Portland, Gresham, Multnomah County and other county communities | East Detroit and participating neighboring communities |",
+  "after": "| Portland, Gresham, rest of Multnomah County | East Detroit plus participating neighbors |",
+  "kind": "line-edit",
+  "reason": "Shorter cells."
+ },
+ {
+  "before": "| City investment and entitlement funds vs. authority housing assistance and property finance | Local housing funds vs. federal vouchers, property revenue and other sources | Separate city and authority funds, with terms for joint projects |",
+  "after": "| City and entitlement funds vs. authority assistance and property finance | Local funds vs. federal vouchers, property revenue, other sources | Separate funds; terms for joint projects |",
+  "kind": "line-edit",
+  "reason": "Shorter cells."
+ },
+ {
+  "before": "Neither assumed; examine whatever local baseline evidence exists",
+  "after": "None assumed; examine whatever local evidence exists",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "## What overlap can and cannot tell us",
+  "after": "## What overlap tells us",
+  "kind": "structure",
+  "reason": "Shorter heading."
+ },
+ {
+  "before": "Savings worth investigating: duplicated household intake, repeated address checks, conflicting program directories, staff referrals with no case tracking, repeated requests to landlords, inconsistent vacancy reporting, and several help desks with no clear handoff.",
+  "after": "Savings to investigate: duplicate intake, repeated address checks, conflicting program directories, untracked staff referrals, repeated landlord requests, inconsistent vacancy reporting, and help desks with no clear handoff.",
+  "kind": "line-edit",
+  "reason": "Cuts connective or explanatory prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "| Offer a city-funded prevention program, navigation help or a referral |",
+  "after": "| Offer city-funded prevention, navigation help or a referral |",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "| Use its own records and HUD verification rules for its programs |",
+  "after": "| Use its own records and HUD verification rules |",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "| Decide eligibility, rent calculations and voucher or lease rules for its programs |",
+  "after": "| Decide eligibility, rent calculations, and voucher or lease rules |",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "| Confirm the actual voucher budget, available property, subsidy and inspection requirements |",
+  "after": "| Confirm voucher budget, available property, subsidy and inspection requirements |",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "| Correct the local case and allow appeals under city program rules | Correct its official voucher or tenancy record and use the required review process | The original record holder and any independent appeal body |",
+  "after": "| Correct the local case; allow appeals under city rules | Correct its voucher or tenancy record; use the required review process | Original record holder, any independent appeal body |",
+  "kind": "line-edit",
+  "reason": "Shorter cells."
+ },
+ {
+  "before": "A shared application, verified-status exchange, assisted referral or resident credential is an implementation choice (OPEN). Each needs exact agreement on who sends what, for what purpose, under which rules, and who corrects a wrong result. Do not assume either agency automatically accepts the other's income record.",
+  "after": "Shared applications, verified-status exchanges, assisted referrals and resident credentials are implementation choices (OPEN). Each needs exact agreement on who sends what, why, under which rules, and who fixes errors. Do not assume either agency accepts the other's income record.",
+  "kind": "line-edit",
+  "reason": "Cuts connective or explanatory prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "Participation by external authorities is voluntary in the exercise.",
+  "after": "External authorities take part voluntarily.",
+  "kind": "line-edit",
+  "reason": "Cuts connective or explanatory prose; keeps every fact, figure, qualifier and citation."
+ }
+]

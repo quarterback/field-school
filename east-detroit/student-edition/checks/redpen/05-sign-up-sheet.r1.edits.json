@@ -1,0 +1,20 @@
+[
+ {
+  "before": "1. Read the **Directory of Departments and Agencies** and choose one entry.\n2. Write your name next to it. **One person per entry.**\n3. If your first choice is taken, choose another. There are 27 entries and fewer students.\n\n**The instructor plays every entry left blank.** Unclaimed entries still answer requests, set conditions and refuse, as a student owner would.\n\nYou can claim an outside agency or a resident group instead of a city-county department.",
+  "after": "1. Choose one entry from the **Directory of Departments and Agencies**: a department, an outside agency or a resident group.\n2. Write your name next to it. One person per entry.\n3. If it is taken, choose another. There are 27 entries and fewer students.\n\nThe instructor plays every blank entry, answering requests, setting conditions and refusing as a student owner would.",
+  "kind": "line-edit",
+  "reason": "Fold the 'you can claim' paragraph into step 1; one sentence for blank entries; drop emphasis bold."
+ },
+ {
+  "before": "These must take part in the spec.",
+  "after": "These must take part.",
+  "kind": "line-edit",
+  "reason": "Excess words."
+ },
+ {
+  "before": "Independent bodies that may join, join on conditions, or refuse. A-01 to A-08 always have an owner. A-09 takes part only if a student claims it.",
+  "after": "Independent bodies that may join, set conditions or refuse. A-01 to A-08 always have an owner; A-09 takes part only if claimed.",
+  "kind": "line-edit",
+  "reason": "Fewer words."
+ }
+]
