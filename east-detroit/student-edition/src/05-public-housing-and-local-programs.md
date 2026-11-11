@@ -1,23 +1,23 @@
 ---
-title: "Housing: Two Models of Public Authority"
-subtitle: "Reading 3 of 4: Home Forward, Detroit, and East Detroit's two housing institutions"
-author: "Public Mechanics"
-date: "Student edition, November 2026. Research current to 10 November 2026."
+title: "Public Housing and Local Housing Programs"
+subtitle: "East Detroit | Detroit and Portland governance cases"
+author: "City and County of East Detroit"
+date: "November 2030"
 lang: en-US
 ---
 
-# Reading the housing cases
+# Public housing and local housing programs
 
-This report compares the Housing and Revitalization Department and Housing Commission in Detroit with the Portland Housing Bureau and Home Forward. Sources are identified by the [D], [H] and [F] references. Reported findings retain their dates and attribution; an investigation does not establish misconduct.
+East Detroit has two housing institutions: the City Housing Division and the independent Regional Housing Authority. Detroit and Portland provide detailed examples of how these responsibilities are divided. The historical cases below include reporting through November 2026. Each case finding is linked to its original agency record, public document or published investigation.
 
 # East Detroit's two housing institutions
 
 1. **City and County of East Detroit Housing Division (EDHD).** A city-county department, answerable to the executive and council through appropriations and public records. It runs local housing policy and programs: financing development and preservation, tenant and homeowner assistance, homelessness prevention, and coordination with planning and human services. It may manage locally financed housing or contracts, but cannot allocate an independent authority's federal vouchers.
 2. **East Detroit Regional Housing Authority (EDRHA).** An independent public housing authority with its own commission, management, budgets, federal housing agreements, property and rental-assistance operations, and accountability duties. Modeled on Home Forward, it also serves participating communities beyond the city-county. It administers federal housing assistance and its portfolio, plus local or regional programs where agreements allow. The city-county cannot direct its board or take its records just because it serves city residents.
 
-Both serve many of the same residents while maintaining separate budgets, boards, program rules and records. Households may encounter repeated intake and verification. The agencies must agree on any shared process.
+Both serve many of the same residents while maintaining separate budgets, boards, programs and records. Households can encounter repeated intake or verification. Coordination requires a defined agreement between the agencies.
 
-# 1. The Detroit model
+# Detroit: a city department and a separate housing commission
 
 ## Detroit HRD: a city department
 
@@ -43,7 +43,7 @@ The Detroit Housing Commission (DHC) is a public housing authority, governed sep
 
 A shared digital form cannot fix these problems alone. Staffing, authority, incentives and financing are part of the service.
 
-# 2. Home Forward
+# Portland: Home Forward and the city housing bureau
 
 Home Forward is a public corporation and the housing authority for Portland and Multnomah County, including Gresham and east Multnomah County. It states that it is not part of Portland city government. It runs housing assistance, affordable properties and related services, plus some programs for the city, the county and other partners. [[H1]](#H1)
 
@@ -74,7 +74,7 @@ Intense unmet need can coexist with all of these problems, and no single figure 
 
 An authority with public representation and formal controls can still fail at oversight. MTW flexibility cannot replace accurate financial reporting, adequate staffing, property performance or a functioning board.
 
-# 3. Two precedents for two East Detroit institutions
+# Comparison of housing authority models
 
 | Question | Detroit: city department + DHC | Portland: Housing Bureau + Home Forward | East Detroit |
 |---|---|---|---|
@@ -94,7 +94,7 @@ An authority with public representation and formal controls can still fail at ov
 - Work that should stay separate: program-specific federal eligibility and appeals; HUD voucher funding; property ownership and debt; inspections and habitability; city appropriations; regional board accountability; and resident confidentiality.
 - A possible harm: more referrals to programs with no funding, staff, available unit or willing landlord. Faster screening can lengthen a queue when the bottleneck is housing supply or leasing, not intake.
 
-# 4. One household, two agencies
+# How the agencies encounter the same household
 
 Consider a household that is behind on rent and may lose its home.
 
@@ -120,13 +120,6 @@ One-click housing approval depends on several separate federal and local require
 - **Eviction court.** Automatic court stays require legal authority beyond a housing service. Court rules, notice, case status, landlord action and judicial authority need an actual legal basis. A housing authority's automated referral cannot cancel a court case.
 
 Reliable verification can reduce repeat paperwork. The agencies must still settle who operates the process and who handles corrections.
-
-# 5. Questions for agency leaders
-
-- Where do the city division and regional authority ask households to provide the same information?
-- Which delays come from intake, staffing, inspections, funding, available units or landlord participation?
-- What would a coordinated referral or leasing process require from both agencies?
-- How would each agency maintain its own records, appeals and financial accountability?
 
 # Sources
 

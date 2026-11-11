@@ -1,50 +1,14 @@
-# East Detroit student edition
+# East Detroit | Municipal pre-read
 
-Four student readings, a sign-up sheet and a directory of departments and agencies, produced from the V3 working documents. GitHub remains the source of truth for the scenario. Students get the PDFs (and Word copies if needed) through Google Drive or the course site. They should never need to open this repository.
+This collection describes East Detroit's 2030 population, government, operating responsibilities and the laws and public programs that inform them. Each office entry includes links to the relevant government source, law, agency publication or case report.
 
-| # | Reading | Word (editable master) | PDF (reading copy) |
+| Reading | Contents | PDF | Word |
 |---|---|---|---|
-| 1 | Welcome to East Detroit | [docx](dist/01-welcome-to-east-detroit.docx) | [pdf](dist/01-welcome-to-east-detroit.pdf) |
-| 2 | How East Detroit Is Governed | [docx](dist/02-how-east-detroit-is-governed.docx) | [pdf](dist/02-how-east-detroit-is-governed.pdf) |
-| 3 | Housing: Two Models of Public Authority | [docx](dist/03-housing-two-models-of-public-authority.docx) | [pdf](dist/03-housing-two-models-of-public-authority.pdf) |
-| 4 | The Municipal Project Brief | [docx](dist/04-municipal-project-brief.docx) | [pdf](dist/04-municipal-project-brief.pdf) |
-| 5 | Sign-up Sheet | [docx](dist/05-sign-up-sheet.docx) | [pdf](dist/05-sign-up-sheet.pdf) |
-| 6 | Directory of Departments and Agencies | [docx](dist/06-directory-of-departments-and-agencies.docx) | [pdf](dist/06-directory-of-departments-and-agencies.pdf) |
+| 1. City and County Profile | Location, population, housing, growth and public institutions | [PDF](dist/01-city-county-profile.pdf) | [Word](dist/01-city-county-profile.docx) |
+| 2. Government, Records and Public Authority | Colorado structure, information law, federal privacy and Estonia's X-tee | [PDF](dist/02-government-and-records.pdf) | [Word](dist/02-government-and-records.docx) |
+| 3. City-County Departments | Fifteen municipal offices, their work and the rules and sources that govern them | [PDF](dist/03-city-department-reference.pdf) | [Word](dist/03-city-department-reference.docx) |
+| 4. Regional and Independent Agencies | Nine separately governed agencies, their records and governing rules | [PDF](dist/04-independent-agency-reference.pdf) | [Word](dist/04-independent-agency-reference.docx) |
+| 5. Public Housing and Local Housing Programs | Detroit and Home Forward histories, performance reports, HUD duties and source links | [PDF](dist/05-public-housing-and-local-programs.pdf) | [Word](dist/05-public-housing-and-local-programs.docx) |
+| 6. Neighborhoods and Community Organizations | Twenty neighborhoods, income and housing conditions, and three community groups | [PDF](dist/06-neighborhoods-and-community-organizations.pdf) | [Word](dist/06-neighborhoods-and-community-organizations.docx) |
 
-## Review before distributing
-
-- [EDITORIAL_CHANGE_LOG.md](EDITORIAL_CHANGE_LOG.md): every substantive deletion, merge, move and correction, plus the items needing your decision.
-- [CITATION_CHECK.md](CITATION_CHECK.md): link and figure verification, plus five pages to click-check by hand.
-- [checks/literal_guard_report.md](checks/literal_guard_report.md) and [checks/inspect_report.md](checks/inspect_report.md): Red Pen check output.
-
-## Files
-
-- `src/*.md`: editorial masters for the readings (pandoc Markdown). Edit these, not the .docx files, so changes are tracked.
-- `figures/`: Figure 1, rendered by `render_map.py` from `../v3/east_detroit_2030_draft.geojson`.
-- `build.py`: builds the Word template (heading styles, table style, page-number footer), converts Markdown to .docx with pandoc, then exports tagged PDFs with LibreOffice.
-- `checks/`: Red Pen-based checks.
-- `dist/`: built documents.
-
-## Rebuild
-
-Requires pandoc 3, LibreOffice, Python with `python-docx` and `Pillow`, and Node 20+.
-
-```bash
-cd east-detroit/student-edition
-```
-
-```bash
-python3 render_map.py && python3 build.py
-```
-
-```bash
-npm install && npm run check
-```
-
-## When the scenario changes
-
-1. Change the V3 document in `../v3/` first. It stays the source of truth.
-2. Make the matching change in `src/`, and add an entry to the change log.
-3. Rebuild, run the checks, and re-upload the PDFs.
-
-Do not fix facts only in the student edition. If an editor finds an error here, correct it in `../v3/` as well, as was done for the links in change-log items C1–C5.
+The cited laws and case reporting are linked directly inside the readings. The research and geographic source files remain in [the city archive](../v3/). The rendered Word and PDF files are generated from [the six source texts](src/).

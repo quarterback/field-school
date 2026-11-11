@@ -28,7 +28,7 @@ The [Colorado Criminal Justice Records Act, C.R.S. § 24-72-301 et seq.](https:/
 
 ## Digital services and accessibility
 
-The federal Americans with Disabilities Act, Title II, applies to state and local government services. The Department of Justice's 2024 web and mobile rule generally requires WCAG 2.1 Level AA. The federal compliance date for public entities serving at least 50,000 people was extended to **April 26, 2027**; special district governments have a different deadline. [DOJ: Title II web and mobile rule, updated 2026](https://www.ada.gov/resources/2024-03-08-web-rule/). Colorado also has its own government technology accessibility requirements under [HB21-1110](https://www.ada.gov/resources/2024-03-08-web-rule/) and related state rules.
+The federal Americans with Disabilities Act, Title II, applies to state and local government services. The Department of Justice's 2024 web and mobile rule generally requires WCAG 2.1 Level AA. The federal compliance date for public entities serving at least 50,000 people was extended to **April 26, 2027**; special district governments have a different deadline. [DOJ: Title II web and mobile rule, updated 2026](https://www.ada.gov/resources/2024-03-08-web-rule/). Colorado also has its own government technology accessibility requirements under [Colorado HB21-1110](https://www.leg.colorado.gov/bills/HB21-1110) and related state rules.
 
 Electronic records and signatures can be valid without turning all transactions into automated decisions. The legal status of a record, the authority to act on it and a resident's right to a review are separate matters.
 
