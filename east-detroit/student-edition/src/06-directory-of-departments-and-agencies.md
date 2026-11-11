@@ -112,7 +112,7 @@ Every entry answers four spec questions:
 
 **Works with:** A-05, D-05, D-07, D-15, R-01. **Start with:** Reading 1 (conditions 1, 2 and 6; households H01, H03, H05); Reading 2 (county-administered benefits).
 
-## D-05 Housing Division (EDHD)
+## D-05 City Housing Division (EDHD)
 
 **Runs and holds:** city-funded rent and homelessness-prevention help, housing policy, development and preservation finance, tenant and homeowner services; local assistance cases, housing finance agreements.
 
