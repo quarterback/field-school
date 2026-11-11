@@ -21,10 +21,10 @@ Codes like [[D1]](#D1) or [[H5]](#H5) link to the sources at the end. Figures da
 
 # East Detroit's two housing institutions (SCENARIO)
 
-1. **City and County of East Detroit Housing Division (EDHD).** A city-county department, answerable to the executive and council through appropriations and public records. It runs local housing policy and programs: financing development and preservation, tenant and homeowner assistance, homelessness prevention, and coordination with planning and human services. It may manage locally financed housing or contracts. It cannot allocate an independent authority's federal vouchers.
+1. **City and County of East Detroit Housing Division (EDHD).** A city-county department, answerable to the executive and council through appropriations and public records. It runs local housing policy and programs: financing development and preservation, tenant and homeowner assistance, homelessness prevention, and coordination with planning and human services. It may manage locally financed housing or contracts, but cannot allocate an independent authority's federal vouchers.
 2. **East Detroit Regional Housing Authority (EDRHA).** An independent public housing authority with its own commission, management, budgets, federal housing agreements, property and rental-assistance operations, and accountability duties. Modeled on Home Forward, it also serves participating communities beyond the city-county. It administers federal housing assistance and its portfolio, plus local or regional programs where agreements allow. The city-county cannot direct its board or take its records just because it serves city residents.
 
-Both exist when the class starts in 2030. They are separate public bodies in one city-county, not rival "city" and "county" governments. They serve many of the same residents, so a household can face duplicate intake and repeated checks. Their coordination agreements, shared processes, data-access rules, financial contributions and implementation choices are OPEN.
+Both exist when the class starts in 2030. They are separate public bodies in one city-county, not rival "city" and "county" governments. They serve many of the same residents, so a household can face duplicate intake and repeated checks. Their coordination agreements, shared processes, data-access rules, financial contributions and implementation choices are OPEN (see section 5).
 
 # 1. The Detroit model
 
@@ -36,7 +36,7 @@ Detroit's *2025–2030 Affordable Housing Strategy* targets preserving 10,000 af
 
 ## Detroit Housing Commission: separate and federally accountable
 
-The Detroit Housing Commission (DHC) is a public housing authority, governed separately from HRD, that runs rental assistance and housing.
+The Detroit Housing Commission (DHC) is a public housing authority, governed separately from HRD.
 
 - **Federal takeover.** After administrative, financial and management failures, HUD took control of DHC's operations on July 7, 2005. [[D4]](#D4)
 - **Transition plan.** In January 2012, HUD announced a plan to return DHC to local control, requiring sustainable governance, an oversight agreement and performance improvements. [[D5]](#D5)
@@ -45,12 +45,12 @@ The Detroit Housing Commission (DHC) is a public housing authority, governed sep
 
 ## Detroit's operating problems (reported findings)
 
-- **Income and voucher recertification.** Outlier Media reported that understaffing caused long federal voucher backlogs. In April 2023, 221 of 1,960 recertifications due were complete. 2024 reporting found 1,747 delinquent recertifications still pending despite an outside contractor's help. Pending recertifications can mean wrong rents and subsidies. Landlords reported late payments; some stopped accepting DHC vouchers. [[D7]](#D7) [[D8]](#D8)
+- **Income and voucher recertification.** Outlier Media reported that understaffing caused long federal voucher backlogs. In April 2023, 221 of 1,960 recertifications due were complete. Reporting in 2024 found 1,747 delinquent recertifications still pending despite an outside contractor's help. Pending recertifications can mean wrong rents and subsidies. Landlords reported late payments; some stopped accepting DHC vouchers. [[D7]](#D7) [[D8]](#D8)
 - **Capacity and unmet demand.** Outlier reported that for a period the agency used roughly 1,500 fewer vouchers than its capacity, partly for lack of staff. [[D8]](#D8)
 - **Vacancy and building condition.** In a 2023 Outlier interview, the interviewer put public housing occupancy at about 78%. Later reporting put vacancy near 23–24% in September 2024, with problems collecting rent and deteriorating buildings. [[D9]](#D9) [[D10]](#D10)
 - **Recovery, with limits.** In a 2025 follow-up, Outlier reported that DHC management said it had mostly cleared the recertification backlog. Management also said vacancy had fallen from 24% to 14% and all 15 complexes had passed that year's HUD inspections. The same article reported residents whose problems persisted. These are reported outcomes and management statements for that period, not proof that every resident's problem was resolved. [[D11]](#D11)
 
-A shared digital form alone cannot fix unstaffed queues, wrong payments, inspections, landlord distrust or underfunded properties. Staffing, authority, incentives and financing are part of the service.
+A shared digital form cannot fix these problems alone. Staffing, authority, incentives and financing are part of the service.
 
 # 2. Home Forward
 
@@ -71,7 +71,7 @@ Home Forward joined HUD's Moving to Work (MTW) demonstration on April 1, 1999. M
 | When | Reported finding | What to examine |
 |-------|-----------------|----------|
 | November–December 2025 | A November vacancy report described 956 of 6,847 units vacant, about 14%. Later coverage rounded the count to 955. The agency cited damaged units, market conditions and other causes. A high vacancy count does not mean every unit was ready to rent. [[H6]](#H6) | Unit condition, affordability, waiting lists, location, eligibility and leasing speed |
-| February 2026 | Data supplied by Home Forward showed an average of 185 days to fill a vacancy in 2025. Buildings it managed directly averaged 172 days; contractor-run buildings had different averages. [[H7]](#H7) | Handoff ownership, management contracts, real time to lease |
+| February 2026 | Data supplied by Home Forward showed an average of 185 days to fill a vacancy in 2025. Buildings it managed directly averaged 172 days; contractor-run buildings had different averages. [[H7]](#H7) | Who owns each handoff, management contracts, how long units are actually available to lease |
 | February–March 2026 | Reporting identified high vacancy, lost rent revenue, weakening debt-service coverage, tenant safety concerns and uneven performance among contracted property managers. A March report described one manager averaging 292 days to fill units. [[H8]](#H8) [[H9]](#H9) | Contractor oversight, financial feedback loops, resident safety |
 | April–May 2026 | Willamette Week reported more than \$100,000 in agency-funded CEO travel during 2023–2025, based on public records. On April 29, Home Forward announced that CEO Ivory Mathews would resign effective May 1; Michael Buonocore became interim chief. Officials and residents questioned the board's oversight. [[H10]](#H10) [[H11]](#H11) | Board scrutiny, conflicts of interest, executive reporting, leadership and public accountability |
 | August 2026 | The Oregon Government Ethics Commission voted to investigate the former CEO's travel spending. The vote opened a full investigation, which is not a finding of misconduct. [[H12]](#H12) | Accusation vs. preliminary grounds vs. formal finding |
@@ -79,9 +79,9 @@ Home Forward joined HUD's Moving to Work (MTW) demonstration on April 1, 1999. M
 
 : Table 1. Home Forward, 2025–2026: what was reported, and when
 
-Unmet need can coexist with vacancies, slow leasing, high costs, a strained budget and tenant complaints about living conditions. No single figure shows the cause: vacant units include ones needing work, with different affordability restrictions, or with rents that may not compete with some market offers. Ask what causes each delay or vacancy.
+Intense unmet need can coexist with all of these problems, and no single figure shows the cause. Vacant units include ones needing work, ones with different affordability restrictions, and ones whose rents may not compete with some market offers. Ask what causes each delay or vacancy.
 
-Public representation and formal controls do not prevent oversight failures. MTW flexibility cannot replace accurate financial reporting, adequate staffing, property performance or a functioning board.
+An authority with public representation and formal controls can still fail at oversight. MTW flexibility cannot replace accurate financial reporting, adequate staffing, property performance or a functioning board.
 
 # 3. Two precedents for two East Detroit institutions
 
@@ -96,8 +96,6 @@ Public representation and formal controls do not prevent oversight failures. MTW
 | Why they may disagree | Independent duties and federal voucher administration | Regional constituency, separate board, funding restrictions | EDRHA may refuse integration or ask for contract conditions |
 
 : Table 2. Detroit, Portland and East Detroit compared
-
-Ask whether the two agencies' goals and legal powers fit, and whether cutting duplication keeps the functions that must stay separate.
 
 ## What overlap tells us
 
@@ -120,7 +118,7 @@ Example (not an adopted East Detroit design): a household is behind on rent and 
 
 : Table 3. Who could do what for a household facing eviction
 
-Shared applications, verified-status exchanges, assisted referrals and resident credentials are implementation choices (OPEN). Each needs exact agreement on who sends what, why, under which rules, and who fixes errors. Do not assume either agency accepts the other's income record.
+Shared applications, verified-status exchanges, assisted referrals and resident credentials are implementation choices (OPEN). Each needs exact agreement on who sends what, why, under which rules, and who fixes errors. Do not assume either agency automatically accepts the other's income record.
 
 ## Federal limits on "one-click housing"
 

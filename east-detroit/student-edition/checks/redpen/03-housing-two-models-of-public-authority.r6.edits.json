@@ -1,0 +1,14 @@
+[
+ {
+  "before": "Ask whether the two agencies' goals and legal powers fit, and whether cutting duplication keeps the functions that must stay separate.\n\n",
+  "after": "",
+  "kind": "redundancy",
+  "reason": "The overlap list that follows makes the same point."
+ },
+ {
+  "before": "An authority can have public representation and formal controls and still fail at oversight. MTW flexibility cannot replace",
+  "after": "An authority with public representation and formal controls can still fail at oversight. MTW flexibility cannot replace",
+  "kind": "line-edit",
+  "reason": "Fewer words."
+ }
+]

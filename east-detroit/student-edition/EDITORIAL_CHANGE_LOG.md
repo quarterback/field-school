@@ -145,3 +145,44 @@ An independent review of all six documents found the set heavy with machine-writ
 Cuts with content: Reading 1 dropped "not stereotypes or eligibility findings" from the household cases, and "Not every household benefits from aerospace investment." Reading 3 dropped "A housing benefit authorized on paper is different from a household actually receiving and using it" and the "Not decided by this case" list, which named student roles, sign-up and similar items that the Sign-up Sheet and Reading 4 now cover.
 
 The literal guard still reports only the ten date and number formatting differences listed in section 4.
+
+## 9. Third pass: Red Pen apply and plain language checklist, 11 November 2026
+
+Every edit in this pass went through Red Pen Editor 0.2.1: `brief` for each document, then exact-span edits submitted to `red-pen-editor apply`, whose guard accepts or rejects each one. Every round's brief, proposed edits and apply output (with accepted and rejected edits and reasons) are in `checks/redpen/`. The checklist used is the archived federal plain language checklist (GSA, `plainlanguage.gov` repository; the live site now redirects to digital.gov).
+
+| Document | Rounds | Accepted | Rejected | Facts released (allowLoss) | Words before | Words after | Cut |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 1. Welcome to East Detroit | 4 | 124 | 0 | 0 | 2,692 | 2,347 | 13% |
+| 2. How East Detroit Is Governed | 3 | 78 | 1 | 0 | 2,215 | 1,849 | 17% |
+| 3. Housing | 6 | 121 | 0 | 0 | 3,705 | 3,279 | 11% |
+| 4. Municipal Project Brief | 4 | 54 | 0 | 0 | 2,152 | 1,731 | 20% |
+| 5. Sign-up Sheet | 1 | 3 | 0 | 0 | 361 | 341 | 6% |
+| 6. Directory | 4 | 157 | 0 | 0 | 3,691 | 3,275 | 11% |
+| **Total** | | **537** | **1** | **0** | **14,816** | **12,822** | **13%** |
+
+Word counts include tables and source lists, which were not cut. Prose outside tables and sources fell further (for example, about 25% in Reading 2 and 17% in Reading 1's body). The one rejection was an overlapping edit to a table cell in Reading 2. Targets of 30 to 45% were set; editors stopped where further cuts would have removed facts, required list items or evidence qualifiers.
+
+Main structural changes: Reading 4 now puts the assignment, the roster and "What to bring" first. Directory fields are fragments. Reading 3's section 5 open items became a list. Short sentences, "you", active voice and base verbs throughout.
+
+**Checklist results** (met / partly / not met), from the editors' reports:
+
+| Item | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| Written for the average reader | met | met | met | met | met | met |
+| Organized for the reader | partly | partly | partly | met | met | met |
+| Useful headings | met | met | met | met | met | met |
+| Uses "you" | partly | partly | partly | met | met | partly |
+| Active voice | met | met | met | met | met | met |
+| Short sections and sentences | mostly | met | partly | partly | met | met |
+| Simple present | met | met | met | met | met | met |
+| Base verbs | met | met | met | met | met | met |
+| Omits excess words | met | met | met | mostly | met | partly |
+| Concrete, familiar words | met | met | met | partly | met | met |
+| "Must", not "shall" | met | met | met | met | met | met |
+| Words placed carefully | met | met | met | met | met | met |
+| Lists and tables | met | met | met | met | met | met |
+| Two or three levels at most | met | met | met | met | met | met |
+
+"Partly" items are mostly in descriptive readings (1, 2, 3), where "you" fits poorly, and in evidence lists in Reading 3, where 23 of 106 sentences stay over 20 words. Reading 4 keeps the terms MOU, GIS and "land-value mechanisms".
+
+**Guard results after the pass:** the cross-document literal guard reports the same ten formatting differences as before (section 4). Reading 3's YAML header and Sources are byte-identical to the previous version, and its qualifiers ("reported", "management said", "not a finding of misconduct", "not proof") appear as often as before.

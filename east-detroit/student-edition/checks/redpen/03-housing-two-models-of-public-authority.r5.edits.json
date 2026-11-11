@@ -1,0 +1,32 @@
+[
+ {
+  "before": "It may manage locally financed housing or contracts. It cannot allocate",
+  "after": "It may manage locally financed housing or contracts, but cannot allocate",
+  "kind": "line-edit",
+  "reason": "Merges two short related sentences."
+ },
+ {
+  "before": "Their coordination agreements, shared processes, data-access rules, financial contributions and implementation choices are OPEN.",
+  "after": "Their coordination agreements, shared processes, data-access rules, financial contributions and implementation choices are OPEN (see section 5).",
+  "kind": "structure",
+  "reason": "Points to the full OPEN list instead of repeating it later."
+ },
+ {
+  "before": "The Detroit Housing Commission (DHC) is a public housing authority, governed separately from HRD, that runs rental assistance and housing.",
+  "after": "The Detroit Housing Commission (DHC) is a public housing authority, governed separately from HRD.",
+  "kind": "redundancy",
+  "reason": "'Runs rental assistance and housing' restates what a public housing authority is."
+ },
+ {
+  "before": "A shared digital form alone cannot fix unstaffed queues, wrong payments, inspections, landlord distrust or underfunded properties. Staffing, authority, incentives and financing are part of the service.",
+  "after": "A shared digital form cannot fix these problems alone. Staffing, authority, incentives and financing are part of the service.",
+  "kind": "redundancy",
+  "reason": "The list repeats the bullets just above."
+ },
+ {
+  "before": "Intense unmet need can coexist with vacancies, slow leasing, high costs, a strained budget and tenant complaints about living conditions. No single figure shows the cause: vacant units include",
+  "after": "Intense unmet need can coexist with all of these problems, and no single figure shows the cause. Vacant units include",
+  "kind": "redundancy",
+  "reason": "Restates the table rows above."
+ }
+]
