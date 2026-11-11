@@ -6,18 +6,6 @@ date: "Student edition, November 2026"
 lang: en-US
 ---
 
-# Real, invented and undecided
-
-East Detroit is a fictional consolidated city and county in Colorado, east of Denver International Airport. The land is real; the city, its statistics, neighborhoods and institutions are invented.
-
-All six documents use three labels:
-
-- **REAL REFERENCE:** a real place, law, organization or published figure. Sources are at the end of each document.
-- **SCENARIO:** invented by the course. Treat it as true in the exercise.
-- **OPEN:** not yet decided by the class.
-
-Never present SCENARIO figures as real Census data or Colorado law.
-
 # The city in 2030
 
 East Detroit has grown rapidly through new housing, master-planned districts, warehousing, logistics and employment. The growth resembles the Phoenix metropolitan area: neighborhoods have expanded faster than some public services, and older communities now share a region with large new developments.
@@ -174,7 +162,7 @@ Don't average rows for citywide figures. The citywide median income was set sepa
 
 # Civic and cultural anchors
 
-- The Hangar at Space Center: 17,500-seat arena at the central RTD rail hub. The hub's capital plan, fare rules, station management and shared services are open.
+- The Hangar at Space Center: 17,500-seat arena at the central RTD rail hub. Rail operations and shared services involve the city and regional transit agencies.
 - Denver Fawns (WNBA): based at The Hangar.
 - Colorado Apex (PWHL): plays at The Hangar.
 - Denver Pilots (Triple-A baseball): moved from Albuquerque. They play at Aerotropolis Park, a 16,210-seat ballpark with views of launches from the spaceport.

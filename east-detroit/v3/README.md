@@ -19,18 +19,18 @@ The four formatted student readings (Word and PDF) are built from these document
 
 ## Housing case research: read before proposals
 
-**[Home Forward and Detroit: two housing institutions, overlapping work](housing_authority_case_home_forward_vs_detroit.md)** documents the real organizational patterns, operating failures, financial evidence, federal constraints, and potential coordination choices. It supplies direct links for every case finding. The instructor has established a **City and County Housing Division** and a separate **East Detroit Regional Housing Authority**. Their coexistence is a scenario fact, not a student decision. The agencies must negotiate any shared process.
+**[Home Forward and Detroit: two housing institutions, overlapping work](housing_authority_case_home_forward_vs_detroit.md)** documents the real organizational patterns, operating failures, financial evidence, federal constraints, and potential coordination choices. It supplies direct links for every case finding. The instructor has established a **City and County Housing Division** and a separate **East Detroit Regional Housing Authority**. Both serve the same residents under different public authorities. The agencies must negotiate any shared process.
 
 ## Baseline in one paragraph
 
 By 2030 East Detroit has **382,417 residents** in **155,800 occupied households**, with **20 neighborhoods** across a **115.4-square-mile** city-county, most of which is not densely built. It is a newly consolidated city-county in a Phoenix-like growth corridor east of Denver International Airport. Students establish the basis, plan implementation and negotiate how internal city-county offices and independent partners will work together. The implementation work covers authority, service priorities, procurement, contracts and agency data exchanges.
 
-## Cultural anchors in the fictional city
+## Civic and cultural institutions
 
-The Hangar at Space Center is a 17,500-seat venue for the Denver Fawns (WNBA) and Colorado Apex (PWHL). The Denver Pilots (Triple-A, fictionally relocated from Albuquerque) play at Aerotropolis Park (16,210 seats). EDPAC has a 2,200-seat hall, and the East Detroit Health System operates a Level I trauma center. Their operations involve separate financing, contractual and public-service responsibilities.
+The Hangar at Space Center is a 17,500-seat venue for the Denver Fawns (WNBA) and Colorado Apex (PWHL). The Denver Pilots (Triple-A, relocated from Albuquerque) play at Aerotropolis Park (16,210 seats). EDPAC has a 2,200-seat hall, and the East Detroit Health System operates a Level I trauma center. Their operations involve separate financing, contractual and public-service responsibilities.
 
 ## Files and editing
 
-Markdown files are working documents. Proposed class decisions go in the shared decision register; the instructor can promote adopted language to the dossier while preserving who made each decision. The scenario GeoJSON contains a **provisional** boundary and 20 neighborhood **label points only**. A mapping agent must overlay real GIS sources, draw neighborhood polygons, and report conflicts before declaring a map complete. Do not use the earlier `../east_detroit_scenario.geojson` as the new boundary.
+Markdown files are working documents. Proposed class decisions go in the shared decision register; the instructor can promote adopted language to the dossier while preserving who made each decision. The geographic data contains the city outline and neighborhood label points. A mapping agent must overlay real GIS sources, draw neighborhood polygons, and report conflicts before declaring a map complete. Do not use the earlier `../east_detroit_scenario.geojson` as the new boundary.
 
 The previous map package in the parent directory remains for historical reference. A map agent's rebuilt live map should be linked here when reviewed and published.

@@ -3,7 +3,7 @@
 
 ## 1. The problem we are governing
 
-East Detroit has 382,417 residents distributed across twenty provisional neighborhoods. It combines city services and county duties in one jurisdiction, but many organizations with whom residents interact remain independent. Growth produces new parcels, school crowding, expensive housing, long commutes, income differences, and demand for water, safety, recreation, permitting and benefits.
+East Detroit has 382,417 residents distributed across twenty neighborhoods. It combines city services and county duties in one jurisdiction, but many organizations with whom residents interact remain independent. Growth produces new parcels, school crowding, expensive housing, long commutes, income differences, and demand for water, safety, recreation, permitting and benefits.
 
 The class must establish what exists, decide what to implement, and secure cooperation. Every decision belongs to a named person or body. Working demonstrations will be compared with agreed responsibilities, legal authority and public funding.
 
@@ -44,7 +44,7 @@ Read: Colorado local government handbook, https://content.leg.colorado.gov/sites
 
 **Neighborhood technology stewards.** Detroit's Equitable Internet Initiative used community-led networks and Digital Stewards. It illustrates giving community members responsibility and paid roles rather than limiting their participation to surveys. Source: https://detroitcommunitytech.org/ .
 
-**Compare the choices, do not copy their laws.** A student may propose mixed board appointments, an elected commission, a neighborhood council, a contractual regional operator, or an internal city department. The record must specify who exercises each decision right and how that power is established in the fiction.
+**Compare the choices, do not copy their laws.** A student may propose mixed board appointments, an elected commission, a neighborhood council, a contractual regional operator, or an internal city department. The record must specify who exercises each decision right and how that power is established.
 
 Michigan charter-county law: https://legislature.mi.gov/Laws/MCL?objectName=mcl-45-515 ; Michigan local government overview: https://www.michigan.gov/som/government .
 
@@ -70,7 +70,7 @@ These examples originally appeared in the 20-page class packet. Verify their cur
 
 **Ownership and operations.** Who controls the domain, cloud or hosting accounts, source code, public contracts, records and derivative analytics? Who actually responds to users, maintains service hours, patches systems, processes complaints and hands over operation if a vendor fails? Separate each asset and each responsibility.
 
-**Information.** For every information exchange, identify the sender, receiver, purpose, fields, legal or fictional authority, permission or notice, retention, correction source, review, incident response and ability to revoke optional sharing. “Once-only,” ED-Wallet, zero-knowledge APIs, and automated referrals are options, not policy.
+**Information.** For every information exchange, identify the sender, receiver, purpose, fields, legal authority, permission or notice, retention, correction source, review, incident response and ability to revoke optional sharing. The design should account for proposed services, including once-only data exchange, resident-held credentials and automated referrals.
 
 **Money and incentives.** Compare general appropriations, agency contributions, user fees, developer fees, land-value mechanisms, grants, special districts, or contract revenue. Explain who bears costs, who benefits, and what happens when the assumed revenue does not arrive.
 

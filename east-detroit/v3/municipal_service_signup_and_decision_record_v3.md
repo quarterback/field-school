@@ -10,7 +10,7 @@
 **Issue ID:** ___  **Owner:** ___  **Date:** ___
 
 - Community need, neighborhood(s), or people affected:
-- Resident/worker example and what happens today in our 2030 scenario:
+- Resident/worker example and what happens in East Detroit:
 - Current responsible agency and source of its authority:
 - Known resources, costs, risks, and data limits:
 - Evidence and sources:
@@ -24,7 +24,7 @@
 1. **Choice to be made:**
 2. **Proposed rule, action, or service:**
 3. **Alternatives considered:**
-4. **Reason and evidence:** cite packet page, actual source, scenario assumption, or class discussion.
+4. **Reason and evidence:** cite packet page, actual source, operating assumption, or class discussion.
 5. **Authority:** who can approve, fund, implement, halt or overturn the decision? Identify required agreements and legislative authority.
 6. **Roles affected:** named city-county departments, independent agencies, residents, employers and others.
 7. **Required agreements and information flows:** exact record, sender, recipient, purpose, authority, correction method, retention, and what happens on refusal.
