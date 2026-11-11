@@ -10,29 +10,25 @@ lang: en-US
 
 Claim one entry on the Sign-up Sheet. The instructor plays every unclaimed entry.
 
-- **D-01 to D-15** are city-county departments. They must take part but can object and set conditions.
-- **A-01 to A-09** are outside agencies with their own boards, budgets and records. Each can join, join on conditions, or refuse. A-09 is optional.
-- **R-01 to R-03** are resident groups. They run no services. They test whether the system works for residents.
+- **D-01 to D-15**: city-county departments. Must take part; can object and set conditions.
+- **A-01 to A-09**: outside agencies with their own boards, budgets and records. Can join, join on conditions, or refuse. A-09 is optional.
+- **R-01 to R-03**: resident groups. Run no services; test whether the system works for residents.
 
-Entries modeled on real institutions say so.
+# The Estonia model
 
-# What "a city-county Estonia" means
+Estonia's agencies share data through X-tee (formerly X-Road in English). According to Estonia's Information System Authority:
 
-Estonia's agencies exchange data through a shared layer called X-tee (formerly X-Road in English). According to Estonia's Information System Authority:
-
-- Each member keeps its own records, describes what it will share, and lets other members use it under an agreement.
-- The owner controls its data throughout. The exchange layer only carries messages.
+- Each member keeps its records, describes what it will share, and lets others use it under an agreement.
+- The owner controls its data throughout; the exchange layer only carries messages.
 - Every exchange is authenticated, authorized at several levels, encrypted, signed and logged.
-- To use another member's data, an organization joins, installs a security server, and signs an agreement with that member.
+- To use another member's data: join, install a security server, and sign an agreement with that member.
 
-Every entry must answer four questions for the spec:
+Every entry answers four spec questions:
 
 1. What records does it hold that others need?
 2. What does it need from others?
 3. Will it join, and on what terms?
 4. Who corrects a wrong record, and where does a resident appeal?
-
-Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 # Find your area
 
@@ -70,13 +66,13 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 ## D-01 Mayor / County Executive's Office
 
-**Runs and holds:** the agenda, executive orders and appointments, including County Court judges (A-07) and the Health and Hospital Authority board (A-08).
+**Runs and holds:** agenda, executive orders, appointments, including County Court judges (A-07) and the Health and Hospital Authority board (A-08).
 
-**Limits:** directs departments within adopted rules. Cannot force an outside agency to join or spend money the council hasn't approved.
+**Limits:** directs departments within adopted rules. Can't force outside agencies to join or spend money the council hasn't approved.
 
-**Pressure:** its name goes on the launch. Since it appoints the court's judges and the hospital's board, any request to either can look like an order.
+**Pressure:** its name is on the launch. It appoints the court's judges and the hospital's board, so any request to either can look like an order.
 
-**Questions for the spec:** Who approves the system, and who can shut it down? Who answers publicly when it fails?
+**Questions for the spec:** Who approves the system? Who can shut it down? Who answers publicly when it fails?
 
 **Works with:** D-02, D-03, D-09 and every outside agency. **Start with:** Reading 2; Reading 4 (governance decisions).
 
@@ -86,7 +82,7 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 **Limits:** passes laws and budgets after public process.
 
-**Pressure:** has approved no money for this. Members answer to neighborhoods from High Prairie (median household income \$151,200) to Colfax East (\$58,900).
+**Pressure:** no money approved. Members represent neighborhoods from High Prairie (median household income \$151,200) to Colfax East (\$58,900).
 
 **Questions for the spec:** Who pays the yearly running cost, and who benefits? What should the ordinance require and forbid?
 
@@ -94,11 +90,11 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 ## D-03 City Manager / Administration
 
-**Runs and holds:** day-to-day administration, staffing and performance tracking across departments.
+**Runs and holds:** day-to-day administration, staffing, cross-department performance tracking.
 
-**Limits:** assigns staff and coordinates departments. Cannot create unfunded positions.
+**Limits:** assigns staff, coordinates departments. Can't create unfunded positions.
 
-**Pressure:** if nobody is assigned to operate the system, the job lands here.
+**Pressure:** a system nobody is assigned to operate lands here.
 
 **Questions for the spec:** Who runs the exchange day to day? Who takes over if a vendor fails?
 
@@ -106,25 +102,25 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 ## D-04 Human Services
 
-**Runs and holds:** county administration of state-supervised benefits such as food and cash assistance; their case files, under state and federal rules.
+**Runs and holds:** county administration of state-supervised benefits (food, cash assistance); case files under state and federal rules.
 
-**Limits:** designs local intake and casework. Cannot change state or federal eligibility rules or open the state's records.
+**Limits:** designs local intake and casework. Can't change state or federal eligibility rules or open state records.
 
-**Pressure:** a promise to "simplify benefits" must still follow state rules and protect appeal rights.
+**Pressure:** "simplify benefits" must still follow state rules and protect appeal rights.
 
-**Questions for the spec:** Which facts could the county check through the exchange instead of asking again? Who decides when two records disagree?
+**Questions for the spec:** Which facts could the county check through the exchange instead of re-asking? Who decides when records disagree?
 
 **Works with:** A-05, D-05, D-07, D-15, R-01. **Start with:** Reading 1 (conditions 1, 2 and 6; households H01, H03, H05); Reading 2 (county-administered benefits).
 
 ## D-05 Housing Division (EDHD)
 
-**Runs and holds:** city-funded rent and homelessness-prevention help, housing policy, housing development and preservation finance, tenant and homeowner services; local assistance cases and housing finance agreements.
+**Runs and holds:** city-funded rent and homelessness-prevention help, housing policy, development and preservation finance, tenant and homeowner services; local assistance cases, housing finance agreements.
 
-**Limits:** runs city programs with legal authority and council funding. Cannot commit the Regional Housing Authority's vouchers, properties, staff or records.
+**Limits:** runs city programs with legal authority and council funding. Can't commit the Regional Housing Authority's vouchers, properties, staff or records.
 
-**Pressure:** residents ask it for help the Housing Authority controls. Its rent help is a limited city grant; it cannot promise a federal voucher.
+**Pressure:** residents ask it for help the Housing Authority controls. Its rent help is a limited city grant; it can't promise a federal voucher.
 
-**Questions for the spec:** Which overlaps with the Housing Authority need coordination, and which need separate authority? What does it want from the County Court when a household faces eviction?
+**Questions for the spec:** Which Housing Authority overlaps need coordination, and which need separate authority? What does it want from the County Court at eviction?
 
 **Works with:** A-06, A-07, D-04, D-07, R-01. **Neighborhoods:** Colfax East and South Yards (the highest rent burdens), Box Elder, Central Station. **Start with:** Reading 3; Reading 1 (condition 1; household H01).
 
@@ -132,23 +128,23 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 **Runs and holds:** plans, zoning, permits and building review; their records.
 
-**Limits:** proposes plans and zoning for adoption; issues permits under adopted rules.
+**Limits:** proposes plans and zoning; issues permits under adopted rules.
 
-**Pressure:** growth outruns water capacity, and some land developers want sits under airport approaches.
+**Pressure:** growth outruns water capacity; some land developers want sits under airport approaches.
 
-**Questions for the spec:** Can a permit proceed while an address or parcel record is under correction? What must the Water and Sewer Authority confirm before new housing is approved?
+**Questions for the spec:** Can a permit proceed during an address or parcel correction? What must the Water and Sewer Authority confirm before new housing is approved?
 
 **Works with:** D-07, D-08, A-03, D-14, R-02. **Neighborhoods:** Manila and High Prairie (fast growth), Harback (annexation disputes), Box Elder (floodplain), South Yards. **Start with:** Reading 1 (real geography; conditions 3, 5 and 9; household H06).
 
 ## D-07 Address Office and GIS
 
-**Runs and holds:** the official address and parcel registry and its correction process. Almost every entry needs it.
+**Runs and holds:** official address and parcel registry and its correction process. Nearly every entry needs it.
 
-**Limits:** maintains and corrects city records. Cannot change postal, school, utility or court addresses held by others.
+**Limits:** maintains and corrects city records. Can't change postal, school, utility or court addresses held by others.
 
-**Pressure:** with fast subdivision, farm addresses, new parcels and apartment complexes often don't match across the county map, postal service, tax rolls, utilities and schools.
+**Pressure:** fast subdivision: farm addresses, new parcels and apartment complexes often mismatch across the county map, postal service, tax rolls, utilities and schools.
 
-**Questions for the spec:** Whose record counts when two disagree? What happens to a case while an address is disputed? Who gets told when an address is corrected?
+**Questions for the spec:** Whose record counts when two disagree? What happens to a case during an address dispute? Who is told of a correction?
 
 **Works with:** D-06, D-08, D-10, A-01, A-03, R-02. **Neighborhoods:** Old Watkins (rural addresses), Inboden (subdivisions), South Yards. **Start with:** Reading 1 (condition 2; households H02, H05, H06).
 
@@ -156,23 +152,23 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 **Runs and holds:** revenue, property assessment, tax rolls and purchasing; contracts.
 
-**Limits:** compares costs and sets purchasing procedures for approval.
+**Limits:** compares costs; sets purchasing procedures for approval.
 
-**Pressure:** every new service adds an unfunded yearly running cost. A fee proposed in class isn't law until adopted.
+**Pressure:** each new service adds an unfunded yearly running cost. A fee proposed in class isn't law until adopted.
 
-**Questions for the spec:** What does the city build, buy or rent, and what does it own outright? How could it leave a vendor? What does the system cost each year?
+**Questions for the spec:** Build, buy or rent? What does the city own outright? How could it leave a vendor? What is the yearly cost?
 
 **Works with:** D-02, D-03, D-07, D-09. **Start with:** Reading 2 (institutional models); Reading 4 (money and incentives).
 
 ## D-09 Digital Service and Records
 
-**Runs and holds:** the city-county's technology, digital services and records management; system logs and technical documentation.
+**Runs and holds:** the city-county's technology, digital services, records management; system logs, technical documentation.
 
 **Limits:** proposes system designs and runs tests.
 
-**Pressure:** the obvious choice to run whatever the class designs, with no approved staff or money. Not every resident has a phone.
+**Pressure:** obvious operator of whatever the class designs, with no approved staff or money. Not every resident has a phone.
 
-**Questions for the spec:** Who operates the exchange: this department, a new authority, or a contractor? What does a member need to join? What gets logged, and who can read the logs?
+**Questions for the spec:** Who operates the exchange: this department, a new authority, or a contractor? What does joining require? What gets logged, and who reads the logs?
 
 **Works with:** D-03, D-08, D-15 and every outside agency. **Start with:** Reading 2 (X-tee and Athumi in the models table); Reading 4 (information).
 
@@ -182,9 +178,9 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 **Limits:** sets dispatch and emergency requirements.
 
-**Pressure:** dispatch needs an exact location fast; in the north and east the nearest unit can be far away. It should not receive medical data or gate codes it has no authority to hold.
+**Pressure:** dispatch needs exact locations fast; in the north and east the nearest unit can be far. Shouldn't receive medical data or gate codes it has no authority to hold.
 
-**Questions for the spec:** What must still work when the exchange is down or a partner has refused? What may dispatch see, and for how long?
+**Questions for the spec:** What must work when the exchange is down or a partner refused? What may dispatch see, and for how long?
 
 **Works with:** D-07, D-11, A-08, A-09. **Neighborhoods:** Harback and the north and east. **Start with:** Reading 1 (condition 7).
 
@@ -194,7 +190,7 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 **Limits:** sets fire and first-response operations and inspection requirements.
 
-**Pressure:** a wrong address costs minutes, and in Harback or High Prairie the drive is already long.
+**Pressure:** a wrong address costs minutes; in Harback or High Prairie the drive is already long.
 
 **Questions for the spec:** Who runs ambulance transport: Fire or the Health and Hospital Authority? How does a patient record pass from first responder to hospital?
 
@@ -204,33 +200,33 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 **Runs and holds:** population health programs and disease surveillance; disease reports.
 
-**Limits:** runs city public health programs. Has no say over hospitals' records.
+**Limits:** runs city public health programs. No say over hospital records.
 
-**Pressure:** it needs hospitals to report cases, and many residents it serves struggle to reach care at all.
+**Pressure:** needs hospitals to report cases; many residents it serves struggle to reach care.
 
-**Questions for the spec:** What may hospitals report to Public Health, for what purpose, and how is it protected?
+**Questions for the spec:** What may hospitals report to Public Health, for what purpose, with what protection?
 
 **Works with:** A-08, A-09, D-04, D-10. **Start with:** Reading 1 (condition 7).
 
 ## D-13 Parks, Recreation and Cultural Affairs
 
-**Runs and holds:** parks, recreation programs, and the city's dealings with The Hangar, Aerotropolis Park and EDPAC; registrations and facility bookings.
+**Runs and holds:** parks, recreation, and city dealings with The Hangar, Aerotropolis Park and EDPAC; registrations, facility bookings.
 
 **Limits:** proposes programs and operating budgets.
 
-**Pressure:** its facilities cluster downtown, far from the north and east. Front-desk staff already field questions about every other city system.
+**Pressure:** facilities cluster downtown, far from the north and east. Front-desk staff already field questions about every city system.
 
-**Questions for the spec:** Is a recreation pass a sensible first service? What must a resident prove to register, when households like H02 and H06 have mismatched addresses?
+**Questions for the spec:** Is a recreation pass a sensible first service? What must residents prove to register when addresses mismatch (H02, H06)?
 
 **Works with:** A-02, D-07, D-14. **Start with:** Reading 1 (civic and cultural anchors).
 
 ## D-14 Transportation and Public Works
 
-**Runs and holds:** city streets, local mobility programs, snow and storm response and drainage; asset inventories and work orders.
+**Runs and holds:** city streets, local mobility programs, snow and storm response, drainage; asset inventories, work orders.
 
-**Limits:** operates city streets and city mobility programs. Cannot run RTD routes or set RTD fares.
+**Limits:** runs city streets and mobility programs. Can't run RTD routes or set RTD fares.
 
-**Pressure:** it owns the streets, not the buses. The scenario's rail hub doesn't mean RTD has agreed to anything.
+**Pressure:** owns the streets, not the buses. The scenario's rail hub doesn't mean RTD agreed to anything.
 
 **Questions for the spec:** What can the city offer riders if RTD shares only public timetables?
 
@@ -242,9 +238,9 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 **Limits:** proposes process standards and recordkeeping rules.
 
-**Pressure:** every automated "no" with no appeal route ends up here as a complaint.
+**Pressure:** every automated "no" without an appeal route becomes a complaint here.
 
-**Questions for the spec:** Where does a resident go when the system says no? Can residents see who looked at their records? Who fixes a wrong record that came from another agency?
+**Questions for the spec:** Where does a resident go when the system says no? Can residents see who viewed their records? Who fixes a wrong record from another agency?
 
 **Works with:** D-04, D-09, A-07, R-01, R-03. **Start with:** Reading 2 (what the city-county can and cannot require); Reading 4 (information).
 
@@ -256,9 +252,9 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 **Runs and holds:** schools, enrollment, attendance boundaries and school transportation; student records.
 
-**Pressure:** enrollment is shifting fast (West Commons is crowded, Prairie Crossing's high school is filling). Its board doesn't take direction from the city.
+**Pressure:** enrollment shifting fast (West Commons crowded, Prairie Crossing's high school filling). The board takes no direction from the city.
 
-**Could offer:** a limited enrollment referral, an address-check agreement, or coordination funding. **Likely refusal:** access to student files; automatic school placement.
+**Could offer:** limited enrollment referral, address-check agreement, or coordination funding. **Likely refusal:** access to student files; automatic school placement.
 
 **Questions for the spec:** Fixed referral information, a shared address check, or a separate district process?
 
@@ -266,41 +262,41 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 ## A-02 East Detroit Public Library District
 
-**What it is:** an independent library district with its own board and property tax levy. Colorado allows separately governed library districts; Reading 2 lists a real one, the Boulder Public Library District.
+**What it is:** independent library district with its own board and property tax levy. Colorado allows separately governed library districts; Reading 2's real example: Boulder Public Library District.
 
-**Runs and holds:** branch libraries, public computers and internet access, in-person help and programs; library accounts and borrowing records.
+**Runs and holds:** branch libraries, public computers and internet, in-person help, programs; library accounts and borrowing records.
 
-**Pressure:** people without home internet already come here for help. If the city sends more, someone must pay for staff time. Borrowing records stay confidential.
+**Pressure:** already the help point for people without home internet. More city referrals need paid staff time. Borrowing records stay confidential.
 
 **Could offer:** in-person help with city services, public computers, staff training.
 
-**Questions for the spec:** Is the library a help point for the system, a member of it, or both? Who pays for the help desk?
+**Questions for the spec:** Help point, member, or both? Who pays for the help desk?
 
 **Works with:** D-13, D-15, D-09, R-03. **Start with:** Reading 1 (condition 10; household H03); Reading 2.
 
 ## A-03 East Detroit Water and Sewer Authority
 
-**What it is:** the public authority for East Detroit's water and wastewater, with its own board, rates and debt. Compare Detroit's split between a regional water authority and the city's own department (Reading 2).
+**What it is:** public authority for East Detroit's water and wastewater, with its own board, rates and debt. Compare Detroit's split between a regional water authority and a city department (Reading 2).
 
 **Runs and holds:** water and sewer service, connections and billing; customer accounts, service addresses and capacity commitments.
 
-**Pressure:** it cannot promise water it hasn't secured. Every new housing approval depends on its capacity and who pays for new pipes.
+**Pressure:** can't promise water it hasn't secured. Every housing approval depends on its capacity and who pays for new pipes.
 
-**Could offer:** phased capacity commitments, or shared account and service-address data. **Likely refusal:** no new connections until the infrastructure is paid for.
+**Could offer:** phased capacity commitments; shared account and service-address data. **Likely refusal:** no new connections until infrastructure is paid for.
 
-**Questions for the spec:** Reading 1 says an account alone is not proof of residence. Should water service addresses be checked against the city's registry?
+**Questions for the spec:** An account alone is not proof of residence (Reading 1). Check water service addresses against the city's registry?
 
 **Works with:** D-06, D-07, D-08, D-14. **Neighborhoods:** Harback (wells, septic conversion), Box Elder (flooding), Manila and High Prairie (growth). **Start with:** Reading 1 (conditions 2 and 3); Reading 2 (Detroit's water arrangement).
 
 ## A-04 Regional Transportation District (RTD)
 
-**What it is:** the real Denver-area transit authority, serving many places besides East Detroit.
+**What it is:** the real Denver-area transit authority; East Detroit is one of many places it serves.
 
 **Runs and holds:** regional buses and rail, fares and schedules; fare accounts and ridership data.
 
-**Pressure:** it answers to the whole region. It won't change fares or open rider accounts for one city without a formal agreement.
+**Pressure:** answers to the whole region. Won't change fares or open rider accounts for one city without a formal agreement.
 
-**Could offer:** public schedules, a formal service agreement, or a tested pilot. **Likely refusal:** connecting fare records to a city account.
+**Could offer:** public schedules, a formal service agreement, or a tested pilot. **Likely refusal:** linking fare records to a city account.
 
 **Questions for the spec:** What useful service is left without an RTD connection?
 
@@ -310,11 +306,11 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 **What it is:** the real state agencies behind Colorado's state-supervised, county-administered benefits.
 
-**Runs and holds:** oversight of benefit programs and the statewide systems that hold eligibility and case records.
+**Runs and holds:** benefit program oversight; statewide systems holding eligibility and case records.
 
-**Pressure:** state and federal law set eligibility rules. It won't open state systems to a city without an approved agreement.
+**Pressure:** state and federal law set eligibility. Won't open state systems to a city without an approved agreement.
 
-**Could offer:** a test environment, an approved interface, or a waiver if legally available. **Likely refusal:** direct access to program data.
+**Could offer:** test environment, approved interface, or a waiver if legal. **Likely refusal:** direct access to program data.
 
 **Questions for the spec:** Which state data could East Detroit request through the exchange, under what agreement? How are appeal rights kept?
 
@@ -322,27 +318,27 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 ## A-06 East Detroit Regional Housing Authority (EDRHA)
 
-**What it is:** an independent public housing authority with its own commission, serving East Detroit and participating communities beyond it.
+**What it is:** independent public housing authority with its own commission, serving East Detroit and participating communities beyond.
 
-**Runs and holds:** federal housing assistance including vouchers, its properties and its appeals; voucher and tenancy records, and federal income verification under HUD rules.
+**Runs and holds:** federal housing assistance including vouchers, its properties and appeals; voucher and tenancy records, federal income verification under HUD rules.
 
-**Pressure:** vouchers are limited. Every referral with no open voucher or unit lengthens its waiting list.
+**Pressure:** limited vouchers. Each referral without an open voucher or unit lengthens the waiting list.
 
-**Could offer:** a negotiated intake or referral arrangement, limited status checks where permitted, or partnership funding. **Likely refusal:** handing over federal records or running a city-dictated workflow.
+**Could offer:** negotiated intake or referral, limited status checks where permitted, partnership funding. **Likely refusal:** handing over federal records; running a city-dictated workflow.
 
-**Questions for the spec:** Name one real handoff with the Housing Division, and who funds, authorizes, delivers and reviews it.
+**Questions for the spec:** Name one real handoff with the Housing Division: who funds, authorizes, delivers and reviews it?
 
 **Works with:** D-05, A-07, D-04, R-01. **Start with:** Reading 3.
 
 ## A-07 East Detroit County Court
 
-**What it is:** the city-county's own trial court for smaller matters, modeled on Denver's county court. Denver funds it, and the mayor appoints its judges from merit lists, outside Colorado's state court system. In real Colorado only Denver has this. East Detroit's version is a fictional rule in its founding amendment. Felonies, family and probate cases go to a state district court.
+**What it is:** the city-county's own trial court for smaller matters. Modeled on Denver's county court: city-funded, judges appointed by the mayor from merit lists, outside Colorado's state court system. Only Denver has this in real Colorado; East Detroit's version is a fictional rule in its founding amendment. Felonies, family and probate cases go to a state district court.
 
 **Runs and holds:** evictions, small claims, civil cases up to \$25,000, misdemeanors, traffic, protection orders and city ordinance violations; filings, case status, judgments and protection orders.
 
-**Pressure:** the city pays for it, but its judges decide independently and it controls its own case records.
+**Pressure:** city-funded, but its judges decide independently and it controls its case records.
 
-**Could offer:** case status to the parties or their advocates, or notice to the Housing Division when an eviction is filed.
+**Could offer:** case status to parties or their advocates; notice to the Housing Division when an eviction is filed.
 
 **Questions for the spec:** Should an eviction filing trigger an offer of help? Who may see a protection order, and when? (Reading 3: an automated referral cannot stop a court case.)
 
@@ -350,15 +346,15 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 ## A-08 East Detroit Health and Hospital Authority
 
-**What it is:** the city-county's public safety-net hospital, an independent public authority whose board the mayor appoints. Modeled on Denver Health, a separate public authority under Colorado law since 1997.
+**What it is:** the city-county's public safety-net hospital: an independent public authority, board appointed by the mayor. Modeled on Denver Health, a separate public authority under Colorado law since 1997.
 
-**Runs and holds:** the public hospital and clinics, care for uninsured and low-income patients, and a paramedic service; patient records under medical privacy law.
+**Runs and holds:** public hospital and clinics, care for uninsured and low-income patients, paramedic service; patient records under medical privacy law.
 
-**Pressure:** it treats patients who can't pay, so each referral costs it money.
+**Pressure:** treats patients who can't pay; each referral costs it money.
 
-**Could offer:** referrals, help screening patients for insurance and benefits, or emergency protocols. **Likely refusal:** patient records leaving hospital systems.
+**Could offer:** referrals, insurance and benefits screening help, emergency protocols. **Likely refusal:** patient records leaving hospital systems.
 
-**Questions for the spec:** When may the city ask for clinical information, and what may it never see? How do 911, the first responder and the hospital hand off a patient? Who runs ambulance transport, this authority or the Fire Department?
+**Questions for the spec:** When may the city ask for clinical information, and what may it never see? How do 911, first responder and hospital hand off a patient? Who runs ambulance transport: this authority or the Fire Department?
 
 **Works with:** D-10, D-11, D-12, D-04, A-09. **Start with:** Reading 1 (condition 7); Reading 2 (a public hospital authority).
 
@@ -366,15 +362,15 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 *Optional: takes part only if a student claims it.*
 
-**What it is:** the scenario's independent health system: a Level I regional trauma center, aerospace flight medicine and a teaching hospital.
+**What it is:** the scenario's independent health system: Level I regional trauma center, aerospace flight medicine, teaching hospital.
 
 **Runs and holds:** trauma, specialty care and teaching; patient records under medical privacy law.
 
-**Pressure:** it runs the region's trauma center and owes the city no participation.
+**Pressure:** runs the region's trauma center; owes the city no participation.
 
 **Likely refusal:** patient records leaving hospital systems.
 
-**Questions for the spec:** Does a second hospital join the exchange on the same terms as the public authority?
+**Questions for the spec:** Does a second hospital join on the same terms as the public authority?
 
 **Works with:** A-08, D-10, D-11, D-12. **Start with:** Reading 1 (civic and cultural anchors; condition 7).
 
@@ -382,15 +378,15 @@ Start with your entry's "Questions for the spec." Answer or negotiate them.
 
 ## R-01 Renter and Tenant Advocacy Council
 
-Speaks for renters: 53.6% of East Detroit's households. Nearly half of them pay at least 30% of income for housing. Wants help without tax records, and appeals that work. Brings real renter cases, including household H01. Can take a formal governance role if the city-county grants one.
+Speaks for renters: 53.6% of East Detroit's households; nearly half pay at least 30% of income for housing. Wants help without tax records, and working appeals. Brings real renter cases, including H01. Can hold a formal governance role if the city-county grants one.
 
-**Ask the spec:** Who gets left out when a service is designed for a homeowner who is comfortable online?
+**Ask the spec:** Who is left out when a service assumes a homeowner comfortable online?
 
 **Works with:** D-05, A-06, A-07, D-15. **Start with:** Reading 3; Reading 1 (household H01).
 
 ## R-02 Old Watkins and Agricultural Landholders Alliance
 
-Speaks for longtime owners, farm families and small businesses in and around Old Watkins. Wants rural addresses the system recognizes, protection from drainage problems, and a say before land is converted. Brings knowledge of local roads and parcels the county map gets wrong, including household H02.
+Speaks for longtime owners, farm families and small businesses in and around Old Watkins. Wants recognized rural addresses, drainage protection, and a say before land conversion. Knows local roads and parcels the county map gets wrong, including H02.
 
 **Ask the spec:** Who pays when farmland is converted, and who can appeal the map?
 
@@ -398,7 +394,7 @@ Speaks for longtime owners, farm families and small businesses in and around Old
 
 ## R-03 Workers and Disability Access Coalition
 
-Speaks for shift workers, people with disabilities, residents without a smartphone, and people who prefer languages other than English. Brings test cases: the Portside worker whose shuttle stops early (H04), the Spanish-speaking household in Box Elder (H03), and residents who can't visit during office hours.
+Speaks for shift workers, people with disabilities, residents without smartphones, and residents who prefer languages other than English. Test cases: the Portside worker whose shuttle stops early (H04), the Spanish-speaking Box Elder household (H03), residents who can't visit during office hours.
 
 **Ask the spec:** What has to work without a smartphone or a same-day appointment?
 

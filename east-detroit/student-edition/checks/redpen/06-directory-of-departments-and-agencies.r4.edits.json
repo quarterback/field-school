@@ -1,0 +1,20 @@
+[
+ {
+  "before": "\n\nEntries modeled on real institutions say so.",
+  "after": "",
+  "kind": "throat-clearing",
+  "reason": "Entries already label real models (REAL, modeled on)."
+ },
+ {
+  "before": "\n\nAnswer or negotiate your entry's questions.",
+  "after": "",
+  "kind": "redundancy",
+  "reason": "Entry fields already present the questions to answer."
+ },
+ {
+  "before": "# What \"a city-county Estonia\" means",
+  "after": "# The Estonia model",
+  "kind": "line-edit",
+  "reason": "Shorter heading."
+ }
+]

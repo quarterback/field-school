@@ -1,0 +1,530 @@
+[
+ {
+  "before": "- **D-01 to D-15** are city-county departments. They must take part but can object and set conditions.",
+  "after": "- **D-01 to D-15**: city-county departments. Must take part; can object and set conditions.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "- **A-01 to A-09** are outside agencies with their own boards, budgets and records. Each can join, join on conditions, or refuse. A-09 is optional.",
+  "after": "- **A-01 to A-09**: outside agencies with their own boards, budgets and records. Can join, join on conditions, or refuse. A-09 is optional.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "- **R-01 to R-03** are resident groups. They run no services. They test whether the system works for residents.",
+  "after": "- **R-01 to R-03**: resident groups. Run no services; test whether the system works for residents.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "Estonia's agencies exchange data through a shared layer called X-tee (formerly X-Road in English). According to Estonia's Information System Authority:",
+  "after": "Estonia's agencies share data through X-tee (formerly X-Road in English). According to Estonia's Information System Authority:",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "- Each member keeps its own records, describes what it will share, and lets other members use it under an agreement.",
+  "after": "- Each member keeps its records, describes what it will share, and lets others use it under an agreement.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "- The owner controls its data throughout. The exchange layer only carries messages.",
+  "after": "- The owner controls its data throughout; the exchange layer only carries messages.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "- To use another member's data, an organization joins, installs a security server, and signs an agreement with that member.",
+  "after": "- To use another member's data: join, install a security server, and sign an agreement with that member.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "Every entry must answer four questions for the spec:",
+  "after": "Every entry answers four spec questions:",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "Start with your entry's \"Questions for the spec.\" Answer or negotiate them.",
+  "after": "Answer or negotiate your entry's questions.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Runs and holds:** the agenda, executive orders and appointments, including County Court judges (A-07) and the Health and Hospital Authority board (A-08).",
+  "after": "**Runs and holds:** agenda, executive orders, appointments, including County Court judges (A-07) and the Health and Hospital Authority board (A-08).",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Limits:** directs departments within adopted rules. Cannot force an outside agency to join or spend money the council hasn't approved.",
+  "after": "**Limits:** directs departments within adopted rules. Can't force outside agencies to join or spend money the council hasn't approved.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** its name goes on the launch. Since it appoints the court's judges and the hospital's board, any request to either can look like an order.",
+  "after": "**Pressure:** its name is on the launch. It appoints the court's judges and the hospital's board, so any request to either can look like an order.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** Who approves the system, and who can shut it down? Who answers publicly when it fails?",
+  "after": "**Questions for the spec:** Who approves the system? Who can shut it down? Who answers publicly when it fails?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** has approved no money for this. Members answer to neighborhoods from High Prairie (median household income \\$151,200) to Colfax East (\\$58,900).",
+  "after": "**Pressure:** no money approved. Members represent neighborhoods from High Prairie (median household income \\$151,200) to Colfax East (\\$58,900).",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Runs and holds:** day-to-day administration, staffing and performance tracking across departments.",
+  "after": "**Runs and holds:** day-to-day administration, staffing, cross-department performance tracking.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Limits:** assigns staff and coordinates departments. Cannot create unfunded positions.",
+  "after": "**Limits:** assigns staff, coordinates departments. Can't create unfunded positions.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** if nobody is assigned to operate the system, the job lands here.",
+  "after": "**Pressure:** a system nobody is assigned to operate lands here.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Runs and holds:** county administration of state-supervised benefits such as food and cash assistance; their case files, under state and federal rules.",
+  "after": "**Runs and holds:** county administration of state-supervised benefits (food, cash assistance); case files under state and federal rules.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Limits:** designs local intake and casework. Cannot change state or federal eligibility rules or open the state's records.",
+  "after": "**Limits:** designs local intake and casework. Can't change state or federal eligibility rules or open state records.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** a promise to \"simplify benefits\" must still follow state rules and protect appeal rights.",
+  "after": "**Pressure:** \"simplify benefits\" must still follow state rules and protect appeal rights.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** Which facts could the county check through the exchange instead of asking again? Who decides when two records disagree?",
+  "after": "**Questions for the spec:** Which facts could the county check through the exchange instead of re-asking? Who decides when records disagree?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Runs and holds:** city-funded rent and homelessness-prevention help, housing policy, housing development and preservation finance, tenant and homeowner services; local assistance cases and housing finance agreements.",
+  "after": "**Runs and holds:** city-funded rent and homelessness-prevention help, housing policy, development and preservation finance, tenant and homeowner services; local assistance cases, housing finance agreements.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Limits:** runs city programs with legal authority and council funding. Cannot commit the Regional Housing Authority's vouchers, properties, staff or records.",
+  "after": "**Limits:** runs city programs with legal authority and council funding. Can't commit the Regional Housing Authority's vouchers, properties, staff or records.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** residents ask it for help the Housing Authority controls. Its rent help is a limited city grant; it cannot promise a federal voucher.",
+  "after": "**Pressure:** residents ask it for help the Housing Authority controls. Its rent help is a limited city grant; it can't promise a federal voucher.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** Which overlaps with the Housing Authority need coordination, and which need separate authority? What does it want from the County Court when a household faces eviction?",
+  "after": "**Questions for the spec:** Which Housing Authority overlaps need coordination, and which need separate authority? What does it want from the County Court at eviction?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Limits:** proposes plans and zoning for adoption; issues permits under adopted rules.",
+  "after": "**Limits:** proposes plans and zoning; issues permits under adopted rules.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** growth outruns water capacity, and some land developers want sits under airport approaches.",
+  "after": "**Pressure:** growth outruns water capacity; some land developers want sits under airport approaches.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** Can a permit proceed while an address or parcel record is under correction? What must the Water and Sewer Authority confirm before new housing is approved?",
+  "after": "**Questions for the spec:** Can a permit proceed during an address or parcel correction? What must the Water and Sewer Authority confirm before new housing is approved?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Runs and holds:** the official address and parcel registry and its correction process. Almost every entry needs it.",
+  "after": "**Runs and holds:** official address and parcel registry and its correction process. Nearly every entry needs it.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Limits:** maintains and corrects city records. Cannot change postal, school, utility or court addresses held by others.",
+  "after": "**Limits:** maintains and corrects city records. Can't change postal, school, utility or court addresses held by others.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** with fast subdivision, farm addresses, new parcels and apartment complexes often don't match across the county map, postal service, tax rolls, utilities and schools.",
+  "after": "**Pressure:** fast subdivision: farm addresses, new parcels and apartment complexes often mismatch across the county map, postal service, tax rolls, utilities and schools.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** Whose record counts when two disagree? What happens to a case while an address is disputed? Who gets told when an address is corrected?",
+  "after": "**Questions for the spec:** Whose record counts when two disagree? What happens to a case during an address dispute? Who is told of a correction?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Limits:** compares costs and sets purchasing procedures for approval.",
+  "after": "**Limits:** compares costs; sets purchasing procedures for approval.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** every new service adds an unfunded yearly running cost. A fee proposed in class isn't law until adopted.",
+  "after": "**Pressure:** each new service adds an unfunded yearly running cost. A fee proposed in class isn't law until adopted.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** What does the city build, buy or rent, and what does it own outright? How could it leave a vendor? What does the system cost each year?",
+  "after": "**Questions for the spec:** Build, buy or rent? What does the city own outright? How could it leave a vendor? What is the yearly cost?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Runs and holds:** the city-county's technology, digital services and records management; system logs and technical documentation.",
+  "after": "**Runs and holds:** the city-county's technology, digital services, records management; system logs, technical documentation.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** the obvious choice to run whatever the class designs, with no approved staff or money. Not every resident has a phone.",
+  "after": "**Pressure:** obvious operator of whatever the class designs, with no approved staff or money. Not every resident has a phone.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** Who operates the exchange: this department, a new authority, or a contractor? What does a member need to join? What gets logged, and who can read the logs?",
+  "after": "**Questions for the spec:** Who operates the exchange: this department, a new authority, or a contractor? What does joining require? What gets logged, and who reads the logs?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** dispatch needs an exact location fast; in the north and east the nearest unit can be far away. It should not receive medical data or gate codes it has no authority to hold.",
+  "after": "**Pressure:** dispatch needs exact locations fast; in the north and east the nearest unit can be far. Shouldn't receive medical data or gate codes it has no authority to hold.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** What must still work when the exchange is down or a partner has refused? What may dispatch see, and for how long?",
+  "after": "**Questions for the spec:** What must work when the exchange is down or a partner refused? What may dispatch see, and for how long?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** a wrong address costs minutes, and in Harback or High Prairie the drive is already long.",
+  "after": "**Pressure:** a wrong address costs minutes; in Harback or High Prairie the drive is already long.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Limits:** runs city public health programs. Has no say over hospitals' records.",
+  "after": "**Limits:** runs city public health programs. No say over hospital records.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** it needs hospitals to report cases, and many residents it serves struggle to reach care at all.",
+  "after": "**Pressure:** needs hospitals to report cases; many residents it serves struggle to reach care.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** What may hospitals report to Public Health, for what purpose, and how is it protected?",
+  "after": "**Questions for the spec:** What may hospitals report to Public Health, for what purpose, with what protection?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Runs and holds:** parks, recreation programs, and the city's dealings with The Hangar, Aerotropolis Park and EDPAC; registrations and facility bookings.",
+  "after": "**Runs and holds:** parks, recreation, and city dealings with The Hangar, Aerotropolis Park and EDPAC; registrations, facility bookings.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** its facilities cluster downtown, far from the north and east. Front-desk staff already field questions about every other city system.",
+  "after": "**Pressure:** facilities cluster downtown, far from the north and east. Front-desk staff already field questions about every city system.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** Is a recreation pass a sensible first service? What must a resident prove to register, when households like H02 and H06 have mismatched addresses?",
+  "after": "**Questions for the spec:** Is a recreation pass a sensible first service? What must residents prove to register when addresses mismatch (H02, H06)?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Runs and holds:** city streets, local mobility programs, snow and storm response and drainage; asset inventories and work orders.",
+  "after": "**Runs and holds:** city streets, local mobility programs, snow and storm response, drainage; asset inventories, work orders.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Limits:** operates city streets and city mobility programs. Cannot run RTD routes or set RTD fares.",
+  "after": "**Limits:** runs city streets and mobility programs. Can't run RTD routes or set RTD fares.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** it owns the streets, not the buses. The scenario's rail hub doesn't mean RTD has agreed to anything.",
+  "after": "**Pressure:** owns the streets, not the buses. The scenario's rail hub doesn't mean RTD agreed to anything.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** every automated \"no\" with no appeal route ends up here as a complaint.",
+  "after": "**Pressure:** every automated \"no\" without an appeal route becomes a complaint here.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** Where does a resident go when the system says no? Can residents see who looked at their records? Who fixes a wrong record that came from another agency?",
+  "after": "**Questions for the spec:** Where does a resident go when the system says no? Can residents see who viewed their records? Who fixes a wrong record from another agency?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** enrollment is shifting fast (West Commons is crowded, Prairie Crossing's high school is filling). Its board doesn't take direction from the city.",
+  "after": "**Pressure:** enrollment shifting fast (West Commons crowded, Prairie Crossing's high school filling). The board takes no direction from the city.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Could offer:** a limited enrollment referral, an address-check agreement, or coordination funding. **Likely refusal:** access to student files; automatic school placement.",
+  "after": "**Could offer:** limited enrollment referral, address-check agreement, or coordination funding. **Likely refusal:** access to student files; automatic school placement.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**What it is:** an independent library district with its own board and property tax levy. Colorado allows separately governed library districts; Reading 2 lists a real one, the Boulder Public Library District.",
+  "after": "**What it is:** independent library district with its own board and property tax levy. Colorado allows separately governed library districts; Reading 2's real example: Boulder Public Library District.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Runs and holds:** branch libraries, public computers and internet access, in-person help and programs; library accounts and borrowing records.",
+  "after": "**Runs and holds:** branch libraries, public computers and internet, in-person help, programs; library accounts and borrowing records.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** people without home internet already come here for help. If the city sends more, someone must pay for staff time. Borrowing records stay confidential.",
+  "after": "**Pressure:** already the help point for people without home internet. More city referrals need paid staff time. Borrowing records stay confidential.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** Is the library a help point for the system, a member of it, or both? Who pays for the help desk?",
+  "after": "**Questions for the spec:** Help point, member, or both? Who pays for the help desk?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**What it is:** the public authority for East Detroit's water and wastewater, with its own board, rates and debt. Compare Detroit's split between a regional water authority and the city's own department (Reading 2).",
+  "after": "**What it is:** public authority for East Detroit's water and wastewater, with its own board, rates and debt. Compare Detroit's split between a regional water authority and a city department (Reading 2).",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** it cannot promise water it hasn't secured. Every new housing approval depends on its capacity and who pays for new pipes.",
+  "after": "**Pressure:** can't promise water it hasn't secured. Every housing approval depends on its capacity and who pays for new pipes.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Could offer:** phased capacity commitments, or shared account and service-address data. **Likely refusal:** no new connections until the infrastructure is paid for.",
+  "after": "**Could offer:** phased capacity commitments; shared account and service-address data. **Likely refusal:** no new connections until infrastructure is paid for.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** Reading 1 says an account alone is not proof of residence. Should water service addresses be checked against the city's registry?",
+  "after": "**Questions for the spec:** An account alone is not proof of residence (Reading 1). Check water service addresses against the city's registry?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**What it is:** the real Denver-area transit authority, serving many places besides East Detroit.",
+  "after": "**What it is:** the real Denver-area transit authority; East Detroit is one of many places it serves.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** it answers to the whole region. It won't change fares or open rider accounts for one city without a formal agreement.",
+  "after": "**Pressure:** answers to the whole region. Won't change fares or open rider accounts for one city without a formal agreement.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Could offer:** public schedules, a formal service agreement, or a tested pilot. **Likely refusal:** connecting fare records to a city account.",
+  "after": "**Could offer:** public schedules, a formal service agreement, or a tested pilot. **Likely refusal:** linking fare records to a city account.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Runs and holds:** oversight of benefit programs and the statewide systems that hold eligibility and case records.",
+  "after": "**Runs and holds:** benefit program oversight; statewide systems holding eligibility and case records.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** state and federal law set eligibility rules. It won't open state systems to a city without an approved agreement.",
+  "after": "**Pressure:** state and federal law set eligibility. Won't open state systems to a city without an approved agreement.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Could offer:** a test environment, an approved interface, or a waiver if legally available. **Likely refusal:** direct access to program data.",
+  "after": "**Could offer:** test environment, approved interface, or a waiver if legal. **Likely refusal:** direct access to program data.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**What it is:** an independent public housing authority with its own commission, serving East Detroit and participating communities beyond it.",
+  "after": "**What it is:** independent public housing authority with its own commission, serving East Detroit and participating communities beyond.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Runs and holds:** federal housing assistance including vouchers, its properties and its appeals; voucher and tenancy records, and federal income verification under HUD rules.",
+  "after": "**Runs and holds:** federal housing assistance including vouchers, its properties and appeals; voucher and tenancy records, federal income verification under HUD rules.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** vouchers are limited. Every referral with no open voucher or unit lengthens its waiting list.",
+  "after": "**Pressure:** limited vouchers. Each referral without an open voucher or unit lengthens the waiting list.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Could offer:** a negotiated intake or referral arrangement, limited status checks where permitted, or partnership funding. **Likely refusal:** handing over federal records or running a city-dictated workflow.",
+  "after": "**Could offer:** negotiated intake or referral, limited status checks where permitted, partnership funding. **Likely refusal:** handing over federal records; running a city-dictated workflow.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** Name one real handoff with the Housing Division, and who funds, authorizes, delivers and reviews it.",
+  "after": "**Questions for the spec:** Name one real handoff with the Housing Division: who funds, authorizes, delivers and reviews it?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**What it is:** the city-county's own trial court for smaller matters, modeled on Denver's county court. Denver funds it, and the mayor appoints its judges from merit lists, outside Colorado's state court system. In real Colorado only Denver has this. East Detroit's version is a fictional rule in its founding amendment. Felonies, family and probate cases go to a state district court.",
+  "after": "**What it is:** the city-county's own trial court for smaller matters. Modeled on Denver's county court: city-funded, judges appointed by the mayor from merit lists, outside Colorado's state court system. Only Denver has this in real Colorado; East Detroit's version is a fictional rule in its founding amendment. Felonies, family and probate cases go to a state district court.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** the city pays for it, but its judges decide independently and it controls its own case records.",
+  "after": "**Pressure:** city-funded, but its judges decide independently and it controls its case records.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Could offer:** case status to the parties or their advocates, or notice to the Housing Division when an eviction is filed.",
+  "after": "**Could offer:** case status to parties or their advocates; notice to the Housing Division when an eviction is filed.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**What it is:** the city-county's public safety-net hospital, an independent public authority whose board the mayor appoints. Modeled on Denver Health, a separate public authority under Colorado law since 1997.",
+  "after": "**What it is:** the city-county's public safety-net hospital: an independent public authority, board appointed by the mayor. Modeled on Denver Health, a separate public authority under Colorado law since 1997.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Runs and holds:** the public hospital and clinics, care for uninsured and low-income patients, and a paramedic service; patient records under medical privacy law.",
+  "after": "**Runs and holds:** public hospital and clinics, care for uninsured and low-income patients, paramedic service; patient records under medical privacy law.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** it treats patients who can't pay, so each referral costs it money.",
+  "after": "**Pressure:** treats patients who can't pay; each referral costs it money.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Could offer:** referrals, help screening patients for insurance and benefits, or emergency protocols. **Likely refusal:** patient records leaving hospital systems.",
+  "after": "**Could offer:** referrals, insurance and benefits screening help, emergency protocols. **Likely refusal:** patient records leaving hospital systems.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** When may the city ask for clinical information, and what may it never see? How do 911, the first responder and the hospital hand off a patient? Who runs ambulance transport, this authority or the Fire Department?",
+  "after": "**Questions for the spec:** When may the city ask for clinical information, and what may it never see? How do 911, first responder and hospital hand off a patient? Who runs ambulance transport: this authority or the Fire Department?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**What it is:** the scenario's independent health system: a Level I regional trauma center, aerospace flight medicine and a teaching hospital.",
+  "after": "**What it is:** the scenario's independent health system: Level I regional trauma center, aerospace flight medicine, teaching hospital.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Pressure:** it runs the region's trauma center and owes the city no participation.",
+  "after": "**Pressure:** runs the region's trauma center; owes the city no participation.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Questions for the spec:** Does a second hospital join the exchange on the same terms as the public authority?",
+  "after": "**Questions for the spec:** Does a second hospital join on the same terms as the public authority?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "Speaks for renters: 53.6% of East Detroit's households. Nearly half of them pay at least 30% of income for housing. Wants help without tax records, and appeals that work. Brings real renter cases, including household H01. Can take a formal governance role if the city-county grants one.",
+  "after": "Speaks for renters: 53.6% of East Detroit's households; nearly half pay at least 30% of income for housing. Wants help without tax records, and working appeals. Brings real renter cases, including H01. Can hold a formal governance role if the city-county grants one.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "**Ask the spec:** Who gets left out when a service is designed for a homeowner who is comfortable online?",
+  "after": "**Ask the spec:** Who is left out when a service assumes a homeowner comfortable online?",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "Speaks for longtime owners, farm families and small businesses in and around Old Watkins. Wants rural addresses the system recognizes, protection from drainage problems, and a say before land is converted. Brings knowledge of local roads and parcels the county map gets wrong, including household H02.",
+  "after": "Speaks for longtime owners, farm families and small businesses in and around Old Watkins. Wants recognized rural addresses, drainage protection, and a say before land conversion. Knows local roads and parcels the county map gets wrong, including H02.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ },
+ {
+  "before": "Speaks for shift workers, people with disabilities, residents without a smartphone, and people who prefer languages other than English. Brings test cases: the Portside worker whose shuttle stops early (H04), the Spanish-speaking household in Box Elder (H03), and residents who can't visit during office hours.",
+  "after": "Speaks for shift workers, people with disabilities, residents without smartphones, and residents who prefer languages other than English. Test cases: the Portside worker whose shuttle stops early (H04), the Spanish-speaking Box Elder household (H03), residents who can't visit during office hours.",
+  "kind": "line-edit",
+  "reason": "Cut to reference fragments; facts kept."
+ }
+]

@@ -1,0 +1,254 @@
+[
+ {
+  "before": "The first section is SCENARIO: the instructor set these facts about East Detroit's two housing institutions. Everything after it is about real public organizations, 2005 to 2026. Do not present any of it as East Detroit performance data.",
+  "after": "The first section is SCENARIO, set by the instructor. The rest covers real public organizations, 2005 to 2026. Never present it as East Detroit performance data.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "Codes such as [[D1]](#D1) or [[H5]](#H5) link to the numbered sources at the end. Figures date from their source, not from 2030.",
+  "after": "Codes like [[D1]](#D1) or [[H5]](#H5) link to the sources at the end. Figures date from their source, not 2030.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "East Detroit has two separate housing institutions.\n\n",
+  "after": "",
+  "kind": "throat-clearing",
+  "reason": "Heading already says this."
+ },
+ {
+  "before": "Part of the consolidated city-county government. It answers to the executive and council through budget appropriations and the public records process. It sets and runs local housing policy and programs: financing housing development and preservation, local tenant and homeowner assistance,",
+  "after": "A city-county department, answerable to the executive and council through appropriations and public records. It runs local housing policy and programs: financing development and preservation, tenant and homeowner assistance,",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "It may manage locally financed housing or contracts under municipal authority.",
+  "after": "It may manage locally financed housing or contracts.",
+  "kind": "overexplaining",
+  "reason": "'Under municipal authority' restates that it is a city-county department."
+ },
+ {
+  "before": "An independent public housing authority. It has its own governing commission, management, budgets, federal housing agreements, property and rental-assistance operations, and accountability duties. It serves East Detroit and participating communities beyond the city-county boundary, a regional reach modeled on Home Forward. It administers federal housing assistance and its housing portfolio, and runs local or regional programs where agreements allow.",
+  "after": "An independent public housing authority with its own commission, management, budgets, federal housing agreements, property and rental-assistance operations, and accountability duties. Modeled on Home Forward, it also serves participating communities beyond the city-county. It administers federal housing assistance and its portfolio, plus local or regional programs where agreements allow.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "They are two public bodies with separate mandates in one consolidated city-county. They are not rival governments called \"the city\" and \"the county.\" They serve many of the same residents and run related programs, so a household can face duplicate intake and repeated checks. Both exist when the class starts in 2030. Their coordination agreements, shared processes, data-access rules, financial contributions and implementation choices are OPEN.",
+  "after": "Both exist when the class starts in 2030. They are separate public bodies in one city-county, not rival \"city\" and \"county\" governments. They serve many of the same residents, so a household can face duplicate intake and repeated checks. Their coordination agreements, shared processes, data-access rules, financial contributions and implementation choices are OPEN.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "Detroit's Housing and Revitalization Department (HRD) is a city office. According to the city,",
+  "after": "Detroit's Housing and Revitalization Department (HRD) is a city office and the closest real precedent for EDHD. According to the city,",
+  "kind": "structure",
+  "reason": "Moves the precedent point up front."
+ },
+ {
+  "before": "The city's description names its partnership with the independent Detroit Housing Commission. HRD is the closest real precedent for EDHD.",
+  "after": "The city names its partnership with the independent Detroit Housing Commission.",
+  "kind": "structure",
+  "reason": "Precedent sentence moved up."
+ },
+ {
+  "before": "These are policy targets, not results, and are not scaled to East Detroit. They show a city department choosing investments and tracking production and preservation apart from a voucher authority's daily work.",
+  "after": "These are policy targets, not results, and are not scaled to East Detroit. They show a city department setting investment goals apart from a voucher authority's daily work.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "is a public housing authority that runs rental assistance and housing. It is governed separately from HRD.",
+  "after": "is a public housing authority, governed separately from HRD, that runs rental assistance and housing.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "So a housing authority can be locally governed and federally accountable at once. The city can influence board appointments and coordinate policy. HUD can impose federal program rules and step in when the agency fails its obligations.",
+  "after": "So an authority can be locally governed and federally accountable at once. The city can influence appointments and policy; HUD can impose program rules and step in when the agency fails.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "Outlier Media reported that understaffing caused long backlogs in the federal voucher program. In April 2023, only 221 of 1,960 recertifications due were complete. Reporting in 2024 found a remaining backlog of 1,747 delinquent recertifications, despite help from an outside contractor. While a recertification is pending, rents and subsidies can be wrong. Landlords reported late payments, and some stopped accepting DHC vouchers.",
+  "after": "Outlier Media reported that understaffing caused long federal voucher backlogs. In April 2023, 221 of 1,960 recertifications due were complete. 2024 reporting found 1,747 delinquent recertifications still pending despite an outside contractor's help. Pending recertifications can mean wrong rents and subsidies. Landlords reported late payments; some stopped accepting DHC vouchers.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "partly because it lacked staff to do the required work.",
+  "after": "partly for lack of staff to do the required work.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "The same article reported residents whose housing problems persisted. These are reported outcomes and management statements for that period. They do not prove that every resident's problem was resolved.",
+  "after": "The same article reported residents whose problems persisted. These are reported outcomes and management statements for that period, not proof that every resident's problem was resolved.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "A shared digital form cannot, by itself, fix unstaffed queues, wrong payment calculations, inspections, landlord distrust or an underfunded property portfolio.",
+  "after": "A shared digital form alone cannot fix unstaffed queues, wrong payment calculations, inspections, landlord distrust or underfunded properties.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "Home Forward is a public corporation. It is the housing authority for Portland and Multnomah County, including Gresham and communities in east Multnomah County. It states that it is not part of the City of Portland's government. It runs housing assistance, affordable properties and related services. It works with the city, the county and other partners, and runs some programs for them.",
+  "after": "Home Forward is a public corporation and the housing authority for Portland and Multnomah County, including Gresham and east Multnomah County. It states that it is not part of Portland city government. It runs housing assistance, affordable properties and related services, plus some programs for the city, the county and other partners.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "The appointing governments influence who serves. They do not run Home Forward's daily housing work.",
+  "after": "The appointing governments shape who serves; they do not run daily operations.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "Portland also has the Portland Housing Bureau. It finances affordable housing, supports preservation and runs local housing policies. So Portland is a second real example of a city housing bureau beside a separate housing authority. East Detroit's arrangement combines this pattern with Detroit's split between HRD and DHC.",
+  "after": "Portland's own Housing Bureau finances affordable housing, supports preservation and runs local housing policies. So Portland is a second real case of a city bureau beside a separate authority. East Detroit combines this pattern with Detroit's split between HRD and DHC.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "MTW gives selected public housing authorities limited flexibility to design local approaches to funding and administration, subject to federal conditions and reporting. It does not give a city unrestricted access to federal records. It does not guarantee more housing or sound management.",
+  "after": "MTW gives selected public housing authorities limited flexibility over funding and administration, within federal conditions and reporting. It gives a city no unrestricted access to federal records and guarantees neither more housing nor sound management.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "The vote opened a full investigation. It is not a finding of misconduct.",
+  "after": "The vote opened a full investigation, which is not a finding of misconduct.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "Options under discussion included staff cuts, lower administrative spending, changes to the share of rent tenants pay, and reconsidering MTW terms. The proposed changes to tenant contributions were expected to affect 12,356 households.",
+  "after": "Options discussed: staff cuts, lower administrative spending, changing tenants' share of rent, and reconsidering MTW terms. The proposed tenant changes were expected to affect 12,356 households.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "| Who owns each handoff, property management contracts, and how long units are actually available to lease |",
+  "after": "| Who owns each handoff, management contracts, how long units are actually leasable |",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "A housing authority can face intense unmet need while it holds vacant apartments, leases slowly, carries high operating costs, runs a strained budget and hears serious tenant complaints about living conditions. No single figure shows the cause. The vacancy count includes properties needing work, units with different affordability restrictions, and units whose rents may no longer compete with some market offers. Ask which operating, financial, legal or housing-market conditions cause each delay or vacancy.",
+  "after": "Intense unmet need can coexist with vacant apartments, slow leasing, high operating costs, a strained budget and serious tenant complaints about living conditions. No single figure shows the cause. Vacant units include ones needing work, ones with different affordability restrictions, and ones whose rents may not compete with some market offers. Ask which operating, financial, legal or market conditions cause each delay or vacancy.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "A separately governed authority can have public representation and formal controls and still have serious oversight failures. MTW-style flexibility cannot replace",
+  "after": "An authority with public representation and formal controls can still fail at oversight. MTW flexibility cannot replace",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "Detroit HRD sets policy, invests funds, supports production, preservation and homelessness services [[D1]](#D1)",
+  "after": "HRD: policy, investment, production, preservation, homelessness services [[D1]](#D1)",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "Portland Housing Bureau finances housing and local protections [[H3]](#H3)",
+  "after": "Housing Bureau: housing finance, local protections [[H3]](#H3)",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "DHC runs its own federally accountable programs; five-member board appointed by the mayor [[D6]](#D6)",
+  "after": "DHC: own federally accountable programs; five-member board appointed by the mayor [[D6]](#D6)",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "Home Forward is an independent public corporation with nine commissioners from several jurisdictions",
+  "after": "Home Forward: independent public corporation; nine commissioners from several jurisdictions",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "City investment and entitlement funds versus the authority's housing assistance and property finance",
+  "after": "City investment and entitlement funds vs. authority housing assistance and property finance",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "Local housing funds versus federal vouchers,",
+  "after": "Local housing funds vs. federal vouchers,",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "Neither failure is assumed; you examine whatever local baseline evidence exists",
+  "after": "Neither assumed; examine whatever local baseline evidence exists",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "EDRHA may refuse a requested integration or ask for contract conditions",
+  "after": "EDRHA may refuse integration or ask for contract conditions",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "Ask whether two agencies serving the same people have compatible goals and legal powers. Then ask whether removing duplication keeps the functions that must stay separate.",
+  "after": "Ask whether the two agencies' goals and legal powers fit, and whether cutting duplication keeps the functions that must stay separate.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "Overlap cuts both ways:\n\n",
+  "after": "",
+  "kind": "throat-clearing",
+  "reason": "Heading and list labels already say this."
+ },
+ {
+  "before": "A possible harm: more households get referred to a program that has no funding, staff, available unit or willing landlord. Faster screening can lengthen a queue if the bottleneck is housing supply or leasing, not intake.",
+  "after": "A possible harm: more referrals to programs with no funding, staff, available unit or willing landlord. Faster screening can lengthen a queue when the bottleneck is housing supply or leasing, not intake.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "A household is behind on rent and may lose its home. This is an illustration, not an adopted East Detroit service design.",
+  "after": "Example (not an adopted East Detroit design): a household is behind on rent and may lose its home.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "Decide eligibility, rent calculations and voucher or lease rules for its separate programs",
+  "after": "Decide eligibility, rent calculations and voucher or lease rules for its programs",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "An earlier proposal for East Detroit imagined one-click housing approvals. Federal rules limit what that could mean.",
+  "after": "An earlier East Detroit proposal imagined one-click housing approvals. Federal rules limit that.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "HUD already runs the Enterprise Income Verification (EIV) system. It uses income and benefit data obtained through authorized federal arrangements. Public housing authorities use EIV under program rules. EIV is not a general city tax or payroll registry for citywide benefits. See HUD's system description and 24 CFR § 5.233.",
+  "after": "HUD already runs the Enterprise Income Verification (EIV) system, using income and benefit data from authorized federal arrangements. Public housing authorities use it under program rules. It is not a general city tax or payroll registry for citywide benefits. See HUD's description and 24 CFR § 5.233.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "Housing Choice Vouchers require federal verification and reexamination. So an income flag alone does not show that a funded voucher or suitable unit exists. A city may fund its own locally governed rent-relief program. Changing an interface cannot create more federal vouchers.",
+  "after": "Housing Choice Vouchers require federal verification and reexamination, so an income flag alone does not show a funded voucher or suitable unit exists. A city may fund its own rent relief, but an interface change cannot create more federal vouchers.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ },
+ {
+  "before": "The earlier proposal claimed a city power to stay eviction cases automatically. That claim is withdrawn. Any action on eviction court rules, notice, case status, landlord action or judicial authority needs an actual legal basis.",
+  "after": "The earlier proposal's automatic court stay is withdrawn as a city power. Court rules, notice, case status, landlord action and judicial authority need an actual legal basis.",
+  "kind": "line-edit",
+  "reason": "Cuts connective prose; keeps every fact, figure, qualifier and citation."
+ }
+]
