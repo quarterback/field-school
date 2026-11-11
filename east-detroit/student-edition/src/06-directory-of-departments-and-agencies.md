@@ -226,7 +226,7 @@ Every entry answers four spec questions:
 
 **Limits:** runs city streets and mobility programs. Can't run RTD routes or set RTD fares.
 
-**Pressure:** owns the streets, not the buses. The scenario's rail hub doesn't mean RTD agreed to anything.
+**Pressure:** owns the streets, not the buses. The rail hub does not establish an RTD operating agreement.
 
 **Questions for the spec:** What can the city offer riders if RTD shares only public timetables?
 
@@ -332,7 +332,7 @@ Every entry answers four spec questions:
 
 ## A-07 East Detroit County Court
 
-**What it is:** the city-county's own trial court for smaller matters. Modeled on Denver's county court: city-funded, judges appointed by the mayor from merit lists, outside Colorado's state court system. Only Denver has this in real Colorado; East Detroit's version is a fictional rule in its founding amendment. Felonies, family and probate cases go to a state district court.
+**What it is:** the city-county's own trial court for smaller matters. Modeled on Denver's county court: city-funded, judges appointed by the mayor from merit lists, outside Colorado's state court system. East Detroit's founding charter gives its county court the same independent judicial authority. Felonies, family and probate cases go to a state district court.
 
 **Runs and holds:** evictions, small claims, civil cases up to \$25,000, misdemeanors, traffic, protection orders and city ordinance violations; filings, case status, judgments and protection orders.
 
@@ -362,7 +362,7 @@ Every entry answers four spec questions:
 
 *Optional: takes part only if a student claims it.*
 
-**What it is:** the scenario's independent health system: Level I regional trauma center, aerospace flight medicine, teaching hospital.
+**What it is:** East Detroit's independent health system: Level I regional trauma center, aerospace flight medicine, teaching hospital.
 
 **Runs and holds:** trauma, specialty care and teaching; patient records under medical privacy law.
 

@@ -6,11 +6,9 @@ date: "Student edition, November 2026"
 lang: en-US
 ---
 
-Nothing here is adopted. The platform, vendor, governance board and first service are all OPEN.
-
 # The setting
 
-East Detroit is a fictional city-county of 382,417 residents in twenty provisional neighborhoods. Many organizations residents use are independent of it. Growth brings new parcels, crowded schools, costly housing, long commutes, income gaps, and demand for water, safety, recreation, permits and benefits.
+East Detroit is a consolidated city-county of 382,417 residents in twenty neighborhoods. Many organizations residents use are independent of it. Growth brings new parcels, crowded schools, costly housing, long commutes, income gaps, and demand for water, safety, recreation, permits and benefits.
 
 # Who holds authority
 
@@ -27,12 +25,12 @@ City-county departments must take part in the spec. Every other public body can 
 | East Detroit Health and Hospital Authority | External; board appointed by the mayor | Public safety-net hospital; patient records under medical privacy law |
 | East Detroit Health System | External | Level I trauma and teaching hospital; same privacy law |
 | Independent school districts and boards | External; separately governed | Agreement needed for shared data, enrollment and school transportation |
-| RTD and any special transit authority | External | Service and fares by negotiation; a scenario rail station is not a data-sharing agreement |
+| RTD and any special transit authority | External | Service and fares by negotiation; a rail station does not create a data-sharing agreement |
 | East Detroit Water and Sewer Authority and any special districts | External, unless the class lawfully absorbs them | Own capital, water rights, rates, boundaries, service obligations |
 | Denver International Airport, KCFO operators, the FAA, surrounding cities and counties | External | Airport safety, routes, land ownership and boundaries limit city plans |
 | Residents, community organizations, workers, firms and vendors | Participants | Can push, apply, sell or object; no public authority |
 
-: Table 1. Starting authority of each participant (SCENARIO)
+: Table 1. Government and agency responsibilities
 
 # What the city-county can require
 
@@ -45,11 +43,9 @@ The city-county directs its own departments through charter, ordinances, adminis
 
 # Colorado: the legal setting
 
-Colorado law governs East Detroit. Where real law would need state action, write "fictional enabling rule needed."
-
 ## Consolidated city and county
 
-Broomfield, a real Colorado city, became a county by state constitutional amendment. A similar fictional measure created East Detroit but set no board, software platform, elected structure or service priority. Consolidation cuts handoffs; it cannot override external authorities.
+Broomfield, a real Colorado city, became a county by state constitutional amendment. East Detroit became a consolidated city-county through a similar constitutional measure. Consolidation brings city and county duties into one government while leaving independent authorities responsible for their own services.
 
 ## County-administered benefits
 
@@ -63,33 +59,31 @@ Colorado's constitution lets governments cooperate and contract to provide funct
 
 Each Colorado county normally has a state-funded county court for smaller matters: evictions, small claims, civil cases up to \$25,000, misdemeanors, traffic and protection orders. A state district court hears larger cases. Denver is the exception. Denver, not the state, funds its county court, and Denver appoints its judges (Colorado Constitution, Article VI, §26).
 
-SCENARIO: A fictional enabling rule in the founding amendment gives East Detroit a Denver-model county court, which no other Colorado county has. Felonies, family and probate cases go to a state district court. Independent judges and records make it an outside agency.
+East Detroit's founding measure establishes a county court modeled on Denver's. Felonies, family and probate cases go to a state district court. Independent judges and records make it an outside agency.
 
 ## A public hospital authority
 
 In 1997, Denver's public hospital left city government and became the Denver Health and Hospital Authority. Under Colorado law it is a political subdivision that is not an agency of the state or the city. The mayor appoints its eleven-member board, subject to city council confirmation.
 
-SCENARIO: The East Detroit Health and Hospital Authority follows this model, separate from the East Detroit Health System.
+East Detroit's Health and Hospital Authority follows this model and operates separately from East Detroit Health System.
 
 ## A library district
 
-SCENARIO: The East Detroit Public Library District is independent of the city. The Boulder Public Library District (Table 2) is a real Colorado example.
+East Detroit Public Library District operates independently of city government, as the Boulder Public Library District does.
 
 ## The Denver airport precedent
 
 Denver International Airport sits on former Adams County land, annexed under legal authorization, elections and agreements that also governed later economic deals. Near another jurisdiction's facility, East Detroit faces the same questions: who pays, owns the land, collects revenue and approves new uses.
 
-# Michigan: comparisons, not law
-
-A Michigan arrangement applies only if the class adopts it and shows how Colorado law or the fictional enabling measure allows it.
+# Michigan governance models
 
 ## Charter-county functions
 
-Michigan's Charter Counties Act lets a charter county take on public health, police, fire, welfare, land use, recreation and utilities, and take some city functions by agreement. You could adopt a similar fictional clause, with consent where law requires it.
+Michigan's Charter Counties Act lets a charter county take on public health, police, fire, welfare, land use, recreation and utilities, and take some city functions by agreement. These transfer rules provide a model for agreements among East Detroit agencies and regional partners.
 
 ## Detroit's water arrangement
 
-The Great Lakes Water Authority (GLWA) leases and operates Detroit's regional water and sewer facilities, while the Detroit Water and Sewerage Department owns the local system and serves customers. That split is one model for East Detroit's Water and Sewer Authority; any arrangement is OPEN.
+The Great Lakes Water Authority (GLWA) leases and operates Detroit's regional water and sewer facilities, while the Detroit Water and Sewerage Department owns the local system and serves customers. The arrangement offers a useful comparison for East Detroit's Water and Sewer Authority.
 
 ## Neighborhood technology stewards
 
@@ -99,7 +93,7 @@ You may propose a mixed board, elected commission, neighborhood council, contrac
 
 # Other institutional models
 
-| Example (REAL REFERENCE) | How it works | East Detroit choice to debate (OPEN) |
+| Public institution | How it works | Decision for East Detroit |
 |---|---|---|
 | Colorado SIPA | Public authority oversees procurement and a contracted portal integrator | Central purchasing, vendor oversight, fees and political accountability |
 | UTOPIA Fiber, Utah | Cities own a shared network; other providers serve customers on it | Whether a shared public asset can support competing services |
@@ -113,20 +107,13 @@ You may propose a mixed board, elected commission, neighborhood council, contrac
 
 : Table 2. Institutional models for comparison
 
-These are precedents, not requirements. Check current terms before citing one.
-
 # Housing
 
-The City Housing Division (EDHD) is a city-county department; the independent EDRHA also serves nearby participating communities. The pair mirrors Detroit's housing department and independent housing commission, and Portland's housing bureau and Home Forward. A local rent-relief grant and a federal housing voucher are separate obligations, so some overlap is not waste. Reading 3 covers both; any EDHD-EDRHA agreement is OPEN.
+The City Housing Division (EDHD) is a city-county department; the independent EDRHA also serves nearby participating communities. The pair mirrors Detroit's housing department and independent housing commission, and Portland's housing bureau and Home Forward. A local rent-relief grant and a federal housing voucher are separate obligations, so some overlap is not waste. Reading 3 examines the operating and financial issues behind both models.
 
-# Rules for using these models
+# Applying the governance models
 
-1. **Colorado fact.** Start from real Colorado responsibilities and the fictional city-county's valid powers.
-2. **Michigan precedent.** Say what the comparison arrangement does and why it might work better.
-3. **Fictional enabling change.** If Colorado can't simply adopt an arrangement, write the authorizing clause or state partnership into the simulation. A student vote does not amend real Colorado law.
-4. **Conflicts.** Record the options, the right or interest affected, who can settle it and any outside party that must consent. Pick a rule and say why. The "better" state's rule does not win automatically.
-5. **Independent parties.** They can refuse; a city-county resolution is not their consent.
-6. **Federal and state program boundaries.** City policy can't get around them. Label any fictional waiver or pilot as fictional and have the right simulated authority approve it.
+For each possible arrangement, identify the service it covers, the legal authority that supports it, the body that controls funding, and who can change or terminate it. Where state action or an intergovernmental agreement is required, include that step in the implementation plan. Independent agencies retain their decision-making powers and federal program requirements continue to apply.
 
 # Sources
 

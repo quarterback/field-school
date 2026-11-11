@@ -1,6 +1,6 @@
 ---
 title: "The Municipal Project Brief"
-subtitle: "Reading 4 of 4: What the class is building, what is settled and what is open"
+subtitle: "Reading 4 of 4: Municipal services, implementation and agency coordination"
 author: "Public Mechanics"
 date: "Student edition, November 2026"
 lang: en-US
@@ -8,7 +8,7 @@ lang: en-US
 
 # Your assignment
 
-You play a department head, agency leader, civic representative or partner in the fictional City and County of East Detroit, Colorado, in 2030. It has 382,417 residents in twenty provisional neighborhoods, a large, unevenly developed territory, and needs in housing, water, transit, benefits, address records, schools, safety and community facilities.
+You represent a department, agency, community group or partner working in the City and County of East Detroit, Colorado, in 2030. It has 382,417 residents in twenty neighborhoods, a large, unevenly developed territory, and needs in housing, water, transit, benefits, address records, schools, safety and community facilities.
 
 Your class writes the specification (spec) for a city-county version of Estonia's digital government. There, each agency keeps its own records and shares data through a secure layer, X-tee, under agreements (see Reading 2 and the Directory). For East Detroit's departments and outside agencies, the spec sets out:
 
@@ -18,7 +18,7 @@ Your class writes the specification (spec) for a city-county version of Estonia'
 - how residents are protected
 - which services come first
 
-Nothing is approved yet: no digital identity, app, procurement, vendor, cloud platform, data exchange, governance board or first service. You help establish the facts, write the spec and implementation plan, and negotiate with other agencies to carry it out.
+Your work is to establish the operating and governance requirements, produce an implementation plan, and negotiate the participation of agencies that control their own records and services.
 
 # Choose your entry
 
@@ -39,24 +39,22 @@ Outside agencies are worth claiming: a refusal can stop a service. Departments a
 
 - Your entry, its service problem and one specific resident case
 - Records you hold that others need, and what you need from them
-- Your proposed decision and the real or fictional authority behind it
+- Your proposed decision and the authority behind it
 - A second option and its trade-off
 - At least one internal dependency and one outside organization that might accept, negotiate or refuse
 - What success looks like, plus a failure or exception case
 
-Label every fact **REAL REFERENCE** (real), **SCENARIO** (created for the course) or **OPEN** (unresolved). Never present fictional demographics, new ZIP codes, governance powers or data agreements as existing Colorado law.
+# Institutions and decisions
 
-# What is settled and what is open
+## Existing institutions and services
 
-## Settled for the exercise (SCENARIO)
-
-1. East Detroit is a consolidated city-county coping with rapid growth.
-2. Its residents and services are diverse. Reading 1's demographics and neighborhoods are planning assumptions open to question. They are not real Census estimates.
+1. East Detroit is a consolidated city-county experiencing rapid growth.
+2. Its population and neighborhood profiles appear in Reading 1.
 3. It has working city and county departments, elected leaders, a City Housing Division and an independent East Detroit Regional Housing Authority.
 4. Its civic and cultural anchors are those in Reading 1: The Hangar at Space Center, the Denver Fawns, the Colorado Apex, the Denver Pilots at Aerotropolis Park, EDPAC and the East Detroit Health System.
 5. Independent of the city-county: the school district, library district, water and sewer authority, RTD, the County Court, the two hospitals, the Regional Housing Authority, state and federal agencies, airport operators and other jurisdictions.
 
-## Open for the class (OPEN)
+## Decisions to make
 
 - Exact county and neighborhood boundaries
 - The local charter and resident representation
@@ -68,28 +66,6 @@ Label every fact **REAL REFERENCE** (real), **SCENARIO** (created for the course
 - Form, delegated powers and priority rules of any shared service, including any agreement between the two housing institutions
 - Funding, ownership and digital systems for the civic and cultural anchors
 
-## Ideas from earlier drafts, open for debate
-
-Earlier drafts presented these as adopted. None was; debate, change or reject each:
-
-- ED-Core digital identity and ED-Wallet
-- "Once only" as a fixed municipal law
-- Universal zero-knowledge YES/NO data APIs
-- Automated housing approvals and income checks
-- Automatic school enrollment triggers or seats
-- RTD fare integration
-- Mandatory telemetry for parks access
-- A 48-hour limit for provisional GIS records
-- 60-minute emergency access tokens
-- Automatic historic preservation holds
-- Digital voting on public art
-- Digital onboarding through libraries
-- Vendor procurement and cloud hosting choices
-- A phased platform launch
-- A specific board size and membership
-
-They also implied 100% voucher uptake, uniform student assignment and "zero burden" outcomes, without implementation evidence.
-
 # Three stages
 
 ## Stage A: Establish the basis
@@ -98,7 +74,7 @@ Find out duties, needs, assets, costs, resident cases, limits of authority, prio
 
 - Name the need or service problem your role sees.
 - Identify who faces it (a resident or worker) and in which neighborhoods.
-- Separate what East Detroit provides in the scenario, what another agency controls, and what is unknown.
+- Distinguish services East Detroit provides from responsibilities held by other agencies.
 - List the authority, money, staff, information, facilities and partners you need.
 
 ## Stage B: Plan implementation
@@ -137,7 +113,7 @@ Outside agencies may accept, negotiate or refuse. Refusing still counts as takin
 
 **Ownership and operations.** Who controls the domain name, cloud or hosting accounts, source code, contracts, records and derived analysis? Who answers users, keeps service hours, patches systems, handles complaints and steps in if a vendor fails? Assign each separately.
 
-**Information.** For each data exchange, name the sender, receiver, purpose, fields, legal or fictional authority, consent or notice, retention period, who corrects and reviews it, incident handling and how optional sharing is revoked. "Once only," ED-Wallet, zero-knowledge APIs and automated referrals are options only.
+**Information.** For each data exchange, name the sender, receiver, purpose, fields, legal authority, consent or notice, retention period, who corrects and reviews it, incident handling and how optional sharing is revoked. "Once only," ED-Wallet, zero-knowledge APIs and automated referrals are options only.
 
 **Money and incentives.** Compare general appropriations, agency contributions, user and developer fees, land-value mechanisms, grants, special districts and contract revenue. Who pays, who benefits, and what if revenue falls short?
 
@@ -160,7 +136,7 @@ It can be one complete transaction, several linked touchpoints or a staff-only p
 
 **For each candidate, ask:**
 
-- Which law or simulated authority controls the decision?
+- Which law or public authority controls the decision?
 - Which agency handles complaints, review and appeals?
 - What if the other agency is offline, declines, or sends a wrong record?
 - What test would expose a harmful design, including for a resident with no phone or a disputed address?
@@ -186,7 +162,7 @@ A memorandum of understanding (MOU) can coordinate intentions. Enforceable dutie
 
 **Example: schools.** The city wants to offer an enrollment referral when residents register a move. The district could agree to a secure address check, offer only fixed referral information, demand funding and manual review, or refuse. Without the district, City GIS can keep an address record but cannot make binding enrollment decisions.
 
-**Example: transit.** RTD might offer a timetable or fare exchange, accept a limited pilot, or decline. The city can still publish routes or fund its own legally supported mobility program. The scenario's rail hub does not oblige RTD to link ticketing.
+**Example: transit.** RTD might offer a timetable or fare exchange, accept a limited pilot, or decline. The city can still publish routes or fund its own legally supported mobility program. The rail hub does not give the city control over RTD ticketing.
 
 # Questions your entry must answer
 
@@ -199,7 +175,7 @@ A memorandum of understanding (MOU) can coordinate intentions. Enforceable dutie
 
 # What happens in class
 
-You present proposals (a department can bring several) and challenge each other's assumptions. The class compares conflicting requirements and picks what to test. The instructor then uses AI, live, to build or revise a working model: a service diagram, screen, data exchange, staff work queue, cost model or agreement test. Each choice traces to its proposer. A simulated screen or workflow does not adopt its rules or funding.
+You present proposals (a department can bring several) and challenge each other's assumptions. The class compares conflicting requirements and picks what to test. The instructor then uses AI, live, to build or revise a working model: a service diagram, screen, data exchange, staff work queue, cost model or agreement test. Each choice traces to its proposer. Compare each working model with the agreed rules, resources and service responsibilities.
 
 The record keeps proposals, choices, dissents, what changed in testing, failures and earlier versions. Unanimity is not required: record disagreements, refusals and missing information, and test more than one path where a decision is contested.
 
