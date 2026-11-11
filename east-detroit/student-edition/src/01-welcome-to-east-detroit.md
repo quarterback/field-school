@@ -41,7 +41,7 @@ Most of the study area is employment land, farmland, aviation protection zones, 
 
 # Where the city sits
 
-REAL REFERENCE: East Detroit surrounds Watkins, the Colorado Air and Space Port (KCFO), Interstate 70, the Union Pacific rail corridor, Colfax Avenue and Box Elder Creek, with Denver International Airport to the west. The main postal code is Watkins 80137; nearby real codes may appear on maps. The course has created no ZIP codes. A 2030 postal scheme is OPEN.
+REAL REFERENCE: East Detroit surrounds Watkins, the Colorado Air and Space Port (KCFO), Interstate 70, the Union Pacific rail corridor, Colfax Avenue and Box Elder Creek, with Denver International Airport to the west. The main postal code is Watkins 80137; nearby real codes may appear on maps. The course has created no new ZIP codes. A 2030 postal scheme is OPEN.
 
 Adams County's *Colorado Air and Space Port Subarea Plan* covers 48 square miles bounded by I-70, Hudson Road, E. 72nd Avenue and Harback Road: 21,079 acres of unincorporated Adams County, 9,738 in Aurora and 375 in Bennett. It finds water and wastewater gaps and land-use conflicts near the airport. The fictional city has not solved them.
 
@@ -185,7 +185,7 @@ These institutions are SCENARIO; their funding, ownership, digital systems and s
 - East Detroit Philharmonic & Performing Arts Center (EDPAC): 2,200 seats. A proposed 1% Public Art Commercial Fee is a financing question, not adopted law.
 - East Detroit Health System: Level I regional trauma center, aerospace flight medicine program and teaching hospital. Joining a government emergency data exchange is open.
 
-The teams, relocations and launches are fictional, not real league or KCFO schedules.
+The teams, relocations and launches are invented.
 
 # Public institutions you will work with
 
@@ -198,7 +198,7 @@ East Detroit has its own city and county departments, elected leaders and Fire D
 - the State of Colorado's human services and IT agencies (real)
 - East Detroit County Court, funded by the city-county but independent in its decisions
 - East Detroit Health and Hospital Authority, the public safety-net hospital
-- East Detroit Health System (see above)
+- East Detroit Health System, the trauma and teaching hospital
 - East Detroit Regional Housing Authority (EDRHA), which runs federal housing assistance, also beyond the city
 
 Airport operators, federal agencies and neighboring governments also constrain the city.

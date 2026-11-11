@@ -1,0 +1,5 @@
+[
+ {"before":"The teams, relocations and launches are fictional, not real league or KCFO schedules.","after":"The teams, relocations and launches are invented.","kind":"line-edit","reason":"Removes a not-X-but-Y construction left from r3."},
+ {"before":"The course has created no ZIP codes.","after":"The course has created no new ZIP codes.","kind":"line-edit","reason":"Restores 'new': the real code 80137 exists."},
+ {"before":"- East Detroit Health System (see above)","after":"- East Detroit Health System, the trauma and teaching hospital","kind":"line-edit","reason":"'(see above)' is unclear in a list; name it briefly."}
+]

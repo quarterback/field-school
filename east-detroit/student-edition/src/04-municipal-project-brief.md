@@ -8,9 +8,9 @@ lang: en-US
 
 # Your assignment
 
-You play a department head, agency leader, civic representative or partner in the fictional City and County of East Detroit, Colorado, in 2030. It has 382,417 residents in twenty provisional neighborhoods across a large, unevenly developed territory. Its needs span housing, water, transit, benefits, address records, schools, safety and community facilities.
+You play a department head, agency leader, civic representative or partner in the fictional City and County of East Detroit, Colorado, in 2030. It has 382,417 residents in twenty provisional neighborhoods, a large, unevenly developed territory, and needs in housing, water, transit, benefits, address records, schools, safety and community facilities.
 
-Your class writes the specification (spec) for a city-county version of Estonia's digital government. There, each agency keeps its own records and shares data through a secure layer called X-tee, under agreements between organizations (see Reading 2 and the Directory). For East Detroit's departments and outside agencies, the spec sets out:
+Your class writes the specification (spec) for a city-county version of Estonia's digital government. There, each agency keeps its own records and shares data through a secure layer, X-tee, under agreements (see Reading 2 and the Directory). For East Detroit's departments and outside agencies, the spec sets out:
 
 - which records they hold
 - what they share, and on what terms
@@ -33,7 +33,7 @@ You own one entry. Find it in the **Directory of Departments and Agencies** and 
 
 : Table 1. Who owns the spec
 
-Outside agencies are worth claiming: one that refuses can stop a service. Departments are assigned and must take part, but you can still contest policy, details, budgets, feasibility, legal authority and sequence.
+Outside agencies are worth claiming: a refusal can stop a service. Departments are assigned and must take part, but can contest policy, details, budgets, feasibility, legal authority and sequence.
 
 # What to bring to the first session
 
@@ -51,7 +51,7 @@ Label every fact **REAL REFERENCE** (real), **SCENARIO** (created for the course
 ## Settled for the exercise (SCENARIO)
 
 1. East Detroit is a consolidated city-county coping with rapid growth.
-2. Its residents and services are diverse. Reading 1's demographics and neighborhoods are planning assumptions you can question. They are not real Census estimates.
+2. Its residents and services are diverse. Reading 1's demographics and neighborhoods are planning assumptions open to question. They are not real Census estimates.
 3. It has working city and county departments, elected leaders, a City Housing Division and an independent East Detroit Regional Housing Authority.
 4. Its civic and cultural anchors are those in Reading 1: The Hangar at Space Center, the Denver Fawns, the Colorado Apex, the Denver Pilots at Aerotropolis Park, EDPAC and the East Detroit Health System.
 5. Independent of the city-county: the school district, library district, water and sewer authority, RTD, the County Court, the two hospitals, the Regional Housing Authority, state and federal agencies, airport operators and other jurisdictions.
@@ -70,7 +70,7 @@ Label every fact **REAL REFERENCE** (real), **SCENARIO** (created for the course
 
 ## Ideas from earlier drafts, open for debate
 
-Earlier drafts presented these as adopted. None was. Debate, change or reject each:
+Earlier drafts presented these as adopted. None was; debate, change or reject each:
 
 - ED-Core digital identity and ED-Wallet
 - "Once only" as a fixed municipal law
@@ -94,31 +94,32 @@ They also implied 100% voucher uptake, uniform student assignment and "zero burd
 
 ## Stage A: Establish the basis
 
-Find out the city-county's duties, needs, assets, costs, resident cases and limits of authority, and identify priorities and dependencies. You may challenge the city's starting assumptions.
+Find out duties, needs, assets, costs, resident cases, limits of authority, priorities and dependencies. You may challenge the city's starting assumptions.
 
 - Name the need or service problem your role sees.
-- Identify the resident or worker who faces it, and the neighborhoods where it matters.
+- Identify who faces it (a resident or worker) and in which neighborhoods.
 - Separate what East Detroit provides in the scenario, what another agency controls, and what is unknown.
 - List the authority, money, staff, information, facilities and partners you need.
 
 ## Stage B: Plan implementation
 
-Choose service priorities, decision-makers, governance or procurement options, first working demonstrations, financing, staffing, technical and data dependencies, review routes and sequence. The instructor turns agreed decisions into a draft implementation spec during a shared build.
+The instructor turns agreed decisions into a draft implementation spec during a shared build.
 
-- Propose what comes first, and why.
-- State the policy decision, who authorizes it, how it runs, who pays, what must be built or bought, and what users see.
+- Propose service priorities: what comes first, and why.
+- State the policy decision, who decides and authorizes it, how it runs and is staffed, who pays, what must be built or bought, and what users see.
+- Set the sequence, review routes, technical and data dependencies, and first working demonstrations.
 - Name an alternative you considered and how you would test the result.
-- Choose the level of technology and partnership you can justify.
+- Choose the governance, procurement, technology and partnership options you can justify.
 
 ## Stage C: Coordinate stakeholders
 
-Outside agencies may accept, negotiate or refuse. If one says no, redesign without it. Refusing still counts as taking part.
+Outside agencies may accept, negotiate or refuse. Refusing still counts as taking part; redesign without them.
 
 - Identify which departments or outside organizations must take part.
 - Ask for their consent or an agreement.
-- If they decline, record why and revise the plan.
-- If they join on conditions, record the conditions in the decision record.
-- Name who handles complaints, corrections, appeals and ending an arrangement that fails.
+- If they decline, record why and revise.
+- If they set conditions, log them in the decision record.
+- Name who handles complaints, corrections, appeals and ending a failing arrangement.
 
 ## What the class produces
 
@@ -132,17 +133,17 @@ Outside agencies may accept, negotiate or refuse. If one says no, redesign witho
 
 # Four governance decisions
 
-**Authority.** Which public body can approve a shared service, adopt standards, spend public money, invite a partner and stop a harmful practice? An existing city-county function, a new authority, an intergovernmental agreement, a nonprofit, or a combination? Who can overrule whom?
+**Authority.** Which public body approves a shared service, adopts standards, spends public money, invites partners and stops harmful practices: an existing city-county function, a new authority, an intergovernmental agreement, a nonprofit, or a mix? Who can overrule whom?
 
-**Ownership and operations.** Who controls the domain name, cloud or hosting accounts, source code, contracts, records and analysis of them? Who answers users, keeps service hours, patches systems, handles complaints and takes over if a vendor fails? Assign each asset and duty separately.
+**Ownership and operations.** Who controls the domain name, cloud or hosting accounts, source code, contracts, records and derived analysis? Who answers users, keeps service hours, patches systems, handles complaints and steps in if a vendor fails? Assign each separately.
 
-**Information.** For each data exchange, name the sender, receiver, purpose, fields, legal or fictional authority, consent or notice, how long it is kept, who corrects and reviews it, incident handling, and how optional sharing is revoked. "Once only," ED-Wallet, zero-knowledge APIs and automated referrals are options only.
+**Information.** For each data exchange, name the sender, receiver, purpose, fields, legal or fictional authority, consent or notice, retention period, who corrects and reviews it, incident handling and how optional sharing is revoked. "Once only," ED-Wallet, zero-knowledge APIs and automated referrals are options only.
 
-**Money and incentives.** Compare general appropriations, agency contributions, user and developer fees, land-value mechanisms, grants, special districts and contract revenue. Who pays, who benefits, and what if expected revenue does not arrive?
+**Money and incentives.** Compare general appropriations, agency contributions, user and developer fees, land-value mechanisms, grants, special districts and contract revenue. Who pays, who benefits, and what if revenue falls short?
 
 # Choose the first service
 
-The course sets no first service. The class picks one on evidence and through negotiation. Candidates:
+The class picks the first service on evidence and through negotiation. Candidates:
 
 - Address corrections across new parcels
 - Permits
@@ -155,14 +156,14 @@ The course sets no first service. The class picks one on evidence and through ne
 - Emergency routing
 - Public art or venue services
 
-It can be one complete, useful transaction, several connected touchpoints or a staff-only process, if the class can justify it.
+It can be one complete transaction, several linked touchpoints or a staff-only process, if the class can justify it.
 
 **For each candidate, ask:**
 
 - Which law or simulated authority controls the decision?
 - Which agency handles complaints, review and appeals?
-- What if the other agency is offline, declines, or supplies a wrong record?
-- What test would reveal a harmful design, including for a resident with no phone or a disputed address?
+- What if the other agency is offline, declines, or sends a wrong record?
+- What test would expose a harmful design, including for a resident with no phone or a disputed address?
 
 # Negotiating with independent agencies
 
@@ -181,32 +182,30 @@ A strong partner agreement states:
 - How either party revokes or exits
 - Duties during a transition
 
-A memorandum of understanding (MOU) is enough to coordinate intentions. Enforceable duties need the right legal instrument. Log negotiations in the class decision record.
+A memorandum of understanding (MOU) can coordinate intentions. Enforceable duties need the right legal instrument. Log negotiations in the decision record.
 
-**Example: schools.** The city wants to offer a school enrollment referral when residents register a move. The district could agree to a secure address check, offer only fixed referral information, demand funding and manual review, or refuse. City GIS can keep a municipal address record but cannot make binding enrollment decisions without the district.
+**Example: schools.** The city wants to offer an enrollment referral when residents register a move. The district could agree to a secure address check, offer only fixed referral information, demand funding and manual review, or refuse. Without the district, City GIS can keep an address record but cannot make binding enrollment decisions.
 
-**Example: transit.** RTD might offer a timetable or fare exchange, accept a limited pilot, or decline. The city can still publish route information or fund its own legally supported mobility program. A rail hub in the scenario does not oblige RTD to link its ticketing.
+**Example: transit.** RTD might offer a timetable or fare exchange, accept a limited pilot, or decline. The city can still publish routes or fund its own legally supported mobility program. The scenario's rail hub does not oblige RTD to link ticketing.
 
 # Questions your entry must answer
 
-1. Which problem does your entry own, for which residents, in which neighborhoods?
-2. What do the city-county, the state (through county administration) and other public bodies deliver now? Which powers does East Detroit hold, and which sit elsewhere?
+1. Which problem, residents and neighborhoods does your entry own?
+2. Who delivers it now (the city-county, the state through county administration, or another public body)? Which powers sit with East Detroit, and which elsewhere?
 3. Who approves policy, allocates resources, authorizes access, corrects records, hears disputes and can stop a harmful launch?
-4. Which partners are indispensable, what deal is needed before launch, and what if a partner refuses?
-5. What will residents, frontline staff, reviewers and elected officials see when a case succeeds and when it fails?
-6. How will you know the arrangement works better, and whom might it leave out?
+4. Which partners are indispensable, what deal comes before launch, and what if one refuses?
+5. What do residents, frontline staff, reviewers and elected officials see when a case succeeds or fails?
+6. How will you know it works better, and whom might it leave out?
 
 # What happens in class
 
-You present proposals (a department can bring several) and challenge each other's assumptions. The class compares conflicting requirements and decides what to test.
+You present proposals (a department can bring several) and challenge each other's assumptions. The class compares conflicting requirements and picks what to test. The instructor then uses AI, live, to build or revise a working model: a service diagram, screen, data exchange, staff work queue, cost model or agreement test. Each choice traces to its proposer. A simulated screen or workflow does not adopt its rules or funding.
 
-The instructor then uses AI, live in class, to build or revise a working model: a service diagram, screen, data exchange, staff work queue, cost model or agreement test. Every choice traces back to who proposed it. A generated screen or workflow shows an arrangement can be simulated. It does not adopt its rules or funding.
-
-The record keeps who proposed what, what was chosen, who dissented and what changed in testing. Record failures too, and keep earlier versions to return to. Unanimity is not required. Record disagreements, refusals and missing information, and test more than one path where a decision is contested.
+The record keeps proposals, choices, dissents, what changed in testing, failures and earlier versions. Unanimity is not required: record disagreements, refusals and missing information, and test more than one path where a decision is contested.
 
 # Where to find the background
 
-- **Reading 1: Welcome to East Detroit**: the city, its people, neighborhoods, anchor institutions and six test households.
-- **Reading 2: How East Detroit Is Governed**: who holds authority, the Colorado legal setting and Michigan comparisons.
-- **Reading 3: Housing**: the Detroit and Home Forward cases behind East Detroit's two housing institutions.
-- **Sign-up Sheet** and **Directory of Departments and Agencies**: every entry, its responsibilities and where to start.
+- **Reading 1: Welcome to East Detroit**: city, people, neighborhoods, anchors, six test households
+- **Reading 2: How East Detroit Is Governed**: authority, Colorado law, Michigan comparisons
+- **Reading 3: Housing**: the Detroit and Home Forward cases behind the two housing institutions
+- **Sign-up Sheet** and **Directory of Departments and Agencies**: every entry, its duties and where to start
