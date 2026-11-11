@@ -54,3 +54,13 @@ These pages returned HTTP 403 to every automated route, including the Internet A
 | Census | https://www.census.gov/quickfacts/fact/table/adamscountycolorado/PST045225 | \$94,571; \$1,781; 9.8%; 68.6%; 43.7%; 554,668 (July 2025) |
 
 Outlier Media (D7–D11) rate-limited direct requests; those articles were read through a separate fetch tool and are verified above.
+
+## Added 11 November 2026: court, hospital authority and Estonia sources
+
+| Source | Claim | Found in source |
+|---|---|---|
+| Colorado Legislative Council, *Overview of the Colorado Judicial Branch* (2025) | County courts hear civil cases up to \$25,000; Denver County Court is the only county court not funded by the state | Yes |
+| Ballotpedia, Colorado County Courts | Denver County Court is not part of the state system; judges appointed by Denver's mayor | Yes |
+| C.R.S. § 25-29-103 | Denver Health and Hospital Authority is a body corporate and political subdivision, not a state or local government agency; eleven-member board appointed by the mayor, confirmed by council | Yes |
+| Denver Health, 20th anniversary history | Separated from the City of Denver effective January 1, 1997 | Yes |
+| Estonian Information System Authority, X-tee | Members describe shared data, others use it under agreement; owner controls the data; authentication, multi-level authorization, logging, encryption and signing; joining requires membership, a security server and an agreement | Yes |

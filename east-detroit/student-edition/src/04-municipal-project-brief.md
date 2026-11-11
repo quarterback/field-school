@@ -10,7 +10,9 @@ lang: en-US
 
 You are a department head, agency leader, civic representative or partner in the fictional City and County of East Detroit, Colorado, in 2030. The city has 382,417 residents, twenty provisional neighborhoods, a large and unevenly developed territory, and major needs in housing, water, transit, benefits, address records, schools, safety and community facilities.
 
-The city-county exists. **Its strategy for new shared services is unwritten.** No digital identity, app, procurement, vendor, cloud platform, data exchange, governance board or first service has been approved. Your job is to help establish the facts, develop an implementation plan, and negotiate with other agencies to carry it out.
+**The assignment: write the specification for a city-county version of Estonia's digital government.** In Estonia, government agencies keep their own records and exchange data through a shared, secure layer called X-tee, under agreements between the organizations involved (Reading 2 and the Directory explain how it works). The class will specify how East Detroit's departments and outside agencies could do the same: which records they hold, what they would share and on what terms, who runs the exchange, how residents are protected, and which services come first.
+
+The city-county exists. **The spec is unwritten.** No digital identity, app, procurement, vendor, cloud platform, data exchange, governance board or first service has been approved. Your job is to help establish the facts, develop the spec and its implementation plan, and negotiate with other agencies to carry it out.
 
 As in the other readings, **SCENARIO** marks facts the course has created, **REAL REFERENCE** marks real laws and organizations, and **OPEN** marks choices the class makes.
 
@@ -62,7 +64,7 @@ Earlier drafts also implied 100% voucher uptake, uniform student assignment and 
 
 # The three stages of the project
 
-The project has three stages. None assumes that a particular product, platform or governance design is the answer.
+The project has three stages. The goal is fixed (an Estonia-style spec), but no particular product, platform or governance design is assumed to be the answer.
 
 ## Stage A: Establish the basis
 
@@ -110,11 +112,20 @@ Every internal city-county department takes part in the process, though its lead
 
 # Choose what you will own
 
-Claim a department or a specific decision. You may instead represent an independent school district, transit provider, utility, state agency, community group or other outside partner. Record your name and role on the class sign-up and decision record, which is distributed separately.
+Each student owns one entry: a city-county department, an outside agency or a resident group. Use the **Directory of Departments and Agencies** to find your area, and claim it on the **Sign-up Sheet**. There are 27 entries, more than there are students. **The instructor speaks for every entry nobody claims.**
 
-More than one student may work on the same issue. A department head can bring several proposed decisions, and students may challenge each other's proposals.
+| Group | Entries | Status |
+|---|---|---|
+| City-county departments | D-01 to D-15 | Must take part |
+| Outside agencies | A-01 to A-08: school district, library district, water and sewer authority, RTD, State human services and IT, Regional Housing Authority, County Court, Health and Hospital Authority | Always represented; may refuse to join |
+| Optional outside agency | A-09: East Detroit Health System | Takes part only if a student claims it |
+| Resident groups | R-01 to R-03 | Test the spec; always represented |
 
-Internal city-county departments take part because East Detroit has assigned them to. Their leaders can still contest details, budgets, feasibility, legal authority and sequence. Independent bodies choose whether to take part, and on what terms. Either outcome gives the class real consequences to work through.
+: Table 1. Who owns the spec
+
+Students are encouraged to take outside agencies and resident groups. Outside agencies decide whether to join the exchange, so they shape the spec as much as any department.
+
+City-county departments take part because East Detroit has assigned them to. Their owners can still contest details, budgets, feasibility, legal authority and sequence. Outside agencies choose whether to take part, and on what terms. Either outcome gives the class real consequences to work through. A department head can bring several proposed decisions, and students may challenge each other's proposals.
 
 # Four governance decisions to make explicit
 
@@ -197,7 +208,8 @@ The record keeps who proposed what, what the group chose, who dissented and what
 
 # What to bring to the first session
 
-- Your role and service problem, with one specific resident case
+- Your entry and its service problem, with one specific resident case
+- The records your entry holds that others would need, and what it needs from others
 - The decision you propose, and the real or fictional authority it depends on
 - A second option and its trade-off
 - At least one internal dependency, and one outside organization that might accept, negotiate or refuse
@@ -210,3 +222,4 @@ The record keeps who proposed what, what the group chose, who dissented and what
 - **Reading 1: Welcome to East Detroit** describes the city, its people, neighborhoods, anchor institutions and the six test households.
 - **Reading 2: How East Detroit Is Governed** explains who holds authority, the Colorado legal setting and the Michigan comparisons.
 - **Reading 3: Housing** documents the Detroit and Home Forward cases behind East Detroit's two housing institutions.
+- **Sign-up Sheet** and **Directory of Departments and Agencies** list every entry, what it is responsible for, and where to start.

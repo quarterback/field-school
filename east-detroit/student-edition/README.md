@@ -1,6 +1,6 @@
 # East Detroit student edition
 
-Four student readings produced from the V3 working documents. GitHub remains the source of truth for the scenario. Students get the PDFs (and Word copies if needed) through Google Drive or the course site. They should never need to open this repository.
+Four student readings, a sign-up sheet and a directory of departments and agencies, produced from the V3 working documents. GitHub remains the source of truth for the scenario. Students get the PDFs (and Word copies if needed) through Google Drive or the course site. They should never need to open this repository.
 
 | # | Reading | Word (editable master) | PDF (reading copy) |
 |---|---|---|---|
@@ -8,6 +8,8 @@ Four student readings produced from the V3 working documents. GitHub remains the
 | 2 | How East Detroit Is Governed | [docx](dist/02-how-east-detroit-is-governed.docx) | [pdf](dist/02-how-east-detroit-is-governed.pdf) |
 | 3 | Housing: Two Models of Public Authority | [docx](dist/03-housing-two-models-of-public-authority.docx) | [pdf](dist/03-housing-two-models-of-public-authority.pdf) |
 | 4 | The Municipal Project Brief | [docx](dist/04-municipal-project-brief.docx) | [pdf](dist/04-municipal-project-brief.pdf) |
+| 5 | Sign-up Sheet | [docx](dist/05-sign-up-sheet.docx) | [pdf](dist/05-sign-up-sheet.pdf) |
+| 6 | Directory of Departments and Agencies | [docx](dist/06-directory-of-departments-and-agencies.docx) | [pdf](dist/06-directory-of-departments-and-agencies.pdf) |
 
 ## Review before distributing
 

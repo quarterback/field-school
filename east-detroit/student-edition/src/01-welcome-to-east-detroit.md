@@ -183,14 +183,24 @@ These teams, relocations, launches and facilities are fictional. They make no cl
 
 # Public institutions you will work with
 
-**SCENARIO.** East Detroit has operating city and county departments and elected leaders. Some organizations that serve residents are independent of the city-county: school districts, RTD, water providers, airport owners and operators, state and federal agencies, and neighboring jurisdictions. They may agree to joint work, refuse it or set conditions.
+**SCENARIO.** East Detroit has operating city and county departments and elected leaders, including its own Fire Department. Some organizations that serve residents are independent of the city-county. They may agree to joint work, refuse it or set conditions:
+
+- the **East Detroit Unified School District**;
+- the **East Detroit Public Library District**, which runs the city's libraries;
+- the **East Detroit Water and Sewer Authority**;
+- the **Regional Transportation District (RTD)** (REAL REFERENCE);
+- the **State of Colorado's** human services and IT agencies (REAL REFERENCE);
+- the **East Detroit County Court**, funded by the city-county but independent in its decisions;
+- the **East Detroit Health and Hospital Authority**, the public safety-net hospital;
+- the **East Detroit Health System**, the trauma and teaching hospital;
+- airport owners and operators, federal agencies and neighboring jurisdictions.
 
 Two housing institutions already exist and are separate:
 
 - The **City and County of East Detroit Housing Division (EDHD)** is a city-county department. It handles city-funded housing policy, affordable housing development and preservation, local assistance and homelessness prevention.
 - The **East Detroit Regional Housing Authority (EDRHA)** is an independent public housing authority with its own board. It serves the city and participating communities outside it.
 
-Reading 2 explains how authority is divided. Reading 3 covers the two housing institutions and the real cases they are modeled on.
+Reading 2 explains how authority is divided. Reading 3 covers the two housing institutions and the real cases they are modeled on. The Directory of Departments and Agencies describes each of these bodies in detail.
 
 # Six households to test services against
 

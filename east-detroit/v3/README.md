@@ -1,12 +1,12 @@
 # East Detroit, Colorado | Public Mechanics 2030 project kit (V3)
 
-The City and County of East Detroit is a **fictional Colorado municipality** used to study service delivery, government powers, implementation and stakeholder coordination. This directory is the new working classroom kit, superseding the earlier spaceport-only map and V2 master dossier. It is intended to work in a browser or on a phone through GitHub.
+The City and County of East Detroit is a **fictional Colorado municipality** used to study service delivery, government powers, implementation and stakeholder coordination. The class assignment is to write a specification for a city-county version of Estonia's digital government (see the [master dossier](master_project_dossier_v3.md), §8). This directory is the new working classroom kit, superseding the earlier spaceport-only map and V2 master dossier. It is intended to work in a browser or on a phone through GitHub.
 
 ## Start here
 
 1. **Instructor / context:** [Master project dossier V3](master_project_dossier_v3.md)
 2. **Everyone / class task:** [Before the municipal service build](before_the_municipal_service_build_v3.md)
-3. **Choose your role:** [Stakeholder and department role cards](stakeholder_role_cards.md)
+3. **Choose your role:** [Sign-up sheet](../student-edition/dist/05-sign-up-sheet.pdf) and [directory of departments and agencies](../student-edition/dist/06-directory-of-departments-and-agencies.pdf). The older [role cards](stakeholder_role_cards.md) are superseded.
 4. **Shared work:** [Sign-up, decision and implementation record](municipal_service_signup_and_decision_record_v3.md)
 5. **Comparative rules:** [Municipal governance packet](municipal_digital_governance_packet_v3.md)
 6. **Place and people:** [2030 neighborhood and demographic atlas](neighborhood_atlas_2030.md)

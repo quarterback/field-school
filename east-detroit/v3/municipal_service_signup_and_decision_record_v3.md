@@ -3,16 +3,7 @@
 
 ## A. Role sign-up
 
-| Student(s) | Department, agency or community role | Internal / external / resident | First problem or decision | Partners to contact | Status |
-|---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-
-Use `stakeholder_role_cards.md` to claim an existing suggested role or create one. Internal department heads must participate. External partners have their own authority and can refuse. Shared decisions can have several owners.
+**Superseded, 11 November 2026.** Students now claim one of 27 roster entries on the student-edition **Sign-up Sheet** (`../student-edition/dist/05-sign-up-sheet.pdf`), using the **Directory of Departments and Agencies** (`../student-edition/dist/06-directory-of-departments-and-agencies.pdf`). The instructor speaks for every unclaimed entry. The roster is defined in the master dossier, §8. Sections B to G below remain in use.
 
 ## B. Baseline claim
 

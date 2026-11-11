@@ -13,10 +13,13 @@ The class must establish what exists, decide what to implement, and secure coope
 
 | Organization | Starting status | What this means in the exercise |
 |---|---|---|
-| City-county departments (planning, address/GIS, clerk, public health, **City Housing Division**, human services, parks, public safety, finance, technology, libraries) | Internal, must take part in the process | Responsible for their own mandates and capacity; can contest policy, financing, order, feasibility and methods |
+| City-county departments (planning, address/GIS, clerk, public health, **City Housing Division**, human services, parks, police and 911, fire, finance, technology) | Internal, must take part in the process | Responsible for their own mandates and capacity; can contest policy, financing, order, feasibility and methods |
 | Elected municipal/county leaders | Internal governing authority | Have to define decision rights, appropriations, accountability and conflict resolution |
 | State of Colorado agencies | External, with governing program authority | Can refuse integration, impose program rules or agree to a limited agreement; fictional city cannot rewrite federal or state eligibility |
 | **East Detroit Regional Housing Authority (EDRHA)** | **External independent authority with its own board and regional constituency** | Administers its own housing assistance and properties; can negotiate or decline shared services and data access |
+| **East Detroit Public Library District** | External independent district with its own board and tax levy | Runs libraries and public access; can agree, set terms or decline |
+| **East Detroit County Court** | External: city-county funded, judicially independent (Denver County Court model; fictional enabling rule) | Controls its own case records; can agree, condition or decline sharing |
+| **East Detroit Health and Hospital Authority** | External independent public authority; mayor-appointed board (Denver Health model) | Public safety-net hospital; patient records stay under medical privacy law |
 | Independent school districts and boards | External, separate governing organizations | Participation, shared data, enrollment workflows and school transport require agreement |
 | RTD and any special transit authority | External | Service and fare arrangements require negotiation; a fictional rail station does not equal a data-sharing agreement |
 | Water and wastewater providers, special districts | External unless explicitly absorbed by a class-adopted and legally supported mechanism | Have capital, water-rights, rates, boundaries and service obligations that must be resolved |

@@ -111,3 +111,21 @@ Terms kept as they are because students will meet them in the sources: Moving to
 2. The four detroitmi.gov pages and Census QuickFacts, which could not be machine-checked (CITATION_CHECK.md).
 3. Figure 1 is a new rendering of the V3 draft GeoJSON (boundary plus 20 label points, no basemap). The old concept PNG is marked superseded in the audit and was not used.
 4. Whether the stakeholder role cards should go into the sign-up packet. They were left out of these four readings.
+
+## 7. Instructor decisions, 11 November 2026
+
+These are new scenario facts set by the instructor, not editorial changes. They are recorded in the master dossier, §8, and applied to the readings.
+
+| Decision | Where applied |
+|---|---|
+| The assignment is to write a spec for a city-county version of Estonia's digital government | Reading 4 opening, stages, sign-up; dossier §8; V3 README |
+| Each student owns one roster entry; the instructor speaks for unclaimed entries | Reading 4 "Choose what you will own"; Sign-up Sheet; Directory |
+| Libraries become the independent East Detroit Public Library District | Readings 1, 2; Directory A-02; governance packet table |
+| Fire Department becomes a separate city-county department | Readings 1, 2; Directory D-11 |
+| East Detroit County Court, on the Denver County Court model (fictional enabling rule) | Reading 2; Directory A-07; governance packet table |
+| East Detroit Health and Hospital Authority, on the Denver Health model, separate from the Health System | Readings 1, 2; Directory A-08, A-09; governance packet table |
+| Roster: 15 departments, 8 always-represented outside agencies, 1 optional, 3 resident groups | Sign-up Sheet; Directory; Reading 4 Table 1; dossier §8 |
+| Removed from the roster: neighboring governments, airport and FAA, employers and developers, metropolitan districts | Dossier §8. They remain in the real geography (Readings 1, 2). |
+| Local outside agencies are fictional and sized for East Detroit; real bodies are models of institution type only | Directory; dossier §8 |
+
+**Role cards superseded.** The Directory reuses the role cards' "wants / worries / can offer / likely refusal / must ask" content for entries that already existed. New for each entry: the records it holds and questions for the Estonia-style spec. These are framed as **OPEN** questions, not decisions. The sign-up record's section A now points to the Sign-up Sheet.
