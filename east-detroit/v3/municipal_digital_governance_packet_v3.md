@@ -13,9 +13,10 @@ The class must establish what exists, decide what to implement, and secure coope
 
 | Organization | Starting status | What this means in the exercise |
 |---|---|---|
-| City-county departments (planning, address/GIS, clerk, public health, housing, human services, parks, public safety, finance, technology, libraries) | Internal, must take part in the process | Responsible for their own mandates and capacity; can contest policy, financing, order, feasibility and methods |
+| City-county departments (planning, address/GIS, clerk, public health, **City Housing Division**, human services, parks, public safety, finance, technology, libraries) | Internal, must take part in the process | Responsible for their own mandates and capacity; can contest policy, financing, order, feasibility and methods |
 | Elected municipal/county leaders | Internal governing authority | Have to define decision rights, appropriations, accountability and conflict resolution |
 | State of Colorado agencies | External, with governing program authority | Can refuse integration, impose program rules or agree to a limited agreement; fictional city cannot rewrite federal or state eligibility |
+| **East Detroit Regional Housing Authority (EDRHA)** | **External independent authority with its own board and regional constituency** | Administers its own housing assistance and properties; can negotiate or decline shared services and data access |
 | Independent school districts and boards | External, separate governing organizations | Participation, shared data, enrollment workflows and school transport require agreement |
 | RTD and any special transit authority | External | Service and fare arrangements require negotiation; a fictional rail station does not equal a data-sharing agreement |
 | Water and wastewater providers, special districts | External unless explicitly absorbed by a class-adopted and legally supported mechanism | Have capital, water-rights, rates, boundaries and service obligations that must be resolved |
@@ -71,6 +72,14 @@ These examples originally appeared in the 20-page class packet. Verify their cur
 **Information.** For every information exchange, identify the sender, receiver, purpose, fields, legal or fictional authority, permission or notice, retention, correction source, review, incident response and ability to revoke optional sharing. “Once-only,” ED-Wallet, zero-knowledge APIs, and automated referrals are options, not policy.
 
 **Money and incentives.** Compare general appropriations, agency contributions, user fees, developer fees, land-value mechanisms, grants, special districts, or contract revenue. Explain who bears costs, who benefits, and what happens when the assumed revenue does not arrive.
+
+## Housing: a real comparison for two existing East Detroit institutions
+
+East Detroit's **City Housing Division (EDHD)** is an internal city-county department and must join municipal planning. The **East Detroit Regional Housing Authority (EDRHA)** is a separately governed authority serving East Detroit and nearby participating communities; it can negotiate or decline proposed cooperation.
+
+Read the dedicated [housing authority research case](housing_authority_case_home_forward_vs_detroit.md) **before** discussing housing-system changes. It documents the real division between Detroit's municipal Housing and Revitalization Department and its independent Housing Commission, HUD intervention in Detroit in 2005, Detroit's recertification and vacancy problems and reported improvements, and Home Forward's regional board, Moving to Work flexibility, 2025 vacancies and 185-day leasing delays, 2026 financial crisis, leadership change and ethics investigation. The report includes primary links, contemporary journalism, numbers, and the qualifications attached to the evidence.
+
+The factual comparison helps distinguish avoidable administrative duplication from essential differences in authority: a local rent-relief decision and a federally funded voucher are separate obligations. The two East Detroit institutions remain in place; implementation decisions and any agreement between them remain open.
 
 ## 6. The high-stakes service choices
 

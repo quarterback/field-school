@@ -32,7 +32,7 @@ The new 115.4-square-mile boundary polygon is a conceptual **study proposal**, n
 
 1. East Detroit exists as a consolidated city-county and is dealing with rapid growth. The class begins its work within that setting.
 2. Its services and residents are diverse. The demographics and neighborhood inventory in `neighborhood_atlas_2030.md` are **fictional planning assumptions** that class teams can interrogate, not actual Census estimates.
-3. The municipality has operational city and county departments and elected accountability, but the precise form, delegated powers, priority systems, and authority structure for the proposed shared service are **OPEN**.
+3. The municipality has operational city and county departments and elected accountability. **The City Housing Division and independent East Detroit Regional Housing Authority are established parts of the scenario.** The precise form, delegated powers, priority systems, and authority structure for a proposed shared service remain **OPEN**.
 4. Its major civic and cultural institutions in 2030 are the five anchors specified below. Their existence does not pre-decide funding, ownership, digital systems, or service agreements.
 5. Some outside bodies are independent: schools, RTD, water providers, airport owners/operators, state and federal agencies, and other jurisdictions. They may agree, refuse, or impose conditions on joint work.
 
@@ -86,6 +86,12 @@ The twenty proposed neighborhoods, five planning regions, invented populations, 
 Neighborhood names are **working identities**, not zoning districts. Zoning and other rules are overlaid and separately decided. The city includes old Watkins, dense transit districts, newer planned communities, employment edges, agricultural and flood corridors, airport buffers, and places that need basic services even when they lack the downtown's resources. **No neighborhood polygons are approved yet.**
 
 The real airfield, runway protection surfaces, storm-water courses, major existing roads and county/municipal lines are geographic constraints. The 2030 hubs, fictional light/heavy rail network, venue footprints, district names, and service locations are proposals or invented setting elements, labeled accordingly.
+
+## Housing institutions: established scenario
+
+East Detroit begins with **two existing and separate housing institutions**. **The City and County of East Detroit Housing Division (EDHD)** is a department of the consolidated city-county government and must participate in internal planning. It handles city-funded housing policy, affordable development and preservation, local assistance and homelessness prevention. **The East Detroit Regional Housing Authority (EDRHA)** is an independent public housing authority serving the city and participating communities outside the city-county boundary. Its own board oversees housing assistance, properties, federal obligations and finances. It is an **external partner for participation purposes**: the city cannot order it to approve a shared service or release its records.
+
+This is a **fixed instructor choice**. The class does not decide whether the two agencies exist. Students can study coordination between them, but **no shared application, agreement, income verification system or technology is adopted**. The full evidence, chronology, citations and operational comparison appear in [Housing research case: Home Forward and Detroit](housing_authority_case_home_forward_vs_detroit.md). Read that case before treating any proposed housing workflow as a solution.
 
 ## 5. What the class is actually building
 

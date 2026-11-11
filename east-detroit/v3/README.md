@@ -13,6 +13,10 @@ The City and County of East Detroit is a **fictional Colorado municipality** use
 7. **Another agent / GIS:** [Map agent handoff](map_agent_handoff.md) plus [draft GeoJSON](east_detroit_2030_draft.geojson) and [machine-readable neighborhoods](neighborhoods_2030.json)
 8. **What changed:** [V2-to-V3 assumption audit](assumption_audit_v2_to_v3.md)
 
+## Housing case research: read before proposals
+
+**[Home Forward and Detroit: two housing institutions, overlapping work](housing_authority_case_home_forward_vs_detroit.md)** documents the real organizational patterns, operating failures, financial evidence, federal constraints, and potential coordination choices. It supplies direct links for every case finding. The instructor has established a **City and County Housing Division** and a separate **East Detroit Regional Housing Authority**. Their coexistence is a scenario fact, not a student decision. No housing application or integration plan is preselected.
+
 ## Baseline in one paragraph
 
 By 2030 East Detroit has **382,417 residents** in **155,800 occupied households**, with **20 provisional neighborhoods** across a *conceptual* **115.4-square-mile** municipality, most of which is not densely built. It is a newly consolidated city-county in a Phoenix-like growth corridor east of Denver International Airport. Students establish the basis, plan implementation and negotiate how internal city-county offices and independent partners will work together. No technology stack, governance board, first service, contract, or agency data exchange has been adopted.

@@ -19,8 +19,8 @@ These cards introduce realistic incentives and disagreements. They do **not** pr
 ### I-04 Department of Human Services
 **Wants:** dependable service for residents and defensible case decisions. **Worries:** student proposals confusing county administration with power to rewrite state/federal benefits. **Can commit:** process and local intake work subject to state rules. **Must ask:** Who makes eligibility and appeal decisions, especially when records conflict?
 
-### I-05 Housing and Neighborhood Services
-**Wants:** prevent displacement, reach renters and new households, coordinate with landlords. **Worries:** scarce vouchers, predatory screening, cost burdens and underfunded commitments. **Can commit:** municipal programs the council actually finances. **Must ask:** Which neighborhood conditions justify first priority?
+### I-05 City and County Housing Division (EDHD)
+**Status:** established internal department. **Responsibilities:** city-funded rental and homelessness-prevention assistance, housing policy, development and preservation finance, and local tenant/homeowner services. **Wants:** prevent displacement and coordinate help without repeating paperwork. **Worries:** gaps between local assistance and a separate authority's federal programs, underfunded commitments, and confusing referrals. **Can commit:** municipal programs supported by enacted authority and council funding. **Cannot commit:** EDRHA's vouchers, properties, staff, or protected records. **Evidence:** [Housing research case](housing_authority_case_home_forward_vs_detroit.md), especially Detroit HRD and Portland Housing Bureau. **Must ask:** Which overlap is a coordination problem, and which requires separate authority?
 
 ### I-06 Planning, Building and Land Use
 **Wants:** predictable permit rules, actual water capacity and protection of airport approaches. **Worries:** imaginary density approvals on restricted land. **Can commit:** local plan and zoning proposals for adoption. **Must ask:** What is the legal boundary and where may people safely live?
@@ -74,6 +74,9 @@ These cards introduce realistic incentives and disagreements. They do **not** pr
 
 ### E-08 Nearby Cities and Counties
 **Status:** external. **Wants:** clear tax, boundary, drainage, service and road obligations. **Worries:** East Detroit shifting costs or annexing planned growth. **Can offer:** mutual aid, shared boundaries, transfer agreements, or refuse. **Negotiation point:** debts, workers, capital assets and service continuity.
+
+### E-09 East Detroit Regional Housing Authority (EDRHA)
+**Status:** established, independent regional housing authority; serves East Detroit and participating communities beyond municipal boundaries. It has its own commission, operating leadership, budget, housing properties, federal assistance administration and appeals. **Wants:** stable occupancy, timely resident assistance, sound finances, and performance across its wider jurisdiction. **Worries:** municipal promises exceeding federal voucher capacity, unfinanced referrals, sharing restricted information, and shifting regional costs onto authority tenants. **Can offer:** a negotiated intake/referral arrangement, defined eligibility/status verification where permitted, local partnership funding agreements, property placement coordination or none of these. **May refuse:** a requested transfer of federal records, blanket data reuse, or a city-directed workflow. **Evidence:** [Housing research case](housing_authority_case_home_forward_vs_detroit.md), including Home Forward's board and MTW structure, leasing delays, budget issues, and Detroit's HUD oversight. **Negotiation point:** name an actual operational handoff and identify who can fund, authorize, deliver and review it.
 
 ## Resident and civic roles: give the plan a contested public
 
