@@ -1,34 +1,32 @@
 # Governing a fast-growing city-county
 ## East Detroit, Colorado: Public Mechanics comparative governance packet, V3
 
-**This is a reading and decision resource, not an adopted charter.** It replaces the previous 20-page packet's presumption of a completed procurement, voter-approved service platform, cloud vendor, and selected first release. All of those issues are **OPEN**.
-
 ## 1. The problem we are governing
 
-East Detroit has 382,417 residents distributed across twenty provisional neighborhoods. It combines city services and county duties in one fictional jurisdiction, but many organizations with whom residents interact remain independent. Growth produces new parcels, school crowding, expensive housing, long commutes, income differences, and demand for water, safety, recreation, permitting and benefits.
+East Detroit has 382,417 residents distributed across twenty provisional neighborhoods. It combines city services and county duties in one jurisdiction, but many organizations with whom residents interact remain independent. Growth produces new parcels, school crowding, expensive housing, long commutes, income differences, and demand for water, safety, recreation, permitting and benefits.
 
-The class must establish what exists, decide what to implement, and secure cooperation. Every decision belongs to a named person or body. An agent-generated screen or flow is evidence that an arrangement can be simulated, **not** evidence that its rules or funding have been adopted.
+The class must establish what exists, decide what to implement, and secure cooperation. Every decision belongs to a named person or body. Working demonstrations will be compared with agreed responsibilities, legal authority and public funding.
 
 ### Whose authority is whose?
 
-| Organization | Starting status | What this means in the exercise |
+| Organization | Governance relationship | Responsibility |
 |---|---|---|
 | City-county departments (planning, address/GIS, clerk, public health, **City Housing Division**, human services, parks, police and 911, fire, finance, technology) | Internal, must take part in the process | Responsible for their own mandates and capacity; can contest policy, financing, order, feasibility and methods |
 | Elected municipal/county leaders | Internal governing authority | Have to define decision rights, appropriations, accountability and conflict resolution |
-| State of Colorado agencies | External, with governing program authority | Can refuse integration, impose program rules or agree to a limited agreement; fictional city cannot rewrite federal or state eligibility |
+| State of Colorado agencies | External, with governing program authority | Can refuse integration, impose program rules or agree to a limited agreement; city cannot rewrite federal or state eligibility |
 | **East Detroit Regional Housing Authority (EDRHA)** | **External independent authority with its own board and regional constituency** | Administers its own housing assistance and properties; can negotiate or decline shared services and data access |
 | **East Detroit Public Library District** | External independent district with its own board and tax levy | Runs libraries and public access; can agree, set terms or decline |
-| **East Detroit County Court** | External: city-county funded, judicially independent (Denver County Court model; fictional enabling rule) | Controls its own case records; can agree, condition or decline sharing |
+| **East Detroit County Court** | External: city-county funded, judicially independent (Denver County Court model) | Controls its own case records; can agree, condition or decline sharing |
 | **East Detroit Health and Hospital Authority** | External independent public authority; mayor-appointed board (Denver Health model) | Public safety-net hospital; patient records stay under medical privacy law |
 | Independent school districts and boards | External, separate governing organizations | Participation, shared data, enrollment workflows and school transport require agreement |
-| RTD and any special transit authority | External | Service and fare arrangements require negotiation; a fictional rail station does not equal a data-sharing agreement |
+| RTD and any special transit authority | External | Service and fare arrangements require negotiation; a rail station does not establish a data-sharing agreement |
 | Water and wastewater providers, special districts | External unless explicitly absorbed by a class-adopted and legally supported mechanism | Have capital, water-rights, rates, boundaries and service obligations that must be resolved |
 | Denver Airport, KCFO operators, FAA, surrounding cities/counties | External | Airport safety, routes, land ownership and boundaries constrain municipal plans |
 | Residents, community organizations, workers, firms and vendors | Participants with distinct rights | Engage, advocate, apply, contest, finance, sell, build, or decline; their roles are not identical |
 
 ## 2. Colorado provides the setting and practical powers
 
-**Consolidated city and county.** Broomfield is a genuine Colorado example of a city acquiring county status through a state constitutional amendment. We assume East Detroit was constituted through an equivalent fictional enabling measure. This does not automatically establish a particular board, software platform, elected structure, or service priority. A consolidated government can reduce the organizational handoffs between city and county services, but cannot override external authorities.
+**Consolidated city and county.** Broomfield is a genuine Colorado example of a city acquiring county status through a state constitutional amendment. East Detroit was established through an equivalent constitutional measure. The city-county appoints and funds its own administrative departments while independent agencies retain their separate powers. A consolidated government can reduce the organizational handoffs between city and county services, but cannot override external authorities.
 
 **County-administered benefits.** Colorado uses state-supervised, county-administered human services. For programs such as food assistance, county offices administer services subject to state and federal requirements. This gives East Detroit plausible operational responsibilities that an ordinary city would not have. Program policy, appeals, privacy and state system access still matter.
 
@@ -40,7 +38,7 @@ Read: Colorado local government handbook, https://content.leg.colorado.gov/sites
 
 ## 3. Michigan supplies useful governance comparisons
 
-**Charter-county functions.** Michigan's Charter Counties Act lists permissible county functions including public health, police, fire, welfare, land-use, recreation, and utilities, as well as transfers of certain municipal functions by agreement. Students can evaluate a similar mechanism as a *fictional East Detroit charter clause*, but must say where Colorado law or the hypothetical enabling measure would authorize it. A transferable function remains subject to affected government consent where applicable.
+**Charter-county functions.** Michigan's Charter Counties Act lists permissible county functions including public health, police, fire, welfare, land-use, recreation, and utilities, as well as transfers of certain municipal functions by agreement. Such transfers require an authorizing statute, charter provision or intergovernmental agreement with the affected parties. A transferable function remains subject to affected government consent where applicable.
 
 **Detroit water authority.** The Detroit/Great Lakes Water Authority arrangement separates infrastructure ownership, regional system operation, and local customer relationships. That separation helps the class avoid the vague claim that “the city owns the data and the system.” Different assets can have different custodians and obligations. Source from original class packet: https://www.glwater.org/what-we-do/ and https://detroitmi.gov/departments/water-and-sewerage-department .
 
@@ -80,13 +78,13 @@ These examples originally appeared in the 20-page class packet. Verify their cur
 
 East Detroit's **City Housing Division (EDHD)** is an internal city-county department and must join municipal planning. The **East Detroit Regional Housing Authority (EDRHA)** is a separately governed authority serving East Detroit and nearby participating communities; it can negotiate or decline proposed cooperation.
 
-Read the dedicated [housing authority research case](housing_authority_case_home_forward_vs_detroit.md) **before** discussing housing-system changes. It documents the real division between Detroit's municipal Housing and Revitalization Department and its independent Housing Commission, HUD intervention in Detroit in 2005, Detroit's recertification and vacancy problems and reported improvements, and Home Forward's regional board, Moving to Work flexibility, 2025 vacancies and 185-day leasing delays, 2026 financial crisis, leadership change and ethics investigation. The report includes primary links, contemporary journalism, numbers, and the qualifications attached to the evidence.
+Read the dedicated [housing authority research case](housing_authority_case_home_forward_vs_detroit.md) before considering housing-system changes. It documents the real division between Detroit's municipal Housing and Revitalization Department and its independent Housing Commission, HUD intervention in Detroit in 2005, Detroit's recertification and vacancy problems and reported improvements, and Home Forward's regional board, Moving to Work flexibility, 2025 vacancies and 185-day leasing delays, 2026 financial crisis, leadership change and ethics investigation. The report includes primary links, contemporary journalism, numbers, and the qualifications attached to the evidence.
 
-The factual comparison helps distinguish avoidable administrative duplication from essential differences in authority: a local rent-relief decision and a federally funded voucher are separate obligations. The two East Detroit institutions remain in place; implementation decisions and any agreement between them remain open.
+The factual comparison helps distinguish avoidable administrative duplication from essential differences in authority: a local rent-relief decision and a federally funded voucher are separate obligations. The agencies must negotiate any shared processes, records access and financial commitments.
 
 ## 6. The high-stakes service choices
 
-Rather than mandate a recreation pass, select the first service based on evidence and negotiations. Candidates include: address correction across new parcels; permitting; emergency housing and tenant assistance; county-administered food or cash program intake; transit access; recreation access; school connections; library/community support; emergency routing; and public art or venue services. Any may be chosen or rejected. A minimal launch can be one complete useful transaction, multiple touchpoints, or a staff-side process, as the students justify.
+Select the first service based on resident needs, agency responsibilities and available resources. Candidates include: address correction across new parcels; permitting; emergency housing and tenant assistance; county-administered food or cash program intake; transit access; recreation access; school connections; library/community support; emergency routing; and public art or venue services. Any may be chosen or rejected. A minimal launch can be one complete useful transaction, multiple touchpoints, or a staff-side process, as the students justify.
 
 **For each service ask:** Which law or simulated authority controls the decision? Which agency handles complaints, review and appeals? What if the other agency is offline, declines to participate, or supplies an incorrect record? What test would reveal a harmful design, including for a resident who has no phone or a disputed address?
 
@@ -96,16 +94,14 @@ A strong partner agreement states: scope and legal basis, parties, service level
 
 **Example: school connection.** The city wants a move-in event to offer a school enrollment referral. The school district can agree to a secure address-validation service; agree only to static referral information; demand funding and manual review; or refuse. City GIS can still maintain a municipal address record, but it cannot issue the school's binding enrollment decision without the district's participation.
 
-**Example: regional transit.** RTD may offer a timetable or fare exchange, accept a limited pilot, or decline. The city can still publish route information or fund a separate legally supported mobility program. A simulated rail hub alone establishes no requirement for RTD to connect ticketing systems.
+**Example: regional transit.** RTD may offer a timetable or fare exchange, accept a limited pilot, or decline. The city can still publish route information or fund a separate legally supported mobility program. A rail hub does not establish a fare-data sharing agreement.
 
-## 8. Simulation rules for selecting Michigan or Colorado arrangements
+## 8. Applying comparative governance models
 
-1. **Colorado fact:** use actual Colorado responsibilities and the invented city-county's valid public powers as the starting legal context.
-2. **Michigan precedent:** name what the comparative arrangement does and why it may improve outcomes.
-3. **Fictional enabling change:** if an arrangement cannot simply be adopted in Colorado, write the authorizing clause or needed state partnership into the simulation. Do not treat a student vote as amending real Colorado law.
-4. **Conflicts:** log the options, the affected right or interest, who can resolve the conflict, and any outside actor who must consent. The class chooses a rule and its rationale rather than silently assuming that the “better” state always wins.
-5. **Independent parties:** honor their right to refuse under the class simulation. A city-county resolution cannot invent consent.
-6. **Federal/state program boundaries:** cannot be bypassed by fictional municipal policy. A fictional waiver or pilot must be identified as such and approved by the simulated competent actor.
+1. Identify the service and the responsible East Detroit institution.
+2. Compare the Colorado and Michigan arrangements, including board authority, assets, funding and agreements.
+3. Identify legislation, charter provisions or intergovernmental agreements needed for the proposed model.
+4. Record conflicts and the agency with authority to resolve them. Independent partners may reject proposed arrangements, while federal and state program duties continue to apply.
 
 ## 9. Five prompts for department heads
 

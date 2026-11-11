@@ -1,30 +1,28 @@
 # East Detroit 2030: Demographic and neighborhood atlas
 
-**Fictional city and county | Working classroom data | V3 | 10 November 2026**
-
-All East Detroit neighborhood statistics below are **invented planning inputs**, not Census estimates or actual demographics for Watkins or Adams County. The counts are exact within the exercise, while the specific neighborhood incomes, tenure and rent stress represent working assumptions to support disagreements and service planning. Students may revise them in the decision register. Census and Adams County data provide real-world reference points only.
+**City and County of East Detroit | 2030 demographic and neighborhood profile**
 
 ## 1. Citywide starting point
 
-| Variable | Fictional East Detroit |
+| Variable | East Detroit |
 |---|---:|
 | 2030 population | **382,417** |
 | Occupied households | **155,800** |
 | Residents in group quarters | **3,823** |
 | Household-population model | 155,800 × 2.43 + 3,823 = 382,417 |
-| Land area of *provisional study boundary* | **115.4 square miles** |
-| Indicative developed urban footprint | **25.0 square miles** |
+| Land area | **115.4 square miles** |
+| Developed urban footprint | **25.0 square miles** |
 | Citywide median household income, 2024 USD | **$88,430** |
 | Renting households, citywide | **53.6%** |
 | People below the poverty threshold | **12.8%** |
 | Renters cost-burdened | **49.8%** |
 | Median gross rent, 2024 USD | **$1,865** |
 
-**Important distinction:** A median across all city households cannot be computed by averaging twenty neighborhood medians. The citywide estimate is a separately assigned planning input; household-level synthetic data would be needed to derive or verify it. Neighborhood renter and burden shares likewise should not be averaged without weighting.
+Citywide median household income cannot be calculated by averaging neighborhood medians. Renter and cost-burden rates also require household-weighted calculations.
 
-## 2. Twenty neighborhood seeds
+## 2. Twenty neighborhoods
 
-Neighborhoods are human communities, not land-use categories. Names are provisional working identities rooted in local streets and landscape (Watkins, Inboden, Quail Run, Cavanaugh, Manila, Schumaker, Harback, Box Elder), plus new urban identities (Foundry Quarter, Civic Square, Central Station). Map centroids and exact figures are in `neighborhoods_2030.json` and `east_detroit_2030_draft.geojson`. **No neighborhood boundaries have yet been adopted.**
+Neighborhoods are human communities, not land-use categories. Names draw from local streets and landscape (Watkins, Inboden, Quail Run, Cavanaugh, Manila, Schumaker, Harback, Box Elder), plus new urban identities (Foundry Quarter, Civic Square, Central Station). Map centroids and exact figures are in `neighborhoods_2030.json` and `east_detroit_2030_draft.geojson`. The neighborhood map is maintained separately from zoning and school attendance boundaries.
 
 | ID | Neighborhood | 2030 population | Households | Median HH income* | Renters | Rent-burdened renters** |
 |---|---|---:|---:|---:|---:|---:|
@@ -49,13 +47,13 @@ Neighborhoods are human communities, not land-use categories. Names are provisio
 | ED19 | Portside | 13,690 | 5,460 | $76,700 | 62% | 55% |
 | ED20 | High Prairie | 18,924 | 7,788 | $151,200 | 26% | 25% |
 
-*2024 purchasing-power dollars for comparison with 2020–2024 ACS; these are fictional medians. **Rent burden: renter households paying at least 30% of income toward housing, fictional.** Citywide values are independently modeled and do not necessarily result from a simple aggregate of these summary rates.
+*2024 purchasing-power dollars for comparison with 2020–2024 ACS; neighborhood medians. **Rent burden: renter households paying at least 30% of income toward housing, ** Citywide values are independently modeled and do not necessarily result from a simple aggregate of these summary rates.
 
 ## 3. Neighborhood descriptions and competing claims
 
 ### South / Historic
 
-**Old Watkins (ED01).** Legacy village, small businesses, agricultural families, aging owners and renters. The fictional population is 10,158, with 38% renter households and a $103,200 median household income. Staff must test whether assistance, transport, and public information reach residents who have different work schedules, housing arrangements and access to documents.
+**Old Watkins (ED01).** Legacy village, small businesses, agricultural families, aging owners and renters. The population is 10,158, with 38% renter households and a $103,200 median household income. 
 
 **Watkins Junction (ED02).** Rail-adjacent mixed housing, service workers and newly arrived families. The fictional population is 20,908, with 66% renter households and a $71,600 median household income. Staff must test whether assistance, transport, and public information reach residents who have different work schedules, housing arrangements and access to documents.
 

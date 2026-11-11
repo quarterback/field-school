@@ -1,57 +1,49 @@
 # City and County of East Detroit, Colorado
-## Master project dossier and decision basis, version 3
+## Municipal profile, departments and service program
 
-**Public Mechanics classroom scenario | 2030 | Working source of truth | 10 November 2026**
+**East Detroit municipal reference | 2030 | Public Mechanics**
 
-> **Read this first.** East Detroit is fictional. Geographic anchors and comparative governance precedents are real. All city statistics, municipal arrangements, neighborhood names and boundaries, and facilities identified as part of East Detroit are invented for this course. Students retain authority over the choices marked **OPEN**.
+## 1. East Detroit at a glance
 
-## 1. The city we are working with
-
-East Detroit is a newly consolidated Colorado city and county east of Denver International Airport. Its recent growth resembles the scale and geography of metropolitan Phoenix: fast residential expansion, master-planned districts, warehousing and logistics, jobs arriving before public facilities, older settlements meeting new development, and substantial disparities in who benefits from growth. **We begin in 2030. We are not asking students to justify the alternate population history.**
+East Detroit is a newly consolidated Colorado city and county east of Denver International Airport. Its recent growth resembles the scale and geography of metropolitan Phoenix: fast residential expansion, master-planned districts, warehousing and logistics, jobs arriving before public facilities, older settlements meeting new development, and substantial disparities in who benefits from growth.
 
 - **Name:** City and County of East Detroit, Colorado.
-- **Population, 2030 fictional estimate:** **382,417**.
+- **Population (2030):** **382,417**.
 - **Occupied households:** **155,800**, with about **3,823** residents in group quarters. The modeling assumption is **2.43 residents per occupied household**, plus group quarters.
-- **Municipal study extent:** **approximately 115.4 square miles** in a preliminary *unsurveyed* map; considerably larger than the original 48-square-mile Colorado Air and Space Port study area. It reaches north and east while retaining Watkins as the historical southeastern gateway. This is a map-agent working extent, not a claim of current jurisdiction.
-- **Illustrative built-up district footprint:** 25 square miles, generating a built-area average of **15,297 people per square mile**; much of the larger county study area remains employment land, agricultural land, aviation protection, infrastructure, or undeveloped land.
-- **Primary existing postal reference:** **Watkins 80137**. Additional actual neighboring postal areas may appear on reference maps; **none is a fictional USPS reassignment**. A 2030 city postal scheme is an open mapping decision, not a legal fact.
-- **Existing real geographic anchors:** Watkins, Colorado Air and Space Port (KCFO), Interstate 70, the Union Pacific rail corridor, Colfax Avenue, Box Elder Creek, and Denver International Airport to the west.
-- **Founding condition:** The class may assume the constitutional and legislative steps required to establish the fictional city-county have taken place. **No internal charter design, intergovernmental agreement, service platform, or administrative structure has yet been adopted for purposes of the exercise.**
+- **Area:** **approximately 115.4 square miles**, extending north and east of the Colorado Air and Space Port corridor, with Watkins as the southeastern gateway.
+- **Developed urban footprint:** 25 square miles, generating a built-area average of **15,297 people per square mile**; much of the larger county study area remains employment land, agricultural land, aviation protection, infrastructure, or undeveloped land.
+- **Primary postal reference:** **Watkins 80137**, alongside surrounding Denver-area postal routes.
+- **Major geographic anchors:** Watkins, Colorado Air and Space Port (KCFO), Interstate 70, the Union Pacific rail corridor, Colfax Avenue, Box Elder Creek, and Denver International Airport to the west.
+- **Formation:** East Detroit consolidated city and county operations through a constitutional measure and state legislation. The government operates alongside independent regional agencies with their own boards and budgets.
 
-The old package centered the entire city on the 48-square-mile spaceport planning rectangle and described only seven land-use blocks. Version 3 treats that rectangle as the **southern and aviation history of a larger city**, not as the municipal perimeter or a complete neighborhood plan.
+### Land, water and aviation
 
-### Real-world geographic guardrails
+The Adams County **Colorado Air and Space Port Subarea Plan** describes a 48-square-mile study area bounded by I-70, Hudson Road, E. 72nd Avenue, and Harback Road. It included 21,079 acres of unincorporated Adams County, 9,738 acres within Aurora, and 375 acres in Bennett. It also identifies gaps in water and wastewater capacity and land-use compatibility issues near airport operations. The area faces water and wastewater capacity gaps and restrictions on development near flight operations.
 
-The Adams County **Colorado Air and Space Port Subarea Plan** describes a 48-square-mile study area bounded by I-70, Hudson Road, E. 72nd Avenue, and Harback Road. It included 21,079 acres of unincorporated Adams County, 9,738 acres within Aurora, and 375 acres in Bennett. It also identifies gaps in water and wastewater capacity and land-use compatibility issues near airport operations. These are **real constraints that the class must respond to**, not fictional services that have already been solved.
+The city extends beyond the spaceport planning area. Aviation zones, water infrastructure and existing roads shape the distribution of housing, employers and public facilities.
 
-The new 115.4-square-mile boundary polygon is a conceptual **study proposal**, not a surveyed jurisdiction. To draw an authoritative teaching map, the next map agent must overlay current Adams County, Aurora, Bennett, Denver airport, special-district and FAA data and then mark any conflicts as a *question for the class*. Expansion creates space for a credible city model without pretending the spaceport runway can be surrounded by residential towers.
+## 2. Government and public institutions
 
-## 2. Established 2030 setting, versus open decisions
+East Detroit combines city and county responsibilities in one elected government. Municipal departments administer housing policy, human services, permitting, public safety, parks, finance, records and other core services. The **City Housing Division** operates within that government. The **East Detroit Regional Housing Authority** has its own board and serves East Detroit and neighboring communities.
 
-### Established facts within our invented setting
+Several organizations serve residents independently of the city-county government, including the school district, library district, RTD, water providers, the county court, hospital authorities, state agencies and airport operators. Their budgets, duties and records sit under separate governing arrangements.
 
-1. East Detroit exists as a consolidated city-county and is dealing with rapid growth. The class begins its work within that setting.
-2. Its services and residents are diverse. The demographics and neighborhood inventory in `neighborhood_atlas_2030.md` are **fictional planning assumptions** that class teams can interrogate, not actual Census estimates.
-3. The municipality has operational city and county departments and elected accountability. **The City Housing Division and independent East Detroit Regional Housing Authority are established parts of the scenario.** The precise form, delegated powers, priority systems, and authority structure for a proposed shared service remain **OPEN**.
-4. Its major civic and cultural institutions in 2030 are the five anchors specified below. Their existence does not pre-decide funding, ownership, digital systems, or service agreements.
-5. Some outside bodies are independent: schools, RTD, water providers, airport owners/operators, state and federal agencies, and other jurisdictions. They may agree, refuse, or impose conditions on joint work.
+The city has major civic, sports and cultural institutions.
 
 ### Named cultural and institutional anchors
 
-- **The Hangar at Space Center:** a 17,500-seat arena at the central RTD rail hub **in the fictional 2030 setting**. The rail hub's capital plan, fare rules, station management, and joint-service responsibilities remain open.
+- **The Hangar at Space Center:** a 17,500-seat arena at the central RTD rail hub in 2030. Its operation involves the city and regional transit partners.
 - **WNBA:** **Denver Fawns**, based at The Hangar.
 - **PWHL:** **Colorado Apex**, playing at The Hangar.
-- **Triple-A baseball:** **Denver Pilots**, relocated from Albuquerque in the fictional sports history; **Aerotropolis Park**, a **16,210-seat** ballpark with views of active fictional KCFO launches.
-- **East Detroit Philharmonic & Performing Arts Center (EDPAC):** 2,200 seats. The proposed **1% Public Art Commercial Fee** is a **financing question**, not adopted tax law.
-- **East Detroit Health System:** a Level I Regional Trauma Center, aerospace flight medicine, and teaching hospital. Its participation in a government emergency data exchange is **OPEN**.
+- **Triple-A baseball:** **Denver Pilots**, relocated from Albuquerque; **Aerotropolis Park**, a **16,210-seat** ballpark with views of spaceport launches.
+- **East Detroit Philharmonic & Performing Arts Center (EDPAC):** 2,200 seats. A **1% Public Art Commercial Fee** is among the proposed financing methods.
+- **East Detroit Health System:** a Level I Regional Trauma Center, aerospace flight medicine, and teaching hospital. Emergency information exchange requires agreements with public safety partners.
 
-*Note:* These franchises, relocations, launches and facilities are **fictional setting facts**, not claims about actual professional sports allocations or KCFO's present spaceflight schedule. The original name “Colorado Isotopes” and the names “Colorado Altitude” / “The Hangar at Aerotropolis Center” are retired.
-
-## 3. Fictional 2030 socioeconomic profile
+## 3. Population, housing and income
 
 All estimates below describe **East Detroit in the exercise**; they are not measurements of the actual area.
 
-| Indicator | Fictional East Detroit 2030 planning assumption |
+| Indicator | East Detroit, 2030 |
 | --- | ---: |
 | Total residents | 382,417 |
 | Occupied households | 155,800 |
@@ -73,29 +65,29 @@ All estimates below describe **East Detroit in the exercise**; they are not meas
 | Non-Hispanic Indigenous residents | 1.2% |
 | Other or multiracial, non-Hispanic | 6.9% |
 
-The categories above are designed to be mutually exclusive for the simulation; race and Hispanic origin are handled differently in standard Census tables. They should be **checked against a real classification standard before building case-level demographic data**. No student's service design should make eligibility decisions from these attributes.
+The table uses mutually exclusive race and ethnicity categories. U.S. Census tables measure Hispanic origin separately from race. Demographic categories do not determine program eligibility.
 
-### Sources used to set the scale, not to claim these numbers are real
+### Regional comparison: Adams County and Watkins
 
-Adams County's U.S. Census QuickFacts 2020–2024 figures report median household income of **$94,571 in 2024 dollars**, median gross rent of **$1,781**, approximately **9.8%** poverty, **68.6%** owner-occupied housing, and **43.7%** Hispanic or Latino residents. The ACS 2020–2024 estimate for Watkins CDP is only **847 residents** and is statistically uncertain at that scale. East Detroit's fictional income, housing, and poverty assumptions intentionally create several kinds of access and affordability problem. See sources at the end.
+Adams County's U.S. Census QuickFacts 2020–2024 figures report median household income of **$94,571 in 2024 dollars**, median gross rent of **$1,781**, approximately **9.8%** poverty, **68.6%** owner-occupied housing, and **43.7%** Hispanic or Latino residents. The ACS 2020–2024 estimate for Watkins CDP is only **847 residents** and is statistically uncertain at that scale. East Detroit's higher housing costs and larger renter share create a different pattern of service demand. Sources appear at the end.
 
 ## 4. Geography and neighborhoods
 
-The twenty proposed neighborhoods, five planning regions, invented populations, local issues, incomes, and label coordinates are in `neighborhood_atlas_2030.md` and `neighborhoods_2030.json`.
+The twenty neighborhoods, five planning regions, populations, local issues, incomes and map coordinates appear in `neighborhood_atlas_2030.md` and `neighborhoods_2030.json`.
 
-Neighborhood names are **working identities**, not zoning districts. Zoning and other rules are overlaid and separately decided. The city includes old Watkins, dense transit districts, newer planned communities, employment edges, agricultural and flood corridors, airport buffers, and places that need basic services even when they lack the downtown's resources. **No neighborhood polygons are approved yet.**
+Neighborhood names identify communities and districts; zoning is a separate map layer. The city includes old Watkins, dense transit districts, newer planned communities, employment edges, agricultural and flood corridors, airport buffers, and places that need basic services even when they lack the downtown's resources. 
 
-The real airfield, runway protection surfaces, storm-water courses, major existing roads and county/municipal lines are geographic constraints. The 2030 hubs, fictional light/heavy rail network, venue footprints, district names, and service locations are proposals or invented setting elements, labeled accordingly.
+Airport safety zones, stormwater courses and transportation corridors affect land use and access to city services.
 
-## Housing institutions: established scenario
+## Housing: city division and regional authority
 
 East Detroit begins with **two existing and separate housing institutions**. **The City and County of East Detroit Housing Division (EDHD)** is a department of the consolidated city-county government and must participate in internal planning. It handles city-funded housing policy, affordable development and preservation, local assistance and homelessness prevention. **The East Detroit Regional Housing Authority (EDRHA)** is an independent public housing authority serving the city and participating communities outside the city-county boundary. Its own board oversees housing assistance, properties, federal obligations and finances. It is an **external partner for participation purposes**: the city cannot order it to approve a shared service or release its records.
 
-This is a **fixed instructor choice**. The class does not decide whether the two agencies exist. Students can study coordination between them, but **no shared application, agreement, income verification system or technology is adopted**. The full evidence, chronology, citations and operational comparison appear in [Housing research case: Home Forward and Detroit](housing_authority_case_home_forward_vs_detroit.md). Read that case before treating any proposed housing workflow as a solution.
+The agencies share residents but administer different funds, programs and records. Read the [Home Forward and Detroit housing case](housing_authority_case_home_forward_vs_detroit.md) for their operating and governance precedents.
 
-## 5. What the class is actually building
+## 5. Shared services and the implementation project
 
-The exercise has three stages, without assuming that a particular product, platform or governance design is the answer:
+The exercise has three stages, through assessment, planning and interagency negotiation:
 
 **Stage A. Establish the basis.** Students discover the city-county's duties, needs, existing assets, costs, resident cases, and authority boundaries. Each department head or agency head identifies priorities and dependencies. They may challenge the city's initial assumptions.
 
@@ -103,23 +95,17 @@ The exercise has three stages, without assuming that a particular product, platf
 
 **Stage C. Coordinate stakeholders.** Every internal city-county department is expected to participate in the municipal process, although leaders can question proposed policy, feasibility and sequence. External partners may accept, negotiate terms, or refuse. Every refusal changes the service model and the plan, rather than being treated as a failure of participation.
 
-Outputs: a baseline register; named stakeholder owners; service and authority map; proposed charter/agreements where needed; decision and dissent log; implementation plan; and one or more demonstrations or tests of actual service behavior. The class controls choices subject only to the scenario's basic geographic, population and status facts.
+The work produces a baseline register, service and authority map, decisions and agreements, an implementation plan, and demonstrations of how services operate.
 
-### Do not pre-adopt these V2 inventions
+## 6. Duties and authority across agencies
 
-ED-Core identity; ED-Wallet; “once only” as a fixed municipal law; universal zero-knowledge YES/NO APIs; automated housing approvals; school enrollment triggers; RTD fare integration; mandatory parks telemetry; 48-hour GIS rules; 60-minute emergency tokens; automatic preservation holds; public art voting; vendor procurement; cloud hosting; launch phases; and specific board size/composition are **examples for debate**, not government commitments.
+East Detroit assigns duties to its own departments through its charter, ordinances, administrative orders, and approved budgets. This does **not** give it unilateral control over statewide eligibility, federal programs, independent school boards, private records, RTD, nearby municipalities, or separately constituted authorities.
 
-The user's supplied cultural anchors remain part of the setting, but their service systems and funding may still be negotiated.
+City-county departments must take part in implementation planning. Independent bodies determine their own terms of participation. Even for an internal department, a refusal to promise an unlawful action or unfinanced service is a useful finding; record the issue and who can resolve it. Keep program appeals and legal review separate from technical administration.
 
-## 6. What the city-county can and cannot simply require
+Colorado law governs East Detroit. Michigan, Detroit, Flanders and Estonia offer comparisons for institutional design. State action or intergovernmental agreements must accompany proposals that require them.
 
-A fictional city-county may assign duties to its own departments through its charter, ordinances, administrative orders, and approved budgets. This does **not** give it unilateral control over statewide eligibility, federal programs, independent school boards, private records, RTD, nearby municipalities, or separately constituted authorities.
-
-For students, **internal** departments must show up, make a proposal, and account for implementation; **external** parties may decline and state terms. Even for an internal department, a refusal to promise an unlawful action or unfinanced service is a useful finding; record the issue and who can resolve it. Keep program appeals and legal review separate from technical administration.
-
-Colorado is the geographic and statutory default for our imaginary municipality. Michigan, Detroit, Flanders, Estonia and other examples are design precedents; a Michigan-style provision applies only if the class writes and adopts it under the simulation. Where the law would actually require state action, say **fictional enabling rule needed** rather than claiming a local vote supersedes state law.
-
-## 7. First implementation questions to put before the class
+## 7. Implementation questions
 
 1. Which public problem and resident experience should the first implemented service address, and for which neighborhoods?
 2. What is currently delivered by the city-county, by the state under county administration, or by another public body?
@@ -128,18 +114,16 @@ Colorado is the geographic and statutory default for our imaginary municipality.
 5. What would be visible to residents, workers, reviewers, and elected officials when the service runs?
 6. How will we know whether the chosen arrangement performs better, and whom might it leave out?
 
-## 8. Instructor decisions, 11 November 2026
+## 8. Service program and agency directory
 
-These are **fixed scenario conditions** set by the instructor. They supersede any conflicting statement above and in the other V3 documents.
-
-1. **The assignment's goal.** The class writes a specification for a city-county version of Estonia's digital government: agencies keep their own records and exchange data through a shared, secure layer under agreements (modeled on Estonia's X-tee). The design of that spec remains **OPEN**.
+1. **The assignment's goal.** The class writes a specification for a city-county version of Estonia's digital government: agencies keep their own records and exchange data through a shared, secure layer under agreements (modeled on Estonia's X-tee). The specification will assign authority, participating agencies, technical safeguards and an implementation sequence.
 2. **Roster and staffing.** Each student owns one department, outside agency or resident group from the roster below. The instructor speaks for every unclaimed entry. The student-facing sign-up sheet and directory are in `../student-edition/`.
 3. **Libraries** are run by an independent **East Detroit Public Library District** with its own board and tax levy, not by a city-county department. Parks and Cultural Affairs no longer includes libraries.
-4. **Fire Department** is a city-county department, separate from Police, 911 and Emergency Management. Whether the Fire Department or the Health and Hospital Authority runs ambulance transport is **OPEN**.
-5. **East Detroit County Court**: a city-county-funded trial court for evictions, small claims, civil cases up to $25,000, misdemeanors, traffic, protection orders and ordinance violations, with judges appointed by the mayor from merit lists. Modeled on Denver County Court, the only Colorado county court funded by its own city-county rather than the state. This is a **fictional enabling rule** in East Detroit's founding amendment. Felonies, family and probate cases remain with a state district court. The court is an outside agency for the exercise because its judges decide independently and it controls its own records.
+4. **Fire Department** is a city-county department, separate from Police, 911 and Emergency Management. Ambulance transport requires an operating agreement between the Fire Department and the Health and Hospital Authority.
+5. **East Detroit County Court**: a city-county-funded trial court for evictions, small claims, civil cases up to $25,000, misdemeanors, traffic, protection orders and ordinance violations, with judges appointed by the mayor from merit lists. Modeled on Denver County Court, the only Colorado county court funded by its own city-county rather than the state. East Detroit's founding measure establishes this court structure. Felonies, family and probate cases remain with a state district court. The court is an outside agency for the exercise because judicial decisions and court records are independent of municipal administration.
 6. **East Detroit Health and Hospital Authority**: the public safety-net hospital, an independent public authority with a mayor-appointed board, modeled on the Denver Health and Hospital Authority (C.R.S. Title 25, Article 29). It is separate from the **East Detroit Health System** (Level I trauma and teaching hospital), which remains an optional outside agency.
 7. **Outside agencies always represented** (by a student or the instructor): East Detroit Unified School District, East Detroit Public Library District, East Detroit Water and Sewer Authority, RTD, State of Colorado Human Services and State IT, East Detroit Regional Housing Authority, East Detroit County Court, East Detroit Health and Hospital Authority. **Optional:** East Detroit Health System. **Removed from the roster:** neighboring cities and counties, Denver International Airport and the FAA, employers and developers, and metropolitan districts. They remain part of the real geography but are not owners of the spec.
-8. **Local outside agencies are fictional and sized for East Detroit.** Real Colorado and Michigan bodies serve only as models for the *type* of institution, not as the agencies themselves. RTD and the State of Colorado remain real.
+8. **Regional agency jurisdiction:** East Detroit's agencies serve the city's population and, where noted, neighboring communities. RTD and the State of Colorado govern their programs under their own authority.
 
 | ID | Entry | Status |
 |---|---|---|
@@ -150,11 +134,7 @@ These are **fixed scenario conditions** set by the instructor. They supersede an
 
 Sources for the new models: Colorado Legislative Council, *Overview of the Colorado Judicial Branch* (2025), https://content.leg.colorado.gov/sites/default/files/r25-180-overview-of-the-colorado-judicial-branch-accessible.pdf ; Ballotpedia, Colorado County Courts, https://ballotpedia.org/Colorado_County_Courts ; C.R.S. § 25-29-103, https://colorado.public.law/statutes/crs_25-29-103 ; Denver Health 20th anniversary history, https://www.denverhealth.org/news/2017/01/denver-health-and-hospital-authority-20th-anniversary ; Estonian Information System Authority, X-tee, https://www.ria.ee/en/state-information-system/data-exchange-platforms/data-exchange-layer-x-tee
 
-## 9. Revision note
-
-This document supersedes the V2 master dossier's predefined administrative and digital-service choices and supersedes the original spaceport-centered map as a definitive city boundary. The old sources are retained for historical comparison. See `assumption_audit_v2_to_v3.md` for a complete change list.
-
-## Source register: actual reference material
+## Sources and references
 
 - Adams County, *Colorado Air and Space Port Subarea Plan*, study-area map p. 3, plan recommendations and utilities: https://adamscountyco.gov/wp-content/uploads/2025/08/space-port-subarea-plan.pdf
 - Colorado state municipal boundaries, DRCOG dataset (updated 2026): https://data.colorado.gov/Government/DRCOG-Municipal-Boundaries/xufp-56dv
@@ -166,4 +146,3 @@ This document supersedes the V2 master dossier's predefined administrative and d
 - Michigan legislature, charter county permissible function transfers: https://legislature.mi.gov/Laws/MCL?objectName=mcl-45-515
 - Adams/Denver airport annexation and agreements: https://adamscountyco.gov/our-county/elected-officials/board-of-county-commissioners/airport-agreements/
 
-**Version owner:** Public Mechanics classroom. **Status:** Proposed basis; decisions remain open unless marked as setting facts.

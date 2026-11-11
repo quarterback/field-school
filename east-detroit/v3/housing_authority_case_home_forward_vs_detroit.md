@@ -1,18 +1,16 @@
 # Housing in East Detroit: Two governments, overlapping work
 ## Home Forward, Detroit, and the basis for East Detroit's housing institutions
 
-**Public Mechanics research case | 10 November 2026 | Read before discussing municipal housing services**
+**Municipal housing research | 10 November 2026**
 
-### The established East Detroit arrangement
+### Housing institutions serving East Detroit
 
-The instructor has established **two existing and separate housing institutions** in fictional East Detroit, Colorado. The class is not being asked whether to create or merge them.
+East Detroit residents are served by two housing institutions with separate governing bodies, finances and program responsibilities.
 
 1. **City and County of East Detroit Housing Division (EDHD).** Part of the consolidated municipal government, accountable through the city-county executive, council, appropriations, and public records process. The division sets and administers local housing policy and programs: housing development and preservation finance, local tenant and homeowner assistance, homelessness prevention, and coordination with planning and human services. It may manage locally financed housing or contracts under municipal authority. It cannot allocate an independent authority's federal vouchers.
-2. **East Detroit Regional Housing Authority (EDRHA).** An **independent public housing authority**, with a separate governing commission, management, budgets, federal housing agreements, property and rental-assistance operations, and accountability duties. Its service territory includes East Detroit and **participating surrounding communities beyond the city-county boundary**, making its constituency broader than the city. This fictional design is modeled on Home Forward's regional reach. It administers federal housing assistance and its housing portfolio, with local or regional programs where agreements authorize them. The city-county cannot direct its board or seize its records merely because the authority serves city residents.
+2. **East Detroit Regional Housing Authority (EDRHA).** An **independent public housing authority**, with a separate governing commission, management, budgets, federal housing agreements, property and rental-assistance operations, and accountability duties. Its service territory includes East Detroit and **participating surrounding communities beyond the city-county boundary**, making its constituency broader than the city. Its regional structure resembles Home Forward's jurisdiction in Oregon. It administers federal housing assistance and its housing portfolio, with local or regional programs where agreements authorize them. The city-county cannot direct its board or seize its records merely because the authority serves city residents.
 
-The distinction is between two public bodies with separate mandates **within a consolidated city-county**, not between two competing governments called "the city" and "the county." The overlapping residents and programs create genuine administrative problems. Both institutions already exist as of the class's 2030 starting point. Their coordination agreements, shared processes, data-access rules, financing contributions, and implementation choices are **not predetermined**.
-
-**Fictional institution versus real evidence:** All agency names prefixed "East Detroit," program details, jurisdictions, and examples in the section above are invented class conditions. The evidence below concerns real public organizations in 2005–2026 and should not be presented as East Detroit performance data.
+The distinction is between two public bodies with separate mandates **within a consolidated city-county**, not between two competing governments called "the city" and "the county." The overlapping residents and programs create genuine administrative problems. Both institutions operate in 2030. Coordination requires agreements on records, funding, staffing and who responds when a resident needs help.
 
 ---
 
@@ -82,7 +80,7 @@ These are **different evidence points**, not one undifferentiated allegation:
 | Separate authority | DHC has its own federally accountable programs and mayor-appointed five-member board [D6] | Home Forward is an independent public corporation with nine commissioners drawn from multiple jurisdictions [H1] [H2] | **EDRHA**, independent regional authority |
 | Constituency | Detroit city plus federal and development partners | Portland, Gresham, Multnomah County and other county communities | East Detroit **and participating neighboring communities** |
 | Distinct sources of money | City investment/entitlement funds versus authority housing assistance/property finance | Local housing funding versus federal vouchers/property revenue/other sources | Separate city and authority funds, with terms for joint projects |
-| Failure highlighted | Recertification backlogs, staffing, occupancy, inspection and property issues [D8] [D11] | Vacancy turnover, debt pressure, forecast gap, governance and oversight [H7] [H5] | Neither failure is assumed to exist; students examine available local baseline evidence |
+| Failure highlighted | Recertification backlogs, staffing, occupancy, inspection and property issues [D8] [D11] | Vacancy turnover, debt pressure, forecast gap, governance and oversight [H7] [H5] | Assess service times, staffing, budgets and property conditions |
 | Possible point of cooperation | Development, preservation, homelessness referrals and resident service | Housing finance, shared projects, landlord and property operations | Defined intake, referrals, local assistance, housing placement, record correction, financial coordination |
 | Reason they may disagree | Independent duties and federal voucher administration | Regional constituency, separate board, funding restrictions | EDRHA may refuse a requested integration or seek contractual conditions |
 
@@ -100,7 +98,7 @@ These are **different evidence points**, not one undifferentiated allegation:
 
 ## 4. The actual housing transaction and where responsibility sits
 
-A household is behind on rent and faces losing its home. This is an **illustrative resident case**, not an adopted East Detroit service design.
+A household is behind on rent and faces losing its home. The example shows how the two agencies might serve one household.
 
 | Step | City Housing Division could do | Regional Housing Authority could do | Other participants |
 |---|---|---|---|
@@ -111,7 +109,7 @@ A household is behind on rent and faces losing its home. This is an **illustrati
 | Deliver a result | Pay a qualifying landlord or issue a local decision/referral | Issue/adjust assistance or offer a qualifying unit subject to program terms | Resident, landlord, courts where relevant |
 | Correct errors and resolve complaints | Correct the local case and permit appeal under city program rules | Correct its official voucher/tenancy record and use required review process | Original record holder and any independent appeal body |
 
-A proposed shared application, verified-status exchange, assisted referral, or resident credential is an **implementation choice**. It requires exact agreement on who sends what, for which purpose, under which rules, and who corrects a wrong result. The class should not assume that either agency automatically accepts the other's income record.
+A proposed shared application, verified-status exchange, assisted referral, or resident credential is an **implementation choice**. It requires exact agreement on who sends what, for which purpose, under which rules, and who corrects a wrong result. Each agency must decide whether it can rely on the other's verification.
 
 ### Federal constraints relevant to the older “one-click housing” idea
 
@@ -125,15 +123,11 @@ The useful ambition survives: **stop making households repeatedly find and re-pr
 
 ---
 
-## 5. What the East Detroit class inherits
+## 5. Coordination questions
 
-**Fixed scenario conditions set by the instructor:** EDHD is a city-county department; EDRHA is separate and regional; both serve overlapping East Detroit households; they have separate budgets, leaders, program rules, records, and appeals; external authority participation is voluntary within the class exercise; internal city-county departments must participate in the planning process.
+The City Housing Division and Regional Housing Authority serve many of the same households. Each retains its own budget, records, program rules, appeals and governing body.
 
-**Questions available to the implementation effort:** whether and where to coordinate applications, referrals, housing placement, housing production and preservation, verification, local rental assistance, landlord engagement, complaint routes, financial reporting, or resident support; what each requires from other agencies; what happens if EDRHA declines a request.
-
-**Not assigned here:** student roles, sign-up structure, work distribution, a mandatory housing application, a selected AI architecture, a preselected data-sharing agreement, new hypothetical portfolio counts, or a promise of automatic rent relief. Those are outside this research section.
-
----
+Areas for joint planning include applications, referrals, housing placement, development and preservation, income verification, rent assistance, landlord engagement, complaints, financial reporting and resident support. A workable agreement must identify which agency provides each service and how to respond if the other declines participation.
 
 ## 6. Primary sources and reporting: direct reading list
 
