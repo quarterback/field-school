@@ -10,11 +10,11 @@ lang: en-US
 
 The first section is SCENARIO, set by the instructor. The rest covers real public organizations, 2005 to 2026. Never present it as East Detroit performance data.
 
-The real evidence comes in four kinds:
+Real evidence comes in four kinds:
 
 - **Documented facts:** statements in official records, laws, agency announcements or data the agency supplied.
 - **Reported findings:** what journalists found or what officials told them, tied to a date.
-- **Allegations and open investigations:** claims that have not been decided. An investigation is not a finding of misconduct.
+- **Allegations and open investigations:** undecided claims. An investigation is not a finding of misconduct.
 - **Questions for the class:** marked as OPEN.
 
 Codes like [[D1]](#D1) or [[H5]](#H5) link to the sources at the end. Figures date from their source, not 2030.
@@ -28,72 +28,70 @@ Both exist when the class starts in 2030. They are separate public bodies in one
 
 # 1. The Detroit model
 
-## Detroit Housing and Revitalization Department: a city department
+## Detroit HRD: a city department
 
 Detroit's Housing and Revitalization Department (HRD) is a city office and the closest real precedent for EDHD. According to the city, it directs housing policy, manages HUD entitlement funds and city housing investments, finances new housing and preservation, supports homeowners and renters, and works with partners on homelessness. The city names its partnership with the independent Detroit Housing Commission. [[D1]](#D1) [[D2]](#D2)
 
-Detroit's *2025–2030 Affordable Housing Strategy* targets preserving 10,000 affordable units and building 3,000 over five years. These are policy targets, not results, and are not scaled to East Detroit. They show a city department setting investment goals apart from a voucher authority's daily work. [[D3]](#D3)
+Detroit's *2025–2030 Affordable Housing Strategy* targets preserving 10,000 affordable units and building 3,000 over five years. These are policy targets, not results, and are not scaled to East Detroit. [[D3]](#D3)
 
-## Detroit Housing Commission: a separate, federally accountable authority
+## Detroit Housing Commission: separate and federally accountable
 
 The Detroit Housing Commission (DHC) is a public housing authority, governed separately from HRD, that runs rental assistance and housing.
 
 - **Federal takeover.** After administrative, financial and management failures, HUD took control of DHC's operations on July 7, 2005. [[D4]](#D4)
-- **Transition plan.** In January 2012, HUD announced a plan to return DHC to local control. The plan required sustainable governance, an oversight agreement and performance improvements. [[D5]](#D5)
+- **Transition plan.** In January 2012, HUD announced a plan to return DHC to local control, requiring sustainable governance, an oversight agreement and performance improvements. [[D5]](#D5)
 - **Return to local control.** DHC states that HUD released it from the recovery administrator on March 13, 2015. [[D6]](#D6)
 - **Board.** Under Michigan law, a five-member board appointed by Detroit's mayor governs DHC. At least one member must be a resident of subsidized housing. Mayoral appointment does not make DHC a city department. [[D6]](#D6)
-
-So an authority can be locally governed and federally accountable at once. The city can influence appointments and policy; HUD can impose program rules and step in when the agency fails.
 
 ## Detroit's operating problems (reported findings)
 
 - **Income and voucher recertification.** Outlier Media reported that understaffing caused long federal voucher backlogs. In April 2023, 221 of 1,960 recertifications due were complete. 2024 reporting found 1,747 delinquent recertifications still pending despite an outside contractor's help. Pending recertifications can mean wrong rents and subsidies. Landlords reported late payments; some stopped accepting DHC vouchers. [[D7]](#D7) [[D8]](#D8)
-- **Capacity and unmet demand.** Outlier reported that for a period the agency used roughly 1,500 fewer vouchers than its capacity, partly for lack of staff to do the required work. [[D8]](#D8)
+- **Capacity and unmet demand.** Outlier reported that for a period the agency used roughly 1,500 fewer vouchers than its capacity, partly for lack of staff. [[D8]](#D8)
 - **Vacancy and building condition.** In a 2023 Outlier interview, the interviewer put public housing occupancy at about 78%. Later reporting put vacancy near 23–24% in September 2024, with problems collecting rent and deteriorating buildings. [[D9]](#D9) [[D10]](#D10)
 - **Recovery, with limits.** In a 2025 follow-up, Outlier reported that DHC management said it had mostly cleared the recertification backlog. Management also said vacancy had fallen from 24% to 14% and all 15 complexes had passed that year's HUD inspections. The same article reported residents whose problems persisted. These are reported outcomes and management statements for that period, not proof that every resident's problem was resolved. [[D11]](#D11)
 
-A shared digital form alone cannot fix unstaffed queues, wrong payment calculations, inspections, landlord distrust or underfunded properties. Staffing, authority, incentives and financing are part of the service.
+A shared digital form alone cannot fix unstaffed queues, wrong payments, inspections, landlord distrust or underfunded properties. Staffing, authority, incentives and financing are part of the service.
 
 # 2. Home Forward
 
 Home Forward is a public corporation and the housing authority for Portland and Multnomah County, including Gresham and east Multnomah County. It states that it is not part of Portland city government. It runs housing assistance, affordable properties and related services, plus some programs for the city, the county and other partners. [[H1]](#H1)
 
-## Board, jurisdiction and accountability
+## Board and accountability
 
 Home Forward has a nine-member volunteer commission: four Portland representatives, two from Gresham, two from Multnomah County and one housing-program participant. The board sets policy, approves the budget and hires the executive director. The appointing governments shape who serves; they do not run daily operations. [[H2]](#H2)
 
-Portland's own Housing Bureau finances affordable housing, supports preservation and runs local housing policies. So Portland is a second real case of a city bureau beside a separate authority. East Detroit combines this pattern with Detroit's split between HRD and DHC. [[H3]](#H3)
+Portland's own Housing Bureau finances affordable housing, supports preservation and runs local housing policies. Like Detroit's HRD and DHC, Portland pairs a city bureau with a separate authority, the pattern East Detroit follows. [[H3]](#H3)
 
 ## Federal flexibility: Moving to Work
 
 Home Forward joined HUD's Moving to Work (MTW) demonstration on April 1, 1999. MTW gives selected public housing authorities limited flexibility over funding and administration, within federal conditions and reporting. It gives a city no unrestricted access to federal records and guarantees neither more housing nor sound management. In October 2026, Home Forward was reportedly considering changing its MTW participation, partly to address voucher funding. [[H4]](#H4) [[H5]](#H5)
 
-## A documented operating and financial crisis
+## An operating and financial crisis
 
 | When | Reported finding | What to examine |
 |-------|-----------------|----------|
 | November–December 2025 | A November vacancy report described 956 of 6,847 units vacant, about 14%. Later coverage rounded the count to 955. The agency cited damaged units, market conditions and other causes. A high vacancy count does not mean every unit was ready to rent. [[H6]](#H6) | Unit condition, affordability, waiting lists, location, eligibility and leasing speed |
-| February 2026 | Data supplied by Home Forward showed an average of 185 days to fill a vacancy in 2025. Buildings it managed directly averaged 172 days; contractor-run buildings had different averages. [[H7]](#H7) | Who owns each handoff, management contracts, how long units are actually leasable |
+| February 2026 | Data supplied by Home Forward showed an average of 185 days to fill a vacancy in 2025. Buildings it managed directly averaged 172 days; contractor-run buildings had different averages. [[H7]](#H7) | Handoff ownership, management contracts, real time to lease |
 | February–March 2026 | Reporting identified high vacancy, lost rent revenue, weakening debt-service coverage, tenant safety concerns and uneven performance among contracted property managers. A March report described one manager averaging 292 days to fill units. [[H8]](#H8) [[H9]](#H9) | Contractor oversight, financial feedback loops, resident safety |
 | April–May 2026 | Willamette Week reported more than \$100,000 in agency-funded CEO travel during 2023–2025, based on public records. On April 29, Home Forward announced that CEO Ivory Mathews would resign effective May 1; Michael Buonocore became interim chief. Officials and residents questioned the board's oversight. [[H10]](#H10) [[H11]](#H11) | Board scrutiny, conflicts of interest, executive reporting, leadership and public accountability |
-| August 2026 | The Oregon Government Ethics Commission voted to investigate the former CEO's travel spending. The vote opened a full investigation, which is not a finding of misconduct. [[H12]](#H12) | The difference between an accusation, preliminary grounds and a formal finding |
-| October 26, 2026 | Home Forward's interim director estimated a \$38 million budget gap for 2027. The director said the 2026 shortfall had grown from an earlier estimate of \$13.8 million to nearly \$38 million. A possible \$28 million HUD shortfall payment for 2026 was not guaranteed. Options discussed: staff cuts, lower administrative spending, changing tenants' share of rent, and reconsidering MTW terms. The proposed tenant changes were expected to affect 12,356 households. [[H5]](#H5) | Forecasting, dependence on federal funds, shifting costs to tenants, and who has authority to change benefits |
+| August 2026 | The Oregon Government Ethics Commission voted to investigate the former CEO's travel spending. The vote opened a full investigation, which is not a finding of misconduct. [[H12]](#H12) | Accusation vs. preliminary grounds vs. formal finding |
+| October 26, 2026 | Home Forward's interim director estimated a \$38 million budget gap for 2027. The director said the 2026 shortfall had grown from an earlier estimate of \$13.8 million to nearly \$38 million. A possible \$28 million HUD shortfall payment for 2026 was not guaranteed. Options discussed: staff cuts, lower administrative spending, changing tenants' share of rent, and reconsidering MTW terms. The proposed tenant changes were expected to affect 12,356 households. [[H5]](#H5) | Forecasting, federal-fund dependence, cost shifts to tenants, who may change benefits |
 
 : Table 1. Home Forward, 2025–2026: what was reported, and when
 
-Intense unmet need can coexist with vacant apartments, slow leasing, high operating costs, a strained budget and serious tenant complaints about living conditions. No single figure shows the cause. Vacant units include ones needing work, ones with different affordability restrictions, and ones whose rents may not compete with some market offers. Ask which operating, financial, legal or market conditions cause each delay or vacancy.
+Unmet need can coexist with vacancies, slow leasing, high costs, a strained budget and tenant complaints about living conditions. No single figure shows the cause: vacant units include ones needing work, with different affordability restrictions, or with rents that may not compete with some market offers. Ask what causes each delay or vacancy.
 
-An authority with public representation and formal controls can still fail at oversight. MTW flexibility cannot replace accurate financial reporting, adequate staffing, property performance or a functioning board.
+Public representation and formal controls do not prevent oversight failures. MTW flexibility cannot replace accurate financial reporting, adequate staffing, property performance or a functioning board.
 
 # 3. Two precedents for two East Detroit institutions
 
 | Question | Detroit: city department + DHC | Portland: Housing Bureau + Home Forward | East Detroit starting condition (SCENARIO) |
 |---|---|---|---|
-| Municipal housing office | HRD: policy, investment, production, preservation, homelessness services [[D1]](#D1) | Housing Bureau: housing finance, local protections [[H3]](#H3) | EDHD, a city-county department that must take part |
-| Separate authority | DHC: own federally accountable programs; five-member board appointed by the mayor [[D6]](#D6) | Home Forward: independent public corporation; nine commissioners from several jurisdictions [[H1]](#H1) [[H2]](#H2) | EDRHA, an independent regional authority |
-| Who it serves | Detroit, with federal and development partners | Portland, Gresham, Multnomah County and other county communities | East Detroit and participating neighboring communities |
-| Separate sources of money | City investment and entitlement funds vs. authority housing assistance and property finance | Local housing funds vs. federal vouchers, property revenue and other sources | Separate city and authority funds, with terms for joint projects |
-| Failures highlighted | Recertification backlogs, staffing, occupancy, inspections and property problems [[D8]](#D8) [[D11]](#D11) | Vacancy turnover, debt pressure, forecast gap, governance and oversight [[H7]](#H7) [[H5]](#H5) | Neither assumed; examine whatever local baseline evidence exists |
+| Municipal housing office | HRD: policy, investment, production, preservation, homelessness [[D1]](#D1) | Housing Bureau: finance, local protections [[H3]](#H3) | EDHD; must take part |
+| Separate authority | DHC: federally accountable; five-member board appointed by the mayor [[D6]](#D6) | Home Forward: independent public corporation; nine commissioners, several jurisdictions [[H1]](#H1) [[H2]](#H2) | EDRHA, independent and regional |
+| Who it serves | Detroit, with federal and development partners | Portland, Gresham, rest of Multnomah County | East Detroit plus participating neighbors |
+| Separate sources of money | City and entitlement funds vs. authority assistance and property finance | Local funds vs. federal vouchers, property revenue, other sources | Separate funds; terms for joint projects |
+| Failures highlighted | Recertification backlogs, staffing, occupancy, inspections and property problems [[D8]](#D8) [[D11]](#D11) | Vacancy turnover, debt pressure, forecast gap, governance and oversight [[H7]](#H7) [[H5]](#H5) | None assumed; examine whatever local evidence exists |
 | Possible cooperation | Development, preservation, homelessness referrals and resident services | Housing finance, shared projects, landlord relations and property operations | Defined intake, referrals, local assistance, housing placement, record correction, financial coordination (OPEN) |
 | Why they may disagree | Independent duties and federal voucher administration | Regional constituency, separate board, funding restrictions | EDRHA may refuse integration or ask for contract conditions |
 
@@ -101,9 +99,9 @@ An authority with public representation and formal controls can still fail at ov
 
 Ask whether the two agencies' goals and legal powers fit, and whether cutting duplication keeps the functions that must stay separate.
 
-## What overlap can and cannot tell us
+## What overlap tells us
 
-- Savings worth investigating: duplicated household intake, repeated address checks, conflicting program directories, staff referrals with no case tracking, repeated requests to landlords, inconsistent vacancy reporting, and several help desks with no clear handoff.
+- Savings to investigate: duplicate intake, repeated address checks, conflicting program directories, untracked staff referrals, repeated landlord requests, inconsistent vacancy reporting, and help desks with no clear handoff.
 - Work that should stay separate: program-specific federal eligibility and appeals; HUD voucher funding; property ownership and debt; inspections and habitability; city appropriations; regional board accountability; and resident confidentiality.
 - A possible harm: more referrals to programs with no funding, staff, available unit or willing landlord. Faster screening can lengthen a queue when the bottleneck is housing supply or leasing, not intake.
 
@@ -113,16 +111,16 @@ Example (not an adopted East Detroit design): a household is behind on rent and 
 
 | Step | City Housing Division could… | Regional Housing Authority could… | Other participants |
 |---|---|---|---|
-| Understand the need | Offer a city-funded prevention program, navigation help or a referral | Identify an existing voucher, lease or property relationship, where authorized | Household, landlord, advocates |
-| Check address and identity | Use a municipal address or residency service under adopted rules | Use its own records and HUD verification rules for its programs | GIS, county human services, HUD |
-| Apply program rules | Decide eligibility for local funds | Decide eligibility, rent calculations and voucher or lease rules for its programs | State or federal program administrators |
-| Find available help | Allocate a limited city-funded grant | Confirm the actual voucher budget, available property, subsidy and inspection requirements | Finance, property manager, landlord |
+| Understand the need | Offer city-funded prevention, navigation help or a referral | Identify an existing voucher, lease or property relationship, where authorized | Household, landlord, advocates |
+| Check address and identity | Use a municipal address or residency service under adopted rules | Use its own records and HUD verification rules | GIS, county human services, HUD |
+| Apply program rules | Decide eligibility for local funds | Decide eligibility, rent calculations, and voucher or lease rules | State or federal program administrators |
+| Find available help | Allocate a limited city-funded grant | Confirm voucher budget, available property, subsidy and inspection requirements | Finance, property manager, landlord |
 | Deliver a result | Pay a qualifying landlord, or issue a local decision or referral | Issue or adjust assistance, or offer a qualifying unit under program terms | Resident, landlord, courts where relevant |
-| Correct errors and handle complaints | Correct the local case and allow appeals under city program rules | Correct its official voucher or tenancy record and use the required review process | The original record holder and any independent appeal body |
+| Correct errors and handle complaints | Correct the local case; allow appeals under city rules | Correct its voucher or tenancy record; use the required review process | Original record holder, any independent appeal body |
 
 : Table 3. Who could do what for a household facing eviction
 
-A shared application, verified-status exchange, assisted referral or resident credential is an implementation choice (OPEN). Each needs exact agreement on who sends what, for what purpose, under which rules, and who corrects a wrong result. Do not assume either agency automatically accepts the other's income record.
+Shared applications, verified-status exchanges, assisted referrals and resident credentials are implementation choices (OPEN). Each needs exact agreement on who sends what, why, under which rules, and who fixes errors. Do not assume either agency accepts the other's income record.
 
 ## Federal limits on "one-click housing"
 
@@ -141,7 +139,7 @@ Households shouldn't have to prove the same facts twice where a lawful, reliable
 - EDHD is a city-county department; EDRHA is separate and regional.
 - Both serve overlapping East Detroit households.
 - They have separate budgets, leaders, program rules, records and appeals.
-- Participation by external authorities is voluntary in the exercise.
+- External authorities take part voluntarily.
 - Internal city-county departments must take part in planning.
 
 **Open to the implementation effort (OPEN):**
