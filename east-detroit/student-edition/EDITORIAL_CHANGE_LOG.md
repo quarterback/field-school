@@ -1,6 +1,6 @@
 # Editorial change log: East Detroit student edition
 
-**Edition:** November 2026. **Sources:** `east-detroit/v3/` as of commit `ef8f11f`. **Method:** Red Pen Editor 0.2.1 skill (judgment applied by the editing agent, no local model), Red Pen `inspect` and `protectedLiterals` checks, and the Federal Plain Language Guidelines checklist.
+**Edition:** November 2026. **Sources:** `east-detroit/v3/` as of commit `ef8f11f`. **Method (first and second passes):** editorial judgment by the editing agent following Red Pen Editor 0.2.1's SKILL.md and rubric; Red Pen `inspect` for repetition; Red Pen `protectedLiterals` in a cross-document literal guard. Edits were applied by script, not through Red Pen's `apply` guard. The plain language checklist was applied from memory. Section 9 records the third pass, which used Red Pen `brief` and `apply` and the archived checklist.
 
 This log covers substantive changes: deletions, moves, merges, corrections and anything added. It does not list routine line edits (shorter sentences, active voice, familiar words) unless they could change meaning. Nothing in the student edition is a new interpretation of East Detroit. Where the source says something, the edition says the same thing or less.
 
