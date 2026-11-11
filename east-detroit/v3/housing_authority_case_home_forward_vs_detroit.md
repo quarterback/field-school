@@ -34,7 +34,7 @@ This history demonstrates that a housing authority can be **locally governed and
 
 - **Income and voucher recertification:** Outlier Media reported that understaffing produced long backlogs in the federal voucher program. In April 2023, **221 of 1,960 due recertifications** had been completed; in 2024 reporting, a backlog of **1,747 delinquent recertifications** remained despite outside contractor support. Rent amounts and subsidies can be wrong while a recertification is pending. Landlords reported delayed payments and some stopped accepting DHC vouchers. [D7] [D8]
 - **Capacity and unmet demand:** Outlier reported that the agency was using roughly **1,500 fewer vouchers** than its capacity in one period, partly because it lacked staff to process required work. A housing benefit authorized on paper is different from a household actually receiving and using it. [D8]
-- **Vacancy and condition:** A 2023 Outlier interview described public housing occupancy around **78%**. Later reporting described vacancy near **23–24% in September 2024**, along with problems with rent collection and deteriorating buildings. [D9] [D10]
+- **Vacancy and condition:** In a 2023 Outlier interview, the interviewer put public housing occupancy at about **78%**. Later reporting described vacancy near **23–24% in September 2024**, along with problems with rent collection and deteriorating buildings. [D9] [D10]
 - **Recovery with limitations:** In a 2025 follow-up, Outlier reported that DHC management said it had mostly cleared the recertification backlog, vacancy had fallen from **24% to 14%**, and **all 15 complexes** had passed that year's HUD inspections. The article also reported residents whose individual housing problems persisted. These improvements were reported outcomes and management assertions in their stated period, not proof that every resident issue was resolved. [D11]
 
 **What Detroit illustrates:** A shared digital form cannot resolve unstaffed queues, inaccurate payment calculations, inspections, landlord distrust, or an underfunded property portfolio by itself. Agency staffing, authority, incentives, and financing are part of the service.
@@ -147,29 +147,29 @@ Dates are publication/agency dates where stated; numbers refer to those dates ra
 - **[D4]** HUD, July 7, 2005, *HUD Assumes Control of Detroit Housing Commission*. Reasons for federal intervention. https://archives.hud.gov/news/2005/pr05-094.cfm
 - **[D5]** HUD, January 25, 2012, *Transition Plan to Return DHC to Local Control*. Board and oversight requirements. https://archives.hud.gov/local/mi/news/pr2012-01-25.cfm
 - **[D6]** Detroit Housing Commission, *Board Members*. Confirms March 13, 2015 return, five-member mayor-appointed board and subsidized-housing resident requirement. https://helpdesk.dhcmi.org/about-dhc/board-members
-- **[D7]** Outlier Media, *Detroit Section 8 Program Failing Tenants, Landlords, Staffers*. Recertification and landlord-processing consequences. https://outliermedia.org/detroit-section-8-housing-vouchers-struggles/
-- **[D8]** Outlier Media, *Detroit Housing Commission Staff Are Barely Holding On*. Staffing, voucher underuse, recertification backlog, vendor support. https://outliermedia.org/detroit-housing-commission-staff-burnout-new-ceo/
-- **[D9]** Outlier Media, *Sandra Henriquez Addresses Agency Failures*. Approximately 78% occupancy at the reported time. https://outliermedia.org/sandra-henriquez-detroit-housing-commission-failing-properties/
-- **[D10]** Outlier Media, *Can Arthur Jemison Fix the Detroit Housing Commission?* 2024 operating and financial challenges. https://outliermedia.org/arthur-jemison-detroit-housing-commission/
-- **[D11]** Outlier Media, *Detroit Housing Commission Boasts Improvements, Turnaround*. 2025 recertification, occupancy, HUD inspection and resident-condition reporting. https://outliermedia.org/detroit-housing-commission-arthur-jemison-updates-improvements/
+- **[D7]** Outlier Media, June 14, 2023, *Detroit Section 8 Program Failing Tenants, Landlords, Staffers*. Recertification and landlord-processing consequences. https://outliermedia.org/detroit-section-8-housing-vouchers-struggles/
+- **[D8]** Outlier Media, April 23, 2024, *Detroit Housing Commission Staff Are Barely Holding On*. Staffing, voucher underuse, recertification backlog, vendor support. https://outliermedia.org/detroit-housing-commission-staff-burnout-new-ceo/
+- **[D9]** Outlier Media, May 15, 2023, *Sandra Henriquez Addresses Agency Failures*. Approximately 78% occupancy at the reported time. https://outliermedia.org/sandra-henriquez-detroit-housing-commission-failing-properties/
+- **[D10]** Outlier Media, November 12, 2024, *Can Arthur Jemison Fix the Detroit Housing Commission?* 2024 operating and financial challenges. https://outliermedia.org/arthur-jemison-detroit-housing-commission/
+- **[D11]** Outlier Media, August 13, 2025, *Detroit Housing Commission Boasts Improvements, Turnaround*. 2025 recertification, occupancy, HUD inspection and resident-condition reporting. https://outliermedia.org/detroit-housing-commission-arthur-jemison-updates-improvements/
 - **[D12]** Detroit Housing Commission, *Resources*. Actual annual plans, voucher administrative plans, and occupancy policies for close reading. https://www.dhcmi.org/about-dhc/resources
 
 ### Portland and Home Forward
 
-- **[H1]** Home Forward, *FAQ: About Us*. Public-corporation status, countywide jurisdiction, independent operation and federal program role. https://www.apps.homeforward.org/faq-about-us/
-- **[H2]** Home Forward, *Board of Commissioners*. Nine-member composition, budget and hiring powers. https://www.apps.homeforward.org/board-of-commissioners/
+- **[H1]** Home Forward, *FAQ: About Us*. Public-corporation status, countywide jurisdiction, independent operation and federal program role. https://www.homeforward.org/faq-about-us/
+- **[H2]** Home Forward, *Board of Commissioners*. Nine-member composition, budget and hiring powers. https://www.homeforward.org/board-of-commissioners/
 - **[H3]** Portland Housing Bureau, *About PHB*. Municipal policy, finance and housing programs; distinct from Home Forward. https://www.portland.gov/phb/about
-- **[H4]** Home Forward, *Moving to Work*. April 1999 entry, special flexibility and reporting. https://www.webapp.homeforward.org/moving-to-work/
+- **[H4]** Home Forward, *Moving to Work*. April 1999 entry, special flexibility and reporting. https://www.homeforward.org/moving-to-work/
 - **[H5]** Willamette Week, Sophie Peel, Oct. 26, 2026, *Home Forward Says $38 Million Budget Deficit Is Worse Than We Understood*. Current and projected deficits, proposed responses, possible HUD shortfall funds. https://www.wweek.com/news/city/2026/10/26/home-forward-says-38-million-budget-deficit-is-worse-than-we-understood-it-to-be/
 - **[H6]** Willamette Week, Sophie Peel, Dec. 3, 2025, *Portland's Housing Authority Sits on 955 Empty Apartments* (headline; contemporaneous body cites 956). https://www.wweek.com/news/city/2025/12/03/portlands-housing-authority-sits-on-955-empty-apartments/
 - **[H7]** Willamette Week, Sophie Peel, Feb. 18, 2026, *It Takes Home Forward 185 Days on Average to Fill an Apartment*. Vacancy-to-lease figure and agency explanation. https://www.wweek.com/news/2026/02/17/it-takes-home-forward-185-days-on-average-to-fill-an-apartment-at-one-of-its-buildings/
 - **[H8]** Willamette Week, Sophie Peel, Feb. 25, 2026, *Home Forward's Real Estate Portfolio Is Fast Approaching Financial Distress*. Debt and vacant-unit revenue. https://www.wweek.com/news/2026/02/24/home-forwards-real-estate-portfolio-is-fast-approaching-financial-distress/
 - **[H9]** Willamette Week, Mar. 25, 2026, *Home Forward Officials Brief Board on Agency's Struggles*. Contractor property management and 292-day reported leasing figure. https://www.wweek.com/news/city/2026/03/25/home-forward-officials-brief-board-on-agencys-struggles/
 - **[H10]** Willamette Week, Sophie Peel, Apr. 14, 2026, *While Home Forward Struggled, Its CEO Spent More Than $100,000 on Taxpayer-Funded Travel*. Public-record reporting, not adjudication. https://www.wweek.com/news/2026/04/14/while-home-forward-struggled-its-ceo-spent-more-than-100000-on-taxpayer-funded-travel-over-three-years/
-- **[H11]** Home Forward, Apr. 29, 2026, *Home Forward Announces Leadership Transition*. Official resignation announcement and effective date. https://www.webapp.homeforward.org/home-forward-announces-leadership-transition/
+- **[H11]** Home Forward, Apr. 29, 2026, *Home Forward Announces Leadership Transition*. Official resignation announcement and effective date. https://www.homeforward.org/home-forward-announces-leadership-transition/
 - **[H12]** Willamette Week, Aug. 19, 2026, *Ethics Commission Votes to Investigate Former Home Forward CEO Over Travel Spending*. Open investigation; no finding implied. https://www.wweek.com/news/city/2026/08/19/ethics-commission-votes-to-investigate-former-home-forward-ceo-over-travel-spending/
 - **[H13]** Oregon Public Broadcasting, Feb. 27, 2026, *Portland's Housing Authority Plagued by High Vacancies, Long Turnover Time*. Interview discussing agency and tenant impact. https://www.opb.org/article/2026/02/27/portland-home-forward-housing-authority-vacancies-turnover/
-- **[H14]** Home Forward, *Reporting*. Primary agency reports and annual reports. https://www.main.homeforward.org/reporting/
+- **[H14]** Home Forward, *Reporting*. Primary agency reports and annual reports. https://www.homeforward.org/reporting/
 
 ### Federal administration
 

@@ -39,7 +39,7 @@ Read: Colorado local government handbook, https://content.leg.colorado.gov/sites
 
 **Charter-county functions.** Michigan's Charter Counties Act lists permissible county functions including public health, police, fire, welfare, land-use, recreation, and utilities, as well as transfers of certain municipal functions by agreement. Students can evaluate a similar mechanism as a *fictional East Detroit charter clause*, but must say where Colorado law or the hypothetical enabling measure would authorize it. A transferable function remains subject to affected government consent where applicable.
 
-**Detroit water authority.** The Detroit/Great Lakes Water Authority arrangement separates infrastructure ownership, regional system operation, and local customer relationships. That separation helps the class avoid the vague claim that “the city owns the data and the system.” Different assets can have different custodians and obligations. Source from original class packet: https://www.glwater.org/about-us/ and https://detroitmi.gov/departments/water-and-sewerage-department .
+**Detroit water authority.** The Detroit/Great Lakes Water Authority arrangement separates infrastructure ownership, regional system operation, and local customer relationships. That separation helps the class avoid the vague claim that “the city owns the data and the system.” Different assets can have different custodians and obligations. Source from original class packet: https://www.glwater.org/what-we-do/ and https://detroitmi.gov/departments/water-and-sewerage-department .
 
 **Neighborhood technology stewards.** Detroit's Equitable Internet Initiative used community-led networks and Digital Stewards. It illustrates giving community members responsibility and paid roles rather than limiting their participation to surveys. Source: https://detroitcommunitytech.org/ .
 
@@ -121,13 +121,13 @@ Each department may provide multiple decisions and competing implementation stra
 - Adams/Denver airport agreements: https://adamscountyco.gov/our-county/elected-officials/board-of-county-commissioners/airport-agreements/
 - Michigan Charter Counties Act, section 15: https://legislature.mi.gov/Laws/MCL?objectName=mcl-45-515
 - Detroit Water and Sewerage Department: https://detroitmi.gov/departments/water-and-sewerage-department
-- Great Lakes Water Authority: https://www.glwater.org/about-us/
+- Great Lakes Water Authority: https://www.glwater.org/what-we-do/
 - Detroit Community Technology Project: https://detroitcommunitytech.org/
 - UTOPIA Fiber: https://www.utopiafiber.com/
 - Colorado SIPA: https://sipa.colorado.gov/
 - KOMBIT: https://kombit.dk/
 - Estonian X-tee: https://www.ria.ee/en/state-information-system/data-exchange-platforms/data-exchange-layer-x-tee
 - Athumi, Flanders: https://www.athumi.eu/
-- NYC LinkNYC program: https://www.nyc.gov/site/doitt/initiatives/linknyc.page
+- NYC LinkNYC program: https://www.link.nyc/
 
 **Teaching note:** The references introduce institutional models. This packet does not certify that each outside institution's specific terms remain unchanged in 2030.

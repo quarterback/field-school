@@ -13,6 +13,10 @@ The City and County of East Detroit is a **fictional Colorado municipality** use
 7. **Another agent / GIS:** [Map agent handoff](map_agent_handoff.md) plus [draft GeoJSON](east_detroit_2030_draft.geojson) and [machine-readable neighborhoods](neighborhoods_2030.json)
 8. **What changed:** [V2-to-V3 assumption audit](assumption_audit_v2_to_v3.md)
 
+## Student edition
+
+The four formatted student readings (Word and PDF) are built from these documents in [`../student-edition/`](../student-edition/README.md). The Markdown here stays the source of truth; corrections made during editing are recorded in that folder's change log and applied here too.
+
 ## Housing case research: read before proposals
 
 **[Home Forward and Detroit: two housing institutions, overlapping work](housing_authority_case_home_forward_vs_detroit.md)** documents the real organizational patterns, operating failures, financial evidence, federal constraints, and potential coordination choices. It supplies direct links for every case finding. The instructor has established a **City and County Housing Division** and a separate **East Detroit Regional Housing Authority**. Their coexistence is a scenario fact, not a student decision. No housing application or integration plan is preselected.
