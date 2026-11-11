@@ -92,7 +92,10 @@ def style_docx(path):
         if key.startswith("Heading"):
             st.paragraph_format.keep_with_next = True
     for table in doc.tables:
-        table.style = "Table Grid"
+        try:
+            table.style = "Table Grid"
+        except KeyError:
+            pass  # Pandoc reference documents may not define this table style.
         if len(table.rows):
             trpr = table.rows[0]._tr.get_or_add_trPr()
             head = OxmlElement("w:tblHeader")
