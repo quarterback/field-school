@@ -10,11 +10,9 @@ lang: en-US
 
 You are a department head, agency leader, civic representative or partner in the fictional City and County of East Detroit, Colorado, in 2030. The city has 382,417 residents, twenty provisional neighborhoods, a large and unevenly developed territory, and major needs in housing, water, transit, benefits, address records, schools, safety and community facilities.
 
-**The assignment: write the specification for a city-county version of Estonia's digital government.** In Estonia, government agencies keep their own records and exchange data through a shared, secure layer called X-tee, under agreements between the organizations involved (Reading 2 and the Directory explain how it works). The class will specify how East Detroit's departments and outside agencies could do the same: which records they hold, what they would share and on what terms, who runs the exchange, how residents are protected, and which services come first.
+The assignment is to write the specification for a city-county version of Estonia's digital government. In Estonia, government agencies keep their own records and exchange data through a shared, secure layer called X-tee, under agreements between the organizations involved (Reading 2 and the Directory explain how it works). The class will specify how East Detroit's departments and outside agencies could do the same: which records they hold, what they would share and on what terms, who runs the exchange, how residents are protected, and which services come first.
 
-The city-county exists. **The spec is unwritten.** No digital identity, app, procurement, vendor, cloud platform, data exchange, governance board or first service has been approved. Your job is to help establish the facts, develop the spec and its implementation plan, and negotiate with other agencies to carry it out.
-
-As in the other readings, **SCENARIO** marks facts the course has created, **REAL REFERENCE** marks real laws and organizations, and **OPEN** marks choices the class makes.
+The city-county exists; the spec does not. No digital identity, app, procurement, vendor, cloud platform, data exchange, governance board or first service has been approved. Your job is to help establish the facts, develop the spec and its implementation plan, and negotiate with other agencies to carry it out.
 
 # What is settled and what is open
 
@@ -22,11 +20,9 @@ As in the other readings, **SCENARIO** marks facts the course has created, **REA
 
 1. East Detroit exists as a consolidated city-county and is coping with rapid growth. The class starts from that point.
 2. Its residents and services are diverse. The demographics and neighborhoods in Reading 1 are planning assumptions that teams can question. They are not real Census estimates.
-3. The city-county has operating city and county departments and elected leaders. The **City Housing Division** and the independent **East Detroit Regional Housing Authority** both exist.
+3. The city-county has operating city and county departments and elected leaders. The City Housing Division and the independent East Detroit Regional Housing Authority both exist.
 4. Its major civic and cultural institutions are the anchors described in Reading 1: The Hangar at Space Center, the Denver Fawns, the Colorado Apex, the Denver Pilots at Aerotropolis Park, EDPAC and the East Detroit Health System.
-5. Some outside bodies are independent: schools, RTD, water providers, airport owners and operators, state and federal agencies, and other jurisdictions. They may agree to joint work, refuse it or set conditions.
-
-The class controls every other choice, within the scenario's basic facts about geography, population and status.
+5. Some bodies are independent of the city-county: the school district, library district, water and sewer authority, RTD, the County Court, the two hospitals, the Regional Housing Authority, state and federal agencies, airport operators and other jurisdictions.
 
 ## Open for the class (OPEN)
 
@@ -64,7 +60,7 @@ Earlier drafts also implied 100% voucher uptake, uniform student assignment and 
 
 # The three stages of the project
 
-The project has three stages. The goal is fixed (an Estonia-style spec), but no particular product, platform or governance design is assumed to be the answer.
+The project has three stages.
 
 ## Stage A: Establish the basis
 
@@ -90,7 +86,7 @@ Choose service priorities, decision-makers, governance or procurement options, f
 
 ## Stage C: Coordinate stakeholders
 
-Every internal city-county department takes part in the process, though its leaders can question policy, feasibility and sequence. External partners may accept, negotiate terms or refuse. A refusal changes the service model and the plan; it is not a failure to participate.
+Every internal city-county department takes part in the process, though its leaders can question policy, feasibility and sequence. Outside agencies may accept, negotiate or refuse. If a partner says no, redesign without it; saying no is still taking part.
 
 **Your work in this stage:**
 
@@ -112,7 +108,7 @@ Every internal city-county department takes part in the process, though its lead
 
 # Choose what you will own
 
-Each student owns one entry: a city-county department, an outside agency or a resident group. Use the **Directory of Departments and Agencies** to find your area, and claim it on the **Sign-up Sheet**. There are 27 entries, more than there are students. **The instructor speaks for every entry nobody claims.**
+Each student owns one entry: a city-county department, an outside agency or a resident group. Use the **Directory of Departments and Agencies** to find your area, and claim it on the **Sign-up Sheet**. The instructor plays every entry nobody claims.
 
 | Group | Entries | Status |
 |---|---|---|
@@ -123,11 +119,11 @@ Each student owns one entry: a city-county department, an outside agency or a re
 
 : Table 1. Who owns the spec
 
-Students are encouraged to take outside agencies and resident groups. Outside agencies decide whether to join the exchange, so they shape the spec as much as any department.
+Outside agencies are worth taking: one that refuses can stop a service.
 
-City-county departments take part because East Detroit has assigned them to. Their owners can still contest details, budgets, feasibility, legal authority and sequence. Outside agencies choose whether to take part, and on what terms. Either outcome gives the class real consequences to work through. A department head can bring several proposed decisions, and students may challenge each other's proposals.
+City-county departments take part because East Detroit has assigned them to. Their owners can still contest details, budgets, feasibility, legal authority and sequence.
 
-# Four governance decisions to make explicit
+# Four governance decisions
 
 **Authority.** Which public body can approve a shared service, adopt standards, spend public money, invite a partner and stop a harmful practice? Is it an existing city-county function, a new authority, an intergovernmental agreement, a nonprofit, or a combination? Who can overrule whom?
 
@@ -152,7 +148,7 @@ The first service is chosen on evidence and through negotiation; the course does
 - Emergency routing
 - Public art or venue services
 
-Any of these may be chosen or rejected. A first launch can be one complete, useful transaction, several connected touchpoints, or a process used only by staff, as long as the class can justify it.
+A first launch can be one complete, useful transaction, several connected touchpoints, or a process used only by staff, as long as the class can justify it.
 
 **For each candidate service, ask:**
 
@@ -184,27 +180,24 @@ A memorandum of understanding (MOU) is enough when it only coordinates intention
 
 **Example: regional transit.** RTD might offer a timetable or fare exchange, accept a limited pilot, or decline. The city can still publish route information or fund a separate, legally supported mobility program. A rail hub in the scenario does not require RTD to connect its ticketing systems.
 
-# Questions every department head should answer
+# Questions every entry should answer
 
-1. Which public problem and resident experience should the first service address, and in which neighborhoods? Which household does it affect?
-2. Which problem will your department own?
-3. What is currently delivered by the city-county, by the state through county administration, or by another public body? Which powers does East Detroit have, and which sit elsewhere?
-4. Who can approve policy, allocate resources, authorize access, correct records, hear disputes and stop a harmful launch?
-5. Which partners are indispensable, what deal must be struck before launch, and what happens if a partner refuses to join?
-6. What will residents, frontline staff, reviewers and elected officials see when the service runs, both when a case succeeds and when it fails?
-7. How will we know whether the chosen arrangement works better, and whom might it leave out?
+1. Which problem will your entry own, which residents does it affect, and in which neighborhoods?
+2. What is currently delivered by the city-county, by the state through county administration, or by another public body? Which powers does East Detroit have, and which sit elsewhere?
+3. Who can approve policy, allocate resources, authorize access, correct records, hear disputes and stop a harmful launch?
+4. Which partners are indispensable, what deal must be struck before launch, and what happens if a partner refuses to join?
+5. What will residents, frontline staff, reviewers and elected officials see when the service runs, both when a case succeeds and when it fails?
+6. How will we know whether the chosen arrangement works better, and whom might it leave out?
 
 # What happens in class
 
-Students who own a role present their proposals and challenge each other's assumptions. The class compares conflicting requirements and decides what must be tested.
+Each owner presents proposals, and students challenge each other's assumptions. A department can bring several proposals. The class compares conflicting requirements and decides what must be tested.
 
 The instructor then builds or revises a working implementation model with AI in front of the class. The output might be a service diagram, a screen, a data exchange, a staff work queue, a cost model or a test of an agreement. Each department may bring several decisions and competing strategies, and every choice in the model can be traced to who proposed it.
 
-**A screen or workflow the AI generates shows that an arrangement can be simulated. It does not show that its rules or funding have been adopted.**
+A screen or workflow the AI generates shows that an arrangement can be simulated, not that its rules or funding have been adopted.
 
-The record keeps who proposed what, what the group chose, who dissented and what changed when the class tried it. A rejected connection, a contested rule or a missed case is a useful result. Earlier versions stay in the record so the class can return to them.
-
-**You do not need unanimous agreement to make progress.** Keep disagreements, refusals and missing information in the record. Where a decision is still contested, the class can test more than one path.
+The record keeps who proposed what, what the group chose, who dissented and what changed when the class tried it. Record failures too, and keep earlier versions so the class can return to them. You don't need unanimous agreement: keep disagreements, refusals and missing information in the record, and where a decision is still contested, test more than one path.
 
 # What to bring to the first session
 
@@ -215,7 +208,7 @@ The record keeps who proposed what, what the group chose, who dissented and what
 - At least one internal dependency, and one outside organization that might accept, negotiate or refuse
 - What you expect to see if your plan works, including a failure or exception case
 
-**Label your sources.** Mark real facts as **REAL REFERENCE**, facts created for the course as **SCENARIO**, and unresolved choices as **OPEN**. Do not present fictional demographics, new ZIP codes, governance powers or data agreements as existing Colorado law.
+Label your sources: mark real facts as **REAL REFERENCE**, facts created for the course as **SCENARIO**, and unresolved choices as **OPEN**. Do not present fictional demographics, new ZIP codes, governance powers or data agreements as existing Colorado law.
 
 # Where to find the background
 

@@ -129,3 +129,19 @@ These are new scenario facts set by the instructor, not editorial changes. They 
 | Local outside agencies are fictional and sized for East Detroit; real bodies are models of institution type only | Directory; dossier §8 |
 
 **Role cards superseded.** The Directory reuses the role cards' "wants / worries / can offer / likely refusal / must ask" content for entries that already existed. New for each entry: the records it holds and questions for the Estonia-style spec. These are framed as **OPEN** questions, not decisions. The sign-up record's section A now points to the Sign-up Sheet.
+
+## 8. Second pass for AI-writing patterns, 11 November 2026
+
+An independent review of all six documents found the set heavy with machine-writing habits. Fixed:
+
+- **Bold:** about 460 bold spans outside source lists were cut to about 260. What remains is list run-ins, neighborhood and condition names, and the directory's field labels, which are kept for scanning.
+- **Openers and labels:** five "how to read" openers became one ("Real, invented and undecided" in Reading 1). The labels are now defined once instead of five times. One reading roadmap (Reading 4) instead of two.
+- **Refrain:** "may agree, set conditions or refuse" (about 20 uses) is now stated once in Reading 2 and once in the Directory. Slogans such as "A refusal changes the design; it does not remove…", "The underlying goal still stands", "The useful question is", "This history shows" and "real consequences to work through" were rewritten or cut.
+- **Directory:** each entry went from nine fields to five. The 23 generic "Wants… Worried about…" lines became one specific pressure per entry, drawn only from scenario facts already in the readings (no new events were invented). The eight "*Always has an owner*" lines and the "…or nothing" endings on "Could offer" were removed. Resident groups were rewritten around their test households.
+- **Reading 1:** the twenty neighborhood blurbs became short sentences instead of noun lists, using only the atlas descriptions. The repeated map disclaimer is kept in the figure caption only.
+- **Reading 3:** figures are no longer bolded, and lesson-of-the-story sentences were cut. No evidence, figure, date or citation changed.
+- **Consistency:** the "what to bring" list now lives only in Reading 4; the Sign-up Sheet points to it.
+
+Cuts with content: Reading 1 dropped "not stereotypes or eligibility findings" from the household cases, and "Not every household benefits from aerospace investment." Reading 3 dropped "A housing benefit authorized on paper is different from a household actually receiving and using it" and the "Not decided by this case" list, which named student roles, sign-up and similar items that the Sign-up Sheet and Reading 4 now cover.
+
+The literal guard still reports only the ten date and number formatting differences listed in section 4.

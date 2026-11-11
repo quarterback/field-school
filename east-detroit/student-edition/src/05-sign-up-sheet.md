@@ -12,9 +12,9 @@ lang: en-US
 2. Write your name next to it. **One person per entry.**
 3. If your first choice is taken, choose another. There are 27 entries and fewer students.
 
-**The instructor speaks for every entry left blank.** Unclaimed departments and agencies still take part. They answer requests, set conditions and refuse, just as a student owner would.
+**The instructor plays every entry left blank.** Unclaimed entries still answer requests, set conditions and refuse, as a student owner would.
 
-You may claim an outside agency or a resident group instead of a city-county department. Outside agencies are encouraged: they decide whether to join the system, so they shape the spec.
+You can claim an outside agency or a resident group instead of a city-county department.
 
 # City-county departments
 
@@ -70,11 +70,4 @@ Independent bodies that may join, join on conditions, or refuse. A-01 to A-08 al
 
 # After you sign up
 
-Bring these to the first session:
-
-- your entry's ID and name;
-- one service problem your entry owns, with one resident case;
-- the records your entry holds that others would need, and what it needs from others;
-- one other entry you must work with, and one that might refuse.
-
-The Municipal Project Brief (Reading 4) explains the full assignment.
+Reading 4, *The Municipal Project Brief*, lists what to bring to the first session.
