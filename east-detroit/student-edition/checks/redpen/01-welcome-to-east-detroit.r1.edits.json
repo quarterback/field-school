@@ -1,0 +1,302 @@
+[
+ {
+  "before": "The land around it is real. The city, its statistics, its neighborhoods and its institutions are invented for this course.",
+  "after": "The land is real. The city, its statistics, neighborhoods and institutions are invented.",
+  "kind": "line-edit",
+  "reason": "Omit excess words."
+ },
+ {
+  "before": "All six documents in this set use three labels:",
+  "after": "All six documents use three labels:",
+  "kind": "line-edit",
+  "reason": "Omit excess words."
+ },
+ {
+  "before": "a fact the course has created. Treat it as true inside the exercise.",
+  "after": "an invented fact. Treat it as true in the exercise.",
+  "kind": "line-edit",
+  "reason": "Tighter definition."
+ },
+ {
+  "before": "a choice the class hasn't made yet.",
+  "after": "a choice the class has not made.",
+  "kind": "line-edit",
+  "reason": "Tighter definition."
+ },
+ {
+  "before": "Don't present scenario figures, such as East Detroit's population or income levels, as real Census data or Colorado law.",
+  "after": "Never present SCENARIO figures, such as population or income, as real Census data or Colorado law.",
+  "kind": "line-edit",
+  "reason": "Shorter; ties to the label."
+ },
+ {
+  "before": "East Detroit is a newly consolidated Colorado city and county. Its growth resembles metropolitan Phoenix in scale and pattern: fast residential expansion, master-planned districts, warehousing and logistics, jobs arriving before public facilities, older settlements meeting new development, and wide differences in who benefits from growth. The course begins in 2030. Nobody has to explain how the city got this big.",
+  "after": "East Detroit grows like metropolitan Phoenix in scale and pattern: fast housing growth, master-planned districts, warehousing and logistics, jobs arriving before public facilities, old settlements meeting new development, and wide gaps in who benefits. The course starts in 2030. You do not need to explain how the city got this big.",
+  "kind": "duplicate",
+  "reason": "First sentence repeats the opening definition; tighten the rest and address the reader."
+ },
+ {
+  "before": "The 115.4-square-mile study area is far larger than the built-up city. Much of it is employment land, farmland, aviation protection zones, infrastructure or undeveloped land.",
+  "after": "Most of the study area is not built up. It is employment land, farmland, aviation protection zones, infrastructure or open land.",
+  "kind": "redundancy",
+  "reason": "115.4 is in Table 1; shorter."
+ },
+ {
+  "before": "You may assume the constitutional and legislative steps that created the city-county have already happened. Its charter design, intergovernmental agreements, service platform and administrative structure have not been adopted; those are OPEN.",
+  "after": "Assume the constitutional and legislative steps that created the city-county are done. Its charter design, intergovernmental agreements, service platform and administrative structure are OPEN.",
+  "kind": "line-edit",
+  "reason": "Shorter, direct."
+ },
+ {
+  "before": "Figure 1. Provisional East Detroit study boundary with the 20 neighborhood label points, colored by planning region. The dots mark neighborhood names only; no neighborhood boundaries have been approved. The outline has not been checked against real county, city, airport, school or utility lines.",
+  "after": "Figure 1. Provisional study boundary with the 20 neighborhood label points, colored by planning region. Dots mark names only; no neighborhood boundaries are approved. The outline is not checked against real county, city, airport, school or utility lines.",
+  "kind": "line-edit",
+  "reason": "Shorter caption."
+ },
+ {
+  "before": "East Detroit is set around real places:",
+  "after": "East Detroit surrounds real places:",
+  "kind": "line-edit",
+  "reason": "Shorter."
+ },
+ {
+  "before": "The main existing postal code is Watkins 80137. Neighboring real postal codes may appear on reference maps. The course has not created any new ZIP codes; a city postal scheme for 2030 is OPEN.",
+  "after": "The main postal code is Watkins 80137; nearby real codes may appear on maps. The course has created no new ZIP codes. A 2030 city postal scheme is OPEN.",
+  "kind": "line-edit",
+  "reason": "Shorter sentences."
+ },
+ {
+  "before": "That area included 21,079 acres of unincorporated Adams County, 9,738 acres within Aurora, and 375 acres in Bennett. The plan identifies gaps in water and wastewater capacity and land-use conflicts near airport operations.",
+  "after": "It covers 21,079 acres of unincorporated Adams County, 9,738 acres in Aurora and 375 acres in Bennett. The plan finds gaps in water and wastewater capacity and land-use conflicts near the airport.",
+  "kind": "line-edit",
+  "reason": "Present tense, fewer words."
+ },
+ {
+  "before": "SCENARIO: East Detroit's study area includes the 48-square-mile spaceport planning area and extends north and east from it. Watkins remains the city's historic southeastern gateway. The larger area leaves room for a credible city without placing housing around the spaceport runway.",
+  "after": "SCENARIO: East Detroit's study area contains the spaceport planning area and extends north and east of it. Watkins remains the historic southeastern gateway. The larger area makes room for a credible city without housing around the spaceport runway.",
+  "kind": "redundancy",
+  "reason": "48-square-mile already stated in the previous paragraph about the same area."
+ },
+ {
+  "before": "Table 2 is SCENARIO: planning assumptions, not measurements of the real area. Population and household totals are in Table 1.",
+  "after": "Table 2 is SCENARIO: planning assumptions, not real measurements. Population and household totals are in Table 1.",
+  "kind": "line-edit",
+  "reason": "Shorter."
+ },
+ {
+  "before": "The race and ethnicity categories add to 100% so the simulation can use them as separate groups. Standard Census tables treat race and Hispanic origin differently. Check these categories against a real classification standard before building household-level data. No service design in this course should base eligibility decisions on these attributes.",
+  "after": "The race and ethnicity categories add to 100% so the simulation can treat them as separate groups. Census tables treat race and Hispanic origin differently. Check these categories against a real classification standard before you build household-level data. Your service designs must not base eligibility on these attributes.",
+  "kind": "line-edit",
+  "reason": "Address the reader; must for requirements."
+ },
+ {
+  "before": "U.S. Census QuickFacts for Adams County (2020–2024) reports a median household income of \\$94,571 in 2024 dollars, median gross rent of \\$1,781, about 9.8% of people in poverty, 68.6% of housing owner-occupied, and 43.7% of residents Hispanic or Latino. The July 2025 estimate put Adams County at 554,668 residents. For the real Watkins census-designated place, the 2020–2024 American Community Survey estimates only 847 residents and a median household income of about \\$158,173. Estimates for an area that small are uncertain. East Detroit's assumptions",
+  "after": "U.S. Census QuickFacts for Adams County reports:\n\n- median household income (2020–2024): \\$94,571 in 2024 dollars\n- median gross rent (2020–2024): \\$1,781\n- people in poverty (2020–2024): about 9.8%\n- owner-occupied housing (2020–2024): 68.6%\n- Hispanic or Latino residents (2020–2024): 43.7%\n- population (July 2025 estimate): 554,668\n\nFor the real Watkins census-designated place, the 2020–2024 American Community Survey estimates only 847 residents and a median household income of about \\$158,173. Estimates for an area that small are uncertain.\n\nEast Detroit's assumptions",
+  "kind": "structure",
+  "reason": "Turn a dense run of figures into a scannable list."
+ },
+ {
+  "before": "Neighborhoods are communities, not zoning districts. Their names are provisional.",
+  "after": "Neighborhoods are communities, not zoning districts. Names are provisional.",
+  "kind": "line-edit",
+  "reason": "Shorter."
+ },
+ {
+  "before": "others are new urban identities (Foundry Quarter, Civic Square, Central Station). Zoning and other rules are decided separately.",
+  "after": "others are new urban identities (Foundry Quarter, Civic Square, Central Station). Zoning and other rules come separately.",
+  "kind": "line-edit",
+  "reason": "Shorter."
+ },
+ {
+  "before": "The citywide median income was set separately; a citywide median cannot be calculated by averaging twenty neighborhood medians. Neighborhood renter and rent-burden shares also need weighting by household counts. Verifying the citywide figures would require household-level synthetic data.",
+  "after": "The citywide median income was set separately, and averaging twenty medians does not give a median. Renter and rent-burden shares need weighting by household counts. Checking the citywide figures takes household-level synthetic data.",
+  "kind": "line-edit",
+  "reason": "Shorter sentences."
+ },
+ {
+  "before": "the old village, with small businesses, farm families, and owners and renters who are getting older.",
+  "after": "the old village: small businesses, farm families, and aging owners and renters.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "mixed housing along the rail line, home to service workers and newly arrived families.",
+  "after": "mixed housing on the rail line; service workers and newly arrived families.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "an older commercial corridor with cheaper apartments and a lot of turnover.",
+  "after": "older commercial corridor; cheaper apartments and high turnover.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "industrial jobs and truck traffic, with housing near the worksites and worries about pollution.",
+  "after": "industrial jobs and truck traffic; housing near worksites; pollution worries.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "the civic center, surrounded by mixed-income midrise housing.",
+  "after": "the civic center, ringed by mixed-income midrise housing.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "the main transfer station, dense rentals and a night economy.",
+  "after": "main transfer station; dense rentals and a night economy.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "old production sites turned into offices and family flats that are still relatively affordable.",
+  "after": "old production sites turned into offices and still fairly affordable family flats.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "riverside greenways and apartments, with a growing professional population.",
+  "after": "riverside greenways and apartments; a growing professional population.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "older subdivided homes, mostly owner-occupied; getting to school is a problem.",
+  "after": "older subdivided homes, mostly owner-occupied; hard trips to school.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "townhomes and duplexes, and not enough childcare.",
+  "after": "townhomes and duplexes; too little childcare.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "family apartments and new infill, with crowded schools.",
+  "after": "family apartments and new infill; crowded schools.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "apartments near transit, home to households that depend on wages alone.",
+  "after": "apartments near transit; households living on wages alone.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "large mixed-use blocks and newer homes, growing faster than its infrastructure.",
+  "after": "large mixed-use blocks and newer homes; growth outpaces infrastructure.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "working households near advanced logistics sites, with long commutes.",
+  "after": "working households near advanced logistics sites; long commutes.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "small fringe settlements on wells and septic systems now being converted, caught in annexation disputes.",
+  "after": "small fringe settlements converting from wells and septic; annexation disputes.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "new housing, rising high school enrollment and an argument over expanding transit.",
+  "after": "new housing, rising high school enrollment, a dispute over transit expansion.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "new, mostly owner-occupied development, with uneven services nearby.",
+  "after": "new, mostly owner-occupied development; uneven nearby services.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "floods at its drainage crossings; many residents rent and many work seasonally.",
+  "after": "floods at drainage crossings; many renters and seasonal workers.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "the edge of the employment district, with shift work and airport noise.",
+  "after": "edge of the employment district; shift work and airport noise.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "high-income new housing on large lots, paying for its own infrastructure.",
+  "after": "high-income new housing on large lots that pays for its own infrastructure.",
+  "kind": "line-edit",
+  "reason": "Shorter neighborhood note; item kept."
+ },
+ {
+  "before": "Longtime homeowners and newer renters are in very different financial positions. South Yards and Colfax East have high shares of renters and severe cost burdens. The city has not settled emergency rent assistance, tenant information, inclusionary housing or legal support.",
+  "after": "Longtime homeowners and newer renters are in very different financial positions. South Yards and Colfax East have many renters and severe cost burdens. Emergency rent assistance, tenant information, inclusionary housing and legal support are unsettled.",
+  "kind": "line-edit",
+  "reason": "Shorter."
+ },
+ {
+  "before": "Older farm addresses, newly subdivided parcels and apartment complexes may not match across county mapping (GIS), postal delivery, tax rolls, utility accounts and school assignment systems. Having an account is not proof of residency.",
+  "after": "Old farm addresses, newly subdivided parcels and apartment complexes may not match across county mapping (GIS), postal delivery, tax rolls, utility accounts and school assignment. An account does not prove residency.",
+  "kind": "line-edit",
+  "reason": "Shorter."
+ },
+ {
+  "before": "A region that relies on groundwater, agricultural parcels, special districts and utility extensions cannot assume unlimited supply. Households, housing developers and industrial employers",
+  "after": "The region relies on groundwater, farm parcels, special districts and utility extensions, so it cannot assume unlimited supply. Households, developers and industrial employers",
+  "kind": "line-edit",
+  "reason": "Shorter, plainer."
+ },
+ {
+  "before": "The urban center has a rail hub in the scenario, but areas to the north and east have infrequent service, late-shift workers, and no settled transit partnership.",
+  "after": "The center has a rail hub in the scenario. The north and east have infrequent service, late-shift workers and no settled transit partnership.",
+  "kind": "line-edit",
+  "reason": "Split long sentence."
+ },
+ {
+  "before": "Under Colorado's real structure, the county administers",
+  "after": "In Colorado's real structure, the county administers",
+  "kind": "line-edit",
+  "reason": "Plainer."
+ },
+ {
+  "before": "Existing farmland, drainage corridors and protected airspace remain real constraints. Urbanization creates value",
+  "after": "Farmland, drainage corridors and protected airspace are real constraints. Growth creates value",
+  "kind": "line-edit",
+  "reason": "Plainer words."
+ },
+ {
+  "before": "A citywide digital vote or app may reproduce those differences instead of resolving them.",
+  "after": "A citywide digital vote or app may repeat those gaps.",
+  "kind": "line-edit",
+  "reason": "Shorter; avoids 'X instead of Y'."
+ },
+ {
+  "before": "relocated from Albuquerque in the scenario's sports history. They play at Aerotropolis Park, a 16,210-seat ballpark with views of active launches",
+  "after": "moved from Albuquerque in the scenario. They play at Aerotropolis Park, a 16,210-seat ballpark with views of launches",
+  "kind": "line-edit",
+  "reason": "Shorter."
+ },
+ {
+  "before": "East Detroit's own City and County Housing Division (EDHD) handles city-funded housing policy, affordable housing development and preservation, local assistance and homelessness prevention. It works alongside EDRHA but cannot direct it; Reading 3 covers the pair.",
+  "after": "The city's own City and County Housing Division (EDHD) handles city-funded housing policy, affordable housing development and preservation, local assistance and homelessness prevention. It works with EDRHA but cannot direct it. Reading 3 covers both.",
+  "kind": "line-edit",
+  "reason": "Split sentence."
+ },
+ {
+  "before": "The Directory of Departments and Agencies describes each body in detail.",
+  "after": "The Directory of Departments and Agencies describes each one.",
+  "kind": "line-edit",
+  "reason": "Shorter."
+ },
+ {
+  "before": "You can add cases, change details and argue about what they mean. Test every service against at least four kinds of case: a routine case, a disputed record, an outside partner that refuses to take part, and a case that needs human help or an appeal.",
+  "after": "Test every service against at least four kinds of case:\n\n- a routine case\n- a disputed record\n- an outside partner that refuses to take part\n- a case that needs human help or an appeal\n\nYou can add cases, change details and argue about what they mean.",
+  "kind": "structure",
+  "reason": "Put the task first; list the four case types."
+ }
+]

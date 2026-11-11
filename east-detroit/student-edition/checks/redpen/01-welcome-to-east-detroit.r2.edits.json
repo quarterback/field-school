@@ -1,0 +1,26 @@
+[
+ {
+  "before": "U.S. Census QuickFacts for Adams County reports:\n\n- median household income (2020–2024): \\$94,571 in 2024 dollars\n- median gross rent (2020–2024): \\$1,781\n- people in poverty (2020–2024): about 9.8%\n- owner-occupied housing (2020–2024): 68.6%\n- Hispanic or Latino residents (2020–2024): 43.7%\n- population (July 2025 estimate): 554,668",
+  "after": "U.S. Census QuickFacts for Adams County reports, for 2020–2024:\n\n- median household income: \\$94,571 in 2024 dollars\n- median gross rent: \\$1,781\n- people in poverty: about 9.8%\n- owner-occupied housing: 68.6%\n- Hispanic or Latino residents: 43.7%\n\nIts July 2025 estimate puts Adams County at 554,668 residents.",
+  "kind": "redundancy",
+  "reason": "State the 2020-2024 period once instead of on every list item."
+ },
+ {
+  "before": "Zoning and other rules come separately.",
+  "after": "Zoning and other rules are set separately.",
+  "kind": "line-edit",
+  "reason": "Clearer wording."
+ },
+ {
+  "before": "Retired homeowner in Old Watkins; the parcel has an older rural address and an unmatched new GIS record",
+  "after": "Retired homeowner in Old Watkins; the parcel has an old rural address and an unmatched new GIS record",
+  "kind": "line-edit",
+  "reason": "Plainer word."
+ },
+ {
+  "before": "# Six households to test services against",
+  "after": "# Six test households",
+  "kind": "line-edit",
+  "reason": "Shorter heading."
+ }
+]

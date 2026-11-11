@@ -1,0 +1,228 @@
+{
+  "brief": "Read for university students playing city departments in a class simulation; purpose: Help each student find and understand one role: what it runs, its limits, its pressure, and its questions for the spec..\nDecide what deserves to exist before shortening sentences.\nIdentify duplicate claims even when phrased differently; cut the weaker occurrence.\nRemove introductions that delay the answer and conclusions that repeat it.\nDelete explanations that add no evidence, distinction, decision, or necessary context.\nPreserve essential complexity, uncertainty, exceptions, citations, facts, and the author’s voice.\nPrefer deleting a paragraph to polishing one that adds no information.\nAvoid arbitrary word-count quotas, generic replacement prose, and an enforced house voice.\nSuggest only defensible changes, quoting the exact source span in before and the proposed replacement in after.\nIf a justified cut removes a number, date, URL or email that appears nowhere else, list each one in that edit's allowLoss array and say why in reason.",
+  "inspection": {
+    "words": 3691,
+    "characters": 25007,
+    "paragraphs": 188,
+    "sentences": 333,
+    "possibleRepeatedSentences": [
+      {
+        "first": "A-09 takes part only if a student claims it.",
+        "later": "*Optional: takes part only if a student claims it.",
+        "similarity": 0.8,
+        "note": "Possible duplication. Editorial review required."
+      },
+      {
+        "first": "**Works with:** A-05, D-05, D-07, D-15, R-01.",
+        "later": "**Works with:** D-05, A-07, D-04, R-01.",
+        "similarity": 0.8,
+        "note": "Possible duplication. Editorial review required."
+      },
+      {
+        "first": "**Works with:** A-06, A-07, D-04, D-07, R-01.",
+        "later": "**Works with:** D-05, A-07, D-04, R-01.",
+        "similarity": 0.8,
+        "note": "Possible duplication. Editorial review required."
+      },
+      {
+        "first": "**Start with:** Reading 3; Reading 1 (condition 1; household H01).",
+        "later": "**Start with:** Reading 3; Reading 1 (household H01).",
+        "similarity": 0.88,
+        "note": "Possible duplication. Editorial review required."
+      },
+      {
+        "first": "**Start with:** Reading 1 (condition 7).",
+        "later": "**Start with:** Reading 1 (condition 7).",
+        "similarity": 1,
+        "note": "Possible duplication. Editorial review required."
+      },
+      {
+        "first": "**Start with:** Reading 1 (condition 7).",
+        "later": "**Start with:** Reading 1 (condition 7).",
+        "similarity": 1,
+        "note": "Possible duplication. Editorial review required."
+      },
+      {
+        "first": "**Start with:** Reading 1 (condition 7).",
+        "later": "**Start with:** Reading 1 (condition 7).",
+        "similarity": 1,
+        "note": "Possible duplication. Editorial review required."
+      },
+      {
+        "first": "**Start with:** Reading 1 (civic and cultural anchors).",
+        "later": "**Start with:** Reading 1 (civic and cultural anchors; condition 7).",
+        "similarity": 0.8,
+        "note": "Possible duplication. Editorial review required."
+      },
+      {
+        "first": "**Likely refusal:** patient records leaving hospital systems.",
+        "later": "**Likely refusal:** patient records leaving hospital systems.",
+        "similarity": 1,
+        "note": "Possible duplication. Editorial review required."
+      }
+    ],
+    "possibleRepeatedParagraphs": [
+      {
+        "first": 4,
+        "later": 30,
+        "overlap": 0.6,
+        "firstText": "- **D-01 to D-15** are city-county departments. They must take part, though they can object and set conditions.\n- **A-01 to A-09** are outside agencies with their own boards, budgets and records. Each can join the exchange, join on conditions, or refuse. A-09 takes part only if a student claims it.\n- **R-01 to R-03** are resident groups. They don't run services; they test whether the system works for the people it serves.",
+        "laterText": "## D-03 City Manager / Administration",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 4,
+        "later": 66,
+        "overlap": 0.8,
+        "firstText": "- **D-01 to D-15** are city-county departments. They must take part, though they can object and set conditions.\n- **A-01 to A-09** are outside agencies with their own boards, budgets and records. Each can join the exchange, join on conditions, or refuse. A-09 takes part only if a student claims it.\n- **R-01 to R-03** are resident groups. They don't run services; they test whether the system works for the people it serves.",
+        "laterText": "## D-09 Digital Service and Records",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 4,
+        "later": 166,
+        "overlap": 0.8,
+        "firstText": "- **D-01 to D-15** are city-county departments. They must take part, though they can object and set conditions.\n- **A-01 to A-09** are outside agencies with their own boards, budgets and records. Each can join the exchange, join on conditions, or refuse. A-09 takes part only if a student claims it.\n- **R-01 to R-03** are resident groups. They don't run services; they test whether the system works for the people it serves.",
+        "laterText": "*Optional: takes part only if a student claims it.*",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 9,
+        "later": 11,
+        "overlap": 0.67,
+        "firstText": "Every entry has to answer four questions for the spec:",
+        "laterText": "Each entry's \"Questions for the spec\" are the place to start. You answer them, or negotiate them.",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 13,
+        "later": 42,
+        "overlap": 0.6,
+        "firstText": "| If you care about… | Look at |\n|---|---|\n| Housing, rent, eviction, homelessness | D-05, A-06, A-07, D-04, R-01 |\n| Addresses, maps, parcels, records that don't match | D-07, D-08, D-06, R-02 |\n| Benefits, food and cash assistance, appeals | D-04, A-05, D-15 |\n| Schools, children and families | A-01, D-07, D-04 |\n| Health care, hospitals, ambulances | A-08, A-09, D-12, D-11 |\n| Emergencies, 911, police, fire | D-10, D-11, D-07, A-08 |\n| Transit, roads, getting around | A-04, D-14, R-03 |\n| Water, sewer, growth, land use | A-03, D-06, D-14, R-02 |\n| Courts, legal process, protection orders | A-07, D-15, D-05 |\n| Libraries, internet access, help for people without phones | A-02, D-13, R-03 |\n| Money, budgets, taxes, buying technology | D-08, D-02, D-03 |\n| Running the exchange itself, privacy, security | D-09, D-15, D-03 |\n| Politics, priorities, final approval | D-01, D-02, D-03 |\n| Fairness, language access, disability access | D-15, R-03, R-01 |",
+        "laterText": "## D-05 Housing Division (EDHD)",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 13,
+        "later": 48,
+        "overlap": 0.6,
+        "firstText": "| If you care about… | Look at |\n|---|---|\n| Housing, rent, eviction, homelessness | D-05, A-06, A-07, D-04, R-01 |\n| Addresses, maps, parcels, records that don't match | D-07, D-08, D-06, R-02 |\n| Benefits, food and cash assistance, appeals | D-04, A-05, D-15 |\n| Schools, children and families | A-01, D-07, D-04 |\n| Health care, hospitals, ambulances | A-08, A-09, D-12, D-11 |\n| Emergencies, 911, police, fire | D-10, D-11, D-07, A-08 |\n| Transit, roads, getting around | A-04, D-14, R-03 |\n| Water, sewer, growth, land use | A-03, D-06, D-14, R-02 |\n| Courts, legal process, protection orders | A-07, D-15, D-05 |\n| Libraries, internet access, help for people without phones | A-02, D-13, R-03 |\n| Money, budgets, taxes, buying technology | D-08, D-02, D-03 |\n| Running the exchange itself, privacy, security | D-09, D-15, D-03 |\n| Politics, priorities, final approval | D-01, D-02, D-03 |\n| Fairness, language access, disability access | D-15, R-03, R-01 |",
+        "laterText": "## D-06 Planning, Building and Land Use",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 13,
+        "later": 66,
+        "overlap": 0.6,
+        "firstText": "| If you care about… | Look at |\n|---|---|\n| Housing, rent, eviction, homelessness | D-05, A-06, A-07, D-04, R-01 |\n| Addresses, maps, parcels, records that don't match | D-07, D-08, D-06, R-02 |\n| Benefits, food and cash assistance, appeals | D-04, A-05, D-15 |\n| Schools, children and families | A-01, D-07, D-04 |\n| Health care, hospitals, ambulances | A-08, A-09, D-12, D-11 |\n| Emergencies, 911, police, fire | D-10, D-11, D-07, A-08 |\n| Transit, roads, getting around | A-04, D-14, R-03 |\n| Water, sewer, growth, land use | A-03, D-06, D-14, R-02 |\n| Courts, legal process, protection orders | A-07, D-15, D-05 |\n| Libraries, internet access, help for people without phones | A-02, D-13, R-03 |\n| Money, budgets, taxes, buying technology | D-08, D-02, D-03 |\n| Running the exchange itself, privacy, security | D-09, D-15, D-03 |\n| Politics, priorities, final approval | D-01, D-02, D-03 |\n| Fairness, language access, disability access | D-15, R-03, R-01 |",
+        "laterText": "## D-09 Digital Service and Records",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 13,
+        "later": 72,
+        "overlap": 0.67,
+        "firstText": "| If you care about… | Look at |\n|---|---|\n| Housing, rent, eviction, homelessness | D-05, A-06, A-07, D-04, R-01 |\n| Addresses, maps, parcels, records that don't match | D-07, D-08, D-06, R-02 |\n| Benefits, food and cash assistance, appeals | D-04, A-05, D-15 |\n| Schools, children and families | A-01, D-07, D-04 |\n| Health care, hospitals, ambulances | A-08, A-09, D-12, D-11 |\n| Emergencies, 911, police, fire | D-10, D-11, D-07, A-08 |\n| Transit, roads, getting around | A-04, D-14, R-03 |\n| Water, sewer, growth, land use | A-03, D-06, D-14, R-02 |\n| Courts, legal process, protection orders | A-07, D-15, D-05 |\n| Libraries, internet access, help for people without phones | A-02, D-13, R-03 |\n| Money, budgets, taxes, buying technology | D-08, D-02, D-03 |\n| Running the exchange itself, privacy, security | D-09, D-15, D-03 |\n| Politics, priorities, final approval | D-01, D-02, D-03 |\n| Fairness, language access, disability access | D-15, R-03, R-01 |",
+        "laterText": "## D-10 Police, 911 and Emergency Management",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 13,
+        "later": 150,
+        "overlap": 0.6,
+        "firstText": "| If you care about… | Look at |\n|---|---|\n| Housing, rent, eviction, homelessness | D-05, A-06, A-07, D-04, R-01 |\n| Addresses, maps, parcels, records that don't match | D-07, D-08, D-06, R-02 |\n| Benefits, food and cash assistance, appeals | D-04, A-05, D-15 |\n| Schools, children and families | A-01, D-07, D-04 |\n| Health care, hospitals, ambulances | A-08, A-09, D-12, D-11 |\n| Emergencies, 911, police, fire | D-10, D-11, D-07, A-08 |\n| Transit, roads, getting around | A-04, D-14, R-03 |\n| Water, sewer, growth, land use | A-03, D-06, D-14, R-02 |\n| Courts, legal process, protection orders | A-07, D-15, D-05 |\n| Libraries, internet access, help for people without phones | A-02, D-13, R-03 |\n| Money, budgets, taxes, buying technology | D-08, D-02, D-03 |\n| Running the exchange itself, privacy, security | D-09, D-15, D-03 |\n| Politics, priorities, final approval | D-01, D-02, D-03 |\n| Fairness, language access, disability access | D-15, R-03, R-01 |",
+        "laterText": "**Works with:** D-05, A-07, D-04, R-01. **Start with:** Reading 3.",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 13,
+        "later": 182,
+        "overlap": 0.67,
+        "firstText": "| If you care about… | Look at |\n|---|---|\n| Housing, rent, eviction, homelessness | D-05, A-06, A-07, D-04, R-01 |\n| Addresses, maps, parcels, records that don't match | D-07, D-08, D-06, R-02 |\n| Benefits, food and cash assistance, appeals | D-04, A-05, D-15 |\n| Schools, children and families | A-01, D-07, D-04 |\n| Health care, hospitals, ambulances | A-08, A-09, D-12, D-11 |\n| Emergencies, 911, police, fire | D-10, D-11, D-07, A-08 |\n| Transit, roads, getting around | A-04, D-14, R-03 |\n| Water, sewer, growth, land use | A-03, D-06, D-14, R-02 |\n| Courts, legal process, protection orders | A-07, D-15, D-05 |\n| Libraries, internet access, help for people without phones | A-02, D-13, R-03 |\n| Money, budgets, taxes, buying technology | D-08, D-02, D-03 |\n| Running the exchange itself, privacy, security | D-09, D-15, D-03 |\n| Politics, priorities, final approval | D-01, D-02, D-03 |\n| Fairness, language access, disability access | D-15, R-03, R-01 |",
+        "laterText": "## R-03 Workers and Disability Access Coalition",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 15,
+        "later": 41,
+        "overlap": 0.6,
+        "firstText": "| Test household (Reading 1) | Entries most involved |\n|---|---|\n| H01: renters in Colfax East; hourly schedule changes weekly | D-04, D-05, D-09, A-05, R-01 |\n| H02: retired homeowner in Old Watkins; rural address doesn't match GIS | D-07, D-08, D-15, R-02 |\n| H03: three-generation household in Box Elder; prefers Spanish | D-15, D-04, A-02, R-03 |\n| H04: shift worker in Portside; shuttle ends before the last shift | A-04, D-14, R-03 |\n| H05: single parent in West Commons; two children, two schools | A-01, D-07, D-04 |\n| H06: business owner in South Yards; address and parcel don't match | D-06, D-07, D-08 |",
+        "laterText": "**Works with:** A-05, D-05, D-07, D-15, R-01. **Start with:** Reading 1 (conditions 1, 2 and 6; households H01, H03, H05); Reading 2 (county-administered benefits).",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 15,
+        "later": 47,
+        "overlap": 0.62,
+        "firstText": "| Test household (Reading 1) | Entries most involved |\n|---|---|\n| H01: renters in Colfax East; hourly schedule changes weekly | D-04, D-05, D-09, A-05, R-01 |\n| H02: retired homeowner in Old Watkins; rural address doesn't match GIS | D-07, D-08, D-15, R-02 |\n| H03: three-generation household in Box Elder; prefers Spanish | D-15, D-04, A-02, R-03 |\n| H04: shift worker in Portside; shuttle ends before the last shift | A-04, D-14, R-03 |\n| H05: single parent in West Commons; two children, two schools | A-01, D-07, D-04 |\n| H06: business owner in South Yards; address and parcel don't match | D-06, D-07, D-08 |",
+        "laterText": "**Works with:** A-06, A-07, D-04, D-07, R-01. **Neighborhoods:** Colfax East and South Yards (the highest rent burdens), Box Elder, Central Station. **Start with:** Reading 3; Reading 1 (condition 1; household H01).",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 15,
+        "later": 54,
+        "overlap": 0.8,
+        "firstText": "| Test household (Reading 1) | Entries most involved |\n|---|---|\n| H01: renters in Colfax East; hourly schedule changes weekly | D-04, D-05, D-09, A-05, R-01 |\n| H02: retired homeowner in Old Watkins; rural address doesn't match GIS | D-07, D-08, D-15, R-02 |\n| H03: three-generation household in Box Elder; prefers Spanish | D-15, D-04, A-02, R-03 |\n| H04: shift worker in Portside; shuttle ends before the last shift | A-04, D-14, R-03 |\n| H05: single parent in West Commons; two children, two schools | A-01, D-07, D-04 |\n| H06: business owner in South Yards; address and parcel don't match | D-06, D-07, D-08 |",
+        "laterText": "## D-07 Address Office and GIS",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 15,
+        "later": 59,
+        "overlap": 0.67,
+        "firstText": "| Test household (Reading 1) | Entries most involved |\n|---|---|\n| H01: renters in Colfax East; hourly schedule changes weekly | D-04, D-05, D-09, A-05, R-01 |\n| H02: retired homeowner in Old Watkins; rural address doesn't match GIS | D-07, D-08, D-15, R-02 |\n| H03: three-generation household in Box Elder; prefers Spanish | D-15, D-04, A-02, R-03 |\n| H04: shift worker in Portside; shuttle ends before the last shift | A-04, D-14, R-03 |\n| H05: single parent in West Commons; two children, two schools | A-01, D-07, D-04 |\n| H06: business owner in South Yards; address and parcel don't match | D-06, D-07, D-08 |",
+        "laterText": "**Works with:** D-06, D-08, D-10, A-01, A-03, R-02. **Neighborhoods:** Old Watkins (rural addresses), Inboden (subdivisions), South Yards. **Start with:** Reading 1 (condition 2; households H02, H05, H06).",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 15,
+        "later": 122,
+        "overlap": 0.6,
+        "firstText": "| Test household (Reading 1) | Entries most involved |\n|---|---|\n| H01: renters in Colfax East; hourly schedule changes weekly | D-04, D-05, D-09, A-05, R-01 |\n| H02: retired homeowner in Old Watkins; rural address doesn't match GIS | D-07, D-08, D-15, R-02 |\n| H03: three-generation household in Box Elder; prefers Spanish | D-15, D-04, A-02, R-03 |\n| H04: shift worker in Portside; shuttle ends before the last shift | A-04, D-14, R-03 |\n| H05: single parent in West Commons; two children, two schools | A-01, D-07, D-04 |\n| H06: business owner in South Yards; address and parcel don't match | D-06, D-07, D-08 |",
+        "laterText": "**Works with:** D-13, D-15, D-09, R-03. **Start with:** Reading 1 (condition 10; household H03); Reading 2.",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 15,
+        "later": 150,
+        "overlap": 0.7,
+        "firstText": "| Test household (Reading 1) | Entries most involved |\n|---|---|\n| H01: renters in Colfax East; hourly schedule changes weekly | D-04, D-05, D-09, A-05, R-01 |\n| H02: retired homeowner in Old Watkins; rural address doesn't match GIS | D-07, D-08, D-15, R-02 |\n| H03: three-generation household in Box Elder; prefers Spanish | D-15, D-04, A-02, R-03 |\n| H04: shift worker in Portside; shuttle ends before the last shift | A-04, D-14, R-03 |\n| H05: single parent in West Commons; two children, two schools | A-01, D-07, D-04 |\n| H06: business owner in South Yards; address and parcel don't match | D-06, D-07, D-08 |",
+        "laterText": "**Works with:** D-05, A-07, D-04, R-01. **Start with:** Reading 3.",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 15,
+        "later": 177,
+        "overlap": 0.75,
+        "firstText": "| Test household (Reading 1) | Entries most involved |\n|---|---|\n| H01: renters in Colfax East; hourly schedule changes weekly | D-04, D-05, D-09, A-05, R-01 |\n| H02: retired homeowner in Old Watkins; rural address doesn't match GIS | D-07, D-08, D-15, R-02 |\n| H03: three-generation household in Box Elder; prefers Spanish | D-15, D-04, A-02, R-03 |\n| H04: shift worker in Portside; shuttle ends before the last shift | A-04, D-14, R-03 |\n| H05: single parent in West Commons; two children, two schools | A-01, D-07, D-04 |\n| H06: business owner in South Yards; address and parcel don't match | D-06, D-07, D-08 |",
+        "laterText": "**Works with:** D-05, A-06, A-07, D-15. **Start with:** Reading 3; Reading 1 (household H01).",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 15,
+        "later": 181,
+        "overlap": 0.64,
+        "firstText": "| Test household (Reading 1) | Entries most involved |\n|---|---|\n| H01: renters in Colfax East; hourly schedule changes weekly | D-04, D-05, D-09, A-05, R-01 |\n| H02: retired homeowner in Old Watkins; rural address doesn't match GIS | D-07, D-08, D-15, R-02 |\n| H03: three-generation household in Box Elder; prefers Spanish | D-15, D-04, A-02, R-03 |\n| H04: shift worker in Portside; shuttle ends before the last shift | A-04, D-14, R-03 |\n| H05: single parent in West Commons; two children, two schools | A-01, D-07, D-04 |\n| H06: business owner in South Yards; address and parcel don't match | D-06, D-07, D-08 |",
+        "laterText": "**Works with:** D-07, D-06, D-14, A-03. **Start with:** Reading 1 (conditions 2 and 9; household H02).",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 15,
+        "later": 185,
+        "overlap": 0.71,
+        "firstText": "| Test household (Reading 1) | Entries most involved |\n|---|---|\n| H01: renters in Colfax East; hourly schedule changes weekly | D-04, D-05, D-09, A-05, R-01 |\n| H02: retired homeowner in Old Watkins; rural address doesn't match GIS | D-07, D-08, D-15, R-02 |\n| H03: three-generation household in Box Elder; prefers Spanish | D-15, D-04, A-02, R-03 |\n| H04: shift worker in Portside; shuttle ends before the last shift | A-04, D-14, R-03 |\n| H05: single parent in West Commons; two children, two schools | A-01, D-07, D-04 |\n| H06: business owner in South Yards; address and parcel don't match | D-06, D-07, D-08 |",
+        "laterText": "**Works with:** D-15, A-02, A-04, D-14. **Start with:** Reading 1 (condition 10; households H03 and H04).",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 19,
+        "later": 151,
+        "overlap": 0.6,
+        "firstText": "**Runs and holds:** the administration's agenda, executive orders and appointments. Appoints the County Court's judges (A-07) and the Health and Hospital Authority's board (A-08).",
+        "laterText": "## A-07 East Detroit County Court",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      }
+    ],
+    "note": "These are surface signals, not a semantic review or a recommendation to shorten."
+  }
+}

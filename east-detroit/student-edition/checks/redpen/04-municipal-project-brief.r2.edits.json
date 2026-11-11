@@ -1,0 +1,44 @@
+[
+ {
+  "before": "Earlier drafts presented these as adopted. None is.",
+  "after": "Earlier drafts presented these as adopted. None was.",
+  "kind": "line-edit",
+  "reason": "Grammar."
+ },
+ {
+  "before": "what another agency actually controls,",
+  "after": "what another agency controls,",
+  "kind": "line-edit",
+  "reason": "Excess word."
+ },
+ {
+  "before": "Choose the level of technology and partnership you can justify. You do not have to accept the ED-Core and ED-Wallet design from earlier drafts.",
+  "after": "Choose the level of technology and partnership you can justify.",
+  "kind": "duplicate",
+  "reason": "ED-Core and ED-Wallet are already listed as open for debate."
+ },
+ {
+  "before": "tests of how a service actually behaves",
+  "after": "tests of how a service behaves",
+  "kind": "line-edit",
+  "reason": "Excess word."
+ },
+ {
+  "before": "A first launch can be one complete, useful transaction, several connected touchpoints, or a process used only by staff, as long as the class can justify it.",
+  "after": "The first launch can be one complete, useful transaction, several connected touchpoints or a staff-only process, if the class can justify it.",
+  "kind": "line-edit",
+  "reason": "Fewer words."
+ },
+ {
+  "before": "You present your proposals, and students challenge each other's assumptions.",
+  "after": "You present your proposals and challenge each other's assumptions.",
+  "kind": "line-edit",
+  "reason": "Fewer words."
+ },
+ {
+  "before": "Outside agencies may accept, negotiate or refuse. If a partner says no,",
+  "after": "Outside agencies may accept, negotiate or refuse. If one says no,",
+  "kind": "line-edit",
+  "reason": "Fewer words."
+ }
+]

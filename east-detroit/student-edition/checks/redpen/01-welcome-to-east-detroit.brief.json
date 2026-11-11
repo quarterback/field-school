@@ -1,0 +1,93 @@
+{
+  "brief": "Read for university students playing city departments in a class simulation; purpose: Introduce the fictional city: its setting, people, neighborhoods, institutions and test households..\nDecide what deserves to exist before shortening sentences.\nIdentify duplicate claims even when phrased differently; cut the weaker occurrence.\nRemove introductions that delay the answer and conclusions that repeat it.\nDelete explanations that add no evidence, distinction, decision, or necessary context.\nPreserve essential complexity, uncertainty, exceptions, citations, facts, and the author’s voice.\nPrefer deleting a paragraph to polishing one that adds no information.\nAvoid arbitrary word-count quotas, generic replacement prose, and an enforced house voice.\nSuggest only defensible changes, quoting the exact source span in before and the proposed replacement in after.\nIf a justified cut removes a number, date, URL or email that appears nowhere else, list each one in that edit's allowLoss array and say why in reason.",
+  "inspection": {
+    "words": 2692,
+    "characters": 18813,
+    "paragraphs": 62,
+    "sentences": 264,
+    "possibleRepeatedSentences": [],
+    "possibleRepeatedParagraphs": [
+      {
+        "first": 1,
+        "later": 10,
+        "overlap": 0.6,
+        "firstText": "---\ntitle: \"Welcome to East Detroit\"\nsubtitle: \"Reading 1 of 4: The city, its people and its neighborhoods in 2030\"\nauthor: \"Public Mechanics\"\ndate: \"Student edition, November 2026\"\nlang: en-US\n---",
+        "laterText": ": Table 1. East Detroit at a glance",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 10,
+        "later": 13,
+        "overlap": 0.6,
+        "firstText": ": Table 1. East Detroit at a glance",
+        "laterText": "![Figure 1. Provisional East Detroit study boundary with the 20 neighborhood label points, colored by planning region. The dots mark neighborhood names only; no neighborhood boundaries have been approved. The outline has not been checked against real county, city, airport, school or utility lines.](figures/east_detroit_2030_provisional_map.png){width=100%}",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 10,
+        "later": 21,
+        "overlap": 0.6,
+        "firstText": ": Table 1. East Detroit at a glance",
+        "laterText": "| Indicator | East Detroit 2030 |\n|---|---:|\n| Households that rent | 53.6% |\n| Median household income, in 2024 dollars | \\$88,430 |\n| People below the poverty line | 12.8% |\n| Residents under 18 | 22.6% |\n| Residents 65 and older | 11.6% |\n| Foreign-born residents | 18.4% |\n| Residents speaking another language at home | 29.6% |\n| Adults with a disability or long-term functional limitation | 12.8% |\n| People without health insurance | 10.6% |\n| Renters paying at least 30% of income for housing | 49.8% |\n| Median gross rent, in 2024 dollars | \\$1,865 per month |\n| Non-Hispanic White | 37.4% |\n| Hispanic or Latino, any race | 33.2% |\n| Non-Hispanic Black | 13.5% |\n| Non-Hispanic Asian | 7.8% |\n| Non-Hispanic Indigenous | 1.2% |\n| Other or multiracial, non-Hispanic | 6.9% |",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 10,
+        "later": 22,
+        "overlap": 0.6,
+        "firstText": ": Table 1. East Detroit at a glance",
+        "laterText": ": Table 2. Fictional socioeconomic profile of East Detroit, 2030",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 10,
+        "later": 24,
+        "overlap": 0.6,
+        "firstText": ": Table 1. East Detroit at a glance",
+        "laterText": "REAL REFERENCE: the scale comes from Adams County. U.S. Census QuickFacts for Adams County (2020–2024) reports a median household income of \\$94,571 in 2024 dollars, median gross rent of \\$1,781, about 9.8% of people in poverty, 68.6% of housing owner-occupied, and 43.7% of residents Hispanic or Latino. The July 2025 estimate put Adams County at 554,668 residents. For the real Watkins census-designated place, the 2020–2024 American Community Survey estimates only 847 residents and a median household income of about \\$158,173. Estimates for an area that small are uncertain. East Detroit's assumptions are deliberately harder than Adams County's: lower median income, higher rent, more poverty and far more renters.",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 10,
+        "later": 47,
+        "overlap": 0.6,
+        "firstText": ": Table 1. East Detroit at a glance",
+        "laterText": "- The Hangar at Space Center: a 17,500-seat arena at the central RTD rail hub. The hub's capital plan, fare rules, station management and shared-service responsibilities are open.\n- Denver Fawns (WNBA): based at The Hangar.\n- Colorado Apex (PWHL): plays at The Hangar.\n- Denver Pilots (Triple-A baseball): relocated from Albuquerque in the scenario's sports history. They play at Aerotropolis Park, a 16,210-seat ballpark with views of active launches from the fictional 2030 KCFO.\n- East Detroit Philharmonic & Performing Arts Center (EDPAC): 2,200 seats. A proposed 1% Public Art Commercial Fee is a financing question, not adopted tax law.\n- East Detroit Health System: a Level I regional trauma center, aerospace flight medicine program and teaching hospital. Whether it joins a government emergency data exchange is open.",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 22,
+        "later": 47,
+        "overlap": 0.63,
+        "firstText": ": Table 2. Fictional socioeconomic profile of East Detroit, 2030",
+        "laterText": "- The Hangar at Space Center: a 17,500-seat arena at the central RTD rail hub. The hub's capital plan, fare rules, station management and shared-service responsibilities are open.\n- Denver Fawns (WNBA): based at The Hangar.\n- Colorado Apex (PWHL): plays at The Hangar.\n- Denver Pilots (Triple-A baseball): relocated from Albuquerque in the scenario's sports history. They play at Aerotropolis Park, a 16,210-seat ballpark with views of active launches from the fictional 2030 KCFO.\n- East Detroit Philharmonic & Performing Arts Center (EDPAC): 2,200 seats. A proposed 1% Public Art Commercial Fee is a financing question, not adopted tax law.\n- East Detroit Health System: a Level I regional trauma center, aerospace flight medicine program and teaching hospital. Whether it joins a government emergency data exchange is open.",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 23,
+        "later": 55,
+        "overlap": 0.6,
+        "firstText": "The race and ethnicity categories add to 100% so the simulation can use them as separate groups. Standard Census tables treat race and Hispanic origin differently. Check these categories against a real classification standard before building household-level data. No service design in this course should base eligibility decisions on these attributes.",
+        "laterText": "# Six households to test services against",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 44,
+        "later": 51,
+        "overlap": 0.62,
+        "firstText": "1. **Housing costs and instability.** Longtime homeowners and newer renters are in very different financial positions. South Yards and Colfax East have high shares of renters and severe cost burdens. The city has not settled emergency rent assistance, tenant information, inclusionary housing or legal support.\n2. **Mismatched addresses and records.** Older farm addresses, newly subdivided parcels and apartment complexes may not match across county mapping (GIS), postal delivery, tax rolls, utility accounts and school assignment systems. Having an account is not proof of residency.\n3. **Water and land conversion.** A region that relies on groundwater, agricultural parcels, special districts and utility extensions cannot assume unlimited supply. Households, housing developers and industrial employers compete for service commitments. The real Adams County spaceport plan describes regional water and wastewater needs.\n4. **Long distances.** Much of the city-county is low-density. The urban center has a rail hub in the scenario, but areas to the north and east have infrequent service, late-shift workers, and no settled transit partnership. The city cannot order the Regional Transportation District (RTD) to run a municipal route.\n5. **Jobs without matching housing.** Logistics, manufacturing, entertainment, medical institutions, schools and services create varied shift schedules, pay levels, noise and labor demand.\n6. **Public authority and appeals.** Under Colorado's real structure, the county administers state-supervised benefits. The city-county must decide how new city services connect with those programs without taking over state eligibility rules.\n7. **Health and emergency access.** The scenario includes a trauma center. Dispatch integration, patient information, 911, emergency access, public safety and hospital data are unsettled.\n8. **Schools and young families.** Fast-changing enrollment, new attendance boundaries and school transportation create urgent demands. School districts are independent; their participation must be negotiated.\n9. **Growth on farmland and floodplains.** Existing farmland, drainage corridors and protected airspace remain real constraints. Urbanization creates value for some and displacement risk for landowners, tenants, farmworkers and nearby communities.\n10. **Participation and representation.** Neighborhoods differ in language access, income, housing tenure, commute and ability to attend evening meetings. A citywide digital vote or app may reproduce those differences instead of resolving them.",
+        "laterText": "- East Detroit Unified School District\n- East Detroit Public Library District, which runs the city's libraries\n- East Detroit Water and Sewer Authority\n- Regional Transportation District (RTD), the real Denver-area transit authority\n- the State of Colorado's human services and IT agencies (real)\n- East Detroit County Court, paid for by the city-county but independent in its decisions\n- East Detroit Health and Hospital Authority, the public safety-net hospital\n- East Detroit Health System, the trauma and teaching hospital\n- East Detroit Regional Housing Authority (EDRHA), which runs federal housing assistance and serves communities beyond the city",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 55,
+        "later": 59,
+        "overlap": 0.6,
+        "firstText": "# Six households to test services against",
+        "laterText": "You can add cases, change details and argue about what they mean. Test every service against at least four kinds of case: a routine case, a disputed record, an outside partner that refuses to take part, and a case that needs human help or an appeal.",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      }
+    ],
+    "note": "These are surface signals, not a semantic review or a recommendation to shorten."
+  }
+}

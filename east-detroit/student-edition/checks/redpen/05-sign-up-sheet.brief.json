@@ -1,0 +1,29 @@
+{
+  "brief": "Read for university students playing city departments in a class simulation; purpose: Let students claim one role..\nDecide what deserves to exist before shortening sentences.\nIdentify duplicate claims even when phrased differently; cut the weaker occurrence.\nRemove introductions that delay the answer and conclusions that repeat it.\nDelete explanations that add no evidence, distinction, decision, or necessary context.\nPreserve essential complexity, uncertainty, exceptions, citations, facts, and the author’s voice.\nPrefer deleting a paragraph to polishing one that adds no information.\nAvoid arbitrary word-count quotas, generic replacement prose, and an enforced house voice.\nSuggest only defensible changes, quoting the exact source span in before and the proposed replacement in after.\nIf a justified cut removes a number, date, URL or email that appears nowhere else, list each one in that edit's allowLoss array and say why in reason.",
+  "inspection": {
+    "words": 361,
+    "characters": 3068,
+    "paragraphs": 18,
+    "sentences": 68,
+    "possibleRepeatedSentences": [],
+    "possibleRepeatedParagraphs": [
+      {
+        "first": 5,
+        "later": 9,
+        "overlap": 0.6,
+        "firstText": "You can claim an outside agency or a resident group instead of a city-county department.",
+        "laterText": ": Table 1. City-county departments",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 8,
+        "later": 9,
+        "overlap": 0.6,
+        "firstText": "| ID | Department | Student | If blank |\n|------|-----------------------------|------------------------------|-----------|\n| D-01 | Mayor / County Executive's Office | | Instructor |\n| D-02 | City-County Council and Budget Committee | | Instructor |\n| D-03 | City Manager / Administration | | Instructor |\n| D-04 | Human Services | | Instructor |\n| D-05 | Housing Division (EDHD) | | Instructor |\n| D-06 | Planning, Building and Land Use | | Instructor |\n| D-07 | Address Office and GIS | | Instructor |\n| D-08 | Finance, Tax, Assessor and Procurement | | Instructor |\n| D-09 | Digital Service and Records | | Instructor |\n| D-10 | Police, 911 and Emergency Management | | Instructor |\n| D-11 | Fire Department | | Instructor |\n| D-12 | Public Health | | Instructor |\n| D-13 | Parks, Recreation and Cultural Affairs | | Instructor |\n| D-14 | Transportation and Public Works | | Instructor |\n| D-15 | Clerk, Civil Rights and Appeals | | Instructor |",
+        "laterText": ": Table 1. City-county departments",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      }
+    ],
+    "note": "These are surface signals, not a semantic review or a recommendation to shorten."
+  }
+}

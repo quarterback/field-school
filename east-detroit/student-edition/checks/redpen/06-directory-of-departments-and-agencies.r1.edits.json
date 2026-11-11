@@ -1,0 +1,326 @@
+[
+ {
+  "before": "Pick one entry and claim it on the Sign-up Sheet. The instructor plays every entry nobody claims.",
+  "after": "Claim one entry on the Sign-up Sheet. The instructor plays every unclaimed entry.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "They must take part, though they can object and set conditions.",
+  "after": "They must take part but can object and set conditions.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "Each can join the exchange, join on conditions, or refuse. A-09 takes part only if a student claims it.",
+  "after": "Each can join, join on conditions, or refuse. A-09 is optional.",
+  "kind": "duplicate",
+  "reason": "A-09 entry already says it takes part only if a student claims it."
+ },
+ {
+  "before": "They don't run services; they test whether the system works for the people it serves.",
+  "after": "They run no services. They test whether the system works for residents.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "Where an entry is modeled on a real institution, the entry says so.",
+  "after": "Entries modeled on real institutions say so.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "Estonia's government agencies exchange data through a shared layer called X-tee",
+  "after": "Estonia's agencies exchange data through a shared layer called X-tee",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "describes the data it is willing to share, and lets other members use it under an agreement.",
+  "after": "describes what it will share, and lets other members use it under an agreement.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "Every entry has to answer four questions for the spec:",
+  "after": "Every entry must answer four questions for the spec:",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "Each entry's \"Questions for the spec\" are the place to start. You answer them, or negotiate them.",
+  "after": "Start with your entry's \"Questions for the spec.\" Answer or negotiate them.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "the administration's agenda, executive orders and appointments. Appoints the County Court's judges (A-07) and the Health and Hospital Authority's board (A-08).",
+  "after": "the agenda, executive orders and appointments, including County Court judges (A-07) and the Health and Hospital Authority board (A-08).",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "can direct departments within adopted rules. Cannot make an outside agency join, or spend money the council hasn't approved.",
+  "after": "directs departments within adopted rules. Cannot force an outside agency to join or spend money the council hasn't approved.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "Because it appoints the court's judges and the hospital's board, any request it makes of either can look like an order.",
+  "after": "Since it appoints the court's judges and the hospital's board, any request to either can look like an order.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "passes laws and budgets, after public process.",
+  "after": "passes laws and budgets after public process.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "has approved no money for any of this. Its members answer to neighborhoods as different as High Prairie",
+  "after": "has approved no money for this. Members answer to neighborhoods from High Prairie",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "and Colfax East (\\$58,900).",
+  "after": "to Colfax East (\\$58,900).",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "What should the ordinance require the system to do, and what should it forbid?",
+  "after": "What should the ordinance require and forbid?",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "assigns staff and coordinates departments; cannot create positions the budget doesn't fund.",
+  "after": "assigns staff and coordinates departments. Cannot create unfunded positions.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "if the class designs a system that nobody is assigned to operate, the job lands here.",
+  "after": "if nobody is assigned to operate the system, the job lands here.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "such as food and cash assistance, and the case files that go with them, kept under state and federal rules.",
+  "after": "such as food and cash assistance; their case files, under state and federal rules.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "a city promise to \"simplify benefits\" still has to pass state rules and protect appeal rights.",
+  "after": "a promise to \"simplify benefits\" must still follow state rules and protect appeal rights.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "instead of asking the resident again?",
+  "after": "instead of asking again?",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "housing policy, financing for housing development and preservation, and tenant and homeowner services;",
+  "after": "housing policy, housing development and preservation finance, tenant and homeowner services;",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "runs city programs that have legal authority and council funding.",
+  "after": "runs city programs with legal authority and council funding.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "residents come to it for help the Housing Authority controls. Its own rent help is a limited city grant, and it cannot promise a federal voucher.",
+  "after": "residents ask it for help the Housing Authority controls. Its rent help is a limited city grant; it cannot promise a federal voucher.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "Which overlaps with the Housing Authority are coordination problems, and which need separate authority? What would it want",
+  "after": "Which overlaps with the Housing Authority need coordination, and which need separate authority? What does it want",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "growth is outrunning water capacity, and some of the land developers want sits under airport approaches.",
+  "after": "growth outruns water capacity, and some land developers want sits under airport approaches.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "Can a permit go ahead while an address or parcel record is being corrected?",
+  "after": "Can a permit proceed while an address or parcel record is under correction?",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "the city-county's official address and parcel registry, and the process for correcting it. Almost every other entry will need this registry.",
+  "after": "the official address and parcel registry and its correction process. Almost every other entry needs it.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "fast subdivision means farm addresses, new parcels and apartment complexes often don't match across the county map, the postal service,",
+  "after": "with fast subdivision, farm addresses, new parcels and apartment complexes often don't match across the county map, postal service,",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "every new service adds a yearly running cost, and none is funded. A fee proposed in class is not law until it is adopted.",
+  "after": "every new service adds an unfunded yearly running cost. A fee proposed in class isn't law until adopted.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "it is the obvious candidate to run whatever the class designs, on staff and money nobody has approved.",
+  "after": "the obvious choice to run whatever the class designs, with no approved staff or money.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "dispatch needs an exact location fast, and in the north and east the nearest unit can be far away.",
+  "after": "dispatch needs an exact location fast; in the north and east the nearest unit can be far away.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "Does the Fire Department or the Health and Hospital Authority run ambulance transport? How does a patient record pass from the first responder to the hospital?",
+  "after": "Who runs ambulance transport: Fire or the Health and Hospital Authority? How does a patient record pass from first responder to hospital?",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "many of the residents it serves have trouble getting to care at all.",
+  "after": "many residents it serves struggle to reach care at all.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "far from the north and east, and front-desk staff already get asked for help with every other city system.",
+  "after": "far from the north and east. Front-desk staff already field questions about every other city system.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "What should a resident have to prove to register, given households like H02 and H06 whose addresses don't match?",
+  "after": "What must a resident prove to register, when households like H02 and H06 have mismatched addresses?",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "it owns the streets but not the buses, and the scenario's rail hub",
+  "after": "it owns the streets, not the buses. The scenario's rail hub",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "the public school district for East Detroit, governed by its own elected board.",
+  "after": "East Detroit's public school district, with its own elected board.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "Prairie Crossing's high school is filling), and its elected board doesn't take direction from the city.",
+  "after": "Prairie Crossing's high school is filling). Its board doesn't take direction from the city.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "Colorado allows library districts to be governed apart from the city or county; Reading 2 lists a real one,",
+  "after": "Colorado allows separately governed library districts; Reading 2 lists a real one,",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "it is already where people without home internet go for help. If the city sends more of them, someone has to pay for the staff time, and borrowing records stay confidential.",
+  "after": "people without home internet already come here for help. If the city sends more, someone must pay for staff time. Borrowing records stay confidential.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "the public authority that supplies water and treats wastewater in East Detroit, with its own board, rates and debt. Detroit's split between a regional water authority and the city's own department (Reading 2) is a comparison.",
+  "after": "the public authority for East Detroit's water and wastewater, with its own board, rates and debt. Compare Detroit's split between a regional water authority and the city's own department (Reading 2).",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "it cannot promise water it hasn't secured, and every new housing approval depends on its capacity and on who pays for new pipes.",
+  "after": "it cannot promise water it hasn't secured. Every new housing approval depends on its capacity and who pays for new pipes.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "the real Denver-area transit authority. East Detroit is one of many places it serves.",
+  "after": "the real Denver-area transit authority, serving many places besides East Detroit.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "it answers to a whole region, not to East Detroit, and won't change fares",
+  "after": "it answers to the whole region. It won't change fares",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "state and federal law set the eligibility rules, and it won't open state systems",
+  "after": "state and federal law set eligibility rules. It won't open state systems",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "Every referral to a program with no open voucher or unit makes its waiting list longer.",
+  "after": "Every referral with no open voucher or unit lengthens its waiting list.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "for smaller matters, modeled on Denver's county court: Denver pays for it and the mayor appoints its judges from merit lists, outside Colorado's state court system. Only Denver has this arrangement in real Colorado, so East Detroit's version is a fictional rule written into its founding amendment. Felonies, family and probate cases go to an ordinary state district court.",
+  "after": "for smaller matters, modeled on Denver's county court. Denver funds it, and the mayor appoints its judges from merit lists, outside Colorado's state court system. Only Denver has this in real Colorado, so East Detroit's version is a fictional rule in its founding amendment. Felonies, family and probate cases go to a state district court.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "an independent public authority with a board appointed by the mayor. Modeled on Denver Health, which became a separate public authority under Colorado law in 1997.",
+  "after": "an independent public authority whose board the mayor appoints. Modeled on Denver Health, a separate public authority under Colorado law since 1997.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "so every referral the system sends it carries a cost.",
+  "after": "so every referral costs it money.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "it runs the region's trauma center and owes the city no participation at all.",
+  "after": "it runs the region's trauma center and owes the city no participation.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "Speaks for renters: 53.6% of East Detroit's households, and nearly half of them pay at least 30% of income for housing. Wants help that doesn't require tax records, and appeals that work. Brings renters' actual cases, including household H01. Can take a formal role in governing the system if the city-county grants one.",
+  "after": "Speaks for renters: 53.6% of East Detroit's households. Nearly half of them pay at least 30% of income for housing. Wants help without tax records, and appeals that work. Brings real renter cases, including household H01. Can take a formal governance role if the city-county grants one.",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "parcels that the county map gets wrong",
+  "after": "parcels the county map gets wrong",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ },
+ {
+  "before": "Brings concrete test cases:",
+  "after": "Brings test cases:",
+  "kind": "line-edit",
+  "reason": "Tighten wording; keep all facts."
+ }
+]

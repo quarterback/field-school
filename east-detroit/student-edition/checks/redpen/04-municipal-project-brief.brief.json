@@ -1,0 +1,48 @@
+{
+  "brief": "Read for university students playing city departments in a class simulation; purpose: Tell students what the assignment is, what is settled and open, and what to do and bring..\nDecide what deserves to exist before shortening sentences.\nIdentify duplicate claims even when phrased differently; cut the weaker occurrence.\nRemove introductions that delay the answer and conclusions that repeat it.\nDelete explanations that add no evidence, distinction, decision, or necessary context.\nPreserve essential complexity, uncertainty, exceptions, citations, facts, and the author’s voice.\nPrefer deleting a paragraph to polishing one that adds no information.\nAvoid arbitrary word-count quotas, generic replacement prose, and an enforced house voice.\nSuggest only defensible changes, quoting the exact source span in before and the proposed replacement in after.\nIf a justified cut removes a number, date, URL or email that appears nowhere else, list each one in that edit's allowLoss array and say why in reason.",
+  "inspection": {
+    "words": 2152,
+    "characters": 14381,
+    "paragraphs": 65,
+    "sentences": 213,
+    "possibleRepeatedSentences": [
+      {
+        "first": "**Your work in this stage:**",
+        "later": "**Your work in this stage:**",
+        "similarity": 1,
+        "note": "Possible duplication. Editorial review required."
+      },
+      {
+        "first": "**Your work in this stage:**",
+        "later": "**Your work in this stage:**",
+        "similarity": 1,
+        "note": "Possible duplication. Editorial review required."
+      },
+      {
+        "first": "**Your work in this stage:**",
+        "later": "**Your work in this stage:**",
+        "similarity": 1,
+        "note": "Possible duplication. Editorial review required."
+      }
+    ],
+    "possibleRepeatedParagraphs": [
+      {
+        "first": 5,
+        "later": 21,
+        "overlap": 0.6,
+        "firstText": "The city-county exists; the spec does not. No digital identity, app, procurement, vendor, cloud platform, data exchange, governance board or first service has been approved. Your job is to help establish the facts, develop the spec and its implementation plan, and negotiate with other agencies to carry it out.",
+        "laterText": "## Stage B: Develop an implementation plan",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      },
+      {
+        "first": 11,
+        "later": 12,
+        "overlap": 0.6,
+        "firstText": "## Ideas from earlier drafts, open for debate",
+        "laterText": "Earlier drafts of this project presented the following as adopted. They are not. Each is an example to debate, change or reject:",
+        "note": "Paragraphs share most of their content words. Check whether the later one adds anything."
+      }
+    ],
+    "note": "These are surface signals, not a semantic review or a recommendation to shorten."
+  }
+}
