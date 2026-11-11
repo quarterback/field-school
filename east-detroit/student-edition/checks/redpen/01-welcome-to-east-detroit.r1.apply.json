@@ -1,0 +1,461 @@
+{
+  "original": "---\ntitle: \"Welcome to East Detroit\"\nsubtitle: \"Reading 1 of 4: The city, its people and its neighborhoods in 2030\"\nauthor: \"Public Mechanics\"\ndate: \"Student edition, November 2026\"\nlang: en-US\n---\n\n# Real, invented and undecided\n\nEast Detroit is a fictional consolidated city and county in Colorado, east of Denver International Airport. The land around it is real. The city, its statistics, its neighborhoods and its institutions are invented for this course.\n\nAll six documents in this set use three labels:\n\n- **REAL REFERENCE:** a real place, law, organization or published figure. Sources are at the end of each document.\n- **SCENARIO:** a fact the course has created. Treat it as true inside the exercise.\n- **OPEN:** a choice the class hasn't made yet.\n\nDon't present scenario figures, such as East Detroit's population or income levels, as real Census data or Colorado law.\n\n# The city in 2030\n\nEast Detroit is a newly consolidated Colorado city and county. Its growth resembles metropolitan Phoenix in scale and pattern: fast residential expansion, master-planned districts, warehousing and logistics, jobs arriving before public facilities, older settlements meeting new development, and wide differences in who benefits from growth. The course begins in 2030. Nobody has to explain how the city got this big.\n\n| Item | East Detroit in 2030 (SCENARIO) |\n|---|---|\n| Official name | City and County of East Detroit, Colorado |\n| Population | 382,417 |\n| Occupied households | 155,800 |\n| Residents in group quarters | 3,823 |\n| How the population is modeled | 155,800 households × 2.43 residents + 3,823 in group quarters = 382,417 |\n| Study area | About 115.4 square miles, unsurveyed |\n| Built-up area | About 25 square miles, averaging 15,297 people per square mile |\n| Neighborhoods | 20 provisional neighborhoods in 5 planning regions |\n\n: Table 1. East Detroit at a glance\n\nThe 115.4-square-mile study area is far larger than the built-up city. Much of it is employment land, farmland, aviation protection zones, infrastructure or undeveloped land.\n\nYou may assume the constitutional and legislative steps that created the city-county have already happened. Its charter design, intergovernmental agreements, service platform and administrative structure have not been adopted; those are OPEN.\n\n![Figure 1. Provisional East Detroit study boundary with the 20 neighborhood label points, colored by planning region. The dots mark neighborhood names only; no neighborhood boundaries have been approved. The outline has not been checked against real county, city, airport, school or utility lines.](figures/east_detroit_2030_provisional_map.png){width=100%}\n\n# Where the city sits\n\nREAL REFERENCE: East Detroit is set around real places: Watkins, the Colorado Air and Space Port (airport code KCFO), Interstate 70, the Union Pacific rail corridor, Colfax Avenue, Box Elder Creek, and Denver International Airport to the west. The main existing postal code is Watkins 80137. Neighboring real postal codes may appear on reference maps. The course has not created any new ZIP codes; a city postal scheme for 2030 is OPEN.\n\nAdams County's *Colorado Air and Space Port Subarea Plan* describes a 48-square-mile study area bounded by I-70, Hudson Road, E. 72nd Avenue and Harback Road. That area included 21,079 acres of unincorporated Adams County, 9,738 acres within Aurora, and 375 acres in Bennett. The plan identifies gaps in water and wastewater capacity and land-use conflicts near airport operations. The fictional city has not solved them.\n\nSCENARIO: East Detroit's study area includes the 48-square-mile spaceport planning area and extends north and east from it. Watkins remains the city's historic southeastern gateway. The larger area leaves room for a credible city without placing housing around the spaceport runway.\n\nThe real airfield, runway protection zones, stormwater channels, major roads and county and municipal lines limit what the city can build. The 2030 transit hubs, the light and heavy rail network, venue sites, district names and service locations are invented or proposed.\n\n# Who lives in East Detroit\n\nTable 2 is SCENARIO: planning assumptions, not measurements of the real area. Population and household totals are in Table 1.\n\n| Indicator | East Detroit 2030 |\n|---|---:|\n| Households that rent | 53.6% |\n| Median household income, in 2024 dollars | \\$88,430 |\n| People below the poverty line | 12.8% |\n| Residents under 18 | 22.6% |\n| Residents 65 and older | 11.6% |\n| Foreign-born residents | 18.4% |\n| Residents speaking another language at home | 29.6% |\n| Adults with a disability or long-term functional limitation | 12.8% |\n| People without health insurance | 10.6% |\n| Renters paying at least 30% of income for housing | 49.8% |\n| Median gross rent, in 2024 dollars | \\$1,865 per month |\n| Non-Hispanic White | 37.4% |\n| Hispanic or Latino, any race | 33.2% |\n| Non-Hispanic Black | 13.5% |\n| Non-Hispanic Asian | 7.8% |\n| Non-Hispanic Indigenous | 1.2% |\n| Other or multiracial, non-Hispanic | 6.9% |\n\n: Table 2. Fictional socioeconomic profile of East Detroit, 2030\n\nThe race and ethnicity categories add to 100% so the simulation can use them as separate groups. Standard Census tables treat race and Hispanic origin differently. Check these categories against a real classification standard before building household-level data. No service design in this course should base eligibility decisions on these attributes.\n\nREAL REFERENCE: the scale comes from Adams County. U.S. Census QuickFacts for Adams County (2020–2024) reports a median household income of \\$94,571 in 2024 dollars, median gross rent of \\$1,781, about 9.8% of people in poverty, 68.6% of housing owner-occupied, and 43.7% of residents Hispanic or Latino. The July 2025 estimate put Adams County at 554,668 residents. For the real Watkins census-designated place, the 2020–2024 American Community Survey estimates only 847 residents and a median household income of about \\$158,173. Estimates for an area that small are uncertain. East Detroit's assumptions are deliberately harder than Adams County's: lower median income, higher rent, more poverty and far more renters.\n\n# The twenty neighborhoods\n\nNeighborhoods are communities, not zoning districts. Their names are provisional. Some come from local streets and landscape (Watkins, Inboden, Quail Run, Cavanaugh, Manila, Schumaker, Harback, Box Elder); others are new urban identities (Foundry Quarter, Civic Square, Central Station). Zoning and other rules are decided separately.\n\nTable 3 figures are SCENARIO planning inputs. You can propose changes through the class decision record.\n\n| ID | Neighborhood | Population | Households | Median household income | Renters | Rent-burdened renters |\n|-------|-----------|--------:|--------:|---------:|-------:|--------:|\n| ED01 | Old Watkins | 10,158 | 4,180 | \\$103,200 | 38% | 35% |\n| ED02 | Watkins Junction | 20,908 | 8,604 | \\$71,600 | 66% | 52% |\n| ED03 | Colfax East | 18,289 | 7,526 | \\$58,900 | 73% | 61% |\n| ED04 | South Yards | 12,271 | 5,050 | \\$62,100 | 77% | 58% |\n| ED05 | Civic Square | 26,418 | 10,505 | \\$92,400 | 62% | 46% |\n| ED06 | Central Station | 28,405 | 11,311 | \\$89,700 | 75% | 55% |\n| ED07 | Foundry Quarter | 25,070 | 10,177 | \\$74,500 | 71% | 54% |\n| ED08 | Eastbank | 21,115 | 8,615 | \\$119,300 | 47% | 37% |\n| ED09 | Inboden | 15,507 | 6,381 | \\$126,400 | 33% | 28% |\n| ED10 | Quail Run | 15,651 | 6,441 | \\$95,600 | 46% | 40% |\n| ED11 | West Commons | 22,520 | 9,267 | \\$84,700 | 52% | 45% |\n| ED12 | Cavanaugh | 16,726 | 6,883 | \\$78,100 | 60% | 52% |\n| ED13 | Manila | 24,790 | 10,058 | \\$112,600 | 39% | 35% |\n| ED14 | Schumaker | 17,407 | 7,163 | \\$97,700 | 45% | 43% |\n| ED15 | Harback | 11,442 | 4,709 | \\$86,500 | 53% | 49% |\n| ED16 | Prairie Crossing | 22,663 | 9,162 | \\$107,900 | 43% | 36% |\n| ED17 | Northfield | 21,787 | 8,834 | \\$134,800 | 29% | 30% |\n| ED18 | Box Elder | 18,676 | 7,686 | \\$66,800 | 69% | 58% |\n| ED19 | Portside | 13,690 | 5,460 | \\$76,700 | 62% | 55% |\n| ED20 | High Prairie | 18,924 | 7,788 | \\$151,200 | 26% | 25% |\n\n: Table 3. Neighborhood figures, 2030. Incomes are in 2024 dollars for comparison with the 2020–2024 American Community Survey. Rent-burdened renters are renter households paying at least 30% of income for housing.\n\nDon't average these rows to get citywide figures. The citywide median income was set separately; a citywide median cannot be calculated by averaging twenty neighborhood medians. Neighborhood renter and rent-burden shares also need weighting by household counts. Verifying the citywide figures would require household-level synthetic data.\n\n## What each neighborhood is like\n\n### South / Historic\n\n- **Old Watkins (ED01):** the old village, with small businesses, farm families, and owners and renters who are getting older.\n- **Watkins Junction (ED02):** mixed housing along the rail line, home to service workers and newly arrived families.\n- **Colfax East (ED03):** an older commercial corridor with cheaper apartments and a lot of turnover.\n- **South Yards (ED04):** industrial jobs and truck traffic, with housing near the worksites and worries about pollution.\n\n### Central / Downtown\n\n- **Civic Square (ED05):** the civic center, surrounded by mixed-income midrise housing.\n- **Central Station (ED06):** the main transfer station, dense rentals and a night economy.\n- **Foundry Quarter (ED07):** old production sites turned into offices and family flats that are still relatively affordable.\n- **Eastbank (ED08):** riverside greenways and apartments, with a growing professional population.\n\n### West / Residential\n\n- **Inboden (ED09):** older subdivided homes, mostly owner-occupied; getting to school is a problem.\n- **Quail Run (ED10):** townhomes and duplexes, and not enough childcare.\n- **West Commons (ED11):** family apartments and new infill, with crowded schools.\n- **Cavanaugh (ED12):** apartments near transit, home to households that depend on wages alone.\n\n### East / Growth\n\n- **Manila (ED13):** large mixed-use blocks and newer homes, growing faster than its infrastructure.\n- **Schumaker (ED14):** working households near advanced logistics sites, with long commutes.\n- **Harback (ED15):** small fringe settlements on wells and septic systems now being converted, caught in annexation disputes.\n\n### North / Expansion\n\n- **Prairie Crossing (ED16):** new housing, rising high school enrollment and an argument over expanding transit.\n- **Northfield (ED17):** new, mostly owner-occupied development, with uneven services nearby.\n- **Box Elder (ED18):** floods at its drainage crossings; many residents rent and many work seasonally.\n- **Portside (ED19):** the edge of the employment district, with shift work and airport noise.\n- **High Prairie (ED20):** high-income new housing on large lots, paying for its own infrastructure.\n\n# What residents are dealing with\n\nThese conditions are SCENARIO.\n\n1. **Housing costs and instability.** Longtime homeowners and newer renters are in very different financial positions. South Yards and Colfax East have high shares of renters and severe cost burdens. The city has not settled emergency rent assistance, tenant information, inclusionary housing or legal support.\n2. **Mismatched addresses and records.** Older farm addresses, newly subdivided parcels and apartment complexes may not match across county mapping (GIS), postal delivery, tax rolls, utility accounts and school assignment systems. Having an account is not proof of residency.\n3. **Water and land conversion.** A region that relies on groundwater, agricultural parcels, special districts and utility extensions cannot assume unlimited supply. Households, housing developers and industrial employers compete for service commitments. The real Adams County spaceport plan describes regional water and wastewater needs.\n4. **Long distances.** Much of the city-county is low-density. The urban center has a rail hub in the scenario, but areas to the north and east have infrequent service, late-shift workers, and no settled transit partnership. The city cannot order the Regional Transportation District (RTD) to run a municipal route.\n5. **Jobs without matching housing.** Logistics, manufacturing, entertainment, medical institutions, schools and services create varied shift schedules, pay levels, noise and labor demand.\n6. **Public authority and appeals.** Under Colorado's real structure, the county administers state-supervised benefits. The city-county must decide how new city services connect with those programs without taking over state eligibility rules.\n7. **Health and emergency access.** The scenario includes a trauma center. Dispatch integration, patient information, 911, emergency access, public safety and hospital data are unsettled.\n8. **Schools and young families.** Fast-changing enrollment, new attendance boundaries and school transportation create urgent demands. School districts are independent; their participation must be negotiated.\n9. **Growth on farmland and floodplains.** Existing farmland, drainage corridors and protected airspace remain real constraints. Urbanization creates value for some and displacement risk for landowners, tenants, farmworkers and nearby communities.\n10. **Participation and representation.** Neighborhoods differ in language access, income, housing tenure, commute and ability to attend evening meetings. A citywide digital vote or app may reproduce those differences instead of resolving them.\n\n# Civic and cultural anchors\n\nThese institutions are SCENARIO. Their funding, ownership, digital systems and service agreements are OPEN.\n\n- The Hangar at Space Center: a 17,500-seat arena at the central RTD rail hub. The hub's capital plan, fare rules, station management and shared-service responsibilities are open.\n- Denver Fawns (WNBA): based at The Hangar.\n- Colorado Apex (PWHL): plays at The Hangar.\n- Denver Pilots (Triple-A baseball): relocated from Albuquerque in the scenario's sports history. They play at Aerotropolis Park, a 16,210-seat ballpark with views of active launches from the fictional 2030 KCFO.\n- East Detroit Philharmonic & Performing Arts Center (EDPAC): 2,200 seats. A proposed 1% Public Art Commercial Fee is a financing question, not adopted tax law.\n- East Detroit Health System: a Level I regional trauma center, aerospace flight medicine program and teaching hospital. Whether it joins a government emergency data exchange is open.\n\nThe teams, relocations and launches are fictional and say nothing about real sports leagues or KCFO's actual schedule.\n\n# Public institutions you will work with\n\nEast Detroit has its own city and county departments, elected leaders and Fire Department. These bodies serve its residents but are independent of it:\n\n- East Detroit Unified School District\n- East Detroit Public Library District, which runs the city's libraries\n- East Detroit Water and Sewer Authority\n- Regional Transportation District (RTD), the real Denver-area transit authority\n- the State of Colorado's human services and IT agencies (real)\n- East Detroit County Court, paid for by the city-county but independent in its decisions\n- East Detroit Health and Hospital Authority, the public safety-net hospital\n- East Detroit Health System, the trauma and teaching hospital\n- East Detroit Regional Housing Authority (EDRHA), which runs federal housing assistance and serves communities beyond the city\n\nAirport operators, federal agencies and neighboring governments also shape what the city can do.\n\nEast Detroit's own City and County Housing Division (EDHD) handles city-funded housing policy, affordable housing development and preservation, local assistance and homelessness prevention. It works alongside EDRHA but cannot direct it; Reading 3 covers the pair.\n\nThe Directory of Departments and Agencies describes each body in detail.\n\n# Six households to test services against\n\nAll six households are invented.\n\n| Case | Household and situation | Question for agencies |\n|----|----------------------|---------------------|\n| H01 | Two adults and one child renting in Colfax East; one hourly worker's schedule changes weekly | Can they complete and correct an application without taking time off work? |\n| H02 | Retired homeowner in Old Watkins; the parcel has an older rural address and an unmatched new GIS record | Which office owns the correction, and who keeps a pending request open? |\n| H03 | Three-generation household in Box Elder; Spanish is the preferred service language | What is available in person, by phone and in translation? |\n| H04 | Transit-dependent shift worker in Portside; the employer's private shuttle stops before the final shift ends | What happens if RTD or the employer declines a service partnership? |\n| H05 | Single parent in West Commons with two children entering different schools | Can city services coordinate without claiming control over an independent school district? |\n| H06 | Small business owner in South Yards whose address and parcel records do not match | Who decides whether a permit proceeds while county GIS corrects the source record? |\n\n: Table 4. Case households for class exercises\n\nYou can add cases, change details and argue about what they mean. Test every service against at least four kinds of case: a routine case, a disputed record, an outside partner that refuses to take part, and a case that needs human help or an appeal.\n\n# Sources\n\nThese real sources set the geographic and demographic scale. They do not describe East Detroit.\n\n1. Adams County, [*Colorado Air and Space Port Subarea Plan*](https://adamscountyco.gov/wp-content/uploads/2025/08/space-port-subarea-plan.pdf) (study-area map, p. 3; recommendations; utilities). https://adamscountyco.gov/wp-content/uploads/2025/08/space-port-subarea-plan.pdf\n2. U.S. Census Bureau, [QuickFacts: Adams County, Colorado](https://www.census.gov/quickfacts/fact/table/adamscountycolorado/PST045225) (2020–2024 income, housing, race and rent; 2025 population). https://www.census.gov/quickfacts/fact/table/adamscountycolorado/PST045225\n3. Census Reporter, [Watkins CDP, Colorado](https://censusreporter.org/profiles/16000US0882900-watkins-co/) (2020–2024 American Community Survey). https://censusreporter.org/profiles/16000US0882900-watkins-co/\n4. Colorado Information Marketplace, [DRCOG Municipal Boundaries](https://data.colorado.gov/Government/DRCOG-Municipal-Boundaries/xufp-56dv) (updated 2026). https://data.colorado.gov/Government/DRCOG-Municipal-Boundaries/xufp-56dv\n5. Colorado Legislative Council, [*Colorado Local Government Handbook*](https://content.leg.colorado.gov/sites/default/files/local_gov_hb_web.pdf) (city and county structure, school and special districts). https://content.leg.colorado.gov/sites/default/files/local_gov_hb_web.pdf\n",
+  "revised": "---\ntitle: \"Welcome to East Detroit\"\nsubtitle: \"Reading 1 of 4: The city, its people and its neighborhoods in 2030\"\nauthor: \"Public Mechanics\"\ndate: \"Student edition, November 2026\"\nlang: en-US\n---\n\n# Real, invented and undecided\n\nEast Detroit is a fictional consolidated city and county in Colorado, east of Denver International Airport. The land is real. The city, its statistics, neighborhoods and institutions are invented.\n\nAll six documents use three labels:\n\n- **REAL REFERENCE:** a real place, law, organization or published figure. Sources are at the end of each document.\n- **SCENARIO:** an invented fact. Treat it as true in the exercise.\n- **OPEN:** a choice the class has not made.\n\nNever present SCENARIO figures, such as population or income, as real Census data or Colorado law.\n\n# The city in 2030\n\nEast Detroit grows like metropolitan Phoenix in scale and pattern: fast housing growth, master-planned districts, warehousing and logistics, jobs arriving before public facilities, old settlements meeting new development, and wide gaps in who benefits. The course starts in 2030. You do not need to explain how the city got this big.\n\n| Item | East Detroit in 2030 (SCENARIO) |\n|---|---|\n| Official name | City and County of East Detroit, Colorado |\n| Population | 382,417 |\n| Occupied households | 155,800 |\n| Residents in group quarters | 3,823 |\n| How the population is modeled | 155,800 households × 2.43 residents + 3,823 in group quarters = 382,417 |\n| Study area | About 115.4 square miles, unsurveyed |\n| Built-up area | About 25 square miles, averaging 15,297 people per square mile |\n| Neighborhoods | 20 provisional neighborhoods in 5 planning regions |\n\n: Table 1. East Detroit at a glance\n\nMost of the study area is not built up. It is employment land, farmland, aviation protection zones, infrastructure or open land.\n\nAssume the constitutional and legislative steps that created the city-county are done. Its charter design, intergovernmental agreements, service platform and administrative structure are OPEN.\n\n![Figure 1. Provisional study boundary with the 20 neighborhood label points, colored by planning region. Dots mark names only; no neighborhood boundaries are approved. The outline is not checked against real county, city, airport, school or utility lines.](figures/east_detroit_2030_provisional_map.png){width=100%}\n\n# Where the city sits\n\nREAL REFERENCE: East Detroit surrounds real places: Watkins, the Colorado Air and Space Port (airport code KCFO), Interstate 70, the Union Pacific rail corridor, Colfax Avenue, Box Elder Creek, and Denver International Airport to the west. The main postal code is Watkins 80137; nearby real codes may appear on maps. The course has created no new ZIP codes. A 2030 city postal scheme is OPEN.\n\nAdams County's *Colorado Air and Space Port Subarea Plan* describes a 48-square-mile study area bounded by I-70, Hudson Road, E. 72nd Avenue and Harback Road. It covers 21,079 acres of unincorporated Adams County, 9,738 acres in Aurora and 375 acres in Bennett. The plan finds gaps in water and wastewater capacity and land-use conflicts near the airport. The fictional city has not solved them.\n\nSCENARIO: East Detroit's study area contains the spaceport planning area and extends north and east of it. Watkins remains the historic southeastern gateway. The larger area makes room for a credible city without housing around the spaceport runway.\n\nThe real airfield, runway protection zones, stormwater channels, major roads and county and municipal lines limit what the city can build. The 2030 transit hubs, the light and heavy rail network, venue sites, district names and service locations are invented or proposed.\n\n# Who lives in East Detroit\n\nTable 2 is SCENARIO: planning assumptions, not real measurements. Population and household totals are in Table 1.\n\n| Indicator | East Detroit 2030 |\n|---|---:|\n| Households that rent | 53.6% |\n| Median household income, in 2024 dollars | \\$88,430 |\n| People below the poverty line | 12.8% |\n| Residents under 18 | 22.6% |\n| Residents 65 and older | 11.6% |\n| Foreign-born residents | 18.4% |\n| Residents speaking another language at home | 29.6% |\n| Adults with a disability or long-term functional limitation | 12.8% |\n| People without health insurance | 10.6% |\n| Renters paying at least 30% of income for housing | 49.8% |\n| Median gross rent, in 2024 dollars | \\$1,865 per month |\n| Non-Hispanic White | 37.4% |\n| Hispanic or Latino, any race | 33.2% |\n| Non-Hispanic Black | 13.5% |\n| Non-Hispanic Asian | 7.8% |\n| Non-Hispanic Indigenous | 1.2% |\n| Other or multiracial, non-Hispanic | 6.9% |\n\n: Table 2. Fictional socioeconomic profile of East Detroit, 2030\n\nThe race and ethnicity categories add to 100% so the simulation can treat them as separate groups. Census tables treat race and Hispanic origin differently. Check these categories against a real classification standard before you build household-level data. Your service designs must not base eligibility on these attributes.\n\nREAL REFERENCE: the scale comes from Adams County. U.S. Census QuickFacts for Adams County reports:\n\n- median household income (2020–2024): \\$94,571 in 2024 dollars\n- median gross rent (2020–2024): \\$1,781\n- people in poverty (2020–2024): about 9.8%\n- owner-occupied housing (2020–2024): 68.6%\n- Hispanic or Latino residents (2020–2024): 43.7%\n- population (July 2025 estimate): 554,668\n\nFor the real Watkins census-designated place, the 2020–2024 American Community Survey estimates only 847 residents and a median household income of about \\$158,173. Estimates for an area that small are uncertain.\n\nEast Detroit's assumptions are deliberately harder than Adams County's: lower median income, higher rent, more poverty and far more renters.\n\n# The twenty neighborhoods\n\nNeighborhoods are communities, not zoning districts. Names are provisional. Some come from local streets and landscape (Watkins, Inboden, Quail Run, Cavanaugh, Manila, Schumaker, Harback, Box Elder); others are new urban identities (Foundry Quarter, Civic Square, Central Station). Zoning and other rules come separately.\n\nTable 3 figures are SCENARIO planning inputs. You can propose changes through the class decision record.\n\n| ID | Neighborhood | Population | Households | Median household income | Renters | Rent-burdened renters |\n|-------|-----------|--------:|--------:|---------:|-------:|--------:|\n| ED01 | Old Watkins | 10,158 | 4,180 | \\$103,200 | 38% | 35% |\n| ED02 | Watkins Junction | 20,908 | 8,604 | \\$71,600 | 66% | 52% |\n| ED03 | Colfax East | 18,289 | 7,526 | \\$58,900 | 73% | 61% |\n| ED04 | South Yards | 12,271 | 5,050 | \\$62,100 | 77% | 58% |\n| ED05 | Civic Square | 26,418 | 10,505 | \\$92,400 | 62% | 46% |\n| ED06 | Central Station | 28,405 | 11,311 | \\$89,700 | 75% | 55% |\n| ED07 | Foundry Quarter | 25,070 | 10,177 | \\$74,500 | 71% | 54% |\n| ED08 | Eastbank | 21,115 | 8,615 | \\$119,300 | 47% | 37% |\n| ED09 | Inboden | 15,507 | 6,381 | \\$126,400 | 33% | 28% |\n| ED10 | Quail Run | 15,651 | 6,441 | \\$95,600 | 46% | 40% |\n| ED11 | West Commons | 22,520 | 9,267 | \\$84,700 | 52% | 45% |\n| ED12 | Cavanaugh | 16,726 | 6,883 | \\$78,100 | 60% | 52% |\n| ED13 | Manila | 24,790 | 10,058 | \\$112,600 | 39% | 35% |\n| ED14 | Schumaker | 17,407 | 7,163 | \\$97,700 | 45% | 43% |\n| ED15 | Harback | 11,442 | 4,709 | \\$86,500 | 53% | 49% |\n| ED16 | Prairie Crossing | 22,663 | 9,162 | \\$107,900 | 43% | 36% |\n| ED17 | Northfield | 21,787 | 8,834 | \\$134,800 | 29% | 30% |\n| ED18 | Box Elder | 18,676 | 7,686 | \\$66,800 | 69% | 58% |\n| ED19 | Portside | 13,690 | 5,460 | \\$76,700 | 62% | 55% |\n| ED20 | High Prairie | 18,924 | 7,788 | \\$151,200 | 26% | 25% |\n\n: Table 3. Neighborhood figures, 2030. Incomes are in 2024 dollars for comparison with the 2020–2024 American Community Survey. Rent-burdened renters are renter households paying at least 30% of income for housing.\n\nDon't average these rows to get citywide figures. The citywide median income was set separately, and averaging twenty medians does not give a median. Renter and rent-burden shares need weighting by household counts. Checking the citywide figures takes household-level synthetic data.\n\n## What each neighborhood is like\n\n### South / Historic\n\n- **Old Watkins (ED01):** the old village: small businesses, farm families, and aging owners and renters.\n- **Watkins Junction (ED02):** mixed housing on the rail line; service workers and newly arrived families.\n- **Colfax East (ED03):** older commercial corridor; cheaper apartments and high turnover.\n- **South Yards (ED04):** industrial jobs and truck traffic; housing near worksites; pollution worries.\n\n### Central / Downtown\n\n- **Civic Square (ED05):** the civic center, ringed by mixed-income midrise housing.\n- **Central Station (ED06):** main transfer station; dense rentals and a night economy.\n- **Foundry Quarter (ED07):** old production sites turned into offices and still fairly affordable family flats.\n- **Eastbank (ED08):** riverside greenways and apartments; a growing professional population.\n\n### West / Residential\n\n- **Inboden (ED09):** older subdivided homes, mostly owner-occupied; hard trips to school.\n- **Quail Run (ED10):** townhomes and duplexes; too little childcare.\n- **West Commons (ED11):** family apartments and new infill; crowded schools.\n- **Cavanaugh (ED12):** apartments near transit; households living on wages alone.\n\n### East / Growth\n\n- **Manila (ED13):** large mixed-use blocks and newer homes; growth outpaces infrastructure.\n- **Schumaker (ED14):** working households near advanced logistics sites; long commutes.\n- **Harback (ED15):** small fringe settlements converting from wells and septic; annexation disputes.\n\n### North / Expansion\n\n- **Prairie Crossing (ED16):** new housing, rising high school enrollment, a dispute over transit expansion.\n- **Northfield (ED17):** new, mostly owner-occupied development; uneven nearby services.\n- **Box Elder (ED18):** floods at drainage crossings; many renters and seasonal workers.\n- **Portside (ED19):** edge of the employment district; shift work and airport noise.\n- **High Prairie (ED20):** high-income new housing on large lots that pays for its own infrastructure.\n\n# What residents are dealing with\n\nThese conditions are SCENARIO.\n\n1. **Housing costs and instability.** Longtime homeowners and newer renters are in very different financial positions. South Yards and Colfax East have many renters and severe cost burdens. Emergency rent assistance, tenant information, inclusionary housing and legal support are unsettled.\n2. **Mismatched addresses and records.** Old farm addresses, newly subdivided parcels and apartment complexes may not match across county mapping (GIS), postal delivery, tax rolls, utility accounts and school assignment. An account does not prove residency.\n3. **Water and land conversion.** The region relies on groundwater, farm parcels, special districts and utility extensions, so it cannot assume unlimited supply. Households, developers and industrial employers compete for service commitments. The real Adams County spaceport plan describes regional water and wastewater needs.\n4. **Long distances.** Much of the city-county is low-density. The center has a rail hub in the scenario. The north and east have infrequent service, late-shift workers and no settled transit partnership. The city cannot order the Regional Transportation District (RTD) to run a municipal route.\n5. **Jobs without matching housing.** Logistics, manufacturing, entertainment, medical institutions, schools and services create varied shift schedules, pay levels, noise and labor demand.\n6. **Public authority and appeals.** In Colorado's real structure, the county administers state-supervised benefits. The city-county must decide how new city services connect with those programs without taking over state eligibility rules.\n7. **Health and emergency access.** The scenario includes a trauma center. Dispatch integration, patient information, 911, emergency access, public safety and hospital data are unsettled.\n8. **Schools and young families.** Fast-changing enrollment, new attendance boundaries and school transportation create urgent demands. School districts are independent; their participation must be negotiated.\n9. **Growth on farmland and floodplains.** Farmland, drainage corridors and protected airspace are real constraints. Growth creates value for some and displacement risk for landowners, tenants, farmworkers and nearby communities.\n10. **Participation and representation.** Neighborhoods differ in language access, income, housing tenure, commute and ability to attend evening meetings. A citywide digital vote or app may repeat those gaps.\n\n# Civic and cultural anchors\n\nThese institutions are SCENARIO. Their funding, ownership, digital systems and service agreements are OPEN.\n\n- The Hangar at Space Center: a 17,500-seat arena at the central RTD rail hub. The hub's capital plan, fare rules, station management and shared-service responsibilities are open.\n- Denver Fawns (WNBA): based at The Hangar.\n- Colorado Apex (PWHL): plays at The Hangar.\n- Denver Pilots (Triple-A baseball): moved from Albuquerque in the scenario. They play at Aerotropolis Park, a 16,210-seat ballpark with views of launches from the fictional 2030 KCFO.\n- East Detroit Philharmonic & Performing Arts Center (EDPAC): 2,200 seats. A proposed 1% Public Art Commercial Fee is a financing question, not adopted tax law.\n- East Detroit Health System: a Level I regional trauma center, aerospace flight medicine program and teaching hospital. Whether it joins a government emergency data exchange is open.\n\nThe teams, relocations and launches are fictional and say nothing about real sports leagues or KCFO's actual schedule.\n\n# Public institutions you will work with\n\nEast Detroit has its own city and county departments, elected leaders and Fire Department. These bodies serve its residents but are independent of it:\n\n- East Detroit Unified School District\n- East Detroit Public Library District, which runs the city's libraries\n- East Detroit Water and Sewer Authority\n- Regional Transportation District (RTD), the real Denver-area transit authority\n- the State of Colorado's human services and IT agencies (real)\n- East Detroit County Court, paid for by the city-county but independent in its decisions\n- East Detroit Health and Hospital Authority, the public safety-net hospital\n- East Detroit Health System, the trauma and teaching hospital\n- East Detroit Regional Housing Authority (EDRHA), which runs federal housing assistance and serves communities beyond the city\n\nAirport operators, federal agencies and neighboring governments also shape what the city can do.\n\nThe city's own City and County Housing Division (EDHD) handles city-funded housing policy, affordable housing development and preservation, local assistance and homelessness prevention. It works with EDRHA but cannot direct it. Reading 3 covers both.\n\nThe Directory of Departments and Agencies describes each one.\n\n# Six households to test services against\n\nAll six households are invented.\n\n| Case | Household and situation | Question for agencies |\n|----|----------------------|---------------------|\n| H01 | Two adults and one child renting in Colfax East; one hourly worker's schedule changes weekly | Can they complete and correct an application without taking time off work? |\n| H02 | Retired homeowner in Old Watkins; the parcel has an older rural address and an unmatched new GIS record | Which office owns the correction, and who keeps a pending request open? |\n| H03 | Three-generation household in Box Elder; Spanish is the preferred service language | What is available in person, by phone and in translation? |\n| H04 | Transit-dependent shift worker in Portside; the employer's private shuttle stops before the final shift ends | What happens if RTD or the employer declines a service partnership? |\n| H05 | Single parent in West Commons with two children entering different schools | Can city services coordinate without claiming control over an independent school district? |\n| H06 | Small business owner in South Yards whose address and parcel records do not match | Who decides whether a permit proceeds while county GIS corrects the source record? |\n\n: Table 4. Case households for class exercises\n\nTest every service against at least four kinds of case:\n\n- a routine case\n- a disputed record\n- an outside partner that refuses to take part\n- a case that needs human help or an appeal\n\nYou can add cases, change details and argue about what they mean.\n\n# Sources\n\nThese real sources set the geographic and demographic scale. They do not describe East Detroit.\n\n1. Adams County, [*Colorado Air and Space Port Subarea Plan*](https://adamscountyco.gov/wp-content/uploads/2025/08/space-port-subarea-plan.pdf) (study-area map, p. 3; recommendations; utilities). https://adamscountyco.gov/wp-content/uploads/2025/08/space-port-subarea-plan.pdf\n2. U.S. Census Bureau, [QuickFacts: Adams County, Colorado](https://www.census.gov/quickfacts/fact/table/adamscountycolorado/PST045225) (2020–2024 income, housing, race and rent; 2025 population). https://www.census.gov/quickfacts/fact/table/adamscountycolorado/PST045225\n3. Census Reporter, [Watkins CDP, Colorado](https://censusreporter.org/profiles/16000US0882900-watkins-co/) (2020–2024 American Community Survey). https://censusreporter.org/profiles/16000US0882900-watkins-co/\n4. Colorado Information Marketplace, [DRCOG Municipal Boundaries](https://data.colorado.gov/Government/DRCOG-Municipal-Boundaries/xufp-56dv) (updated 2026). https://data.colorado.gov/Government/DRCOG-Municipal-Boundaries/xufp-56dv\n5. Colorado Legislative Council, [*Colorado Local Government Handbook*](https://content.leg.colorado.gov/sites/default/files/local_gov_hb_web.pdf) (city and county structure, school and special districts). https://content.leg.colorado.gov/sites/default/files/local_gov_hb_web.pdf",
+  "beforeWords": 2692,
+  "afterWords": 2557,
+  "wordsRemoved": 135,
+  "accepted": [
+    {
+      "index": 0,
+      "start": 339,
+      "end": 461,
+      "before": "The land around it is real. The city, its statistics, its neighborhoods and its institutions are invented for this course.",
+      "after": "The land is real. The city, its statistics, neighborhoods and institutions are invented.",
+      "kind": "line-edit",
+      "reason": "Omit excess words."
+    },
+    {
+      "index": 1,
+      "start": 463,
+      "end": 510,
+      "before": "All six documents in this set use three labels:",
+      "after": "All six documents use three labels:",
+      "kind": "line-edit",
+      "reason": "Omit excess words."
+    },
+    {
+      "index": 2,
+      "start": 644,
+      "end": 712,
+      "before": "a fact the course has created. Treat it as true inside the exercise.",
+      "after": "an invented fact. Treat it as true in the exercise.",
+      "kind": "line-edit",
+      "reason": "Tighter definition."
+    },
+    {
+      "index": 3,
+      "start": 725,
+      "end": 760,
+      "before": "a choice the class hasn't made yet.",
+      "after": "a choice the class has not made.",
+      "kind": "line-edit",
+      "reason": "Tighter definition."
+    },
+    {
+      "index": 4,
+      "start": 762,
+      "end": 882,
+      "before": "Don't present scenario figures, such as East Detroit's population or income levels, as real Census data or Colorado law.",
+      "after": "Never present SCENARIO figures, such as population or income, as real Census data or Colorado law.",
+      "kind": "line-edit",
+      "reason": "Shorter; ties to the label."
+    },
+    {
+      "index": 5,
+      "start": 904,
+      "end": 1320,
+      "before": "East Detroit is a newly consolidated Colorado city and county. Its growth resembles metropolitan Phoenix in scale and pattern: fast residential expansion, master-planned districts, warehousing and logistics, jobs arriving before public facilities, older settlements meeting new development, and wide differences in who benefits from growth. The course begins in 2030. Nobody has to explain how the city got this big.",
+      "after": "East Detroit grows like metropolitan Phoenix in scale and pattern: fast housing growth, master-planned districts, warehousing and logistics, jobs arriving before public facilities, old settlements meeting new development, and wide gaps in who benefits. The course starts in 2030. You do not need to explain how the city got this big.",
+      "kind": "duplicate",
+      "reason": "First sentence repeats the opening definition; tighten the rest and address the reader."
+    },
+    {
+      "index": 6,
+      "start": 1890,
+      "end": 2064,
+      "before": "The 115.4-square-mile study area is far larger than the built-up city. Much of it is employment land, farmland, aviation protection zones, infrastructure or undeveloped land.",
+      "after": "Most of the study area is not built up. It is employment land, farmland, aviation protection zones, infrastructure or open land.",
+      "kind": "redundancy",
+      "reason": "115.4 is in Table 1; shorter."
+    },
+    {
+      "index": 7,
+      "start": 2066,
+      "end": 2308,
+      "before": "You may assume the constitutional and legislative steps that created the city-county have already happened. Its charter design, intergovernmental agreements, service platform and administrative structure have not been adopted; those are OPEN.",
+      "after": "Assume the constitutional and legislative steps that created the city-county are done. Its charter design, intergovernmental agreements, service platform and administrative structure are OPEN.",
+      "kind": "line-edit",
+      "reason": "Shorter, direct."
+    },
+    {
+      "index": 8,
+      "start": 2312,
+      "end": 2608,
+      "before": "Figure 1. Provisional East Detroit study boundary with the 20 neighborhood label points, colored by planning region. The dots mark neighborhood names only; no neighborhood boundaries have been approved. The outline has not been checked against real county, city, airport, school or utility lines.",
+      "after": "Figure 1. Provisional study boundary with the 20 neighborhood label points, colored by planning region. Dots mark names only; no neighborhood boundaries are approved. The outline is not checked against real county, city, airport, school or utility lines.",
+      "kind": "line-edit",
+      "reason": "Shorter caption."
+    },
+    {
+      "index": 9,
+      "start": 2709,
+      "end": 2748,
+      "before": "East Detroit is set around real places:",
+      "after": "East Detroit surrounds real places:",
+      "kind": "line-edit",
+      "reason": "Shorter."
+    },
+    {
+      "index": 10,
+      "start": 2937,
+      "end": 3129,
+      "before": "The main existing postal code is Watkins 80137. Neighboring real postal codes may appear on reference maps. The course has not created any new ZIP codes; a city postal scheme for 2030 is OPEN.",
+      "after": "The main postal code is Watkins 80137; nearby real codes may appear on maps. The course has created no new ZIP codes. A 2030 city postal scheme is OPEN.",
+      "kind": "line-edit",
+      "reason": "Shorter sentences."
+    },
+    {
+      "index": 11,
+      "start": 3290,
+      "end": 3512,
+      "before": "That area included 21,079 acres of unincorporated Adams County, 9,738 acres within Aurora, and 375 acres in Bennett. The plan identifies gaps in water and wastewater capacity and land-use conflicts near airport operations.",
+      "after": "It covers 21,079 acres of unincorporated Adams County, 9,738 acres in Aurora and 375 acres in Bennett. The plan finds gaps in water and wastewater capacity and land-use conflicts near the airport.",
+      "kind": "line-edit",
+      "reason": "Present tense, fewer words."
+    },
+    {
+      "index": 12,
+      "start": 3554,
+      "end": 3836,
+      "before": "SCENARIO: East Detroit's study area includes the 48-square-mile spaceport planning area and extends north and east from it. Watkins remains the city's historic southeastern gateway. The larger area leaves room for a credible city without placing housing around the spaceport runway.",
+      "after": "SCENARIO: East Detroit's study area contains the spaceport planning area and extends north and east of it. Watkins remains the historic southeastern gateway. The larger area makes room for a credible city without housing around the spaceport runway.",
+      "kind": "redundancy",
+      "reason": "48-square-mile already stated in the previous paragraph about the same area."
+    },
+    {
+      "index": 13,
+      "start": 4140,
+      "end": 4265,
+      "before": "Table 2 is SCENARIO: planning assumptions, not measurements of the real area. Population and household totals are in Table 1.",
+      "after": "Table 2 is SCENARIO: planning assumptions, not real measurements. Population and household totals are in Table 1.",
+      "kind": "line-edit",
+      "reason": "Shorter."
+    },
+    {
+      "index": 14,
+      "start": 5118,
+      "end": 5469,
+      "before": "The race and ethnicity categories add to 100% so the simulation can use them as separate groups. Standard Census tables treat race and Hispanic origin differently. Check these categories against a real classification standard before building household-level data. No service design in this course should base eligibility decisions on these attributes.",
+      "after": "The race and ethnicity categories add to 100% so the simulation can treat them as separate groups. Census tables treat race and Hispanic origin differently. Check these categories against a real classification standard before you build household-level data. Your service designs must not base eligibility on these attributes.",
+      "kind": "line-edit",
+      "reason": "Address the reader; must for requirements."
+    },
+    {
+      "index": 15,
+      "start": 5522,
+      "end": 6077,
+      "before": "U.S. Census QuickFacts for Adams County (2020–2024) reports a median household income of \\$94,571 in 2024 dollars, median gross rent of \\$1,781, about 9.8% of people in poverty, 68.6% of housing owner-occupied, and 43.7% of residents Hispanic or Latino. The July 2025 estimate put Adams County at 554,668 residents. For the real Watkins census-designated place, the 2020–2024 American Community Survey estimates only 847 residents and a median household income of about \\$158,173. Estimates for an area that small are uncertain. East Detroit's assumptions",
+      "after": "U.S. Census QuickFacts for Adams County reports:\n\n- median household income (2020–2024): \\$94,571 in 2024 dollars\n- median gross rent (2020–2024): \\$1,781\n- people in poverty (2020–2024): about 9.8%\n- owner-occupied housing (2020–2024): 68.6%\n- Hispanic or Latino residents (2020–2024): 43.7%\n- population (July 2025 estimate): 554,668\n\nFor the real Watkins census-designated place, the 2020–2024 American Community Survey estimates only 847 residents and a median household income of about \\$158,173. Estimates for an area that small are uncertain.\n\nEast Detroit's assumptions",
+      "kind": "structure",
+      "reason": "Turn a dense run of figures into a scannable list."
+    },
+    {
+      "index": 16,
+      "start": 6221,
+      "end": 6302,
+      "before": "Neighborhoods are communities, not zoning districts. Their names are provisional.",
+      "after": "Neighborhoods are communities, not zoning districts. Names are provisional.",
+      "kind": "line-edit",
+      "reason": "Shorter."
+    },
+    {
+      "index": 17,
+      "start": 6427,
+      "end": 6555,
+      "before": "others are new urban identities (Foundry Quarter, Civic Square, Central Station). Zoning and other rules are decided separately.",
+      "after": "others are new urban identities (Foundry Quarter, Civic Square, Central Station). Zoning and other rules come separately.",
+      "kind": "line-edit",
+      "reason": "Shorter."
+    },
+    {
+      "index": 18,
+      "start": 8374,
+      "end": 8662,
+      "before": "The citywide median income was set separately; a citywide median cannot be calculated by averaging twenty neighborhood medians. Neighborhood renter and rent-burden shares also need weighting by household counts. Verifying the citywide figures would require household-level synthetic data.",
+      "after": "The citywide median income was set separately, and averaging twenty medians does not give a median. Renter and rent-burden shares need weighting by household counts. Checking the citywide figures takes household-level synthetic data.",
+      "kind": "line-edit",
+      "reason": "Shorter sentences."
+    },
+    {
+      "index": 19,
+      "start": 8747,
+      "end": 8847,
+      "before": "the old village, with small businesses, farm families, and owners and renters who are getting older.",
+      "after": "the old village: small businesses, farm families, and aging owners and renters.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 20,
+      "start": 8879,
+      "end": 8965,
+      "before": "mixed housing along the rail line, home to service workers and newly arrived families.",
+      "after": "mixed housing on the rail line; service workers and newly arrived families.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 21,
+      "start": 8992,
+      "end": 9067,
+      "before": "an older commercial corridor with cheaper apartments and a lot of turnover.",
+      "after": "older commercial corridor; cheaper apartments and high turnover.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 22,
+      "start": 9094,
+      "end": 9189,
+      "before": "industrial jobs and truck traffic, with housing near the worksites and worries about pollution.",
+      "after": "industrial jobs and truck traffic; housing near worksites; pollution worries.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 23,
+      "start": 9242,
+      "end": 9303,
+      "before": "the civic center, surrounded by mixed-income midrise housing.",
+      "after": "the civic center, ringed by mixed-income midrise housing.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 24,
+      "start": 9334,
+      "end": 9395,
+      "before": "the main transfer station, dense rentals and a night economy.",
+      "after": "main transfer station; dense rentals and a night economy.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 25,
+      "start": 9426,
+      "end": 9521,
+      "before": "old production sites turned into offices and family flats that are still relatively affordable.",
+      "after": "old production sites turned into offices and still fairly affordable family flats.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 26,
+      "start": 9545,
+      "end": 9620,
+      "before": "riverside greenways and apartments, with a growing professional population.",
+      "after": "riverside greenways and apartments; a growing professional population.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 27,
+      "start": 9668,
+      "end": 9746,
+      "before": "older subdivided homes, mostly owner-occupied; getting to school is a problem.",
+      "after": "older subdivided homes, mostly owner-occupied; hard trips to school.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 28,
+      "start": 9771,
+      "end": 9820,
+      "before": "townhomes and duplexes, and not enough childcare.",
+      "after": "townhomes and duplexes; too little childcare.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 29,
+      "start": 9848,
+      "end": 9903,
+      "before": "family apartments and new infill, with crowded schools.",
+      "after": "family apartments and new infill; crowded schools.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 30,
+      "start": 9928,
+      "end": 9999,
+      "before": "apartments near transit, home to households that depend on wages alone.",
+      "after": "apartments near transit; households living on wages alone.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 31,
+      "start": 10041,
+      "end": 10120,
+      "before": "large mixed-use blocks and newer homes, growing faster than its infrastructure.",
+      "after": "large mixed-use blocks and newer homes; growth outpaces infrastructure.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 32,
+      "start": 10145,
+      "end": 10214,
+      "before": "working households near advanced logistics sites, with long commutes.",
+      "after": "working households near advanced logistics sites; long commutes.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 33,
+      "start": 10237,
+      "end": 10341,
+      "before": "small fringe settlements on wells and septic systems now being converted, caught in annexation disputes.",
+      "after": "small fringe settlements converting from wells and septic; annexation disputes.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 34,
+      "start": 10397,
+      "end": 10479,
+      "before": "new housing, rising high school enrollment and an argument over expanding transit.",
+      "after": "new housing, rising high school enrollment, a dispute over transit expansion.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 35,
+      "start": 10505,
+      "end": 10573,
+      "before": "new, mostly owner-occupied development, with uneven services nearby.",
+      "after": "new, mostly owner-occupied development; uneven nearby services.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 36,
+      "start": 10598,
+      "end": 10677,
+      "before": "floods at its drainage crossings; many residents rent and many work seasonally.",
+      "after": "floods at drainage crossings; many renters and seasonal workers.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 37,
+      "start": 10701,
+      "end": 10772,
+      "before": "the edge of the employment district, with shift work and airport noise.",
+      "after": "edge of the employment district; shift work and airport noise.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 38,
+      "start": 10800,
+      "end": 10873,
+      "before": "high-income new housing on large lots, paying for its own infrastructure.",
+      "after": "high-income new housing on large lots that pays for its own infrastructure.",
+      "kind": "line-edit",
+      "reason": "Shorter neighborhood note; item kept."
+    },
+    {
+      "index": 39,
+      "start": 10980,
+      "end": 11252,
+      "before": "Longtime homeowners and newer renters are in very different financial positions. South Yards and Colfax East have high shares of renters and severe cost burdens. The city has not settled emergency rent assistance, tenant information, inclusionary housing or legal support.",
+      "after": "Longtime homeowners and newer renters are in very different financial positions. South Yards and Colfax East have many renters and severe cost burdens. Emergency rent assistance, tenant information, inclusionary housing and legal support are unsettled.",
+      "kind": "line-edit",
+      "reason": "Shorter."
+    },
+    {
+      "index": 40,
+      "start": 11294,
+      "end": 11528,
+      "before": "Older farm addresses, newly subdivided parcels and apartment complexes may not match across county mapping (GIS), postal delivery, tax rolls, utility accounts and school assignment systems. Having an account is not proof of residency.",
+      "after": "Old farm addresses, newly subdivided parcels and apartment complexes may not match across county mapping (GIS), postal delivery, tax rolls, utility accounts and school assignment. An account does not prove residency.",
+      "kind": "line-edit",
+      "reason": "Shorter."
+    },
+    {
+      "index": 41,
+      "start": 11563,
+      "end": 11750,
+      "before": "A region that relies on groundwater, agricultural parcels, special districts and utility extensions cannot assume unlimited supply. Households, housing developers and industrial employers",
+      "after": "The region relies on groundwater, farm parcels, special districts and utility extensions, so it cannot assume unlimited supply. Households, developers and industrial employers",
+      "kind": "line-edit",
+      "reason": "Shorter, plainer."
+    },
+    {
+      "index": 42,
+      "start": 11931,
+      "end": 12092,
+      "before": "The urban center has a rail hub in the scenario, but areas to the north and east have infrequent service, late-shift workers, and no settled transit partnership.",
+      "after": "The center has a rail hub in the scenario. The north and east have infrequent service, late-shift workers and no settled transit partnership.",
+      "kind": "line-edit",
+      "reason": "Split long sentence."
+    },
+    {
+      "index": 43,
+      "start": 12410,
+      "end": 12465,
+      "before": "Under Colorado's real structure, the county administers",
+      "after": "In Colorado's real structure, the county administers",
+      "kind": "line-edit",
+      "reason": "Plainer."
+    },
+    {
+      "index": 44,
+      "start": 13057,
+      "end": 13169,
+      "before": "Existing farmland, drainage corridors and protected airspace remain real constraints. Urbanization creates value",
+      "after": "Farmland, drainage corridors and protected airspace are real constraints. Growth creates value",
+      "kind": "line-edit",
+      "reason": "Plainer words."
+    },
+    {
+      "index": 45,
+      "start": 13417,
+      "end": 13506,
+      "before": "A citywide digital vote or app may reproduce those differences instead of resolving them.",
+      "after": "A citywide digital vote or app may repeat those gaps.",
+      "kind": "line-edit",
+      "reason": "Shorter; avoids 'X instead of Y'."
+    },
+    {
+      "index": 46,
+      "start": 13953,
+      "end": 14098,
+      "before": "relocated from Albuquerque in the scenario's sports history. They play at Aerotropolis Park, a 16,210-seat ballpark with views of active launches",
+      "after": "moved from Albuquerque in the scenario. They play at Aerotropolis Park, a 16,210-seat ballpark with views of launches",
+      "kind": "line-edit",
+      "reason": "Shorter."
+    },
+    {
+      "index": 47,
+      "start": 15543,
+      "end": 15806,
+      "before": "East Detroit's own City and County Housing Division (EDHD) handles city-funded housing policy, affordable housing development and preservation, local assistance and homelessness prevention. It works alongside EDRHA but cannot direct it; Reading 3 covers the pair.",
+      "after": "The city's own City and County Housing Division (EDHD) handles city-funded housing policy, affordable housing development and preservation, local assistance and homelessness prevention. It works with EDRHA but cannot direct it. Reading 3 covers both.",
+      "kind": "line-edit",
+      "reason": "Split sentence."
+    },
+    {
+      "index": 48,
+      "start": 15808,
+      "end": 15880,
+      "before": "The Directory of Departments and Agencies describes each body in detail.",
+      "after": "The Directory of Departments and Agencies describes each one.",
+      "kind": "line-edit",
+      "reason": "Shorter."
+    },
+    {
+      "index": 49,
+      "start": 17184,
+      "end": 17433,
+      "before": "You can add cases, change details and argue about what they mean. Test every service against at least four kinds of case: a routine case, a disputed record, an outside partner that refuses to take part, and a case that needs human help or an appeal.",
+      "after": "Test every service against at least four kinds of case:\n\n- a routine case\n- a disputed record\n- an outside partner that refuses to take part\n- a case that needs human help or an appeal\n\nYou can add cases, change details and argue about what they mean.",
+      "kind": "structure",
+      "reason": "Put the task first; list the four case types."
+    }
+  ],
+  "rejected": [],
+  "warning": "Anchor checks protect literal details, not full meaning. Review the revision before publishing."
+}

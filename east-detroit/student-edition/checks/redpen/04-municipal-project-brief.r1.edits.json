@@ -1,0 +1,158 @@
+[
+ {
+  "before": "# Your starting assignment\n\nYou are a department head, agency leader, civic representative or partner in the fictional City and County of East Detroit, Colorado, in 2030. The city has 382,417 residents, twenty provisional neighborhoods, a large and unevenly developed territory, and major needs in housing, water, transit, benefits, address records, schools, safety and community facilities.",
+  "after": "# Your assignment\n\nYou play a department head, agency leader, civic representative or partner in the fictional City and County of East Detroit, Colorado, in 2030. The city has 382,417 residents and twenty provisional neighborhoods across a large, unevenly developed territory. It has major needs in housing, water, transit, benefits, address records, schools, safety and community facilities.",
+  "kind": "line-edit",
+  "reason": "Shorter heading; split a 45-word sentence."
+ },
+ {
+  "before": "The assignment is to write the specification for a city-county version of Estonia's digital government. In Estonia, government agencies keep their own records and exchange data through a shared, secure layer called X-tee, under agreements between the organizations involved (Reading 2 and the Directory explain how it works). The class will specify how East Detroit's departments and outside agencies could do the same: which records they hold, what they would share and on what terms, who runs the exchange, how residents are protected, and which services come first.",
+  "after": "Your class writes the specification (spec) for a city-county version of Estonia's digital government. In Estonia, each agency keeps its own records and exchanges data through a shared, secure layer called X-tee, under agreements between the organizations (see Reading 2 and the Directory). The spec sets out how East Detroit's departments and outside agencies could do the same:\n\n- which records they hold\n- what they share, and on what terms\n- who runs the exchange\n- how residents are protected\n- which services come first",
+  "kind": "structure",
+  "reason": "Address the reader; turn a long inline series into a scannable list."
+ },
+ {
+  "before": "The city-county exists; the spec does not. No digital identity, app, procurement, vendor, cloud platform, data exchange, governance board or first service has been approved. Your job",
+  "after": "Nothing is approved yet: no digital identity, app, procurement, vendor, cloud platform, data exchange, governance board or first service. Your job",
+  "kind": "line-edit",
+  "reason": "Active, direct statement; that the city-county exists is stated under Settled."
+ },
+ {
+  "before": "# What is settled and what is open\n\n## Settled for the exercise (SCENARIO)\n\n1. East Detroit exists as a consolidated city-county and is coping with rapid growth. The class starts from that point.\n2. Its residents and services are diverse. The demographics and neighborhoods in Reading 1 are planning assumptions that teams can question. They are not real Census estimates.",
+  "after": "# Choose your entry\n\nYou own one entry: a city-county department, an outside agency or a resident group. Find it in the **Directory of Departments and Agencies** and claim it on the **Sign-up Sheet**. The instructor plays every entry nobody claims.\n\n| Group | Entries | Status |\n|---|---|---|\n| City-county departments | D-01 to D-15 | Must take part |\n| Outside agencies | A-01 to A-08: school district, library district, water and sewer authority, RTD, State human services and IT, Regional Housing Authority, County Court, Health and Hospital Authority | Always represented; may refuse to join |\n| Optional outside agency | A-09: East Detroit Health System | Takes part only if a student claims it |\n| Resident groups | R-01 to R-03 | Test the spec; always represented |\n\n: Table 1. Who owns the spec\n\nOutside agencies are worth claiming: one that refuses can stop a service.\n\nCity-county departments take part because East Detroit assigns them. If you own one, you can still contest policy, details, budgets, feasibility, legal authority and sequence.\n\n# What to bring to the first session\n\n- Your entry and its service problem, with one specific resident case\n- The records your entry holds that others need, and what it needs from others\n- The decision you propose, and the real or fictional authority it depends on\n- A second option and its trade-off\n- At least one internal dependency, and one outside organization that might accept, negotiate or refuse\n- What you expect to see if your plan works, including a failure or exception case\n\nLabel your sources: mark real facts as **REAL REFERENCE**, facts created for the course as **SCENARIO**, and unresolved choices as **OPEN**. Do not present fictional demographics, new ZIP codes, governance powers or data agreements as existing Colorado law.\n\n# What is settled and what is open\n\n## Settled for the exercise (SCENARIO)\n\n1. East Detroit exists as a consolidated city-county coping with rapid growth.\n2. Its residents and services are diverse. The demographics and neighborhoods in Reading 1 are planning assumptions you can question. They are not real Census estimates.",
+  "kind": "structure",
+  "reason": "Move what students must do (choose an entry, what to bring) up to the top; tighten settled items 1-2."
+ },
+ {
+  "before": "4. Its major civic and cultural institutions are the anchors described in Reading 1:",
+  "after": "4. Its civic and cultural anchors are the ones in Reading 1:",
+  "kind": "line-edit",
+  "reason": "Fewer words."
+ },
+ {
+  "before": "Earlier drafts of this project presented the following as adopted. They are not. Each is an example to debate, change or reject:",
+  "after": "Earlier drafts presented these as adopted. None is. You can debate, change or reject each one:",
+  "kind": "line-edit",
+  "reason": "Fewer words; address the reader."
+ },
+ {
+  "before": "outcomes. None of these had implementation evidence behind them.",
+  "after": "outcomes, with no implementation evidence behind them.",
+  "kind": "line-edit",
+  "reason": "Join a short trailing sentence."
+ },
+ {
+  "before": "# The three stages of the project\n\nThe project has three stages.\n\n## Stage A: Establish the basis\n\nFind out the city-county's duties, needs, existing assets, costs, resident cases and limits of authority. Department and agency heads identify priorities and dependencies, and may challenge the city's starting assumptions.\n\n**Your work in this stage:**",
+  "after": "# Three project stages\n\n## Stage A: Establish the basis\n\nFind out the city-county's duties, needs, existing assets, costs, resident cases and limits of authority. Identify priorities and dependencies. You may challenge the city's starting assumptions.\n\n**What you do:**",
+  "kind": "throat-clearing",
+  "reason": "Cut sentence that repeats the heading; address the reader."
+ },
+ {
+  "before": "who experiences it, and the neighborhood or neighborhoods where it matters.",
+  "after": "who faces it, and the neighborhoods where it matters.",
+  "kind": "line-edit",
+  "reason": "Fewer words."
+ },
+ {
+  "before": "partners your role would need.",
+  "after": "partners your role needs.",
+  "kind": "line-edit",
+  "reason": "Simple present."
+ },
+ {
+  "before": "first working demonstrations, financing, staffing, technical and data dependencies, review routes and sequence. The instructor turns agreed decisions into a draft implementation specification during a shared build.\n\n**Your work in this stage:**",
+  "after": "first working demonstrations, financing, staffing, technical and data dependencies, review routes and sequence. During a shared build, the instructor turns agreed decisions into a draft implementation spec.\n\n**What you do:**",
+  "kind": "line-edit",
+  "reason": "Tighter; consistent label."
+ },
+ {
+  "before": "how the work would run,",
+  "after": "how the work runs,",
+  "kind": "line-edit",
+  "reason": "Simple present."
+ },
+ {
+  "before": "Every internal city-county department takes part in the process, though its leaders can question policy, feasibility and sequence. Outside agencies may accept, negotiate or refuse. If a partner says no, redesign without it; saying no is still taking part.\n\n**Your work in this stage:**",
+  "after": "Outside agencies may accept, negotiate or refuse. If a partner says no, redesign without it. Saying no still counts as taking part.\n\n**What you do:**",
+  "kind": "duplicate",
+  "reason": "Departments' duty to take part and right to question are stated under Choose your entry."
+ },
+ {
+  "before": "If they take part only under conditions,",
+  "after": "If they join only on conditions,",
+  "kind": "line-edit",
+  "reason": "Fewer words."
+ },
+ {
+  "before": "records and any analysis derived from them? Who actually answers users,",
+  "after": "records and any analysis of them? Who answers users,",
+  "kind": "line-edit",
+  "reason": "Fewer words."
+ },
+ {
+  "before": "For every exchange of information, identify the sender, the receiver, the purpose, the fields, the legal or fictional authority, the consent or notice, how long it is kept, who corrects it,",
+  "after": "For every data exchange, identify the sender, receiver, purpose, fields, legal or fictional authority, consent or notice, how long data is kept, who corrects it,",
+  "kind": "line-edit",
+  "reason": "Drop repeated articles."
+ },
+ {
+  "before": "The first service is chosen on evidence and through negotiation; the course does not prescribe one. Candidates include:",
+  "after": "The course does not pick the first service. You choose it through evidence and negotiation. Candidates include:",
+  "kind": "line-edit",
+  "reason": "Active voice; address the reader."
+ },
+ {
+  "before": "Duties that must be enforceable need the right legal instrument.",
+  "after": "Enforceable duties need the right legal instrument.",
+  "kind": "line-edit",
+  "reason": "Fewer words."
+ },
+ {
+  "before": "The city wants residents who register a move to be offered a school enrollment referral. The school district could agree to a secure address-check service; agree only to provide fixed referral information; demand funding and manual review; or refuse. City GIS can still keep a municipal address record, but it cannot make the school's binding enrollment decision without the district.",
+  "after": "The city wants to offer a school enrollment referral to residents who register a move. The school district could: agree to a secure address-check service; agree only to provide fixed referral information; demand funding and manual review; or refuse. City GIS can still keep a municipal address record. It cannot make the school's binding enrollment decision without the district.",
+  "kind": "line-edit",
+  "reason": "Active voice; split a long sentence."
+ },
+ {
+  "before": "# Questions every entry should answer",
+  "after": "# Questions your entry must answer",
+  "kind": "line-edit",
+  "reason": "Address the reader; 'must' for requirements."
+ },
+ {
+  "before": "2. What is currently delivered by the city-county, by the state through county administration, or by another public body?",
+  "after": "2. What do the city-county, the state (through county administration) and other public bodies deliver now?",
+  "kind": "line-edit",
+  "reason": "Active voice."
+ },
+ {
+  "before": "6. How will we know",
+  "after": "6. How will you know",
+  "kind": "line-edit",
+  "reason": "Address the reader."
+ },
+ {
+  "before": "Each owner presents proposals, and students challenge each other's assumptions. A department can bring several proposals. The class compares conflicting requirements and decides what must be tested.\n\nThe instructor then builds or revises a working implementation model with AI in front of the class. The output might be a service diagram, a screen, a data exchange, a staff work queue, a cost model or a test of an agreement. Each department may bring several decisions and competing strategies, and every choice in the model can be traced to who proposed it.\n\nA screen or workflow the AI generates shows that an arrangement can be simulated, not that its rules or funding have been adopted.",
+  "after": "You present your proposals, and students challenge each other's assumptions. A department can bring several proposals. The class compares conflicting requirements and decides what to test.\n\nThe instructor then uses AI, in front of the class, to build or revise a working implementation model. It might be a service diagram, a screen, a data exchange, a staff work queue, a cost model or a test of an agreement. Every choice in the model can be traced to who proposed it.\n\nAn AI-generated screen or workflow shows only that an arrangement can be simulated. It does not mean its rules or funding are adopted.",
+  "kind": "duplicate",
+  "reason": "Cut repeat that a department may bring several proposals; active voice; avoid 'not X but Y'."
+ },
+ {
+  "before": "You don't need unanimous agreement: keep disagreements, refusals and missing information in the record, and where a decision is still contested, test more than one path.",
+  "after": "You do not need unanimous agreement. Record disagreements, refusals and missing information. Where a decision is still contested, test more than one path.",
+  "kind": "line-edit",
+  "reason": "Split a long sentence."
+ },
+ {
+  "before": "# Choose what you will own\n\nEach student owns one entry: a city-county department, an outside agency or a resident group. Use the **Directory of Departments and Agencies** to find your area, and claim it on the **Sign-up Sheet**. The instructor plays every entry nobody claims.\n\n| Group | Entries | Status |\n|---|---|---|\n| City-county departments | D-01 to D-15 | Must take part |\n| Outside agencies | A-01 to A-08: school district, library district, water and sewer authority, RTD, State human services and IT, Regional Housing Authority, County Court, Health and Hospital Authority | Always represented; may refuse to join |\n| Optional outside agency | A-09: East Detroit Health System | Takes part only if a student claims it |\n| Resident groups | R-01 to R-03 | Test the spec; always represented |\n\n: Table 1. Who owns the spec\n\nOutside agencies are worth taking: one that refuses can stop a service.\n\nCity-county departments take part because East Detroit has assigned them to. Their owners can still contest details, budgets, feasibility, legal authority and sequence.\n\n",
+  "after": "",
+  "kind": "structure",
+  "reason": "Moved near the top, after the assignment."
+ },
+ {
+  "before": "# What to bring to the first session\n\n- Your entry and its service problem, with one specific resident case\n- The records your entry holds that others would need, and what it needs from others\n- The decision you propose, and the real or fictional authority it depends on\n- A second option and its trade-off\n- At least one internal dependency, and one outside organization that might accept, negotiate or refuse\n- What you expect to see if your plan works, including a failure or exception case\n\nLabel your sources: mark real facts as **REAL REFERENCE**, facts created for the course as **SCENARIO**, and unresolved choices as **OPEN**. Do not present fictional demographics, new ZIP codes, governance powers or data agreements as existing Colorado law.\n\n",
+  "after": "",
+  "kind": "structure",
+  "reason": "Moved near the top, after Choose your entry."
+ }
+]

@@ -1,0 +1,140 @@
+[
+ {
+  "before": "# The problem being governed",
+  "after": "# The setting",
+  "kind": "structure",
+  "reason": "Shorter, plainer heading."
+ },
+ {
+  "before": "Every other public body below can join a shared arrangement, join on its own conditions, or refuse; the last column says what is specific to each.",
+  "after": "Every other public body can join a shared arrangement, join on its own terms, or refuse.",
+  "kind": "throat-clearing",
+  "reason": "Drops a sentence that only describes the table."
+ },
+ {
+  "before": "| Responsible for their own mandates and capacity. Can contest",
+  "after": "| Own their mandates and capacity. Can contest",
+  "kind": "line-edit",
+  "reason": "Shorter cell text."
+ },
+ {
+  "before": "That does not give it control over statewide eligibility rules",
+  "after": "It cannot control statewide eligibility rules",
+  "kind": "line-edit",
+  "reason": "Direct, shorter."
+ },
+ {
+  "before": "separately constituted authorities.\n\nIn practice:\n\n",
+  "after": "separately constituted authorities.\n\n",
+  "kind": "throat-clearing",
+  "reason": "Cuts a label that adds nothing."
+ },
+ {
+  "before": "Colorado is East Detroit's legal setting. Where real law would require state action, write \"fictional enabling rule needed\" instead of claiming a local vote overrides state law.",
+  "after": "Colorado law governs East Detroit. Where real law would require state action, write \"fictional enabling rule needed.\" Do not claim a local vote overrides state law.",
+  "kind": "line-edit",
+  "reason": "Splits a long sentence; speaks to the reader."
+ },
+ {
+  "before": "The course assumes East Detroit was created by a similar fictional measure. That measure did not set up any particular board, software platform, elected structure or service priority. A consolidated government has fewer handoffs between city and county services, but it still cannot override external authorities.",
+  "after": "East Detroit was created by a similar fictional measure. That measure set up no particular board, software platform, elected structure or service priority. A consolidated government has fewer handoffs between city and county services. It still cannot override external authorities.",
+  "kind": "line-edit",
+  "reason": "Fewer words; splits a long sentence."
+ },
+ {
+  "before": "county offices deliver services under state and federal requirements. That gives East Detroit operating duties an ordinary city wouldn't have, but program policy, appeals, privacy rules and access to state systems still apply.",
+  "after": "county offices deliver services under state and federal rules. So East Detroit has operating duties an ordinary city lacks. Program policy, appeals, privacy rules and access to state systems still apply.",
+  "kind": "line-edit",
+  "reason": "Splits a long sentence; plainer words."
+ },
+ {
+  "before": "to provide functions each is legally allowed to provide. Joint work is possible. Taking an independent agency's information without its consent is not.",
+  "after": "to provide functions each may legally provide. That does not allow taking an independent agency's information without its consent.",
+  "kind": "redundancy",
+  "reason": "Removes a restating sentence and a \"not X but Y\" contrast."
+ },
+ {
+  "before": "Denver, a consolidated city and county like East Detroit, is the exception: Denver funds its county court, not the state, and Denver handles the appointment of its judges.",
+  "after": "Denver, a consolidated city and county like East Detroit, is the exception. Denver, not the state, funds its county court, and Denver appoints its judges.",
+  "kind": "line-edit",
+  "reason": "Base verb instead of hidden verb; splits sentence. Facts unchanged."
+ },
+ {
+  "before": "SCENARIO: East Detroit has a county court on the Denver model, the East Detroit County Court. No other Colorado county has this arrangement, so it is a fictional enabling rule written into East Detroit's founding amendment.",
+  "after": "SCENARIO: The East Detroit County Court follows the Denver model. No other Colorado county has this arrangement, so East Detroit's founding amendment includes a fictional enabling rule for it.",
+  "kind": "line-edit",
+  "reason": "Shorter, active."
+ },
+ {
+  "before": "its judges decide cases independently and it controls its own records, which is why this course treats it as an outside agency.",
+  "after": "its judges decide cases independently and it controls its own records. So this course treats it as an outside agency.",
+  "kind": "line-edit",
+  "reason": "Splits a long sentence."
+ },
+ {
+  "before": "SCENARIO: East Detroit has a public safety-net hospital on this model, the East Detroit Health and Hospital Authority. It is separate",
+  "after": "SCENARIO: The East Detroit Health and Hospital Authority, a public safety-net hospital, follows this model. It is separate",
+  "kind": "line-edit",
+  "reason": "Shorter, puts the name first."
+ },
+ {
+  "before": "SCENARIO: East Detroit's libraries are run by the East Detroit Public Library District, an independent district with its own board and tax levy, not a city department. The Boulder Public Library District, in Table 2, is a real Colorado library district governed separately from its city.",
+  "after": "SCENARIO: The East Detroit Public Library District runs the libraries. It is an independent district with its own board and tax levy, not a city department. The Boulder Public Library District (Table 2) is a real Colorado library district governed separately from its city.",
+  "kind": "line-edit",
+  "reason": "Active voice; splits a long sentence."
+ },
+ {
+  "before": "Michigan arrangements are comparisons, not East Detroit law. One applies only if the class writes and adopts it, and says where Colorado law or the fictional enabling measure would allow it.",
+  "after": "A Michigan arrangement applies only if the class writes and adopts it and says where Colorado law or the fictional enabling measure would allow it.",
+  "kind": "duplicate",
+  "reason": "First sentence repeats the heading."
+ },
+ {
+  "before": "The class could adopt something similar",
+  "after": "You could adopt something similar",
+  "kind": "line-edit",
+  "reason": "Speaks to the reader."
+ },
+ {
+  "before": "leases and operates Detroit's regional water and sewer facilities, while the Detroit Water and Sewerage Department keeps ownership of the city's local system and serves its customers. Owning the pipes, running the plants and serving customers can sit with different bodies.",
+  "after": "leases and operates Detroit's regional water and sewer facilities. The Detroit Water and Sewerage Department owns the city's local system and serves its customers. Ownership, operation and customer service can sit with different bodies.",
+  "kind": "line-edit",
+  "reason": "Splits a long sentence; shorter."
+ },
+ {
+  "before": "built community-run networks maintained by trained Digital Stewards, giving residents paid roles and real responsibility instead of only surveys.",
+  "after": "built community-run networks. Trained Digital Stewards maintained them, giving residents paid roles and real responsibility beyond surveys.",
+  "kind": "line-edit",
+  "reason": "Splits a long sentence; active voice."
+ },
+ {
+  "before": "A student may propose mixed board appointments",
+  "after": "You may propose mixed board appointments",
+  "kind": "line-edit",
+  "reason": "Speaks to the reader."
+ },
+ {
+  "before": "| Exchanging data for an approved purpose, versus shared records, versus a credential held by the resident |",
+  "after": "| Exchange for an approved purpose vs. shared records vs. a credential the resident holds |",
+  "kind": "line-edit",
+  "reason": "Shorter cell text."
+ },
+ {
+  "before": "Two separate housing institutions already exist. The City Housing Division",
+  "after": "The City Housing Division",
+  "kind": "throat-clearing",
+  "reason": "Opening sentence only announces what follows."
+ },
+ {
+  "before": "are separate obligations, so not every overlap between them is waste.",
+  "after": "are separate obligations. Not every overlap between them is waste.",
+  "kind": "line-edit",
+  "reason": "Splits sentence."
+ },
+ {
+  "before": "Pick a rule and say why; don't assume the \"better\" state's rule wins automatically.",
+  "after": "Pick a rule and say why. The \"better\" state's rule does not win automatically.",
+  "kind": "line-edit",
+  "reason": "Two short sentences."
+ }
+]

@@ -1,0 +1,122 @@
+[
+ {
+  "before": "East Detroit has 382,417 residents across twenty provisional neighborhoods. It is one fictional city-county government, but many organizations residents use are independent of it. Growth brings",
+  "after": "East Detroit is a fictional city-county of 382,417 residents in twenty provisional neighborhoods. Many organizations residents use are independent of it. Growth brings",
+  "kind": "line-edit",
+  "reason": "Merges two sentences."
+ },
+ {
+  "before": "# What the city-county can and cannot require",
+  "after": "# What the city-county can require",
+  "kind": "line-edit",
+  "reason": "Shorter heading."
+ },
+ {
+  "before": "Broomfield, a real Colorado city, became a county through a state constitutional amendment. A similar fictional measure created East Detroit; it set no board, software platform, elected structure or service priority. Merging city and county cuts handoffs but cannot override external authorities.",
+  "after": "Broomfield, a real Colorado city, became a county by state constitutional amendment. A similar fictional measure created East Detroit but set no board, software platform, elected structure or service priority. Consolidation cuts handoffs; it cannot override external authorities.",
+  "kind": "line-edit",
+  "reason": "Tighter."
+ },
+ {
+  "before": "Colorado human services are state-supervised and county-administered. So East Detroit delivers programs such as food assistance under state and federal rules for policy, appeals, privacy and state system access.",
+  "after": "Colorado human services are state-supervised and county-administered. East Detroit delivers programs such as food assistance under state and federal rules on policy, appeals, privacy and system access.",
+  "kind": "line-edit",
+  "reason": "Tighter."
+ },
+ {
+  "before": "Colorado's constitution lets governments cooperate and contract to provide functions each may legally provide. It does not allow taking an independent agency's information without consent.",
+  "after": "Colorado's constitution lets governments cooperate and contract to provide functions each may legally provide, but not to take an independent agency's information without consent.",
+  "kind": "line-edit",
+  "reason": "One sentence."
+ },
+ {
+  "before": "Denver, a consolidated city and county, is the exception. Denver, not the state, funds its county court, and Denver appoints its judges. Article VI, \u00a726 of the Colorado Constitution covers Denver's county judges.",
+  "after": "Denver is the exception. Denver, not the state, funds its county court, and Denver appoints its judges (Colorado Constitution, Article VI, \u00a726).",
+  "kind": "line-edit",
+  "reason": "Folds the constitutional cite into the sentence it supports; consolidation is covered above."
+ },
+ {
+  "before": "SCENARIO: The East Detroit County Court copies the Denver model, which no other Colorado county has, through a fictional enabling rule in the founding amendment. Felonies, family and probate cases go to a state district court. Its independent judges and records make it an outside agency.",
+  "after": "SCENARIO: A fictional enabling rule in the founding amendment gives East Detroit a Denver-model county court, which no other Colorado county has. Felonies, family and probate cases go to a state district court. Independent judges and records make it an outside agency.",
+  "kind": "line-edit",
+  "reason": "Tighter."
+ },
+ {
+  "before": "SCENARIO: The East Detroit Health and Hospital Authority follows this model. It is separate from the East Detroit Health System.",
+  "after": "SCENARIO: The East Detroit Health and Hospital Authority follows this model, separate from the East Detroit Health System.",
+  "kind": "line-edit",
+  "reason": "One sentence."
+ },
+ {
+  "before": "SCENARIO: The East Detroit Public Library District is independent, not a city department. The Boulder Public Library District (Table 2) is a real Colorado example.",
+  "after": "SCENARIO: The East Detroit Public Library District is independent of the city. The Boulder Public Library District (Table 2) is a real Colorado example.",
+  "kind": "line-edit",
+  "reason": "Removes a \"not X\" construction."
+ },
+ {
+  "before": "Denver International Airport sits on former Adams County land. Legal authorization, elections and agreements governed its annexation and later economic deals. East Detroit faces the same questions beside another jurisdiction's facility:",
+  "after": "Denver International Airport sits on former Adams County land, annexed under legal authorization, elections and agreements that also governed later economic deals. Near another jurisdiction's facility, East Detroit faces the same questions:",
+  "kind": "line-edit",
+  "reason": "Two sentences."
+ },
+ {
+  "before": "Michigan's Charter Counties Act lets a charter county take on public health, police, fire, welfare, land use, recreation and utilities, and lets some city functions move to it by agreement. You could adopt a similar fictional charter clause, with the affected government's consent where law requires it.",
+  "after": "Michigan's Charter Counties Act lets a charter county take on public health, police, fire, welfare, land use, recreation and utilities, and take some city functions by agreement. You could adopt a similar fictional clause, with consent where law requires it.",
+  "kind": "line-edit",
+  "reason": "Tighter."
+ },
+ {
+  "before": "| Whether to create a separate data-exchange operator, and what powers it would have |",
+  "after": "| Whether to create a separate data-exchange operator, and its powers |",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "| Which body owns assets, which operates the service, and which answers to residents |",
+  "after": "| Who owns assets, who operates, who answers to residents |",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "| A public franchise with a private operator bound by financial and privacy obligations |",
+  "after": "| Public franchise; private operator bound by financial and privacy duties |",
+  "kind": "line-edit",
+  "reason": "Shorter cell."
+ },
+ {
+  "before": "| A public authority oversees procurement and a contracted portal integrator |",
+  "after": "| Public authority oversees procurement and a contracted portal integrator |",
+  "kind": "line-edit",
+  "reason": "Fragment."
+ },
+ {
+  "before": "| A public data company with a defined mandate and oversight |",
+  "after": "| Public data company with a defined mandate and oversight |",
+  "kind": "line-edit",
+  "reason": "Fragment."
+ },
+ {
+  "before": "The City Housing Division (EDHD) is a city-county department; the independent East Detroit Regional Housing Authority (EDRHA) also serves nearby participating communities. The pair mirrors Detroit (city housing department and independent housing commission) and Portland (city housing bureau and Home Forward).",
+  "after": "The City Housing Division (EDHD) is a city-county department; the independent EDRHA also serves nearby participating communities. The pair mirrors Detroit's housing department and independent housing commission, and Portland's housing bureau and Home Forward.",
+  "kind": "line-edit",
+  "reason": "EDRHA is defined in Table 1; shorter."
+ },
+ {
+  "before": "Start from real Colorado responsibilities and the fictional city-county's valid public powers.",
+  "after": "Start from real Colorado responsibilities and the fictional city-county's valid powers.",
+  "kind": "line-edit",
+  "reason": "Shorter."
+ },
+ {
+  "before": "write the authorizing clause or needed state partnership into the simulation.",
+  "after": "write the authorizing clause or state partnership into the simulation.",
+  "kind": "line-edit",
+  "reason": "Shorter."
+ },
+ {
+  "before": "They can refuse, and a city-county resolution does not count as their consent.",
+  "after": "They can refuse; a city-county resolution is not their consent.",
+  "kind": "line-edit",
+  "reason": "Shorter."
+ }
+]

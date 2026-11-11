@@ -1,0 +1,38 @@
+[
+ {
+  "before": "Do not assume either agency accepts the other's income record.",
+  "after": "Do not assume either agency automatically accepts the other's income record.",
+  "kind": "line-edit",
+  "reason": "Verification fix: restores the qualifier 'automatically' dropped in r3."
+ },
+ {
+  "before": "Public representation and formal controls do not prevent oversight failures.",
+  "after": "An authority can have public representation and formal controls and still fail at oversight.",
+  "kind": "line-edit",
+  "reason": "Verification fix: r3 overstated the claim; restores the original 'can still' meaning."
+ },
+ {
+  "before": "| Handoff ownership, management contracts, real time to lease |",
+  "after": "| Who owns each handoff, management contracts, how long units are actually available to lease |",
+  "kind": "line-edit",
+  "reason": "Verification fix: r3 changed the meaning of the cell."
+ },
+ {
+  "before": "vacant units include ones needing work, with different affordability restrictions, or with rents that may not compete",
+  "after": "vacant units include ones needing work, ones with different affordability restrictions, and ones whose rents may not compete",
+  "kind": "line-edit",
+  "reason": "Verification fix: grammar."
+ },
+ {
+  "before": "2024 reporting found 1,747 delinquent",
+  "after": "Reporting in 2024 found 1,747 delinquent",
+  "kind": "line-edit",
+  "reason": "Avoid starting a sentence with a numeral."
+ },
+ {
+  "before": "Unmet need can coexist with vacancies,",
+  "after": "Intense unmet need can coexist with vacancies,",
+  "kind": "line-edit",
+  "reason": "Verification fix: restores 'intense'."
+ }
+]

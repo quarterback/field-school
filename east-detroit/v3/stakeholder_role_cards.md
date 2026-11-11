@@ -1,6 +1,8 @@
 # East Detroit 2030: Department and partner role cards
 **Public Mechanics | Student assignments and negotiation | V3**
 
+> **Superseded, 11 November 2026.** Replaced for students by the Directory of Departments and Agencies in `../student-edition/`, which uses the roster in the master dossier, §8. This file is kept for reference: the roster changed (libraries became an outside district; a Fire Department, County Court and Health and Hospital Authority were added; neighboring governments, the airport and FAA, and employers and developers were removed), and the IDs below no longer match.
+
 Roles may be claimed individually or jointly. The class may create additional roles and split or combine work. **Internal** means the person or department must participate in East Detroit's planning process, but may challenge the plan and demand a responsible decision. **External** means the actor is independent and may refuse partnership. **Resident/community** participants can advocate or consent within their real or simulated rights; they cannot be presumed to speak for everyone.
 
 These cards introduce realistic incentives and disagreements. They do **not** pre-decide any services, data exchanges, governance models, technology, contracts, or student voting outcomes.

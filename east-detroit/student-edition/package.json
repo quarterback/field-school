@@ -1,0 +1,12 @@
+{
+  "name": "east-detroit-student-edition",
+  "private": true,
+  "description": "Editorial checks for the East Detroit student readings",
+  "type": "module",
+  "scripts": {
+    "check": "node checks/literal_guard.mjs && node checks/inspect.mjs"
+  },
+  "devDependencies": {
+    "red-pen-editor": "0.2.1"
+  }
+}

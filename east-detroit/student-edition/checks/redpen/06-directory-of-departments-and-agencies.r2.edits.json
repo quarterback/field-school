@@ -1,0 +1,74 @@
+[
+ {
+  "before": "no access to student files and no automatic school placement.",
+  "after": "access to student files; automatic school placement.",
+  "kind": "line-edit",
+  "reason": "Tighten to reference-entry fragments; keep facts."
+ },
+ {
+  "before": "Only Denver has this in real Colorado, so East Detroit's version is a fictional rule in its founding amendment.",
+  "after": "In real Colorado only Denver has this. East Detroit's version is a fictional rule in its founding amendment.",
+  "kind": "line-edit",
+  "reason": "Tighten to reference-entry fragments; keep facts."
+ },
+ {
+  "before": "federal housing assistance including vouchers, its own properties and its own appeals;",
+  "after": "federal housing assistance including vouchers, its properties and its appeals;",
+  "kind": "line-edit",
+  "reason": "Tighten to reference-entry fragments; keep facts."
+ },
+ {
+  "before": "handing over federal records, or running a workflow the city dictates.",
+  "after": "handing over federal records or running a city-dictated workflow.",
+  "kind": "line-edit",
+  "reason": "Tighten to reference-entry fragments; keep facts."
+ },
+ {
+  "before": "or a waiver if one is legally available.",
+  "after": "or a waiver if legally available.",
+  "kind": "line-edit",
+  "reason": "Tighten to reference-entry fragments; keep facts."
+ },
+ {
+  "before": "the independent health system already in the scenario:",
+  "after": "the scenario's independent health system:",
+  "kind": "line-edit",
+  "reason": "Tighten to reference-entry fragments; keep facts."
+ },
+ {
+  "before": "phased capacity commitments, or sharing account and service-address data.",
+  "after": "phased capacity commitments, or shared account and service-address data.",
+  "kind": "line-edit",
+  "reason": "Tighten to reference-entry fragments; keep facts."
+ },
+ {
+  "before": "plans, zoning, permits and building review, and their records.",
+  "after": "plans, zoning, permits and building review; their records.",
+  "kind": "line-edit",
+  "reason": "Tighten to reference-entry fragments; keep facts."
+ },
+ {
+  "before": "and people who prefer a language other than English.",
+  "after": "and people who prefer languages other than English.",
+  "kind": "line-edit",
+  "reason": "Tighten to reference-entry fragments; keep facts."
+ },
+ {
+  "before": "and residents who can't come in during office hours.",
+  "after": "and residents who can't visit during office hours.",
+  "kind": "line-edit",
+  "reason": "Tighten to reference-entry fragments; keep facts."
+ },
+ {
+  "before": "it treats patients who can't pay, so every referral costs it money.",
+  "after": "it treats patients who can't pay, so each referral costs it money.",
+  "kind": "line-edit",
+  "reason": "Tighten to reference-entry fragments; keep facts."
+ },
+ {
+  "before": "the official address and parcel registry and its correction process. Almost every other entry needs it.",
+  "after": "the official address and parcel registry and its correction process. Almost every entry needs it.",
+  "kind": "line-edit",
+  "reason": "Tighten to reference-entry fragments; keep facts."
+ }
+]

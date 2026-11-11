@@ -128,7 +128,29 @@ Colorado is the geographic and statutory default for our imaginary municipality.
 5. What would be visible to residents, workers, reviewers, and elected officials when the service runs?
 6. How will we know whether the chosen arrangement performs better, and whom might it leave out?
 
-## 8. Revision note
+## 8. Instructor decisions, 11 November 2026
+
+These are **fixed scenario conditions** set by the instructor. They supersede any conflicting statement above and in the other V3 documents.
+
+1. **The assignment's goal.** The class writes a specification for a city-county version of Estonia's digital government: agencies keep their own records and exchange data through a shared, secure layer under agreements (modeled on Estonia's X-tee). The design of that spec remains **OPEN**.
+2. **Roster and staffing.** Each student owns one department, outside agency or resident group from the roster below. The instructor speaks for every unclaimed entry. The student-facing sign-up sheet and directory are in `../student-edition/`.
+3. **Libraries** are run by an independent **East Detroit Public Library District** with its own board and tax levy, not by a city-county department. Parks and Cultural Affairs no longer includes libraries.
+4. **Fire Department** is a city-county department, separate from Police, 911 and Emergency Management. Whether the Fire Department or the Health and Hospital Authority runs ambulance transport is **OPEN**.
+5. **East Detroit County Court**: a city-county-funded trial court for evictions, small claims, civil cases up to $25,000, misdemeanors, traffic, protection orders and ordinance violations, with judges appointed by the mayor from merit lists. Modeled on Denver County Court, the only Colorado county court funded by its own city-county rather than the state. This is a **fictional enabling rule** in East Detroit's founding amendment. Felonies, family and probate cases remain with a state district court. The court is an outside agency for the exercise because its judges decide independently and it controls its own records.
+6. **East Detroit Health and Hospital Authority**: the public safety-net hospital, an independent public authority with a mayor-appointed board, modeled on the Denver Health and Hospital Authority (C.R.S. Title 25, Article 29). It is separate from the **East Detroit Health System** (Level I trauma and teaching hospital), which remains an optional outside agency.
+7. **Outside agencies always represented** (by a student or the instructor): East Detroit Unified School District, East Detroit Public Library District, East Detroit Water and Sewer Authority, RTD, State of Colorado Human Services and State IT, East Detroit Regional Housing Authority, East Detroit County Court, East Detroit Health and Hospital Authority. **Optional:** East Detroit Health System. **Removed from the roster:** neighboring cities and counties, Denver International Airport and the FAA, employers and developers, and metropolitan districts. They remain part of the real geography but are not owners of the spec.
+8. **Local outside agencies are fictional and sized for East Detroit.** Real Colorado and Michigan bodies serve only as models for the *type* of institution, not as the agencies themselves. RTD and the State of Colorado remain real.
+
+| ID | Entry | Status |
+|---|---|---|
+| D-01 to D-15 | Mayor/County Executive; Council and Budget Committee; City Manager; Human Services; Housing Division; Planning, Building and Land Use; Address Office and GIS; Finance, Tax, Assessor and Procurement; Digital Service and Records; Police, 911 and Emergency Management; Fire Department; Public Health; Parks, Recreation and Cultural Affairs; Transportation and Public Works; Clerk, Civil Rights and Appeals | City-county departments; must take part |
+| A-01 to A-08 | School District; Library District; Water and Sewer Authority; RTD; State Human Services and IT; Regional Housing Authority; County Court; Health and Hospital Authority | Outside agencies; always represented; may refuse |
+| A-09 | East Detroit Health System | Optional outside agency |
+| R-01 to R-03 | Renter and Tenant Advocacy Council; Old Watkins and Agricultural Landholders Alliance; Workers and Disability Access Coalition | Resident groups |
+
+Sources for the new models: Colorado Legislative Council, *Overview of the Colorado Judicial Branch* (2025), https://content.leg.colorado.gov/sites/default/files/r25-180-overview-of-the-colorado-judicial-branch-accessible.pdf ; Ballotpedia, Colorado County Courts, https://ballotpedia.org/Colorado_County_Courts ; C.R.S. § 25-29-103, https://colorado.public.law/statutes/crs_25-29-103 ; Denver Health 20th anniversary history, https://www.denverhealth.org/news/2017/01/denver-health-and-hospital-authority-20th-anniversary ; Estonian Information System Authority, X-tee, https://www.ria.ee/en/state-information-system/data-exchange-platforms/data-exchange-layer-x-tee
+
+## 9. Revision note
 
 This document supersedes the V2 master dossier's predefined administrative and digital-service choices and supersedes the original spaceport-centered map as a definitive city boundary. The old sources are retained for historical comparison. See `assumption_audit_v2_to_v3.md` for a complete change list.
 

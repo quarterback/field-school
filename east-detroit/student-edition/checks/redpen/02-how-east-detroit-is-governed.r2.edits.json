@@ -1,0 +1,218 @@
+[
+ {
+  "before": "Nothing in this reading is an adopted charter. The platform",
+  "after": "Nothing here is adopted. The platform",
+  "kind": "line-edit",
+  "reason": "Shorter."
+ },
+ {
+  "before": "It combines city services and county duties in one fictional government, but many of the organizations residents deal with are independent of it. Growth brings new parcels, crowded schools, expensive housing,",
+  "after": "It is one fictional city-county government, but many organizations residents use are independent of it. Growth brings new parcels, crowded schools, costly housing,",
+  "kind": "line-edit",
+  "reason": "Fewer words."
+ },
+ {
+  "before": "City-county departments must take part in the spec. Every other public body can join a shared arrangement, join on its own terms, or refuse.",
+  "after": "City-county departments must take part in the spec. Every other public body can join, join on its own terms, or refuse.",
+  "kind": "redundancy",
+  "reason": "Cuts words the reader can infer."
+ },
+ {
+  "before": "| Own their mandates and capacity. Can contest policy, financing, sequence, feasibility and methods. |",
+  "after": "| Own mandates and capacity; can contest policy, financing, sequence, feasibility, methods |",
+  "kind": "line-edit",
+  "reason": "Cell to fragment."
+ },
+ {
+  "before": "| Define decision rights, appropriations, accountability and how conflicts are settled. |",
+  "after": "| Set decision rights, appropriations, accountability, conflict resolution |",
+  "kind": "line-edit",
+  "reason": "Cell to fragment."
+ },
+ {
+  "before": "| Set program rules. The city cannot rewrite federal or state eligibility. |",
+  "after": "| Set program rules; city cannot rewrite federal or state eligibility |",
+  "kind": "line-edit",
+  "reason": "Cell to fragment."
+ },
+ {
+  "before": "| Runs its own housing assistance and properties and decides who sees its records. |",
+  "after": "| Own housing assistance, properties and records access |",
+  "kind": "line-edit",
+  "reason": "Cell to fragment."
+ },
+ {
+  "before": "| Runs libraries, public computers and in-person help; decides whether to serve as a help point for city services. |",
+  "after": "| Libraries, public computers, in-person help; decides whether to be a city-service help point |",
+  "kind": "line-edit",
+  "reason": "Cell to fragment."
+ },
+ {
+  "before": "| External; paid for by the city-county, judges decide independently | Controls its own case records. |",
+  "after": "| External; city-county funds it, judges independent | Controls its case records |",
+  "kind": "line-edit",
+  "reason": "Cells to fragments."
+ },
+ {
+  "before": "| Runs the public safety-net hospital. Patient records stay under medical privacy law. |",
+  "after": "| Public safety-net hospital; patient records under medical privacy law |",
+  "kind": "line-edit",
+  "reason": "Cell to fragment."
+ },
+ {
+  "before": "| Runs the Level I trauma and teaching hospital, under the same privacy law. |",
+  "after": "| Level I trauma and teaching hospital; same privacy law |",
+  "kind": "line-edit",
+  "reason": "Cell to fragment."
+ },
+ {
+  "before": "| Shared data, enrollment workflows and school transportation require agreement. |",
+  "after": "| Agreement needed for shared data, enrollment and school transportation |",
+  "kind": "line-edit",
+  "reason": "Cell to fragment."
+ },
+ {
+  "before": "| Service and fare arrangements require negotiation. A rail station in the scenario is not a data-sharing agreement. |",
+  "after": "| Service and fares by negotiation; a scenario rail station is not a data-sharing agreement |",
+  "kind": "line-edit",
+  "reason": "Cell to fragment."
+ },
+ {
+  "before": "| External, unless the class adopts a lawful way to absorb them | Have their own capital, water rights, rates, boundaries and service obligations. |",
+  "after": "| External, unless the class lawfully absorbs them | Own capital, water rights, rates, boundaries, service obligations |",
+  "kind": "line-edit",
+  "reason": "Cells to fragments."
+ },
+ {
+  "before": "| Airport safety, routes, land ownership and boundaries limit city plans. |",
+  "after": "| Airport safety, routes, land ownership and boundaries limit city plans |",
+  "kind": "line-edit",
+  "reason": "Consistent fragment punctuation."
+ },
+ {
+  "before": "| Each can push, apply, sell or object, but none holds public authority. |",
+  "after": "| Can push, apply, sell or object; no public authority |",
+  "kind": "line-edit",
+  "reason": "Cell to fragment."
+ },
+ {
+  "before": "A city-county can assign duties to its own departments through its charter, ordinances, administrative orders and approved budgets. It cannot control statewide eligibility rules, federal programs, independent school boards, private records, RTD, nearby municipalities or separately constituted authorities.",
+  "after": "The city-county directs its own departments through charter, ordinances, administrative orders and budgets. It cannot control statewide eligibility rules, federal programs, independent school boards, private records, RTD, nearby municipalities or separate authorities.",
+  "kind": "line-edit",
+  "reason": "Trims lead paragraph."
+ },
+ {
+  "before": "Where real law would require state action, write \"fictional enabling rule needed.\" Do not claim a local vote overrides state law.",
+  "after": "Where real law would need state action, write \"fictional enabling rule needed.\"",
+  "kind": "redundancy",
+  "reason": "Last sentence repeats rule 3."
+ },
+ {
+  "before": "Broomfield is a real Colorado city that gained county status through a state constitutional amendment. East Detroit was created by a similar fictional measure. That measure set up no particular board, software platform, elected structure or service priority. A consolidated government has fewer handoffs between city and county services. It still cannot override external authorities.",
+  "after": "Broomfield, a real Colorado city, became a county through a state constitutional amendment. A similar fictional measure created East Detroit; it set no board, software platform, elected structure or service priority. Merging city and county cuts handoffs but cannot override external authorities.",
+  "kind": "line-edit",
+  "reason": "Three short sentences."
+ },
+ {
+  "before": "Colorado's human services are state-supervised and county-administered. For programs such as food assistance, county offices deliver services under state and federal rules. So East Detroit has operating duties an ordinary city lacks. Program policy, appeals, privacy rules and access to state systems still apply.",
+  "after": "Colorado human services are state-supervised and county-administered. So East Detroit delivers programs such as food assistance under state and federal rules for policy, appeals, privacy and state system access.",
+  "kind": "overexplaining",
+  "reason": "Two sentences; drops an inferable point."
+ },
+ {
+  "before": "Colorado's constitution lets governments cooperate and contract to provide functions each may legally provide. That does not allow taking an independent agency's information without its consent.",
+  "after": "Colorado's constitution lets governments cooperate and contract to provide functions each may legally provide. It does not allow taking an independent agency's information without consent.",
+  "kind": "line-edit",
+  "reason": "Tighter."
+ },
+ {
+  "before": "Denver, a consolidated city and county like East Detroit, is the exception. Denver, not the state, funds its county court, and Denver appoints its judges. The Colorado Constitution has a section specific to Denver's county judges (Article VI, \u00a726).",
+  "after": "Denver, a consolidated city and county, is the exception. Denver, not the state, funds its county court, and Denver appoints its judges. Article VI, \u00a726 of the Colorado Constitution covers Denver's county judges.",
+  "kind": "line-edit",
+  "reason": "Tighter; facts kept."
+ },
+ {
+  "before": "SCENARIO: The East Detroit County Court follows the Denver model. No other Colorado county has this arrangement, so East Detroit's founding amendment includes a fictional enabling rule for it. Felonies, family and probate cases go to an ordinary state district court. The city-county pays for the court, but its judges decide cases independently and it controls its own records. So this course treats it as an outside agency.",
+  "after": "SCENARIO: The East Detroit County Court copies the Denver model, which no other Colorado county has, through a fictional enabling rule in the founding amendment. Felonies, family and probate cases go to a state district court. Its independent judges and records make it an outside agency.",
+  "kind": "duplicate",
+  "reason": "Drops funding and records detail already in Table 1."
+ },
+ {
+  "before": "SCENARIO: The East Detroit Health and Hospital Authority, a public safety-net hospital, follows this model. It is separate from the East Detroit Health System, the trauma and teaching hospital.",
+  "after": "SCENARIO: The East Detroit Health and Hospital Authority follows this model. It is separate from the East Detroit Health System.",
+  "kind": "duplicate",
+  "reason": "Hospital roles already in Table 1."
+ },
+ {
+  "before": "SCENARIO: The East Detroit Public Library District runs the libraries. It is an independent district with its own board and tax levy, not a city department. The Boulder Public Library District (Table 2) is a real Colorado library district governed separately from its city.",
+  "after": "SCENARIO: The East Detroit Public Library District is independent, not a city department. The Boulder Public Library District (Table 2) is a real Colorado example.",
+  "kind": "duplicate",
+  "reason": "Board and tax levy already in Table 1; governance in Table 2."
+ },
+ {
+  "before": "Denver International Airport sits on land that used to be in Adams County. Legal authorization, elections and agreements governed the annexation and the economic arrangements that followed. East Detroit faces the same questions next to another jurisdiction's facility: who pays, who owns the land, who collects revenue and who approves new uses.",
+  "after": "Denver International Airport sits on former Adams County land. Legal authorization, elections and agreements governed its annexation and later economic deals. East Detroit faces the same questions beside another jurisdiction's facility: who pays, owns the land, collects revenue and approves new uses.",
+  "kind": "line-edit",
+  "reason": "Fewer words."
+ },
+ {
+  "before": "A Michigan arrangement applies only if the class writes and adopts it and says where Colorado law or the fictional enabling measure would allow it.",
+  "after": "A Michigan arrangement applies only if the class adopts it and shows how Colorado law or the fictional enabling measure allows it.",
+  "kind": "line-edit",
+  "reason": "Shorter."
+ },
+ {
+  "before": "Michigan's Charter Counties Act lists functions a charter county may take on, including public health, police, fire, welfare, land use, recreation and utilities, and lets certain city functions move to the county by agreement. You could adopt something similar as a fictional East Detroit charter clause. A transferred function still needs the affected government's consent where the law requires it.",
+  "after": "Michigan's Charter Counties Act lets a charter county take on public health, police, fire, welfare, land use, recreation and utilities, and lets some city functions move to it by agreement. You could adopt a similar fictional charter clause, with the affected government's consent where law requires it.",
+  "kind": "line-edit",
+  "reason": "Two sentences."
+ },
+ {
+  "before": "The Great Lakes Water Authority (GLWA) leases and operates Detroit's regional water and sewer facilities. The Detroit Water and Sewerage Department owns the city's local system and serves its customers. Ownership, operation and customer service can sit with different bodies. That split is one model",
+  "after": "The Great Lakes Water Authority (GLWA) leases and operates Detroit's regional water and sewer facilities, while the Detroit Water and Sewerage Department owns the local system and serves customers. That split is one model",
+  "kind": "redundancy",
+  "reason": "Drops a sentence restating the split."
+ },
+ {
+  "before": "Detroit's Equitable Internet Initiative built community-run networks. Trained Digital Stewards maintained them, giving residents paid roles and real responsibility beyond surveys.\n\nYou may propose mixed board appointments, an elected commission, a neighborhood council, a contracted regional operator or an internal city department. The decision record must say who holds each decision right and where that power comes from in the scenario.",
+  "after": "Detroit's Equitable Internet Initiative gave residents paid roles as trained Digital Stewards maintaining community-run networks.\n\nYou may propose a mixed board, elected commission, neighborhood council, contracted regional operator or internal city department if your decision record says who holds each decision right and where that power comes from.",
+  "kind": "structure",
+  "reason": "Merges the proposal paragraph into one sentence."
+ },
+ {
+  "before": "| Example (REAL REFERENCE) | How it actually works |",
+  "after": "| Example (REAL REFERENCE) | How it works |",
+  "kind": "line-edit",
+  "reason": "Shorter header."
+ },
+ {
+  "before": "These are precedents, not requirements. Rules change; check an institution's current terms before citing it.",
+  "after": "These are precedents, not requirements. Check current terms before citing one.",
+  "kind": "line-edit",
+  "reason": "Shorter."
+ },
+ {
+  "before": "The City Housing Division (EDHD) is a city-county department. The East Detroit Regional Housing Authority (EDRHA) is independent and serves East Detroit and nearby participating communities. The pair is modeled on Detroit (a city housing department beside an independent housing commission) and Portland (a city housing bureau beside Home Forward). A local rent-relief grant and a federal housing voucher are separate obligations. Not every overlap between them is waste. Reading 3 covers both cases; any agreement between EDHD and EDRHA is OPEN.",
+  "after": "The City Housing Division (EDHD) is a city-county department; the independent East Detroit Regional Housing Authority (EDRHA) also serves nearby participating communities. The pair mirrors Detroit (city housing department and independent housing commission) and Portland (city housing bureau and Home Forward). A local rent-relief grant and a federal housing voucher are separate obligations, so some overlap is not waste. Reading 3 covers both; any EDHD-EDRHA agreement is OPEN.",
+  "kind": "line-edit",
+  "reason": "Three sentences plus pointer."
+ },
+ {
+  "before": "# Rules for using Colorado and Michigan arrangements",
+  "after": "# Rules for using these models",
+  "kind": "line-edit",
+  "reason": "Shorter heading."
+ },
+ {
+  "before": "If an arrangement can't simply be adopted in Colorado, write the authorizing clause or the needed state partnership into the simulation.",
+  "after": "If Colorado can't simply adopt an arrangement, write the authorizing clause or needed state partnership into the simulation.",
+  "kind": "line-edit",
+  "reason": "Active voice."
+ },
+ {
+  "before": "who can settle the conflict and any outside party",
+  "after": "who can settle it and any outside party",
+  "kind": "line-edit",
+  "reason": "Shorter."
+ }
+]

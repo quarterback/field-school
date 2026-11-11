@@ -13,10 +13,13 @@ The class must establish what exists, decide what to implement, and secure coope
 
 | Organization | Starting status | What this means in the exercise |
 |---|---|---|
-| City-county departments (planning, address/GIS, clerk, public health, **City Housing Division**, human services, parks, public safety, finance, technology, libraries) | Internal, must take part in the process | Responsible for their own mandates and capacity; can contest policy, financing, order, feasibility and methods |
+| City-county departments (planning, address/GIS, clerk, public health, **City Housing Division**, human services, parks, police and 911, fire, finance, technology) | Internal, must take part in the process | Responsible for their own mandates and capacity; can contest policy, financing, order, feasibility and methods |
 | Elected municipal/county leaders | Internal governing authority | Have to define decision rights, appropriations, accountability and conflict resolution |
 | State of Colorado agencies | External, with governing program authority | Can refuse integration, impose program rules or agree to a limited agreement; fictional city cannot rewrite federal or state eligibility |
 | **East Detroit Regional Housing Authority (EDRHA)** | **External independent authority with its own board and regional constituency** | Administers its own housing assistance and properties; can negotiate or decline shared services and data access |
+| **East Detroit Public Library District** | External independent district with its own board and tax levy | Runs libraries and public access; can agree, set terms or decline |
+| **East Detroit County Court** | External: city-county funded, judicially independent (Denver County Court model; fictional enabling rule) | Controls its own case records; can agree, condition or decline sharing |
+| **East Detroit Health and Hospital Authority** | External independent public authority; mayor-appointed board (Denver Health model) | Public safety-net hospital; patient records stay under medical privacy law |
 | Independent school districts and boards | External, separate governing organizations | Participation, shared data, enrollment workflows and school transport require agreement |
 | RTD and any special transit authority | External | Service and fare arrangements require negotiation; a fictional rail station does not equal a data-sharing agreement |
 | Water and wastewater providers, special districts | External unless explicitly absorbed by a class-adopted and legally supported mechanism | Have capital, water-rights, rates, boundaries and service obligations that must be resolved |
@@ -39,7 +42,7 @@ Read: Colorado local government handbook, https://content.leg.colorado.gov/sites
 
 **Charter-county functions.** Michigan's Charter Counties Act lists permissible county functions including public health, police, fire, welfare, land-use, recreation, and utilities, as well as transfers of certain municipal functions by agreement. Students can evaluate a similar mechanism as a *fictional East Detroit charter clause*, but must say where Colorado law or the hypothetical enabling measure would authorize it. A transferable function remains subject to affected government consent where applicable.
 
-**Detroit water authority.** The Detroit/Great Lakes Water Authority arrangement separates infrastructure ownership, regional system operation, and local customer relationships. That separation helps the class avoid the vague claim that “the city owns the data and the system.” Different assets can have different custodians and obligations. Source from original class packet: https://www.glwater.org/about-us/ and https://detroitmi.gov/departments/water-and-sewerage-department .
+**Detroit water authority.** The Detroit/Great Lakes Water Authority arrangement separates infrastructure ownership, regional system operation, and local customer relationships. That separation helps the class avoid the vague claim that “the city owns the data and the system.” Different assets can have different custodians and obligations. Source from original class packet: https://www.glwater.org/what-we-do/ and https://detroitmi.gov/departments/water-and-sewerage-department .
 
 **Neighborhood technology stewards.** Detroit's Equitable Internet Initiative used community-led networks and Digital Stewards. It illustrates giving community members responsibility and paid roles rather than limiting their participation to surveys. Source: https://detroitcommunitytech.org/ .
 
@@ -121,13 +124,13 @@ Each department may provide multiple decisions and competing implementation stra
 - Adams/Denver airport agreements: https://adamscountyco.gov/our-county/elected-officials/board-of-county-commissioners/airport-agreements/
 - Michigan Charter Counties Act, section 15: https://legislature.mi.gov/Laws/MCL?objectName=mcl-45-515
 - Detroit Water and Sewerage Department: https://detroitmi.gov/departments/water-and-sewerage-department
-- Great Lakes Water Authority: https://www.glwater.org/about-us/
+- Great Lakes Water Authority: https://www.glwater.org/what-we-do/
 - Detroit Community Technology Project: https://detroitcommunitytech.org/
 - UTOPIA Fiber: https://www.utopiafiber.com/
 - Colorado SIPA: https://sipa.colorado.gov/
 - KOMBIT: https://kombit.dk/
 - Estonian X-tee: https://www.ria.ee/en/state-information-system/data-exchange-platforms/data-exchange-layer-x-tee
 - Athumi, Flanders: https://www.athumi.eu/
-- NYC LinkNYC program: https://www.nyc.gov/site/doitt/initiatives/linknyc.page
+- NYC LinkNYC program: https://www.link.nyc/
 
 **Teaching note:** The references introduce institutional models. This packet does not certify that each outside institution's specific terms remain unchanged in 2030.
