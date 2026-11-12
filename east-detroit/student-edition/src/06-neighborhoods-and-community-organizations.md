@@ -33,6 +33,12 @@ East Detroit's twenty neighborhoods occupy five planning regions: South/Historic
 | ED19 | Portside | 13,690 | 5,460 | \$76,700 | 62% | 55% |
 | ED20 | High Prairie | 18,924 | 7,788 | \$151,200 | 26% | 25% |
 
+## Postal areas and neighborhoods
+
+The city uses **80137 (Watkins)** as its primary postal reference. **80102 (Bennett), 80018 (Aurora), and 80019 (Aurora's airport-side area)** appear in the broader regional address landscape. East Detroit's telephone area codes are **303, 720, and 983**.
+
+These ZIP codes do not correspond to the twenty neighborhoods. They also cannot establish whether a person lives inside the city-county or qualifies for a housing, school, utility or recreation program. Neighborhoods are local place names; the relevant agency applies its own mapped service area and address rules. See the [city profile](01-city-county-profile.md) for the road, airport and postal reference table.
+
 ## South and historic neighborhoods
 
 **Old Watkins** retains its original village, agricultural households, long-standing businesses and older homes. **Watkins Junction** has rail-adjacent housing and more newly arrived families. **Colfax East** has a commercial corridor, lower rents and frequent moves. **South Yards** mixes industrial work, truck traffic and housing close to employment sites. The four neighborhoods have different needs for property records, housing assistance, air quality and service access.

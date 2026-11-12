@@ -186,3 +186,7 @@ Main structural changes: Reading 4 now puts the assignment, the roster and "What
 "Partly" items are mostly in descriptive readings (1, 2, 3), where "you" fits poorly, and in evidence lists in Reading 3, where 23 of 106 sentences stay over 20 words. Reading 4 keeps the terms MOU, GIS and "land-value mechanisms".
 
 **Guard results after the pass:** the cross-document literal guard reports the same ten formatting differences as before (section 4). Reading 3's YAML header and Sources are byte-identical to the previous version, and its qualifiers ("reported", "management said", "not a finding of misconduct", "not proof") appear as often as before.
+
+## 10. Restored municipal identifiers, 11 November 2026
+
+A subsequent review found that the student readings had omitted the postal and telephone identifiers used in the earlier East Detroit dossier. The city profile now carries 80137 (Watkins), 80102 (Bennett), 80018 and 80019 (Aurora), along with the 303/720/983 telephone overlay, real airports (KCFO and DEN), regional roads and the original CASP study-area limits. The government and neighborhood readings repeat the distinction between postal, municipal and service boundaries where it changes a real operational decision. The master dossier was updated to match. The document build now fails when those required geographic identifiers are absent from the student city profile. No student roles, municipal programs or zoning decisions were changed.

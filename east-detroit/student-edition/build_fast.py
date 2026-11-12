@@ -109,7 +109,23 @@ def style_docx(path):
     doc.core_properties.language = "en-US"
     doc.save(path)
 
+REQUIRED_POSTAL_FACTS = (
+    "80137", "80102", "80018", "80019",
+    "303, 720, 983", "KCFO", "DEN",
+    "Hudson Road", "Harback Road", "E. 72nd Avenue",
+)
+
+def assert_city_identifiers():
+    profile = (SRC / "01-city-county-profile.md").read_text(encoding="utf-8")
+    missing = [fact for fact in REQUIRED_POSTAL_FACTS if fact not in profile]
+    if missing:
+        raise RuntimeError(
+            "The student city profile lost required geographic identifiers: "
+            + ", ".join(missing)
+        )
+
 def main():
+    assert_city_identifiers()
     DIST.mkdir(exist_ok=True)
     pandoc = pypandoc.get_pandoc_path()
     for md in sorted(SRC.glob("*.md")):

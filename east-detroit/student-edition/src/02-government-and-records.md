@@ -12,6 +12,12 @@ East Detroit's charter places municipal and county duties under one elected gove
 
 Colorado's [Local Government Handbook](https://content.leg.colorado.gov/publications/2023-local-government-handbook) describes municipal, county, school and special district powers. The [Broomfield constitutional amendment record](https://www.broomfield.org/1635/Constitutional-Amendment) provides a Colorado example of forming a city and county. Michigan's [Charter Counties Act, MCL 45.515](https://legislature.mi.gov/Laws/MCL?objectName=mcl-45-515) provides a useful comparison for transferring municipal functions through agreements.
 
+## Addresses and service boundaries
+
+East Detroit uses the existing Watkins, Bennett and Aurora postal references **80137, 80102, 80018 and 80019**, along with the regional telephone area codes **303, 720 and 983**. These identifiers serve mail delivery and telephone routing. They do not determine which government provides a service.
+
+A resident may have a mailing address in one postal area, a home or business parcel in another jurisdiction, a school attendance area assigned by an independent district, and utility service from a separate provider. The Address Office and GIS maintains municipal parcel and service-boundary records; each agency remains responsible for the eligibility or service rules it applies. See the [city geographic and postal reference](01-city-county-profile.md) and the [USPS explanation of ZIP codes](https://faq.usps.com/articles/Knowledge/ZIP-Code-The-Basics).
+
 ## Budgets and taxes
 
 Colorado's Taxpayer's Bill of Rights (TABOR), article X, section 20 of the state constitution, constrains local tax increases, debt and certain revenue decisions. A new local tax or multiyear debt may require voter approval. An agency's operating income and a city's general fund are not interchangeable. [Colorado Legislative Council: TABOR overview (2026)](https://content.leg.colorado.gov/publications/brief-overview-taxpayers-bill-rights-revenue-limit).

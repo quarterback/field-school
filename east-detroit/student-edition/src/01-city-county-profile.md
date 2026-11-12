@@ -12,6 +12,23 @@ The City and County of East Detroit covers about **115.4 square miles** east of 
 
 East Detroit is a consolidated city-county. One local government handles municipal functions and county responsibilities. Independent school, library, water, transit, court, hospital and housing agencies continue to serve the same area under separate governing arrangements.
 
+## Geographic and postal reference
+
+| Item | East Detroit reference |
+|---|---|
+| Primary ZIP code | **80137** — Watkins |
+| Other postal areas used for regional addresses | **80102** — Bennett; **80018** — Aurora; **80019** — Aurora's airport-side area |
+| Telephone area codes | **303, 720, 983** |
+| Real aviation facilities | **Colorado Air and Space Port (KCFO)** in the Watkins corridor; **Denver International Airport (DEN)** to the west |
+| Main regional routes | **I-70**, **Colfax Avenue / U.S. 36**, **E-470**, and the **Union Pacific rail corridor** |
+| Roads in the original airport study area | **Hudson Road, Imboden Road, Quail Run Road, Cavanaugh Road, Manila Road, Schumaker Road, Harback Road**, and **E. 72nd Avenue** |
+| Original spaceport study area | Approximately **48 square miles**: E. 72nd Avenue north, I-70 south, Hudson Road west, Harback Road east |
+| East Detroit in 2030 | Approximately **115.4 square miles** across the broader city-county, including the original Watkins area and growth to the north and east |
+
+The city uses existing postal areas in this exercise. ZIP codes identify mail-delivery areas, **not city limits, neighborhoods, council districts, or eligibility for a city service**. A household's municipal eligibility depends on its actual service address and the rule for that program. The proposed 2030 city-county boundary does not establish precise ZIP-code coverage; verify any individual address before placing it in a case record.
+
+**Geographic references:** [USPS Watkins, CO 80137](https://tools.usps.com/locations/home.htm?location=1386636); [USPS Bennett, CO 80102](https://tools.usps.com/locations/home.htm?location=1354652); [USPS postal bulletin naming Aurora 80018 and 80019](https://about.usps.com/postal-bulletin/2025/pb22687/html/info_001.htm); [Colorado Public Utilities Commission, 303/720/983](https://content.govdelivery.com/accounts/CODORA/bulletins/3183bb1); [Adams County Colorado Air and Space Port Subarea Plan](https://adamscountyco.gov/wp-content/uploads/2025/08/space-port-subarea-plan.pdf); [USPS: ZIP codes and municipal boundaries](https://faq.usps.com/articles/Knowledge/ZIP-Code-The-Basics).
+
 ## Population and housing
 
 | Measure | 2030 |

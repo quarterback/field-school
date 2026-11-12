@@ -12,13 +12,16 @@ East Detroit is a newly consolidated Colorado city and county east of Denver Int
 - **Occupied households:** **155,800**, with about **3,823** residents in group quarters. The modeling assumption is **2.43 residents per occupied household**, plus group quarters.
 - **Area:** **approximately 115.4 square miles**, extending north and east of the Colorado Air and Space Port corridor, with Watkins as the southeastern gateway.
 - **Developed urban footprint:** 25 square miles, generating a built-area average of **15,297 people per square mile**; much of the larger county study area remains employment land, agricultural land, aviation protection, infrastructure, or undeveloped land.
-- **Primary postal reference:** **Watkins 80137**, alongside surrounding Denver-area postal routes.
-- **Major geographic anchors:** Watkins, Colorado Air and Space Port (KCFO), Interstate 70, the Union Pacific rail corridor, Colfax Avenue, Box Elder Creek, and Denver International Airport to the west.
+- **Postal references for the scenario:** **80137 (Watkins, primary)**, **80102 (Bennett)**, **80018 and 80019 (Aurora)**. These are existing regional ZIP codes, not East Detroit's municipal boundaries. Exact address coverage is determined separately.
+- **Telephone area codes:** **303, 720, 983**, the greater Denver overlay.
+- **Major geographic anchors:** Watkins, Colorado Air and Space Port (KCFO), Interstate 70, E-470, the Union Pacific rail corridor, Colfax Avenue / U.S. 36, Box Elder Creek, and Denver International Airport (DEN) to the west.
 - **Formation:** East Detroit consolidated city and county operations through a constitutional measure and state legislation. The government operates alongside independent regional agencies with their own boards and budgets.
 
 ### Land, water and aviation
 
 The Adams County **Colorado Air and Space Port Subarea Plan** describes a 48-square-mile study area bounded by I-70, Hudson Road, E. 72nd Avenue, and Harback Road. It included 21,079 acres of unincorporated Adams County, 9,738 acres within Aurora, and 375 acres in Bennett. It also identifies gaps in water and wastewater capacity and land-use compatibility issues near airport operations. The area faces water and wastewater capacity gaps and restrictions on development near flight operations.
+
+The study-area roads include Hudson, Imboden, Quail Run, Cavanaugh, Manila, Schumaker and Harback roads, plus E. 72nd Avenue. USPS postal areas can cross municipal boundaries, so they are address identifiers rather than evidence of residence in East Detroit. [USPS Watkins 80137](https://tools.usps.com/locations/home.htm?location=1386636); [USPS Bennett 80102](https://tools.usps.com/locations/home.htm?location=1354652); [USPS Aurora postal areas](https://about.usps.com/postal-bulletin/2025/pb22687/html/info_001.htm); [Colorado PUC 303/720/983](https://content.govdelivery.com/accounts/CODORA/bulletins/3183bb1).
 
 The city extends beyond the spaceport planning area. Aviation zones, water infrastructure and existing roads shape the distribution of housing, employers and public facilities.
 
