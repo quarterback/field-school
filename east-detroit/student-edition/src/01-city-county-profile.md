@@ -57,6 +57,16 @@ The Adams County Colorado Air and Space Port Subarea Plan provides a useful acco
 
 The developed city covers about 25 square miles. Other land supports aviation operations, agriculture, employment, infrastructure and open space. The municipality includes both dense neighborhoods and areas where travel distances and service connections remain difficult.
 
+## Development and permitting context
+
+A 2026 dispute in the real City of Aurora illustrates a development problem that East Detroit's planning staff might encounter. The **Trident data-center proposal**, near E. 48th Avenue and E-470, qualified for administrative review under existing Airport District zoning. Neighbors objected to the proposed facility's proximity to homes, electrical demand, noise, environmental effects and limited public hearing opportunities.
+
+Aurora amended its mixed-use office zoning to restrict future data-center uses, but this did **not** remove Trident's Airport District status. An October 26, 2026 effort to reconsider a data-center moratorium failed. Nearby Denver took a different approach: it imposed a **one-year moratorium from May 21, 2026 through May 21, 2027** on new primary-use data-center applications and expansions while a working group reviews possible regulations.
+
+These are real cases from **other cities**, not an adopted East Detroit development or student assignment. They show why an economic development proposal requires a clear record of zoning, infrastructure, utility costs, permits, public comment and the authority of each participating organization. Planning and Public Health information appears in the [department reference](03-city-department-reference.md). A separate local license-renewal example appears in the [government and records reading](02-government-and-records.md).
+
+**Sources:** [Colorado Public Radio, October 27, 2026](https://www.cpr.org/2026/10/27/aurora-data-center-ban-fails/); [Aurora city zoning staff report](https://www.auroragov.org/common/pages/GetFile.ashx?key=lD1GAS3D); [Denver's official data-center moratorium](https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development/Denver-Zoning-Code/Text-Amendments/Data-Centers).
+
 ## Services and institutions
 
 The municipal government runs human services, planning and building review, local housing programs, the address register, finance, digital services, emergency response, public health, parks, transportation and other county-city functions.

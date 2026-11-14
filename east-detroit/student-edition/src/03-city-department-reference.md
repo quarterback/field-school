@@ -58,6 +58,16 @@ Prepares land-use plans, administers zoning and coordinates building and develop
 
 **Read:** [County land-use statute](https://law.justia.com/codes/colorado/title-30/county-planning-and-building-codes/article-28/part-1/section-30-28-111/), [Air and Space Port land-use plan](https://adamscountyco.gov/wp-content/uploads/2025/08/space-port-subarea-plan.pdf).
 
+### Data-center development and public accountability
+
+Real-world comparison: Aurora's proposed **Trident** data center near E. 48th Avenue and E-470 was reviewed under Airport District zoning that allowed data centers administratively. Residents questioned the proximity to housing, energy and water consumption, noise, environmental effects and whether an elected hearing was required. Aurora changed zoning in a different mixed-use district but did not advance its proposed October 26, 2026 moratorium; those actions did not eliminate Trident's existing zoning basis.
+
+Denver separately adopted a one-year moratorium on new data-center applications beginning May 21, 2026, with a working group on infrastructure, environmental standards, community protection and utility costs.
+
+For East Detroit's Planning Department, these cases show the difference between **existing permitted use**, a **proposed zoning change**, **administrative review**, a **council decision**, and separate utility or environmental oversight. The Planning Department would need a record of the site, applicable rules, review authority, infrastructure and public submissions before making a recommendation. The case does not establish an East Detroit proposal or assign additional class work.
+
+**Read:** [Aurora municipal zoning materials](https://www.auroragov.org/common/pages/GetFile.ashx?key=lD1GAS3D), [Colorado Public Radio, October 27](https://www.cpr.org/2026/10/27/aurora-data-center-ban-fails/), [Denver municipal moratorium and working group](https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development/Denver-Zoning-Code/Text-Amendments/Data-Centers).
+
 ## D-07 Address Office and GIS
 
 Maintains official geographic references for roads, parcels, addresses and service areas. Postal addresses, school zones, property tax records and emergency-dispatch locations do not always describe the same thing.
@@ -105,6 +115,12 @@ Maintains community health assessment and health-protection functions under the 
 **Records and operations:** Public health reports, inspections, communicable disease information and community health plans.
 
 **Read:** [Local public health law](https://colorado.public.law/statutes/crs_25-1-506), [HIPAA Privacy Rule](https://www.hhs.gov/hipaa/for-professionals/privacy/index.html).
+
+### Retail food licensing: a county-administered renewal service
+
+Colorado's Food Protection Act assigns retail-food licensing and inspection to the state or county/district health agencies, under specific rules. In Adams County, annual renewals begin with invoices sent in mid-November. Denver's online retail-food license renewal shows how a municipal licensing portal handles an existing record, payment and required documentation, while public health remains responsible for relevant inspections and compliance. New York's November 2026 Click to Renew is a **state-level** example of removing repeated steps; the East Detroit equivalent would concern a **county/local license**, not a transfer of New York's licensing powers.
+
+**Read:** [Colorado statute § 25-4-1606](https://law.justia.com/codes/colorado/title-25/disease-control/article-4/part-16/section-25-4-1606/), [Adams County licensing](https://adamscountyhealthdepartment.org/licensing-inspections/retail-food/licenses-renewals-and-ownership-changes/), [Denver retail-food renewal](https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Business-Licensing/Business-licenses/Retail-Food/Retail-food/Renewal), and [Government and Records](02-government-and-records.md).
 
 ## D-13 Parks, Recreation and Cultural Affairs
 
