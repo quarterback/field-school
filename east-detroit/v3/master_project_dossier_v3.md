@@ -88,6 +88,14 @@ East Detroit begins with **two existing and separate housing institutions**. **T
 
 The agencies share residents but administer different funds, programs and records. Read the [Home Forward and Detroit housing case](housing_authority_case_home_forward_vs_detroit.md) for their operating and governance precedents.
 
+## Regulatory cases: routine renewals and major development
+
+**Renewals.** New York's state government launched [Click to Renew on November 12, 2026](https://www.timesunion.com/business/article/faster-license-renewal-process-stylists-new-york-22526878.php) for occupational licenses. Early state figures report 22 steps eliminated and average renewal time falling from more than 45 minutes to under four minutes. The East Detroit local equivalent uses an **existing retail food license** under Colorado's county/district public-health licensing responsibilities. [Colorado statute §25-4-1606](https://law.justia.com/codes/colorado/title-25/disease-control/article-4/part-16/section-25-4-1606/), [Adams County Health Department renewal procedure](https://adamscountyhealthdepartment.org/licensing-inspections/retail-food/licenses-renewals-and-ownership-changes/) and [Denver's online renewal](https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Business-Licensing/Business-licenses/Retail-Food/Retail-food/Renewal) show how local responsibility differs from New York's state licensing. No waiver of food safety checks or license requirements is assumed.
+
+**Data centers.** In real Aurora, the proposed 2026 Trident data center drew objections concerning zoning, housing proximity, utility costs, energy, water and environmental impacts. Aurora changed permitted uses in one mixed-use district but did not advance an October 26 data-center moratorium; the actions did not eliminate Trident's Airport District status. Neighboring Denver approved a [one-year data-center application moratorium in May 2026](https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development/Denver-Zoning-Code/Text-Amendments/Data-Centers). [Aurora coverage, October 27, 2026](https://www.cpr.org/2026/10/27/aurora-data-center-ban-fails/).
+
+Both cases appear in the [student government reading](../student-edition/src/02-government-and-records.md), [city department reference](../student-edition/src/03-city-department-reference.md), and [city profile](../student-edition/src/01-city-county-profile.md). They are documented precedents, not new East Detroit policies or required assignments.
+
 ## 5. Shared services and the implementation project
 
 The exercise has three stages, through assessment, planning and interagency negotiation:

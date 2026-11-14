@@ -4,9 +4,9 @@ This collection describes East Detroit's 2030 population, government, operating 
 
 | Reading | Contents | PDF | Word |
 |---|---|---|---|
-| 1. City and County Profile | Location, population, housing, growth and public institutions | [PDF](dist/01-city-county-profile.pdf) | [Word](dist/01-city-county-profile.docx) |
-| 2. Government, Records and Public Authority | Colorado structure, information law, federal privacy and Estonia's X-tee | [PDF](dist/02-government-and-records.pdf) | [Word](dist/02-government-and-records.docx) |
-| 3. City-County Departments | Fifteen municipal offices, their work and the rules and sources that govern them | [PDF](dist/03-city-department-reference.pdf) | [Word](dist/03-city-department-reference.docx) |
+| 1. City and County Profile | Location, population, growth, institutions and data-center development context | [PDF](dist/01-city-county-profile.pdf) | [Word](dist/01-city-county-profile.docx) |
+| 2. Government, Records and Public Authority | Colorado structure, New York Click to Renew and local licensing, records and Estonia's X-tee | [PDF](dist/02-government-and-records.pdf) | [Word](dist/02-government-and-records.docx) |
+| 3. City-County Departments | Fifteen municipal offices, retail food licensing, development review and source readings | [PDF](dist/03-city-department-reference.pdf) | [Word](dist/03-city-department-reference.docx) |
 | 4. Regional and Independent Agencies | Nine separately governed agencies, their records and governing rules | [PDF](dist/04-independent-agency-reference.pdf) | [Word](dist/04-independent-agency-reference.docx) |
 | 5. Public Housing and Local Housing Programs | Detroit and Home Forward histories, performance reports, HUD duties and source links | [PDF](dist/05-public-housing-and-local-programs.pdf) | [Word](dist/05-public-housing-and-local-programs.docx) |
 | 6. Neighborhoods and Community Organizations | Twenty neighborhoods, income and housing conditions, and three community groups | [PDF](dist/06-neighborhoods-and-community-organizations.pdf) | [Word](dist/06-neighborhoods-and-community-organizations.docx) |

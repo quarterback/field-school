@@ -48,6 +48,12 @@ Read: Colorado local government handbook, https://content.leg.colorado.gov/sites
 
 Michigan charter-county law: https://legislature.mi.gov/Laws/MCL?objectName=mcl-45-515 ; Michigan local government overview: https://www.michigan.gov/som/government .
 
+### Regulatory delivery and development review
+
+New York's November 2026 **Click to Renew** offers a state-run example of eliminating redundant steps in occupational license renewal. East Detroit's county-level comparison is an **existing restaurant's retail-food license renewal**, drawing on Colorado's Food Protection Act, Adams County's health department and Denver's municipal renewal portal. The issue is whether existing records, required checks, payments and exception handling can be organized with less burden while retaining the proper public health decision. [New York reporting](https://www.timesunion.com/business/article/faster-license-renewal-process-stylists-new-york-22526878.php); [Colorado food licensing statute](https://law.justia.com/codes/colorado/title-25/disease-control/article-4/part-16/section-25-4-1606/); [Adams County renewal process](https://adamscountyhealthdepartment.org/licensing-inspections/retail-food/licenses-renewals-and-ownership-changes/).
+
+A separate reference concerns the **2026 Trident data-center controversy in Aurora** and Denver's **one-year moratorium**. Existing zoning, public hearings, utility capacity, rate impacts, noise, environmental permits and developer commitments can involve different officials and organizations. These facts help students understand Planning and Finance responsibilities without creating an additional required project. [CPR coverage](https://www.cpr.org/2026/10/27/aurora-data-center-ban-fails/); [Denver municipal record](https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development/Denver-Zoning-Code/Text-Amendments/Data-Centers).
+
 ## 4. Other tested institutional patterns
 
 | Example | Actual operating idea | East Detroit choice to debate |

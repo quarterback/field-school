@@ -17,6 +17,10 @@ The City and County of East Detroit serves as a 2030 municipal case on public se
 
 The four formatted student readings (Word and PDF) are built from these documents in [`../student-edition/`](../student-edition/README.md). The Markdown here stays the source of truth; corrections made during editing are recorded in that folder's change log and applied here too.
 
+## Licensing and development research
+
+The [student government and records reading](../student-edition/src/02-government-and-records.md) now compares **New York Click to Renew** with **Colorado county retail-food license renewal**, including state and county authority, public health rules, inspections and source documents. The [municipal department reference](../student-edition/src/03-city-department-reference.md) also includes **Aurora's Trident data-center dispute and Denver's 2026 moratorium** as a planning and oversight case. The [city profile](../student-edition/src/01-city-county-profile.md) places those issues in East Detroit's development context. These references do not add mandatory student projects.
+
 ## Housing case research: read before proposals
 
 **[Home Forward and Detroit: two housing institutions, overlapping work](housing_authority_case_home_forward_vs_detroit.md)** documents the real organizational patterns, operating failures, financial evidence, federal constraints, and potential coordination choices. It supplies direct links for every case finding. The instructor has established a **City and County Housing Division** and a separate **East Detroit Regional Housing Authority**. Both serve the same residents under different public authorities. The agencies must negotiate any shared process.
