@@ -21,7 +21,7 @@ export function ParksService({sample,resident,reservations,onBook,passNumber,val
   resident:string;reservations:Reservation[];onBook:(r:Reservation)=>void;passNumber?:string;validThrough?:string
 }) {
  const [facility,setFacility]=useState("Watkins Recreation Center");
- const [date,setDate]=useState("2030-11-24");
+ const [date,setDate]=useState("2030-12-12");
  const [time,setTime]=useState("4:00 PM – 5:00 PM");
  const [error,setError]=useState("");
  if(!sample)return <Empty name="recreation pass"/>;
@@ -44,7 +44,7 @@ export function ParksService({sample,resident,reservations,onBook,passNumber,val
   <section className="form-section"><h2>Reserve a facility</h2>
    <form onSubmit={submit}>
     <div className="form-field"><label htmlFor="book-facility">Facility</label><select id="book-facility" value={facility} onChange={e=>setFacility(e.target.value)}><option>Watkins Recreation Center</option><option>Central Station Community Center</option><option>Inboden Park Pavilion</option></select></div>
-    <div className="form-fields-inline"><div className="form-field"><label htmlFor="book-date">Date</label><input type="date" id="book-date" value={date} min="2030-11-17" max="2030-12-31" onChange={e=>setDate(e.target.value)} required/></div>
+    <div className="form-fields-inline"><div className="form-field"><label htmlFor="book-date">Date</label><input type="date" id="book-date" value={date} min="2030-12-05" max="2031-01-31" onChange={e=>setDate(e.target.value)} required/></div>
     <div className="form-field"><label htmlFor="book-time">Time</label><select id="book-time" value={time} onChange={e=>setTime(e.target.value)}><option>4:00 PM – 5:00 PM</option><option>5:00 PM – 6:00 PM</option><option>6:00 PM – 7:00 PM</option></select></div></div>
     {error&&<p className="field-error" role="alert">{error}</p>}
     <button className="program-submit" type="submit">Confirm reservation</button>

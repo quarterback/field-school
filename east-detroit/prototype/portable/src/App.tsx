@@ -8,10 +8,12 @@ import type { FareProduct } from "./TransitPanel";
 import { SchoolDistrictService, RegionalHousingService, LimitedService } from "./PartnerPanels";
 import { DemoTour, DEMO_STOPS } from "./DemoTour";
 import { DEMO_RESIDENTS, hasResidentService, residentRecords, getDemoResident } from "./DemoResidents";
+import { LIFE_EVENT_SEED, isLicenseRenewed, ProactiveHome, HouseholdSection, FamilyService, RenewalRecord } from "./ProactiveServices";
+import type { LifeEventState } from "./ProactiveServices";
 import "./east-detroit.css";
 
 type Page = "home" | "services" | "license" | "requests" | "account" | "register" | "service";
-type ServiceKey = "recreation" | "license" | "housing" | "library" | "water" | "requests" | "transit" | "school" | "authority" | "state" | "court" | "hospital";
+type ServiceKey = "recreation" | "license" | "housing" | "library" | "water" | "requests" | "transit" | "school" | "authority" | "state" | "court" | "hospital" | "family";
 type Account = { id: string; first: string; last: string; email: string; address: string; postal: string; created: string };
 type Ticket = { id: string; category: string; description: string; location: string; created: string; status: string };
 type Activity = { id: string; date: string; description: string; office: string };
@@ -26,16 +28,17 @@ type Portal = {
   transitPasses: FareProduct[];
   schoolLetterRequested: boolean;
   authorityFollowupRequested: boolean;
+  lifeEvent: LifeEventState;
   tickets: Ticket[];
   activity: Activity[];
 };
-const KEY = "east-detroit-resident-portal-v3";
+const KEY = "east-detroit-resident-portal-v4";
 const sampleAccount: Account = {
   id: "ED-2030-00482", first: "Maya", last: "Rivera", email: "maya.rivera@example.org",
   address: "14 Example Lane, Old Watkins", postal: "80137", created: "2030-09-11",
 };
 const initial: Portal = {
-  account: sampleAccount, licenseSubmitted: false, reservations: [], housingMessage: "", libraryRenewed: false, waterIssue: "", transitBalanceCents: 1425, transitPasses: [], schoolLetterRequested:false, authorityFollowupRequested:false,
+  account: sampleAccount, licenseSubmitted: false, reservations: [], housingMessage: "", libraryRenewed: false, waterIssue: "", transitBalanceCents: 1425, transitPasses: [], schoolLetterRequested:false, authorityFollowupRequested:false, lifeEvent:{...LIFE_EVENT_SEED},
   tickets: [{ id: "SR-2030-1048", category: "Street and sidewalk", description: "Streetlight outside the community center is out.", location: "Old Watkins", created: "2030-11-07", status: "In progress" }],
   activity: [
     { id: "ACT-02", date: "2030-11-09", description: "Recreation pass issued", office: "Parks and Recreation" },
@@ -89,19 +92,34 @@ const RESIDENT_SEED: ProfileStore = {
         {id:"ACT-HE-1",date:"2030-11-06",description:"Service request SR-2030-0816 received",office:"Public Works"},
       ],
     },
+    samira: {
+      ...initial,
+      account: DEMO_RESIDENTS[3].account,
+      licenseSubmitted:false,
+      transitBalanceCents:0,
+      transitPasses:[],
+      schoolLetterRequested:false,
+      authorityFollowupRequested:false,
+      tickets:[],
+      activity:[
+        {id:"ACT-SA-2",date:"2030-11-13",description:"Newborn coverage confirmed by state Human Services",office:"State Human Services"},
+        {id:"ACT-SA-1",date:"2030-11-12",description:"Birth registered for Lucia Ortiz",office:"County Clerk / Vital Records"},
+      ],
+      lifeEvent:{...LIFE_EVENT_SEED},
+    },
   },
 };
 function initialStore():ProfileStore {
   const profiles={...RESIDENT_SEED.profiles};
   if(typeof window==="undefined")return {active:FIRST_KEY,profiles};
   try {
-    const saved=window.localStorage.getItem(KEY);
+    const saved=window.localStorage.getItem(KEY)||window.localStorage.getItem("east-detroit-resident-portal-v3");
     if(saved){
       const parsed=JSON.parse(saved) as ProfileStore;
       if(parsed?.profiles&&typeof parsed.profiles==="object"){
         const restored={...profiles};
         for(const [key,value] of Object.entries(parsed.profiles)){
-          if(value?.account?.id && Array.isArray(value?.tickets) && Array.isArray(value?.activity)) restored[key]=value;
+          if(value?.account?.id && Array.isArray(value?.tickets) && Array.isArray(value?.activity)) restored[key]={...value,lifeEvent:value.lifeEvent||{...LIFE_EVENT_SEED}};
         }
         return {active:restored[parsed.active]?parsed.active:FIRST_KEY,profiles:restored};
       }
@@ -125,6 +143,7 @@ const catalog: {key:ServiceKey;title:string;office:string;description:string;ind
   {key:"recreation",title:"Recreation and facilities",office:"Parks, Recreation and Cultural Affairs",description:"View your pass, book a facility and manage reservations.",independent:false},
   {key:"license",title:"Business licenses and permits",office:"Public Health · Finance",description:"Review a license, inspection record and renewal.",independent:false},
   {key:"housing",title:"Housing assistance",office:"City Housing Division",description:"View an application, supporting records and messages.",independent:false},
+  {key:"family",title:"Family and children",office:"County Clerk · Human Services",description:"View household records, newborn coverage and family offers.",independent:false},
   {key:"requests",title:"Service requests",office:"Transportation and Public Works",description:"Report and track street, drainage and park maintenance issues.",independent:false},
   {key:"library",title:"Library card and loans",office:"East Detroit Public Library District",description:"View your library card and checked-out materials.",independent:true},
   {key:"water",title:"Water and sewer",office:"East Detroit Water and Sewer Authority",description:"View utility bills, service details and billing inquiries.",independent:true},
@@ -202,11 +221,15 @@ export default function App() {
    const requested=params.get("step");
    const index=Math.max(0,DEMO_STOPS.findIndex(stop=>stop.id===requested));
    const stop=DEMO_STOPS[index];
+   if(stop.id==="birth")setProfileStore(prev=>({...prev,active:"samira"}));
+   if(stop.id==="license")setProfileStore(prev=>({...prev,active:"maya"}));
    setTourEnabled(true);setTourIndex(index);setPage(stop.page);
    if(stop.service)setSelected(stop.service as ServiceKey);
 
  },[]);
  const sample=hasRecord("license");
+ const life=data.lifeEvent||LIFE_EVENT_SEED;
+
  useEffect(()=>{try{localStorage.setItem(KEY,JSON.stringify(profileStore));}catch{}},[profileStore]);
  function go(next:Page) {setPage(next);setNotice("");setShowMenu(false);window.scrollTo({top:0,behavior:"auto"});}
  function openService(key:ServiceKey) {
@@ -217,8 +240,9 @@ export default function App() {
  }
  function serviceStatus(key:ServiceKey){
    if(key==="recreation")return hasRecord(key)?"Active":"No pass";
-   if(key==="license")return hasRecord(key)?(data.licenseSubmitted?"Renewal submitted":"Renewal due"):"No license";
+   if(key==="license")return hasRecord(key)?(isLicenseRenewed(data.lifeEvent||LIFE_EVENT_SEED)?"Renewed":data.licenseSubmitted?"Renewal submitted":"Review needed"):"No license";
    if(key==="housing")return hasRecord(key)?"In review":"No application";
+   if(key==="family")return hasRecord(key)?(data.lifeEvent?.birthRegistered?"New child recorded":"No recent birth"):"No family record";
    if(key==="requests")return data.tickets.some(t=>t.status!=="Closed")?"Open request":"No requests";
    if(key==="library")return hasRecord(key)?"Active card":"No card";
    if(key==="water")return hasRecord(key)?"Current":"No utility account";
@@ -229,13 +253,14 @@ export default function App() {
  }
  function tone(key:ServiceKey):"neutral"|"good"|"warn"|"info"{
    const value=serviceStatus(key);
-   return ["Active","Active card","Current","Enrolled"].includes(value)?"good":value==="Renewal due"?"warn":["In review","Open request","Renewal submitted","Inquiry on file"].includes(value)?"info":"neutral";
+   return ["Active","Active card","Current","Enrolled","Renewed","New child recorded"].includes(value)?"good":["Renewal due","Review needed"].includes(value)?"warn":["In review","Open request","Renewal submitted","Inquiry on file"].includes(value)?"info":"neutral";
  }
  function actionLabel(key:ServiceKey){
    if(key==="license")return hasRecord(key)?"Review renewal":"View service";
    if(key==="requests")return "View requests";
    if(key==="recreation")return hasRecord(key)?"View pass and bookings":"View service";
    if(key==="housing")return hasRecord(key)?"View application":"View service";
+   if(key==="family")return hasRecord(key)?"View family services":"View service";
    if(key==="library")return hasRecord(key)?"View library card":"View service";
    if(key==="water")return hasRecord(key)?"View bill":"View service";
    if(key==="transit")return hasRecord(key)?"View MyRide account":"View service";
@@ -244,7 +269,31 @@ export default function App() {
    return "View agency information";
  }
  function addActivity(description:string,office:string) {
-   return {id:makeId("ACT-"),date:"2030-11-17",description,office};
+   return {id:makeId("ACT-"),date:"2030-12-05",description,office};
+ }
+
+ function actOnLifeEvent(action:"wic"|"library"|"replay-birth"|"restore-birth"|"hold-inspection"|"clear-inspection"){
+   const labels={
+     wic:["WIC contact interest recorded","County Human Services"],
+     library:["Newborn library offer accepted","Public Library District"],
+     "replay-birth":["Birth registration event reset","County Clerk / Vital Records"],
+     "restore-birth":["Birth registration received; eligible newborn coverage confirmed","County Clerk / State Human Services"],
+     "hold-inspection":["Automatic license renewal paused for inspection review","Public Health"],
+     "clear-inspection":["Inspection record cleared for automatic renewal","Public Health"],
+   } as const;
+   const [description,office]=labels[action];
+   setData(prev=>{
+     const current=prev.lifeEvent||LIFE_EVENT_SEED;
+     const changed:LifeEventState={...current};
+     if(action==="wic")changed.wicContact="requested";
+     if(action==="library")changed.libraryOffer="accepted";
+     if(action==="replay-birth"){changed.birthRegistered=false;changed.childCoverage="pending";changed.wicContact="not-requested";changed.libraryOffer="not-accepted";}
+     if(action==="restore-birth"){changed.birthRegistered=true;changed.childCoverage="confirmed";}
+     if(action==="hold-inspection")changed.inspectionClear=false;
+     if(action==="clear-inspection")changed.inspectionClear=true;
+     return {...prev,lifeEvent:changed,activity:[addActivity(description,office),...prev.activity]};
+   });
+   setNotice(description+".");
  }
  function submitRenewal(event:FormEvent<HTMLFormElement>) {
    event.preventDefault();
@@ -256,7 +305,7 @@ export default function App() {
  function submitRequest(event:FormEvent<HTMLFormElement>) {
    event.preventDefault();
    if(!requestForm.description.trim() || !requestForm.location.trim()) {setNotice("Add a location and a description.");return;}
-   const ticket:Ticket={id:makeId("SR-2030-"),category:requestForm.category,description:requestForm.description.trim(),location:requestForm.location.trim(),created:"2030-11-17",status:"Received"};
+   const ticket:Ticket={id:makeId("SR-2030-"),category:requestForm.category,description:requestForm.description.trim(),location:requestForm.location.trim(),created:"2030-12-05",status:"Received"};
    setData(prev=>({...prev,tickets:[ticket,...prev.tickets],activity:[addActivity("Service request "+ticket.id+" received","Public Works"),...prev.activity]}));
    setRequestForm({category:"Street and sidewalk",location:"",description:""});
    setNotice("Request "+ticket.id+" saved to your account.");
@@ -272,6 +321,7 @@ export default function App() {
      ...initial,account,licenseSubmitted:false,reservations:[],housingMessage:"",
      libraryRenewed:false,waterIssue:"",transitBalanceCents:0,transitPasses:[],
      schoolLetterRequested:false,authorityFollowupRequested:false,
+     lifeEvent:{...LIFE_EVENT_SEED,birthRegistered:false},
      tickets:[],activity:[addActivity("Account created","City account service")]
    }}}));
    setNotice("");
@@ -292,10 +342,14 @@ export default function App() {
    const stop=DEMO_STOPS[safe];
    setTourEnabled(true);setTourIndex(safe);setTourCopyStatus("");
    setPage(stop.page);if(stop.service)setSelected(stop.service as ServiceKey);
+   if(stop.id==="birth")setProfileStore(prev=>({...prev,active:"samira"}));
+   if(stop.id==="license")setProfileStore(prev=>({...prev,active:"maya"}));
    setShowMenu(false);setNotice("");
    const url=new URL(window.location.href);
    url.searchParams.set("demo","1");url.searchParams.set("step",stop.id);
-   if(getDemoResident(profileStore.active))url.searchParams.set("resident",profileStore.active);
+   if(stop.id==="birth")url.searchParams.set("resident","samira");
+   else if(stop.id==="license")url.searchParams.set("resident","maya");
+   else if(getDemoResident(profileStore.active))url.searchParams.set("resident",profileStore.active);
    window.history.replaceState(null,"",url.pathname+url.search);
    window.scrollTo({top:0,behavior:"auto"});
  }
@@ -316,12 +370,13 @@ export default function App() {
    }
  }
  function resetProfiles(){
-   if(!window.confirm("Reset the three example resident accounts?"))return;
+   if(!window.confirm("Reset the four example resident accounts?"))return;
    setProfileStore(prev=>({...prev,active:FIRST_KEY,profiles:{
      ...prev.profiles,
      maya:RESIDENT_SEED.profiles.maya,
      avery:RESIDENT_SEED.profiles.avery,
      helen:RESIDENT_SEED.profiles.helen,
+     samira:RESIDENT_SEED.profiles.samira,
    }}));
    setNotice("Example accounts restored.");
  }
@@ -364,7 +419,7 @@ export default function App() {
      <DemoTour step={tourIndex} onSelect={showTourStep} onClose={toggleTour} onCopy={copyTourLink} copyStatus={tourCopyStatus}/></>}
      {page==="home"&&<>
        <div className="page-intro intro-row"><div><h1>My East Detroit</h1><p>Welcome back, {data.account.first}. Your services are below.</p></div><div className="account-summary"><span>Resident account ID</span><strong>{data.account.id}</strong></div></div>
-       {sample&&!data.licenseSubmitted&&<section className="due-notice" aria-label="Action needed"><div><strong>Business license renewal due</strong><p>Cypress Cafe · Food establishment license {SAMPLE_LICENSE} expires December 31, 2030.</p></div><button className="table-link" onClick={()=>go("license")}>Review renewal <span aria-hidden="true">→</span></button></section>}
+       <ProactiveHome resident={profileStore.active} event={life} onAction={actOnLifeEvent} onLicense={()=>go("license")} onFamily={()=>openService("family")}/>
        <section className="section-block">
          <div className="section-heading"><h2>My services</h2><button className="text-link" onClick={()=>go("services")}>Browse all services <span aria-hidden="true">→</span></button></div>
          <div className="table-scroll" role="region" aria-label="My services table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Responsible office</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead>
@@ -374,6 +429,7 @@ export default function App() {
            <td className="action-cell"><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)} <span aria-hidden="true">→</span></button></td>
          </tr>)}</tbody></table></div>
        </section>
+       <HouseholdSection resident={profileStore.active} event={life} onAction={actOnLifeEvent}/>
        <section className="section-block partner-list">
          <div className="section-heading"><h2>Other public agencies</h2></div>
          <p className="agency-intro">These organizations have their own governing bodies and control their records and services.</p>
@@ -402,18 +458,26 @@ export default function App() {
        {matchingCatalog.length===0&&<p className="empty-state">No services match your search.</p>}</div>
      </>}
      {page==="license"&&<>
-       <div className="page-intro"><button className="back-link" onClick={()=>go("home")}>← My services</button><h1>Business license</h1><p>Review an existing license or submit a renewal request.</p></div>
+       <div className="page-intro"><button className="back-link" onClick={()=>go("home")}>← My services</button><h1>Business license</h1><p>Food establishment licensing · Public Health and Finance</p></div>
        {!sample?<div className="empty-state"><h2>No business license on file</h2><p>No business license is recorded for this account. Contact Public Health to locate an existing license.</p><Action secondary onClick={()=>go("services")}>Browse services</Action></div>:<>
-         <div className="detail-header"><div><small>Food establishment license</small><h2>Cypress Cafe</h2><p>License {SAMPLE_LICENSE}</p></div><Badge tone={data.licenseSubmitted?"info":"warn"}>{data.licenseSubmitted?"Renewal submitted":"Renewal due"}</Badge></div>
-         <dl className="details-grid"><div><dt>License holder</dt><dd>Maya Rivera · Cypress Cafe</dd></div><div><dt>Issued by</dt><dd>City-County Public Health</dd></div><div><dt>Expiration</dt><dd>December 31, 2030</dd></div><div><dt>Premises</dt><dd>22 Example Plaza, Watkins, CO 80137</dd></div><div><dt>Payment record</dt><dd>Finance and Procurement</dd></div><div><dt>Inspection</dt><dd>Annual review required</dd></div></dl>
-         <section className="form-section"><h2>{data.licenseSubmitted?"Renewal status":"Renew this license"}</h2>
-           {data.licenseSubmitted?<div className="message-panel"><strong>Submitted for review</strong><p>Your renewal request has been saved. Public Health must review the license and any inspection findings.</p></div>:
-           <form onSubmit={submitRenewal}><p>Check the details above before you submit. A new owner or changed business activity may require additional review.</p>
-             <label className="checkbox-row"><input type="checkbox" checked={renewAcknowledged} onChange={e=>setRenewAcknowledged(e.target.checked)}/><span>I confirm that the license holder and business activity shown above have not changed.</span></label>
-             <p className="muted-small">Submitting a request does not automatically renew a license.</p>
-             <Action type="submit" disabled={!renewAcknowledged}>Submit renewal request</Action>
+         <div className="detail-header"><div><small>Food establishment license</small><h2>Cypress Cafe</h2><p>License FOOD-2030-0184</p></div><Badge tone={isLicenseRenewed(life)?"good":"warn"}>{isLicenseRenewed(life)?"Renewed for 2031":"Review required"}</Badge></div>
+         <dl className="details-grid">
+           <div><dt>License holder</dt><dd>Maya Rivera · Cypress Cafe</dd></div>
+           <div><dt>Responsible office</dt><dd>City-County Public Health</dd></div>
+           <div><dt>Valid through</dt><dd>{isLicenseRenewed(life)?"December 31, 2031":"December 31, 2030"}</dd></div>
+           <div><dt>Premises</dt><dd>22 Example Plaza, Watkins, CO 80137</dd></div>
+           <div><dt>Annual fee record</dt><dd>{life.feeSettled?"Settled · Finance":"Unpaid · Finance"}</dd></div>
+           <div><dt>Inspection record</dt><dd>{life.inspectionClear?"Clear · Public Health":"Review required · Public Health"}</dd></div>
+         </dl>
+         <RenewalRecord event={life} tour={tourEnabled} onAction={actOnLifeEvent}/>
+         {!isLicenseRenewed(life)&&<section className="form-section"><h2>{data.licenseSubmitted?"Renewal request":"Request manual review"}</h2>
+           {data.licenseSubmitted?<div className="message-panel"><strong>Submitted for review</strong><p>Your request is on file. Public Health must resolve the outstanding check before renewal.</p></div>:
+           <form onSubmit={submitRenewal}>
+             <p>The renewal cannot complete automatically while a record requires review. You can request a manual review.</p>
+             <label className="checkbox-row"><input type="checkbox" checked={renewAcknowledged} onChange={e=>setRenewAcknowledged(e.target.checked)}/><span>I confirm the license holder and business activity have not changed.</span></label>
+             <Action type="submit" disabled={!renewAcknowledged}>Request review</Action>
            </form>}
-         </section>
+         </section>}
        </>}
      </>}
      {page==="requests"&&<>
@@ -456,6 +520,11 @@ export default function App() {
          setData(prev=>({...prev,transitBalanceCents:(prev.transitBalanceCents??0)-product.priceCents,transitPasses:[product,...(prev.transitPasses||[])],activity:[addActivity("RTD "+product.kind+" purchased","Regional Transportation District"),...prev.activity]}));
        }}/>}
 
+       {selected==="family"&&<>{profileStore.active==="samira"?<FamilyService event={life} onAction={actOnLifeEvent} tour={tourEnabled}/>:<div className="empty-state"><h2>No family record on file</h2><p>This account has no recent birth record.</p></div>}
+         {tourEnabled&&profileStore.active==="samira"&&<div className="scenario-control"><strong>Test the birth notification</strong><p>See what changes before and after Vital Records reports a birth.</p>
+           <button type="button" className="tour-button" onClick={()=>actOnLifeEvent(life.birthRegistered?"replay-birth":"restore-birth")}>{life.birthRegistered?"Show before registration":"Receive birth registration"}</button>
+         </div>}
+       </>}
        {selected==="school"&&<SchoolDistrictService sample={hasRecord("school")} requested={data.schoolLetterRequested||false} onRequest={()=>{
          setData(prev=>({...prev,schoolLetterRequested:true,activity:[addActivity("School enrollment verification requested","East Detroit Unified School District"),...prev.activity]}));
          setNotice("Enrollment verification request recorded.");

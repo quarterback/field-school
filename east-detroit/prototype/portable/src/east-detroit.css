@@ -307,3 +307,34 @@ a{color:var(--ruby-dark)}
   .demo-resident-note{flex-basis:100%}
   .demo-residents .demo-reset{margin-left:0}
 }
+
+
+/* Resident-facing proactive services: records and agency decisions, without an added dashboard. */
+.proactive-home{margin:22px 0 33px}
+.proactive-list{border-bottom:1px solid var(--line)}
+.proactive-item{display:grid;grid-template-columns:145px minmax(0,1fr) 140px;gap:17px;align-items:start;padding:18px 10px;border-bottom:1px solid #d4dcd7}
+.proactive-item:last-child{border-bottom:0}
+.proactive-item .table-link{justify-self:end;white-space:normal;text-align:right}
+.proactive-content h3{font-size:16px;line-height:1.3;margin:0 0 4px;font-weight:800}
+.proactive-content p{font-size:13px;margin:0 0 5px;line-height:1.5}
+.service-provenance{max-width:760px;padding:6px 0 0;font-size:12px;color:var(--muted)}
+.service-provenance summary{color:var(--ruby-dark);font-weight:700;text-decoration:underline;text-underline-offset:2px;cursor:pointer;padding:4px 0;display:list-item}
+.service-provenance>div{margin-top:6px;padding:11px 13px;background:#edf2ef;border-left:3px solid #697f74;color:#273b31;line-height:1.55;font-size:12px}
+.household{margin:30px 0}
+.household .service-provenance{margin-top:9px}
+.proactive-status .status{white-space:normal}
+.family-detail{width:100%;max-width:1100px}
+.family-offer{display:grid;grid-template-columns:minmax(0,1fr) 185px;gap:24px;padding:17px 8px;border-bottom:1px solid var(--line)}
+.family-offer h3{font-size:16px;font-weight:800;margin:0 0 5px}
+.family-offer p{font-size:13px;line-height:1.55;margin:0 0 7px}
+.family-offer>div:last-child{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.family-offer .program-submit{min-width:170px}
+.scenario-control{margin:23px 0;padding:16px 19px;border:1px solid var(--line);border-left:4px solid var(--ruby);background:#f1f5f3;max-width:800px}
+.scenario-control strong{font-size:14px}
+.scenario-control p{font-size:13px;margin:5px 0 12px}
+.scenario-control .tour-button{max-width:100%}
+.renewal-record{max-width:950px}
+.renewal-record>.service-provenance{margin-top:12px}
+.renewal-record>.table-scroll{border-top:1px solid var(--line)}
+@media(max-width:900px){.proactive-item{grid-template-columns:135px minmax(0,1fr);gap:13px}.proactive-item .table-link{grid-column:2;justify-self:start;text-align:left}.family-offer{grid-template-columns:1fr;gap:10px}.family-offer>div:last-child{flex-direction:row;align-items:center;flex-wrap:wrap}}
+@media(max-width:650px){.proactive-item{grid-template-columns:1fr;padding:15px 2px;gap:8px}.proactive-item .table-link{grid-column:1}.proactive-status{order:0}.proactive-content{order:1}.family-offer{padding:14px 2px}.family-offer .program-submit{min-width:0}.service-provenance>div{padding:10px}.scenario-control{padding:14px}}

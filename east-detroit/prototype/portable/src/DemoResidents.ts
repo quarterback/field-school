@@ -1,8 +1,8 @@
 export type ServiceKey =
   | "recreation" | "license" | "housing" | "library" | "water" | "requests"
-  | "transit" | "school" | "authority" | "state" | "court" | "hospital";
+  | "transit" | "school" | "authority" | "state" | "court" | "hospital" | "family";
 
-export type ResidentKey = "maya" | "avery" | "helen" | "custom";
+export type ResidentKey = "maya" | "avery" | "helen" | "samira" | "custom";
 
 export type ResidentAccount = {
   id: string;
@@ -70,6 +70,21 @@ export const DEMO_RESIDENTS: DemoResident[] = [
       created: "2030-03-22",
     },
     services: ["recreation", "requests", "library", "water"],
+  },
+  {
+    key: "samira",
+    age: 29,
+    context: "New parent",
+    account: {
+      id: "ED-2030-00645",
+      first: "Samira",
+      last: "Ortiz",
+      email: "samira.ortiz@example.org",
+      address: "23 Example Way, Colfax East",
+      postal: "80018",
+      created: "2030-11-10",
+    },
+    services: ["family", "requests"],
   },
 ];
 

@@ -2,6 +2,15 @@
 
 A resident-facing city-county service portal for a **Public Mechanics** classroom vendor presentation. Students represent East Detroit departments, special districts, regional bodies and other public agencies. They inspect plausible agency services and decide which arrangements should be accepted, limited or rejected.
 
+## Proactive services: birth and automatic renewal
+
+The portal now demonstrates two services initiated by verified agency events rather than a resident filling out another form.
+
+- **Newborn:** Samira Ortiz's daughter Lucia has a birth record and household relationship. An authorized vital-records event triggers a state newborn coverage check, a county family-services notice, and separate WIC and library offers. The vendor walkthrough can replay the birth event. Independent agencies retain their own records and decisions.
+- **Food establishment renewal:** Maya Rivera's Cypress Cafe license can renew automatically when Public Health's inspection/ownership checks, Finance's fee record, and the license holder's authorization agree. Flag an inspection issue during the vendor walkthrough to stop automation and show manual review.
+
+[Proactive workflow design, researched rules and institutional boundaries](PROACTIVE_SERVICES.md).
+
 ## Example residents
 
 The vendor walkthrough includes three selectable residents. Each has a separate city account reference and a distinct service history:
@@ -11,6 +20,7 @@ The vendor walkthrough includes three selectable residents. Each has a separate 
 | Maya Rivera | 39 | Parent and business owner | Business license renewal, child enrollment record, local housing case, transit, utility and library records |
 | Avery Chen | 22 | Renter and transit rider | MyRide account, library loans and public works request; empty states for services they do not use |
 | Helen Carter | 72 | Homeowner and recreation member | Recreation pass, water bill, library loans and a public works issue |
+| Samira Ortiz | 29 | New parent | Birth-triggered household update, newborn coverage, WIC and library offers |
 
 **Age appears only in the optional vendor walkthrough.** The ordinary resident interface shows each person's own records without categorizing them by age. Staff, students and other viewers can compare service access without creating a real account.
 

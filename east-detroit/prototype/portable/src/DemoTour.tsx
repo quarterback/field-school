@@ -18,6 +18,11 @@ export const DEMO_STOPS: DemoStop[] = [
     question:"What should someone see when they have no record with a particular department?"
   },
   {
+    id:"birth",title:"After a child is born",page:"service",service:"family",
+    purpose:"A registered birth updates the household and triggers newborn coverage and family offers. Replay the event to see what changed.",
+    question:"Which agencies may receive a birth report, and what can they do automatically?"
+  },
+  {
     id:"school",title:"Independent school district",page:"service",service:"school",
     purpose:"See how a parent could view a school enrollment record and request verification.",
     question:"What evidence proves a resident may view a child's record, and who resolves errors?"
@@ -39,8 +44,8 @@ export const DEMO_STOPS: DemoStop[] = [
   },
   {
     id:"license",title:"Public Health and Finance",page:"license",
-    purpose:"Review a food establishment license and the proposed renewal transaction.",
-    question:"Who verifies payment and inspection status before the license can be renewed?"
+    purpose:"See a food establishment license renewed from existing records. Change the inspection result to see the renewal stop.",
+    question:"Who authorizes the automatic renewal, and what exception must stop it?"
   },
   {
     id:"scope",title:"Other agencies",page:"services",

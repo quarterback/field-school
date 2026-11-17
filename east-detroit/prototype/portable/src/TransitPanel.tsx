@@ -27,7 +27,7 @@ export function TransitService({sample,balanceCents,passes,onAddFunds,onPurchase
  function plan(e:FormEvent<HTMLFormElement>){e.preventDefault();setTrip({from:origin,to:destination});}
  function purchase(kind:FareProduct["kind"],priceCents:number){
   if(balanceCents<priceCents){setMessage("Add funds to your account before purchasing.");return;}
-  const product:FareProduct={id:"RTD-2030-"+String(2110+passes.length),kind,priceCents,purchasedAt:"2030-11-17",status:"Not activated"};
+  const product:FareProduct={id:"RTD-2030-"+String(2110+passes.length),kind,priceCents,purchasedAt:"2030-12-05",status:"Not activated"};
   onPurchase(product);setMessage(kind+" added to your fare products.");
  }
  if(!sample)return <div className="empty-state"><h2>No transit account on file</h2><p>No fare account is associated with this resident record. Transit records are maintained by the Regional Transportation District.</p></div>;
