@@ -142,19 +142,19 @@ function initialStore():ProfileStore {
 }
 
 const catalog: {key:ServiceKey;title:string;office:string;description:string;independent:boolean}[] = [
-  {key:"recreation",title:"Recreation and facilities",office:"Parks, Recreation and Cultural Affairs",description:"View your pass, book a facility and manage reservations.",independent:false},
-  {key:"license",title:"Business licenses and permits",office:"Public Health · Finance",description:"Review a license, inspection record and renewal.",independent:false},
-  {key:"housing",title:"Housing assistance",office:"City Housing Division",description:"View an application, supporting records and messages.",independent:false},
-  {key:"family",title:"Family and children",office:"County Clerk · Human Services",description:"View household records, newborn coverage and family offers.",independent:false},
-  {key:"requests",title:"Service requests",office:"Transportation and Public Works",description:"Report and track street, drainage and park maintenance issues.",independent:false},
-  {key:"library",title:"Library card and loans",office:"East Detroit Public Library District",description:"View your library card and checked-out materials.",independent:true},
-  {key:"water",title:"Water and sewer",office:"East Detroit Water and Sewer Authority",description:"View utility bills, service details and billing inquiries.",independent:true},
-  {key:"transit",title:"Regional transit (RTD)",office:"Regional Transportation District (RTD)",description:"Manage your MyRide fare account, tickets, and trip planning.",independent:true},
-  {key:"school",title:"Student enrollment",office:"East Detroit Unified School District",description:"View a household enrollment record and request a verification letter.",independent:true},
-  {key:"authority",title:"Regional housing authority",office:"East Detroit Regional Housing Authority",description:"Review a separate housing authority inquiry.",independent:true},
-  {key:"state",title:"State benefit services",office:"State of Colorado Human Services and State IT",description:"State-supervised benefits and eligibility systems.",independent:true},
-  {key:"court",title:"County Court services",office:"East Detroit County Court",description:"Court services governed under judicial authority.",independent:true},
-  {key:"hospital",title:"Hospital and patient services",office:"East Detroit Health and Hospital Authority",description:"Public hospital services and separately held clinical records.",independent:true},
+  {key:"recreation",title:"Parks and recreation",office:"Parks, Recreation and Cultural Affairs",description:"Check your recreation pass or book a room.",independent:false},
+  {key:"license",title:"Business licenses and permits",office:"Public Health · Finance",description:"Check your business license and renew it when needed.",independent:false},
+  {key:"housing",title:"Housing assistance",office:"City Housing Division",description:"Check your application and send a message to the Housing Division.",independent:false},
+  {key:"family",title:"Family and children",office:"County Clerk · Human Services",description:"See household records, check a child's health coverage and request family services.",independent:false},
+  {key:"requests",title:"Service requests",office:"Transportation and Public Works",description:"Report a street, drainage or park problem and check its status.",independent:false},
+  {key:"library",title:"Library card and loans",office:"East Detroit Public Library District",description:"See your library card and the items you have borrowed.",independent:true},
+  {key:"water",title:"Water and sewer bills",office:"East Detroit Water and Sewer Authority",description:"Check your water bill or ask a billing question.",independent:true},
+  {key:"transit",title:"Regional transit",office:"Regional Transportation District (RTD)",description:"Check your MyRide balance, buy a pass or plan a trip.",independent:true},
+  {key:"school",title:"Student enrollment",office:"East Detroit Unified School District",description:"Check school enrollment or request a letter confirming it.",independent:true},
+  {key:"authority",title:"Regional housing authority",office:"East Detroit Regional Housing Authority",description:"Ask the Regional Housing Authority about a request you sent.",independent:true},
+  {key:"state",title:"State benefits",office:"State of Colorado Human Services and State IT",description:"Learn how to apply for state benefits or ask about a case.",independent:true},
+  {key:"court",title:"County court",office:"East Detroit County Court",description:"Find out where to ask about court dates and cases.",independent:true},
+  {key:"hospital",title:"Hospital services",office:"East Detroit Health and Hospital Authority",description:"Find out how to get hospital care or request medical records.",independent:true},
 ];
 const SAMPLE_LICENSE = "FOOD-2030-0184";
 function makeId(prefix:string) {
@@ -455,25 +455,25 @@ export default function App() {
      </div>
      <DemoTour step={tourIndex} onSelect={showTourStep} onClose={toggleTour} onCopy={copyTourLink} copyStatus={tourCopyStatus}/></>}
      {page==="home"&&<>
-       <div className="page-intro"><h1>My East Detroit</h1><p>Welcome back, {data.account.first}. Your services are below.</p></div>
+       <div className="page-intro"><h1>My East Detroit</h1><p>Welcome back, {data.account.first}. Check your records and see what needs your attention.</p></div>
        <ProactiveHome resident={profileStore.active} event={life} onAction={actOnLifeEvent} onLicense={()=>go("license")} onFamily={()=>openService("family")}/>
        <section className="section-block">
          <div className="section-heading"><h2>My services</h2><button className="text-link" onClick={()=>go("services")}>Browse all services <span aria-hidden="true">→</span></button></div>
          <div className="table-scroll" role="region" aria-label="My services table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Responsible office</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead>
          <tbody>{catalog.filter(c=>!c.independent).map(c=><tr key={c.key}>
-           <td><strong>{c.title}</strong>{c.independent&&<small>Separate public agency</small>}</td>
+           <td><strong>{c.title}</strong>{c.independent&&<small>Run by another agency</small>}</td>
            <td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td>
            <td className="action-cell"><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)} <span aria-hidden="true">→</span></button></td>
          </tr>)}</tbody></table></div>
        </section>
        <HouseholdSection resident={profileStore.active} event={life} onAction={actOnLifeEvent}/>
        <section className="section-block partner-list">
-         <div className="section-heading"><h2>Other public agencies</h2></div>
-         <p className="agency-intro">These organizations have their own governing bodies and control their records and services.</p>
+         <div className="section-heading"><h2>Services from other agencies</h2></div>
+         <p className="agency-intro">The library, school district, transit agency and other public agencies keep their own records and make their own decisions.</p>
          <div className="table-scroll" role="region" aria-label="Services from independent public agencies" tabIndex={0}><table className="records-table">
            <thead><tr><th scope="col">Service</th><th scope="col">Responsible agency</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead>
            <tbody>{catalog.filter(c=>c.independent).map(c=><tr key={c.key}>
-             <td><strong>{c.title}</strong><small>Separate public agency</small></td>
+             <td><strong>{c.title}</strong><small>Run by another agency</small></td>
              <td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td>
              <td className="action-cell"><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)} <span aria-hidden="true">→</span></button></td>
            </tr>)}</tbody>
@@ -486,31 +486,31 @@ export default function App() {
        </div>
      </>}
      {page==="services"&&<>
-       <div className="page-intro"><h1>All services</h1><p>Browse city-county services and services from independent public agencies.</p></div>
+       <div className="page-intro"><h1>All services</h1><p>Find city and county services, plus services from other public agencies.</p></div>
        <div className="filter-bar"><label htmlFor="service-search">Find a service</label><input id="service-search" type="search" placeholder="Search services or departments" value={serviceSearch} onChange={e=>setServiceSearch(e.target.value)}/></div>
        <div className="directory-list">{matchingCatalog.map(c=><article className="directory-row" key={c.key}>
-         <div><h2>{c.title}</h2><p>{c.description}</p><small>{c.office}{c.independent?" · Independent public agency":""}</small></div>
+         <div><h2>{c.title}</h2><p>{c.description}</p><small>{c.office}{c.independent?" · Run by another agency":""}</small></div>
          <div className="directory-action"><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)} <span aria-hidden="true">→</span></button></div>
        </article>)}
        {matchingCatalog.length===0&&<p className="empty-state">No services match your search.</p>}</div>
      </>}
      {page==="license"&&<>
-       <div className="page-intro"><button className="back-link" onClick={()=>go("home")}>← My services</button><h1>Business license</h1><p>Food establishment licensing · Public Health and Finance</p></div>
-       {!sample?<div className="empty-state"><h2>No business license on file</h2><p>No business license is recorded for this account. Contact Public Health to locate an existing license.</p><Action secondary onClick={()=>go("services")}>Browse services</Action></div>:<>
+       <div className="page-intro"><button className="back-link" onClick={()=>go("home")}>← My services</button><h1>Business license</h1><p>Food business licenses · Public Health and Finance</p></div>
+       {!sample?<div className="empty-state"><h2>No business license on file</h2><p>We could not find a business license for this account. Contact Public Health if you already have a license.</p><Action secondary onClick={()=>go("services")}>Browse services</Action></div>:<>
          <div className="detail-header"><div><small>Food establishment license</small><h2>Cypress Cafe</h2><p>License FOOD-2030-0184</p></div><Badge tone={isLicenseRenewed(life)?"good":"warn"}>{isLicenseRenewed(life)?"Renewed for 2031":"Review required"}</Badge></div>
          <dl className="details-grid">
            <div><dt>License holder</dt><dd>Maya Rivera · Cypress Cafe</dd></div>
            <div><dt>Responsible office</dt><dd>City-County Public Health</dd></div>
            <div><dt>Valid through</dt><dd>{isLicenseRenewed(life)?"December 31, 2031":"December 31, 2030"}</dd></div>
-           <div><dt>Premises</dt><dd>22 Example Plaza, Watkins, CO 80137</dd></div>
-           <div><dt>Annual fee record</dt><dd>{life.feeSettled?"Settled · Finance":"Unpaid · Finance"}</dd></div>
-           <div><dt>Inspection record</dt><dd>{life.inspectionClear?"Clear · Public Health":"Review required · Public Health"}</dd></div>
+           <div><dt>Business address</dt><dd>22 Example Plaza, Watkins, CO 80137</dd></div>
+           <div><dt>Annual fee</dt><dd>{life.feeSettled?"Paid · Finance":"Unpaid · Finance"}</dd></div>
+           <div><dt>Health inspection</dt><dd>{life.inspectionClear?"Clear · Public Health":"Review required · Public Health"}</dd></div>
          </dl>
          <RenewalRecord event={life} tour={tourEnabled} onAction={actOnLifeEvent}/>
-         {!isLicenseRenewed(life)&&<section className="form-section"><h2>{data.licenseSubmitted?"Renewal request":"Request manual review"}</h2>
-           {data.licenseSubmitted?<div className="message-panel"><strong>Submitted for review</strong><p>Your request is on file. Public Health must resolve the outstanding check before renewal.</p></div>:
+         {!isLicenseRenewed(life)&&<section className="form-section"><h2>{data.licenseSubmitted?"Review request":"Ask Public Health to review"}</h2>
+           {data.licenseSubmitted?<div className="message-panel"><strong>Submitted for review</strong><p>Public Health received your request. It must check the remaining record before it can renew your license.</p></div>:
            <form onSubmit={submitRenewal}>
-             <p>The renewal cannot complete automatically while a record requires review. You can request a manual review.</p>
+             <p>Public Health must check a record before it can renew your license. You can ask the office to review it now.</p>
              <label className="checkbox-row"><input type="checkbox" checked={renewAcknowledged} onChange={e=>setRenewAcknowledged(e.target.checked)}/><span>I confirm the license holder and business activity have not changed.</span></label>
              <Action type="submit" disabled={!renewAcknowledged}>Request review</Action>
            </form>}
@@ -518,19 +518,19 @@ export default function App() {
        </>}
      </>}
      {page==="requests"&&<>
-       <div className="page-intro"><h1>My service requests</h1><p>Track local issues reported to the city, or submit a new one.</p></div>
-       <section className="section-block"><div className="section-heading"><h2>Reported issues</h2></div>
+       <div className="page-intro"><h1>My service requests</h1><p>See problems you have reported or report a new one.</p></div>
+       <section className="section-block"><div className="section-heading"><h2>Problems you reported</h2></div>
          {data.tickets.length?<div className="table-scroll" role="region" aria-label="Reported issues table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Request</th><th scope="col">Issue</th><th scope="col">Reported</th><th scope="col">Status</th></tr></thead><tbody>
            {data.tickets.map(t=><tr key={t.id}><td><strong>{t.id}</strong></td><td>{t.category}<small>{t.description} · {t.location}</small></td><td>{dateFormat(t.created)}</td><td><Badge tone="info">{t.status}</Badge></td></tr>)}
-         </tbody></table></div>:<p className="empty-state">You have no service requests.</p>}
+         </tbody></table></div>:<p className="empty-state">You have not reported any problems.</p>}
        </section>
        <section className="form-section request-section"><h2>Report a problem</h2><form onSubmit={submitRequest}>
          <div className="form-field"><label htmlFor="problem-category">Type of problem</label><select id="problem-category" value={requestForm.category} onChange={e=>setRequestForm({...requestForm,category:e.target.value})}>
            <option>Street and sidewalk</option><option>Drainage or water on roads</option><option>Address or street sign</option><option>Park maintenance</option>
          </select></div>
-         <TextInput id="request-location" label="Location" required value={requestForm.location} onChange={e=>setRequestForm({...requestForm,location:e.target.value})} helperText="A street, intersection or public place." />
-         <div className="form-field"><label htmlFor="problem-description">Description</label><textarea id="problem-description" required rows={4} value={requestForm.description} onChange={e=>setRequestForm({...requestForm,description:e.target.value})}/></div>
-         <Action type="submit">Submit service request</Action>
+         <TextInput id="request-location" label="Location" required value={requestForm.location} onChange={e=>setRequestForm({...requestForm,location:e.target.value})} helperText="Enter a street address, intersection or park." />
+         <div className="form-field"><label htmlFor="problem-description">What is wrong?</label><textarea id="problem-description" required rows={4} value={requestForm.description} onChange={e=>setRequestForm({...requestForm,description:e.target.value})}/></div>
+         <Action type="submit">Send report</Action>
        </form></section>
      </>}
      {page==="service"&&<>
@@ -570,16 +570,16 @@ export default function App() {
          setData(prev=>({...prev,authorityFollowupRequested:true,activity:[addActivity("Housing authority status update requested","East Detroit Regional Housing Authority"),...prev.activity]}));
          setNotice("Status update request recorded.");
        }}/>}
-       {selected==="state"&&<LimitedService title="State benefit services" agency="State of Colorado Human Services and State IT" outsideSystem="State-supervised benefits are administered through state and county program systems. Your county office can advise on applications and review procedures." reason="The State of Colorado sets program rules and system access. A city portal cannot issue a benefit decision or obtain full case records without state and federal authority."/>}
-       {selected==="court"&&<LimitedService title="County Court services" agency="East Detroit County Court" outsideSystem="Court case files, calendars and filings are handled by the County Court. Personal case information is not displayed here." reason="The Court exercises judicial authority separate from the city executive. Court records and decisions remain under judicial rules and control."/>}
-       {selected==="hospital"&&<LimitedService title="Hospital and patient services" agency="East Detroit Health and Hospital Authority" outsideSystem="For appointments and medical records, use the hospital's patient services. This city portal does not display clinical charts." reason="The public hospital authority is separately governed. Clinical records require the hospital's authorization and applicable healthcare privacy protections."/>}
+       {selected==="state"&&<LimitedService title="State benefit services" agency="State of Colorado Human Services and State IT" outsideSystem="Apply for state benefits or ask your county human services office about an existing case." reason="The State of Colorado decides whether you qualify for benefits. My East Detroit cannot make that decision or see your full case record."/>}
+       {selected==="court"&&<LimitedService title="County Court services" agency="East Detroit County Court" outsideSystem="Contact the County Court about case records, hearings or documents. This account does not show court cases." reason="The County Court manages its cases and records separately from city services."/>}
+       {selected==="hospital"&&<LimitedService title="Hospital and patient services" agency="East Detroit Health and Hospital Authority" outsideSystem="Contact the hospital to make an appointment or request medical records. This account does not show your medical records." reason="The hospital keeps its own medical records and decides who can access them under privacy laws."/>}
      </>}
      {page==="account"&&<>
-       <div className="page-intro"><h1>Account and privacy</h1><p>Your city login profile and the records kept by individual services are separate.</p></div>
-       <div className="account-columns"><section className="section-block"><h2>Profile</h2><dl className="detail-list"><div><dt>Name</dt><dd>{data.account.first} {data.account.last}</dd></div><div><dt>Email</dt><dd>{data.account.email}</dd></div><div><dt>Address given</dt><dd>{data.account.address}, CO {data.account.postal}</dd></div></dl>
+       <div className="page-intro"><h1>Account and privacy</h1><p>City offices and other public agencies keep their own records. You can see some of them here.</p></div>
+       <div className="account-columns"><section className="section-block"><h2>Profile</h2><dl className="detail-list"><div><dt>Name</dt><dd>{data.account.first} {data.account.last}</dd></div><div><dt>Email</dt><dd>{data.account.email}</dd></div><div><dt>Street address</dt><dd>{data.account.address}, CO {data.account.postal}</dd></div></dl>
          <div className="account-actions"><Action secondary onClick={()=>go("register")}>Create another account</Action><button className="text-link" onClick={restoreDemo}>Restore account</button></div>
        </section>
-       <aside className="privacy-panel"><h2>How information is used</h2><p>Your city account helps you reach participating services. It does not give each department access to all of your records.</p><p>A change here does not automatically update a library, housing, public health or utility record.</p><p>Account information entered here is stored in this browser.</p><button className="text-link" onClick={()=>saveDownload("east-detroit-account.json",JSON.stringify(data,null,2))}>Download account information ↗</button></aside></div>
+       <aside className="privacy-panel"><h2>How information is used</h2><p>You can use this account to reach city services and see updates from other agencies. Each agency decides which records it shares.</p><p>Changing your account information will not change records held by the library, Housing Division, Public Health or Water Authority.</p><p>This site saves the account information you enter on this device.</p><button className="text-link" onClick={()=>saveDownload("east-detroit-account.json",JSON.stringify(data,null,2))}>Download account information ↗</button></aside></div>
        <section className="section-block"><div className="section-heading"><h2>Service records</h2></div><div className="table-scroll" role="region" aria-label="Service records table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Record holder</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead><tbody>
          {catalog.map(c=><tr key={c.key}><td><strong>{c.title}</strong></td><td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td><td><button className="table-link" onClick={()=>openService(c.key)}>View <span aria-hidden="true">→</span></button></td></tr>)}
        </tbody></table></div></section>
@@ -592,7 +592,7 @@ export default function App() {
          <TextInput id="signup-last" label="Last name" required value={signup.last} onChange={e=>setSignup({...signup,last:e.target.value})}/></div>
          <TextInput id="signup-email" label="Email address" type="email" required value={signup.email} onChange={e=>setSignup({...signup,email:e.target.value})} />
          <TextInput id="signup-address" label="Street address" required value={signup.address} onChange={e=>setSignup({...signup,address:e.target.value})} helperText="Enter your street address."/>
-         <div className="form-field"><label htmlFor="signup-postal">ZIP code</label><select id="signup-postal" value={signup.postal} onChange={e=>setSignup({...signup,postal:e.target.value})}><option>80137</option><option>80102</option><option>80018</option><option>80019</option></select><p className="field-help">A ZIP code alone does not establish city residency.</p></div>
+         <div className="form-field"><label htmlFor="signup-postal">ZIP code</label><select id="signup-postal" value={signup.postal} onChange={e=>setSignup({...signup,postal:e.target.value})}><option>80137</option><option>80102</option><option>80018</option><option>80019</option></select><p className="field-help">Your ZIP code does not tell us whether you live within city limits.</p></div>
          <label className="checkbox-row"><input type="checkbox" checked={signup.accepted} onChange={e=>setSignup({...signup,accepted:e.target.checked})}/><span>I confirm that the account information is correct.</span></label>
          <Action type="submit">Create account</Action>
        </form></section>
