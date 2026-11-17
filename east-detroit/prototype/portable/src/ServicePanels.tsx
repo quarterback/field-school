@@ -15,7 +15,7 @@ function Block({title,children,className=""}:{title:string;children:ReactNode;cl
  return <section className={"program-section "+className}><h2>{title}</h2>{children}</section>;
 }
 function Empty({name}:{name:string}) {
- return <div className="empty-state"><h2>No {name} on file</h2><p>This account has no related record. Contact the responsible agency to apply or find an existing record.</p></div>;
+ return <div className="empty-state"><h2>No {name} on file</h2><p>We could not find a record for this account. Contact the agency that provides this service if you think a record is missing.</p></div>;
 }
 export function ParksService({sample,resident,reservations,onBook,passNumber,validThrough}:Basic&{
   resident:string;reservations:Reservation[];onBook:(r:Reservation)=>void;passNumber?:string;validThrough?:string
@@ -66,13 +66,13 @@ export function HousingService({sample,message,onSend}:Basic&{message:string;onS
    <div className="table-scroll" role="region" tabIndex={0} aria-label="Housing application documents"><table className="records-table"><thead><tr><th>Record</th><th>Received</th><th>Status</th></tr></thead><tbody>
      <tr><td>Application form</td><td>Nov. 3, 2030</td><td><span className="status status-good">Received</span></td></tr>
      <tr><td>Household statement</td><td>Nov. 3, 2030</td><td><span className="status status-good">Received</span></td></tr>
-     <tr><td>Address verification</td><td>Nov. 5, 2030</td><td><span className="status status-info">Under review</span></td></tr>
+     <tr><td>Address check</td><td>Nov. 5, 2030</td><td><span className="status status-info">Under review</span></td></tr>
    </tbody></table></div>
   </Block>
-  <Block title="Separate housing authority" className="program-policy"><p>The Regional Housing Authority maintains its own voucher, waitlist and property records. This city application does not display those records.</p></Block>
+  <Block title="Housing authority records" className="program-policy"><p>The Regional Housing Authority keeps its own housing voucher, waiting list and property records. This city application does not show them.</p></Block>
   <section className="form-section"><h2>Contact the Housing Division</h2>
    {message&&<div className="message-panel"><strong>Most recent message</strong><p>{message}</p></div>}
-   <form onSubmit={send}><div className="form-field"><label htmlFor="housing-msg">Message about HOU-2030-0371</label><textarea id="housing-msg" required minLength={10} rows={4} value={draft} onChange={e=>setDraft(e.target.value)}/></div><button className="program-submit" type="submit">Add message to application</button></form>
+   <form onSubmit={send}><div className="form-field"><label htmlFor="housing-msg">Message to the Housing Division</label><textarea id="housing-msg" required minLength={10} rows={4} value={draft} onChange={e=>setDraft(e.target.value)}/></div><button className="program-submit" type="submit">Add message to application</button></form>
   </section>
  </div>;
 }
@@ -93,7 +93,7 @@ export function LibraryService({sample,resident,renewed,onRenew,cardNumber,itemT
     <td>{renewed?<span className="status status-good">Renewed</span>:<button className="table-link" onClick={onRenew}>Renew item →</button>}</td>
    </tr></tbody></table></div>
   </Block>
-  <Block title="Library records" className="program-policy"><p>The Library District is independently governed. Patron and borrowing records remain with the district and are protected under Colorado law.</p></Block>
+  <Block title="Library records" className="program-policy"><p>The Library District keeps your library and borrowing records. Other city offices cannot see them here.</p></Block>
  </div>;
 }
 export function WaterService({sample,issue,onInquiry,accountNumber,serviceAddress,amountDue}:Basic&{
@@ -116,8 +116,8 @@ export function WaterService({sample,issue,onInquiry,accountNumber,serviceAddres
    </tbody></table></div>
   </Block>
   <section className="form-section"><h2>Ask about a bill</h2>
-   {issue&&<div className="message-panel"><strong>Latest billing inquiry</strong><p>{issue}</p></div>}
-   <form onSubmit={send}><div className="form-field"><label htmlFor="water-msg">Your question</label><textarea id="water-msg" required minLength={10} rows={4} value={draft} onChange={e=>setDraft(e.target.value)}/></div><button className="program-submit" type="submit">Submit billing inquiry</button></form>
+   {issue&&<div className="message-panel"><strong>Your latest billing question</strong><p>{issue}</p></div>}
+   <form onSubmit={send}><div className="form-field"><label htmlFor="water-msg">Your question</label><textarea id="water-msg" required minLength={10} rows={4} value={draft} onChange={e=>setDraft(e.target.value)}/></div><button className="program-submit" type="submit">Send billing question</button></form>
   </section>
  </div>;
 }

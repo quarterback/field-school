@@ -30,37 +30,37 @@ export function TransitService({sample,balanceCents,passes,onAddFunds,onPurchase
   const product:FareProduct={id:"RTD-2030-"+String(2110+passes.length),kind,priceCents,purchasedAt:"2030-12-05",status:"Not activated"};
   onPurchase(product);setMessage(kind+" added to your fare products.");
  }
- if(!sample)return <div className="empty-state"><h2>No transit account on file</h2><p>No fare account is associated with this resident record. Transit records are maintained by the Regional Transportation District.</p></div>;
+ if(!sample)return <div className="empty-state"><h2>No transit account on file</h2><p>This account does not show a MyRide card. Contact RTD if you think your card is missing.</p></div>;
  return <div className="program rtd-service">
   <div className="program-heading"><div>
-    <span className="record-type">Regional Transportation District / Independent public agency</span>
+    <span className="record-type">Regional Transportation District</span>
     <h2>MyRide account</h2><p>Card ending {cardLastFour||"4821"}</p>
    </div><span className="status status-good">Active</span></div>
   <dl className="program-facts">
-    <Summary label="Available stored value" value={money(balanceCents)}/>
+    <Summary label="Card balance" value={money(balanceCents)}/>
     <Summary label="Card" value={"MyRide •••• "+(cardLastFour||"4821")}/>
     <Summary label="Fare category" value="Standard"/>
     <Summary label="Card status" value="Active"/>
   </dl>
   <section className="program-section" aria-labelledby="rtd-fares">
-    <h2 id="rtd-fares">Tickets and stored value</h2>
-    <p className="rtd-intro">Purchase a fare product using your stored value, or add funds to the account.</p>
+    <h2 id="rtd-fares">Buy a pass or add money</h2>
+    <p className="rtd-intro">Use your card balance to buy a pass, or add money first.</p>
     <div className="rtd-fare-options">
       {prices.map(f=><div className="rtd-fare-option" key={f.kind}>
         <div><strong>{f.kind}</strong><span>{money(f.priceCents)}</span></div>
         <button type="button" className="program-submit" onClick={()=>purchase(f.kind,f.priceCents)} disabled={balanceCents<f.priceCents}>Buy pass</button>
       </div>)}
     </div>
-    <div className="rtd-add-funds"><span>Stored value: <strong>{money(balanceCents)}</strong></span><button type="button" className="rtd-secondary-action" onClick={()=>{onAddFunds();setMessage("$10.00 added to stored value.");}}>Add $10.00</button></div>
+    <div className="rtd-add-funds"><span>Balance: <strong>{money(balanceCents)}</strong></span><button type="button" className="rtd-secondary-action" onClick={()=>{onAddFunds();setMessage("$10.00 added to your card balance.");}}>Add $10.00</button></div>
     {message&&<p className="rtd-feedback" role="status">{message}</p>}
     {passes.length>0&&<div className="rtd-products">
-      <h3>Purchased fare products</h3>
+      <h3>Passes you bought</h3>
       <div className="table-scroll" role="region" aria-label="Purchased transit passes" tabIndex={0}>
         <table className="records-table"><thead><tr><th scope="col">Product</th><th scope="col">Reference</th><th scope="col">Price</th><th scope="col">Status</th></tr></thead>
         <tbody>{passes.map(p=><tr key={p.id}><td><strong>{p.kind}</strong></td><td>{p.id}</td><td>{money(p.priceCents)}</td><td><span className="status status-neutral">{p.status}</span></td></tr>)}</tbody></table>
       </div>
     </div>}
-    <p className="muted-small">Fare products must be activated in RTD’s rider app before boarding, or riders must tap a valid MyRide card. This web account does not generate a boarding credential.</p>
+    <p className="muted-small">Activate a pass in the RTD app before you ride, or tap your MyRide card. This page does not give you a ticket for boarding.</p>
   </section>
   <section className="program-section" aria-labelledby="rtd-plan">
     <h2 id="rtd-plan">Plan a trip</h2>
@@ -78,7 +78,7 @@ export function TransitService({sample,balanceCents,passes,onAddFunds,onPurchase
         <li><span className="rtd-route-code">EDX</span><div><strong>East Detroit Central Station → Denver Airport Station</strong><small>Regional connector · Proposed</small></div></li>
         {trip.to==="Denver Union Station"&&<li><span className="rtd-route-code">A</span><div><strong>Denver Airport Station → Denver Union Station</strong><small>RTD A Line · Existing regional rail connection</small></div></li>}
       </ol>
-      <p className="muted-small">East Detroit routes and connections are proposed. Departure times and real-time vehicle locations are not available for this itinerary.</p>
+      <p className="muted-small">The East Detroit routes shown here are planned. This page cannot show departure times or live bus and train locations.</p>
     </div>}
   </section>
   <section className="program-section" aria-labelledby="rtd-account">
@@ -90,7 +90,7 @@ export function TransitService({sample,balanceCents,passes,onAddFunds,onPurchase
         <tr><td>Nov. 10, 2030</td><td>3-hour fare</td><td>−$2.75</td></tr>
       </tbody></table>
     </div>}
-    <div className="rtd-independent-note">Fare rules, rider accounts, schedules, transactions and discounts are controlled by RTD, a regional transit agency governed separately from East Detroit.</div>
+    <div className="rtd-independent-note">RTD sets fares and schedules and keeps your transit account records. East Detroit does not control these services.</div>
   </section>
  </div>;
 }

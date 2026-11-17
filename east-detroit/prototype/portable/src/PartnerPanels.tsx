@@ -44,13 +44,13 @@ export function SchoolDistrictService({sample,requested,onRequest}:Common&{
       </div>
     </Section>
     <Section title="Request a verification letter">
-      <p className="service-description">Request a letter from the district confirming current enrollment.</p>
+      <p className="service-description">Ask the school district for a letter that confirms the student is enrolled.</p>
       <button type="button" className="program-submit" disabled={requested} onClick={onRequest}>
         {requested?"Letter requested":"Request enrollment verification"}
       </button>
-      {requested&&<p className="service-feedback" role="status">Request received by the school district. A letter has not been issued.</p>}
+      {requested&&<p className="service-feedback" role="status">Your request is saved. The school district has not issued the letter yet.</p>}
     </Section>
-    <div className="agency-boundary"><strong>Record responsibility</strong><p>The school district decides enrollment and controls student information. An address in East Detroit does not determine school assignment by itself. Student records are not shared with other departments through this screen.</p></div>
+    <div className="agency-boundary"><strong>Who keeps this record?</strong><p>The school district decides where students enroll and keeps their school records. Your address alone does not decide which school they attend. This page does not share student records with other city offices.</p></div>
   </AgencyRecord>;
 }
 
@@ -76,19 +76,19 @@ export function RegionalHousingService({sample,requested,onRequest}:Common&{
       </div>
     </Section>
     <Section title="Request an update">
-      <p className="service-description">Ask the housing authority to review the current inquiry and provide its next steps.</p>
+      <p className="service-description">Ask the housing authority to review your request and tell you what happens next.</p>
       <button className="program-submit" type="button" disabled={requested} onClick={onRequest}>{requested?"Update requested":"Request status update"}</button>
-      {requested&&<p className="service-feedback" role="status">Request recorded for the Regional Housing Authority. No determination was made.</p>}
+      {requested&&<p className="service-feedback" role="status">Your request is saved. The housing authority has not made a decision.</p>}
     </Section>
-    <div className="agency-boundary"><strong>Record responsibility</strong><p>The authority has its own commission, federal agreements, and program rules. Its voucher, waitlist, and income-verification records are not available to the City Housing Division merely because both agencies serve the same resident.</p></div>
+    <div className="agency-boundary"><strong>Who keeps this record?</strong><p>The Regional Housing Authority keeps its own housing voucher, waiting list and income records. The City Housing Division cannot see them through this account.</p></div>
   </AgencyRecord>;
 }
 
 type LimitedServiceProps={title:string;agency:string;reason:string;outsideSystem:string};
 export function LimitedService({title,agency,reason,outsideSystem}:LimitedServiceProps){
   return <div className="program">
-    <header className="program-heading"><div><span className="record-type">{agency}</span><h2>{title}</h2><p>Service operated outside the city portal</p></div><span className="status status-neutral">Agency service</span></header>
+    <header className="program-heading"><div><span className="record-type">{agency}</span><h2>{title}</h2><p>Contact this agency for service</p></div><span className="status status-neutral">Other agency</span></header>
     <section className="program-section"><h2>How to get this service</h2><p className="service-description">{outsideSystem}</p></section>
-    <div className="agency-boundary"><strong>Record responsibility</strong><p>{reason}</p></div>
+    <div className="agency-boundary"><strong>Who keeps this record?</strong><p>{reason}</p></div>
   </div>;
 }
