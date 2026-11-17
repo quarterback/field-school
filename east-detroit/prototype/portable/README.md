@@ -34,7 +34,7 @@ See [interface and content standards](CONTENT_STANDARDS.md) for Salesforce Light
 - **Guided walkthrough for students:** https://east-detroit-operations.vercel.app/?demo=1
 - **Direct stop:** append a step such as \`?demo=1&step=school\` or \`?demo=1&step=authority\`
 
-Anyone can explore the portal without signing in. The **Explore demo** control in the header opens the optional seven-stop vendor walkthrough. The walkthrough offers previous/next, a stop selector, prompts about record authority, and a copyable link. Closing it returns to the normal resident interface. Students may still navigate the service table independently.
+Anyone can explore the portal without signing in. The **Explore demo** control in the header opens the optional seven-stop vendor walkthrough. The walkthrough offers previous/next, a stop selector, and a copyable link. Closing it returns to the normal resident interface. Students may still navigate the service table independently.
 
 ## Resident-facing examples
 

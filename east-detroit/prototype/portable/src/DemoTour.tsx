@@ -2,55 +2,45 @@ export type DemoStop = {
   id: string;
   title: string;
   purpose: string;
-  question: string;
   page: "home" | "service" | "license" | "services";
   service?: string;
 };
 export const DEMO_STOPS: DemoStop[] = [
   {
     id:"home",title:"Resident account",page:"home",
-    purpose:"Start with the services a resident can already see and use in one account.",
-    question:"Which services should be visible here without a separate sign-in?"
+    purpose:"Start with the services a resident can already see and use in one account."
   },
   {
     id:"people",title:"Compare resident accounts",page:"home",
-    purpose:"Choose Maya, Avery, or Helen in the resident selector. Each person has different services and records.",
-    question:"What should someone see when they have no record with a particular department?"
+    purpose:"Choose Maya, Avery, or Helen in the resident selector. Each person has different services and records."
   },
   {
     id:"birth",title:"After a child is born",page:"service",service:"family",
-    purpose:"A registered birth updates the household and triggers newborn coverage and family offers. Replay the event to see what changed.",
-    question:"Which agencies may receive a birth report, and what can they do automatically?"
+    purpose:"A registered birth updates the household and triggers newborn coverage and family offers. Replay the event to see what changed."
   },
   {
     id:"school",title:"Independent school district",page:"service",service:"school",
-    purpose:"See how a parent could view a school enrollment record and request verification.",
-    question:"What evidence proves a resident may view a child's record, and who resolves errors?"
+    purpose:"See how a parent could view a school enrollment record and request verification."
   },
   {
     id:"transit",title:"Regional transportation",page:"service",service:"transit",
-    purpose:"Compare public routes with a personal transit pass maintained by RTD.",
-    question:"Should the city display personal transit data, or only public schedules?"
+    purpose:"Compare public routes with a personal transit pass maintained by RTD."
   },
   {
     id:"authority",title:"Regional housing authority",page:"service",service:"authority",
-    purpose:"Inspect a separately governed housing inquiry without folding it into a city assistance case.",
-    question:"Which authority records, if any, can appear in the city portal?"
+    purpose:"Inspect a separately governed housing inquiry without folding it into a city assistance case."
   },
   {
     id:"library",title:"Library district",page:"service",service:"library",
-    purpose:"View a library account and renew an item using records held by the Library District.",
-    question:"Should a city portal show borrowing history, or only library card information?"
+    purpose:"View a library account and renew an item using records held by the Library District."
   },
   {
     id:"license",title:"Public Health and Finance",page:"license",
-    purpose:"See a food establishment license renewed from existing records. Change the inspection result to see the renewal stop.",
-    question:"Who authorizes the automatic renewal, and what exception must stop it?"
+    purpose:"See a food establishment license renewed from existing records. Change the inspection result to see the renewal stop."
   },
   {
     id:"scope",title:"Other agencies",page:"services",
-    purpose:"Review examples from agencies whose confidential records are not available through this portal.",
-    question:"Which agencies should participate, which should decline, and under what conditions?"
+    purpose:"Review examples from agencies whose confidential records are not available through this portal."
   },
 ];
 export function DemoTour({step,onSelect,onClose,onCopy,copyStatus}:{
@@ -60,7 +50,6 @@ export function DemoTour({step,onSelect,onClose,onCopy,copyStatus}:{
  return <section className="guided-tour" aria-label="Vendor demonstration walkthrough">
   <div className="tour-heading"><div><span className="tour-counter">Vendor walkthrough · {step+1} of {DEMO_STOPS.length}</span><h2>{current.title}</h2></div><button type="button" className="tour-exit" onClick={onClose}>Exit walkthrough</button></div>
   <p>{current.purpose}</p>
-  <p className="tour-question"><strong>For discussion:</strong> {current.question}</p>
   <div className="tour-actions">
    <label htmlFor="tour-stop">View</label>
    <select id="tour-stop" value={step} onChange={e=>onSelect(Number(e.target.value))}>

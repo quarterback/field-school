@@ -260,7 +260,6 @@ a{color:var(--ruby-dark)}
 .tour-heading h2{margin:4px 0 8px;font-size:20px;font-weight:800;letter-spacing:-.025em}
 .tour-heading .tour-exit{border:0;background:transparent;color:var(--ruby-dark);font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:3px;min-height:32px;white-space:nowrap}
 .guided-tour>p{margin:0 0 8px;font-size:13px;line-height:1.55}
-.guided-tour .tour-question{margin-bottom:15px}
 .tour-actions{display:flex;align-items:center;flex-wrap:wrap;gap:9px;font-size:13px}
 .tour-actions label{font-weight:700}
 .tour-actions select{border:1px solid #65766c;border-radius:2px;background:var(--white);padding:9px 11px;min-height:42px;max-width:260px;flex:1 1 175px}
