@@ -39,6 +39,8 @@ These rules apply to the resident portal and vendor walkthrough. They supplement
 
 - Preserve the established city identity, red top bar, masthead, horizontal navigation, Archivo typography and East Detroit palette.
 - Tables are for comparable service records. Use native table headers, concise columns, accessible empty states and descriptive row actions.
+- Group screens with proximity, consistent spacing, alignment and type hierarchy. Do not underline section headings, place rules between every row, or surround routine content with decorative borders. Reserve borders for editable inputs, keyboard focus, and controls whose states need clear edges.
+- For long service tables, use a distinct header and subtle alternating row backgrounds rather than row-by-row dividing lines. Retain semantic table structure and readable hit targets.
 - Use ordinary labeled HTML/HDS inputs for forms, visible focus and text states rather than color alone.
 - Make important content available without hover, animation, or a hidden tooltip.
 - At small widths, support keyboard scrolling or a readable stacked layout; verify at 320px and 200–400% zoom. Do not shrink essential text to fit.
