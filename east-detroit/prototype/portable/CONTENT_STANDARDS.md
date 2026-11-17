@@ -2,6 +2,14 @@
 
 These rules apply to the resident portal and vendor walkthrough. They supplement the established East Detroit visual language and the No Slop UI and Red Pen Editor rules. They do not authorize changes to city policy, interagency agreements, eligibility criteria, or the underlying classroom scenario.
 
+## Public entry and sign-in
+
+- The root page is a public-facing product introduction. Explain what the service does and why residents would use it, using concrete tasks rather than slogans or invented performance claims.
+- Visitors see a sign-in stage before any resident dashboard. The sample sign-in screen makes clear that it provides an account preview and does not authenticate identity, collect passwords, or send verification codes.
+- **Sign out** returns to the public entry and ends the local preview session. Records remain in local browser storage so the next example can be compared.
+- Explicit instructor walkthrough URLs with a `step` parameter may open directly to that demonstration. Ordinary visitors should not land inside somebody else's account.
+- Preserve the city masthead, palette, recognizable navigation, and typography across public and authenticated-looking views. Use generous spacing, plain text, and targeted calls to action instead of decorative dashboards, gradients, floating cards or fake metrics.
+
 ## Screen model
 
 - **Normal resident view:** The app behaves like a municipal service. The resident sees their name, services they can use, record statuses and actions. Never label someone by age or fictional demographic category on the resident page.

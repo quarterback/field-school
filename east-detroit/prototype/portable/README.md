@@ -2,6 +2,16 @@
 
 A resident-facing city-county service portal for a **Public Mechanics** classroom vendor presentation. Students represent East Detroit departments, special districts, regional bodies and other public agencies. They inspect plausible agency services and decide which arrangements should be accepted, limited or rejected.
 
+## Public entry and sign-in
+
+The root URL now opens a resident-facing **My East Detroit** product page instead of immediately showing someone else's account. It introduces the service, gives concrete examples of verified life events and automatic updates, and explains how city-county and independent agency records remain separately controlled.
+
+Select **Sign in to My East Detroit** to reach a dedicated entry screen. Enter the email for one of the four included example residents, or select one of the sample accounts to fill the email and continue. A visible note explains that the prototype does not authenticate anyone or require a real password. No real account credentials are collected.
+
+After continuing, the resident sees their own service records and the current in-account navigation. **Sign out** returns to the public product page. The app does not use the sign-in screen as real authentication or cross-browser access control.
+
+The optional class walkthrough still works after entering an example account through `?demo=1`. Explicit deep links with `?demo=1&step=birth&resident=samira` skip the public entry for the instructor's direct presentations; ordinary visitors start with the welcome screen.
+
 ## Proactive services: birth and automatic renewal
 
 The portal now demonstrates two services initiated by verified agency events rather than a resident filling out another form.
@@ -34,11 +44,11 @@ See [interface and content standards](CONTENT_STANDARDS.md) for Salesforce Light
 - **Guided walkthrough for students:** https://east-detroit-operations.vercel.app/?demo=1
 - **Direct stop:** append a step such as \`?demo=1&step=school\` or \`?demo=1&step=authority\`
 
-Anyone can explore the portal without signing in. The **Explore demo** control in the header opens the optional seven-stop vendor walkthrough. The walkthrough offers previous/next, a stop selector, and a copyable link. Closing it returns to the normal resident interface. Students may still navigate the service table independently.
+Visitors begin at the public welcome page and choose a sample account on the sign-in screen. In the resident portal, **Explore demo** opens the optional nine-stop vendor walkthrough with previous/next, a stop selector, and a copyable link. Closing it returns to the resident interface. Students can still navigate services independently.
 
 ## Resident-facing examples
 
-The portal opens with **Maya Rivera** and sample records.
+The first sample account is **Maya Rivera** and contains the service records shown below.
 
 ### City and county departments
 

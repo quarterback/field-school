@@ -325,3 +325,91 @@ a{color:var(--ruby-dark)}
 .renewal-record>.table-scroll{;}
 @media(max-width:900px){.proactive-item{grid-template-columns:135px minmax(0,1fr);gap:13px}.proactive-item .table-link{grid-column:2;justify-self:start;text-align:left}.family-offer{grid-template-columns:1fr;gap:10px}.family-offer>div:last-child{flex-direction:row;align-items:center;flex-wrap:wrap}}
 @media(max-width:650px){.proactive-item{grid-template-columns:1fr;padding:15px 2px;gap:8px}.proactive-item .table-link{grid-column:1}.proactive-status{order:0}.proactive-content{order:1}.family-offer{padding:14px 2px}.family-offer .program-submit{min-width:0}.service-provenance>div{padding:10px}.scenario-control{padding:14px}}
+
+
+/* Public service front door and example-account sign-in. Keep the municipal identity. */
+.public-content{flex:1;padding:30px 0 74px}
+.public-header-link{
+  min-height:44px;padding:8px 2px;border:0;background:transparent;color:var(--ruby-dark);
+  text-decoration:underline;text-underline-offset:4px;font-weight:700;font-size:14px;
+}
+.public-header-link:hover{color:var(--ruby)}
+.public-intro{
+  display:grid;grid-template-columns:minmax(0,1.25fr) minmax(290px,.75fr);
+  gap:clamp(36px,6vw,96px);align-items:center;padding:30px 0 56px;
+}
+.public-intro-copy h1{
+  font-size:clamp(36px,4.6vw,58px);font-weight:800;letter-spacing:-.052em;
+  line-height:1.08;max-width:660px;margin:0 0 24px;
+}
+.public-intro-copy>p{font-size:18px;line-height:1.6;max-width:650px;margin:0 0 28px;color:#34413a}
+.public-primary-action{
+  padding:13px 23px;min-height:49px;max-width:100%;
+  background:var(--ruby);color:var(--white);border:2px solid var(--ruby);
+  border-radius:2px;font-size:15px;font-weight:700;line-height:1.35;
+}
+.public-primary-action:hover{background:var(--ruby-dark);border-color:var(--ruby-dark)}
+.public-feature{background:var(--aqua);padding:27px 30px}
+.public-feature h2{font-size:25px;letter-spacing:-.032em;font-weight:800;margin:0 0 11px;line-height:1.22}
+.public-feature p{font-size:15px;line-height:1.65;margin:0;max-width:440px}
+.public-capabilities{padding:7px 0 45px}
+.public-capabilities>h2{font-size:26px;letter-spacing:-.03em;font-weight:800;margin:0 0 23px}
+.public-capability-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.public-capability-grid article h3{font-size:18px;font-weight:800;margin:0 0 9px;line-height:1.35;letter-spacing:-.02em}
+.public-capability-grid article p{font-size:14px;line-height:1.65;color:#34413a;margin:0}
+.public-service-note{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:14px 48px;background:#edf3ef;padding:29px 32px;align-items:start}
+.public-service-note h2{font-size:21px;font-weight:800;margin:0;line-height:1.4;letter-spacing:-.02em}
+.public-service-note p{font-size:14px;margin:0;color:#34413a;line-height:1.65}
+.public-text-action{
+  grid-column:2;justify-self:start;min-height:36px;padding:4px 0;border:0;background:transparent;
+  color:var(--ruby-dark);font-size:14px;font-weight:700;text-decoration:underline;text-underline-offset:3px;
+}
+.public-login{max-width:1050px;margin:12px auto 0}
+.public-login>.back-link{margin:0 0 33px;min-height:42px}
+.public-login-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.87fr);gap:clamp(30px,6vw,90px);align-items:start}
+.public-login-form h1{font-size:clamp(32px,4vw,45px);margin:0 0 10px;letter-spacing:-.05em;line-height:1.15}
+.public-login-form>p{max-width:570px;color:#34413a;font-size:16px;margin:0 0 23px}
+.public-login-form form{display:grid;gap:18px;max-width:510px}
+.public-login-form .form-field{display:grid;gap:8px}
+.public-login-form .form-field label{font-weight:700;font-size:14px}
+.public-login-form .form-field input{
+  background:var(--white);min-height:49px;border:1px solid #66756b;border-radius:2px;
+  padding:10px 13px;font-size:16px;color:var(--ink);width:100%;
+}
+.public-login-form .public-primary-action{justify-self:start}
+.public-login-form .public-login-note{font-size:13px;line-height:1.55;margin:21px 0 0;color:#47544c;max-width:500px}
+.public-login-error{font-size:14px;font-weight:700;margin:0;color:var(--ruby-dark)}
+.public-account-picker{background:#f1f5f2;padding:24px 27px 26px}
+.public-account-picker h2{font-size:21px;letter-spacing:-.03em;margin:0 0 8px;font-weight:800}
+.public-account-picker>p{font-size:13px;color:#3b4940;margin:0 0 18px;line-height:1.6}
+.public-account-options{display:grid;gap:7px}
+.public-account-options button{
+  display:grid;gap:3px;text-align:left;width:100%;padding:11px 13px;
+  background:var(--white);border:2px solid transparent;border-radius:2px;color:var(--ink);
+}
+.public-account-options button:hover{background:#e2f0e8}
+.public-account-options button.selected{border-color:var(--ruby);background:#fff}
+.public-account-options button strong{font-size:14px}
+.public-account-options button span{font-size:12px;color:var(--muted)}
+@media(max-width:880px){
+  .public-intro{grid-template-columns:1fr;gap:25px;padding-top:16px}
+  .public-feature{max-width:650px}
+  .public-capability-grid{gap:23px}
+  .public-login-layout{gap:25px}
+}
+@media(max-width:650px){
+  .public-content{padding:18px 0 48px}
+  .public-intro{gap:25px;padding:18px 0 38px}
+  .public-intro-copy h1{font-size:clamp(31px,9vw,43px);margin-bottom:18px}
+  .public-intro-copy>p{font-size:16px}
+  .public-feature{padding:22px 23px}
+  .public-capability-grid{grid-template-columns:1fr;gap:23px}
+  .public-capabilities{padding-bottom:35px}
+  .public-service-note{grid-template-columns:1fr;padding:23px;gap:13px}
+  .public-text-action{grid-column:1}
+  .public-login>.back-link{margin-bottom:18px}
+  .public-login-layout{grid-template-columns:1fr;gap:35px}
+  .public-account-picker{padding:21px}
+  .head-actions{gap:8px}
+  .public-header-link{font-size:13px;white-space:nowrap}
+}

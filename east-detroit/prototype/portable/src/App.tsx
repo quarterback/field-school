@@ -10,9 +10,11 @@ import { DemoTour, DEMO_STOPS } from "./DemoTour";
 import { DEMO_RESIDENTS, hasResidentService, residentRecords, getDemoResident } from "./DemoResidents";
 import { LIFE_EVENT_SEED, isLicenseRenewed, ProactiveHome, HouseholdSection, FamilyService, RenewalRecord } from "./ProactiveServices";
 import type { LifeEventState } from "./ProactiveServices";
+import { PublicWelcome, PublicSignIn } from "./PublicEntry";
 import "./east-detroit.css";
 
 type Page = "home" | "services" | "license" | "requests" | "account" | "register" | "service";
+type Entry = "welcome" | "signin" | "portal";
 type ServiceKey = "recreation" | "license" | "housing" | "library" | "water" | "requests" | "transit" | "school" | "authority" | "state" | "court" | "hospital" | "family";
 type Account = { id: string; first: string; last: string; email: string; address: string; postal: string; created: string };
 type Ticket = { id: string; category: string; description: string; location: string; created: string; status: string };
@@ -200,6 +202,11 @@ export default function App() {
      return {...previous,profiles:{...previous.profiles,[active]:updated}};
    });
  }
+ const [entry,setEntry] = useState<Entry>(()=>{
+   if(typeof window==="undefined")return "welcome";
+   const params=new URLSearchParams(window.location.search);
+   return params.get("demo")==="1"&&params.has("step")?"portal":"welcome";
+ });
  const [page,setPage] = useState<Page>("home");
  const [selected,setSelected] = useState<ServiceKey>("recreation");
  const [notice,setNotice] = useState("");
@@ -232,6 +239,23 @@ export default function App() {
 
  useEffect(()=>{try{localStorage.setItem(KEY,JSON.stringify(profileStore));}catch{}},[profileStore]);
  function go(next:Page) {setPage(next);setNotice("");setShowMenu(false);window.scrollTo({top:0,behavior:"auto"});}
+ function enterPortal(key:string){
+   if(!profileStore.profiles[key])return;
+   setProfileStore(prev=>({...prev,active:key}));
+   setEntry("portal");setPage("home");setSelected("recreation");
+   setNotice("");setShowMenu(false);window.scrollTo({top:0,behavior:"auto"});
+   const params=new URLSearchParams(window.location.search);
+   if(params.get("demo")==="1"){
+     params.set("resident",key);params.delete("step");
+     window.history.replaceState(null,"",window.location.pathname+"?"+params.toString());
+   }
+ }
+ function signOut(){
+   setEntry("welcome");setTourEnabled(false);setTourCopyStatus("");
+   setPage("home");setShowMenu(false);setNotice("");
+   window.history.replaceState(null,"",window.location.pathname);
+   window.scrollTo({top:0,behavior:"auto"});
+ }
  function openService(key:ServiceKey) {
    setSelected(key);
    if(key==="license") go("license");
@@ -394,19 +418,32 @@ export default function App() {
    <a href="#page-main" className="skip-link">Skip to main content</a>
    <div className="topline"><div className="site-container"><span>City and County of East Detroit</span></div></div>
    <header className="site-header"><div className="site-container head-inner">
-     <button className="city-brand" onClick={()=>go("home")} aria-label="East Detroit account home">
+     <button className="city-brand" onClick={()=>entry==="portal"?go("home"):setEntry("welcome")} aria-label="My East Detroit home">
        <span className="city-seal" aria-hidden="true">ED</span>
        <span><strong>East Detroit</strong><small>City and County Services</small></span>
      </button>
-     <div className="head-actions"><button className="demo-switch" type="button" aria-pressed={tourEnabled} onClick={toggleTour}>{tourEnabled?"Exit demo":"Explore demo"}</button><button className="account-menu" onClick={()=>go("account")}>My account <span aria-hidden="true">›</span></button></div>
+     <div className="head-actions">
+       {entry==="portal"?<>
+         <button className="demo-switch" type="button" aria-pressed={tourEnabled} onClick={toggleTour}>{tourEnabled?"Exit demo":"Explore demo"}</button>
+         <button className="account-menu" onClick={()=>go("account")}>My account <span aria-hidden="true">›</span></button>
+         <button className="public-header-link" type="button" onClick={signOut}>Sign out</button>
+       </>:<button className="public-header-link public-header-signin" type="button"
+           onClick={()=>setEntry(entry==="welcome"?"signin":"welcome")}>{entry==="welcome"?"Sign in":"Back to home"}</button>}
+     </div>
    </div></header>
-   <div className="nav-shell"><div className="site-container nav-inner">
+   {entry==="portal"&&<div className="nav-shell"><div className="site-container nav-inner">
      <button className="mobile-nav-btn" aria-expanded={showMenu} onClick={()=>setShowMenu(!showMenu)}>Menu <span aria-hidden="true">{showMenu?"−":"+"}</span></button>
      <nav className={"primary-nav "+(showMenu?"expanded":"")} aria-label="Main menu">
        {nav.map(item=><button key={item.page} className={page===item.page?"active":""} onClick={()=>selectNav(item.page)} aria-current={page===item.page?"page":undefined}>{item.label}</button>)}
      </nav>
-   </div></div>
-   <main id="page-main" className="site-container main-content">
+   </div></div>}
+   <main id="page-main" className={entry==="portal"?"site-container main-content":"site-container public-content"}>
+     {entry==="welcome"&&<PublicWelcome onSignIn={()=>{setEntry("signin");window.scrollTo({top:0,behavior:"auto"});}}/>}
+     {entry==="signin"&&<PublicSignIn
+       initialEmail={getDemoResident(profileStore.active)?.account.email||DEMO_RESIDENTS[0].account.email}
+       onBack={()=>setEntry("welcome")}
+       onContinue={enterPortal}/>}
+     {entry==="portal"&&<>
      {tourEnabled&&<><div className="demo-residents">
        <label htmlFor="demo-resident">Example resident</label>
        <select id="demo-resident" value={profileStore.active} onChange={event=>changeResident(event.target.value)}>
@@ -561,6 +598,7 @@ export default function App() {
        </form></section>
      </>}
      {notice&&<div className="toast-message" role="status"><span>{notice}</span><button onClick={()=>setNotice("")} aria-label="Dismiss message">Close</button></div>}
+     </>}
    </main>
    <footer className="page-footer"><div className="site-container"><strong>City and County of East Detroit</strong><span>City and county services</span></div></footer>
  </div>;
