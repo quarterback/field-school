@@ -3,10 +3,12 @@ import type { FormEvent } from "react";
 import { Button, ButtonVariant, TextInput } from "hds-react";
 import { ParksService, HousingService, LibraryService, WaterService } from "./ServicePanels";
 import type { Reservation } from "./ServicePanels";
+import { TransitService } from "./TransitPanel";
+import type { FareProduct } from "./TransitPanel";
 import "./east-detroit.css";
 
 type Page = "home" | "services" | "license" | "requests" | "account" | "register" | "service";
-type ServiceKey = "recreation" | "license" | "housing" | "library" | "water" | "requests";
+type ServiceKey = "recreation" | "license" | "housing" | "library" | "water" | "requests" | "transit";
 type Account = { id: string; first: string; last: string; email: string; address: string; postal: string; created: string };
 type Ticket = { id: string; category: string; description: string; location: string; created: string; status: string };
 type Activity = { id: string; date: string; description: string; office: string };
@@ -17,6 +19,8 @@ type Portal = {
   housingMessage: string;
   libraryRenewed: boolean;
   waterIssue: string;
+  transitBalanceCents: number;
+  transitPasses: FareProduct[];
   tickets: Ticket[];
   activity: Activity[];
 };
@@ -26,7 +30,7 @@ const sampleAccount: Account = {
   address: "14 Example Lane, Old Watkins", postal: "80137", created: "2030-09-11",
 };
 const initial: Portal = {
-  account: sampleAccount, licenseSubmitted: false, reservations: [], housingMessage: "", libraryRenewed: false, waterIssue: "",
+  account: sampleAccount, licenseSubmitted: false, reservations: [], housingMessage: "", libraryRenewed: false, waterIssue: "", transitBalanceCents: 1425, transitPasses: [],
   tickets: [{ id: "SR-2030-1048", category: "Street and sidewalk", description: "Streetlight outside the community center is out.", location: "Old Watkins", created: "2030-11-07", status: "In progress" }],
   activity: [
     { id: "ACT-02", date: "2030-11-09", description: "Recreation pass issued", office: "Parks and Recreation" },
@@ -40,6 +44,7 @@ const catalog: {key:ServiceKey;title:string;office:string;description:string;ind
   {key:"requests",title:"Service requests",office:"Transportation and Public Works",description:"Report and track street, drainage and park maintenance issues.",independent:false},
   {key:"library",title:"Library card and loans",office:"East Detroit Public Library District",description:"View your library card and checked-out materials.",independent:true},
   {key:"water",title:"Water and sewer",office:"East Detroit Water and Sewer Authority",description:"View utility bills, service details and billing inquiries.",independent:true},
+  {key:"transit",title:"Regional transit (RTD)",office:"Regional Transportation District (RTD)",description:"Manage your MyRide fare account, tickets, and trip planning.",independent:true},
 ];
 const SAMPLE_LICENSE = "FOOD-2030-0184";
 function makeId(prefix:string) {
@@ -51,7 +56,7 @@ function readPortal():Portal {
     const raw = window.localStorage.getItem(KEY);
     if (raw) {
       const value = JSON.parse(raw) as Portal;
-      if (value.account?.id && Array.isArray(value.tickets) && Array.isArray(value.activity)) return value;
+      if (value.account?.id && Array.isArray(value.tickets) && Array.isArray(value.activity)) return {...value,transitBalanceCents:typeof value.transitBalanceCents==="number"?value.transitBalanceCents:(value.account.id===sampleAccount.id?1425:0),transitPasses:Array.isArray(value.transitPasses)?value.transitPasses:[]};
     }
   } catch { /* invalid or unavailable browser storage */ }
   return initial;
@@ -110,7 +115,8 @@ export default function App() {
    if(key==="housing")return sample?"In review":"No application";
    if(key==="requests")return data.tickets.some(t=>t.status!=="Closed")?"Open request":"No requests";
    if(key==="library")return sample?"Active card":"No card";
-   return sample?"Current":"No utility account";
+   if(key==="water")return sample?"Current":"No utility account";
+   return sample?"Active":"No transit account";
  }
  function tone(key:ServiceKey):"neutral"|"good"|"warn"|"info" {
    const s=serviceStatus(key);
@@ -122,7 +128,8 @@ export default function App() {
    if(key==="recreation")return sample?"View pass and bookings":"View service";
    if(key==="housing")return sample?"View application":"View service";
    if(key==="library")return sample?"View library card":"View service";
-   return sample?"View bill":"View service";
+   if(key==="water")return sample?"View bill":"View service";
+   return sample?"View MyRide account":"View service";
  }
  function addActivity(description:string,office:string) {
    return {id:makeId("ACT-"),date:"2030-11-17",description,office};
@@ -148,7 +155,7 @@ export default function App() {
      setNotice("Complete the required fields and confirm the account information.");return;
    }
    const account:Account={id:makeId("ED-2030-"),first:signup.first.trim(),last:signup.last.trim(),email:signup.email.trim(),address:signup.address.trim(),postal:signup.postal,created:"2030-11-17"};
-   setData({account,licenseSubmitted:false,reservations:[],housingMessage:"",libraryRenewed:false,waterIssue:"",tickets:[],activity:[addActivity("Account created","City account service")]});
+   setData({account,licenseSubmitted:false,reservations:[],housingMessage:"",libraryRenewed:false,waterIssue:"",transitBalanceCents:0,transitPasses:[],tickets:[],activity:[addActivity("Account created","City account service")]});
    setNotice("");
    go("home");
  }
@@ -253,6 +260,12 @@ export default function App() {
          setData(prev=>({...prev,waterIssue:message,activity:[addActivity("Water billing inquiry recorded","Water and Sewer Authority"),...prev.activity]}));
          setNotice("Billing inquiry recorded.");
        }}/>}
+       {selected==="transit"&&<TransitService sample={sample} balanceCents={data.transitBalanceCents??(sample?1425:0)} passes={data.transitPasses||[]} onAddFunds={()=>{
+         setData(prev=>({...prev,transitBalanceCents:(prev.transitBalanceCents??1425)+1000,activity:[addActivity("RTD stored value added","Regional Transportation District"),...prev.activity]}));
+       }} onPurchase={product=>{
+         setData(prev=>({...prev,transitBalanceCents:(prev.transitBalanceCents??1425)-product.priceCents,transitPasses:[product,...(prev.transitPasses||[])],activity:[addActivity("RTD "+product.kind+" purchased","Regional Transportation District"),...prev.activity]}));
+       }}/>}
+
 
      </>}
      {page==="account"&&<>

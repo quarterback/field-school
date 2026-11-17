@@ -215,3 +215,34 @@ a{color:var(--ruby-dark)}
 .program-submit:disabled{opacity:.55}
 .field-error{color:#801229;font-size:13px;font-weight:700;margin:0}
 @media(max-width:650px){.due-notice{align-items:flex-start;flex-direction:column;gap:10px}.program-heading{align-items:flex-start;flex-direction:column;padding:18px}.program-facts,.form-fields-inline{grid-template-columns:1fr}.program-facts>div{padding:13px 15px}.program-section{margin:20px 0}.program-policy{padding:15px}}
+
+
+/* RTD rider account and illustrative East Detroit trip connection. */
+.rtd-intro{margin:6px 0 15px;font-size:14px;color:var(--muted)}
+.rtd-fare-options{border-top:1px solid var(--line);max-width:850px}
+.rtd-fare-option{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:14px 0;border-bottom:1px solid var(--line)}
+.rtd-fare-option>div{display:grid;gap:4px}
+.rtd-fare-option strong{font-size:15px}
+.rtd-fare-option span{font-size:13px;color:var(--muted)}
+.rtd-fare-option .program-submit{min-width:120px}
+.rtd-add-funds{display:flex;gap:20px;align-items:center;margin:16px 0 10px;flex-wrap:wrap}
+.rtd-add-funds>span{font-size:14px}
+.rtd-secondary-action{padding:11px 16px;min-height:44px;border:1px solid var(--ink);border-radius:2px;background:var(--white);color:var(--ink);font-weight:700;font-size:14px}
+.rtd-secondary-action:hover{background:#e9eeea}
+.rtd-feedback{padding:10px 13px;margin:10px 0;background:#e3f2e7;border-left:3px solid #255c39;font-size:13px;max-width:700px}
+.rtd-products{margin-top:24px}
+.rtd-products h3{font-size:17px;margin:0 0 9px}
+.rtd-planner{display:grid;gap:15px;max-width:860px}
+.rtd-planner>.program-submit{justify-self:start}
+.rtd-itinerary{max-width:860px;border:1px solid var(--line);margin-top:20px}
+.rtd-itinerary-heading{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 16px;background:#e6efea;font-size:13px}
+.rtd-itinerary-heading span{color:var(--muted);font-size:12px}
+.rtd-legs{list-style:none;padding:0 17px;margin:0}
+.rtd-legs li{display:flex;align-items:start;gap:14px;border-bottom:1px solid #d5ddd9;padding:17px 0}
+.rtd-legs li:last-child{border-bottom:0}
+.rtd-route-code{background:var(--ruby);color:var(--white);min-width:64px;flex-shrink:0;text-align:center;padding:5px 7px;font-size:12px;font-weight:800}
+.rtd-legs strong{font-size:14px;display:block}
+.rtd-legs small{font-size:12px;color:var(--muted);display:block;margin-top:4px}
+.rtd-itinerary>.muted-small{margin:0;padding:13px 17px;border-top:1px solid var(--line)}
+.rtd-independent-note{max-width:860px;border-left:3px solid #5f7770;background:#edf2ef;padding:12px 16px;font-size:13px;line-height:1.6;margin-top:20px}
+@media(max-width:650px){.rtd-fare-option{align-items:flex-start;flex-direction:column;gap:10px}.rtd-itinerary-heading{align-items:flex-start;flex-direction:column;gap:2px}.rtd-legs li{gap:10px}.rtd-route-code{min-width:56px}}

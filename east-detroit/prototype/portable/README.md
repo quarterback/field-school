@@ -14,6 +14,7 @@ The opening screen loads the example resident **Maya Rivera**, account **ED-2030
 | Service requests | Transportation and Public Works | View and submit a local service request |
 | Library card and loans | Independent Public Library District | See a patron card and checked-out item; renew a loan |
 | Water and sewer | Independent Water and Sewer Authority | Review bills and service address; submit a billing inquiry |
+| Regional transit (RTD) | Independent Regional Transportation District | View MyRide fare account, purchase stored-value fare products, and plan an illustrative East Detroit journey |
 
 The **City Housing Division** and **Regional Housing Authority** are separate. Library and water providers also have their own boards and records. The vendor demonstration does not approve interagency data exchanges, real identity verification, payment processing, or record disclosures.
 
@@ -36,3 +37,16 @@ A full WCAG audit, browser testing, and assistive-technology validation remain d
 - City-county profile and government records: ../student-edition/src
 - City departments, independent agencies, housing precedents and neighborhoods: ../student-edition/src
 - UI guardrails: No Slop UI and Red Pen Editor
+
+
+## Regional transit demonstration
+
+The RTD service follows the real MyRide/NextRide account model: stored value, fare products, account history and travel planning. The rider can add simulated funds, buy a 3-hour or day pass, inspect purchases, and change origin/destination to plan an illustrative journey.
+
+Proposed East Detroit feeder and regional connector routes are **not existing RTD service**. The real A Line between Denver Airport Station and Denver Union Station is a separate established connection. Illustrative trip results do not claim live schedules, and no demonstration pass or transaction can be used for travel. The sample $2.75 (3-hour) and $5.50 (day) prices use RTD's **2026 published fare levels** and do not establish 2030 policy. RTD remains an independently governed transit organization, rather than a city department.
+
+Official context:
+- https://www.rtd-denver.com/fares-passes/myride
+- https://www.rtd-denver.com/nextride-app
+- https://www.rtd-denver.com/fares-passes/fares
+- https://www.rtd-denver.com/service-alerts
