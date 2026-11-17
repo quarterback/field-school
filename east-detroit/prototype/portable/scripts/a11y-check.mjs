@@ -45,6 +45,7 @@ const SCREENS = [
   { name: "Sign in", url: "/", run: (p) => clickText(p, "button", "Sign in") },
   { name: "Sign in error", url: "/", run: async (p) => { await clickText(p, "button", "Sign in"); await p.$eval("#public-email", (el) => { el.value = ""; }); await p.type("#public-email", "nobody@example.com"); await clickText(p, "button", "Continue to account"); } },
   { name: "Portal home", url: "/", run: async (p) => { await clickText(p, "button", "Sign in"); await clickText(p, "button", "Continue to account"); } },
+  { name: "Checker: senior homeowner, no income", url: "/", run: async (p) => { await p.$eval("#ck-income", (el) => { el.value = ""; }); await p.type("#ck-income", "0"); await p.click('input[name="ck-home"]:not(:checked)'); await new Promise((r) => setTimeout(r, 100)); await clickText(p, "label.check-option", "Someone 65"); } },
   { name: "Public card page", url: "/", run: (p) => clickText(p, "button", "About the East Detroit Card") },
   ...["My card", "All services", "Licenses and permits", "My requests", "Account and privacy"].map((label) => ({
     name: `Portal: ${label}`, url: "/", run: async (p) => { await clickText(p, "button", "Sign in"); await clickText(p, "button", "Continue to account"); await clickText(p, ".primary-nav button", label); },

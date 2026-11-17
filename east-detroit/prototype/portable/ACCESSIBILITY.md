@@ -18,6 +18,7 @@ npm run check:a11y
 | --- | --- |
 | Public homepage, and a search with no match | `/` |
 | Public card page | Homepage **About the East Detroit Card** |
+| Homepage checker with a senior homeowner and no income | Homepage checker inputs |
 | Sign in, and the sign in error | Header **Sign in** |
 | Portal home, My card, All services, Licenses and permits, My requests, Account and privacy | Sign in with the first sample account |
 | Card reader after a tap, and while the phone asks for approval | `/?demo=1&step=reader` |

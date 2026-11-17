@@ -14,6 +14,10 @@ After continuing, the resident sees their own service records and the current in
 
 The optional class walkthrough still works after entering an example account through `?demo=1`. Explicit deep links with `?demo=1&step=birth&resident=samira` skip the public entry for the instructor's direct presentations; ordinary visitors start with the welcome screen.
 
+## See what your household may get
+
+The public homepage includes a checker that needs no sign in. Visitors describe a household (size, monthly income, ages, renting or owning, riding RTD, running a food business) and see what may fit, split into what happens without an application and what they apply for. "What would change" lines change one answer at a time, such as $500 less income, a new baby or turning 65, and show what the household gains or loses. Nothing is saved. Rules and sources: [BENEFIT_RULES.md](BENEFIT_RULES.md).
+
 ## The East Detroit Card
 
 A vendor-proposed city-county photo ID that also opens the library, recreation centers, RTD fare readers, school front offices and age-based rates. Residents set each place to Automatic, Ask me each time, or Off, and Card activity lists every tap and lookup. The walkthrough adds a reader simulator that shows the reader screen and the resident's phone side by side. Design, privacy rules and real-world precedents: [CARD_PRIVACY.md](CARD_PRIVACY.md).

@@ -466,7 +466,7 @@ export default function App() {
          <button className="account-menu" onClick={()=>go("account")}>My account <span aria-hidden="true">›</span></button>
          <button className="public-header-link" type="button" onClick={signOut}>Sign out</button>
        </>:<>{entry==="welcome"&&<nav className="public-anchor-nav" aria-label="On this page">
-         <a href="#public-services">Services</a><a href="#public-card">East Detroit Card</a><a href="#public-agencies">Public agencies</a><a href="#public-help">Get help</a>
+         <a href="#public-checker">What you may get</a><a href="#public-services">Services</a><a href="#public-card">East Detroit Card</a><a href="#public-help">Get help</a>
        </nav>}<button className="public-header-link public-header-signin" type="button"
            onClick={()=>setEntry(entry==="welcome"?"signin":"welcome")}>{entry==="welcome"?"Sign in":"Back to home"}</button></>}
      </div>

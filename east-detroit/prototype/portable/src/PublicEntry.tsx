@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { FormEvent } from "react";
 import { DEMO_RESIDENTS } from "./DemoResidents";
 import { CardVisual } from "./CityCard";
+import { BenefitChecker } from "./BenefitChecker";
 
 type EntryProps = { onSignIn:()=>void; onCard?:()=>void };
 
@@ -60,8 +61,15 @@ export function PublicWelcome({onSignIn,onCard}:EntryProps){
             </div>
           </form>
           <p className="home-signin-line">Already have an account? <button type="button" className="home-inline-link" onClick={onSignIn}>Sign in to My East Detroit</button></p>
+          <p className="home-signin-line"><a href="#public-checker">See what your household may get</a>, no sign in needed.</p>
         </div>
       </div>
+    </section>
+
+    <section id="public-checker" className="home-container home-checker" aria-labelledby="public-checker-title">
+      <h2 id="public-checker-title">See what your household may get</h2>
+      <p className="home-section-lede">Answer a few questions about your household. Then change one answer at a time to see what would be different.</p>
+      <BenefitChecker />
     </section>
 
     <section id="public-services" className="home-container home-services" aria-labelledby="public-services-title" tabIndex={-1}>

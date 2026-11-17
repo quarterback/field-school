@@ -588,3 +588,43 @@ h1[tabindex="-1"]:focus,section[tabindex="-1"]:focus{outline:none}
 }
 .card-activity .filter-bar{flex-wrap:wrap;gap:8px 18px}
 .card-activity .filter-bar select{min-height:44px;max-width:100%;padding:8px 10px;border:1px solid #63736b;border-radius:2px;background:#fff;font-size:15px}
+
+/* Public benefit checker: no sign in, nothing saved. */
+.home-checker{padding:64px 0 24px;scroll-margin-top:16px}
+.home-checker h2{margin:0 0 8px;font-size:32px;letter-spacing:-.035em;font-weight:800}
+.checker{display:flex;flex-wrap:wrap;gap:36px 56px;align-items:flex-start}
+.checker-form{flex:1 1 380px;min-width:0;display:grid;gap:22px;background:#f2f5f3;padding:28px}
+.checker-privacy{margin:0;font-size:14px;font-weight:600}
+.checker-row{display:flex;flex-wrap:wrap;gap:16px 24px}
+.checker-row .form-field{flex:1 1 180px;min-width:0}
+.checker .form-field{display:grid;gap:8px}
+.checker .form-field label{font-weight:700;font-size:14px}
+.checker select,.checker input[type="number"]{min-height:48px;padding:8px 12px;font-size:16px;border:1px solid #63736b;border-radius:2px;background:#fff;width:100%;color:var(--ink)}
+.income-input{display:flex;align-items:center;gap:6px}
+.income-input span{font-weight:700}
+.checker input[type="range"]{width:100%;min-height:32px;accent-color:var(--ruby)}
+.checker .field-help{margin:0}
+.checker-set{border:0;margin:0;padding:0;min-width:0}
+.checker-set legend{font-weight:800;font-size:16px;margin-bottom:10px;padding:0}
+.check-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
+.check-option{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;background:#fff;border:1px solid #c3ccc8;border-radius:2px;font-size:14px;cursor:pointer}
+.check-option input{width:24px;height:24px;flex:0 0 24px;margin:0;accent-color:var(--ruby)}
+.check-option:has(input:checked){border:2px solid var(--ruby)}
+.checker-results{flex:1.2 1 420px;min-width:0;display:grid;gap:26px}
+.checker-summary{margin:0;font-size:18px}
+.checker-results h3{margin:0 0 12px;font-size:20px;font-weight:800;letter-spacing:-.02em}
+.result-list{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.result-list li{display:grid;gap:4px;padding-left:16px;border-left:4px solid var(--aqua)}
+.result-list strong{font-size:16px}
+.result-who{font-size:13px;color:var(--muted);font-weight:600}
+.result-list p{margin:0;font-size:14px;line-height:1.55;color:#34413a}
+.result-list .result-how{color:var(--ink);font-weight:600}
+.checker-changes{background:#fff8d6;padding:22px 24px}
+.checker-changes>p{margin:0 0 12px;font-size:14px}
+.checker-changes ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.checker-changes li{display:grid;gap:2px;font-size:14px}
+.checker-changes .gain{display:block;color:#164e2c;font-weight:600}
+.checker-changes .loss{display:block;color:#790a20;font-weight:600}
+.checker-changes .same{color:var(--muted)}
+.checker-note{margin:0;font-size:13px;color:var(--muted)}
+@media(max-width:760px){.checker-form{padding:20px}.home-checker h2{font-size:28px}}
