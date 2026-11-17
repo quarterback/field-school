@@ -17,6 +17,32 @@ These rules apply to the resident portal and vendor walkthrough. They supplement
 - **Independent agency context:** Schools, library, utilities, RTD, courts, hospital and regional housing authority retain their own governing authority. Show realistic example records for willing participants, and honest service boundaries where sensitive access has not been proposed. No automatic cross-agency file access.
 - **Record separation:** A newly selected resident must never see another person's licence, student information, library history or bills. Browser state for one example resident must not alter another's records.
 
+## Plain language is required
+
+Every resident-facing string must follow the principles from PlainLanguage.gov, now maintained by Digital.gov:
+
+- [Principles of plain language](https://digital.gov/guides/plain-language/principles)
+- [Writing for understanding](https://digital.gov/guides/plain-language/writing)
+- [Design for understanding](https://digital.gov/guides/plain-language/design)
+- [Test for understanding](https://digital.gov/guides/plain-language/test)
+
+Write for a resident trying to complete a task, not for a vendor, administrator, or classroom audience.
+
+1. Lead with the task or the decision. A resident should know what they can do or what happened from the first sentence.
+2. Name the actor. Say "Public Health will review your inspection" rather than "A review is required." Use **you** and **your** for resident instructions.
+3. Use familiar words and present-tense verbs. Prefer "pay", "ask", "check", "sent", and "renew" to "settle", "inquire", "verify", "process", or "facilitate" when the shorter word is accurate.
+4. Keep sentences short. Put one main idea in each sentence. Break up long text instead of joining conditions with commas or semicolons.
+5. Name the next step when action is required. Labels and errors must tell residents what to enter, select, check, or contact.
+6. Explain abbreviations that residents may not recognize. Keep official program and agency names where accuracy requires them.
+7. Explain record sharing only where it affects what a resident can see or do. Name the office that keeps the record and avoid governance jargon.
+8. Do not include architecture, "vendor", "prototype", "proposed exchange", or policy-analysis language on ordinary resident service screens. Reserve classroom context for the optional walkthrough and project documentation.
+9. Do not promise automatic eligibility, approval, enrollment, or access unless the displayed example actually includes that action. Say what has happened and what the agency still needs to decide.
+10. Keep the public homepage, sign-in page, service directory, forms, notices, empty states, status labels, and account pages under the same rules. Do not limit the review to the hero text.
+
+Use the project's **prosekeep**, **plain-as-day**, and **red-pen-editor** editorial checks when available, then read every screen in its actual task context. Automated checks cannot confirm that the agency, record, or outcome is accurate.
+
+**Content acceptance test:** For every page, a resident must be able to answer: *What is this? What can I do? What happened? What do I need to do next?* A resident should not have to infer an agency's internal process from the copy.
+
 ## Content system
 
 ### Titles and controls
