@@ -61,7 +61,6 @@ export function PublicWelcome({onSignIn,onCard}:EntryProps){
             </div>
           </form>
           <p className="home-signin-line">Already have an account? <button type="button" className="home-inline-link" onClick={onSignIn}>Sign in to My East Detroit</button></p>
-          <p className="home-signin-line"><a href="#public-checker">See what your household may get</a>, no sign in needed.</p>
         </div>
       </div>
     </section>
@@ -108,7 +107,7 @@ export function PublicWelcome({onSignIn,onCard}:EntryProps){
     <section id="public-card" className="home-container home-card" aria-labelledby="public-card-title">
       <div className="home-card-copy">
         <h2 id="public-card-title">One card for the library, recreation centers and RTD</h2>
-        <p>The East Detroit Card is a photo ID from the city and county. Tap it at the library, a recreation center or an RTD fare reader. Each place gets one answer, such as "pass active," and nothing else.</p>
+        <p>The East Detroit Card is a photo ID from the city and county. Tap it at the library, a recreation center or an RTD fare reader. Each place gets one answer, such as "pass active."</p>
         <p><button type="button" className="home-inline-link" onClick={onCard}>About the East Detroit Card</button></p>
       </div>
       <CardVisual name="Alex Morales" number="2030" expires="Nov 2035" />
@@ -158,7 +157,7 @@ export function PublicSignIn({onContinue,onBack,initialEmail}:{
     onContinue(person.key);
   }
   return <div className="public-login">
-    <button type="button" className="back-link" onClick={onBack}>← Back to My East Detroit</button>
+    <button type="button" className="back-link" onClick={onBack}>Back to My East Detroit</button>
     <div className="public-login-layout">
       <div className="public-login-form">
         <h1>Sign in to My East Detroit</h1>
@@ -213,7 +212,7 @@ export function PublicCard({onSignIn}:{onSignIn:()=>void}){
 
     <section className="home-container home-services" aria-labelledby="card-where">
       <h2 id="card-where">Where the card works</h2>
-      <p className="home-section-lede">Tap the card or your phone at the reader. Each place checks one thing.</p>
+      <p className="home-section-lede">Tap the card or your phone at the reader.</p>
       <ul className="card-public-places">
         {CARD_PLACES_PUBLIC.map(p=><li key={p.name}>
           <img src={p.img} alt={p.alt} />
@@ -226,8 +225,8 @@ export function PublicCard({onSignIn}:{onSignIn:()=>void}){
     <section className="home-container home-updates" aria-labelledby="card-answer">
       <div className="home-updates-copy">
         <h2 id="card-answer">Each place gets one answer</h2>
-        <p>Your card holds a number, not your records. When you tap, the reader asks the agency that runs that place one question. The agency answers yes or no.</p>
-        <p>A recreation center learns that your pass is active. It does not learn your address, your birth date, or that you used the library this morning.</p>
+        <p>Your card holds only a number. When you tap, the reader asks the agency that runs that place one question, and the agency answers yes or no.</p>
+        <p>A recreation center learns that your pass is active. It does not learn your address, your birth date or where else you used your card.</p>
       </div>
       <div className="home-birth card-answer-table">
         <h3>What each place learns</h3>
@@ -251,8 +250,8 @@ export function PublicCard({onSignIn}:{onSignIn:()=>void}){
           <li><strong>You choose for each place.</strong> Set each place to automatic, ask me each time, or off. Ask me each time sends a request to your phone before anything is shared.</li>
           <li><strong>You can see every check.</strong> Card activity lists each tap and each record lookup: who asked, when, what they learned and why.</li>
           <li><strong>Your records stay where they are.</strong> The library, RTD, the school district and each city office keep their own records. There is no single file about you.</li>
-          <li><strong>No copies of your documents.</strong> To get a card you show proof of who you are and where you live. Staff check your documents and hand them back.</li>
-          <li><strong>Immigration status is never asked.</strong> Any East Detroit resident can get a card.</li>
+          <li><strong>Staff keep no copies of your documents.</strong> To get a card, you show proof of who you are and where you live. Staff check your documents and hand them back.</li>
+          <li><strong>Staff never ask about immigration status.</strong> Any East Detroit resident can get a card.</li>
           <li><strong>Parents decide for children.</strong> A parent or guardian chooses whether a child's card connects to the school district.</li>
         </ol>
       </div>

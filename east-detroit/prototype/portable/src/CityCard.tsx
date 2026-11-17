@@ -69,7 +69,7 @@ export const CARD_PLACES: Place[] = [
   {
     key: "age", name: "Senior and youth rates", who: "City and county facilities",
     use: "Get an age based rate without showing your birth date.",
-    learns: "Whether you meet the age for the rate. Not your birth date.",
+    learns: "Whether you meet the age for the rate. It does not see your birth date.",
     question: "Does this person meet the age for the senior rate?", answer: "Meets age for senior rate", answerDetail: "Birth date not shared", tap: true,
   },
   {
@@ -210,9 +210,9 @@ export function CardPage({ resident, state, number, issued, expires, tour, onMod
     <section className="section-block card-never" aria-labelledby="card-never">
       <div className="section-heading"><h2 id="card-never">What your card never shares</h2></div>
       <ul>
-        <li>Your address, birth date or other services. A place gets one answer, not your record.</li>
+        <li>Your address, birth date or other services. A place gets only its one answer.</li>
         <li>Copies of the documents you showed to get the card. Staff checked them and gave them back.</li>
-        <li>Your immigration status. The card program never asks for it.</li>
+        <li>Your immigration status. Card staff never ask for it.</li>
       </ul>
     </section>
   </div>;

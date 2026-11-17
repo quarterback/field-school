@@ -85,21 +85,21 @@ export function ProactiveHome({resident,event,onAction,onLicense,onFamily}:Proac
        <div className="proactive-content"><h3>Lucia Ortiz added to your household</h3><p>The County Clerk added Lucia after the state confirmed her birth. You do not need to report the birth again.</p>
          <Explain>The County Clerk and State Vital Records confirmed the birth and parent-child relationship. They did not share hospital records with this account.</Explain>
        </div>
-       <button className="table-link" onClick={onFamily}>View family services →</button>
+       <button className="table-link" onClick={onFamily}>View family services</button>
       </article>
       <article className="proactive-item">
        <div className="proactive-status"><State kind={offers.coverage?"good":"warn"}>{offers.coverage?"Coverage confirmed":"Review needed"}</State></div>
        <div className="proactive-content"><h3>Newborn health coverage</h3><p>{offers.coverage?"Health First Colorado added Lucia to your coverage. You did not need to apply again.":"The county is waiting for the state to confirm Lucia's coverage."}</p>
          <Explain>The state checked the birth report against the parent's health coverage. Under Colorado's newborn coverage rules, eligible children receive coverage when their birth is reported. The state makes the final decision.</Explain>
        </div>
-       <button className="table-link" onClick={onFamily}>View details →</button>
+       <button className="table-link" onClick={onFamily}>View details</button>
       </article>
       <article className="proactive-item">
        <div className="proactive-status"><State kind="info">Your choice</State></div>
        <div className="proactive-content"><h3>Food support and a library card</h3><p>You can ask WIC to contact you about food and nutrition support. You can also request a library card for Lucia. Each program will review your request.</p>
          <Explain>WIC uses the child's age to help determine whether your family can apply. WIC must still check eligibility. The Library District handles library cards separately.</Explain>
        </div>
-       <button className="table-link" onClick={onFamily}>Review offers →</button>
+       <button className="table-link" onClick={onFamily}>Review offers</button>
       </article>
     </>}
     {offers.business&&<article className="proactive-item">
@@ -108,7 +108,7 @@ export function ProactiveHome({resident,event,onAction,onLicense,onFamily}:Proac
        <p>{offers.renewal?"Public Health and Finance checked their records and renewed your license for 2031. You did not need to apply.":"Public Health must check a record before it can renew your license."}</p>
        <Explain>Public Health checks your inspection and license details. Finance checks your annual fee. If a record needs attention, Public Health must review it before renewal.</Explain>
       </div>
-      <button className="table-link" onClick={onLicense}>{offers.renewal?"View renewal":"View required review"} →</button>
+      <button className="table-link" onClick={onLicense}>{offers.renewal?"View renewal":"View required review"}</button>
     </article>}
    </div>
  </section>;

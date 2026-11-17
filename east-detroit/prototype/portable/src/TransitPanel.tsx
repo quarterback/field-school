@@ -74,9 +74,9 @@ export function TransitService({sample,balanceCents,passes,onAddFunds,onPurchase
     {trip&&<div className="rtd-itinerary" aria-live="polite">
       <div className="rtd-itinerary-heading"><strong>Suggested route</strong><span>Proposed East Detroit connection</span></div>
       <ol className="rtd-legs">
-        {trip.from!=="East Detroit Central Station"&&<li><span className="rtd-route-code">ED Local</span><div><strong>{trip.from} → East Detroit Central Station</strong><small>Local feeder service · Proposed</small></div></li>}
-        <li><span className="rtd-route-code">EDX</span><div><strong>East Detroit Central Station → Denver Airport Station</strong><small>Regional connector · Proposed</small></div></li>
-        {trip.to==="Denver Union Station"&&<li><span className="rtd-route-code">A</span><div><strong>Denver Airport Station → Denver Union Station</strong><small>RTD A Line · Existing regional rail connection</small></div></li>}
+        {trip.from!=="East Detroit Central Station"&&<li><span className="rtd-route-code">ED Local</span><div><strong>{trip.from} to East Detroit Central Station</strong><small>Local feeder service · Proposed</small></div></li>}
+        <li><span className="rtd-route-code">EDX</span><div><strong>East Detroit Central Station to Denver Airport Station</strong><small>Regional connector · Proposed</small></div></li>
+        {trip.to==="Denver Union Station"&&<li><span className="rtd-route-code">A</span><div><strong>Denver Airport Station to Denver Union Station</strong><small>RTD A Line · Existing regional rail connection</small></div></li>}
       </ol>
       <p className="muted-small">The East Detroit routes shown here are planned. This page cannot show departure times or live bus and train locations.</p>
     </div>}

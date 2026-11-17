@@ -51,6 +51,7 @@ Follow these when you change the interface. Each one fixed a real failure or pro
 - **Color:** body text 4.5:1 against its background, large text and focus rings 3:1. Status is never shown by color alone; each status badge carries its word.
 - **Choices are real radio buttons.** Card settings and reader places use native radio inputs, 24px or larger, inside labels at least 44px tall. The phone approval prompt is an `alertdialog` and focus moves to its first button.
 - **Decorative shapes stay inside their box.** A shape that hangs past its parent goes in a wrapper with `overflow: hidden`, or it makes the page scroll sideways.
+- **The skip link is `position: fixed`** so it shows at the top of the window whenever it gets focus, even if the page is scrolled.
 - **Focus ring:** keep the global `:focus-visible` outline (3px ruby, 3px offset). Do not remove it on any control.
 
 ## Manual checks

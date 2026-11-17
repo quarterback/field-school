@@ -463,7 +463,7 @@ export default function App() {
      <div className="head-actions">
        {entry==="portal"?<>
          <button className="demo-switch" type="button" aria-pressed={tourEnabled} onClick={toggleTour}>{tourEnabled?"Exit demo":"Explore demo"}</button>
-         <button className="account-menu" onClick={()=>go("account")}>My account <span aria-hidden="true">›</span></button>
+         <button className="account-menu" onClick={()=>go("account")}>My account</button>
          <button className="public-header-link" type="button" onClick={signOut}>Sign out</button>
        </>:<>{entry==="welcome"&&<nav className="public-anchor-nav" aria-label="On this page">
          <a href="#public-checker">What you may get</a><a href="#public-services">Services</a><a href="#public-card">East Detroit Card</a><a href="#public-help">Get help</a>
@@ -499,12 +499,12 @@ export default function App() {
        <div className="page-intro"><h1>My East Detroit</h1><p>Welcome back, {data.account.first}. Check your records and see what needs your attention.</p></div>
        <ProactiveHome resident={profileStore.active} event={life} onAction={actOnLifeEvent} onLicense={()=>go("license")} onFamily={()=>openService("family")}/>
        <section className="section-block">
-         <div className="section-heading"><h2>My services</h2><button className="text-link" onClick={()=>go("services")}>Browse all services <span aria-hidden="true">→</span></button></div>
+         <div className="section-heading"><h2>My services</h2><button className="text-link" onClick={()=>go("services")}>Browse all services</button></div>
          <div className="table-scroll" role="region" aria-label="My services table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Responsible office</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead>
          <tbody>{catalog.filter(c=>!c.independent).map(c=><tr key={c.key}>
            <td><strong>{c.title}</strong>{c.independent&&<small>Run by another agency</small>}</td>
            <td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td>
-           <td className="action-cell"><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)} <span aria-hidden="true">→</span></button></td>
+           <td className="action-cell"><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)}</button></td>
          </tr>)}</tbody></table></div>
        </section>
        <HouseholdSection resident={profileStore.active} event={life} onAction={actOnLifeEvent}/>
@@ -516,12 +516,12 @@ export default function App() {
            <tbody>{catalog.filter(c=>c.independent).map(c=><tr key={c.key}>
              <td><strong>{c.title}</strong><small>Run by another agency</small></td>
              <td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td>
-             <td className="action-cell"><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)} <span aria-hidden="true">→</span></button></td>
+             <td className="action-cell"><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)}</button></td>
            </tr>)}</tbody>
          </table></div>
        </section>
        <div className="home-lower">
-         <section className="section-block recent"><div className="section-heading"><h2>Recent activity</h2><button className="text-link" onClick={()=>go("account")}>Account history <span aria-hidden="true">→</span></button></div>
+         <section className="section-block recent"><div className="section-heading"><h2>Recent activity</h2><button className="text-link" onClick={()=>go("account")}>Account history</button></div>
            <ol className="activity-list">{data.activity.slice(0,4).map(a=><li key={a.id}><div><strong>{a.description}</strong><span>{a.office}</span></div><time>{dateFormat(a.date)}</time></li>)}</ol>
          </section>
        </div>
@@ -532,11 +532,11 @@ export default function App() {
          onMode={setCardMode} onStatus={setCardStatus} onActivity={()=>go("cardactivity")} onReader={()=>go("cardreader")}/>
      </>}
      {page==="cardactivity"&&<>
-       <div className="page-intro"><button className="back-link" onClick={()=>go("card")}>← My East Detroit Card</button><h1>Card activity</h1><p>Every time a place checks your card, or an agency looks up a record for your account, it is listed here.</p></div>
-       <CardActivityPage state={card} onAsk={entry=>setNotice("Your question about this entry was sent to "+entry.who+". Their reply will appear in your messages.")}/>
+       <div className="page-intro"><button className="back-link" onClick={()=>go("card")}>My East Detroit Card</button><h1>Card activity</h1><p>Every time a place checks your card, or an agency looks up a record for your account, it is listed here.</p></div>
+       <CardActivityPage state={card} onAsk={entry=>setNotice("Your question about this entry is recorded for "+entry.who+".")}/>
      </>}
      {page==="cardreader"&&<>
-       <div className="page-intro"><button className="back-link" onClick={()=>go("card")}>← My East Detroit Card</button><h1>Try the card at a reader</h1><p>Tap {data.account.first}'s card at a place and see what the reader and the phone each show. Change the settings on My East Detroit Card to see the difference.</p></div>
+       <div className="page-intro"><button className="back-link" onClick={()=>go("card")}>My East Detroit Card</button><h1>Try the card at a reader</h1><p>Tap {data.account.first}'s card at a place and see what the reader and the phone each show. Change the settings on My East Detroit Card to see the difference.</p></div>
        <CardReaderPage state={card} resident={data.account.first+" "+data.account.last} libraryCard={record.libraryCard||"on file"} onLog={logCard}/>
      </>}
      {page==="services"&&<>
@@ -544,12 +544,12 @@ export default function App() {
        <div className="filter-bar"><label htmlFor="service-search">Find a service</label><input id="service-search" type="search" placeholder="Search services or departments" value={serviceSearch} onChange={e=>setServiceSearch(e.target.value)}/></div>
        <div className="directory-list">{matchingCatalog.map(c=><article className="directory-row" key={c.key}>
          <div><h2>{c.title}</h2><p>{c.description}</p><small>{c.office}{c.independent?" · Run by another agency":""}</small></div>
-         <div className="directory-action"><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)} <span aria-hidden="true">→</span></button></div>
+         <div className="directory-action"><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)}</button></div>
        </article>)}
        {matchingCatalog.length===0&&<p className="empty-state">No services match your search.</p>}</div>
      </>}
      {page==="license"&&<>
-       <div className="page-intro"><button className="back-link" onClick={()=>go("home")}>← My services</button><h1>Business license</h1><p>Food business licenses · Public Health and Finance</p></div>
+       <div className="page-intro"><button className="back-link" onClick={()=>go("home")}>My services</button><h1>Business license</h1><p>Food business licenses · Public Health and Finance</p></div>
        {!sample?<div className="empty-state"><h2>No business license on file</h2><p>We could not find a business license for this account. Contact Public Health if you already have a license.</p><Action secondary onClick={()=>go("services")}>Browse services</Action></div>:<>
          <div className="detail-header"><div><small>Food establishment license</small><h2>Cypress Cafe</h2><p>License FOOD-2030-0184</p></div><Badge tone={isLicenseRenewed(life)?"good":"warn"}>{isLicenseRenewed(life)?"Renewed for 2031":"Review required"}</Badge></div>
          <dl className="details-grid">
@@ -589,7 +589,7 @@ export default function App() {
      </>}
      {page==="service"&&<>
        <div className={"page-intro"+(SERVICE_BANNERS[selected]?" page-intro-banner":"")}>
-         <div><button className="back-link" onClick={()=>go("home")}>← My services</button><h1>{current.title}</h1><p>{current.office}</p></div>
+         <div><button className="back-link" onClick={()=>go("home")}>My services</button><h1>{current.title}</h1><p>{current.office}</p></div>
          {SERVICE_BANNERS[selected]&&<img className="service-banner" src={SERVICE_BANNERS[selected]!.src} alt={SERVICE_BANNERS[selected]!.alt}/>}
        </div>
        {selected==="recreation"&&<ParksService sample={hasRecord("recreation")} passNumber={record.parkPass} validThrough={record.parkThrough} resident={data.account.first+" "+data.account.last} reservations={data.reservations||[]} onBook={reservation=>{
@@ -636,14 +636,14 @@ export default function App() {
        <div className="account-columns"><section className="section-block"><h2>Profile</h2><dl className="detail-list"><div><dt>Name</dt><dd>{data.account.first} {data.account.last}</dd></div><div><dt>Email</dt><dd>{data.account.email}</dd></div><div><dt>Street address</dt><dd>{data.account.address}, CO {data.account.postal}</dd></div></dl>
          <div className="account-actions"><Action secondary onClick={()=>go("register")}>Create another account</Action><button className="text-link" onClick={restoreDemo}>Restore account</button></div>
        </section>
-       <aside className="privacy-panel"><h2>How information is used</h2><p>You can use this account to reach city services and see updates from other agencies. Each agency decides which records it shares.</p><p>Changing your account information will not change records held by the library, Housing Division, Public Health or Water Authority.</p><p>This site saves the account information you enter on this device.</p><button className="text-link" onClick={()=>go("cardactivity")}>See who checked your card</button><button className="text-link" onClick={()=>saveDownload("east-detroit-account.json",JSON.stringify(data,null,2))}>Download account information ↗</button></aside></div>
+       <aside className="privacy-panel"><h2>How information is used</h2><p>You can use this account to reach city services and see updates from other agencies. Each agency decides which records it shares.</p><p>Changing your account information will not change records held by the library, Housing Division, Public Health or Water Authority.</p><p>This site saves the account information you enter on this device.</p><button className="text-link" onClick={()=>go("cardactivity")}>See who checked your card</button><button className="text-link" onClick={()=>saveDownload("east-detroit-account.json",JSON.stringify(data,null,2))}>Download account information</button></aside></div>
        <section className="section-block"><div className="section-heading"><h2>Service records</h2></div><div className="table-scroll" role="region" aria-label="Service records table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Record holder</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead><tbody>
-         {catalog.map(c=><tr key={c.key}><td><strong>{c.title}</strong></td><td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td><td><button className="table-link" onClick={()=>openService(c.key)}>View <span aria-hidden="true">→</span></button></td></tr>)}
+         {catalog.map(c=><tr key={c.key}><td><strong>{c.title}</strong></td><td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td><td><button className="table-link" onClick={()=>openService(c.key)}>View</button></td></tr>)}
        </tbody></table></div></section>
        <section className="section-block"><div className="section-heading"><h2>Account activity</h2></div><ol className="activity-list">{data.activity.map(a=><li key={a.id}><div><strong>{a.description}</strong><span>{a.office}</span></div><time>{dateFormat(a.date)}</time></li>)}</ol></section>
      </>}
      {page==="register"&&<>
-       <div className="page-intro"><button className="back-link" onClick={()=>go("account")}>← Account and privacy</button><h1>Create an account</h1><p>Enter your contact information to create an East Detroit account.</p></div>
+       <div className="page-intro"><button className="back-link" onClick={()=>go("account")}>Account and privacy</button><h1>Create an account</h1><p>Enter your contact information to create an East Detroit account.</p></div>
        <section className="form-section registration-section"><h2>Personal and contact information</h2><form onSubmit={submitSignup}>
          <div className="two-fields"><TextInput id="signup-first" label="First name" required value={signup.first} onChange={e=>setSignup({...signup,first:e.target.value})}/>
          <TextInput id="signup-last" label="Last name" required value={signup.last} onChange={e=>setSignup({...signup,last:e.target.value})}/></div>
