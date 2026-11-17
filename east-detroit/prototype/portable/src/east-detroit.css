@@ -186,3 +186,32 @@ a{color:var(--ruby-dark)}
  .action-button{max-width:100%}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+
+
+/* Resident service records: established city portal palette, ordinary forms and tables. */
+.due-notice{margin:0 0 26px;padding:15px 20px;background:#fff4c7;border-left:4px solid var(--ruby);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.due-notice strong{font-size:15px;display:block}
+.due-notice p{font-size:13px;margin:4px 0 0;color:#393b2d}
+.due-notice .table-link{white-space:nowrap}
+.program{width:100%}
+.program-heading{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:21px 24px;border-top:3px solid var(--ruby);background:#edf4f0}
+.program-heading .record-type{display:block;font-size:12px;font-weight:700;color:#465b4e}
+.program-heading h2{font-size:25px;line-height:1.15;margin:7px 0 4px;letter-spacing:-.035em}
+.program-heading p{font-size:13px;margin:0}
+.program-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 23px;border-left:1px solid #ccd6d1}
+.program-facts>div{padding:16px 22px;border-right:1px solid #ccd6d1;border-bottom:1px solid #ccd6d1}
+.program-facts dt{font-size:12px;margin-bottom:5px;color:var(--muted)}
+.program-facts dd{font-size:14px;line-height:1.5;font-weight:700;margin:0;overflow-wrap:anywhere}
+.program-section{margin:24px 0 29px}
+.program-section>h2{font-size:20px;margin:0 0 12px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.program-policy{max-width:810px;border-left:3px solid #63776d;background:#edf3ef;padding:16px 20px}
+.program-policy h2{border:0;padding:0;margin-bottom:7px}
+.program-policy p{margin:0;font-size:14px}
+.form-fields-inline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.form-field input[type="date"]{min-height:45px;border:1px solid #64766d;padding:10px 12px;border-radius:2px;width:100%;background:white}
+.program-submit{padding:12px 21px;min-height:46px;background:var(--ruby);color:var(--white);border:2px solid var(--ruby);border-radius:2px;font-size:14px;font-weight:700;justify-self:start}
+.program-submit:hover{background:var(--ruby-dark);border-color:var(--ruby-dark)}
+.program-submit:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.program-submit:disabled{opacity:.55}
+.field-error{color:#801229;font-size:13px;font-weight:700;margin:0}
+@media(max-width:650px){.due-notice{align-items:flex-start;flex-direction:column;gap:10px}.program-heading{align-items:flex-start;flex-direction:column;padding:18px}.program-facts,.form-fields-inline{grid-template-columns:1fr}.program-facts>div{padding:13px 15px}.program-section{margin:20px 0}.program-policy{padding:15px}}

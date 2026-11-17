@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import type { FormEvent } from "react";
 import { Button, ButtonVariant, TextInput } from "hds-react";
+import { ParksService, HousingService, LibraryService, WaterService } from "./ServicePanels";
+import type { Reservation } from "./ServicePanels";
 import "./east-detroit.css";
 
 type Page = "home" | "services" | "license" | "requests" | "account" | "register" | "service";
@@ -11,19 +13,20 @@ type Activity = { id: string; date: string; description: string; office: string 
 type Portal = {
   account: Account;
   licenseSubmitted: boolean;
-  library: "not-linked" | "requested";
-  water: "not-linked" | "requested";
-  referral: boolean;
+  reservations: Reservation[];
+  housingMessage: string;
+  libraryRenewed: boolean;
+  waterIssue: string;
   tickets: Ticket[];
   activity: Activity[];
 };
-const KEY = "east-detroit-resident-portal-v1";
+const KEY = "east-detroit-resident-portal-v2";
 const sampleAccount: Account = {
   id: "ED-2030-00482", first: "Maya", last: "Rivera", email: "maya.rivera@example.org",
   address: "14 Example Lane, Old Watkins", postal: "80137", created: "2030-09-11",
 };
 const initial: Portal = {
-  account: sampleAccount, licenseSubmitted: false, library: "not-linked", water: "not-linked", referral: false,
+  account: sampleAccount, licenseSubmitted: false, reservations: [], housingMessage: "", libraryRenewed: false, waterIssue: "",
   tickets: [{ id: "SR-2030-1048", category: "Street and sidewalk", description: "Streetlight outside the community center is out.", location: "Old Watkins", created: "2030-11-07", status: "In progress" }],
   activity: [
     { id: "ACT-02", date: "2030-11-09", description: "Recreation pass linked to your account", office: "Parks and Recreation" },
@@ -31,12 +34,12 @@ const initial: Portal = {
   ],
 };
 const catalog: {key:ServiceKey;title:string;office:string;description:string;independent:boolean}[] = [
-  {key:"recreation",title:"Recreation pass",office:"Parks, Recreation and Cultural Affairs",description:"View your recreation pass and membership details.",independent:false},
-  {key:"license",title:"Business licences and permits",office:"Public Health · Finance",description:"View a business licence, track a renewal and check its status.",independent:false},
-  {key:"housing",title:"Local housing assistance",office:"City Housing Division",description:"Review the status of a local housing assistance application.",independent:false},
-  {key:"requests",title:"Report a local problem",office:"Transportation and Public Works",description:"Report a street, drainage or public-space issue and track a request.",independent:false},
-  {key:"library",title:"Public library account",office:"East Detroit Public Library District",description:"Connect a separately governed library account.",independent:true},
-  {key:"water",title:"Water and sewer account",office:"East Detroit Water and Sewer Authority",description:"Request access to your separately managed utility account.",independent:true},
+  {key:"recreation",title:"Recreation and facilities",office:"Parks, Recreation and Cultural Affairs",description:"View your pass, book a facility and manage reservations.",independent:false},
+  {key:"license",title:"Business licenses and permits",office:"Public Health · Finance",description:"Review a license, inspection record and renewal.",independent:false},
+  {key:"housing",title:"Housing assistance",office:"City Housing Division",description:"View an application, supporting records and messages.",independent:false},
+  {key:"requests",title:"Service requests",office:"Transportation and Public Works",description:"Report and track street, drainage and park maintenance issues.",independent:false},
+  {key:"library",title:"Library card and loans",office:"East Detroit Public Library District",description:"View your library card and checked-out materials.",independent:true},
+  {key:"water",title:"Water and sewer",office:"East Detroit Water and Sewer Authority",description:"View utility bills, service details and billing inquiries.",independent:true},
 ];
 const SAMPLE_LICENSE = "FOOD-2030-0184";
 function makeId(prefix:string) {
@@ -102,38 +105,33 @@ export default function App() {
    else go("service");
  }
  function serviceStatus(key:ServiceKey) {
-   if(key==="recreation")return sample?"Active":"Not linked";
-   if(key==="license")return sample?(data.licenseSubmitted?"Renewal submitted":"Renewal due"):"No licence linked";
+   if(key==="recreation")return sample?"Active":"No pass";
+   if(key==="license")return sample?(data.licenseSubmitted?"Renewal submitted":"Renewal due"):"No license";
    if(key==="housing")return sample?"In review":"No application";
    if(key==="requests")return data.tickets.some(t=>t.status!=="Closed")?"Open request":"No requests";
-   if(key==="library")return data.library==="requested"?"Connection requested":"Not connected";
-   return data.water==="requested"?"Connection requested":"Not connected";
+   if(key==="library")return sample?"Active card":"No card";
+   return sample?"Current":"No utility account";
  }
  function tone(key:ServiceKey):"neutral"|"good"|"warn"|"info" {
    const s=serviceStatus(key);
-   return s==="Active"?"good":s==="Renewal due"?"warn":s==="In review"||s==="Open request"||s==="Connection requested"||s==="Renewal submitted"?"info":"neutral";
+   return ["Active","Active card","Current"].includes(s)?"good":s==="Renewal due"?"warn":["In review","Open request","Renewal submitted"].includes(s)?"info":"neutral";
  }
  function actionLabel(key:ServiceKey) {
-   if(key==="license")return sample?"View and renew":"Find out more";
+   if(key==="license")return sample?"Review renewal":"View service";
    if(key==="requests")return "View requests";
-   if(key==="recreation")return sample?"View pass":"Explore";
-   if(key==="housing")return sample?"View application":"Explore";
-   return serviceStatus(key)==="Connection requested"?"View request":"Connect";
+   if(key==="recreation")return sample?"View pass and bookings":"View service";
+   if(key==="housing")return sample?"View application":"View service";
+   if(key==="library")return sample?"View library card":"View service";
+   return sample?"View bill":"View service";
  }
  function addActivity(description:string,office:string) {
    return {id:makeId("ACT-"),date:"2030-11-17",description,office};
- }
- function connect(which:"library"|"water") {
-   if(data[which]==="requested"){setNotice("A connection request is already recorded.");return;}
-   const office=which==="library"?"Public Library District":"Water and Sewer Authority";
-   setData(prev=>({...prev,[which]:"requested",activity:[addActivity("Connection request recorded for "+office,office),...prev.activity]}));
-   setNotice("Request recorded. This does not connect or disclose any "+(which==="library"?"library":"utility")+" records.");
  }
  function submitRenewal(event:FormEvent<HTMLFormElement>) {
    event.preventDefault();
    if(!renewAcknowledged) {setNotice("Confirm that the business details are unchanged.");return;}
    if(data.licenseSubmitted) return;
-   setData(prev=>({...prev,licenseSubmitted:true,activity:[addActivity("Food licence renewal submitted for review","Public Health"),...prev.activity]}));
+   setData(prev=>({...prev,licenseSubmitted:true,activity:[addActivity("Food license renewal submitted for review","Public Health"),...prev.activity]}));
    setNotice("Renewal request saved. Public Health review is still required.");
  }
  function submitRequest(event:FormEvent<HTMLFormElement>) {
@@ -150,14 +148,14 @@ export default function App() {
      setNotice("Complete the required fields and confirm the account information.");return;
    }
    const account:Account={id:makeId("ED-2030-"),first:signup.first.trim(),last:signup.last.trim(),email:signup.email.trim(),address:signup.address.trim(),postal:signup.postal,created:"2030-11-17"};
-   setData({account,licenseSubmitted:false,library:"not-linked",water:"not-linked",referral:false,tickets:[],activity:[addActivity("Account created","City account service")]});
+   setData({account,licenseSubmitted:false,reservations:[],housingMessage:"",libraryRenewed:false,waterIssue:"",tickets:[],activity:[addActivity("Account created","City account service")]});
    setNotice("");
    go("home");
  }
  function restoreDemo() {if(!window.confirm("Replace the current account with the original account?"))return;setData(initial);setNotice("Account restored.");go("home");}
  function selectNav(p:Page) {go(p);}
  const nav:{page:Page;label:string}[]=[
-   {page:"home",label:"Home"},{page:"services",label:"City services"},{page:"license",label:"Licences and permits"},
+   {page:"home",label:"Home"},{page:"services",label:"City services"},{page:"license",label:"Licenses and permits"},
    {page:"requests",label:"My requests"},{page:"account",label:"Account and privacy"},
  ];
  const matchingCatalog=catalog.filter(c=>(c.title+" "+c.office+" "+c.description).toLowerCase().includes(serviceSearch.toLowerCase()));
@@ -180,7 +178,8 @@ export default function App() {
    </div></div>
    <main id="page-main" className="site-container main-content">
      {page==="home"&&<>
-       <div className="page-intro intro-row"><div><h1>My East Detroit</h1><p>Welcome, {data.account.first}. Access services linked to your city account.</p></div><div className="account-summary"><span>Resident account ID</span><strong>{data.account.id}</strong></div></div>
+       <div className="page-intro intro-row"><div><h1>My East Detroit</h1><p>Welcome back, {data.account.first}. Your city and county services are below.</p></div><div className="account-summary"><span>Resident account ID</span><strong>{data.account.id}</strong></div></div>
+       {sample&&!data.licenseSubmitted&&<section className="due-notice" aria-label="Action needed"><div><strong>Business license renewal due</strong><p>Cypress Cafe · Food establishment license {SAMPLE_LICENSE} expires December 31, 2030.</p></div><button className="table-link" onClick={()=>go("license")}>Review renewal <span aria-hidden="true">→</span></button></section>}
        <section className="section-block">
          <div className="section-heading"><h2>My services</h2><button className="text-link" onClick={()=>go("services")}>Browse all services <span aria-hidden="true">→</span></button></div>
          <div className="table-scroll" role="region" aria-label="My services table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Responsible office</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead>
@@ -197,24 +196,24 @@ export default function App() {
        </div>
      </>}
      {page==="services"&&<>
-       <div className="page-intro"><h1>City services</h1><p>Find services available through your East Detroit account. Some agencies have separate records and require their own approval.</p></div>
+       <div className="page-intro"><h1>City services</h1><p>Find city services and records from participating public agencies.</p></div>
        <div className="filter-bar"><label htmlFor="service-search">Find a service</label><input id="service-search" type="search" placeholder="Search services or departments" value={serviceSearch} onChange={e=>setServiceSearch(e.target.value)}/></div>
        <div className="directory-list">{matchingCatalog.map(c=><article className="directory-row" key={c.key}>
-         <div><h2>{c.title}</h2><p>{c.description}</p><small>{c.office}{c.independent?" · Independent agency":""}</small></div>
+         <div><h2>{c.title}</h2><p>{c.description}</p><small>{c.office}{c.independent?" · Independent public agency":""}</small></div>
          <div className="directory-action"><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)} <span aria-hidden="true">→</span></button></div>
        </article>)}
        {matchingCatalog.length===0&&<p className="empty-state">No services match your search.</p>}</div>
      </>}
      {page==="license"&&<>
-       <div className="page-intro"><button className="back-link" onClick={()=>go("home")}>← My services</button><h1>Business licence</h1><p>Review an existing licence or submit a renewal request.</p></div>
-       {!sample?<div className="empty-state"><h2>No licence linked</h2><p>No business licence is connected to this account. Contact Public Health to link an existing licence.</p><Action secondary onClick={()=>go("services")}>Browse services</Action></div>:<>
-         <div className="detail-header"><div><small>Food establishment licence</small><h2>Cypress Cafe</h2><p>Licence {SAMPLE_LICENSE}</p></div><Badge tone={data.licenseSubmitted?"info":"warn"}>{data.licenseSubmitted?"Renewal submitted":"Renewal due"}</Badge></div>
-         <dl className="details-grid"><div><dt>Licence holder</dt><dd>Maya Rivera · Cypress Cafe</dd></div><div><dt>Issued by</dt><dd>City-County Public Health</dd></div><div><dt>Expiration</dt><dd>December 31, 2030</dd></div><div><dt>Premises</dt><dd>22 Example Plaza, Watkins, CO 80137</dd></div><div><dt>Payment record</dt><dd>Finance and Procurement</dd></div><div><dt>Inspection</dt><dd>Annual review required</dd></div></dl>
-         <section className="form-section"><h2>{data.licenseSubmitted?"Renewal status":"Renew this licence"}</h2>
-           {data.licenseSubmitted?<div className="message-panel"><strong>Submitted for review</strong><p>Your renewal request has been saved. Public Health must review the licence and any inspection findings.</p></div>:
+       <div className="page-intro"><button className="back-link" onClick={()=>go("home")}>← My services</button><h1>Business license</h1><p>Review an existing license or submit a renewal request.</p></div>
+       {!sample?<div className="empty-state"><h2>No license linked</h2><p>No business license is connected to this account. Contact Public Health to link an existing license.</p><Action secondary onClick={()=>go("services")}>Browse services</Action></div>:<>
+         <div className="detail-header"><div><small>Food establishment license</small><h2>Cypress Cafe</h2><p>License {SAMPLE_LICENSE}</p></div><Badge tone={data.licenseSubmitted?"info":"warn"}>{data.licenseSubmitted?"Renewal submitted":"Renewal due"}</Badge></div>
+         <dl className="details-grid"><div><dt>License holder</dt><dd>Maya Rivera · Cypress Cafe</dd></div><div><dt>Issued by</dt><dd>City-County Public Health</dd></div><div><dt>Expiration</dt><dd>December 31, 2030</dd></div><div><dt>Premises</dt><dd>22 Example Plaza, Watkins, CO 80137</dd></div><div><dt>Payment record</dt><dd>Finance and Procurement</dd></div><div><dt>Inspection</dt><dd>Annual review required</dd></div></dl>
+         <section className="form-section"><h2>{data.licenseSubmitted?"Renewal status":"Renew this license"}</h2>
+           {data.licenseSubmitted?<div className="message-panel"><strong>Submitted for review</strong><p>Your renewal request has been saved. Public Health must review the license and any inspection findings.</p></div>:
            <form onSubmit={submitRenewal}><p>Check the details above before you submit. A new owner or changed business activity may require additional review.</p>
-             <label className="checkbox-row"><input type="checkbox" checked={renewAcknowledged} onChange={e=>setRenewAcknowledged(e.target.checked)}/><span>I confirm that the licence holder and business activity shown above have not changed.</span></label>
-             <p className="muted-small">Submitting a request does not automatically renew a licence.</p>
+             <label className="checkbox-row"><input type="checkbox" checked={renewAcknowledged} onChange={e=>setRenewAcknowledged(e.target.checked)}/><span>I confirm that the license holder and business activity shown above have not changed.</span></label>
+             <p className="muted-small">Submitting a request does not automatically renew a license.</p>
              <Action type="submit" disabled={!renewAcknowledged}>Submit renewal request</Action>
            </form>}
          </section>
@@ -238,14 +237,23 @@ export default function App() {
      </>}
      {page==="service"&&<>
        <div className="page-intro"><button className="back-link" onClick={()=>go("home")}>← My services</button><h1>{current.title}</h1><p>{current.office}</p></div>
-       {selected==="recreation"&&(sample?<><div className="detail-header"><div><small>City recreation pass</small><h2>Maya Rivera</h2><p>Pass REC-2030-2048</p></div><Badge tone="good">Active</Badge></div><dl className="details-grid"><div><dt>Pass holder</dt><dd>Maya Rivera</dd></div><div><dt>Valid through</dt><dd>March 31, 2031</dd></div><div><dt>Service</dt><dd>City recreation facilities</dd></div><div><dt>Issuing office</dt><dd>Parks, Recreation and Cultural Affairs</dd></div></dl></>:<div className="empty-state"><h2>No pass linked</h2><p>No recreation pass is linked to this account. You can apply through Parks and Recreation.</p></div>)}
-       {selected==="housing"&&(sample?<><div className="detail-header"><div><small>Local assistance · City Housing Division</small><h2>Housing assistance application</h2><p>Application HOU-2030-0371</p></div><Badge tone="info">In review</Badge></div><dl className="details-grid"><div><dt>Received</dt><dd>November 3, 2030</dd></div><div><dt>Responsible office</dt><dd>City Housing Division</dd></div><div><dt>Next step</dt><dd>Staff review of submitted documents</dd></div><div><dt>Housing Authority records</dt><dd>Not connected</dd></div></dl><div className="message-panel"><strong>Separate housing institutions</strong><p>The Regional Housing Authority has its own board and federal obligations. This city application does not show voucher status or provide access to the authority's records.</p></div>
-       <div className="form-section"><h2>Referral to the Regional Housing Authority</h2><p>The city can record an interest in a referral. It cannot enroll you in another agency's programme or send records without a permitted process.</p><Action secondary disabled={data.referral} onClick={()=>{setData(prev=>({...prev,referral:true,activity:[addActivity("Housing referral interest recorded","City Housing Division"),...prev.activity]}));setNotice("Referral interest saved.");}}>{data.referral?"Referral interest recorded":"Request referral information"}</Action></div></>:<div className="empty-state"><h2>No application</h2><p>No local housing application is linked to this account.</p></div>)}
-       {(selected==="library"||selected==="water")&&<><div className="detail-header"><div><small>{current.independent?"Independent public agency":"City-county service"}</small><h2>{current.title}</h2><p>{current.office}</p></div><Badge tone={tone(selected)}>{serviceStatus(selected)}</Badge></div>
-         <div className="message-panel"><strong>Records remain with this agency</strong><p>The city account does not automatically access library borrowing history or utility balances. The agency must establish its own connection and information-sharing conditions.</p></div>
-         <section className="form-section"><h2>Connect this service</h2><p>Record a request to link the service to your city account. This does not verify an account or authorize access to records.</p>
-           <Action onClick={()=>connect(selected)} disabled={serviceStatus(selected)==="Connection requested"}>{serviceStatus(selected)==="Connection requested"?"Request recorded":"Request connection"}</Action>
-         </section></>}
+       {selected==="recreation"&&<ParksService sample={sample} resident={data.account.first+" "+data.account.last} reservations={data.reservations||[]} onBook={reservation=>{
+         setData(prev=>({...prev,reservations:[...(prev.reservations||[]),reservation],activity:[addActivity("Facility reservation "+reservation.id+" confirmed","Parks and Recreation"),...prev.activity]}));
+         setNotice("Reservation "+reservation.id+" confirmed.");
+       }}/>}
+       {selected==="housing"&&<HousingService sample={sample} message={data.housingMessage||""} onSend={message=>{
+         setData(prev=>({...prev,housingMessage:message,activity:[addActivity("Message added to housing application","City Housing Division"),...prev.activity]}));
+         setNotice("Your message was added to the application.");
+       }}/>}
+       {selected==="library"&&<LibraryService sample={sample} resident={data.account.first+" "+data.account.last} renewed={data.libraryRenewed||false} onRenew={()=>{
+         setData(prev=>({...prev,libraryRenewed:true,activity:[addActivity("Library loan renewed","Public Library District"),...prev.activity]}));
+         setNotice("Loan renewed through December 26, 2030.");
+       }}/>}
+       {selected==="water"&&<WaterService sample={sample} issue={data.waterIssue||""} onInquiry={message=>{
+         setData(prev=>({...prev,waterIssue:message,activity:[addActivity("Water billing inquiry recorded","Water and Sewer Authority"),...prev.activity]}));
+         setNotice("Billing inquiry recorded.");
+       }}/>}
+
      </>}
      {page==="account"&&<>
        <div className="page-intro"><h1>Account and privacy</h1><p>Your city login profile and the records kept by individual services are separate.</p></div>

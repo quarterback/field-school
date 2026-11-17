@@ -1,43 +1,38 @@
-# My East Detroit — Resident services demo
+# My East Detroit — City and County resident services
 
-Resident-facing account and services portal for the City and County of East Detroit, Colorado (2030), used in the Public Mechanics course.
+A working vendor demonstration of how residents could access city-county services from a single account. Used in Public Mechanics: students represent departments and independently governed agencies and evaluate the proposed experience, record control, privacy, rules, and liability.
 
-## What to show
+## Present the portal
 
-Open the site to a preloaded **sample resident, Maya Rivera**. Review services in a single account, then inspect individual records and transactions:
+The opening screen loads the example resident **Maya Rivera**, account **ED-2030-00482**. Each row opens an agency service with an inspectable record and working actions.
 
-- Parks and recreation pass (active)
-- Food establishment licence (renewal due, with a working simulated renewal submission)
-- Municipal housing assistance application (under review)
-- Local service request (in progress, with a working submission form)
-- Independent library district and water authority (not linked; simulated connection request)
+| Service | Record owner | What the resident can do |
+| --- | --- | --- |
+| Recreation and facilities | Parks, Recreation and Cultural Affairs | View a pass; choose a facility/date/time; confirm a reservation |
+| Business licenses and permits | Public Health, Finance | Inspect food license and renewal status; submit a renewal |
+| Housing assistance | City Housing Division | Inspect application, documents and verification; add a message |
+| Service requests | Transportation and Public Works | View and submit a local service request |
+| Library card and loans | Independent Public Library District | See a patron card and checked-out item; renew a loan |
+| Water and sewer | Independent Water and Sewer Authority | Review bills and service address; submit a billing inquiry |
 
-Use **Account and privacy → Create another demo account** to register a different simulated resident ID. That account begins without any inherited service records. **Restore sample resident** returns to the preloaded example.
+The **City Housing Division** and **Regional Housing Authority** are separate. Library and water providers also have their own boards and records. The vendor demonstration does not approve interagency data exchanges, real identity verification, payment processing, or record disclosures.
 
-## Government boundaries
+## Classroom use
 
-The city login is an account reference, not proof of identity or residency. No real sign-in, ID verification, payment, agency integration or email verification occurs. Independent organisations retain their records; a simulated connection request does not grant access. Updating a city login does not update service records automatically.
+Open a service belonging to the student department under discussion. Show the record and its source, perform a resident action, and ask what that department would need to authorize, verify, correct, or handle differently. The simulation discussion takes place outside the software.
 
-All data and activity are stored **only in this browser** using localStorage and can be downloaded from Account and privacy. Do not enter actual personal information.
+Actions update browser-local sample records and the account activity list. No government systems are connected. **Account and privacy** can create another sample account or restore Maya Rivera. Earlier v1 browser data remains under a separate storage key.
 
-## Technology
+## Stack and deployment
 
-Vite, React 19, TypeScript, **Helsinki Design System React `hds-react`** for buttons and text inputs. Other controls are semantic HTML. The palette uses the established East Detroit ruby, amber, pearl aqua, maya blue and off-white colors with accessible ink for body text. Typography uses Archivo.
+Vite, React 19, TypeScript, Helsinki Design System React (hds-react) controls alongside semantic native forms. Existing East Detroit identity: Archivo, ruby #B10F2E, amber #FFCF00, aqua #ACD7CA, blue #68C2F3, off-white #FDFFFF and ink #171717. No hero, AI assistant, government workflow editor, fake KPIs, or classroom narration.
 
-```bash
-npm install
-npm run dev
-npm run build
-```
+Run npm install && npm run build from east-detroit/prototype/portable. The Vercel project east-detroit-operations builds that folder on pushes to main.
 
-Deploy the repository directory `east-detroit/prototype/portable` using `npm run build` with output `dist`. Vercel is linked to `quarterback/field-school` and this directory.
+A full WCAG audit, browser testing, and assistive-technology validation remain distinct from compilation.
 
-## Reference and review
+## Reference materials
 
-- [Toronto City Login](https://www.toronto.ca/account/) and [account help](https://www.toronto.ca/account/city-of-toronto-login-help/): city login and services keep distinct records.
-- [Toronto My Business Licence & Permit Account](https://www.toronto.ca/services-payments/permits-licences-bylaws/my-business-licence-account/): licence statuses, account linking and renewals.
-- [East Detroit project dossier](../../v3/master_project_dossier_v3.md): established agencies and scenario.
-- [No Slop UI](https://github.com/LeoStehlik/no-slop-ui): functional screen first, restrained controls and no invented metrics.
-- [Red Pen Editor](https://github.com/quarterback/red-pen-editor): cut redundant explanatory language, preserve agency authority and exceptions.
-
-Accessibility includes labelled forms, keyboard navigation, text status labels, high-contrast text and responsive tables. A comprehensive WCAG 2.2 AA evaluation and assistive-technology testing are still needed.
+- City-county profile and government records: ../student-edition/src
+- City departments, independent agencies, housing precedents and neighborhoods: ../student-edition/src
+- UI guardrails: No Slop UI and Red Pen Editor
