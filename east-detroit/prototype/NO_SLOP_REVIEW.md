@@ -11,3 +11,12 @@
 **Editorial:** Removed generic system explanation from the primary screen. Copy names who controls the information and what happens next. All data is marked simulated, and ID/registration/agency-sharing limits remain explicit.
 
 **Accessibility acceptance still to check:** Automated axe, VoiceOver/NVDA, 320px reflow, 200% zoom, keyboard test, manual contrast around rendered HDS controls. A source-level review does not establish full WCAG compliance.
+
+## Design-only review: 16 November 2026
+
+- Preserved the red top bar, masthead, navigation, typeface, color tokens, tables, Resident Account ID panel, and all existing service flows.
+- Removed a duplicate request CTA beside Recent activity; the existing request service remains available and operational in the My services table.
+- Improved keyboard access to horizontally scrollable tables using focusable, labeled scroll regions and a visible focus outline.
+- Corrected a mobile selector that hid the only text in the top bar when the screen was narrow.
+- Removed CSS for discarded notice and badge elements. No agency, simulation, service, or data-model changes.
+- Full browser and assistive technology testing remains outstanding.

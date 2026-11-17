@@ -39,10 +39,6 @@ const catalog: {key:ServiceKey;title:string;office:string;description:string;ind
   {key:"water",title:"Water and sewer account",office:"East Detroit Water and Sewer Authority",description:"Request access to your separately managed utility account.",independent:true},
 ];
 const SAMPLE_LICENSE = "FOOD-2030-0184";
-const titleFor = (page:Page) => ({
-  home:"My account",services:"City services",license:"Business licences and permits",
-  requests:"My service requests",account:"Account and privacy",register:"Create an account",service:"Service details",
-})[page];
 function makeId(prefix:string) {
   return prefix + Math.floor(1000 + Math.random()*9000).toString();
 }
@@ -187,7 +183,7 @@ export default function App() {
        <div className="page-intro intro-row"><div><h1>My East Detroit</h1><p>Welcome, {data.account.first}. Access services linked to your city account.</p></div><div className="account-summary"><span>Resident account ID</span><strong>{data.account.id}</strong></div></div>
        <section className="section-block">
          <div className="section-heading"><h2>My services</h2><button className="text-link" onClick={()=>go("services")}>Browse all services <span aria-hidden="true">→</span></button></div>
-         <div className="table-scroll"><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Responsible office</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead>
+         <div className="table-scroll" role="region" aria-label="My services table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Responsible office</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead>
          <tbody>{catalog.map(c=><tr key={c.key}>
            <td><strong>{c.title}</strong>{c.independent&&<small>Separate public agency</small>}</td>
            <td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td>
@@ -198,7 +194,6 @@ export default function App() {
          <section className="section-block recent"><div className="section-heading"><h2>Recent activity</h2><button className="text-link" onClick={()=>go("account")}>Account history <span aria-hidden="true">→</span></button></div>
            <ol className="activity-list">{data.activity.slice(0,4).map(a=><li key={a.id}><div><strong>{a.description}</strong><span>{a.office}</span></div><time>{dateFormat(a.date)}</time></li>)}</ol>
          </section>
-         <aside className="help-panel"><h2>Need to report a problem?</h2><p>Report a road, drainage, address or public-space issue to the city.</p><Action onClick={()=>go("requests")}>Start a service request</Action></aside>
        </div>
      </>}
      {page==="services"&&<>
@@ -228,7 +223,7 @@ export default function App() {
      {page==="requests"&&<>
        <div className="page-intro"><h1>My service requests</h1><p>Track local issues reported to the city, or submit a new one.</p></div>
        <section className="section-block"><div className="section-heading"><h2>Reported issues</h2></div>
-         {data.tickets.length?<div className="table-scroll"><table className="records-table"><thead><tr><th scope="col">Request</th><th scope="col">Issue</th><th scope="col">Reported</th><th scope="col">Status</th></tr></thead><tbody>
+         {data.tickets.length?<div className="table-scroll" role="region" aria-label="Reported issues table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Request</th><th scope="col">Issue</th><th scope="col">Reported</th><th scope="col">Status</th></tr></thead><tbody>
            {data.tickets.map(t=><tr key={t.id}><td><strong>{t.id}</strong></td><td>{t.category}<small>{t.description} · {t.location}</small></td><td>{dateFormat(t.created)}</td><td><Badge tone="info">{t.status}</Badge></td></tr>)}
          </tbody></table></div>:<p className="empty-state">You have no service requests.</p>}
        </section>
@@ -258,7 +253,7 @@ export default function App() {
          <div className="account-actions"><Action secondary onClick={()=>go("register")}>Create another account</Action><button className="text-link" onClick={restoreDemo}>Restore account</button></div>
        </section>
        <aside className="privacy-panel"><h2>How information is used</h2><p>Your city account helps you reach participating services. It does not give each department access to all of your records.</p><p>A change here does not automatically update a library, housing, public health or utility record.</p><p>Account information entered here is stored in this browser.</p><button className="text-link" onClick={()=>saveDownload("east-detroit-account.json",JSON.stringify(data,null,2))}>Download account information ↗</button></aside></div>
-       <section className="section-block"><div className="section-heading"><h2>Service connections</h2></div><div className="table-scroll"><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Record holder</th><th scope="col">Connection</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead><tbody>
+       <section className="section-block"><div className="section-heading"><h2>Service connections</h2></div><div className="table-scroll" role="region" aria-label="Service connections table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Record holder</th><th scope="col">Connection</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead><tbody>
          {catalog.map(c=><tr key={c.key}><td><strong>{c.title}</strong></td><td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td><td><button className="table-link" onClick={()=>openService(c.key)}>View <span aria-hidden="true">→</span></button></td></tr>)}
        </tbody></table></div></section>
        <section className="section-block"><div className="section-heading"><h2>Account activity</h2></div><ol className="activity-list">{data.activity.map(a=><li key={a.id}><div><strong>{a.description}</strong><span>{a.office}</span></div><time>{dateFormat(a.date)}</time></li>)}</ol></section>
