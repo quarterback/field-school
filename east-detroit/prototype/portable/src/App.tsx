@@ -10,11 +10,13 @@ import { DemoTour, DEMO_STOPS } from "./DemoTour";
 import { DEMO_RESIDENTS, hasResidentService, residentRecords, getDemoResident } from "./DemoResidents";
 import { LIFE_EVENT_SEED, isLicenseRenewed, ProactiveHome, HouseholdSection, FamilyService, RenewalRecord } from "./ProactiveServices";
 import type { LifeEventState } from "./ProactiveServices";
-import { PublicWelcome, PublicSignIn } from "./PublicEntry";
+import { PublicWelcome, PublicSignIn, PublicCard } from "./PublicEntry";
+import { CardPage, CardActivityPage, CardReaderPage, cardSeed } from "./CityCard";
+import type { CardState, CardPlaceKey, ConnectionMode, CardLogEntry } from "./CityCard";
 import "./east-detroit.css";
 
-type Page = "home" | "services" | "license" | "requests" | "account" | "register" | "service";
-type Entry = "welcome" | "signin" | "portal";
+type Page = "home" | "services" | "license" | "requests" | "account" | "register" | "service" | "card" | "cardactivity" | "cardreader";
+type Entry = "welcome" | "signin" | "portal" | "card";
 type ServiceKey = "recreation" | "license" | "housing" | "library" | "water" | "requests" | "transit" | "school" | "authority" | "state" | "court" | "hospital" | "family";
 type Account = { id: string; first: string; last: string; email: string; address: string; postal: string; created: string };
 type Ticket = { id: string; category: string; description: string; location: string; created: string; status: string };
@@ -31,6 +33,7 @@ type Portal = {
   schoolLetterRequested: boolean;
   authorityFollowupRequested: boolean;
   lifeEvent: LifeEventState;
+  card?: CardState;
   tickets: Ticket[];
   activity: Activity[];
 };
@@ -157,6 +160,13 @@ const catalog: {key:ServiceKey;title:string;office:string;description:string;ind
   {key:"hospital",title:"Hospital services",office:"East Detroit Health and Hospital Authority",description:"Find out how to get hospital care or request medical records.",independent:true},
 ];
 const SAMPLE_LICENSE = "FOOD-2030-0184";
+// Photos of the place where a service happens, as booking and transit sites show them.
+const SERVICE_BANNERS:Partial<Record<ServiceKey,{src:string;alt:string}>>={
+  library:{src:"/assets/watkins-library-2030.jpg",alt:"The Watkins Public Library entrance"},
+  transit:{src:"/assets/central-station-2030.jpg",alt:"Riders on the Central Station light rail platform"},
+  recreation:{src:"/assets/box-elder-greenway-2030.jpg",alt:"The Box Elder Creek greenway trail"},
+  family:{src:"/assets/civic-square-2030.jpg",alt:"Civic Square, home of the County Clerk"},
+};
 function makeId(prefix:string) {
   return prefix + Math.floor(1000 + Math.random()*9000).toString();
 }
@@ -229,13 +239,28 @@ export default function App() {
    const index=Math.max(0,DEMO_STOPS.findIndex(stop=>stop.id===requested));
    const stop=DEMO_STOPS[index];
    if(stop.id==="birth")setProfileStore(prev=>({...prev,active:"samira"}));
-   if(stop.id==="license")setProfileStore(prev=>({...prev,active:"maya"}));
+   if(stop.id==="license"||stop.id==="card"||stop.id==="reader")setProfileStore(prev=>({...prev,active:"maya"}));
    setTourEnabled(true);setTourIndex(index);setPage(stop.page);
    if(stop.service)setSelected(stop.service as ServiceKey);
 
  },[]);
  const sample=hasRecord("license");
  const life=data.lifeEvent||LIFE_EVENT_SEED;
+ const card=data.card||cardSeed(profileStore.active);
+ const cardNumber=data.account.id.slice(-4);
+ const cardIssued=dateFormat(data.account.created);
+ const cardExpires=(()=>{const d=new Date(data.account.created+"T12:00:00");d.setFullYear(d.getFullYear()+5);return d.toLocaleDateString("en-US",{month:"short",year:"numeric"});})();
+ function setCard(update:(c:CardState)=>CardState){setData(prev=>({...prev,card:update(prev.card||cardSeed(profileStore.active))}));}
+ function setCardMode(key:CardPlaceKey,mode:ConnectionMode){
+   setCard(c=>({...c,modes:{...c.modes,[key]:mode}}));
+   setNotice("Card setting saved.");
+ }
+ function setCardStatus(status:CardState["status"]){
+   setCard(c=>({...c,status}));
+   setData(prev=>({...prev,activity:[addActivity(status==="stopped"?"East Detroit Card reported lost":"East Detroit Card turned back on","County Clerk"),...prev.activity]}));
+   setNotice(status==="stopped"?"Your card is stopped. No place can check it.":"Your card is active again.");
+ }
+ function logCard(entry:CardLogEntry){setCard(c=>({...c,log:[entry,...c.log]}));}
 
  useEffect(()=>{try{localStorage.setItem(KEY,JSON.stringify(profileStore));}catch{}},[profileStore]);
  // WCAG 2.4.2 and 2.4.3: each screen gets its own page title, and after moving to a new
@@ -371,7 +396,7 @@ export default function App() {
  }
  function selectNav(p:Page) {go(p);}
  const nav:{page:Page;label:string}[]=[
-   {page:"home",label:"Home"},{page:"services",label:"All services"},{page:"license",label:"Licenses and permits"},
+   {page:"home",label:"Home"},{page:"card",label:"My card"},{page:"services",label:"All services"},{page:"license",label:"Licenses and permits"},
    {page:"requests",label:"My requests"},{page:"account",label:"Account and privacy"},
  ];
  function showTourStep(index:number){
@@ -380,12 +405,12 @@ export default function App() {
    setTourEnabled(true);setTourIndex(safe);setTourCopyStatus("");
    setPage(stop.page);if(stop.service)setSelected(stop.service as ServiceKey);
    if(stop.id==="birth")setProfileStore(prev=>({...prev,active:"samira"}));
-   if(stop.id==="license")setProfileStore(prev=>({...prev,active:"maya"}));
+   if(stop.id==="license"||stop.id==="card"||stop.id==="reader")setProfileStore(prev=>({...prev,active:"maya"}));
    setShowMenu(false);setNotice("");
    const url=new URL(window.location.href);
    url.searchParams.set("demo","1");url.searchParams.set("step",stop.id);
    if(stop.id==="birth")url.searchParams.set("resident","samira");
-   else if(stop.id==="license")url.searchParams.set("resident","maya");
+   else if(stop.id==="license"||stop.id==="card"||stop.id==="reader")url.searchParams.set("resident","maya");
    else if(getDemoResident(profileStore.active))url.searchParams.set("resident",profileStore.active);
    window.history.replaceState(null,"",url.pathname+url.search);
    window.scrollTo({top:0,behavior:"auto"});
@@ -441,7 +466,7 @@ export default function App() {
          <button className="account-menu" onClick={()=>go("account")}>My account <span aria-hidden="true">›</span></button>
          <button className="public-header-link" type="button" onClick={signOut}>Sign out</button>
        </>:<>{entry==="welcome"&&<nav className="public-anchor-nav" aria-label="On this page">
-         <a href="#public-services">Services</a><a href="#public-agencies">Public agencies</a><a href="#public-help">Get help</a>
+         <a href="#public-services">Services</a><a href="#public-card">East Detroit Card</a><a href="#public-agencies">Public agencies</a><a href="#public-help">Get help</a>
        </nav>}<button className="public-header-link public-header-signin" type="button"
            onClick={()=>setEntry(entry==="welcome"?"signin":"welcome")}>{entry==="welcome"?"Sign in":"Back to home"}</button></>}
      </div>
@@ -452,8 +477,9 @@ export default function App() {
        {nav.map(item=><button key={item.page} className={page===item.page?"active":""} onClick={()=>selectNav(item.page)} aria-current={page===item.page?"page":undefined}>{item.label}</button>)}
      </nav>
    </div></div>}
-   <main id="page-main" className={entry==="portal"?"site-container main-content":entry==="welcome"?"public-home-main":"site-container public-content"}>
-     {entry==="welcome"&&<PublicWelcome onSignIn={()=>{setEntry("signin");window.scrollTo({top:0,behavior:"auto"});}}/>}
+   <main id="page-main" className={entry==="portal"?"site-container main-content":entry==="welcome"||entry==="card"?"public-home-main":"site-container public-content"}>
+     {entry==="welcome"&&<PublicWelcome onSignIn={()=>{setEntry("signin");window.scrollTo({top:0,behavior:"auto"});}} onCard={()=>{setEntry("card");window.scrollTo({top:0,behavior:"auto"});}}/>}
+     {entry==="card"&&<PublicCard onSignIn={()=>{setEntry("signin");window.scrollTo({top:0,behavior:"auto"});}}/>}
      {entry==="signin"&&<PublicSignIn
        initialEmail={getDemoResident(profileStore.active)?.account.email||DEMO_RESIDENTS[0].account.email}
        onBack={()=>setEntry("welcome")}
@@ -499,6 +525,19 @@ export default function App() {
            <ol className="activity-list">{data.activity.slice(0,4).map(a=><li key={a.id}><div><strong>{a.description}</strong><span>{a.office}</span></div><time>{dateFormat(a.date)}</time></li>)}</ol>
          </section>
        </div>
+     </>}
+     {page==="card"&&<>
+       <div className="page-intro"><h1>My East Detroit Card</h1><p>Your card works at the library, recreation centers, RTD and other places you choose.</p></div>
+       <CardPage resident={data.account.first+" "+data.account.last} state={card} number={cardNumber} issued={cardIssued} expires={cardExpires} tour={tourEnabled}
+         onMode={setCardMode} onStatus={setCardStatus} onActivity={()=>go("cardactivity")} onReader={()=>go("cardreader")}/>
+     </>}
+     {page==="cardactivity"&&<>
+       <div className="page-intro"><button className="back-link" onClick={()=>go("card")}>← My East Detroit Card</button><h1>Card activity</h1><p>Every time a place checks your card, or an agency looks up a record for your account, it is listed here.</p></div>
+       <CardActivityPage state={card} onAsk={entry=>setNotice("Your question about this entry was sent to "+entry.who+". Their reply will appear in your messages.")}/>
+     </>}
+     {page==="cardreader"&&<>
+       <div className="page-intro"><button className="back-link" onClick={()=>go("card")}>← My East Detroit Card</button><h1>Try the card at a reader</h1><p>Tap {data.account.first}'s card at a place and see what the reader and the phone each show. Change the settings on My East Detroit Card to see the difference.</p></div>
+       <CardReaderPage state={card} resident={data.account.first+" "+data.account.last} libraryCard={record.libraryCard||"on file"} onLog={logCard}/>
      </>}
      {page==="services"&&<>
        <div className="page-intro"><h1>All services</h1><p>Find city and county services, plus services from other public agencies.</p></div>
@@ -549,7 +588,10 @@ export default function App() {
        </form></section>
      </>}
      {page==="service"&&<>
-       <div className="page-intro"><button className="back-link" onClick={()=>go("home")}>← My services</button><h1>{current.title}</h1><p>{current.office}</p></div>
+       <div className={"page-intro"+(SERVICE_BANNERS[selected]?" page-intro-banner":"")}>
+         <div><button className="back-link" onClick={()=>go("home")}>← My services</button><h1>{current.title}</h1><p>{current.office}</p></div>
+         {SERVICE_BANNERS[selected]&&<img className="service-banner" src={SERVICE_BANNERS[selected]!.src} alt={SERVICE_BANNERS[selected]!.alt}/>}
+       </div>
        {selected==="recreation"&&<ParksService sample={hasRecord("recreation")} passNumber={record.parkPass} validThrough={record.parkThrough} resident={data.account.first+" "+data.account.last} reservations={data.reservations||[]} onBook={reservation=>{
          setData(prev=>({...prev,reservations:[...(prev.reservations||[]),reservation],activity:[addActivity("Facility reservation "+reservation.id+" confirmed","Parks and Recreation"),...prev.activity]}));
          setNotice("Reservation "+reservation.id+" confirmed.");
@@ -594,7 +636,7 @@ export default function App() {
        <div className="account-columns"><section className="section-block"><h2>Profile</h2><dl className="detail-list"><div><dt>Name</dt><dd>{data.account.first} {data.account.last}</dd></div><div><dt>Email</dt><dd>{data.account.email}</dd></div><div><dt>Street address</dt><dd>{data.account.address}, CO {data.account.postal}</dd></div></dl>
          <div className="account-actions"><Action secondary onClick={()=>go("register")}>Create another account</Action><button className="text-link" onClick={restoreDemo}>Restore account</button></div>
        </section>
-       <aside className="privacy-panel"><h2>How information is used</h2><p>You can use this account to reach city services and see updates from other agencies. Each agency decides which records it shares.</p><p>Changing your account information will not change records held by the library, Housing Division, Public Health or Water Authority.</p><p>This site saves the account information you enter on this device.</p><button className="text-link" onClick={()=>saveDownload("east-detroit-account.json",JSON.stringify(data,null,2))}>Download account information ↗</button></aside></div>
+       <aside className="privacy-panel"><h2>How information is used</h2><p>You can use this account to reach city services and see updates from other agencies. Each agency decides which records it shares.</p><p>Changing your account information will not change records held by the library, Housing Division, Public Health or Water Authority.</p><p>This site saves the account information you enter on this device.</p><button className="text-link" onClick={()=>go("cardactivity")}>See who checked your card</button><button className="text-link" onClick={()=>saveDownload("east-detroit-account.json",JSON.stringify(data,null,2))}>Download account information ↗</button></aside></div>
        <section className="section-block"><div className="section-heading"><h2>Service records</h2></div><div className="table-scroll" role="region" aria-label="Service records table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Record holder</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead><tbody>
          {catalog.map(c=><tr key={c.key}><td><strong>{c.title}</strong></td><td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td><td><button className="table-link" onClick={()=>openService(c.key)}>View <span aria-hidden="true">→</span></button></td></tr>)}
        </tbody></table></div></section>

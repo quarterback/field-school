@@ -1,8 +1,9 @@
 import { useState } from "react";
 import type { FormEvent } from "react";
 import { DEMO_RESIDENTS } from "./DemoResidents";
+import { CardVisual } from "./CityCard";
 
-type EntryProps = { onSignIn:()=>void };
+type EntryProps = { onSignIn:()=>void; onCard?:()=>void };
 
 const POPULAR_SERVICES=[
   {task:"Report a street problem",owner:"Transportation and Public Works"},
@@ -30,7 +31,7 @@ const PARTNER_AGENCIES=[
   {name:"Regional Housing Authority",what:"Housing inquiries"},
 ];
 
-export function PublicWelcome({onSignIn}:EntryProps){
+export function PublicWelcome({onSignIn,onCard}:EntryProps){
   const [query,setQuery]=useState("");
   const [submitted,setSubmitted]=useState("");
   const term=submitted.trim().toLowerCase();
@@ -94,6 +95,15 @@ export function PublicWelcome({onSignIn}:EntryProps){
         </ol>
         <p className="home-birth-note">Each agency still makes its own decision. Every update shows which records were used and which office sent it.</p>
       </div>
+    </section>
+
+    <section id="public-card" className="home-container home-card" aria-labelledby="public-card-title">
+      <div className="home-card-copy">
+        <h2 id="public-card-title">One card for the library, recreation centers and RTD</h2>
+        <p>The East Detroit Card is a photo ID from the city and county. Tap it at the library, a recreation center or an RTD fare reader. Each place gets one answer, such as "pass active," and nothing else.</p>
+        <p><button type="button" className="home-inline-link" onClick={onCard}>About the East Detroit Card</button></p>
+      </div>
+      <CardVisual name="Alex Morales" number="2030" expires="Nov 2035" />
     </section>
 
     <section id="public-agencies" className="home-agencies" aria-labelledby="public-agencies-title">
@@ -170,5 +180,84 @@ export function PublicSignIn({onContinue,onBack,initialEmail}:{
         </div>
       </aside>
     </div>
+  </div>;
+}
+
+const CARD_PLACES_PUBLIC=[
+  {name:"Libraries",what:"Borrow books, use computers and print. The library learns your card is valid.",img:"/assets/watkins-library-2030.jpg",alt:"People arriving at the Watkins Public Library entrance"},
+  {name:"RTD buses and trains",what:"Pay your fare from your MyRide balance. RTD learns a fare was paid.",img:"/assets/central-station-2030.jpg",alt:"Riders waiting for a light rail train at Central Station"},
+  {name:"Recreation centers, pools and parks",what:"Enter with your resident pass. The center learns your pass is active.",img:"/assets/box-elder-greenway-2030.jpg",alt:"A trail on the Box Elder Creek greenway"},
+  {name:"City and county offices",what:"Use the card as photo ID at city and county service counters.",img:"/assets/civic-square-2030.jpg",alt:"Civic Square at sunset"},
+];
+
+export function PublicCard({onSignIn}:{onSignIn:()=>void}){
+  return <div className="public-home public-card">
+    <section className="home-hero" aria-labelledby="card-title">
+      <img className="home-hero-image" src="/assets/watkins-library-2030.jpg" alt="A resident taps a card at the reader beside the Watkins Public Library doors" />
+      <div className="home-container">
+        <div className="home-hero-panel">
+          <h1 id="card-title">The East Detroit Card</h1>
+          <p>One photo ID for the library, recreation centers and RTD buses and trains. Carry the plastic card or add it to your phone's wallet.</p>
+          <p className="home-signin-line">Already have a card? <button type="button" className="home-inline-link" onClick={onSignIn}>Sign in to see where it works</button></p>
+        </div>
+      </div>
+    </section>
+
+    <section className="home-container home-services" aria-labelledby="card-where">
+      <h2 id="card-where">Where the card works</h2>
+      <p className="home-section-lede">Tap the card or your phone at the reader. Each place checks one thing.</p>
+      <ul className="card-public-places">
+        {CARD_PLACES_PUBLIC.map(p=><li key={p.name}>
+          <img src={p.img} alt={p.alt} />
+          <h3>{p.name}</h3>
+          <p>{p.what}</p>
+        </li>)}
+      </ul>
+    </section>
+
+    <section className="home-container home-updates" aria-labelledby="card-answer">
+      <div className="home-updates-copy">
+        <h2 id="card-answer">Each place gets one answer</h2>
+        <p>Your card holds a number, not your records. When you tap, the reader asks the agency that runs that place one question. The agency answers yes or no.</p>
+        <p>A recreation center learns that your pass is active. It does not learn your address, your birth date, or that you used the library this morning.</p>
+      </div>
+      <div className="home-birth card-answer-table">
+        <h3>What each place learns</h3>
+        <div className="table-scroll" role="region" aria-label="What each place learns" tabIndex={0}><table className="records-table">
+          <thead><tr><th scope="col">Where you tap</th><th scope="col">The only answer it gets</th></tr></thead>
+          <tbody>
+            <tr><td>Library checkout</td><td>Library card valid</td></tr>
+            <tr><td>Recreation center gate</td><td>Resident pass active</td></tr>
+            <tr><td>RTD fare reader</td><td>Fare paid</td></tr>
+            <tr><td>Senior or youth rate</td><td>Meets the age for the rate</td></tr>
+            <tr><td>School front office</td><td>Listed parent or guardian</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </section>
+
+    <section className="home-agencies" aria-labelledby="card-privacy">
+      <div className="home-container card-privacy">
+        <h2 id="card-privacy">How your information is protected</h2>
+        <ol className="card-promises">
+          <li><strong>You choose for each place.</strong> Set each place to automatic, ask me each time, or off. Ask me each time sends a request to your phone before anything is shared.</li>
+          <li><strong>You can see every check.</strong> Card activity lists each tap and each record lookup: who asked, when, what they learned and why.</li>
+          <li><strong>Your records stay where they are.</strong> The library, RTD, the school district and each city office keep their own records. There is no single file about you.</li>
+          <li><strong>No copies of your documents.</strong> To get a card you show proof of who you are and where you live. Staff check your documents and hand them back.</li>
+          <li><strong>Immigration status is never asked.</strong> Any East Detroit resident can get a card.</li>
+          <li><strong>Parents decide for children.</strong> A parent or guardian chooses whether a child's card connects to the school district.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section className="home-container home-services" aria-labelledby="card-get">
+      <h2 id="card-get">Get a card</h2>
+      <ol className="card-steps">
+        <li><strong>Make an appointment at a city service counter.</strong> The County Clerk issues cards.</li>
+        <li><strong>Bring proof of identity and proof that you live in East Detroit.</strong> Staff check them and give them back.</li>
+        <li><strong>Have your photo taken for the card.</strong> After you sign in to My East Detroit, you can add the card to your phone's wallet.</li>
+      </ol>
+      <p><button type="button" className="home-inline-link" onClick={onSignIn}>Sign in to My East Detroit</button></p>
+    </section>
   </div>;
 }

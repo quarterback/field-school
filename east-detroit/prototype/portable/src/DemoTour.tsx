@@ -2,7 +2,7 @@ export type DemoStop = {
   id: string;
   title: string;
   purpose: string;
-  page: "home" | "service" | "license" | "services";
+  page: "home" | "service" | "license" | "services" | "card" | "cardactivity" | "cardreader";
   service?: string;
 };
 export const DEMO_STOPS: DemoStop[] = [
@@ -13,6 +13,18 @@ export const DEMO_STOPS: DemoStop[] = [
   {
     id:"people",title:"Compare resident accounts",page:"home",
     purpose:"Choose Maya, Avery, or Helen in the resident selector. Each person has different services and records."
+  },
+  {
+    id:"card",title:"The East Detroit Card",page:"card",
+    purpose:"A vendor proposes one city-county card that opens the library, recreation centers, RTD and school front offices. The resident chooses automatic, ask me each time, or off for each place. Decide which places should accept the card and what each may learn."
+  },
+  {
+    id:"reader",title:"What a card reader sees",page:"cardreader",
+    purpose:"Tap the card at a library desk, a recreation gate, a bus or a school office. The reader gets one yes or no answer. Set a place to Ask me each time on the card page, then tap again to see the phone approval."
+  },
+  {
+    id:"cardlog",title:"Card activity",page:"cardactivity",
+    purpose:"Every tap and every record lookup is listed with who asked, what they learned and why, like Estonia's Data Tracker. Switch to Avery to see a check that was refused."
   },
   {
     id:"birth",title:"After a child is born",page:"service",service:"family",

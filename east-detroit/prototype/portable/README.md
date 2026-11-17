@@ -14,6 +14,10 @@ After continuing, the resident sees their own service records and the current in
 
 The optional class walkthrough still works after entering an example account through `?demo=1`. Explicit deep links with `?demo=1&step=birth&resident=samira` skip the public entry for the instructor's direct presentations; ordinary visitors start with the welcome screen.
 
+## The East Detroit Card
+
+A vendor-proposed city-county photo ID that also opens the library, recreation centers, RTD fare readers, school front offices and age-based rates. Residents set each place to Automatic, Ask me each time, or Off, and Card activity lists every tap and lookup. The walkthrough adds a reader simulator that shows the reader screen and the resident's phone side by side. Design, privacy rules and real-world precedents: [CARD_PRIVACY.md](CARD_PRIVACY.md).
+
 ## Proactive services: birth and automatic renewal
 
 The portal now demonstrates two services initiated by verified agency events rather than a resident filling out another form.
@@ -46,7 +50,7 @@ See [interface and content standards](CONTENT_STANDARDS.md) for Salesforce Light
 - **Guided walkthrough for students:** https://east-detroit-operations.vercel.app/?demo=1
 - **Direct stop:** append a step such as \`?demo=1&step=school\` or \`?demo=1&step=authority\`
 
-Visitors begin at the public welcome page and choose a sample account on the sign-in screen. In the resident portal, **Explore demo** opens the optional nine-stop vendor walkthrough with previous/next, a stop selector, and a copyable link. Closing it returns to the resident interface. Students can still navigate services independently.
+Visitors begin at the public welcome page and choose a sample account on the sign-in screen. In the resident portal, **Explore demo** opens the optional nine-stop vendor walkthrough with previous/next, a stop selector, and a copyable link. Closing it returns to the resident interface. Students can still navigate services independently. Service pages for the library, transit, recreation and family records show a photo of the place.
 
 ## Resident-facing examples
 

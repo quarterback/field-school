@@ -45,10 +45,13 @@ const SCREENS = [
   { name: "Sign in", url: "/", run: (p) => clickText(p, "button", "Sign in") },
   { name: "Sign in error", url: "/", run: async (p) => { await clickText(p, "button", "Sign in"); await p.$eval("#public-email", (el) => { el.value = ""; }); await p.type("#public-email", "nobody@example.com"); await clickText(p, "button", "Continue to account"); } },
   { name: "Portal home", url: "/", run: async (p) => { await clickText(p, "button", "Sign in"); await clickText(p, "button", "Continue to account"); } },
-  ...["All services", "Licenses and permits", "My requests", "Account and privacy"].map((label) => ({
+  { name: "Public card page", url: "/", run: (p) => clickText(p, "button", "About the East Detroit Card") },
+  ...["My card", "All services", "Licenses and permits", "My requests", "Account and privacy"].map((label) => ({
     name: `Portal: ${label}`, url: "/", run: async (p) => { await clickText(p, "button", "Sign in"); await clickText(p, "button", "Continue to account"); await clickText(p, ".primary-nav button", label); },
   })),
-  ...["home", "birth", "school", "transit", "authority", "library", "license"].map((step) => ({
+  { name: "Card reader after a tap", url: "/?demo=1&step=reader", run: (p) => clickText(p, "button", "Tap Maya") },
+  { name: "Card reader asking on the phone", url: "/?demo=1&step=reader", run: async (p) => { await p.click('input[name="reader-place"][value="school"]'); await clickText(p, "button", "Tap Maya"); } },
+  ...["home", "card", "reader", "cardlog", "birth", "school", "transit", "authority", "library", "license"].map((step) => ({
     name: `Walkthrough stop: ${step}`, url: `/?demo=1&step=${step}`,
   })),
 ];

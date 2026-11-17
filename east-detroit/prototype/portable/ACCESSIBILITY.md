@@ -17,9 +17,11 @@ npm run check:a11y
 | Screen | How it gets there |
 | --- | --- |
 | Public homepage, and a search with no match | `/` |
+| Public card page | Homepage **About the East Detroit Card** |
 | Sign in, and the sign in error | Header **Sign in** |
-| Portal home, All services, Licenses and permits, My requests, Account and privacy | Sign in with the first sample account |
-| Walkthrough stops: home, birth, school, transit, authority, library, license | `/?demo=1&step=…` |
+| Portal home, My card, All services, Licenses and permits, My requests, Account and privacy | Sign in with the first sample account |
+| Card reader after a tap, and while the phone asks for approval | `/?demo=1&step=reader` |
+| Walkthrough stops: home, card, reader, cardlog, birth, school, transit, authority, library, license | `/?demo=1&step=…` |
 
 On each screen it runs:
 
@@ -46,6 +48,8 @@ Follow these when you change the interface. Each one fixed a real failure or pro
 - **Motion respects `prefers-reduced-motion`.** Smooth scrolling and transitions turn off.
 - **Images:** photos and renders that show a place get a short `alt` naming the place. Decorative marks such as the ED seal use `aria-hidden="true"`.
 - **Color:** body text 4.5:1 against its background, large text and focus rings 3:1. Status is never shown by color alone; each status badge carries its word.
+- **Choices are real radio buttons.** Card settings and reader places use native radio inputs, 24px or larger, inside labels at least 44px tall. The phone approval prompt is an `alertdialog` and focus moves to its first button.
+- **Decorative shapes stay inside their box.** A shape that hangs past its parent goes in a wrapper with `overflow: hidden`, or it makes the page scroll sideways.
 - **Focus ring:** keep the global `:focus-visible` outline (3px ruby, 3px offset). Do not remove it on any control.
 
 ## Manual checks
