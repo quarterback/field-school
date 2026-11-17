@@ -90,7 +90,7 @@ export function LibraryService({sample,resident,renewed,onRenew,cardNumber,itemT
    <div className="table-scroll" role="region" tabIndex={0} aria-label="Library loans"><table className="records-table"><thead><tr><th>Item</th><th>Due date</th><th>Action</th></tr></thead><tbody><tr>
     <td><strong>{itemTitle||"Colorado Road Atlas"}</strong><small>Print collection</small></td>
     <td>{renewed?"Dec. 26, 2030":"Dec. 12, 2030"}</td>
-    <td>{renewed?<span className="status status-good">Renewed</span>:<button className="table-link" onClick={onRenew}>Renew item →</button>}</td>
+    <td>{renewed?<span className="status status-good">Renewed</span>:<button className="table-link" onClick={onRenew}>Renew item</button>}</td>
    </tr></tbody></table></div>
   </Block>
   <Block title="Library records" className="program-policy"><p>The Library District keeps your library and borrowing records. Other city offices cannot see them here.</p></Block>

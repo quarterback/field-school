@@ -413,3 +413,83 @@ a{color:var(--ruby-dark)}
   .head-actions{gap:8px}
   .public-header-link{font-size:13px;white-space:nowrap}
 }
+
+/* Visual cleanup, November 17 2026: one table style, no tints behind rows, aligned columns, quieter header, no boxes inside boxes. */
+.main-content{padding:40px 0 88px}
+.page-intro{margin-bottom:44px}
+.section-block,.proactive-home,.household,.partner-list{margin:0 0 56px}
+.section-heading{align-items:baseline;margin:0 0 14px}
+.section-heading h2{margin:0;font-size:22px}
+
+.records-table thead th{background:#e9efeb;border-top:2px solid var(--ink);font-size:13px;padding:11px 14px}
+.records-table tbody tr:nth-child(even),.records-table tbody tr:hover{background:transparent}
+.records-table tbody td{border-bottom:1px solid #d6ddd9;padding:17px 14px}
+.records-table td:nth-child(2){color:#394641}
+.records-table.aligned{table-layout:fixed}
+.records-table.aligned .col-service{width:30%}
+.records-table.aligned .col-office{width:32%}
+.records-table.aligned .col-status{width:18%}
+.records-table.aligned .col-action{width:20%}
+.records-table.aligned td{overflow-wrap:anywhere}
+
+.status{border:1px solid transparent;padding:4px 8px}
+.status-good{border-color:#8fc4a1}
+.status-warn{border-color:#d9a900}
+.status-info{border-color:#8cc4e3}
+.status-neutral{border-color:#b9c2be}
+
+.agency-intro{font-size:14px;margin:0 0 16px}
+.agency-footnote{font-size:13px;color:var(--muted);margin:14px 0 0}
+.inline-link{padding:0;font-size:13px}
+
+.proactive-list{display:block;border-top:2px solid var(--ink)}
+.proactive-item{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"status action" "content action";gap:8px 40px;padding:20px 0;margin:0;border-bottom:1px solid #d6ddd9;align-items:start}
+.proactive-status{grid-area:status}
+.proactive-content{grid-area:content}
+.proactive-content h3{font-size:17px}
+.proactive-content p{font-size:14px;max-width:680px}
+.proactive-item .table-link{grid-area:action;align-self:center;justify-self:end;white-space:nowrap}
+.service-provenance>div{background:transparent;border-left:3px solid var(--aqua);padding:4px 0 4px 14px;font-size:13px}
+
+.home-lower{max-width:none;margin-top:0}
+.activity-list{border-top:2px solid var(--ink)}
+.activity-list li{padding:15px 0;border-bottom:1px solid #d6ddd9}
+
+.head-actions{gap:24px}
+.demo-switch,.account-menu{border:0;background:transparent;min-height:44px;padding:8px 2px;font-size:14px;font-weight:700;color:var(--ink);border-radius:0}
+.demo-switch:hover,.account-menu:hover{background:transparent;color:var(--ruby-dark);text-decoration:underline;text-underline-offset:4px}
+.demo-switch[aria-pressed="true"]{background:var(--amber);color:var(--ink);padding:8px 12px}
+
+.directory-row{padding:20px 0;border-bottom:1px solid #d6ddd9}
+.directory-list{border-top:2px solid var(--ink)}
+.filter-bar{background:transparent;padding:0;margin-bottom:24px}
+
+.public-feature{background:transparent;border-left:6px solid var(--aqua);padding:6px 0 6px 28px}
+.public-service-note{background:transparent;border-top:2px solid var(--ink);padding:26px 0 0}
+.public-account-picker{background:transparent;padding:0;border-top:2px solid var(--ink)}
+.public-account-picker h2{margin-top:20px}
+.public-account-options{gap:0}
+.public-account-options button{border:0;border-bottom:1px solid #d6ddd9;border-left:4px solid transparent;padding:13px 12px;background:transparent}
+.public-account-options button:hover{background:#f2f5f3}
+.public-account-options button.selected{border-color:#d6ddd9;border-left-color:var(--ruby);background:transparent}
+
+@media(max-width:650px){
+ .proactive-item{grid-template-columns:1fr;grid-template-areas:"status" "content" "action";gap:8px}
+ .proactive-item .table-link{justify-self:start}
+ .records-table.aligned{table-layout:auto}
+ .head-actions{gap:10px}
+ .demo-switch,.account-menu{font-size:12px}
+}
+.table-scroll{position:relative}
+@media(max-width:650px){
+ .records-table.aligned{min-width:0;border-top:2px solid var(--ink)}
+ .records-table.aligned colgroup{display:none}
+ .records-table.aligned thead{position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;overflow:hidden}
+ .records-table.aligned tbody{display:block}
+ .records-table.aligned tr{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;padding:15px 0;border-bottom:1px solid #d6ddd9;align-items:center}
+ .records-table.aligned tbody td{display:block;border:0;padding:0;position:static;background:transparent;min-width:0}
+ .records-table.aligned td:nth-child(1),.records-table.aligned td:nth-child(2){grid-column:1/-1}
+ .records-table.aligned td:nth-child(2){font-size:13px;color:var(--muted);margin-top:-2px}
+ .records-table.aligned td.action-cell{text-align:right}
+}
+@media(max-width:650px){.demo-switch,.account-menu,.public-header-link{white-space:nowrap}.city-brand small{display:none}}

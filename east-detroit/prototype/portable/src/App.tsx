@@ -425,7 +425,7 @@ export default function App() {
      <div className="head-actions">
        {entry==="portal"?<>
          <button className="demo-switch" type="button" aria-pressed={tourEnabled} onClick={toggleTour}>{tourEnabled?"Exit demo":"Explore demo"}</button>
-         <button className="account-menu" onClick={()=>go("account")}>My account <span aria-hidden="true">›</span></button>
+         <button className="account-menu" onClick={()=>go("account")}>My account</button>
          <button className="public-header-link" type="button" onClick={signOut}>Sign out</button>
        </>:<button className="public-header-link public-header-signin" type="button"
            onClick={()=>setEntry(entry==="welcome"?"signin":"welcome")}>{entry==="welcome"?"Sign in":"Back to home"}</button>}
@@ -458,29 +458,30 @@ export default function App() {
        <div className="page-intro"><h1>My East Detroit</h1><p>Welcome back, {data.account.first}. Check your records and see what needs your attention.</p></div>
        <ProactiveHome resident={profileStore.active} event={life} onAction={actOnLifeEvent} onLicense={()=>go("license")} onFamily={()=>openService("family")}/>
        <section className="section-block">
-         <div className="section-heading"><h2>My services</h2><button className="text-link" onClick={()=>go("services")}>Browse all services <span aria-hidden="true">→</span></button></div>
-         <div className="table-scroll" role="region" aria-label="My services table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Responsible office</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead>
+         <div className="section-heading"><h2>My services</h2><button className="text-link" onClick={()=>go("services")}>Browse all services</button></div>
+         <div className="table-scroll" role="region" aria-label="My services table" tabIndex={0}><table className="records-table aligned"><colgroup><col className="col-service"/><col className="col-office"/><col className="col-status"/><col className="col-action"/></colgroup><thead><tr><th scope="col">Service</th><th scope="col">Responsible office</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead>
          <tbody>{catalog.filter(c=>!c.independent).map(c=><tr key={c.key}>
-           <td><strong>{c.title}</strong>{c.independent&&<small>Run by another agency</small>}</td>
+           <td><strong>{c.title}</strong></td>
            <td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td>
-           <td className="action-cell"><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)} <span aria-hidden="true">→</span></button></td>
+           <td className="action-cell"><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)}</button></td>
          </tr>)}</tbody></table></div>
        </section>
        <HouseholdSection resident={profileStore.active} event={life} onAction={actOnLifeEvent}/>
        <section className="section-block partner-list">
          <div className="section-heading"><h2>Services from other agencies</h2></div>
          <p className="agency-intro">The library, school district, transit agency and other public agencies keep their own records and make their own decisions.</p>
-         <div className="table-scroll" role="region" aria-label="Services from independent public agencies" tabIndex={0}><table className="records-table">
+         <div className="table-scroll" role="region" aria-label="Services from independent public agencies" tabIndex={0}><table className="records-table aligned"><colgroup><col className="col-service"/><col className="col-office"/><col className="col-status"/><col className="col-action"/></colgroup>
            <thead><tr><th scope="col">Service</th><th scope="col">Responsible agency</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead>
-           <tbody>{catalog.filter(c=>c.independent).map(c=><tr key={c.key}>
-             <td><strong>{c.title}</strong><small>Run by another agency</small></td>
+           <tbody>{catalog.filter(c=>c.independent&&serviceStatus(c.key)!=="Separate service").map(c=><tr key={c.key}>
+             <td><strong>{c.title}</strong></td>
              <td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td>
-             <td className="action-cell"><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)} <span aria-hidden="true">→</span></button></td>
+             <td className="action-cell"><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)}</button></td>
            </tr>)}</tbody>
          </table></div>
+         <p className="agency-footnote">State benefits, the county court and hospital services are listed in <button className="text-link inline-link" onClick={()=>go("services")}>All services</button>.</p>
        </section>
        <div className="home-lower">
-         <section className="section-block recent"><div className="section-heading"><h2>Recent activity</h2><button className="text-link" onClick={()=>go("account")}>Account history <span aria-hidden="true">→</span></button></div>
+         <section className="section-block recent"><div className="section-heading"><h2>Recent activity</h2><button className="text-link" onClick={()=>go("account")}>Account history</button></div>
            <ol className="activity-list">{data.activity.slice(0,4).map(a=><li key={a.id}><div><strong>{a.description}</strong><span>{a.office}</span></div><time>{dateFormat(a.date)}</time></li>)}</ol>
          </section>
        </div>
@@ -490,7 +491,7 @@ export default function App() {
        <div className="filter-bar"><label htmlFor="service-search">Find a service</label><input id="service-search" type="search" placeholder="Search services or departments" value={serviceSearch} onChange={e=>setServiceSearch(e.target.value)}/></div>
        <div className="directory-list">{matchingCatalog.map(c=><article className="directory-row" key={c.key}>
          <div><h2>{c.title}</h2><p>{c.description}</p><small>{c.office}{c.independent?" · Run by another agency":""}</small></div>
-         <div className="directory-action"><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)} <span aria-hidden="true">→</span></button></div>
+         <div className="directory-action"><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)}</button></div>
        </article>)}
        {matchingCatalog.length===0&&<p className="empty-state">No services match your search.</p>}</div>
      </>}
@@ -581,7 +582,7 @@ export default function App() {
        </section>
        <aside className="privacy-panel"><h2>How information is used</h2><p>You can use this account to reach city services and see updates from other agencies. Each agency decides which records it shares.</p><p>Changing your account information will not change records held by the library, Housing Division, Public Health or Water Authority.</p><p>This site saves the account information you enter on this device.</p><button className="text-link" onClick={()=>saveDownload("east-detroit-account.json",JSON.stringify(data,null,2))}>Download account information ↗</button></aside></div>
        <section className="section-block"><div className="section-heading"><h2>Service records</h2></div><div className="table-scroll" role="region" aria-label="Service records table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Record holder</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead><tbody>
-         {catalog.map(c=><tr key={c.key}><td><strong>{c.title}</strong></td><td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td><td><button className="table-link" onClick={()=>openService(c.key)}>View <span aria-hidden="true">→</span></button></td></tr>)}
+         {catalog.map(c=><tr key={c.key}><td><strong>{c.title}</strong></td><td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td><td><button className="table-link" onClick={()=>openService(c.key)}>View</button></td></tr>)}
        </tbody></table></div></section>
        <section className="section-block"><div className="section-heading"><h2>Account activity</h2></div><ol className="activity-list">{data.activity.map(a=><li key={a.id}><div><strong>{a.description}</strong><span>{a.office}</span></div><time>{dateFormat(a.date)}</time></li>)}</ol></section>
      </>}
