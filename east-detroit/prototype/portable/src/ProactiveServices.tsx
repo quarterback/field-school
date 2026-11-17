@@ -59,15 +59,15 @@ export function HouseholdSection({resident,event,onAction}:ProactiveProps&{resid
     <table className="records-table">
      <thead><tr><th scope="col">Name</th><th scope="col">Relationship</th><th scope="col">Record</th></tr></thead>
      <tbody>
-      {resident==="maya"&&<tr><td><strong>Jordan Rivera</strong></td><td>Child</td><td>School enrollment on file with the Unified School District</td></tr>}
+      {resident==="maya"&&<tr><td><strong>Jordan Rivera</strong></td><td>Child</td><td>The school district has Jordan's enrollment record</td></tr>}
       {resident==="samira"&&event.birthRegistered&&
-        <tr><td><strong>Lucia Ortiz</strong><small>Born November 12, 2030</small></td><td>Child</td><td>Birth registered · County Clerk / State Vital Records</td></tr>}
-      {resident==="samira"&&!event.birthRegistered&&<tr><td colSpan={3}>No child birth record is available to this account.</td></tr>}
+        <tr><td><strong>Lucia Ortiz</strong><small>Born November 12, 2030</small></td><td>Child</td><td>Birth recorded by the County Clerk and the state</td></tr>}
+      {resident==="samira"&&!event.birthRegistered&&<tr><td colSpan={3}>This account does not show a birth record.</td></tr>}
      </tbody>
     </table>
    </div>
    {resident==="samira"&&event.birthRegistered&&
-     <Explain>Birth information comes from the state vital records system through a proposed, authorized county notification. This page shows the parent's household relationship, not a complete medical record.</Explain>}
+     <Explain>The state sent the county the child's birth details and the parent's name. It did not send medical records.</Explain>}
  </section>;
 }
 
@@ -81,23 +81,23 @@ export function ProactiveHome({resident,event,onAction,onLicense,onFamily}:Proac
    <div className="proactive-list">
     {offers.newborn&&<>
       <article className="proactive-item">
-       <div className="proactive-status"><State kind="good">Already updated</State></div>
-       <div className="proactive-content"><h3>Lucia Ortiz added to your household</h3><p>The registered birth was matched to your account. No second birth form was needed.</p>
-         <Explain>County Clerk and State Vital Records confirmed the birth and parent-child relationship. The portal received limited registration details, rather than a hospital chart.</Explain>
+       <div className="proactive-status"><State kind="good">Updated</State></div>
+       <div className="proactive-content"><h3>Lucia Ortiz added to your household</h3><p>The County Clerk added Lucia after the state confirmed her birth. You do not need to report the birth again.</p>
+         <Explain>The County Clerk and State Vital Records confirmed the birth and parent-child relationship. They did not share hospital records with this account.</Explain>
        </div>
        <button className="table-link" onClick={onFamily}>View family services →</button>
       </article>
       <article className="proactive-item">
        <div className="proactive-status"><State kind={offers.coverage?"good":"warn"}>{offers.coverage?"Coverage confirmed":"Review needed"}</State></div>
-       <div className="proactive-content"><h3>Newborn health coverage</h3><p>{offers.coverage?"Health First Colorado coverage has been added to Lucia's case. No separate application was needed.":"The county is waiting for state confirmation before coverage can be shown."}</p>
-         <Explain>The birth report was matched with the state's record showing the parent had qualifying coverage at delivery. Colorado's eligible-newborn rule provides coverage once the birth is reported. The state retains eligibility authority.</Explain>
+       <div className="proactive-content"><h3>Newborn health coverage</h3><p>{offers.coverage?"Health First Colorado added Lucia to your coverage. You did not need to apply again.":"The county is waiting for the state to confirm Lucia's coverage."}</p>
+         <Explain>The state checked the birth report against the parent's health coverage. Under Colorado's newborn coverage rules, eligible children receive coverage when their birth is reported. The state makes the final decision.</Explain>
        </div>
        <button className="table-link" onClick={onFamily}>View details →</button>
       </article>
       <article className="proactive-item">
-       <div className="proactive-status"><State kind="info">Available to review</State></div>
-       <div className="proactive-content"><h3>Infant and family support</h3><p>WIC information and an early-literacy card offer are available. No benefits or library records have been issued without the required process.</p>
-         <Explain>The birth record indicates that a child under five lives in the household. WIC requires its own certification and the Library District has separate control over its services.</Explain>
+       <div className="proactive-status"><State kind="info">Your choice</State></div>
+       <div className="proactive-content"><h3>Food support and a library card</h3><p>You can ask WIC to contact you about food and nutrition support. You can also request a library card for Lucia. Each program will review your request.</p>
+         <Explain>WIC uses the child's age to help determine whether your family can apply. WIC must still check eligibility. The Library District handles library cards separately.</Explain>
        </div>
        <button className="table-link" onClick={onFamily}>Review offers →</button>
       </article>
@@ -105,8 +105,8 @@ export function ProactiveHome({resident,event,onAction,onLicense,onFamily}:Proac
     {offers.business&&<article className="proactive-item">
       <div className="proactive-status"><State kind={offers.renewal?"good":"warn"}>{offers.renewal?"Renewed":"Review needed"}</State></div>
       <div className="proactive-content"><h3>Cypress Cafe food establishment license</h3>
-       <p>{offers.renewal?"Renewed for 2031 from verified agency records. No renewal form was required.":"The automatic renewal is paused until Public Health resolves a record that needs review."}</p>
-       <Explain>Proposed automatic-renewal arrangement: Public Health confirms the inspection and license details; Finance confirms the annual fee; the business has authorized automatic renewal. Any unresolved condition stops the renewal. The department retains approval authority.</Explain>
+       <p>{offers.renewal?"Public Health and Finance checked their records and renewed your license for 2031. You did not need to apply.":"Public Health must check a record before it can renew your license."}</p>
+       <Explain>Public Health checks your inspection and license details. Finance checks your annual fee. If a record needs attention, Public Health must review it before renewal.</Explain>
       </div>
       <button className="table-link" onClick={onLicense}>{offers.renewal?"View renewal":"View required review"} →</button>
     </article>}
@@ -126,7 +126,7 @@ export function FamilyService({event,onAction,tour}:ProactiveProps&{tour:boolean
    <div><dt>Birth record holder</dt><dd>State Vital Records</dd></div>
   </dl>
   <section className="program-section">
-   <h2>What happened automatically</h2>
+   <h2>Updates already made</h2>
    <div className="table-scroll" role="region" aria-label="Automated family service actions" tabIndex={0}><table className="records-table">
     <thead><tr><th scope="col">Service</th><th scope="col">Department</th><th scope="col">Result</th></tr></thead>
     <tbody>
@@ -135,23 +135,23 @@ export function FamilyService({event,onAction,tour}:ProactiveProps&{tour:boolean
      <tr><td><strong>Family services notice</strong></td><td>County Human Services</td><td><State kind="good">Delivered to account</State></td></tr>
     </tbody>
    </table></div>
-   <Explain>The county received the birth registration through a proposed authorized exchange. A verified parent coverage record permits the state to enroll an eligible newborn under Colorado rules. No income, birth-certificate image, or clinical chart was copied into the city account.</Explain>
+   <Explain>State Vital Records sent the birth details to the county. The state checked the parent's coverage and enrolled Lucia under Colorado's newborn rules. The city account did not receive income records, a birth certificate image or medical records.</Explain>
   </section>
   <section className="program-section">
    <h2>Available for your family</h2>
    <div className="family-offer">
-    <div><h3>WIC nutrition and infant support</h3><p>WIC may be available for Lucia. The program must confirm enrollment requirements and complete its own appointment.</p>
-      <Explain>Colorado WIC covers eligible infants and young children. Participation in Medicaid can establish income eligibility, but WIC still requires program certification.</Explain>
+    <div><h3>WIC food and nutrition support</h3><p>WIC helps eligible families get food and nutrition support. Ask WIC to contact you to find out whether Lucia qualifies.</p>
+      <Explain>WIC serves eligible infants and young children. Having Medicaid can help establish income eligibility, but WIC must still review your information and enroll you.</Explain>
     </div>
-    <div><State kind={event.wicContact==="requested"?"good":"info"}>{event.wicContact==="requested"?"Contact requested":"Available"}</State>
+    <div><State kind={event.wicContact==="requested"?"good":"info"}>{event.wicContact==="requested"?"Contact requested":"You can request contact"}</State>
      <button className="program-submit" type="button" disabled={event.wicContact==="requested"} onClick={()=>onAction("wic")}>{event.wicContact==="requested"?"Request saved":"Request WIC contact"}</button>
     </div>
    </div>
    <div className="family-offer">
-    <div><h3>Public Library District early-literacy card</h3><p>The Library District could offer Lucia a library card using verified age and guardian information.</p>
-      <Explain>Proposed participating agency: the independent Library District must authorize the card service, guardian verification, and disclosure rules.</Explain>
+    <div><h3>A library card for Lucia</h3><p>The Library District can help you get a card for Lucia. It will check her age and your relationship to her first.</p>
+      <Explain>The Library District decides how to issue cards and what information it needs from a parent or guardian.</Explain>
     </div>
-    <div><State kind={event.libraryOffer==="accepted"?"good":"info"}>{event.libraryOffer==="accepted"?"Accepted":"Offered"}</State>
+    <div><State kind={event.libraryOffer==="accepted"?"good":"info"}>{event.libraryOffer==="accepted"?"Accepted":"Available"}</State>
      <button className="program-submit" type="button" disabled={event.libraryOffer==="accepted"} onClick={()=>onAction("library")}>{event.libraryOffer==="accepted"?"Offer accepted":"Accept offer"}</button>
     </div>
    </div>
@@ -162,20 +162,20 @@ export function FamilyService({event,onAction,tour}:ProactiveProps&{tour:boolean
 export function RenewalRecord({event,tour,onAction}:ProactiveProps&{tour:boolean}){
  const renewed=isLicenseRenewed(event);
  return <section className="program-section renewal-record">
-  <h2>Automatic renewal</h2>
-  <p className="service-description">{renewed?"The 2031 renewal was completed from information already held by city-county departments. No renewal application was requested.":"Automatic renewal is paused. Public Health must resolve the outstanding check."}</p>
+  <h2>How your license renews</h2>
+  <p className="service-description">{renewed?"Public Health and Finance checked their records and renewed your license for 2031. You did not need to fill out another form.":"Public Health must check a record before your license can renew."}</p>
   <div className="table-scroll" tabIndex={0} role="region" aria-label="Food establishment renewal checks">
    <table className="records-table">
     <thead><tr><th scope="col">Check</th><th scope="col">Record owner</th><th scope="col">Result</th></tr></thead>
     <tbody>
-     <tr><td>Inspection compliance</td><td>Public Health</td><td><State kind={event.inspectionClear?"good":"warn"}>{event.inspectionClear?"Clear":"Requires review"}</State></td></tr>
-     <tr><td>Annual fee</td><td>Finance</td><td><State kind={event.feeSettled?"good":"warn"}>{event.feeSettled?"Settled":"Unpaid"}</State></td></tr>
-     <tr><td>License holder / ownership</td><td>Public Health</td><td><State kind={event.ownershipUnchanged?"good":"warn"}>{event.ownershipUnchanged?"Unchanged":"Requires review"}</State></td></tr>
-     <tr><td>Automatic-renewal authorization</td><td>License holder</td><td><State kind={event.automaticRenewalPermission?"good":"warn"}>{event.automaticRenewalPermission?"On file":"Not authorized"}</State></td></tr>
+     <tr><td>Health inspection</td><td>Public Health</td><td><State kind={event.inspectionClear?"good":"warn"}>{event.inspectionClear?"Clear":"Requires review"}</State></td></tr>
+     <tr><td>Annual fee</td><td>Finance</td><td><State kind={event.feeSettled?"good":"warn"}>{event.feeSettled?"Paid":"Unpaid"}</State></td></tr>
+     <tr><td>Business owner</td><td>Public Health</td><td><State kind={event.ownershipUnchanged?"good":"warn"}>{event.ownershipUnchanged?"Unchanged":"Requires review"}</State></td></tr>
+     <tr><td>Permission to renew automatically</td><td>License holder</td><td><State kind={event.automaticRenewalPermission?"good":"warn"}>{event.automaticRenewalPermission?"On file":"Not authorized"}</State></td></tr>
     </tbody>
    </table>
   </div>
-  <Explain>Illustrative vendor rule, subject to agency approval: Public Health and Finance validate their records and submit the renewal in December. Any violation, changed ownership, unpaid fee, or missing authorization requires review. This demonstration does not change Colorado license law.</Explain>
+  <Explain>Public Health checks the inspection and business owner. Finance checks that you paid the annual fee. They renew your license only if you gave permission and all required checks pass.</Explain>
   {tour&&<div className="scenario-control"><strong>Test a different inspection result</strong><p>Switch the Public Health record to see what blocks automatic renewal.</p>
     <button type="button" className="tour-button" onClick={()=>onAction(event.inspectionClear?"hold-inspection":"clear-inspection")}>{event.inspectionClear?"Flag inspection issue":"Restore clear inspection"}</button>
   </div>}
