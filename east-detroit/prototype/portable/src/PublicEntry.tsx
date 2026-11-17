@@ -21,9 +21,22 @@ export function PublicWelcome({onSignIn}:EntryProps){
     <section className="public-capabilities" aria-labelledby="public-can-do">
       <h2 id="public-can-do">What you can do here</h2>
       <div className="public-capability-grid">
-        <article><h3>Check your records</h3><p>See the status of your business license, housing application, library loans and other services.</p></article>
-        <article><h3>Get something done</h3><p>Book a recreation facility, renew a library loan, report a street problem or ask about a bill.</p></article>
-        <article><h3>See updates</h3><p>Find out when an agency completes a task or needs more information from you.</p></article>
+        <section aria-labelledby="public-check-records">
+          <h3 id="public-check-records">Check a service</h3>
+          <ul>
+            <li>See the status of a housing application or business license.</li>
+            <li>Check your library loans, water bill or transit balance.</li>
+            <li>Read updates from city and county offices.</li>
+          </ul>
+        </section>
+        <section aria-labelledby="public-make-request">
+          <h3 id="public-make-request">Make a request</h3>
+          <ul>
+            <li>Report a street or park problem.</li>
+            <li>Book a recreation facility.</li>
+            <li>Ask about a water bill or housing application.</li>
+          </ul>
+        </section>
       </div>
     </section>
 

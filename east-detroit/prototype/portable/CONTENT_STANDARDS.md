@@ -80,6 +80,23 @@ Use the project's **prosekeep**, **plain-as-day**, and **red-pen-editor** editor
 - At small widths, support keyboard scrolling or a readable stacked layout; verify at 320px and 200–400% zoom. Do not shrink essential text to fit.
 - No gradients, decorative KPI boxes, animated hover transforms, AI assistant, or glowing glass panels.
 
+## AntiSlopUI interface review
+
+Use [AntiSlopUI](https://github.com/Vanszs/AntiSlopUI) as a **UI review and implementation aid**, alongside [No Slop UI](https://github.com/LeoStehlik/no-slop-ui) and the rules above. Read its [SKILL.md](https://github.com/Vanszs/AntiSlopUI/blob/main/SKILL.md), then use the relevant entries in its [visual patterns](https://github.com/Vanszs/AntiSlopUI/blob/main/references/slop-uiux-patterns.md) and [React/TSX patterns](https://github.com/Vanszs/AntiSlopUI/blob/main/references/slop-code-patterns.md). Do not copy its generic SaaS styling defaults into this government interface.
+
+**Order of authority:** the established East Detroit identity, the project's real services and data boundaries, and public-service accessibility/content requirements take precedence over the skill's suggested color palettes, font pairings, and decorative layout rules. Preserve Archivo, the city red, existing navigation, and the municipal visual system. Explicitly record any skill-default exception that keeps the existing brand.
+
+For every public, sign-in and resident screen:
+- Check for repeated three-column feature cards, gratuitous cards within cards, unnecessary decoration, identical section layouts, fake proof, and generic actions. Replace them with the right structure for the actual records or resident tasks.
+- Keep headings, directions and actions specific. PlainLanguage.gov governs resident copy. Do not introduce sales pitches, invented usage metrics, stock testimonials or unrelated visual flourishes.
+- Verify that links and buttons work; form labels, validation and status feedback are clear; keyboard focus is visible; colors have enough contrast; and status is never shown by color alone.
+- Check semantic landmarks and headings, Escape/focus for any overlays, errors and empty states, small-screen layout, zoom and reduced-motion behavior. Avoid unnecessary custom controls where native HTML works.
+- **Do not mark a test passed because the app builds.** Record `PASS`, `FAIL`, `N-A` or `UNVERIFIED`, with the file or browser observation supporting each claim. Distinguish source inspection from live browser verification.
+- Use AntiSlopUI's severity terms for findings where relevant; address real P0 accessibility/security failures before release. If an issue has not been measured, report it as unverified rather than claiming compliance.
+- Do not apply the framework's demand for asymmetry or a full-bleed visual break to every form, record table or government workflow. Those patterns are optional, and content comes first.
+
+A UI review covers both the normal resident experience and the optional classroom walkthrough. Do not conflate the walkthrough's sample accounts with real resident authentication.
+
 ## Review standards and sources
 
 - Salesforce Lightning Design System 2 accessibility: https://www.lightningdesignsystem.com/2e1ef8501/p/641741
