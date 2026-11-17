@@ -1,52 +1,70 @@
-# My East Detroit — City and County resident services
+# My East Detroit — vendor demonstration
 
-A working vendor demonstration of how residents could access city-county services from a single account. Used in Public Mechanics: students represent departments and independently governed agencies and evaluate the proposed experience, record control, privacy, rules, and liability.
+A resident-facing city-county service portal for a **Public Mechanics** classroom vendor presentation. Students represent East Detroit departments, special districts, regional bodies and other public agencies. They inspect plausible agency services and decide which arrangements should be accepted, limited or rejected.
 
-## Present the portal
+## Start the walkthrough
 
-The opening screen loads the example resident **Maya Rivera**, account **ED-2030-00482**. Each row opens an agency service with an inspectable record and working actions.
+- **Resident portal:** https://east-detroit-operations.vercel.app/
+- **Guided walkthrough for students:** https://east-detroit-operations.vercel.app/?demo=1
+- **Direct stop:** append a step such as \`?demo=1&step=school\` or \`?demo=1&step=authority\`
 
-| Service | Record owner | What the resident can do |
+Anyone can explore the portal without signing in. The **Explore demo** control in the header opens the optional seven-stop vendor walkthrough. The walkthrough offers previous/next, a stop selector, prompts about record authority, and a copyable link. Closing it returns to the normal resident interface. Students may still navigate the service table independently.
+
+## Resident-facing examples
+
+The portal opens with **Maya Rivera**, resident account **ED-2030-00482**, and sample records.
+
+### City and county departments
+
+| Department | Resident experience |
+| --- | --- |
+| Parks, Recreation and Cultural Affairs | View pass, reserve a facility, inspect reservation |
+| Public Health / Finance | Review food establishment license and submit renewal |
+| City Housing Division | View locally administered housing application, evidence and message history |
+| Transportation and Public Works | Submit and track a public works service request |
+
+### Independently governed and outside agencies
+
+| Agency | Vendor-proposed experience | Institutional boundary |
 | --- | --- | --- |
-| Recreation and facilities | Parks, Recreation and Cultural Affairs | View a pass; choose a facility/date/time; confirm a reservation |
-| Business licenses and permits | Public Health, Finance | Inspect food license and renewal status; submit a renewal |
-| Housing assistance | City Housing Division | Inspect application, documents and verification; add a message |
-| Service requests | Transportation and Public Works | View and submit a local service request |
-| Library card and loans | Independent Public Library District | See a patron card and checked-out item; renew a loan |
-| Water and sewer | Independent Water and Sewer Authority | Review bills and service address; submit a billing inquiry |
-| Regional transit (RTD) | Independent Regional Transportation District | View MyRide fare account, purchase stored-value fare products, and plan an illustrative East Detroit journey |
+| A-01 Unified School District | Parent/guardian views student enrollment and requests a verification letter | School assignment and student data belong to the school district, subject to FERPA and Colorado rules |
+| A-02 Public Library District | View card and loans; renew a checked-out item | Patron records remain with the library district and have confidentiality protections |
+| A-03 Water and Sewer Authority | View bills and submit a billing inquiry | Special district controls its own customer records, billing and rates |
+| A-04 Regional Transportation District (RTD) | View MyRide card, fare products and illustrative trip planning | RTD independently controls fares, rider information and transit service |
+| A-05 State Human Services and State IT | Service description; no direct access to state benefit files | State owns statewide program rules and system access |
+| A-06 Regional Housing Authority | View separately administered inquiry and request update | Its own commission, federal contracts and vouchers remain distinct from the City Housing Division |
+| A-07 County Court | Service scope; no personal court files | Judicial records and decisions remain under judicial authority |
+| A-08 Health and Hospital Authority | Service scope; no clinical records | Hospital governance and healthcare privacy apply independently |
 
-The **City Housing Division** and **Regional Housing Authority** are separate. Library and water providers also have their own boards and records. The vendor demonstration does not approve interagency data exchanges, real identity verification, payment processing, or record disclosures.
+These are **illustrations of what a vendor might propose**, not agency participation commitments or authorizations to exchange records. The class decides which examples would be appropriate.
 
-## Classroom use
+## Data and behavior
 
-Open a service belonging to the student department under discussion. Show the record and its source, perform a resident action, and ask what that department would need to authorize, verify, correct, or handle differently. The simulation discussion takes place outside the software.
+All records are synthetic. Browser-local state is stored in localStorage; demo clicks do not submit records to real agencies, process payments, authenticate residents or create interagency access. Sample actions update only the local state and recent activity. **Account and privacy** provides reset (Restore account) and JSON export. The app never needs API keys.
 
-Actions update browser-local sample records and the account activity list. No government systems are connected. **Account and privacy** can create another sample account or restore Maya Rivera. Earlier v1 browser data remains under a separate storage key.
+The same city login can present records from different organizations, but an organization remains responsible for its own records. The portal must not suggest that data sharing transfers policy, clinical, educational, judicial or program decision rights.
 
-## Stack and deployment
+## Design and editorial constraints
 
-Vite, React 19, TypeScript, Helsinki Design System React (hds-react) controls alongside semantic native forms. Existing East Detroit identity: Archivo, ruby #B10F2E, amber #FFCF00, aqua #ACD7CA, blue #68C2F3, off-white #FDFFFF and ink #171717. No hero, AI assistant, government workflow editor, fake KPIs, or classroom narration.
+Maintain the existing East Detroit identity: ruby #B10F2E, amber #FFCF00, aqua #ACD7CA, blue #68C2F3 and off-white #FDFFFF; Archivo; government software tables, labeled forms, accessible status and clear focus. Use Helsinki Design System React and the No Slop UI and Red Pen Editor rules. The guided tour is opt-in; normal resident pages do not carry classroom narration, dramatic hero copy, decorative metrics or chat assistants.
 
-Run npm install && npm run build from east-detroit/prototype/portable. The Vercel project east-detroit-operations builds that folder on pushes to main.
+## Reference patterns
 
-A full WCAG audit, browser testing, and assistive-technology validation remain distinct from compilation.
+- [Digital Iceland: My Pages](https://island.is/en/o/digital-iceland/my-pages/what-an-organization-needs-to-do): agencies retain their records, publish web services, and decide with Digital Iceland how data is shown.
+- [Digital Iceland: About My Pages](https://island.is/en/o/digital-iceland/my-pages/about-my-pages): one interface for service information held by multiple organizations.
+- [Suomi.fi e-Authorizations](https://www.suomi.fi/e-Authorizations): mandate/authority checks for acting on behalf of another person.
+- [Estonian Data Tracker](https://www.ria.ee/en/state-information-system/people-centred-data-exchange/data-tracker): source agencies can provide records of use of personal data.
+- East Detroit student docs: city-county profile, government-and-records, municipal departments and independent-agency references.
 
-## Reference materials
+Do not implement Suomi.fi-style mandates or Data Tracker merely because they are listed as precedents.
 
-- City-county profile and government records: ../student-edition/src
-- City departments, independent agencies, housing precedents and neighborhoods: ../student-edition/src
-- UI guardrails: No Slop UI and Red Pen Editor
+## Build and deployment
 
+Root folder \`east-detroit/prototype/portable\`:
 
-## Regional transit demonstration
+\`\`\`
+npm install
+npm run build
+\`\`\`
 
-The RTD service follows the real MyRide/NextRide account model: stored value, fare products, account history and travel planning. The rider can add simulated funds, buy a 3-hour or day pass, inspect purchases, and change origin/destination to plan an illustrative journey.
-
-Proposed East Detroit feeder and regional connector routes are **not existing RTD service**. The real A Line between Denver Airport Station and Denver Union Station is a separate established connection. Illustrative trip results do not claim live schedules, and no demonstration pass or transaction can be used for travel. The sample $2.75 (3-hour) and $5.50 (day) prices use RTD's **2026 published fare levels** and do not establish 2030 policy. RTD remains an independently governed transit organization, rather than a city department.
-
-Official context:
-- https://www.rtd-denver.com/fares-passes/myride
-- https://www.rtd-denver.com/nextride-app
-- https://www.rtd-denver.com/fares-passes/fares
-- https://www.rtd-denver.com/service-alerts
+Vercel \`east-detroit-operations\` deploys GitHub \`quarterback/field-school\` main branch from this folder. A passing TypeScript/Vite build verifies compilation, not the full browser experience or accessibility conformance.

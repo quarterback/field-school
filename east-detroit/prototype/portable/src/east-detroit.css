@@ -246,3 +246,42 @@ a{color:var(--ruby-dark)}
 .rtd-itinerary>.muted-small{margin:0;padding:13px 17px;border-top:1px solid var(--line)}
 .rtd-independent-note{max-width:860px;border-left:3px solid #5f7770;background:#edf2ef;padding:12px 16px;font-size:13px;line-height:1.6;margin-top:20px}
 @media(max-width:650px){.rtd-fare-option{align-items:flex-start;flex-direction:column;gap:10px}.rtd-itinerary-heading{align-items:flex-start;flex-direction:column;gap:2px}.rtd-legs li{gap:10px}.rtd-route-code{min-width:56px}}
+
+
+/* Participating agencies and the optional guided vendor walkthrough */
+.agency-intro{font-size:13px;color:var(--muted);line-height:1.55;margin:11px 0 14px;max-width:780px}
+.partner-list{margin-top:34px}
+.partner-list .records-table td{vertical-align:middle}
+.demo-switch{border:1px solid var(--ruby);background:var(--white);color:var(--ruby-dark);font-size:13px;font-weight:700;min-height:40px;padding:7px 12px;border-radius:2px;white-space:nowrap}
+.demo-switch:hover,.demo-switch[aria-pressed="true"]{background:var(--ruby);color:var(--white)}
+.guided-tour{background:#f1f5f3;border:1px solid #b4c0b8;border-left:4px solid var(--ruby);padding:17px 19px 16px;margin-bottom:28px}
+.tour-heading{display:flex;justify-content:space-between;align-items:start;gap:18px}
+.tour-counter{font-size:12px;font-weight:700;color:var(--muted)}
+.tour-heading h2{margin:4px 0 8px;font-size:20px;font-weight:800;letter-spacing:-.025em}
+.tour-heading .tour-exit{border:0;background:transparent;color:var(--ruby-dark);font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:3px;min-height:32px;white-space:nowrap}
+.guided-tour>p{margin:0 0 8px;font-size:13px;line-height:1.55}
+.guided-tour .tour-question{margin-bottom:15px}
+.tour-actions{display:flex;align-items:center;flex-wrap:wrap;gap:9px;font-size:13px}
+.tour-actions label{font-weight:700}
+.tour-actions select{border:1px solid #65766c;border-radius:2px;background:var(--white);padding:9px 11px;min-height:42px;max-width:260px;flex:1 1 175px}
+.tour-button{min-height:42px;border:1px solid var(--ink);border-radius:2px;background:var(--white);color:var(--ink);padding:8px 13px;font-weight:700;font-size:13px}
+.tour-button:disabled{opacity:.4}
+.tour-button:hover:not(:disabled){background:#e0e8e2}
+.tour-next{background:var(--ruby);color:var(--white);border-color:var(--ruby)}
+.tour-next:hover:not(:disabled){background:var(--ruby-dark)}
+.tour-copy{border:0;background:transparent;color:var(--ruby-dark);font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:3px;padding:9px 0;margin-left:auto;min-height:42px}
+.tour-copy-status{padding:6px 0 0;color:var(--muted);overflow-wrap:anywhere}
+.service-description{font-size:14px;max-width:760px}
+.service-feedback{background:#e3f2e7;border-left:3px solid #275d40;color:#1b4b30;font-size:13px;padding:11px 13px;margin-top:13px;max-width:750px}
+.agency-boundary{max-width:850px;background:#eef2ef;border-left:3px solid #5a7367;padding:15px 18px;margin:26px 0}
+.agency-boundary strong{font-weight:700;font-size:14px}
+.agency-boundary p{font-size:13px;margin:7px 0 0;line-height:1.6}
+@media(max-width:650px){
+  .head-actions{gap:7px}
+  .demo-switch{font-size:11px;padding:6px 8px;min-height:38px}
+  .tour-heading{align-items:flex-start}
+  .guided-tour{padding:14px}
+  .tour-actions{gap:7px}
+  .tour-copy{margin-left:0}
+  .partner-list{margin-top:26px}
+}

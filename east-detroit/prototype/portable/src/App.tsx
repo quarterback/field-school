@@ -5,10 +5,12 @@ import { ParksService, HousingService, LibraryService, WaterService } from "./Se
 import type { Reservation } from "./ServicePanels";
 import { TransitService } from "./TransitPanel";
 import type { FareProduct } from "./TransitPanel";
+import { SchoolDistrictService, RegionalHousingService, LimitedService } from "./PartnerPanels";
+import { DemoTour, DEMO_STOPS } from "./DemoTour";
 import "./east-detroit.css";
 
 type Page = "home" | "services" | "license" | "requests" | "account" | "register" | "service";
-type ServiceKey = "recreation" | "license" | "housing" | "library" | "water" | "requests" | "transit";
+type ServiceKey = "recreation" | "license" | "housing" | "library" | "water" | "requests" | "transit" | "school" | "authority" | "state" | "court" | "hospital";
 type Account = { id: string; first: string; last: string; email: string; address: string; postal: string; created: string };
 type Ticket = { id: string; category: string; description: string; location: string; created: string; status: string };
 type Activity = { id: string; date: string; description: string; office: string };
@@ -21,6 +23,8 @@ type Portal = {
   waterIssue: string;
   transitBalanceCents: number;
   transitPasses: FareProduct[];
+  schoolLetterRequested: boolean;
+  authorityFollowupRequested: boolean;
   tickets: Ticket[];
   activity: Activity[];
 };
@@ -30,7 +34,7 @@ const sampleAccount: Account = {
   address: "14 Example Lane, Old Watkins", postal: "80137", created: "2030-09-11",
 };
 const initial: Portal = {
-  account: sampleAccount, licenseSubmitted: false, reservations: [], housingMessage: "", libraryRenewed: false, waterIssue: "", transitBalanceCents: 1425, transitPasses: [],
+  account: sampleAccount, licenseSubmitted: false, reservations: [], housingMessage: "", libraryRenewed: false, waterIssue: "", transitBalanceCents: 1425, transitPasses: [], schoolLetterRequested:false, authorityFollowupRequested:false,
   tickets: [{ id: "SR-2030-1048", category: "Street and sidewalk", description: "Streetlight outside the community center is out.", location: "Old Watkins", created: "2030-11-07", status: "In progress" }],
   activity: [
     { id: "ACT-02", date: "2030-11-09", description: "Recreation pass issued", office: "Parks and Recreation" },
@@ -45,6 +49,11 @@ const catalog: {key:ServiceKey;title:string;office:string;description:string;ind
   {key:"library",title:"Library card and loans",office:"East Detroit Public Library District",description:"View your library card and checked-out materials.",independent:true},
   {key:"water",title:"Water and sewer",office:"East Detroit Water and Sewer Authority",description:"View utility bills, service details and billing inquiries.",independent:true},
   {key:"transit",title:"Regional transit (RTD)",office:"Regional Transportation District (RTD)",description:"Manage your MyRide fare account, tickets, and trip planning.",independent:true},
+  {key:"school",title:"Student enrollment",office:"East Detroit Unified School District",description:"View a household enrollment record and request a verification letter.",independent:true},
+  {key:"authority",title:"Regional housing authority",office:"East Detroit Regional Housing Authority",description:"Review a separate housing authority inquiry.",independent:true},
+  {key:"state",title:"State benefit services",office:"State of Colorado Human Services and State IT",description:"State-supervised benefits and eligibility systems.",independent:true},
+  {key:"court",title:"County Court services",office:"East Detroit County Court",description:"Court services governed under judicial authority.",independent:true},
+  {key:"hospital",title:"Hospital and patient services",office:"East Detroit Health and Hospital Authority",description:"Public hospital services and separately held clinical records.",independent:true},
 ];
 const SAMPLE_LICENSE = "FOOD-2030-0184";
 function makeId(prefix:string) {
@@ -100,6 +109,18 @@ export default function App() {
  const [requestForm,setRequestForm] = useState({category:"Street and sidewalk",location:"",description:""});
  const [renewAcknowledged,setRenewAcknowledged] = useState(false);
  const [signup,setSignup] = useState({first:"",last:"",email:"",address:"",postal:"80137",accepted:false});
+ const [tourEnabled,setTourEnabled]=useState(false);
+ const [tourIndex,setTourIndex]=useState(0);
+ const [tourCopyStatus,setTourCopyStatus] = useState("");
+ useEffect(()=>{
+   const params=new URLSearchParams(window.location.search);
+   if(params.get("demo")!=="1") return;
+   const requested=params.get("step");
+   const index=Math.max(0,DEMO_STOPS.findIndex(stop=>stop.id===requested));
+   const stop=DEMO_STOPS[index];
+   setTourEnabled(true);setTourIndex(index);setPage(stop.page);
+   if(stop.service)setSelected(stop.service as ServiceKey);
+ },[]);
  const sample = data.account.id===sampleAccount.id;
  useEffect(()=>{try{localStorage.setItem(KEY,JSON.stringify(data));}catch{}},[data]);
  function go(next:Page) {setPage(next);setNotice("");setShowMenu(false);window.scrollTo({top:0,behavior:"auto"});}
@@ -116,11 +137,14 @@ export default function App() {
    if(key==="requests")return data.tickets.some(t=>t.status!=="Closed")?"Open request":"No requests";
    if(key==="library")return sample?"Active card":"No card";
    if(key==="water")return sample?"Current":"No utility account";
-   return sample?"Active":"No transit account";
+   if(key==="transit")return sample?"Active":"No transit account";
+   if(key==="school")return sample?"Enrolled":"No student record";
+   if(key==="authority")return sample?"Inquiry on file":"No inquiry";
+   return "Separate service";
  }
  function tone(key:ServiceKey):"neutral"|"good"|"warn"|"info" {
-   const s=serviceStatus(key);
-   return ["Active","Active card","Current"].includes(s)?"good":s==="Renewal due"?"warn":["In review","Open request","Renewal submitted"].includes(s)?"info":"neutral";
+   const status=serviceStatus(key);
+   return ["Active","Active card","Current","Enrolled"].includes(status)?"good":status==="Renewal due"?"warn":["In review","Open request","Renewal submitted","Inquiry on file"].includes(status)?"info":"neutral";
  }
  function actionLabel(key:ServiceKey) {
    if(key==="license")return sample?"Review renewal":"View service";
@@ -129,7 +153,10 @@ export default function App() {
    if(key==="housing")return sample?"View application":"View service";
    if(key==="library")return sample?"View library card":"View service";
    if(key==="water")return sample?"View bill":"View service";
-   return sample?"View MyRide account":"View service";
+   if(key==="transit")return sample?"View MyRide account":"View service";
+   if(key==="school")return sample?"View enrollment":"View service";
+   if(key==="authority")return sample?"View inquiry":"View service";
+   return "View agency information";
  }
  function addActivity(description:string,office:string) {
    return {id:makeId("ACT-"),date:"2030-11-17",description,office};
@@ -155,16 +182,36 @@ export default function App() {
      setNotice("Complete the required fields and confirm the account information.");return;
    }
    const account:Account={id:makeId("ED-2030-"),first:signup.first.trim(),last:signup.last.trim(),email:signup.email.trim(),address:signup.address.trim(),postal:signup.postal,created:"2030-11-17"};
-   setData({account,licenseSubmitted:false,reservations:[],housingMessage:"",libraryRenewed:false,waterIssue:"",transitBalanceCents:0,transitPasses:[],tickets:[],activity:[addActivity("Account created","City account service")]});
+   setData({account,licenseSubmitted:false,reservations:[],housingMessage:"",libraryRenewed:false,waterIssue:"",transitBalanceCents:0,transitPasses:[],schoolLetterRequested:false,authorityFollowupRequested:false,tickets:[],activity:[addActivity("Account created","City account service")]});
    setNotice("");
    go("home");
  }
  function restoreDemo() {if(!window.confirm("Replace the current account with the original account?"))return;setData(initial);setNotice("Account restored.");go("home");}
  function selectNav(p:Page) {go(p);}
  const nav:{page:Page;label:string}[]=[
-   {page:"home",label:"Home"},{page:"services",label:"City services"},{page:"license",label:"Licenses and permits"},
+   {page:"home",label:"Home"},{page:"services",label:"All services"},{page:"license",label:"Licenses and permits"},
    {page:"requests",label:"My requests"},{page:"account",label:"Account and privacy"},
  ];
+ function showTourStep(index:number){
+   const safe=Math.min(Math.max(index,0),DEMO_STOPS.length-1);
+   const stop=DEMO_STOPS[safe];
+   setTourEnabled(true);setTourIndex(safe);setTourCopyStatus("");
+   setPage(stop.page);if(stop.service)setSelected(stop.service as ServiceKey);
+   setShowMenu(false);setNotice("");
+   window.history.replaceState(null,"",window.location.pathname+"?demo=1&step="+stop.id);
+   window.scrollTo({top:0,behavior:"auto"});
+ }
+ function toggleTour(){
+   if(tourEnabled){
+     setTourEnabled(false);setTourCopyStatus("");
+     window.history.replaceState(null,"",window.location.pathname);
+   } else showTourStep(0);
+ }
+ async function copyTourLink(){
+   const url=window.location.origin+window.location.pathname+"?demo=1";
+   try{await navigator.clipboard.writeText(url);setTourCopyStatus("Walkthrough link copied.");}
+   catch{setTourCopyStatus("Copy this address: "+url);}
+ }
  const matchingCatalog=catalog.filter(c=>(c.title+" "+c.office+" "+c.description).toLowerCase().includes(serviceSearch.toLowerCase()));
  const current=catalog.find(c=>c.key===selected)||catalog[0];
  return <div className="portal">
@@ -175,7 +222,7 @@ export default function App() {
        <span className="city-seal" aria-hidden="true">ED</span>
        <span><strong>East Detroit</strong><small>City and County Services</small></span>
      </button>
-     <div className="head-actions"><button className="account-menu" onClick={()=>go("account")}>My account <span aria-hidden="true">›</span></button></div>
+     <div className="head-actions"><button className="demo-switch" type="button" aria-pressed={tourEnabled} onClick={toggleTour}>{tourEnabled?"Exit demo":"Explore demo"}</button><button className="account-menu" onClick={()=>go("account")}>My account <span aria-hidden="true">›</span></button></div>
    </div></header>
    <div className="nav-shell"><div className="site-container nav-inner">
      <button className="mobile-nav-btn" aria-expanded={showMenu} onClick={()=>setShowMenu(!showMenu)}>Menu <span aria-hidden="true">{showMenu?"−":"+"}</span></button>
@@ -184,17 +231,30 @@ export default function App() {
      </nav>
    </div></div>
    <main id="page-main" className="site-container main-content">
+     {tourEnabled&&<DemoTour step={tourIndex} onSelect={showTourStep} onClose={toggleTour} onCopy={copyTourLink} copyStatus={tourCopyStatus}/>}
      {page==="home"&&<>
-       <div className="page-intro intro-row"><div><h1>My East Detroit</h1><p>Welcome back, {data.account.first}. Your city and county services are below.</p></div><div className="account-summary"><span>Resident account ID</span><strong>{data.account.id}</strong></div></div>
+       <div className="page-intro intro-row"><div><h1>My East Detroit</h1><p>Welcome back, {data.account.first}. Your services are below.</p></div><div className="account-summary"><span>Resident account ID</span><strong>{data.account.id}</strong></div></div>
        {sample&&!data.licenseSubmitted&&<section className="due-notice" aria-label="Action needed"><div><strong>Business license renewal due</strong><p>Cypress Cafe · Food establishment license {SAMPLE_LICENSE} expires December 31, 2030.</p></div><button className="table-link" onClick={()=>go("license")}>Review renewal <span aria-hidden="true">→</span></button></section>}
        <section className="section-block">
          <div className="section-heading"><h2>My services</h2><button className="text-link" onClick={()=>go("services")}>Browse all services <span aria-hidden="true">→</span></button></div>
          <div className="table-scroll" role="region" aria-label="My services table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Responsible office</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead>
-         <tbody>{catalog.map(c=><tr key={c.key}>
+         <tbody>{catalog.filter(c=>!c.independent).map(c=><tr key={c.key}>
            <td><strong>{c.title}</strong>{c.independent&&<small>Separate public agency</small>}</td>
            <td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td>
            <td className="action-cell"><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)} <span aria-hidden="true">→</span></button></td>
          </tr>)}</tbody></table></div>
+       </section>
+       <section className="section-block partner-list">
+         <div className="section-heading"><h2>Other public agencies</h2></div>
+         <p className="agency-intro">These organizations have their own governing bodies and control their records and services.</p>
+         <div className="table-scroll" role="region" aria-label="Services from independent public agencies" tabIndex={0}><table className="records-table">
+           <thead><tr><th scope="col">Service</th><th scope="col">Responsible agency</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead>
+           <tbody>{catalog.filter(c=>c.independent).map(c=><tr key={c.key}>
+             <td><strong>{c.title}</strong><small>Separate public agency</small></td>
+             <td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td>
+             <td className="action-cell"><button className="table-link" onClick={()=>openService(c.key)}>{actionLabel(c.key)} <span aria-hidden="true">→</span></button></td>
+           </tr>)}</tbody>
+         </table></div>
        </section>
        <div className="home-lower">
          <section className="section-block recent"><div className="section-heading"><h2>Recent activity</h2><button className="text-link" onClick={()=>go("account")}>Account history <span aria-hidden="true">→</span></button></div>
@@ -203,7 +263,7 @@ export default function App() {
        </div>
      </>}
      {page==="services"&&<>
-       <div className="page-intro"><h1>City services</h1><p>Find city services and records from participating public agencies.</p></div>
+       <div className="page-intro"><h1>All services</h1><p>Browse city-county services and services from independent public agencies.</p></div>
        <div className="filter-bar"><label htmlFor="service-search">Find a service</label><input id="service-search" type="search" placeholder="Search services or departments" value={serviceSearch} onChange={e=>setServiceSearch(e.target.value)}/></div>
        <div className="directory-list">{matchingCatalog.map(c=><article className="directory-row" key={c.key}>
          <div><h2>{c.title}</h2><p>{c.description}</p><small>{c.office}{c.independent?" · Independent public agency":""}</small></div>
@@ -266,7 +326,17 @@ export default function App() {
          setData(prev=>({...prev,transitBalanceCents:(prev.transitBalanceCents??1425)-product.priceCents,transitPasses:[product,...(prev.transitPasses||[])],activity:[addActivity("RTD "+product.kind+" purchased","Regional Transportation District"),...prev.activity]}));
        }}/>}
 
-
+       {selected==="school"&&<SchoolDistrictService sample={sample} requested={data.schoolLetterRequested||false} onRequest={()=>{
+         setData(prev=>({...prev,schoolLetterRequested:true,activity:[addActivity("School enrollment verification requested","East Detroit Unified School District"),...prev.activity]}));
+         setNotice("Enrollment verification request recorded.");
+       }}/>}
+       {selected==="authority"&&<RegionalHousingService sample={sample} requested={data.authorityFollowupRequested||false} onRequest={()=>{
+         setData(prev=>({...prev,authorityFollowupRequested:true,activity:[addActivity("Housing authority status update requested","East Detroit Regional Housing Authority"),...prev.activity]}));
+         setNotice("Status update request recorded.");
+       }}/>}
+       {selected==="state"&&<LimitedService title="State benefit services" agency="State of Colorado Human Services and State IT" outsideSystem="State-supervised benefits are administered through state and county program systems. Your county office can advise on applications and review procedures." reason="The State of Colorado sets program rules and system access. A city portal cannot issue a benefit decision or obtain full case records without state and federal authority."/>}
+       {selected==="court"&&<LimitedService title="County Court services" agency="East Detroit County Court" outsideSystem="Court case files, calendars and filings are handled by the County Court. Personal case information is not displayed here." reason="The Court exercises judicial authority separate from the city executive. Court records and decisions remain under judicial rules and control."/>}
+       {selected==="hospital"&&<LimitedService title="Hospital and patient services" agency="East Detroit Health and Hospital Authority" outsideSystem="For appointments and medical records, use the hospital's patient services. This city portal does not display clinical charts." reason="The public hospital authority is separately governed. Clinical records require the hospital's authorization and applicable healthcare privacy protections."/>}
      </>}
      {page==="account"&&<>
        <div className="page-intro"><h1>Account and privacy</h1><p>Your city login profile and the records kept by individual services are separate.</p></div>
@@ -274,7 +344,7 @@ export default function App() {
          <div className="account-actions"><Action secondary onClick={()=>go("register")}>Create another account</Action><button className="text-link" onClick={restoreDemo}>Restore account</button></div>
        </section>
        <aside className="privacy-panel"><h2>How information is used</h2><p>Your city account helps you reach participating services. It does not give each department access to all of your records.</p><p>A change here does not automatically update a library, housing, public health or utility record.</p><p>Account information entered here is stored in this browser.</p><button className="text-link" onClick={()=>saveDownload("east-detroit-account.json",JSON.stringify(data,null,2))}>Download account information ↗</button></aside></div>
-       <section className="section-block"><div className="section-heading"><h2>Service records</h2></div><div className="table-scroll" role="region" aria-label="Service records table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Record holder</th><th scope="col">Connection</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead><tbody>
+       <section className="section-block"><div className="section-heading"><h2>Service records</h2></div><div className="table-scroll" role="region" aria-label="Service records table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Record holder</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead><tbody>
          {catalog.map(c=><tr key={c.key}><td><strong>{c.title}</strong></td><td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td><td><button className="table-link" onClick={()=>openService(c.key)}>View <span aria-hidden="true">→</span></button></td></tr>)}
        </tbody></table></div></section>
        <section className="section-block"><div className="section-heading"><h2>Account activity</h2></div><ol className="activity-list">{data.activity.map(a=><li key={a.id}><div><strong>{a.description}</strong><span>{a.office}</span></div><time>{dateFormat(a.date)}</time></li>)}</ol></section>
