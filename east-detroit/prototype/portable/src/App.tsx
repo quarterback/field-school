@@ -29,7 +29,7 @@ const initial: Portal = {
   account: sampleAccount, licenseSubmitted: false, reservations: [], housingMessage: "", libraryRenewed: false, waterIssue: "",
   tickets: [{ id: "SR-2030-1048", category: "Street and sidewalk", description: "Streetlight outside the community center is out.", location: "Old Watkins", created: "2030-11-07", status: "In progress" }],
   activity: [
-    { id: "ACT-02", date: "2030-11-09", description: "Recreation pass linked to your account", office: "Parks and Recreation" },
+    { id: "ACT-02", date: "2030-11-09", description: "Recreation pass issued", office: "Parks and Recreation" },
     { id: "ACT-01", date: "2030-11-07", description: "Service request SR-2030-1048 received", office: "Public Works" },
   ],
 };
@@ -206,7 +206,7 @@ export default function App() {
      </>}
      {page==="license"&&<>
        <div className="page-intro"><button className="back-link" onClick={()=>go("home")}>← My services</button><h1>Business license</h1><p>Review an existing license or submit a renewal request.</p></div>
-       {!sample?<div className="empty-state"><h2>No license linked</h2><p>No business license is connected to this account. Contact Public Health to link an existing license.</p><Action secondary onClick={()=>go("services")}>Browse services</Action></div>:<>
+       {!sample?<div className="empty-state"><h2>No business license on file</h2><p>No business license is recorded for this account. Contact Public Health to locate an existing license.</p><Action secondary onClick={()=>go("services")}>Browse services</Action></div>:<>
          <div className="detail-header"><div><small>Food establishment license</small><h2>Cypress Cafe</h2><p>License {SAMPLE_LICENSE}</p></div><Badge tone={data.licenseSubmitted?"info":"warn"}>{data.licenseSubmitted?"Renewal submitted":"Renewal due"}</Badge></div>
          <dl className="details-grid"><div><dt>License holder</dt><dd>Maya Rivera · Cypress Cafe</dd></div><div><dt>Issued by</dt><dd>City-County Public Health</dd></div><div><dt>Expiration</dt><dd>December 31, 2030</dd></div><div><dt>Premises</dt><dd>22 Example Plaza, Watkins, CO 80137</dd></div><div><dt>Payment record</dt><dd>Finance and Procurement</dd></div><div><dt>Inspection</dt><dd>Annual review required</dd></div></dl>
          <section className="form-section"><h2>{data.licenseSubmitted?"Renewal status":"Renew this license"}</h2>
@@ -261,7 +261,7 @@ export default function App() {
          <div className="account-actions"><Action secondary onClick={()=>go("register")}>Create another account</Action><button className="text-link" onClick={restoreDemo}>Restore account</button></div>
        </section>
        <aside className="privacy-panel"><h2>How information is used</h2><p>Your city account helps you reach participating services. It does not give each department access to all of your records.</p><p>A change here does not automatically update a library, housing, public health or utility record.</p><p>Account information entered here is stored in this browser.</p><button className="text-link" onClick={()=>saveDownload("east-detroit-account.json",JSON.stringify(data,null,2))}>Download account information ↗</button></aside></div>
-       <section className="section-block"><div className="section-heading"><h2>Service connections</h2></div><div className="table-scroll" role="region" aria-label="Service connections table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Record holder</th><th scope="col">Connection</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead><tbody>
+       <section className="section-block"><div className="section-heading"><h2>Service records</h2></div><div className="table-scroll" role="region" aria-label="Service records table" tabIndex={0}><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Record holder</th><th scope="col">Connection</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead><tbody>
          {catalog.map(c=><tr key={c.key}><td><strong>{c.title}</strong></td><td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td><td><button className="table-link" onClick={()=>openService(c.key)}>View <span aria-hidden="true">→</span></button></td></tr>)}
        </tbody></table></div></section>
        <section className="section-block"><div className="section-heading"><h2>Account activity</h2></div><ol className="activity-list">{data.activity.map(a=><li key={a.id}><div><strong>{a.description}</strong><span>{a.office}</span></div><time>{dateFormat(a.date)}</time></li>)}</ol></section>
