@@ -8,29 +8,28 @@ export function PublicWelcome({onSignIn}:EntryProps){
   return <div className="public-entry">
     <section className="public-intro" aria-labelledby="public-title">
       <div className="public-intro-copy">
-        <h1 id="public-title">Your public services, in one place.</h1>
-        <p>See your city and county services alongside information from participating public agencies. When a change is already verified, some services can be updated without another application.</p>
+        <h1 id="public-title">Get city and county services in one place</h1>
+        <p>Sign in to check your permits, bills, service requests and notices. You can also see information from the library, school district and other public agencies.</p>
         <button type="button" className="public-primary-action" onClick={onSignIn}>Sign in to My East Detroit</button>
       </div>
-      <div className="public-feature" aria-label="Services that work together">
-        <h2>Less paperwork when life changes</h2>
-        <p>A registered birth can start family services. A license can renew when required records are already clear. Your account shows what has happened and what still needs your attention.</p>
+      <div className="public-feature" aria-label="Updates without another form">
+        <h2>Some updates need no new form</h2>
+        <p>When an agency already has the information it needs, it can make some updates for you. Sign in to see what changed and whether you need to do anything.</p>
       </div>
     </section>
 
     <section className="public-capabilities" aria-labelledby="public-can-do">
       <h2 id="public-can-do">What you can do here</h2>
       <div className="public-capability-grid">
-        <article><h3>See what's already handled</h3><p>Review completed updates, notices and decisions without starting another request.</p></article>
-        <article><h3>Take care of what remains</h3><p>Confirm an offer, book a facility, send a question or check a service request.</p></article>
-        <article><h3>Find the right agency</h3><p>See services from the city-county and separately governed school, library, water, transit and housing agencies.</p></article>
+        <article><h3>Check your records</h3><p>See the status of your business license, housing application, library loans and other services.</p></article>
+        <article><h3>Get something done</h3><p>Book a recreation facility, renew a library loan, report a street problem or ask about a bill.</p></article>
+        <article><h3>See updates</h3><p>Find out when an agency completes a task or needs more information from you.</p></article>
       </div>
     </section>
 
     <section className="public-service-note" aria-labelledby="public-agencies">
-      <h2 id="public-agencies">Your records stay with the agencies responsible for them.</h2>
-      <p>My East Detroit brings participating services together. Each department or public agency remains responsible for its own records, rules and decisions.</p>
-      <button type="button" className="public-text-action" onClick={onSignIn}>Access your account <span aria-hidden="true">→</span></button>
+      <h2 id="public-agencies">Who keeps your records?</h2>
+      <p>Each department and public agency keeps its own records and makes its own decisions. Using My East Detroit does not give every agency access to your information.</p>
     </section>
   </div>;
 }
@@ -46,7 +45,7 @@ export function PublicSignIn({onContinue,onBack,initialEmail}:{
     event.preventDefault();
     const person=DEMO_RESIDENTS.find(p=>p.account.email.toLowerCase()===email.trim().toLowerCase());
     if(!person){
-      setError("Choose one of the sample accounts below to continue.");
+      setError("We could not find that account. Choose an email address from the list on this page.");
       return;
     }
     setError("");
@@ -56,22 +55,22 @@ export function PublicSignIn({onContinue,onBack,initialEmail}:{
     <button type="button" className="back-link" onClick={onBack}>← Back to My East Detroit</button>
     <div className="public-login-layout">
       <div className="public-login-form">
-        <h1>Sign in</h1>
-        <p>Access your services and updates through My East Detroit.</p>
+        <h1>Sign in to My East Detroit</h1>
+        <p>Choose an account to see its services and updates.</p>
         <form onSubmit={submit}>
           <div className="form-field">
-            <label htmlFor="public-email">Email address</label>
-            <input id="public-email" type="email" autoComplete="username" required value={email}
+            <label htmlFor="public-email">Account email address</label>
+            <input id="public-email" type="email" autoComplete="off" required value={email}
               onChange={event=>{setEmail(event.target.value);setError("");}} />
           </div>
           {error&&<p className="public-login-error" role="alert">{error}</p>}
-          <button type="submit" className="public-primary-action">Continue</button>
+          <button type="submit" className="public-primary-action">Continue to account</button>
         </form>
-        <p className="public-login-note">This preview uses sample accounts. No password or identity verification is required. Please do not enter personal information.</p>
+        <p className="public-login-note">These are example accounts. You do not need a password. Do not enter your own email address.</p>
       </div>
       <aside className="public-account-picker" aria-labelledby="example-accounts">
-        <h2 id="example-accounts">Try an example account</h2>
-        <p>Select a resident to fill the email field, then continue to their services.</p>
+        <h2 id="example-accounts">Choose a resident</h2>
+        <p>Select a name to fill in the email address.</p>
         <div className="public-account-options">
           {DEMO_RESIDENTS.map(person=><button type="button" key={person.key}
             className={email.toLowerCase()===person.account.email.toLowerCase()?"selected":""}
