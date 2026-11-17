@@ -2,6 +2,22 @@
 
 A resident-facing city-county service portal for a **Public Mechanics** classroom vendor presentation. Students represent East Detroit departments, special districts, regional bodies and other public agencies. They inspect plausible agency services and decide which arrangements should be accepted, limited or rejected.
 
+## Example residents
+
+The vendor walkthrough includes three selectable residents. Each has a separate city account reference and a distinct service history:
+
+| Resident | Age in 2030 | Context | What to demonstrate |
+| --- | ---: | --- | --- |
+| Maya Rivera | 39 | Parent and business owner | Business license renewal, child enrollment record, local housing case, transit, utility and library records |
+| Avery Chen | 22 | Renter and transit rider | MyRide account, library loans and public works request; empty states for services they do not use |
+| Helen Carter | 72 | Homeowner and recreation member | Recreation pass, water bill, library loans and a public works issue |
+
+**Age appears only in the optional vendor walkthrough.** The ordinary resident interface shows each person's own records without categorizing them by age. Staff, students and other viewers can compare service access without creating a real account.
+
+Use the resident selector at the top of the walkthrough or open a direct link such as \`?demo=1&resident=avery\` or \`?demo=1&resident=helen\`. Actions are retained separately for each resident in the local browser; they are not synced across students' computers. \`Reset examples\` restores all three.
+
+See [interface and content standards](CONTENT_STANDARDS.md) for Salesforce Lightning, Microsoft Fluent, USWDS and editorial rules.
+
 ## Start the walkthrough
 
 - **Resident portal:** https://east-detroit-operations.vercel.app/

@@ -13,6 +13,11 @@ export const DEMO_STOPS: DemoStop[] = [
     question:"Which services should be visible here without a separate sign-in?"
   },
   {
+    id:"people",title:"Compare resident accounts",page:"home",
+    purpose:"Choose Maya, Avery, or Helen in the resident selector. Each person has different services and records.",
+    question:"What should someone see when they have no record with a particular department?"
+  },
+  {
     id:"school",title:"Independent school district",page:"service",service:"school",
     purpose:"See how a parent could view a school enrollment record and request verification.",
     question:"What evidence proves a resident may view a child's record, and who resolves errors?"

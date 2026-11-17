@@ -17,7 +17,9 @@ function Block({title,children,className=""}:{title:string;children:ReactNode;cl
 function Empty({name}:{name:string}) {
  return <div className="empty-state"><h2>No {name} on file</h2><p>This account has no related record. Contact the responsible agency to apply or find an existing record.</p></div>;
 }
-export function ParksService({sample,resident,reservations,onBook}:Basic&{resident:string;reservations:Reservation[];onBook:(r:Reservation)=>void}) {
+export function ParksService({sample,resident,reservations,onBook,passNumber,validThrough}:Basic&{
+  resident:string;reservations:Reservation[];onBook:(r:Reservation)=>void;passNumber?:string;validThrough?:string
+}) {
  const [facility,setFacility]=useState("Watkins Recreation Center");
  const [date,setDate]=useState("2030-11-24");
  const [time,setTime]=useState("4:00 PM – 5:00 PM");
@@ -31,10 +33,10 @@ export function ParksService({sample,resident,reservations,onBook}:Basic&{reside
   setError("");
  }
  return <div className="program">
-  <RecordHead category="Parks, Recreation and Cultural Affairs" title={resident} number="Resident pass REC-2030-2048" status="Active"/>
+  <RecordHead category="Parks, Recreation and Cultural Affairs" title={resident} number={"Resident pass "+(passNumber||"REC-2030-2048")} status="Active"/>
   <Facts items={[
-   {label:"Pass number",value:"REC-2030-2048"},{label:"Membership",value:"City resident"},
-   {label:"Valid through",value:"March 31, 2031"},{label:"Facility access",value:"Resident rate"},
+   {label:"Pass number",value:passNumber||"REC-2030-2048"},{label:"Membership",value:"City resident"},
+   {label:"Valid through",value:validThrough||"March 31, 2031"},{label:"Facility access",value:"Resident rate"},
   ]}/>
   <Block title="My reservations">
    {reservations.length?<div className="table-scroll" role="region" aria-label="Recreation reservations" tabIndex={0}><table className="records-table"><thead><tr><th>Confirmation</th><th>Facility</th><th>Date and time</th><th>Status</th></tr></thead><tbody>{reservations.map(r=><tr key={r.id}><td><strong>{r.id}</strong></td><td>{r.facility}</td><td>{dateLabel(r.date)} · {r.time}</td><td><span className="status status-good">{r.status}</span></td></tr>)}</tbody></table></div>:<p className="muted-small">No reservations on file.</p>}
@@ -74,17 +76,19 @@ export function HousingService({sample,message,onSend}:Basic&{message:string;onS
   </section>
  </div>;
 }
-export function LibraryService({sample,resident,renewed,onRenew}:Basic&{resident:string;renewed:boolean;onRenew:()=>void}){
+export function LibraryService({sample,resident,renewed,onRenew,cardNumber,itemTitle,homeBranch}:Basic&{
+  resident:string;renewed:boolean;onRenew:()=>void;cardNumber?:string;itemTitle?:string;homeBranch?:string
+}){
  if(!sample)return <Empty name="library account"/>;
  return <div className="program">
-  <RecordHead category="East Detroit Public Library District / Independent public agency" title="Library account" number="Library card LIB-2030-0924" status="Active"/>
+  <RecordHead category="East Detroit Public Library District / Independent public agency" title="Library account" number={"Library card "+(cardNumber||"LIB-2030-0924")} status="Active"/>
   <Facts items={[
-    {label:"Cardholder",value:resident},{label:"Card number",value:"LIB-2030-0924"},
-    {label:"Home branch",value:"Watkins Public Library"},{label:"Account standing",value:"Good standing"},
+    {label:"Cardholder",value:resident},{label:"Card number",value:cardNumber||"LIB-2030-0924"},
+    {label:"Home branch",value:homeBranch||"Watkins Public Library"},{label:"Account standing",value:"Good standing"},
   ]}/>
   <Block title="Checked-out items">
    <div className="table-scroll" role="region" tabIndex={0} aria-label="Library loans"><table className="records-table"><thead><tr><th>Item</th><th>Due date</th><th>Action</th></tr></thead><tbody><tr>
-    <td><strong>Colorado Road Atlas</strong><small>Print collection</small></td>
+    <td><strong>{itemTitle||"Colorado Road Atlas"}</strong><small>Print collection</small></td>
     <td>{renewed?"Dec. 26, 2030":"Dec. 12, 2030"}</td>
     <td>{renewed?<span className="status status-good">Renewed</span>:<button className="table-link" onClick={onRenew}>Renew item →</button>}</td>
    </tr></tbody></table></div>
@@ -92,20 +96,22 @@ export function LibraryService({sample,resident,renewed,onRenew}:Basic&{resident
   <Block title="Library records" className="program-policy"><p>The Library District is independently governed. Patron and borrowing records remain with the district and are protected under Colorado law.</p></Block>
  </div>;
 }
-export function WaterService({sample,issue,onInquiry}:Basic&{issue:string;onInquiry:(issue:string)=>void}){
+export function WaterService({sample,issue,onInquiry,accountNumber,serviceAddress,amountDue}:Basic&{
+  issue:string;onInquiry:(issue:string)=>void;accountNumber?:string;serviceAddress?:string;amountDue?:string
+}){
  const [draft,setDraft]=useState("");
  if(!sample)return <Empty name="utility account"/>;
  function send(e:FormEvent<HTMLFormElement>){e.preventDefault();if(draft.trim().length<10)return;onInquiry(draft.trim());setDraft("");}
  return <div className="program">
-  <RecordHead category="East Detroit Water and Sewer Authority / Independent public agency" title="Water and sewer" number="Utility account WSA-2030-00821" status="Current"/>
+  <RecordHead category="East Detroit Water and Sewer Authority / Independent public agency" title="Water and sewer" number={"Utility account "+(accountNumber||"WSA-2030-00821")} status="Current"/>
   <Facts items={[
-   {label:"Service address",value:"14 Example Lane, Old Watkins, CO 80137"},
-   {label:"Account number",value:"WSA-2030-00821"},
-   {label:"Amount due",value:"$82.40"},{label:"Due date",value:"December 15, 2030"},
+   {label:"Service address",value:serviceAddress||"14 Example Lane, Old Watkins, CO 80137"},
+   {label:"Account number",value:accountNumber||"WSA-2030-00821"},
+   {label:"Amount due",value:amountDue||"$82.40"},{label:"Due date",value:"December 15, 2030"},
   ]}/>
   <Block title="Billing history">
    <div className="table-scroll" role="region" tabIndex={0} aria-label="Water and sewer bills"><table className="records-table"><thead><tr><th>Statement</th><th>Service period</th><th>Amount</th><th>Status</th></tr></thead><tbody>
-    <tr><td>November 2030</td><td>Oct. 1–31</td><td>$82.40</td><td><span className="status status-warn">Due Dec. 15</span></td></tr>
+    <tr><td>November 2030</td><td>Oct. 1–31</td><td>{amountDue||"$82.40"}</td><td><span className="status status-warn">Due Dec. 15</span></td></tr>
     <tr><td>October 2030</td><td>Sept. 1–30</td><td>$75.18</td><td><span className="status status-good">Paid</span></td></tr>
    </tbody></table></div>
   </Block>

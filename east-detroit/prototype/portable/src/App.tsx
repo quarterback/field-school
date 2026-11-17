@@ -7,6 +7,7 @@ import { TransitService } from "./TransitPanel";
 import type { FareProduct } from "./TransitPanel";
 import { SchoolDistrictService, RegionalHousingService, LimitedService } from "./PartnerPanels";
 import { DemoTour, DEMO_STOPS } from "./DemoTour";
+import { DEMO_RESIDENTS, hasResidentService, residentRecords, getDemoResident } from "./DemoResidents";
 import "./east-detroit.css";
 
 type Page = "home" | "services" | "license" | "requests" | "account" | "register" | "service";
@@ -28,7 +29,7 @@ type Portal = {
   tickets: Ticket[];
   activity: Activity[];
 };
-const KEY = "east-detroit-resident-portal-v2";
+const KEY = "east-detroit-resident-portal-v3";
 const sampleAccount: Account = {
   id: "ED-2030-00482", first: "Maya", last: "Rivera", email: "maya.rivera@example.org",
   address: "14 Example Lane, Old Watkins", postal: "80137", created: "2030-09-11",
@@ -41,6 +42,85 @@ const initial: Portal = {
     { id: "ACT-01", date: "2030-11-07", description: "Service request SR-2030-1048 received", office: "Public Works" },
   ],
 };
+
+type ProfileStore = { active: string; profiles: Record<string,Portal> };
+const FIRST_KEY = "maya";
+const RESIDENT_SEED: ProfileStore = {
+  active: FIRST_KEY,
+  profiles: {
+    maya: initial,
+    avery: {
+      ...initial,
+      account: DEMO_RESIDENTS[1].account,
+      licenseSubmitted: false,
+      reservations: [],
+      housingMessage: "",
+      libraryRenewed: false,
+      waterIssue: "",
+      transitBalanceCents: 825,
+      transitPasses: [],
+      schoolLetterRequested: false,
+      authorityFollowupRequested: false,
+      tickets: [
+        {id:"SR-2030-1159",category:"Street and sidewalk",description:"Crosswalk signal near Central Station does not respond.",location:"Watkins Junction",created:"2030-11-08",status:"Received"},
+      ],
+      activity: [
+        {id:"ACT-AV-2",date:"2030-11-10",description:"Transit fare account updated",office:"Regional Transportation District"},
+        {id:"ACT-AV-1",date:"2030-11-08",description:"Service request SR-2030-1159 received",office:"Public Works"},
+      ],
+    },
+    helen: {
+      ...initial,
+      account: DEMO_RESIDENTS[2].account,
+      licenseSubmitted: false,
+      reservations: [],
+      housingMessage: "",
+      libraryRenewed: false,
+      waterIssue: "",
+      transitBalanceCents: 0,
+      transitPasses: [],
+      schoolLetterRequested: false,
+      authorityFollowupRequested: false,
+      tickets: [
+        {id:"SR-2030-0816",category:"Park maintenance",description:"Damaged bench beside the trail entrance.",location:"Old Watkins",created:"2030-11-06",status:"In progress"},
+      ],
+      activity: [
+        {id:"ACT-HE-2",date:"2030-11-12",description:"Water bill issued",office:"Water and Sewer Authority"},
+        {id:"ACT-HE-1",date:"2030-11-06",description:"Service request SR-2030-0816 received",office:"Public Works"},
+      ],
+    },
+  },
+};
+function initialStore():ProfileStore {
+  const profiles={...RESIDENT_SEED.profiles};
+  if(typeof window==="undefined")return {active:FIRST_KEY,profiles};
+  try {
+    const saved=window.localStorage.getItem(KEY);
+    if(saved){
+      const parsed=JSON.parse(saved) as ProfileStore;
+      if(parsed?.profiles&&typeof parsed.profiles==="object"){
+        const restored={...profiles};
+        for(const [key,value] of Object.entries(parsed.profiles)){
+          if(value?.account?.id && Array.isArray(value?.tickets) && Array.isArray(value?.activity)) restored[key]=value;
+        }
+        return {active:restored[parsed.active]?parsed.active:FIRST_KEY,profiles:restored};
+      }
+    }
+    const legacy=window.localStorage.getItem("east-detroit-resident-portal-v2");
+    if(legacy){
+      const old=JSON.parse(legacy) as Portal;
+      if(old?.account?.id && Array.isArray(old.tickets)&&Array.isArray(old.activity)){
+        if(old.account.id===initial.account.id)profiles.maya={...initial,...old};
+        else{
+          profiles[old.account.id]={...initial,...old};
+          return {active:old.account.id,profiles};
+        }
+      }
+    }
+  }catch{/* Browser storage is optional. */}
+  return {active:FIRST_KEY,profiles};
+}
+
 const catalog: {key:ServiceKey;title:string;office:string;description:string;independent:boolean}[] = [
   {key:"recreation",title:"Recreation and facilities",office:"Parks, Recreation and Cultural Affairs",description:"View your pass, book a facility and manage reservations.",independent:false},
   {key:"license",title:"Business licenses and permits",office:"Public Health · Finance",description:"Review a license, inspection record and renewal.",independent:false},
@@ -58,17 +138,6 @@ const catalog: {key:ServiceKey;title:string;office:string;description:string;ind
 const SAMPLE_LICENSE = "FOOD-2030-0184";
 function makeId(prefix:string) {
   return prefix + Math.floor(1000 + Math.random()*9000).toString();
-}
-function readPortal():Portal {
-  if (typeof window === "undefined") return initial;
-  try {
-    const raw = window.localStorage.getItem(KEY);
-    if (raw) {
-      const value = JSON.parse(raw) as Portal;
-      if (value.account?.id && Array.isArray(value.tickets) && Array.isArray(value.activity)) return {...value,transitBalanceCents:typeof value.transitBalanceCents==="number"?value.transitBalanceCents:(value.account.id===sampleAccount.id?1425:0),transitPasses:Array.isArray(value.transitPasses)?value.transitPasses:[]};
-    }
-  } catch { /* invalid or unavailable browser storage */ }
-  return initial;
 }
 function saveDownload(filename:string, contents:string) {
   const url = URL.createObjectURL(new Blob([contents],{type:"application/json"}));
@@ -100,7 +169,18 @@ function Action({children,onClick,secondary=false,disabled=false,type="button"}:
   >{children}</Button>;
 }
 export default function App() {
- const [data,setData] = useState<Portal>(readPortal);
+ const [profileStore,setProfileStore]=useState<ProfileStore>(initialStore);
+ const data=profileStore.profiles[profileStore.active]||initial;
+ const record=residentRecords(profileStore.active);
+ const hasRecord=(key:ServiceKey)=>hasResidentService(profileStore.active,key);
+ function setData(next:Portal|((previous:Portal)=>Portal)){
+   setProfileStore(previous=>{
+     const active=previous.active;
+     const current=previous.profiles[active]||initial;
+     const updated=typeof next==="function"?next(current):next;
+     return {...previous,profiles:{...previous.profiles,[active]:updated}};
+   });
+ }
  const [page,setPage] = useState<Page>("home");
  const [selected,setSelected] = useState<ServiceKey>("recreation");
  const [notice,setNotice] = useState("");
@@ -114,15 +194,20 @@ export default function App() {
  const [tourCopyStatus,setTourCopyStatus] = useState("");
  useEffect(()=>{
    const params=new URLSearchParams(window.location.search);
-   if(params.get("demo")!=="1") return;
+   const requestedResident=params.get("resident");
+   if(requestedResident&&RESIDENT_SEED.profiles[requestedResident]){
+     setProfileStore(prev=>({...prev,active:requestedResident}));
+   }
+   if(params.get("demo")!=="1")return;
    const requested=params.get("step");
    const index=Math.max(0,DEMO_STOPS.findIndex(stop=>stop.id===requested));
    const stop=DEMO_STOPS[index];
    setTourEnabled(true);setTourIndex(index);setPage(stop.page);
    if(stop.service)setSelected(stop.service as ServiceKey);
+
  },[]);
- const sample = data.account.id===sampleAccount.id;
- useEffect(()=>{try{localStorage.setItem(KEY,JSON.stringify(data));}catch{}},[data]);
+ const sample=hasRecord("license");
+ useEffect(()=>{try{localStorage.setItem(KEY,JSON.stringify(profileStore));}catch{}},[profileStore]);
  function go(next:Page) {setPage(next);setNotice("");setShowMenu(false);window.scrollTo({top:0,behavior:"auto"});}
  function openService(key:ServiceKey) {
    setSelected(key);
@@ -130,32 +215,32 @@ export default function App() {
    else if(key==="requests") go("requests");
    else go("service");
  }
- function serviceStatus(key:ServiceKey) {
-   if(key==="recreation")return sample?"Active":"No pass";
-   if(key==="license")return sample?(data.licenseSubmitted?"Renewal submitted":"Renewal due"):"No license";
-   if(key==="housing")return sample?"In review":"No application";
+ function serviceStatus(key:ServiceKey){
+   if(key==="recreation")return hasRecord(key)?"Active":"No pass";
+   if(key==="license")return hasRecord(key)?(data.licenseSubmitted?"Renewal submitted":"Renewal due"):"No license";
+   if(key==="housing")return hasRecord(key)?"In review":"No application";
    if(key==="requests")return data.tickets.some(t=>t.status!=="Closed")?"Open request":"No requests";
-   if(key==="library")return sample?"Active card":"No card";
-   if(key==="water")return sample?"Current":"No utility account";
-   if(key==="transit")return sample?"Active":"No transit account";
-   if(key==="school")return sample?"Enrolled":"No student record";
-   if(key==="authority")return sample?"Inquiry on file":"No inquiry";
+   if(key==="library")return hasRecord(key)?"Active card":"No card";
+   if(key==="water")return hasRecord(key)?"Current":"No utility account";
+   if(key==="transit")return hasRecord(key)?"Active":"No transit account";
+   if(key==="school")return hasRecord(key)?"Enrolled":"No student record";
+   if(key==="authority")return hasRecord(key)?"Inquiry on file":"No inquiry";
    return "Separate service";
  }
- function tone(key:ServiceKey):"neutral"|"good"|"warn"|"info" {
-   const status=serviceStatus(key);
-   return ["Active","Active card","Current","Enrolled"].includes(status)?"good":status==="Renewal due"?"warn":["In review","Open request","Renewal submitted","Inquiry on file"].includes(status)?"info":"neutral";
+ function tone(key:ServiceKey):"neutral"|"good"|"warn"|"info"{
+   const value=serviceStatus(key);
+   return ["Active","Active card","Current","Enrolled"].includes(value)?"good":value==="Renewal due"?"warn":["In review","Open request","Renewal submitted","Inquiry on file"].includes(value)?"info":"neutral";
  }
- function actionLabel(key:ServiceKey) {
-   if(key==="license")return sample?"Review renewal":"View service";
+ function actionLabel(key:ServiceKey){
+   if(key==="license")return hasRecord(key)?"Review renewal":"View service";
    if(key==="requests")return "View requests";
-   if(key==="recreation")return sample?"View pass and bookings":"View service";
-   if(key==="housing")return sample?"View application":"View service";
-   if(key==="library")return sample?"View library card":"View service";
-   if(key==="water")return sample?"View bill":"View service";
-   if(key==="transit")return sample?"View MyRide account":"View service";
-   if(key==="school")return sample?"View enrollment":"View service";
-   if(key==="authority")return sample?"View inquiry":"View service";
+   if(key==="recreation")return hasRecord(key)?"View pass and bookings":"View service";
+   if(key==="housing")return hasRecord(key)?"View application":"View service";
+   if(key==="library")return hasRecord(key)?"View library card":"View service";
+   if(key==="water")return hasRecord(key)?"View bill":"View service";
+   if(key==="transit")return hasRecord(key)?"View MyRide account":"View service";
+   if(key==="school")return hasRecord(key)?"View enrollment":"View service";
+   if(key==="authority")return hasRecord(key)?"View inquiry":"View service";
    return "View agency information";
  }
  function addActivity(description:string,office:string) {
@@ -182,11 +267,21 @@ export default function App() {
      setNotice("Complete the required fields and confirm the account information.");return;
    }
    const account:Account={id:makeId("ED-2030-"),first:signup.first.trim(),last:signup.last.trim(),email:signup.email.trim(),address:signup.address.trim(),postal:signup.postal,created:"2030-11-17"};
-   setData({account,licenseSubmitted:false,reservations:[],housingMessage:"",libraryRenewed:false,waterIssue:"",transitBalanceCents:0,transitPasses:[],schoolLetterRequested:false,authorityFollowupRequested:false,tickets:[],activity:[addActivity("Account created","City account service")]});
+   const key=account.id;
+   setProfileStore(prev=>({...prev,active:key,profiles:{...prev.profiles,[key]:{
+     ...initial,account,licenseSubmitted:false,reservations:[],housingMessage:"",
+     libraryRenewed:false,waterIssue:"",transitBalanceCents:0,transitPasses:[],
+     schoolLetterRequested:false,authorityFollowupRequested:false,
+     tickets:[],activity:[addActivity("Account created","City account service")]
+   }}}));
    setNotice("");
    go("home");
  }
- function restoreDemo() {if(!window.confirm("Replace the current account with the original account?"))return;setData(initial);setNotice("Account restored.");go("home");}
+ function restoreDemo(){
+   if(!window.confirm("Restore the original Maya Rivera account?"))return;
+   setProfileStore(prev=>({...prev,active:FIRST_KEY,profiles:{...prev.profiles,maya:initial}}));
+   setNotice("Account restored.");go("home");
+ }
  function selectNav(p:Page) {go(p);}
  const nav:{page:Page;label:string}[]=[
    {page:"home",label:"Home"},{page:"services",label:"All services"},{page:"license",label:"Licenses and permits"},
@@ -198,7 +293,10 @@ export default function App() {
    setTourEnabled(true);setTourIndex(safe);setTourCopyStatus("");
    setPage(stop.page);if(stop.service)setSelected(stop.service as ServiceKey);
    setShowMenu(false);setNotice("");
-   window.history.replaceState(null,"",window.location.pathname+"?demo=1&step="+stop.id);
+   const url=new URL(window.location.href);
+   url.searchParams.set("demo","1");url.searchParams.set("step",stop.id);
+   if(getDemoResident(profileStore.active))url.searchParams.set("resident",profileStore.active);
+   window.history.replaceState(null,"",url.pathname+url.search);
    window.scrollTo({top:0,behavior:"auto"});
  }
  function toggleTour(){
@@ -207,10 +305,33 @@ export default function App() {
      window.history.replaceState(null,"",window.location.pathname);
    } else showTourStep(0);
  }
+ function changeResident(key:string){
+   if(!profileStore.profiles[key])return;
+   setProfileStore(prev=>({...prev,active:key}));
+   setNotice("");setTourCopyStatus("");
+   if(tourEnabled){
+     const url=new URL(window.location.href);
+     url.searchParams.set("resident",key);
+     window.history.replaceState(null,"",url.pathname+url.search);
+   }
+ }
+ function resetProfiles(){
+   if(!window.confirm("Reset the three example resident accounts?"))return;
+   setProfileStore(prev=>({...prev,active:FIRST_KEY,profiles:{
+     ...prev.profiles,
+     maya:RESIDENT_SEED.profiles.maya,
+     avery:RESIDENT_SEED.profiles.avery,
+     helen:RESIDENT_SEED.profiles.helen,
+   }}));
+   setNotice("Example accounts restored.");
+ }
  async function copyTourLink(){
-   const url=window.location.origin+window.location.pathname+"?demo=1";
-   try{await navigator.clipboard.writeText(url);setTourCopyStatus("Walkthrough link copied.");}
-   catch{setTourCopyStatus("Copy this address: "+url);}
+   const url=new URL(window.location.href);
+   url.searchParams.set("demo","1");
+   url.searchParams.delete("step");
+   if(getDemoResident(profileStore.active))url.searchParams.set("resident",profileStore.active);
+   try{await navigator.clipboard.writeText(url.toString());setTourCopyStatus("Walkthrough link copied.");}
+   catch{setTourCopyStatus("Copy this address: "+url.toString());}
  }
  const matchingCatalog=catalog.filter(c=>(c.title+" "+c.office+" "+c.description).toLowerCase().includes(serviceSearch.toLowerCase()));
  const current=catalog.find(c=>c.key===selected)||catalog[0];
@@ -231,7 +352,16 @@ export default function App() {
      </nav>
    </div></div>
    <main id="page-main" className="site-container main-content">
-     {tourEnabled&&<DemoTour step={tourIndex} onSelect={showTourStep} onClose={toggleTour} onCopy={copyTourLink} copyStatus={tourCopyStatus}/>}
+     {tourEnabled&&<><div className="demo-residents">
+       <label htmlFor="demo-resident">Example resident</label>
+       <select id="demo-resident" value={profileStore.active} onChange={event=>changeResident(event.target.value)}>
+         {DEMO_RESIDENTS.map(person=><option key={person.key} value={person.key}>{person.account.first+" "+person.account.last}+" · "+person.age}</option>)}
+         {!getDemoResident(profileStore.active)&&<option value={profileStore.active}>{data.account.first+" "+data.account.last}</option>}
+       </select>
+       <span className="demo-resident-note">{getDemoResident(profileStore.active)?.context||"New account"}</span>
+       <button type="button" className="text-link demo-reset" onClick={resetProfiles}>Reset examples</button>
+     </div>
+     <DemoTour step={tourIndex} onSelect={showTourStep} onClose={toggleTour} onCopy={copyTourLink} copyStatus={tourCopyStatus}/></>}
      {page==="home"&&<>
        <div className="page-intro intro-row"><div><h1>My East Detroit</h1><p>Welcome back, {data.account.first}. Your services are below.</p></div><div className="account-summary"><span>Resident account ID</span><strong>{data.account.id}</strong></div></div>
        {sample&&!data.licenseSubmitted&&<section className="due-notice" aria-label="Action needed"><div><strong>Business license renewal due</strong><p>Cypress Cafe · Food establishment license {SAMPLE_LICENSE} expires December 31, 2030.</p></div><button className="table-link" onClick={()=>go("license")}>Review renewal <span aria-hidden="true">→</span></button></section>}
@@ -304,33 +434,33 @@ export default function App() {
      </>}
      {page==="service"&&<>
        <div className="page-intro"><button className="back-link" onClick={()=>go("home")}>← My services</button><h1>{current.title}</h1><p>{current.office}</p></div>
-       {selected==="recreation"&&<ParksService sample={sample} resident={data.account.first+" "+data.account.last} reservations={data.reservations||[]} onBook={reservation=>{
+       {selected==="recreation"&&<ParksService sample={hasRecord("recreation")} passNumber={record.parkPass} validThrough={record.parkThrough} resident={data.account.first+" "+data.account.last} reservations={data.reservations||[]} onBook={reservation=>{
          setData(prev=>({...prev,reservations:[...(prev.reservations||[]),reservation],activity:[addActivity("Facility reservation "+reservation.id+" confirmed","Parks and Recreation"),...prev.activity]}));
          setNotice("Reservation "+reservation.id+" confirmed.");
        }}/>}
-       {selected==="housing"&&<HousingService sample={sample} message={data.housingMessage||""} onSend={message=>{
+       {selected==="housing"&&<HousingService sample={hasRecord("housing")} message={data.housingMessage||""} onSend={message=>{
          setData(prev=>({...prev,housingMessage:message,activity:[addActivity("Message added to housing application","City Housing Division"),...prev.activity]}));
          setNotice("Your message was added to the application.");
        }}/>}
-       {selected==="library"&&<LibraryService sample={sample} resident={data.account.first+" "+data.account.last} renewed={data.libraryRenewed||false} onRenew={()=>{
+       {selected==="library"&&<LibraryService sample={hasRecord("library")} cardNumber={record.libraryCard} itemTitle={record.libraryItem} homeBranch={record.libraryBranch} resident={data.account.first+" "+data.account.last} renewed={data.libraryRenewed||false} onRenew={()=>{
          setData(prev=>({...prev,libraryRenewed:true,activity:[addActivity("Library loan renewed","Public Library District"),...prev.activity]}));
          setNotice("Loan renewed through December 26, 2030.");
        }}/>}
-       {selected==="water"&&<WaterService sample={sample} issue={data.waterIssue||""} onInquiry={message=>{
+       {selected==="water"&&<WaterService sample={hasRecord("water")} accountNumber={record.waterAccount} serviceAddress={record.waterAddress} amountDue={record.waterBalance} issue={data.waterIssue||""} onInquiry={message=>{
          setData(prev=>({...prev,waterIssue:message,activity:[addActivity("Water billing inquiry recorded","Water and Sewer Authority"),...prev.activity]}));
          setNotice("Billing inquiry recorded.");
        }}/>}
-       {selected==="transit"&&<TransitService sample={sample} balanceCents={data.transitBalanceCents??(sample?1425:0)} passes={data.transitPasses||[]} onAddFunds={()=>{
-         setData(prev=>({...prev,transitBalanceCents:(prev.transitBalanceCents??1425)+1000,activity:[addActivity("RTD stored value added","Regional Transportation District"),...prev.activity]}));
+       {selected==="transit"&&<TransitService sample={hasRecord("transit")} cardLastFour={record.transitCard} balanceCents={data.transitBalanceCents??(hasRecord("transit")?1425:0)} passes={data.transitPasses||[]} onAddFunds={()=>{
+         setData(prev=>({...prev,transitBalanceCents:(prev.transitBalanceCents??0)+1000,activity:[addActivity("RTD stored value added","Regional Transportation District"),...prev.activity]}));
        }} onPurchase={product=>{
-         setData(prev=>({...prev,transitBalanceCents:(prev.transitBalanceCents??1425)-product.priceCents,transitPasses:[product,...(prev.transitPasses||[])],activity:[addActivity("RTD "+product.kind+" purchased","Regional Transportation District"),...prev.activity]}));
+         setData(prev=>({...prev,transitBalanceCents:(prev.transitBalanceCents??0)-product.priceCents,transitPasses:[product,...(prev.transitPasses||[])],activity:[addActivity("RTD "+product.kind+" purchased","Regional Transportation District"),...prev.activity]}));
        }}/>}
 
-       {selected==="school"&&<SchoolDistrictService sample={sample} requested={data.schoolLetterRequested||false} onRequest={()=>{
+       {selected==="school"&&<SchoolDistrictService sample={hasRecord("school")} requested={data.schoolLetterRequested||false} onRequest={()=>{
          setData(prev=>({...prev,schoolLetterRequested:true,activity:[addActivity("School enrollment verification requested","East Detroit Unified School District"),...prev.activity]}));
          setNotice("Enrollment verification request recorded.");
        }}/>}
-       {selected==="authority"&&<RegionalHousingService sample={sample} requested={data.authorityFollowupRequested||false} onRequest={()=>{
+       {selected==="authority"&&<RegionalHousingService sample={hasRecord("authority")} requested={data.authorityFollowupRequested||false} onRequest={()=>{
          setData(prev=>({...prev,authorityFollowupRequested:true,activity:[addActivity("Housing authority status update requested","East Detroit Regional Housing Authority"),...prev.activity]}));
          setNotice("Status update request recorded.");
        }}/>}

@@ -14,8 +14,8 @@ const stops:Origin[]=["Old Watkins","Watkins Junction","East Detroit Central Sta
 const destinations:Destination[]=["Denver Airport Station","Denver Union Station"];
 const money=(cents:number)=>new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"}).format(cents/100);
 function Summary({label,value}:{label:string;value:string}){return <div><dt>{label}</dt><dd>{value}</dd></div>;}
-export function TransitService({sample,balanceCents,passes,onAddFunds,onPurchase}:{
- sample:boolean;balanceCents:number;passes:FareProduct[];
+export function TransitService({sample,balanceCents,passes,onAddFunds,onPurchase,cardLastFour}:{
+ sample:boolean;balanceCents:number;passes:FareProduct[];cardLastFour?:string;
  onAddFunds:()=>void;onPurchase:(product:FareProduct)=>void;
 }){
  const [origin,setOrigin]=useState<Origin>("Watkins Junction");
@@ -34,11 +34,11 @@ export function TransitService({sample,balanceCents,passes,onAddFunds,onPurchase
  return <div className="program rtd-service">
   <div className="program-heading"><div>
     <span className="record-type">Regional Transportation District / Independent public agency</span>
-    <h2>MyRide account</h2><p>Card ending 4821</p>
+    <h2>MyRide account</h2><p>Card ending {cardLastFour||"4821"}</p>
    </div><span className="status status-good">Active</span></div>
   <dl className="program-facts">
     <Summary label="Available stored value" value={money(balanceCents)}/>
-    <Summary label="Card" value="MyRide •••• 4821"/>
+    <Summary label="Card" value={"MyRide •••• "+(cardLastFour||"4821")}/>
     <Summary label="Fare category" value="Standard"/>
     <Summary label="Card status" value="Active"/>
   </dl>

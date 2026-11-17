@@ -285,3 +285,25 @@ a{color:var(--ruby-dark)}
   .tour-copy{margin-left:0}
   .partner-list{margin-top:26px}
 }
+
+
+/* The account chooser is visible only inside the optional vendor walkthrough. */
+.demo-residents{
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  padding:13px 17px;margin:0 0 12px;
+  background:#e8f1eb;border:1px solid var(--line);
+  font-size:13px;
+}
+.demo-residents label{font-weight:700;flex-shrink:0}
+.demo-residents select{
+  border:1px solid #596d61;border-radius:2px;background:var(--white);color:var(--ink);
+  padding:8px 10px;min-height:44px;min-width:200px;max-width:100%;
+}
+.demo-resident-note{color:var(--muted);flex:1 1 200px;line-height:1.4}
+.demo-residents .demo-reset{margin-left:auto;white-space:nowrap}
+@media(max-width:650px){
+  .demo-residents{padding:13px 12px;gap:8px}
+  .demo-residents select{flex:1 1 220px}
+  .demo-resident-note{flex-basis:100%}
+  .demo-residents .demo-reset{margin-left:0}
+}
