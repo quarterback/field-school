@@ -355,7 +355,7 @@ export default function App() {
      {tourEnabled&&<><div className="demo-residents">
        <label htmlFor="demo-resident">Example resident</label>
        <select id="demo-resident" value={profileStore.active} onChange={event=>changeResident(event.target.value)}>
-         {DEMO_RESIDENTS.map(person=><option key={person.key} value={person.key}>{person.account.first+" "+person.account.last}+" · "+person.age}</option>)}
+         {DEMO_RESIDENTS.map(person=><option key={person.key} value={person.key}>{person.account.first+" "+person.account.last+" · "+person.age}</option>)}
          {!getDemoResident(profileStore.active)&&<option value={profileStore.active}>{data.account.first+" "+data.account.last}</option>}
        </select>
        <span className="demo-resident-note">{getDemoResident(profileStore.active)?.context||"New account"}</span>
