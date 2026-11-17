@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type { FormEvent } from "react";
-import { Button, TextInput } from "hds-react";
+import { Button, ButtonVariant, TextInput } from "hds-react";
 import "./east-detroit.css";
 
 type Page = "home" | "services" | "license" | "requests" | "account" | "register" | "service";
@@ -73,7 +73,7 @@ function Action({children,onClick,secondary=false,disabled=false,type="button"}:
 }) {
   return <Button
     type={type} onClick={onClick} disabled={disabled}
-    variant={secondary?"secondary":"primary"}
+    variant={secondary?ButtonVariant.Secondary:ButtonVariant.Primary}
     theme={secondary?{
       "--background-color":"#fdffff","--background-color-hover":"#eef1ed","--background-color-active":"#e6ece7",
       "--border-color":"#171717","--border-color-hover":"#171717","--border-color-active":"#171717",
