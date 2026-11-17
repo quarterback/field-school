@@ -13,7 +13,7 @@ The portal now demonstrates two services initiated by verified agency events rat
 
 ## Example residents
 
-The vendor walkthrough includes three selectable residents. Each has a separate city account reference and a distinct service history:
+The vendor walkthrough includes four selectable residents. Each has a distinct service history. Internal account keys keep their local records separate:
 
 | Resident | Age in 2030 | Context | What to demonstrate |
 | --- | ---: | --- | --- |
@@ -38,7 +38,7 @@ Anyone can explore the portal without signing in. The **Explore demo** control i
 
 ## Resident-facing examples
 
-The portal opens with **Maya Rivera**, resident account **ED-2030-00482**, and sample records.
+The portal opens with **Maya Rivera** and sample records.
 
 ### City and county departments
 

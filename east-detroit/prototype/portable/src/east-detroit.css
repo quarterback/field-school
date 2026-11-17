@@ -42,10 +42,6 @@ a{color:var(--ruby-dark)}
 .page-intro{margin-bottom:27px}
 .page-intro h1{font-size:clamp(28px,3vw,38px);line-height:1.2;letter-spacing:-.045em;font-weight:800;margin:0 0 9px}
 .page-intro p{font-size:16px;margin:0;color:var(--muted);max-width:730px}
-.intro-row{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
-.account-summary{padding:15px 19px;border:1px solid var(--line);background:#f1f5f3;min-width:250px}
-.account-summary>span{display:block;font-size:12px;color:var(--muted)}
-.account-summary strong{display:block;font-size:19px;font-weight:800;letter-spacing:-.02em;margin:3px 0}
 .section-block{margin:0 0 30px}
 .section-heading{display:flex;align-items:baseline;justify-content:space-between;gap:20px;border-bottom:2px solid var(--ink);margin:0 0 0;padding-bottom:12px}
 .section-heading h2,.section-block>h2{margin:0;font-size:22px;font-weight:800;letter-spacing:-.035em}
@@ -145,9 +141,7 @@ a{color:var(--ruby-dark)}
 .page-footer a{font-weight:700}
 @media(max-width:880px){
  .site-container{width:min(100% - 32px,1192px)}
- .intro-row{align-items:flex-start}
  .account-columns{grid-template-columns:1fr}
- .account-summary{min-width:220px}
  .details-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
  .page-footer .site-container{flex-wrap:wrap;padding:18px 0}
 }
@@ -166,8 +160,6 @@ a{color:var(--ruby-dark)}
  .primary-nav button{text-align:left;width:100%;border-bottom:1px solid var(--line)}
  .primary-nav button.active{border-left:4px solid var(--ruby);border-bottom-color:var(--line)}
  .main-content{padding-top:17px}
-  .intro-row{display:block}
- .account-summary{margin-top:18px}
  .records-table{min-width:620px}
  .records-table th,.records-table td{padding:11px 12px}
  .records-table th:first-child,.records-table td:first-child{position:sticky;left:0;background:var(--white);min-width:160px}

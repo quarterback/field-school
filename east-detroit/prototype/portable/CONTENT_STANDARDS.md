@@ -4,7 +4,7 @@ These rules apply to the resident portal and vendor walkthrough. They supplement
 
 ## Screen model
 
-- **Normal resident view:** The app behaves like a municipal service. The resident sees their name, stable city account reference, services they can use, record statuses and actions. Never label someone by age or fictional demographic category on the resident page.
+- **Normal resident view:** The app behaves like a municipal service. The resident sees their name, services they can use, record statuses and actions. Never label someone by age or fictional demographic category on the resident page.
 - **Opt-in vendor walkthrough:** The same portal reveals a resident selector and a guided sequence for classroom evaluation. Switch among Maya (age 39), Avery (22), and Helen (72) to see differences in records and practical tasks. The walkthrough never pretends to be a second government account or a department approval process.
 - **Independent agency context:** Schools, library, utilities, RTD, courts, hospital and regional housing authority retain their own governing authority. Show realistic example records for willing participants, and honest service boundaries where sensitive access has not been proposed. No automatic cross-agency file access.
 - **Record separation:** A newly selected resident must never see another person's licence, student information, library history or bills. Browser state for one example resident must not alter another's records.
@@ -22,7 +22,7 @@ These rules apply to the resident portal and vendor walkthrough. They supplement
 
 ### Numbers and IDs
 
-- Use one **resident account ID** on the resident account summary and account detail, with a stable, legible format \`ED-2030-00482\`. Age is not an identity credential.
+- Do not show an account identifier unless a real account-support or verification task requires it. Keep internal keys in the data model, not the resident interface. Age is not an identity credential.
 - Show a licence, case, card, request, or bill reference on its own detail screen only when it helps identify the relevant record.
 - Do not produce random-looking identifiers in headings, badges, fake transaction logs, or every table column.
 - Preserve case IDs and record numbers when the user needs to follow up or distinguish between records. Do not remove them mechanically for brevity.
@@ -58,8 +58,8 @@ These rules apply to the resident portal and vendor walkthrough. They supplement
 
 ## Acceptance checks
 
-1. Open the public app with the default example resident, verify the Resident Account ID and source-agency names.
-2. Open \`?demo=1\`; select each resident and confirm name, account ID, status and available records change.
+1. Open the public app with the default example resident; verify the name, personal services and source-agency names.
+2. Open \`?demo=1\`; select each resident and confirm name, status and available records change without exposing internal account IDs.
 3. Make a reservation, renew an item or submit a local request for one resident; switch accounts and confirm the record was not copied.
 4. Refresh and confirm each resident's local activity persists. Reset sample residents and confirm all fixtures return to the initial state.
 5. Open \`?demo=1&resident=helen\` in a fresh browser and confirm Helen's account loads.
