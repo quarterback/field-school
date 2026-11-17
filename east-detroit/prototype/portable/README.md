@@ -105,4 +105,6 @@ npm install
 npm run build
 \`\`\`
 
+Accessibility: the portal targets WCAG 2.2 AA. After building, run `npm run check:a11y` to scan every screen with axe-core and the reflow, text spacing, target size and focus checks in [ACCESSIBILITY.md](ACCESSIBILITY.md). GitHub runs the same check on every push to this folder.
+
 Vercel \`east-detroit-operations\` deploys GitHub \`quarterback/field-school\` main branch from this folder. A passing TypeScript/Vite build verifies compilation, not the full browser experience or accessibility conformance.

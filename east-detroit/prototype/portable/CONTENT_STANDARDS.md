@@ -116,4 +116,4 @@ A UI review covers both the normal resident experience and the optional classroo
 3. Make a reservation, renew an item or submit a local request for one resident; switch accounts and confirm the record was not copied.
 4. Refresh and confirm each resident's local activity persists. Reset sample residents and confirm all fixtures return to the initial state.
 5. Open \`?demo=1&resident=helen\` in a fresh browser and confirm Helen's account loads.
-6. Test keyboard tab order, focus, error states, 320px layout and screen reader names. A successful TypeScript/Vite build alone is not an accessibility audit.
+6. Run `npm run check:a11y` (WCAG 2.2 AA, see [ACCESSIBILITY.md](ACCESSIBILITY.md)), then test keyboard tab order, error states and screen reader output by hand. A successful TypeScript/Vite build alone is not an accessibility audit.

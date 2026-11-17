@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { FormEvent } from "react";
 import { Button, ButtonVariant, TextInput } from "hds-react";
 import { ParksService, HousingService, LibraryService, WaterService } from "./ServicePanels";
@@ -238,6 +238,19 @@ export default function App() {
  const life=data.lifeEvent||LIFE_EVENT_SEED;
 
  useEffect(()=>{try{localStorage.setItem(KEY,JSON.stringify(profileStore));}catch{}},[profileStore]);
+ // WCAG 2.4.2 and 2.4.3: each screen gets its own page title, and after moving to a new
+ // screen keyboard and screen reader focus starts at that screen's main heading.
+ const firstScreen=useRef(true);
+ useEffect(()=>{
+   const frame=requestAnimationFrame(()=>{
+     const heading=document.querySelector<HTMLElement>("#page-main h1");
+     const name=heading?.textContent?.trim();
+     document.title=name&&name!=="My East Detroit"?`${name} | My East Detroit`:"My East Detroit | City and County Services";
+     if(firstScreen.current){firstScreen.current=false;return;}
+     if(heading){if(!heading.hasAttribute("tabindex"))heading.setAttribute("tabindex","-1");heading.focus({preventScroll:true});}
+   });
+   return ()=>cancelAnimationFrame(frame);
+ },[entry,page,selected]);
  function go(next:Page) {setPage(next);setNotice("");setShowMenu(false);window.scrollTo({top:0,behavior:"auto"});}
  function enterPortal(key:string){
    if(!profileStore.profiles[key])return;
@@ -418,9 +431,9 @@ export default function App() {
    <a href="#page-main" className="skip-link">Skip to main content</a>
    <div className="topline"><div className="site-container"><span>City and County of East Detroit</span></div></div>
    <header className="site-header"><div className="site-container head-inner">
-     <button className="city-brand" onClick={()=>entry==="portal"?go("home"):setEntry("welcome")} aria-label="My East Detroit home">
+     <button className="city-brand" onClick={()=>entry==="portal"?go("home"):setEntry("welcome")}>
        <span className="city-seal" aria-hidden="true">ED</span>
-       <span><strong>East Detroit</strong><small>City and County Services</small></span>
+       <span><strong>East Detroit</strong>{" "}<small>City and County Services</small><span className="visually-hidden"> home</span></span>
      </button>
      <div className="head-actions">
        {entry==="portal"?<>

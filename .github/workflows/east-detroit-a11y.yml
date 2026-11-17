@@ -1,0 +1,33 @@
+name: East Detroit accessibility check
+
+on:
+  push:
+    paths:
+      - "east-detroit/prototype/portable/**"
+      - ".github/workflows/east-detroit-a11y.yml"
+  pull_request:
+    paths:
+      - "east-detroit/prototype/portable/**"
+      - ".github/workflows/east-detroit-a11y.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  wcag-22-aa:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: east-detroit/prototype/portable
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: WCAG 2.2 AA check
+        run: CHROME_PATH="$(command -v google-chrome)" npm run check:a11y

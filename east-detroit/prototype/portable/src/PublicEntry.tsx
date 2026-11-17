@@ -38,7 +38,10 @@ export function PublicWelcome({onSignIn}:EntryProps){
   function search(event:FormEvent<HTMLFormElement>){
     event.preventDefault();
     setSubmitted(query);
-    document.getElementById("public-services")?.scrollIntoView({behavior:"smooth",block:"start"});
+    const reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const target=document.getElementById("public-services");
+    target?.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"});
+    target?.focus({preventScroll:true});
   }
   return <div className="public-home">
     <section className="home-hero" aria-labelledby="public-title">
@@ -60,7 +63,7 @@ export function PublicWelcome({onSignIn}:EntryProps){
       </div>
     </section>
 
-    <section id="public-services" className="home-container home-services" aria-labelledby="public-services-title">
+    <section id="public-services" className="home-container home-services" aria-labelledby="public-services-title" tabIndex={-1}>
       <h2 id="public-services-title">{term?"Services that match your search":"Popular services"}</h2>
       <p className="home-section-lede" aria-live="polite">{term
         ?(services.length?`Showing services that match \u201c${submitted.trim()}\u201d. Sign in to use a service.`:`No popular service matches \u201c${submitted.trim()}\u201d. Sign in to see every service.`)

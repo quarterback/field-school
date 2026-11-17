@@ -49,7 +49,7 @@ a{color:var(--ruby-dark)}
 .text-link,.table-link,.back-link{border:0;background:transparent;color:var(--ruby-dark);padding:5px 1px;text-decoration:underline;text-underline-offset:3px;font-size:14px;font-weight:700;text-align:left}
 .text-link:hover,.table-link:hover,.back-link:hover{color:var(--ruby)}
 .text-link span,.table-link span{margin-left:4px;text-decoration:none}
-.table-scroll{width:100%;overflow-x:auto;scrollbar-color:#677b71 #f2f5f3;scrollbar-width:auto}
+.table-scroll{position:relative;width:100%;overflow-x:auto;scrollbar-color:#677b71 #f2f5f3;scrollbar-width:auto}
 .table-scroll:focus-visible{outline:3px solid var(--ruby);outline-offset:2px}
 .records-table{width:100%;border-collapse:collapse;font-size:14px;text-align:left}
 .records-table th{background:#e9efeb;font-weight:700;padding:12px 14px;white-space:nowrap;vertical-align:middle;}
@@ -478,3 +478,14 @@ a{color:var(--ruby-dark)}
   .home-help>img{height:300px}
   .home-help-panel{margin-top:-48px;padding:26px 22px 28px}
 }
+
+/* WCAG 2.2 AA fixes found by scripts/a11y-check.mjs. Keep these unless the check still passes without them. */
+@media(max-width:560px){
+  .head-inner{flex-wrap:wrap;row-gap:10px;padding:10px 0}
+  .head-actions{flex-wrap:wrap;row-gap:4px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
+/* Headings and sections that receive focus from script are not controls; no focus ring on them. */
+h1[tabindex="-1"]:focus,section[tabindex="-1"]:focus{outline:none}

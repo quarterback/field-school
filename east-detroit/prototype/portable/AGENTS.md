@@ -9,5 +9,6 @@ These rules apply to all work in this directory.
 5. Preserve the existing East Detroit brand, navigation, accessibility, realistic service records and institutional boundaries. Avoid classroom disclaimers and vendor jargon on normal resident pages. The sample account picker must still say that it is a sample and must not imply real authentication.
 6. Do not add dividers, generic status cards, invented IDs, or decorative sections to compensate for unclear copy.
 7. Do not treat a code build as a content or UI audit. Check the sign-in page, task flows, forms and resident screens. Report PASS, FAIL, N-A or UNVERIFIED for AntiSlopUI audit items, citing code or browser evidence. Confirm residents understand the next step and that each status matches actual UI behavior. Do not mark untested items as PASS.
+8. Meet WCAG 2.2 AA on every screen. Follow the built in rules in [ACCESSIBILITY.md](ACCESSIBILITY.md). Run `npm run build && npm run check:a11y` before committing UI changes; a failing check means the work is not done. Add any new screen to the check. Record manual accessibility checks as PASS, FAIL, N-A or UNVERIFIED in the run's after action record.
 
 Residents should never have to understand the application's architecture to use a city service.
