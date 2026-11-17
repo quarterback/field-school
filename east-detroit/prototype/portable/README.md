@@ -4,7 +4,9 @@ A resident-facing city-county service portal for a **Public Mechanics** classroo
 
 ## Public entry and sign-in
 
-The root URL now opens a resident-facing **My East Detroit** product page instead of immediately showing someone else's account. It introduces the service, gives concrete examples of verified life events and automatic updates, and explains how city-county and independent agency records remain separately controlled.
+The root URL opens a public **My East Detroit** homepage instead of someone else's account. It follows the pattern of city homepages such as hel.fi and boston.gov: a full width image of the city with the headline, a service search and sign in in an overlapping panel, a list of popular services with the office that handles each one, the birth and license renewal examples, the independent agencies that show records in the portal, and a 311 help panel.
+
+The three images are rendered concept scenes of East Detroit in 2030 (Civic Square, Central Station and the Box Elder Creek greenway), in `public/assets/`. They are drawn, not photographed, because the city is fictional. The scripts that render them are in [`../render-scenes`](../render-scenes). The homepage search filters the popular services list; every service link leads to the sample sign in.
 
 Select **Sign in to My East Detroit** to reach a dedicated entry screen. Enter the email for one of the four included example residents, or select one of the sample accounts to fill the email and continue. A visible note explains that the prototype does not authenticate anyone or require a real password. No real account credentials are collected.
 

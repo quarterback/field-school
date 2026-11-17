@@ -427,8 +427,10 @@ export default function App() {
          <button className="demo-switch" type="button" aria-pressed={tourEnabled} onClick={toggleTour}>{tourEnabled?"Exit demo":"Explore demo"}</button>
          <button className="account-menu" onClick={()=>go("account")}>My account <span aria-hidden="true">›</span></button>
          <button className="public-header-link" type="button" onClick={signOut}>Sign out</button>
-       </>:<button className="public-header-link public-header-signin" type="button"
-           onClick={()=>setEntry(entry==="welcome"?"signin":"welcome")}>{entry==="welcome"?"Sign in":"Back to home"}</button>}
+       </>:<>{entry==="welcome"&&<nav className="public-anchor-nav" aria-label="On this page">
+         <a href="#public-services">Services</a><a href="#public-agencies">Public agencies</a><a href="#public-help">Get help</a>
+       </nav>}<button className="public-header-link public-header-signin" type="button"
+           onClick={()=>setEntry(entry==="welcome"?"signin":"welcome")}>{entry==="welcome"?"Sign in":"Back to home"}</button></>}
      </div>
    </div></header>
    {entry==="portal"&&<div className="nav-shell"><div className="site-container nav-inner">
@@ -437,7 +439,7 @@ export default function App() {
        {nav.map(item=><button key={item.page} className={page===item.page?"active":""} onClick={()=>selectNav(item.page)} aria-current={page===item.page?"page":undefined}>{item.label}</button>)}
      </nav>
    </div></div>}
-   <main id="page-main" className={entry==="portal"?"site-container main-content":"site-container public-content"}>
+   <main id="page-main" className={entry==="portal"?"site-container main-content":entry==="welcome"?"public-home-main":"site-container public-content"}>
      {entry==="welcome"&&<PublicWelcome onSignIn={()=>{setEntry("signin");window.scrollTo({top:0,behavior:"auto"});}}/>}
      {entry==="signin"&&<PublicSignIn
        initialEmail={getDemoResident(profileStore.active)?.account.email||DEMO_RESIDENTS[0].account.email}
