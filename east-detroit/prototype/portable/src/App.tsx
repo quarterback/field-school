@@ -41,7 +41,7 @@ const catalog: {key:ServiceKey;title:string;office:string;description:string;ind
 const SAMPLE_LICENSE = "FOOD-2030-0184";
 const titleFor = (page:Page) => ({
   home:"My account",services:"City services",license:"Business licences and permits",
-  requests:"My service requests",account:"Account and privacy",register:"Create a demo account",service:"Service details",
+  requests:"My service requests",account:"Account and privacy",register:"Create an account",service:"Service details",
 })[page];
 function makeId(prefix:string) {
   return prefix + Math.floor(1000 + Math.random()*9000).toString();
@@ -138,7 +138,7 @@ export default function App() {
    if(!renewAcknowledged) {setNotice("Confirm that the business details are unchanged.");return;}
    if(data.licenseSubmitted) return;
    setData(prev=>({...prev,licenseSubmitted:true,activity:[addActivity("Food licence renewal submitted for review","Public Health"),...prev.activity]}));
-   setNotice("Renewal submitted in this demonstration. Public Health still must review the licence and inspections. No payment was taken.");
+   setNotice("Renewal request saved. Public Health review is still required.");
  }
  function submitRequest(event:FormEvent<HTMLFormElement>) {
    event.preventDefault();
@@ -146,19 +146,19 @@ export default function App() {
    const ticket:Ticket={id:makeId("SR-2030-"),category:requestForm.category,description:requestForm.description.trim(),location:requestForm.location.trim(),created:"2030-11-17",status:"Received"};
    setData(prev=>({...prev,tickets:[ticket,...prev.tickets],activity:[addActivity("Service request "+ticket.id+" received","Public Works"),...prev.activity]}));
    setRequestForm({category:"Street and sidewalk",location:"",description:""});
-   setNotice("Request "+ticket.id+" received in the simulation. No report was sent to a real department.");
+   setNotice("Request "+ticket.id+" saved to your account.");
  }
  function submitSignup(event:FormEvent<HTMLFormElement>) {
    event.preventDefault();
    if(!signup.first.trim()||!signup.last.trim()||!signup.email.includes("@")||!signup.address.trim()||!signup.accepted) {
-     setNotice("Complete the required fields and confirm that this is a simulated account.");return;
+     setNotice("Complete the required fields and confirm the account information.");return;
    }
    const account:Account={id:makeId("ED-2030-"),first:signup.first.trim(),last:signup.last.trim(),email:signup.email.trim(),address:signup.address.trim(),postal:signup.postal,created:"2030-11-17"};
-   setData({account,licenseSubmitted:false,library:"not-linked",water:"not-linked",referral:false,tickets:[],activity:[addActivity("Demo account created; identity not verified","City account service")]});
+   setData({account,licenseSubmitted:false,library:"not-linked",water:"not-linked",referral:false,tickets:[],activity:[addActivity("Account created","City account service")]});
    setNotice("");
    go("home");
  }
- function restoreDemo() {if(!window.confirm("Replace this local session with the original sample resident?"))return;setData(initial);setNotice("Sample resident restored.");go("home");}
+ function restoreDemo() {if(!window.confirm("Replace this local session with the original sample resident?"))return;setData(initial);setNotice("Account restored.");go("home");}
  function selectNav(p:Page) {go(p);}
  const nav:{page:Page;label:string}[]=[
    {page:"home",label:"Home"},{page:"services",label:"City services"},{page:"license",label:"Licences and permits"},
@@ -168,13 +168,13 @@ export default function App() {
  const current=catalog.find(c=>c.key===selected)||catalog[0];
  return <div className="portal">
    <a href="#page-main" className="skip-link">Skip to main content</a>
-   <div className="topline"><div className="site-container"><span>City and County of East Detroit</span><span>2030 municipal services demonstration</span></div></div>
+   <div className="topline"><div className="site-container"><span>City and County of East Detroit</span></div></div>
    <header className="site-header"><div className="site-container head-inner">
      <button className="city-brand" onClick={()=>go("home")} aria-label="East Detroit account home">
        <span className="city-seal" aria-hidden="true">ED</span>
        <span><strong>East Detroit</strong><small>City and County Services</small></span>
      </button>
-     <div className="head-actions"><Badge tone="warn">Simulation</Badge><button className="account-menu" onClick={()=>go("account")}>My account <span aria-hidden="true">›</span></button></div>
+     <div className="head-actions"><button className="account-menu" onClick={()=>go("account")}>My account <span aria-hidden="true">›</span></button></div>
    </div></header>
    <div className="nav-shell"><div className="site-container nav-inner">
      <button className="mobile-nav-btn" aria-expanded={showMenu} onClick={()=>setShowMenu(!showMenu)}>Menu <span aria-hidden="true">{showMenu?"−":"+"}</span></button>
@@ -183,9 +183,8 @@ export default function App() {
      </nav>
    </div></div>
    <main id="page-main" className="site-container main-content">
-     <div className="demonstration-note" role="note"><strong>Training environment.</strong> All people, records, IDs and transactions shown here are simulated. No real government account is created.</div>
      {page==="home"&&<>
-       <div className="page-intro intro-row"><div><h1>My East Detroit</h1><p>Welcome, {data.account.first}. Access services linked to your city account.</p></div><div className="account-summary"><span>Resident account ID</span><strong>{data.account.id}</strong><small>Demo reference · Not proof of identity</small></div></div>
+       <div className="page-intro intro-row"><div><h1>My East Detroit</h1><p>Welcome, {data.account.first}. Access services linked to your city account.</p></div><div className="account-summary"><span>Resident account ID</span><strong>{data.account.id}</strong></div></div>
        <section className="section-block">
          <div className="section-heading"><h2>My services</h2><button className="text-link" onClick={()=>go("services")}>Browse all services <span aria-hidden="true">→</span></button></div>
          <div className="table-scroll"><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Responsible office</th><th scope="col">Status</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead>
@@ -213,14 +212,14 @@ export default function App() {
      </>}
      {page==="license"&&<>
        <div className="page-intro"><button className="back-link" onClick={()=>go("home")}>← My services</button><h1>Business licence</h1><p>Review an existing licence or submit a renewal request.</p></div>
-       {!sample?<div className="empty-state"><h2>No licence linked</h2><p>No business licence is connected to this demo account. A real service would require a separate account-linking step.</p><Action secondary onClick={()=>go("services")}>Browse services</Action></div>:<>
+       {!sample?<div className="empty-state"><h2>No licence linked</h2><p>No business licence is connected to this account. Contact Public Health to link an existing licence.</p><Action secondary onClick={()=>go("services")}>Browse services</Action></div>:<>
          <div className="detail-header"><div><small>Food establishment licence</small><h2>Cypress Cafe</h2><p>Licence {SAMPLE_LICENSE}</p></div><Badge tone={data.licenseSubmitted?"info":"warn"}>{data.licenseSubmitted?"Renewal submitted":"Renewal due"}</Badge></div>
          <dl className="details-grid"><div><dt>Licence holder</dt><dd>Maya Rivera · Cypress Cafe</dd></div><div><dt>Issued by</dt><dd>City-County Public Health</dd></div><div><dt>Expiration</dt><dd>December 31, 2030</dd></div><div><dt>Premises</dt><dd>22 Example Plaza, Watkins, CO 80137</dd></div><div><dt>Payment record</dt><dd>Finance and Procurement</dd></div><div><dt>Inspection</dt><dd>Annual review required</dd></div></dl>
          <section className="form-section"><h2>{data.licenseSubmitted?"Renewal status":"Renew this licence"}</h2>
-           {data.licenseSubmitted?<div className="message-panel"><strong>Submitted for review</strong><p>Your simulated renewal request is recorded. Public Health must still review the licence and any inspection findings. No payment was processed.</p></div>:
+           {data.licenseSubmitted?<div className="message-panel"><strong>Submitted for review</strong><p>Your renewal request has been saved. Public Health must review the licence and any inspection findings.</p></div>:
            <form onSubmit={submitRenewal}><p>Check the details above before you submit. A new owner or changed business activity may require additional review.</p>
              <label className="checkbox-row"><input type="checkbox" checked={renewAcknowledged} onChange={e=>setRenewAcknowledged(e.target.checked)}/><span>I confirm that the licence holder and business activity shown above have not changed.</span></label>
-             <p className="muted-small">No fee is collected in this demonstration. Submission does not renew or approve a licence.</p>
+             <p className="muted-small">Submitting a request does not automatically renew a licence.</p>
              <Action type="submit" disabled={!renewAcknowledged}>Submit renewal request</Action>
            </form>}
          </section>
@@ -244,9 +243,9 @@ export default function App() {
      </>}
      {page==="service"&&<>
        <div className="page-intro"><button className="back-link" onClick={()=>go("home")}>← My services</button><h1>{current.title}</h1><p>{current.office}</p></div>
-       {selected==="recreation"&&(sample?<><div className="detail-header"><div><small>City recreation pass</small><h2>Maya Rivera</h2><p>Pass REC-2030-2048</p></div><Badge tone="good">Active</Badge></div><dl className="details-grid"><div><dt>Pass holder</dt><dd>Maya Rivera</dd></div><div><dt>Valid through</dt><dd>March 31, 2031</dd></div><div><dt>Service</dt><dd>City recreation facilities</dd></div><div><dt>Issuing office</dt><dd>Parks, Recreation and Cultural Affairs</dd></div></dl><p className="muted-small">A demo account ID does not independently establish residency or programme eligibility.</p></>:<div className="empty-state"><h2>No pass linked</h2><p>There is no recreation pass in this new demo account. The city would need a separate application and eligibility check before issuing one.</p></div>)}
+       {selected==="recreation"&&(sample?<><div className="detail-header"><div><small>City recreation pass</small><h2>Maya Rivera</h2><p>Pass REC-2030-2048</p></div><Badge tone="good">Active</Badge></div><dl className="details-grid"><div><dt>Pass holder</dt><dd>Maya Rivera</dd></div><div><dt>Valid through</dt><dd>March 31, 2031</dd></div><div><dt>Service</dt><dd>City recreation facilities</dd></div><div><dt>Issuing office</dt><dd>Parks, Recreation and Cultural Affairs</dd></div></dl></>:<div className="empty-state"><h2>No pass linked</h2><p>No recreation pass is linked to this account. You can apply through Parks and Recreation.</p></div>)}
        {selected==="housing"&&(sample?<><div className="detail-header"><div><small>Local assistance · City Housing Division</small><h2>Housing assistance application</h2><p>Application HOU-2030-0371</p></div><Badge tone="info">In review</Badge></div><dl className="details-grid"><div><dt>Received</dt><dd>November 3, 2030</dd></div><div><dt>Responsible office</dt><dd>City Housing Division</dd></div><div><dt>Next step</dt><dd>Staff review of submitted documents</dd></div><div><dt>Housing Authority records</dt><dd>Not connected</dd></div></dl><div className="message-panel"><strong>Separate housing institutions</strong><p>The Regional Housing Authority has its own board and federal obligations. This city application does not show voucher status or provide access to the authority's records.</p></div>
-       <div className="form-section"><h2>Referral to the Regional Housing Authority</h2><p>The city can record an interest in a referral. It cannot enroll you in another agency's programme or send records without a permitted process.</p><Action secondary disabled={data.referral} onClick={()=>{setData(prev=>({...prev,referral:true,activity:[addActivity("Housing referral interest recorded","City Housing Division"),...prev.activity]}));setNotice("Referral interest recorded in this demo; no records were sent.");}}>{data.referral?"Referral interest recorded":"Request referral information"}</Action></div></>:<div className="empty-state"><h2>No application</h2><p>No local housing application is attached to this new demo account.</p></div>)}
+       <div className="form-section"><h2>Referral to the Regional Housing Authority</h2><p>The city can record an interest in a referral. It cannot enroll you in another agency's programme or send records without a permitted process.</p><Action secondary disabled={data.referral} onClick={()=>{setData(prev=>({...prev,referral:true,activity:[addActivity("Housing referral interest recorded","City Housing Division"),...prev.activity]}));setNotice("Referral interest saved.");}}>{data.referral?"Referral interest recorded":"Request referral information"}</Action></div></>:<div className="empty-state"><h2>No application</h2><p>No local housing application is linked to this account.</p></div>)}
        {(selected==="library"||selected==="water")&&<><div className="detail-header"><div><small>{current.independent?"Independent public agency":"City-county service"}</small><h2>{current.title}</h2><p>{current.office}</p></div><Badge tone={tone(selected)}>{serviceStatus(selected)}</Badge></div>
          <div className="message-panel"><strong>Records remain with this agency</strong><p>The city account does not automatically access library borrowing history or utility balances. The agency must establish its own connection and information-sharing conditions.</p></div>
          <section className="form-section"><h2>Connect this service</h2><p>Record a request to link the service to your city account. This does not verify an account or authorize access to records.</p>
@@ -255,29 +254,29 @@ export default function App() {
      </>}
      {page==="account"&&<>
        <div className="page-intro"><h1>Account and privacy</h1><p>Your city login profile and the records kept by individual services are separate.</p></div>
-       <div className="account-columns"><section className="section-block"><h2>Profile</h2><dl className="detail-list"><div><dt>Name</dt><dd>{data.account.first} {data.account.last}</dd></div><div><dt>Account ID</dt><dd>{data.account.id}</dd></div><div><dt>Email</dt><dd>{data.account.email}</dd></div><div><dt>Address given</dt><dd>{data.account.address}, CO {data.account.postal}</dd></div><div><dt>Identity verification</dt><dd><Badge tone="warn">Not verified in demo</Badge></dd></div></dl>
-         <div className="account-actions"><Action secondary onClick={()=>go("register")}>Create another demo account</Action><button className="text-link" onClick={restoreDemo}>Restore sample resident</button></div>
+       <div className="account-columns"><section className="section-block"><h2>Profile</h2><dl className="detail-list"><div><dt>Name</dt><dd>{data.account.first} {data.account.last}</dd></div><div><dt>Account ID</dt><dd>{data.account.id}</dd></div><div><dt>Email</dt><dd>{data.account.email}</dd></div><div><dt>Address given</dt><dd>{data.account.address}, CO {data.account.postal}</dd></div></dl>
+         <div className="account-actions"><Action secondary onClick={()=>go("register")}>Create another account</Action><button className="text-link" onClick={restoreDemo}>Restore sample resident</button></div>
        </section>
-       <aside className="privacy-panel"><h2>How information is used</h2><p>Your city account helps you reach participating services. It does not give each department access to all of your records.</p><p>A change here does not automatically update a library, housing, public health or utility record.</p><p>This application stores demonstration records in this browser only. It does not verify identity or transmit information to government systems.</p><button className="text-link" onClick={()=>saveDownload("east-detroit-demo-data.json",JSON.stringify(data,null,2))}>Download this browser's demo data ↗</button></aside></div>
+       <aside className="privacy-panel"><h2>How information is used</h2><p>Your city account helps you reach participating services. It does not give each department access to all of your records.</p><p>A change here does not automatically update a library, housing, public health or utility record.</p><p>Account information entered here is stored in this browser.</p><button className="text-link" onClick={()=>saveDownload("east-detroit-demo-data.json",JSON.stringify(data,null,2))}>Download account information ↗</button></aside></div>
        <section className="section-block"><div className="section-heading"><h2>Service connections</h2></div><div className="table-scroll"><table className="records-table"><thead><tr><th scope="col">Service</th><th scope="col">Record holder</th><th scope="col">Connection</th><th scope="col"><span className="visually-hidden">Action</span></th></tr></thead><tbody>
          {catalog.map(c=><tr key={c.key}><td><strong>{c.title}</strong></td><td>{c.office}</td><td><Badge tone={tone(c.key)}>{serviceStatus(c.key)}</Badge></td><td><button className="table-link" onClick={()=>openService(c.key)}>View <span aria-hidden="true">→</span></button></td></tr>)}
        </tbody></table></div></section>
-       <section className="section-block"><div className="section-heading"><h2>Activity in this demo</h2></div><ol className="activity-list">{data.activity.map(a=><li key={a.id}><div><strong>{a.description}</strong><span>{a.office}</span></div><time>{dateFormat(a.date)}</time></li>)}</ol></section>
+       <section className="section-block"><div className="section-heading"><h2>Account activity</h2></div><ol className="activity-list">{data.activity.map(a=><li key={a.id}><div><strong>{a.description}</strong><span>{a.office}</span></div><time>{dateFormat(a.date)}</time></li>)}</ol></section>
      </>}
      {page==="register"&&<>
-       <div className="page-intro"><button className="back-link" onClick={()=>go("account")}>← Account and privacy</button><h1>Create a demo account</h1><p>Try the registration process for an East Detroit city account. No real identity check, email verification or government registration will occur.</p></div>
+       <div className="page-intro"><button className="back-link" onClick={()=>go("account")}>← Account and privacy</button><h1>Create an account</h1><p>Enter your contact information to create an East Detroit account.</p></div>
        <section className="form-section registration-section"><h2>Personal and contact information</h2><form onSubmit={submitSignup}>
          <div className="two-fields"><TextInput id="signup-first" label="First name" required value={signup.first} onChange={e=>setSignup({...signup,first:e.target.value})}/>
          <TextInput id="signup-last" label="Last name" required value={signup.last} onChange={e=>setSignup({...signup,last:e.target.value})}/></div>
-         <TextInput id="signup-email" label="Email address" type="email" required value={signup.email} onChange={e=>setSignup({...signup,email:e.target.value})} helperText="Only saved in your browser. No confirmation email is sent."/>
-         <TextInput id="signup-address" label="Street address" required value={signup.address} onChange={e=>setSignup({...signup,address:e.target.value})} helperText="Use an invented address for this demonstration."/>
+         <TextInput id="signup-email" label="Email address" type="email" required value={signup.email} onChange={e=>setSignup({...signup,email:e.target.value})} helperText="Used for account notifications."/>
+         <TextInput id="signup-address" label="Street address" required value={signup.address} onChange={e=>setSignup({...signup,address:e.target.value})} helperText="Enter your street address."/>
          <div className="form-field"><label htmlFor="signup-postal">ZIP code</label><select id="signup-postal" value={signup.postal} onChange={e=>setSignup({...signup,postal:e.target.value})}><option>80137</option><option>80102</option><option>80018</option><option>80019</option></select><p className="field-help">A ZIP code alone does not establish city residency.</p></div>
-         <label className="checkbox-row"><input type="checkbox" checked={signup.accepted} onChange={e=>setSignup({...signup,accepted:e.target.checked})}/><span>I understand this creates a fictional account ID for a classroom simulation, not an official credential.</span></label>
-         <Action type="submit">Create demo account ID</Action>
+         <label className="checkbox-row"><input type="checkbox" checked={signup.accepted} onChange={e=>setSignup({...signup,accepted:e.target.checked})}/><span>I confirm that the account information is correct.</span></label>
+         <Action type="submit">Create account</Action>
        </form></section>
      </>}
      {notice&&<div className="toast-message" role="status"><span>{notice}</span><button onClick={()=>setNotice("")} aria-label="Dismiss message">Close</button></div>}
    </main>
-   <footer className="page-footer"><div className="site-container"><strong>City and County of East Detroit</strong><span>Simulation for Public Mechanics · No live government services</span><a href="https://github.com/quarterback/field-school/tree/main/east-detroit/v3" target="_blank" rel="noreferrer">Scenario and references ↗</a></div></footer>
+   <footer className="page-footer"><div className="site-container"><strong>City and County of East Detroit</strong><span>City and county services</span></div></footer>
  </div>;
 }
